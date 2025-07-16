@@ -67,6 +67,54 @@ async function ensureContentLoaded() {
 	}
 }
 
+// Utility function to detect resource limit errors
+function isResourceLimitError(error: any): boolean {
+	const errorMessage = error?.message?.toLowerCase() || '';
+	const errorStack = error?.stack?.toLowerCase() || '';
+
+	// Common patterns indicating resource limits
+	const resourceLimitPatterns = [
+		'exceeded',
+		'resource limit',
+		'cpu time limit',
+		'memory limit',
+		'execution time',
+		'timeout',
+		'worker exceeded',
+		'script execution time',
+		'memory usage',
+		'out of memory',
+		'maximum execution time'
+	];
+
+	return resourceLimitPatterns.some(pattern =>
+		errorMessage.includes(pattern) || errorStack.includes(pattern)
+	);
+}
+
+// Utility function to create a helpful resource limit error message
+function createResourceLimitErrorMessage(): string {
+	return `🚫 **Cloudflare Worker Resource Limit Exceeded**
+
+The MCP server has hit Cloudflare Workers resource limits (CPU time, memory, or execution time). This is unusual on the paid plan but can happen with:
+
+• Extremely complex queries requiring extensive processing
+• Multiple concurrent requests
+• Very large search operations
+
+**Immediate Solutions:**
+1. Try breaking complex questions into smaller parts
+2. Wait a moment and retry your request
+3. Contact the administrator if this persists
+
+**Technical Details:**
+• Current setup: Paid plan with enhanced resources (50ms CPU time)
+• Full knowledge base: Active (113 entries + 2192 chunks)
+• Optimization: Paid plan optimized for comprehensive responses
+
+This is a rare occurrence on the paid tier - please retry your request.`;
+}
+
 // AI System Prompt
 const AI_SYSTEM_PROMPT = `You are a helpful design systems expert with access to a comprehensive design systems knowledge base. Your role is to provide accurate, practical answers about design systems, components, tokens, and best practices.
 
@@ -76,21 +124,22 @@ SEARCH STRATEGY: For any user question, search the knowledge base using these to
 3. browse_by_category - When looking for specific categories
 4. get_all_tags - When you need to see available tags
 
-WORKFLOW:
-1. For most questions: Call search_chunks with the user's main keywords
-2. If that doesn't find relevant content, try search_design_knowledge with broader terms
-3. Structure your response clearly with sources
+WORKFLOW (PAID PLAN OPTIMIZED):
+1. For complex questions: Use BOTH search_chunks AND search_design_knowledge to get comprehensive coverage
+2. For simple questions: Start with search_chunks (8 results default)
+3. For broad topics: Use search_design_knowledge (15 results default)
+4. Structure your response with rich details and multiple sources
 
-Be direct and efficient - avoid multiple redundant searches. If the first search finds good content, use it.
+Be thorough and comprehensive - you now have enhanced CPU resources to provide detailed, multi-faceted answers.
 
 RESPONSE FORMAT:
 ## 📚 From the Knowledge Base
-[Include any information found via MCP tools, with specific quotes and sources]
+[Include comprehensive information from multiple searches with specific quotes and sources]
 
 ## 🧠 General Design Systems Knowledge
-[Include any additional context from your training data]
+[Include additional context from your training data]
 
-Always search the knowledge base first before responding.`;
+Always search the knowledge base first and leverage multiple search approaches for complex questions.`;
 
 // Available MCP tools for the AI
 const MCP_TOOLS = [
@@ -113,7 +162,7 @@ const MCP_TOOLS = [
 					},
 					limit: {
 						type: "number",
-						description: "Maximum number of results (default: 10)"
+						description: "Maximum number of results (default: 15, paid plan optimized)"
 					}
 				},
 				required: ["query"]
@@ -134,7 +183,7 @@ const MCP_TOOLS = [
 					},
 					limit: {
 						type: "number",
-						description: "Maximum number of chunks (default: 5)"
+						description: "Maximum number of chunks (default: 8, paid plan optimized)"
 					}
 				},
 				required: ["query"]
@@ -184,7 +233,7 @@ async function callMcpTool(toolName: string, args: any): Promise<string> {
 			const searchResults = searchEntries({
 				query: args.query,
 				category: args.category as Category | undefined,
-				limit: args.limit || 10,
+				limit: args.limit || 15,
 			});
 
 			if (searchResults.length === 0) {
@@ -210,7 +259,7 @@ ${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
 ${formattedResults}`;
 
 		case "search_chunks":
-			const chunkResults = searchChunks(args.query, args.limit || 5);
+			const chunkResults = searchChunks(args.query, args.limit || 8);
 
 			if (chunkResults.length === 0) {
 				return "No specific information found matching your query.";
@@ -378,6 +427,15 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 			"Access-Control-Allow-Headers": "Content-Type",
 		};
 
+		if (isResourceLimitError(error)) {
+			return new Response(JSON.stringify({
+				error: createResourceLimitErrorMessage()
+			}), {
+				status: 503,
+				headers: { ...corsHeaders, "Content-Type": "application/json" }
+			});
+		}
+
 		return new Response(JSON.stringify({
 			error: error.message || "An error occurred while processing your request"
 		}), {
@@ -402,7 +460,7 @@ server.tool(
 			.optional()
 			.describe("Filter by category"),
 		tags: z.array(z.string()).optional().describe("Filter by tags"),
-		limit: z.number().min(1).max(50).default(10).describe("Maximum number of results"),
+		limit: z.number().min(1).max(50).default(15).describe("Maximum number of results"),
 	},
 	async ({ query, category, tags, limit }) => {
 		const results = searchEntries({
@@ -451,7 +509,7 @@ server.tool(
 	"search_chunks",
 	{
 		query: z.string().describe("Search query for specific information"),
-		limit: z.number().min(1).max(20).default(5).describe("Maximum number of chunks"),
+		limit: z.number().min(1).max(20).default(8).describe("Maximum number of chunks"),
 	},
 	async ({ query, limit }) => {
 		const results = searchChunks(query, limit);
@@ -630,8 +688,8 @@ async function handleMcpRequest(request: Request): Promise<Response> {
 							},
 							limit: {
 								type: "number",
-								description: "Maximum number of results to return (default: 10)",
-								default: 10
+								description: "Maximum number of results to return (default: 15)",
+								default: 15
 							}
 						},
 						required: ["query"]
@@ -649,8 +707,8 @@ async function handleMcpRequest(request: Request): Promise<Response> {
 							},
 							limit: {
 								type: "number",
-								description: "Maximum number of chunks to return (default: 5)",
-								default: 5
+								description: "Maximum number of chunks to return (default: 8)",
+								default: 8
 							}
 						},
 						required: ["query"]
@@ -706,7 +764,7 @@ async function handleMcpRequest(request: Request): Promise<Response> {
 						query: args.query,
 						category: args.category,
 						tags: args.tags,
-						limit: args.limit || 10,
+						limit: args.limit || 15,
 					});
 
 					if (searchResults.length === 0) {
@@ -743,7 +801,7 @@ ${formattedResults}`
 					break;
 
 				case "search_chunks":
-					const chunkResults = searchChunks(args.query, args.limit || 5);
+					const chunkResults = searchChunks(args.query, args.limit || 8);
 
 					if (chunkResults.length === 0) {
 						result = {
@@ -854,7 +912,30 @@ ${tagList}`
 			headers: { ...corsHeaders, "Content-Type": "application/json" }
 		});
 
-	} catch (error) {
+	} catch (error: any) {
+		console.error("MCP Request Error:", error);
+
+		const corsHeaders = {
+			"Access-Control-Allow-Origin": "*",
+			"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+			"Access-Control-Allow-Headers": "Content-Type",
+		};
+
+		// Check if this is a resource limit error
+		if (isResourceLimitError(error)) {
+			return new Response(JSON.stringify({
+				jsonrpc: "2.0",
+				id: null,
+				error: {
+					code: -32603,
+					message: "Resource limit exceeded: " + createResourceLimitErrorMessage()
+				}
+			}), {
+				status: 503,
+				headers: { ...corsHeaders, "Content-Type": "application/json" }
+			});
+		}
+
 		return new Response(JSON.stringify({
 			jsonrpc: "2.0",
 			id: null,
@@ -864,7 +945,7 @@ ${tagList}`
 			}
 		}), {
 			status: 500,
-			headers: { "Content-Type": "application/json" }
+			headers: { ...corsHeaders, "Content-Type": "application/json" }
 		});
 	}
 }
@@ -1186,6 +1267,8 @@ export default {
             const [inputValue, setInputValue] = useState('');
             const [isLoading, setIsLoading] = useState(false);
             const messagesEndRef = useRef(null);
+            const textareaRef = useRef(null);
+            const textareaRef2 = useRef(null);
 
             const scrollToBottom = () => {
                 messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -1194,6 +1277,19 @@ export default {
             useEffect(() => {
                 scrollToBottom();
             }, [messages]);
+
+            // Auto-resize textareas
+            useEffect(() => {
+                const autoResize = (textarea) => {
+                    if (textarea) {
+                        textarea.style.height = 'auto';
+                        textarea.style.height = Math.min(textarea.scrollHeight, 200) + 'px';
+                    }
+                };
+
+                autoResize(textareaRef.current);
+                autoResize(textareaRef2.current);
+            }, [inputValue]);
 
             const addMessage = (type, content) => {
                 setMessages(prev => [...prev, { type, content, id: Date.now() }]);
@@ -1462,6 +1558,7 @@ export default {
                                             onBlur={(e) => e.currentTarget.style.borderColor = '#373a40'}
                                             >
                                                 <textarea
+                                                    ref={textareaRef}
                                                     placeholder="Ask me anything about design systems..."
                                                     value={inputValue}
                                                     onChange={(e) => setInputValue(e.target.value)}
@@ -1478,7 +1575,9 @@ export default {
                                                         outline: 'none',
                                                         padding: '16px 20px',
                                                         lineHeight: '1.5',
-                                                        minHeight: 'auto'
+                                                        minHeight: '52px',
+                                                        maxHeight: '200px',
+                                                        overflowY: 'auto'
                                                     }}
                                                     disabled={isLoading}
                                                     onFocus={(e) => {
@@ -1632,6 +1731,7 @@ export default {
                                         transition: 'border-color 0.2s ease'
                                     }}>
                                         <textarea
+                                            ref={textareaRef2}
                                             placeholder="Ask me anything about design systems..."
                                             value={inputValue}
                                             onChange={(e) => setInputValue(e.target.value)}
@@ -1648,7 +1748,9 @@ export default {
                                                 outline: 'none',
                                                 padding: '16px 20px',
                                                 lineHeight: '1.5',
-                                                minHeight: 'auto'
+                                                minHeight: '52px',
+                                                maxHeight: '200px',
+                                                overflowY: 'auto'
                                             }}
                                             disabled={isLoading}
                                             onFocus={(e) => {
