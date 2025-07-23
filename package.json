@@ -2,6 +2,7 @@
 	"name": "design-systems-mcp",
 	"version": "0.0.0",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
@@ -16,7 +17,8 @@
 		"ingest:url": "tsx scripts/ingestion/ingest.ts url",
 		"build:manifest": "tsx scripts/build/generate-manifest.ts",
 		"check:duplicates": "tsx scripts/check-duplicates.ts",
-		"prebuild": "npm run build:manifest"
+		"prebuild": "npm run build:manifest",
+		"mcp:standalone": "node standalone-mcp-server.js"
 	},
 	"dependencies": {
 		"@modelcontextprotocol/sdk": "^1.0.7",
