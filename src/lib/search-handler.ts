@@ -10,12 +10,14 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
   
   // Get environment variables from either process.env or Cloudflare env
   const vectorEnabled = env?.VECTOR_SEARCH_ENABLED || process.env.VECTOR_SEARCH_ENABLED;
+  const vectorSearchMode = env?.VECTOR_SEARCH_MODE || process.env.VECTOR_SEARCH_MODE || 'text';
   const supabaseUrl = env?.SUPABASE_URL || process.env.SUPABASE_URL;
   const supabaseKey = env?.SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY;
   const openaiKey = env?.OPENAI_API_KEY || process.env.OPENAI_API_KEY;
+  const logPerformance = (env?.LOG_SEARCH_PERFORMANCE || process.env.LOG_SEARCH_PERFORMANCE) === 'true';
   
-  // Check if we should use Supabase
-  if (query && vectorEnabled === 'true') {
+  // Check if we should use Supabase vector search
+  if (query && vectorEnabled === 'true' && vectorSearchMode === 'vector') {
     try {
       // Try to connect to Supabase
       const { createClient } = require('@supabase/supabase-js');
@@ -45,7 +47,9 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
         });
         
         if (!error && data && data.length > 0) {
-          console.log(`Vector search returned ${data.length} results from Supabase`);
+          if (logPerformance) {
+            console.log(`[Vector Search] Found ${data.length} results`);
+          }
           
           // Convert Supabase results to ContentEntry format
           return data.map((row: any) => ({
@@ -68,13 +72,22 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
             }
           }));
         }
+        
+        if (error && logPerformance) {
+          console.error('[Vector Search] Supabase error:', error.message);
+        }
       }
-    } catch (error) {
-      console.log('Vector search not available, falling back to local search:', error.message);
+    } catch (error: any) {
+      if (logPerformance) {
+        console.error('[Vector Search] Error:', error?.message || 'Unknown error');
+      }
+      // Continue to fallback
     }
   }
   
   // Fallback to local keyword search
-  console.log('Using local keyword search');
+  if (logPerformance) {
+    console.log('[Search] Using local keyword search');
+  }
   return searchEntriesLocal(options);
 }

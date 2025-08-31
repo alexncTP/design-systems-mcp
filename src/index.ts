@@ -6,10 +6,11 @@ import {
 	getEntriesByCategory,
 	getAllTags,
 	getEntryById,
-	searchChunks,
 	SAMPLE_ENTRIES
 } from "./lib/content-manager.js";
+import { searchChunksEnhanced as searchChunks } from "./lib/content-manager-enhanced.js";
 import { searchWithSupabase as searchEntries } from "./lib/search-handler.js";
+import { formatSourceReference, formatInlineCitation } from "./lib/source-formatter.js";
 import { Category, ContentEntry } from "../types/content";
 
 // OpenAI integration
@@ -117,30 +118,37 @@ This is a rare occurrence on the paid tier - please retry your request.`;
 }
 
 // AI System Prompt
-const AI_SYSTEM_PROMPT = `You are a helpful design systems expert with access to a comprehensive design systems knowledge base. Your role is to provide accurate, practical answers about design systems, components, tokens, and best practices.
+const AI_SYSTEM_PROMPT = `You are a knowledgeable design systems expert with access to a comprehensive design systems knowledge base.
 
-SEARCH STRATEGY: For any user question, search the knowledge base using these tools:
-1. search_chunks - For specific detailed information (BEST for most questions)
-2. search_design_knowledge - For broader overviews
-3. browse_by_category - When looking for specific categories
-4. get_all_tags - When you need to see available tags
+CRITICAL SEARCH REQUIREMENT:
+⚠️ You MUST search the knowledge base before claiming any content doesn't exist.
+⚠️ NEVER say "there is no content about X" without first searching for:
+   - The exact term (e.g., "slots")
+   - Variations (e.g., "slot", "slot-based")
+   - Related concepts (e.g., "content projection", "placeholder")
 
-WORKFLOW (PAID PLAN OPTIMIZED):
-1. For complex questions: Use BOTH search_chunks AND search_design_knowledge to get comprehensive coverage
-2. For simple questions: Start with search_chunks (8 results default)
-3. For broad topics: Use search_design_knowledge (15 results default)
-4. Structure your response with rich details and multiple sources
+RESPONSE STRUCTURE (REQUIRED):
+Always structure your response with these two sections:
 
-Be thorough and comprehensive - you now have enhanced CPU resources to provide detailed, multi-faceted answers.
-
-RESPONSE FORMAT:
 ## 📚 From the Knowledge Base
-[Include comprehensive information from multiple searches with specific quotes and sources]
+[Include ALL relevant information found from your searches. If searches return results, summarize them here. Only say "no content found" if searches genuinely return empty results.]
 
-## 🧠 General Design Systems Knowledge
-[Include additional context from your training data]
+## 🧠 From General Knowledge
+[Add additional context, best practices, and insights from your training data]
 
-Always search the knowledge base first and leverage multiple search approaches for complex questions.`;
+SEARCH STRATEGY:
+1. ALWAYS search using search_chunks for detailed information
+2. ALSO use search_design_knowledge for broader context
+3. If the first search seems incomplete, try variations of the query
+4. The knowledge base includes extensive glossaries with definitions - check these
+
+FORMATTING GUIDELINES:
+• Use natural paragraphs for explanations
+• Bullet points are fine for lists of items or features (but don't overuse)
+• For step-by-step instructions, numbered lists work well
+• Cite sources inline naturally: [Source Name](url)
+
+IMPORTANT: The knowledge base contains multiple glossaries with extensive definitions of design system terms. Always search thoroughly before claiming information doesn't exist.`;
 
 // Available MCP tools for the AI
 const MCP_TOOLS = [
@@ -225,7 +233,7 @@ const MCP_TOOLS = [
 ];
 
 // Function to call MCP tools
-async function callMcpTool(toolName: string, args: any): Promise<string> {
+async function callMcpTool(toolName: string, args: any, env?: any): Promise<string> {
 	// Ensure content is loaded before any tool call
 	await ensureContentLoaded();
 
@@ -260,25 +268,35 @@ ${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
 ${formattedResults}`;
 
 		case "search_chunks":
-			const chunkResults = searchChunks(args.query, args.limit || 8);
+			const chunkResults = searchChunks(args.query, args.limit || 8, {
+				enableDiversity: true,
+				maxPerSource: 2,
+				preferUrls: true,
+				logDiversity: false
+			});
 
 			if (chunkResults.length === 0) {
 				return "No specific information found matching your query.";
 			}
 
-			const formattedChunks = chunkResults.map((result, index) =>
-				`<strong>💡 ${index + 1}. ${(result.chunk.metadata?.section || "EXCERPT")}</strong>
+			const formattedChunks = chunkResults.map((result, index) => {
+				const { displayName, url } = formatSourceReference(result.entry);
+				const sourceLink = url
+					? `<a href="${url}" target="_blank">${displayName}</a>`
+					: displayName;
 
-<em>📚 From:</em> ${result.entry.title}
-<em>🔗 Source:</em> <a href="${result.entry.source?.location || result.entry.metadata?.source_url || "#"}" target="_blank">${result.entry.source?.location || result.entry.metadata?.source_url || "N/A"}</a>
-<em>⚡ Relevance Score:</em> ${result.score}
+				// Clean up the chunk text to avoid nested bullets
+				const cleanText = result.chunk.text
+					.replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
+					.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+					.trim();
 
-<blockquote style="border-left: 3px solid #007acc; padding-left: 16px; margin: 16px 0; color: #333; font-style: italic;">
-"${result.chunk.text}"
-</blockquote>
+				return `<div style="margin-bottom: 24px;">
+<strong>${result.chunk.metadata?.section || "Insight"}</strong> from ${sourceLink}:
 
-<hr style="border: 1px solid #ddd; margin: 20px 0;">`
-			).join("\n\n");
+<p style="margin: 12px 0; line-height: 1.6;">${cleanText}</p>
+</div>`;
+			}).join("\n");
 
 			return `FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}:
 
@@ -387,7 +405,8 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 				try {
 					const toolResult = await callMcpTool(
 						toolCall.function.name,
-						JSON.parse(toolCall.function.arguments)
+						JSON.parse(toolCall.function.arguments),
+						env
 					);
 
 					messages.push({
@@ -513,7 +532,12 @@ server.tool(
 		limit: z.number().min(1).max(20).default(8).describe("Maximum number of chunks"),
 	},
 	async ({ query, limit }) => {
-		const results = await searchChunks(query, limit);
+		const results = await searchChunks(query, limit, {
+			enableDiversity: true,
+			maxPerSource: 2,
+			preferUrls: true,
+			logDiversity: false
+		});
 
 		if (results.length === 0) {
 			return {
@@ -524,19 +548,24 @@ server.tool(
 			};
 		}
 
-		const formattedChunks = results.map((result, index) =>
-			`<strong>💡 ${index + 1}. ${(result.chunk.metadata?.section || "EXCERPT")}</strong>
+		const formattedChunks = results.map((result, index) => {
+			const { displayName, url } = formatSourceReference(result.entry);
+			const sourceLink = url
+				? `<a href="${url}" target="_blank">${displayName}</a>`
+				: displayName;
 
-<em>📚 From:</em> ${result.entry.title}
-<em>🔗 Source:</em> <a href="${result.entry.source?.location || result.entry.metadata?.source_url || "#"}" target="_blank">${result.entry.source?.location || result.entry.metadata?.source_url || "N/A"}</a>
-<em>⚡ Relevance Score:</em> ${result.score}
+			// Clean up the chunk text to avoid nested bullets
+			const cleanText = result.chunk.text
+				.replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
+				.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+				.trim();
 
-<blockquote style="border-left: 3px solid #007acc; padding-left: 16px; margin: 16px 0; color: #333; font-style: italic;">
-"${result.chunk.text}"
-</blockquote>
+			return `<div style="margin-bottom: 24px;">
+<strong>${result.chunk.metadata?.section || "Insight"}</strong> from ${sourceLink}:
 
-<hr style="border: 1px solid #ddd; margin: 20px 0;">`
-		).join("\n\n");
+<p style="margin: 12px 0; line-height: 1.6;">${cleanText}</p>
+</div>`;
+		}).join("\n");
 
 		return {
 			content: [{
@@ -802,7 +831,12 @@ ${formattedResults}`
 					break;
 
 				case "search_chunks":
-					const chunkResults = searchChunks(args.query, args.limit || 8);
+					const chunkResults = searchChunks(args.query, args.limit || 8, {
+						enableDiversity: true,
+						maxPerSource: 2,
+						preferUrls: true,
+						logDiversity: false
+					});
 
 					if (chunkResults.length === 0) {
 						result = {
@@ -812,19 +846,24 @@ ${formattedResults}`
 							}],
 						};
 					} else {
-						const formattedChunks = chunkResults.map((result, index) =>
-							`<strong>💡 ${index + 1}. ${(result.chunk.metadata?.section || "EXCERPT")}</strong>
+						const formattedChunks = chunkResults.map((result, index) => {
+							const { displayName, url } = formatSourceReference(result.entry);
+							const sourceLink = url
+								? `<a href="${url}" target="_blank">${displayName}</a>`
+								: displayName;
 
-<em>📚 From:</em> ${result.entry.title}
-<em>🔗 Source:</em> <a href="${result.entry.source?.location || result.entry.metadata?.source_url || "#"}" target="_blank">${result.entry.source?.location || result.entry.metadata?.source_url || "N/A"}</a>
-<em>⚡ Relevance Score:</em> ${result.score}
+							// Clean up the chunk text to avoid nested bullets
+							const cleanText = result.chunk.text
+								.replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
+								.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+								.trim();
 
-<blockquote style="border-left: 3px solid #007acc; padding-left: 16px; margin: 16px 0; color: #333; font-style: italic;">
-"${result.chunk.text}"
-</blockquote>
+							return `<div style="margin-bottom: 24px;">
+<strong>${result.chunk.metadata?.section || "Insight"}</strong> from ${sourceLink}:
 
-<hr style="border: 1px solid #ddd; margin: 20px 0;">`
-						).join("\n\n");
+<p style="margin: 12px 0; line-height: 1.6;">${cleanText}</p>
+</div>`;
+						}).join("\n");
 
 						result = {
 							content: [{
@@ -1387,9 +1426,9 @@ export default {
                                 border: '1px solid #373a40',
                                 fontStyle: 'normal',
                                 borderRadius: '12px',
-                                maxWidth: '85%',
+                                maxWidth: '100%',
                                 marginLeft: '0',
-                                marginRight: 'auto'
+                                marginRight: '0'
                             };
                         case 'error':
                             return {
