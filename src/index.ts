@@ -2,13 +2,14 @@ import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mc
 import { z } from "zod";
 import {
 	loadEntries,
-	searchEntries,
+	searchEntries as searchEntriesLocal,
 	getEntriesByCategory,
 	getAllTags,
 	getEntryById,
 	searchChunks,
 	SAMPLE_ENTRIES
 } from "./lib/content-manager.js";
+import { searchWithSupabase as searchEntries } from "./lib/search-handler.js";
 import { Category, ContentEntry } from "../types/content";
 
 // OpenAI integration
@@ -230,11 +231,11 @@ async function callMcpTool(toolName: string, args: any): Promise<string> {
 
 	switch (toolName) {
 		case "search_design_knowledge":
-			const searchResults = searchEntries({
+			const searchResults = await searchEntries({
 				query: args.query,
 				category: args.category as Category | undefined,
 				limit: args.limit || 15,
-			});
+			}, env);
 
 			if (searchResults.length === 0) {
 				return "No design system knowledge found matching your search criteria.";
@@ -463,7 +464,7 @@ server.tool(
 		limit: z.number().min(1).max(50).default(15).describe("Maximum number of results"),
 	},
 	async ({ query, category, tags, limit }) => {
-		const results = searchEntries({
+		const results = await searchEntries({
 			query,
 			category: category as Category | undefined,
 			tags,
@@ -512,7 +513,7 @@ server.tool(
 		limit: z.number().min(1).max(20).default(8).describe("Maximum number of chunks"),
 	},
 	async ({ query, limit }) => {
-		const results = searchChunks(query, limit);
+		const results = await searchChunks(query, limit);
 
 		if (results.length === 0) {
 			return {
@@ -603,7 +604,7 @@ ${tags.map(tag => `<span style="background: #f0f0f0; padding: 2px 6px; border-ra
 );
 
 // Simple request handler
-async function handleMcpRequest(request: Request): Promise<Response> {
+async function handleMcpRequest(request: Request, env?: Env): Promise<Response> {
 	try {
 		// Add CORS headers
 		const corsHeaders = {
@@ -760,12 +761,12 @@ async function handleMcpRequest(request: Request): Promise<Response> {
 
 			switch (toolName) {
 				case "search_design_knowledge":
-					const searchResults = searchEntries({
+					const searchResults = await searchEntries({
 						query: args.query,
 						category: args.category,
 						tags: args.tags,
 						limit: args.limit || 15,
-					});
+					}, env);
 
 					if (searchResults.length === 0) {
 						result = {
@@ -955,7 +956,7 @@ export default {
 		const url = new URL(request.url);
 
 		if (url.pathname === "/mcp") {
-			return handleMcpRequest(request);
+			return handleMcpRequest(request, env);
 		}
 
 		if (url.pathname === "/ai-chat") {

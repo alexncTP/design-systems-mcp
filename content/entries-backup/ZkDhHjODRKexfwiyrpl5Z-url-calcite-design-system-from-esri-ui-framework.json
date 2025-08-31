@@ -1,0 +1,172 @@
+{
+  "id": "ZkDhHjODRKexfwiyrpl5Z",
+  "title": "Calcite Design System from Esri – UI framework",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/esri",
+    "ingested_at": "2025-08-30T13:09:40.099Z"
+  },
+  "content": "# Esri Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Calcite from Directories: Components: Calcite Design System offers a comprehensive suite of design and development resources for creating cohesive, user-friendly experiences across Esri applications. Esri Design System features a UI kit, icons, color schemes, and a wide web component library. Components provides a rich collection of flexible, framework-agnostic web components, enabling efficient and consistent web application development with minimal effort. Advertisement Accessibility View source Color System Component overview Figma Repository Icons Theming Tokens Typography Accordion Action bar Alert banner Avatar Button Cards Checkbox Chip Combobox Data table Date picker Drawer Dropdown Filter input Icon Label Link List Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Segmented control Select Slider Switch Tabs Text area Text field Tooltip Tree view Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CalcitefromEsri](./esri#up-pixel) [Source](https://developers.arcgis.com/calcite-design-system/) [Figma](https://www.figma.com/@esri) [Repository](https://github.com/Esri/calcite-design-system) [Accessibility](../directories/accessibility) [View source](https://developers.arcgis.com/calcite-design-system/foundations/accessibility/) [Color System](../directories/color-system) [View source](https://developers.arcgis.com/calcite-design-system/foundations/colors/) [Component overview](../directories/component-overview) [View source](https://developers.arcgis.com/calcite-design-system/components/) [Figma](../directories/figma) [View source](https://www.figma.com/@esri) [Repository](../directories/repository) [View source](https://github.com/Esri/calcite-design-system) [Icons](../directories/icons) [View source](https://developers.arcgis.com/calcite-design-system/foundations/iconography/ui-icons/) [Theming](../directories/theming) [Tokens](../directories/tokens) [View source](https://developers.arcgis.com/calcite-design-system/foundations/tokens/usage/) [Typography](../directories/typography) [View source](https://developers.arcgis.com/calcite-design-system/foundations/typography/) [Accordion](../components/accordion) [View source](https://developers.arcgis.com/calcite-design-system/components/accordion/) [Action bar](../components/action-bar) [View source](https://developers.arcgis.com/calcite-design-system/components/action-bar/) [Alert banner](../components/alert-banner) [View source](https://developers.arcgis.com/calcite-design-system/components/alert/) [Avatar](../components/avatar) [View source](https://developers.arcgis.com/calcite-design-system/components/avatar/) [Button](../components/button) [View source](https://developers.arcgis.com/calcite-design-system/components/button/) [Cards](../components/cards) [View source](https://developers.arcgis.com/calcite-design-system/components/card/) [Checkbox](../components/checkbox) [View source](https://developers.arcgis.com/calcite-design-system/components/checkbox/) [Chip](../components/chip) [View source](https://developers.arcgis.com/calcite-design-system/components/chip/) [Combobox](../components/combobox) [View source](https://developers.arcgis.com/calcite-design-system/components/combobox/) [Data table](../components/data-table) [View source](https://developers.arcgis.com/calcite-design-system/components/table/) [Date picker](../components/date-picker) [View source](https://developers.arcgis.com/calcite-design-system/components/date-picker/) [Drawer](../components/drawer) [View source](https://developers.arcgis.com/calcite-design-system/components/sheet/) [Dropdown](../components/dropdown) [View source](https://developers.arcgis.com/calcite-design-system/components/dropdown/) [Filter input](../components/filter-input) [View source](https://developers.arcgis.com/calcite-design-system/components/filter/) [Icon](../directories/icons) [View source](https://developers.arcgis.com/calcite-design-system/components/icon/) [Label](../components/label) [View source](https://developers.arcgis.com/calcite-design-system/components/label/) [Link](../components/link) [View source](https://developers.arcgis.com/calcite-design-system/components/link/) [List](../components/list) [View source](https://developers.arcgis.com/calcite-design-system/components/list/) [Menus](../components/menus) [View source](https://developers.arcgis.com/calcite-design-system/components/menu/) [Modal](../components/modal) [View source](https://developers.arcgis.com/calcite-design-system/components/modal/) [Page header](../components/page-header) [View source](https://developers.arcgis.com/calcite-design-system/components/navigation/) [Pagination](../components/pagination) [View source](https://developers.arcgis.com/calcite-design-system/components/pagination/) [Popover](../components/popover) [View source](https://developers.arcgis.com/calcite-design-system/components/popover/) [Progress bar](../components/progress-bar) [View source](https://developers.arcgis.com/calcite-design-system/components/progress/) [Progress indicator](../components/progress-indicator) [View source](https://developers.arcgis.com/calcite-design-system/components/loader/) [Radio button](../components/radio-button) [View source](https://developers.arcgis.com/calcite-design-system/components/radio-button/) [Segmented control](../components/segmented-control) [View source](https://developers.arcgis.com/calcite-design-system/components/segmented-control/) [Select](../components/select) [View source](https://developers.arcgis.com/calcite-design-system/components/select/) [Slider](../components/slider) [View source](https://developers.arcgis.com/calcite-design-system/components/slider/) [Switch](../components/switch) [View source](https://developers.arcgis.com/calcite-design-system/components/switch/) [Tabs](../components/tabs) [View source](https://developers.arcgis.com/calcite-design-system/components/tabs/) [Text area](../components/text-area) [View source](https://developers.arcgis.com/calcite-design-system/components/text-area/) [Text field](../components/text-field) [View source](https://developers.arcgis.com/calcite-design-system/components/input/) [Tooltip](../components/tooltip) [View source](https://developers.arcgis.com/calcite-design-system/components/tooltip/) [Tree view](../components/tree-view) [View source](https://developers.arcgis.com/calcite-design-system/components/tree/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Esri Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Calcite from Directories: Components: Calcite Design System offers a comprehensive suite of design and development resources for creating cohesive, user-friendly experiences across Esri applications.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 974,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Calcite from Directories: Components: Calcite Design System offers a comprehensive suite of design and development resources for creating cohesive, user-friendly experiences across Esri applications. Esri Design System features a UI kit, icons, color schemes, and a wide web component library. Components provides a rich collection of flexible, framework-agnostic web components, enabling efficient and consistent web application development with minimal effort. Advertisement Accessibility View source Color System Component overview Figma Repository Icons Theming Tokens Typography Accordion Action bar Alert banner Avatar Button Cards Checkbox Chip Combobox Data table Date picker Drawer Dropdown Filter input Icon Label Link List Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Segmented control Select Slider Switch Tabs Text area Text field Tooltip Tree view Design .surf © Dzeya OÜ.",
+      "metadata": {
+        "startIndex": 774,
+        "endIndex": 1704,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ist Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Segmented control Select Slider Switch Tabs Text area Text field Tooltip Tree view Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab)",
+      "metadata": {
+        "startIndex": 1504,
+        "endIndex": 2498,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
+      "metadata": {
+        "startIndex": 2298,
+        "endIndex": 3291,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CalcitefromEsri](./esri#up-pixel) [Source](https://developers.arcgis.com/calcite-design-system/) [Figma](https://www.figma.com/@esri) [Repository](https://github.com/Esri/calcite-design-system) [Accessibility](../directories/accessibility) [View",
+      "metadata": {
+        "startIndex": 3091,
+        "endIndex": 4018,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ps://developers.arcgis.com/calcite-design-system/) [Figma](https://www.figma.com/@esri) [Repository](https://github.com/Esri/calcite-design-system) [Accessibility](../directories/accessibility) [View source](https://developers.arcgis.com/calcite-design-system/foundations/accessibility/) [Color System](../directories/color-system) [View source](https://developers.arcgis.com/calcite-design-system/foundations/colors/) [Component overview](../directories/component-overview) [View source](https://developers.arcgis.com/calcite-design-system/components/) [Figma](../directories/figma) [View source](https://www.figma.com/@esri) [Repository](../directories/repository) [View source](https://github.com/Esri/calcite-design-system) [Icons](../directories/icons) [View source](https://developers.arcgis.com/calcite-design-system/foundations/iconography/ui-icons/) [Theming](../directories/theming) [Tokens](../directories/tokens) [View",
+      "metadata": {
+        "startIndex": 3818,
+        "endIndex": 4749,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ons](../directories/icons) [View source](https://developers.arcgis.com/calcite-design-system/foundations/iconography/ui-icons/) [Theming](../directories/theming) [Tokens](../directories/tokens) [View source](https://developers.arcgis.com/calcite-design-system/foundations/tokens/usage/) [Typography](../directories/typography) [View source](https://developers.arcgis.com/calcite-design-system/foundations/typography/) [Accordion](../components/accordion) [View source](https://developers.arcgis.com/calcite-design-system/components/accordion/) [Action bar](../components/action-bar) [View source](https://developers.arcgis.com/calcite-design-system/components/action-bar/) [Alert banner](../components/alert-banner) [View source](https://developers.arcgis.com/calcite-design-system/components/alert/) [Avatar](../components/avatar) [View source](https://developers.arcgis.com/calcite-design-system/components/avatar/) [Button](../components/button) [View",
+      "metadata": {
+        "startIndex": 4549,
+        "endIndex": 5504,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": ".com/calcite-design-system/components/alert/) [Avatar](../components/avatar) [View source](https://developers.arcgis.com/calcite-design-system/components/avatar/) [Button](../components/button) [View source](https://developers.arcgis.com/calcite-design-system/components/button/) [Cards](../components/cards) [View source](https://developers.arcgis.com/calcite-design-system/components/card/) [Checkbox](../components/checkbox) [View source](https://developers.arcgis.com/calcite-design-system/components/checkbox/) [Chip](../components/chip) [View source](https://developers.arcgis.com/calcite-design-system/components/chip/) [Combobox](../components/combobox) [View source](https://developers.arcgis.com/calcite-design-system/components/combobox/) [Data table](../components/data-table) [View source](https://developers.arcgis.com/calcite-design-system/components/table/) [Date picker](../components/date-picker) [View",
+      "metadata": {
+        "startIndex": 5304,
+        "endIndex": 6225,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "system/components/combobox/) [Data table](../components/data-table) [View source](https://developers.arcgis.com/calcite-design-system/components/table/) [Date picker](../components/date-picker) [View source](https://developers.arcgis.com/calcite-design-system/components/date-picker/) [Drawer](../components/drawer) [View source](https://developers.arcgis.com/calcite-design-system/components/sheet/) [Dropdown](../components/dropdown) [View source](https://developers.arcgis.com/calcite-design-system/components/dropdown/) [Filter input](../components/filter-input) [View source](https://developers.arcgis.com/calcite-design-system/components/filter/) [Icon](../directories/icons) [View source](https://developers.arcgis.com/calcite-design-system/components/icon/) [Label](../components/label) [View source](https://developers.arcgis.com/calcite-design-system/components/label/) [Link](../components/link) [View source](https://developers.arcgis.com/calcite-design-system/components/link/)",
+      "metadata": {
+        "startIndex": 6025,
+        "endIndex": 7016,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "el) [View source](https://developers.arcgis.com/calcite-design-system/components/label/) [Link](../components/link) [View source](https://developers.arcgis.com/calcite-design-system/components/link/) [List](../components/list) [View source](https://developers.arcgis.com/calcite-design-system/components/list/) [Menus](../components/menus) [View source](https://developers.arcgis.com/calcite-design-system/components/menu/) [Modal](../components/modal) [View source](https://developers.arcgis.com/calcite-design-system/components/modal/) [Page header](../components/page-header) [View source](https://developers.arcgis.com/calcite-design-system/components/navigation/) [Pagination](../components/pagination) [View source](https://developers.arcgis.com/calcite-design-system/components/pagination/) [Popover](../components/popover) [View source](https://developers.arcgis.com/calcite-design-system/components/popover/) [Progress bar](../components/progress-bar) [View",
+      "metadata": {
+        "startIndex": 6816,
+        "endIndex": 7783,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "system/components/pagination/) [Popover](../components/popover) [View source](https://developers.arcgis.com/calcite-design-system/components/popover/) [Progress bar](../components/progress-bar) [View source](https://developers.arcgis.com/calcite-design-system/components/progress/) [Progress indicator](../components/progress-indicator) [View source](https://developers.arcgis.com/calcite-design-system/components/loader/) [Radio button](../components/radio-button) [View source](https://developers.arcgis.com/calcite-design-system/components/radio-button/) [Segmented control](../components/segmented-control) [View source](https://developers.arcgis.com/calcite-design-system/components/segmented-control/) [Select](../components/select) [View source](https://developers.arcgis.com/calcite-design-system/components/select/) [Slider](../components/slider) [View source](https://developers.arcgis.com/calcite-design-system/components/slider/) [Switch](../components/switch) [View",
+      "metadata": {
+        "startIndex": 7583,
+        "endIndex": 8562,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "com/calcite-design-system/components/select/) [Slider](../components/slider) [View source](https://developers.arcgis.com/calcite-design-system/components/slider/) [Switch](../components/switch) [View source](https://developers.arcgis.com/calcite-design-system/components/switch/) [Tabs](../components/tabs) [View source](https://developers.arcgis.com/calcite-design-system/components/tabs/) [Text area](../components/text-area) [View source](https://developers.arcgis.com/calcite-design-system/components/text-area/) [Text field](../components/text-field) [View source](https://developers.arcgis.com/calcite-design-system/components/input/) [Tooltip](../components/tooltip) [View source](https://developers.arcgis.com/calcite-design-system/components/tooltip/) [Tree view](../components/tree-view) [View source](https://developers.arcgis.com/calcite-design-system/components/tree/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm)",
+      "metadata": {
+        "startIndex": 8362,
+        "endIndex": 9363,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "ew source](https://developers.arcgis.com/calcite-design-system/components/tree/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 9163,
+        "endIndex": 10163,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "input",
+      "modal",
+      "header",
+      "card",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:40.099Z",
+    "source_url": "https://designsystems.surf/design-systems/esri"
+  }
+}

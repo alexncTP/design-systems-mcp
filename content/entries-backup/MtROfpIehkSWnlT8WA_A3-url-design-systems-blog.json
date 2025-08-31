@@ -1,0 +1,68 @@
+{
+  "id": "MtROfpIehkSWnlT8WA_A3",
+  "title": "Design Systems Blog",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/articles",
+    "ingested_at": "2025-08-30T13:08:59.153Z"
+  },
+  "content": "# Articles Systems Directories Components Blueprints Guides Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe How Design Systems use Color to bring order and clarity More than just fonts: the anatomy of Typography in Design Systems One stack to rule them all: Figma’s 2025 power‑suite and what it means for your workflow The building blocks of great Design Systems: 5 essential categories Top 5 Design Systems you might’ve missed (but shouldn’t) Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](./design-systems) [Directories24](./directories) [Components55](./components) [Articles5](./articles) [Blueprints7](./blueprints) [Guides18](./guides) [Glossary46](./glossary) [012Biweekly Digest](./subscribe) [Request Ad](./advertisement) [Ilya Greben](https://ilyagreben.com) [012Biweekly DigestKeep up with the latest in Design Systems](./subscribe) [Subscribe](./subscribe) [Ad](./advertisement) [Articles](./articles) [How Design Systems use Color to bring order and clarity](./articles/color-in-design-systems) [More than just fonts: the anatomy of Typography in Design Systems](./articles/more-than-just-fonts-the-anatomy-of-typography-in-design-systems) [One stack to rule them all: Figma’s 2025 power‑suite and what it means for your workflow](./articles/one-stack-to-rule-them-all-figma-s-2025-power-suite-and-what-it-means-for-your-workflow) [The building blocks of great Design Systems: 5 essential categories](./articles/the-building-blocks-of-great-design-systems-5-essential-categories) [Top 5 Design Systems you might’ve missed (but shouldn’t)](./articles/top-5-design-systems-you-might-ve-missed-but-shouldnt) [Design Systems](./design-systems) [Apple HIG](./design-systems/apple) [Google Material Design](./design-systems/google) [IBM Design System](./design-systems/ibm) [Microsoft Fluent 2](./design-systems/microsoft) [Directories](./directories) [Accessibility](./directories/accessibility) [Color System](./directories/color-system) [Figma](./directories/figma) [Typography](./directories/typography) [Components](./components) [Button](./components/button) [Checkbox](./components/checkbox) [Radio button](./components/radio-button) [Text field](./components/text-field) [DesignSystems.surf](./) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Articles Systems Directories Components Blueprints Guides Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe How Design Systems use Color to bring order and clarity More than just fonts: the anatomy of Typography in Design Systems One stack to rule them all: Figma’s 2025 power‑suite and what it means for your workflow The building blocks of great Design Systems: 5 essential categories Top 5 Design Systems you might’ve missed (but shouldn’t) Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](./design-systems) [Directories24](./directories) [Components55](./components) [Articles5](./articles) [Blueprints7](./blueprints) [Guides18](./guides) [Glossary46](./glossary) [012Biweekly Digest](./subscribe) [Request Ad](./advertisement) [Ilya Greben](https://ilyagreben.com) [012Biweekly DigestKeep up with the latest in Design Systems](./subscribe) [Subscribe](./subscribe) [Ad](./advertisement) [Articles](./articles) [How Design Systems use",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 997,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "reben](https://ilyagreben.com) [012Biweekly DigestKeep up with the latest in Design Systems](./subscribe) [Subscribe](./subscribe) [Ad](./advertisement) [Articles](./articles) [How Design Systems use Color to bring order and clarity](./articles/color-in-design-systems) [More than just fonts: the anatomy of Typography in Design Systems](./articles/more-than-just-fonts-the-anatomy-of-typography-in-design-systems) [One stack to rule them all: Figma’s 2025 power‑suite and what it means for your workflow](./articles/one-stack-to-rule-them-all-figma-s-2025-power-suite-and-what-it-means-for-your-workflow) [The building blocks of great Design Systems: 5 essential categories](./articles/the-building-blocks-of-great-design-systems-5-essential-categories) [Top 5 Design Systems you might’ve missed (but shouldn’t)](./articles/top-5-design-systems-you-might-ve-missed-but-shouldnt) [Design Systems](./design-systems) [Apple HIG](./design-systems/apple) [Google Material Design](./design-systems/google)",
+      "metadata": {
+        "startIndex": 797,
+        "endIndex": 1798,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "shouldn’t)](./articles/top-5-design-systems-you-might-ve-missed-but-shouldnt) [Design Systems](./design-systems) [Apple HIG](./design-systems/apple) [Google Material Design](./design-systems/google) [IBM Design System](./design-systems/ibm) [Microsoft Fluent 2](./design-systems/microsoft) [Directories](./directories) [Accessibility](./directories/accessibility) [Color System](./directories/color-system) [Figma](./directories/figma) [Typography](./directories/typography) [Components](./components) [Button](./components/button) [Checkbox](./components/checkbox) [Radio button](./components/radio-button) [Text field](./components/text-field) [DesignSystems.surf](./) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 1598,
+        "endIndex": 2598,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "eads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 2398,
+        "endIndex": 3398,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:08:59.153Z",
+    "source_url": "https://designsystems.surf/articles"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "P7C13ILh8Edm4bgy7ljMu",
+  "title": "Elastic Design System – UI framework",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/elastic",
+    "ingested_at": "2025-08-30T13:09:39.306Z"
+  },
+  "content": "# Elastic Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Elastic's UI framework is a Design System used for building consistent, accessible internal products. System provides UI React components and assets, prioritizing high contrast and color-blind safety while being tested with assistive technologies. Design System flexibility makes it suitable for various contexts while maintaining brand consistency. Elastic includes extensive accessibility and writing guidelines in its documentation, ensuring user-friendly and inclusive design practices. Advertisement Accessibility View source Color System Data visualization Elevation Figma Repository Motion Spacing Styles Theming Typography Voice and Tone Accordion Avatar Badges Breadcrumb Button Button group Cards Checkbox Code snippet Combobox Data table Date picker Drawer Empty state Filter input Form Icon Link Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Search Select Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip Tree view",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Elastic Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Elastic's UI framework is a Design System used for building consistent, accessible internal products.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 920,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "k Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Elastic's UI framework is a Design System used for building consistent, accessible internal products. System provides UI React components and assets, prioritizing high contrast and color-blind safety while being tested with assistive technologies. Design System flexibility makes it suitable for various contexts while maintaining brand consistency. Elastic includes extensive accessibility and writing guidelines in its documentation, ensuring user-friendly and inclusive design practices. Advertisement Accessibility View source Color System Data visualization Elevation Figma Repository Motion Spacing Styles Theming Typography Voice and Tone Accordion Avatar Badges Breadcrumb Button Button group Cards Checkbox Code snippet Combobox Data table Date picker Drawer Empty state Filter input Form Icon Link Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Search",
+      "metadata": {
+        "startIndex": 720,
+        "endIndex": 1721,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "rds Checkbox Code snippet Combobox Data table Date picker Drawer Empty state Filter input Form Icon Link Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Search Select Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip Tree view",
+      "metadata": {
+        "startIndex": 1521,
+        "endIndex": 2510,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek)",
+      "metadata": {
+        "startIndex": 2310,
+        "endIndex": 3297,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ntir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromElastic](./elastic#up-pixel) [Source](https://elastic.github.io/eui/#/) [Figma](https://www.figma.com/@elastic) [Repository](https://github.com/elastic/eui)",
+      "metadata": {
+        "startIndex": 3097,
+        "endIndex": 4070,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": ") [Ad](../advertisement) [Design SystemfromElastic](./elastic#up-pixel) [Source](https://elastic.github.io/eui/#/) [Figma](https://www.figma.com/@elastic) [Repository](https://github.com/elastic/eui) [Accessibility](../directories/accessibility) [View source](https://elastic.github.io/eui/#/guidelines/accessibility) [Color System](../directories/color-system) [View source](https://elastic.github.io/eui/#/theming/colors/values) [Data visualization](../directories/data-visualization) [View source](https://elastic.github.io/eui/#/elastic-charts/creating-charts) [Elevation](../directories/elevation) [View source](https://elastic.github.io/eui/#/theming/more-tokens%23levels) [Figma](../directories/figma) [View source](https://www.figma.com/@elastic) [Repository](../directories/repository) [View source](https://github.com/elastic/eui) [Motion](../directories/motion) [View source](https://elastic.github.io/eui/#/theming/more-tokens%23animation) [Spacing](../directories/spacing) [View",
+      "metadata": {
+        "startIndex": 3870,
+        "endIndex": 4862,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "y) [View source](https://github.com/elastic/eui) [Motion](../directories/motion) [View source](https://elastic.github.io/eui/#/theming/more-tokens%23animation) [Spacing](../directories/spacing) [View source](https://elastic.github.io/eui/#/theming/sizing/values) [Styles](../directories/styles) [View source](https://elastic.github.io/eui/#/theming/borders) [Theming](../directories/theming) [View source](https://elastic.github.io/eui/#/theming/color-mode) [Typography](../directories/typography) [View source](https://elastic.github.io/eui/#/theming/typography/values) [Voice and Tone](../directories/voice-and-tone) [View source](https://elastic.github.io/eui/#/guidelines/writing/guidelines) [Accordion](../components/accordion) [View source](https://elastic.github.io/eui/#/layout/accordion) [Avatar](../components/avatar) [View source](https://elastic.github.io/eui/#/display/avatar) [Badges](../components/badges) [View source](https://elastic.github.io/eui/#/display/badge)",
+      "metadata": {
+        "startIndex": 4662,
+        "endIndex": 5644,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "out/accordion) [Avatar](../components/avatar) [View source](https://elastic.github.io/eui/#/display/avatar) [Badges](../components/badges) [View source](https://elastic.github.io/eui/#/display/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://elastic.github.io/eui/#/navigation/breadcrumbs) [Button](../components/button) [View source](https://elastic.github.io/eui/#/navigation/button) [Button group](../components/button-group) [View source](https://elastic.github.io/eui/#/navigation/button%23button-groups) [Cards](../components/cards) [View source](https://elastic.github.io/eui/#/display/card) [Checkbox](../components/checkbox) [View source](https://elastic.github.io/eui/#/forms/selection-controls) [Code snippet](../components/code-snippet) [View source](https://elastic.github.io/eui/#/editors-syntax/code) [Combobox](../components/combobox) [View source](https://elastic.github.io/eui/#/forms/combo-box) [Data table](../components/data-table) [View",
+      "metadata": {
+        "startIndex": 5444,
+        "endIndex": 6423,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ce](https://elastic.github.io/eui/#/editors-syntax/code) [Combobox](../components/combobox) [View source](https://elastic.github.io/eui/#/forms/combo-box) [Data table](../components/data-table) [View source](https://elastic.github.io/eui/#/tabular-content/data-grid) [Date picker](../components/date-picker) [View source](https://elastic.github.io/eui/#/forms/date-picker) [Drawer](../components/drawer) [View source](https://elastic.github.io/eui/#/layout/page-components) [Empty state](../components/empty-state) [View source](https://elastic.github.io/eui/#/display/empty-prompt) [Filter input](../components/filter-input) [View source](https://elastic.github.io/eui/#/forms/filter-group) [Form](../components/form) [View source](https://elastic.github.io/eui/#/forms/form-layouts) [Icon](../directories/icons) [View source](https://elastic.github.io/eui/#/display/icons) [Link](../components/link) [View source](https://elastic.github.io/eui/#/navigation/link) [Menus](../components/menus) [View",
+      "metadata": {
+        "startIndex": 6223,
+        "endIndex": 7223,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "tories/icons) [View source](https://elastic.github.io/eui/#/display/icons) [Link](../components/link) [View source](https://elastic.github.io/eui/#/navigation/link) [Menus](../components/menus) [View source](https://elastic.github.io/eui/#/navigation/context-menu) [Modal](../components/modal) [View source](https://elastic.github.io/eui/#/layout/modal) [Page header](../components/page-header) [View source](https://elastic.github.io/eui/#/layout/page-header) [Pagination](../components/pagination) [View source](https://elastic.github.io/eui/#/navigation/pagination) [Popover](../components/popover) [View source](https://elastic.github.io/eui/#/layout/popover) [Progress bar](../components/progress-bar) [View source](https://elastic.github.io/eui/#/display/progress) [Progress indicator](../components/progress-indicator) [View source](https://elastic.github.io/eui/#/display/loading) [Radio button](../components/radio-button) [View",
+      "metadata": {
+        "startIndex": 7023,
+        "endIndex": 7961,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ithub.io/eui/#/display/progress) [Progress indicator](../components/progress-indicator) [View source](https://elastic.github.io/eui/#/display/loading) [Radio button](../components/radio-button) [View source](https://elastic.github.io/eui/#/forms/selection-controls%23radio) [Search](../components/search) [View source](https://elastic.github.io/eui/#/forms/form-controls%23search-field) [Select](../components/select) [View source](https://elastic.github.io/eui/#/forms/form-controls%23select) [Sidebar](../components/sidebar) [View source](https://elastic.github.io/eui/#/navigation/side-nav) [Slider](../components/slider) [View source](https://elastic.github.io/eui/#/forms/range-sliders) [Snackbar](../components/snackbar) [View source](https://elastic.github.io/eui/#/display/toast) [Switch](../components/switch) [View source](https://elastic.github.io/eui/#/forms/selection-controls%23switch) [Tabs](../components/tabs) [View source](https://elastic.github.io/eui/#/navigation/tabs) [Text",
+      "metadata": {
+        "startIndex": 7761,
+        "endIndex": 8757,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "(../components/switch) [View source](https://elastic.github.io/eui/#/forms/selection-controls%23switch) [Tabs](../components/tabs) [View source](https://elastic.github.io/eui/#/navigation/tabs) [Text area](../components/text-area) [View source](https://elastic.github.io/eui/#/forms/form-controls%23textarea) [Text field](../components/text-field) [View source](https://elastic.github.io/eui/#/forms/form-controls) [Tooltip](../components/tooltip) [View source](https://elastic.github.io/eui/#/display/tooltip) [Tree view](../components/tree-view) [View source](https://elastic.github.io/eui/#/navigation/tree-view) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf)",
+      "metadata": {
+        "startIndex": 8557,
+        "endIndex": 9513,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 9313,
+        "endIndex": 10313,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "input",
+      "form",
+      "modal",
+      "header",
+      "card",
+      "nav",
+      "color",
+      "spacing",
+      "typography"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:39.306Z",
+    "source_url": "https://designsystems.surf/design-systems/elastic"
+  }
+}

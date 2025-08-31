@@ -1,0 +1,113 @@
+{
+  "id": "1G8QWUwchFgSMjeKdeKt_",
+  "title": "Design Systems Database & Gallery",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/",
+    "ingested_at": "2025-08-30T13:08:56.136Z"
+  },
+  "content": "# Design Systems Databas ## Popular Systems Systems Directories Components Articles Blueprints Guides Glossary Created by for latest updates Color System New Aug 20, 2025 Lemon Squeezy Design Systems Aug 7, 2025 Typography Jul 7, 2025 UAE Jun 14, 2025 Basis May 30, 2025 May 19, 2025 Visa May 2, 2025 U.S. Web Apr 22, 2025 Top 5 Design Systems Apr 14, 2025 Cash App Mar 27, 2025 Carrefour Marcel Mar 20, 2025 Michelin Motion Feb 28, 2025 eBay Playbook Nov 28, 2024 Platform Oct 1, 2024 Sep 20, 2024 Radio button Jul 24, 2024 Database updated May 1, 2024 Advertisement Apr 23, 2024 Apr 18, 2024 Mar 5, 2024 Submit form Feb 15, 2024 Feb 6, 2024 First 100k users Jan 25, 2024 Checkbox Jan 22, 2024 INPS Jan 16, 2024 Added Updates Jan 11, 2024 Tabs Jan 9, 2024 Monday.com Dec 28, 2023 Porsche Dec 21, 2023 Chip Dec 18, 2023 First 20k users Dec 13, 2023 Switch Dec 5, 2023 Segmented control Nov 30, 2023 Launched Blueprints Yep ✌︎ It's launch Oct 20, 2023 Best-in-class Design Systems with components and foundations references from top-tier tech companies and leading UI teams Best-in-class Design Systems with components and foundations references from top-tier tech companies and leading UI teams D:809 C:1,917 Adobe Spectrum Repository Storybook Apple HIG Figma Atlassian Design System Dell Google Material Design IBM Carbon Microsoft Fluent 2 Salesforce Lightning",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Design Systems Databas ## Popular Systems Systems Directories Components Articles Blueprints Guides Glossary Created by for latest updates Color System New Aug 20, 2025 Lemon Squeezy Design Systems Aug 7, 2025 Typography Jul 7, 2025 UAE Jun 14, 2025 Basis May 30, 2025 May 19, 2025 Visa May 2, 2025 U.S. Web Apr 22, 2025 Top 5 Design Systems Apr 14, 2025 Cash App Mar 27, 2025 Carrefour Marcel Mar 20, 2025 Michelin Motion Feb 28, 2025 eBay Playbook Nov 28, 2024 Platform Oct 1, 2024 Sep 20, 2024 Radio button Jul 24, 2024 Database updated May 1, 2024 Advertisement Apr 23, 2024 Apr 18, 2024 Mar 5, 2024 Submit form Feb 15, 2024 Feb 6, 2024 First 100k users Jan 25, 2024 Checkbox Jan 22, 2024 INPS Jan 16, 2024 Added Updates Jan 11, 2024 Tabs Jan 9, 2024 Monday.com Dec 28, 2023 Porsche Dec 21, 2023 Chip Dec 18, 2023 First 20k users Dec 13, 2023 Switch Dec 5, 2023 Segmented control Nov 30, 2023 Launched Blueprints Yep ✌︎ It's launch Oct 20, 2023 Best-in-class Design Systems with components and",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "3 Chip Dec 18, 2023 First 20k users Dec 13, 2023 Switch Dec 5, 2023 Segmented control Nov 30, 2023 Launched Blueprints Yep ✌︎ It's launch Oct 20, 2023 Best-in-class Design Systems with components and foundations references from top-tier tech companies and leading UI teams Best-in-class Design Systems with components and foundations references from top-tier tech companies and leading UI teams D:809 C:1,917 Adobe Spectrum Repository Storybook Apple HIG Figma Atlassian Design System Dell Google Material Design IBM Carbon Microsoft Fluent 2 Salesforce Lightning",
+      "metadata": {
+        "startIndex": 800,
+        "endIndex": 1801,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ary) [Request Ad](./advertisement) [Ilya Greben](https://ilyagreben.com) [012Subscribefor latest updates](./subscribe) [Color SystemNewArticlesAug 20, 2025](./articles/color-in-design-systems) [Lemon SqueezyDesign SystemsAug 7, 2025](./design-systems/lemon-squeezy) [TypographyArticlesJul 7, 2025](./articles/more-than-just-fonts-the-anatomy-of-typography-in-design-systems) [UAEDesign SystemsJun 14, 2025](./design-systems/uae) [BasisDesign SystemsMay 30, 2025](./design-systems/basis) [ComponentsArticlesMay 19, 2025](./articles/the-building-blocks-of-great-design-systems-5-essential-categories) [VisaDesign SystemsMay 2, 2025](./design-systems/visa) [U.S. WebDesign SystemsApr 22, 2025](./design-systems/uswds) [Top 5 Design SystemsArticlesApr 14, 2025](./articles/top-5-design-systems-you-might-ve-missed-but-shouldnt) [Cash AppDesign SystemsMar 27, 2025](./design-systems/cashapp) [Carrefour MarcelDesign SystemsMar 20, 2025](./design-systems/carrefour) [Michelin MotionDesign SystemsFeb 28,",
+      "metadata": {
+        "startIndex": 1601,
+        "endIndex": 2599,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "t-ve-missed-but-shouldnt) [Cash AppDesign SystemsMar 27, 2025](./design-systems/cashapp) [Carrefour MarcelDesign SystemsMar 20, 2025](./design-systems/carrefour) [Michelin MotionDesign SystemsFeb 28, 2025](./design-systems/michelin) [eBay PlaybookDesign SystemsNov 28, 2024](./design-systems/ebay) [GuidesPlatformOct 1, 2024](./guides) [GlossaryPlatformSep 20, 2024](./glossary) [Radio buttonBlueprintsJul 24, 2024](./blueprints/radio-button) [Database updatedDesign SystemsMay 1, 2024](https://x.com/dsgnsystemssurf/status/1785931201402024335) [AdvertisementPlatformApr 23, 2024](./advertisement) [Database updatedDesign SystemsApr 18, 2024](https://x.com/dsgnsystemssurf/status/1780897798600392775) [Database updatedDesign SystemsMar 5, 2024](https://x.com/dsgnsystemssurf/status/1764924837024477565?s=20) [Submit formPlatformFeb 15, 2024](https://x.com/dsgnsystemssurf/status/1758026726507180145?s=20) [Database updatedDesign SystemsFeb 6,",
+      "metadata": {
+        "startIndex": 2399,
+        "endIndex": 3342,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "](https://x.com/dsgnsystemssurf/status/1764924837024477565?s=20) [Submit formPlatformFeb 15, 2024](https://x.com/dsgnsystemssurf/status/1758026726507180145?s=20) [Database updatedDesign SystemsFeb 6, 2024](https://x.com/dsgnsystemssurf/status/1754881278870966345?s=20) [First 100k usersPlatformJan 25, 2024](https://x.com/dsgnsystemssurf/status/1750382584473993255?s=20) [CheckboxBlueprintsJan 22, 2024](./blueprints/checkbox) [INPSDesign SystemsJan 16, 2024](./design-systems/inps) [Added UpdatesPlatformJan 11, 2024](https://x.com/dsgnsystemssurf/status/1745331660332384351?s=20) [TabsBlueprintsJan 9, 2024](./blueprints/tabs) [Monday.comDesign SystemsDec 28, 2023](./design-systems/mondaycom) [PorscheDesign SystemsDec 21, 2023](./design-systems/porsche) [ChipBlueprintsDec 18, 2023](./blueprints/chip) [First 20k usersPlatformDec 13, 2023](https://x.com/dsgnsystemssurf/status/1734789931443372302?s=20) [SwitchBlueprintsDec 5, 2023](./blueprints/switch) [Segmented controlBlueprintsNov 30,",
+      "metadata": {
+        "startIndex": 3142,
+        "endIndex": 4136,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "rints/chip) [First 20k usersPlatformDec 13, 2023](https://x.com/dsgnsystemssurf/status/1734789931443372302?s=20) [SwitchBlueprintsDec 5, 2023](./blueprints/switch) [Segmented controlBlueprintsNov 30, 2023](./blueprints/segmented-control) [Launched BlueprintsPlatformNov 30, 2023](./blueprints) [Yep ✌︎ It's launchPlatformOct 20, 2023](https://x.com/dsgnsystemssurf/status/1715278710641946722?s=20) [Design Systems74](./design-systems) [Guides18](./blueprints) [Glossary46](./blueprints) [See all](./design-systems) [AdobeSpectrumD:18/C:37RepositoryStorybookAdobeSpectrumD:18/C:37](./design-systems/adobe) [AppleHIGD:13/C:21FigmaAppleHIGD:13/C:21](./design-systems/apple) [AtlassianDesign SystemD:14/C:35FigmaRepositoryStorybookAtlassianDesign SystemD:14/C:35](./design-systems/atlassian) [DellDesign SystemD:11/C:34StorybookDellDesign SystemD:11/C:34](./design-systems/dell) [GoogleMaterial DesignD:15/C:24FigmaRepositoryGoogleMaterial DesignD:15/C:24](./design-systems/google)",
+      "metadata": {
+        "startIndex": 3936,
+        "endIndex": 4914,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "tlassian) [DellDesign SystemD:11/C:34StorybookDellDesign SystemD:11/C:34](./design-systems/dell) [GoogleMaterial DesignD:15/C:24FigmaRepositoryGoogleMaterial DesignD:15/C:24](./design-systems/google) [IBMCarbonD:14/C:31FigmaRepositoryStorybookIBMCarbonD:14/C:31](./design-systems/ibm) [MicrosoftFluent 2D:18/C:26FigmaRepositoryStorybookMicrosoftFluent 2D:18/C:26](./design-systems/microsoft) [SalesforceLightningD:18/C:33FigmaRepositoryStorybookSalesforceLightningD:18/C:33](./design-systems/salesforce) [Design Systems](./design-systems) [Apple HIG](./design-systems/apple) [Google Material Design](./design-systems/google) [IBM Design System](./design-systems/ibm) [Microsoft Fluent 2](./design-systems/microsoft) [Directories](./directories) [Accessibility](./directories/accessibility) [Color System](./directories/color-system) [Figma](./directories/figma) [Typography](./directories/typography) [Components](./components) [Button](./components/button) [Checkbox](./components/checkbox) [Radio",
+      "metadata": {
+        "startIndex": 4714,
+        "endIndex": 5713,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "stem](./directories/color-system) [Figma](./directories/figma) [Typography](./directories/typography) [Components](./components) [Button](./components/button) [Checkbox](./components/checkbox) [Radio button](./components/radio-button) [Text field](./components/text-field) [DesignSystems.surf](./) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 5513,
+        "endIndex": 6513,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "form",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:08:56.136Z",
+    "source_url": "https://designsystems.surf/"
+  }
+}

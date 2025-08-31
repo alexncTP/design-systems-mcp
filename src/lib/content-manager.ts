@@ -52,7 +52,30 @@ export const SAMPLE_ENTRIES: ContentEntry[] = [
  * Load entries into memory
  */
 export function loadEntries(entriesToLoad: ContentEntry[]): void {
-  entries = [...entriesToLoad];
+  // Filter out entries with invalid metadata
+  const validEntries: ContentEntry[] = [];
+  
+  for (const entry of entriesToLoad) {
+    // Check if entry has required properties
+    if (!entry || typeof entry !== 'object') {
+      console.warn(`⚠️  Skipping invalid entry (not an object):`, entry);
+      continue;
+    }
+    
+    if (!entry.id || !entry.title) {
+      console.warn(`⚠️  Skipping entry with missing id or title:`, entry);
+      continue;
+    }
+    
+    if (!entry.metadata || !entry.metadata.tags || !Array.isArray(entry.metadata.tags)) {
+      console.warn(`⚠️  Skipping entry "${entry.title}" with invalid metadata:`, entry.metadata);
+      continue;
+    }
+    
+    validEntries.push(entry);
+  }
+  
+  entries = validEntries;
 
   // Build tags index
   tags.clear();
@@ -62,7 +85,7 @@ export function loadEntries(entriesToLoad: ContentEntry[]): void {
     }
   }
 
-  console.log(`Loaded ${entries.length} entries with ${tags.size} unique tags`);
+  console.log(`✅ Loaded ${entries.length} valid entries (${entriesToLoad.length - entries.length} skipped) with ${tags.size} unique tags`);
 }
 
 /**
@@ -110,7 +133,15 @@ export function normalizeSearchTerms(query: string): string[] {
     'token', 'tokens', 'design', 'system', 'atomic', 'molecule', 'organism',
     'template', 'page', 'variant', 'boolean', 'text', 'instance', 'swap',
     'button', 'input', 'form', 'navigation', 'header', 'footer',
-    'theme', 'themes', 'theming', 'styling', 'brand', 'branding'
+    'theme', 'themes', 'theming', 'styling', 'brand', 'branding',
+    // Common design system terms
+    'slot', 'slots', 'layout', 'grid', 'spacing', 'typography', 'color',
+    'pattern', 'patterns', 'library', 'guideline', 'guidelines', 'principle',
+    'accessibility', 'responsive', 'breakpoint', 'viewport', 'constraint',
+    'composition', 'inheritance', 'override', 'nested', 'scope', 'context',
+    // Single source of truth and related
+    'single', 'source', 'truth', 'consistency', 'unified', 'centralized',
+    'standardized', 'reference', 'canonical', 'authoritative'
   ];
 
   // Find important terms in the query
@@ -211,8 +242,8 @@ export function searchEntries(options: SearchOptions = {}): ContentEntry[] {
       score: calculateRelevanceScore(entry, queryLower, searchTerms)
     }));
 
-    // Filter out entries with very low scores (less than 1.0)
-    const relevantResults = scoredResults.filter(item => item.score >= 1.0);
+    // Filter out entries with very low scores (less than 0.5)
+    const relevantResults = scoredResults.filter(item => item.score >= 0.5);
 
     // If we have good matches, use them. Otherwise, fall back to basic matching
     if (relevantResults.length > 0) {
@@ -320,8 +351,8 @@ function calculateRelevanceScore(entry: ContentEntry, query: string, searchTerms
   }
 
   // Enhanced semantic matching for fundamental questions
-  if (query.includes('what is') || query.includes('define') || query.includes('definition')) {
-    // "What is X" questions should prioritize introductory content
+  if (query.includes('what is') || query.includes('what are') || query.includes('define') || query.includes('definition')) {
+    // "What is/are X" questions should prioritize introductory content
     if (titleLower.includes('101') || titleLower.includes('glossary') ||
         titleLower.includes('introduction') || titleLower.includes('basics') ||
         titleLower.includes('guide') || titleLower.includes('overview')) {
@@ -330,8 +361,20 @@ function calculateRelevanceScore(entry: ContentEntry, query: string, searchTerms
 
     // Look for definition-style content in the text
     if (contentLower.includes('definition:') || contentLower.includes('is a ') ||
-        contentLower.includes('summary:') || contentLower.includes('what is')) {
+        contentLower.includes('summary:') || contentLower.includes('what is') ||
+        contentLower.includes('what are')) {
       score += 80; // Content that defines things
+    }
+  }
+  
+  // Boost glossary entries when searching for terms
+  if (entry.metadata.category === 'glossary' || titleLower.includes('glossary')) {
+    // Check if any search term appears in the content
+    for (const term of searchTerms) {
+      if (contentLower.includes(term)) {
+        score += 50; // Strong boost for glossary matches
+        break;
+      }
     }
   }
 
@@ -362,6 +405,12 @@ function calculateRelevanceScore(entry: ContentEntry, query: string, searchTerms
         score += titleTermMatches * 40; // High weight for theming
       } else if (term === 'token' || term === 'tokens' || term === 'brand' || term === 'branding') {
         score += titleTermMatches * 25; // High weight for design system terms
+      } else if (term === 'slot' || term === 'slots' || term === 'layout' || term === 'grid' || 
+                 term === 'spacing' || term === 'typography' || term === 'pattern' || 
+                 term === 'library' || term === 'guideline' || term === 'accessibility') {
+        score += titleTermMatches * 20; // Medium-high weight for common design terms
+      } else if (term === 'single' || term === 'source' || term === 'truth') {
+        score += titleTermMatches * 15; // Medium weight for "single source of truth" terms
       } else {
         score += titleTermMatches * 10;
       }

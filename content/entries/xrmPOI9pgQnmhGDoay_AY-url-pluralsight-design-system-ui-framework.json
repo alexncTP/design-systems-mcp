@@ -1,0 +1,151 @@
+{
+  "id": "xrmPOI9pgQnmhGDoay_AY",
+  "title": "Pluralsight Design System – UI Framework",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/pluralsight",
+    "ingested_at": "2025-08-30T13:09:55.697Z"
+  },
+  "content": "# Pluralsight Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Pluralsight Design System is a comprehensive framework that provides a unified design language and a set of essential building block components for development of Pluralsight products. Design System includes a standardized design language and wide guidelines for color, iconography, motion, spacing, typography, and voice & tone to ensure brand cohesion and usability across internal digital products. Advertisement Color System View source Repository Icons Motion Spacing Typography Voice and Tone Alert banner App bar Avatar Badges Breadcrumb Button Cards Checkbox Code snippet Data table Date picker Dialog Drawer Dropdown Empty state Form Icon Label Link List Menus Page header Progress bar Progress indicator Radio button Search Segmented control Switch Tabs Tag Text area Text field Tooltip",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Pluralsight Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Pluralsight Design System is a comprehensive framework that provides a unified design language and a set of essential building block components for development of Pluralsight",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 993,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Directories: Components: Pluralsight Design System is a comprehensive framework that provides a unified design language and a set of essential building block components for development of Pluralsight products. Design System includes a standardized design language and wide guidelines for color, iconography, motion, spacing, typography, and voice & tone to ensure brand cohesion and usability across internal digital products. Advertisement Color System View source Repository Icons Motion Spacing Typography Voice and Tone Alert banner App bar Avatar Badges Breadcrumb Button Cards Checkbox Code snippet Data table Date picker Dialog Drawer Dropdown Empty state Form Icon Label Link List Menus Page header Progress bar Progress indicator Radio button Search Segmented control Switch Tabs Tag Text area Text field Tooltip",
+      "metadata": {
+        "startIndex": 793,
+        "endIndex": 1787,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ext area Text field Tooltip",
+      "metadata": {
+        "startIndex": 1587,
+        "endIndex": 2586,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "electric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2386,
+        "endIndex": 3342,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromPluralsight](./pluralsight#up-pixel) [Source](https://design-system.pluralsight.com/) [Repository](https://github.com/pluralsight/classic-design-system) [Color System](../directories/color-system) [View source](https://design-system.pluralsight.com/core/color) [Repository](../directories/repository) [View source](https://github.com/pluralsight/classic-design-system) [Icons](../directories/icons) [View",
+      "metadata": {
+        "startIndex": 3142,
+        "endIndex": 4130,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "urce](https://design-system.pluralsight.com/core/color) [Repository](../directories/repository) [View source](https://github.com/pluralsight/classic-design-system) [Icons](../directories/icons) [View source](https://design-system.pluralsight.com/core/iconography) [Motion](../directories/motion) [View source](https://design-system.pluralsight.com/core/motion) [Spacing](../directories/spacing) [View source](https://design-system.pluralsight.com/core/spacing) [Typography](../directories/typography) [View source](https://design-system.pluralsight.com/core/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://design-system.pluralsight.com/core/voice) [Alert banner](../components/alert-banner) [View source](https://design-system.pluralsight.com/components/banner) [App bar](../components/app-bar) [View source](https://design-system.pluralsight.com/components/nav) [Avatar](../components/avatar) [View source](https://design-system.pluralsight.com/components/avatar)",
+      "metadata": {
+        "startIndex": 3930,
+        "endIndex": 4929,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "p bar](../components/app-bar) [View source](https://design-system.pluralsight.com/components/nav) [Avatar](../components/avatar) [View source](https://design-system.pluralsight.com/components/avatar) [Badges](../components/badges) [View source](https://design-system.pluralsight.com/components/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://design-system.pluralsight.com/components/breadcrumb) [Button](../components/button) [View source](https://design-system.pluralsight.com/components/button) [Cards](../components/cards) [View source](https://design-system.pluralsight.com/components/card) [Checkbox](../components/checkbox) [View source](https://design-system.pluralsight.com/components/checkbox) [Code snippet](../components/code-snippet) [View source](https://design-system.pluralsight.com/components/text-code) [Data table](../components/data-table) [View source](https://design-system.pluralsight.com/components/table) [Date picker](../components/date-picker) [View",
+      "metadata": {
+        "startIndex": 4729,
+        "endIndex": 5726,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ystem.pluralsight.com/components/text-code) [Data table](../components/data-table) [View source](https://design-system.pluralsight.com/components/table) [Date picker](../components/date-picker) [View source](https://design-system.pluralsight.com/components/datepicker) [Dialog](../components/dialog) [View source](https://design-system.pluralsight.com/components/dialog) [Drawer](../components/drawer) [View source](https://design-system.pluralsight.com/components/drawer) [Dropdown](../components/dropdown) [View source](https://design-system.pluralsight.com/components/dropdown) [Empty state](../components/empty-state) [View source](https://design-system.pluralsight.com/components/emptystate) [Form](../components/form) [View source](https://design-system.pluralsight.com/components/form) [Icon](../directories/icons) [View source](https://design-system.pluralsight.com/components/icon) [Label](../components/label) [View source](https://design-system.pluralsight.com/components/text-label)",
+      "metadata": {
+        "startIndex": 5526,
+        "endIndex": 6521,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "con](../directories/icons) [View source](https://design-system.pluralsight.com/components/icon) [Label](../components/label) [View source](https://design-system.pluralsight.com/components/text-label) [Link](../components/link) [View source](https://design-system.pluralsight.com/components/link) [List](../components/list) [View source](https://design-system.pluralsight.com/components/text-list) [Menus](../components/menus) [View source](https://design-system.pluralsight.com/components/menu) [Page header](../components/page-header) [View source](https://design-system.pluralsight.com/patterns/page-headers) [Progress bar](../components/progress-bar) [View source](https://design-system.pluralsight.com/components/linearprogress) [Progress indicator](../components/progress-indicator) [View source](https://design-system.pluralsight.com/components/circularprogress) [Radio button](../components/radio-button) [View source](https://design-system.pluralsight.com/components/radio)",
+      "metadata": {
+        "startIndex": 6321,
+        "endIndex": 7303,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ator) [View source](https://design-system.pluralsight.com/components/circularprogress) [Radio button](../components/radio-button) [View source](https://design-system.pluralsight.com/components/radio) [Search](../components/search) [View source](https://design-system.pluralsight.com/components/searchinput) [Segmented control](../components/segmented-control) [View source](https://design-system.pluralsight.com/components/viewtoggle) [Switch](../components/switch) [View source](https://design-system.pluralsight.com/components/switch) [Tabs](../components/tabs) [View source](https://design-system.pluralsight.com/components/tab) [Tag](../components/tag) [View source](https://design-system.pluralsight.com/components/tag) [Text area](../components/text-area) [View source](https://design-system.pluralsight.com/components/textarea) [Text field](../components/text-field) [View source](https://design-system.pluralsight.com/components/textinput) [Tooltip](../components/tooltip) [View",
+      "metadata": {
+        "startIndex": 7103,
+        "endIndex": 8090,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ign-system.pluralsight.com/components/textarea) [Text field](../components/text-field) [View source](https://design-system.pluralsight.com/components/textinput) [Tooltip](../components/tooltip) [View source](https://design-system.pluralsight.com/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7890,
+        "endIndex": 8890,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "form",
+      "header",
+      "nav",
+      "card",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:55.697Z",
+    "source_url": "https://designsystems.surf/design-systems/pluralsight"
+  }
+}

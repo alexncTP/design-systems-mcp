@@ -8,7 +8,8 @@ An AI-powered Model Context Protocol (MCP) server that provides intelligent acce
 
 - 🤖 **AI-Powered Chat Interface** - Natural language queries with OpenAI integration
 - 📚 **Content Ingestion** - Supports PDF parsing and web content extraction
-- 🔍 **Intelligent Search** - Semantic search across design systems documentation
+- 🔍 **Vector Search** - Semantic understanding using Supabase + OpenAI embeddings
+- 🎯 **Hybrid Search** - Combines semantic vectors with keyword matching
 - 🎨 **Rich Formatting** - Markdown rendering with syntax highlighting
 - 🚀 **Cloudflare Workers** - Scalable serverless deployment
 - 🧪 **Local Testing** - Full local development environment
@@ -37,7 +38,9 @@ Visit the live demo and ask questions like:
 ### Prerequisites
 
 - Node.js (v20.17.0+ or v22.9.0+)
-- OpenAI API key (for local development)
+- OpenAI API key (for embeddings and chat)
+- Supabase account (for vector search)
+- PostgreSQL with pgvector extension
 
 ### Local Development Setup
 
@@ -50,8 +53,11 @@ Visit the live demo and ask questions like:
 
 2. **Configure Environment**
    ```bash
-   cp env.example .dev.vars
-   # Edit .dev.vars and add your OpenAI API key
+   cp .env.example .env
+   # Edit .env and add your credentials:
+   # - Supabase URL and keys
+   # - OpenAI API key
+   # - Enable vector search
    ```
 
 3. **Start Development Server**
@@ -69,9 +75,15 @@ Visit the live demo and ask questions like:
      - "What does the Design Systems Handbook say about Wraith, Gemini, and BackstopJS?"
      - "How do I implement a design system?"
 
-### Adding Content
+### Adding Content with Vector Search
 
-1. **Ingest Content** (if not already done)
+1. **Setup Database** (first time only)
+   ```bash
+   # Create Supabase tables with pgvector
+   npm run setup:database
+   ```
+
+2. **Ingest Content with Embeddings**
    ```bash
    # Add PDFs to local-content-library/
    npm run ingest:pdf path/to/your-design-guide.pdf
@@ -79,8 +91,14 @@ Visit the live demo and ask questions like:
    # Or ingest web content
    npm run ingest:url https://example.com/design-system
 
+   # Or crawl entire website
+   npm run crawl:website https://example.com --depth 2
+
    # Or bulk ingest from CSV file
    npm run ingest:csv path/to/urls.csv
+   
+   # Generate embeddings for all content
+   npm run ingest:vectors
    ```
 
 2. **Update Content Loading** in `src/index.ts`
@@ -304,6 +322,7 @@ design-systems-mcp/
 - **PDFs** - Design system handbooks, guidelines
 - **Web Content** - Design system documentation sites
 - **CSV URLs** - Bulk ingestion from CSV files containing multiple URLs
+- **Website Crawling** - Recursive crawling of entire websites
 - **JSON** - Pre-processed design system data
 
 ### CSV Bulk Ingestion
@@ -367,6 +386,64 @@ npm run ingest:csv --help
 - `--delimiter <char>` - CSV delimiter (default: ',')
 - `--no-header` - CSV file doesn't have a header row
 
+### Website Crawling
+
+For comprehensive ingestion of entire websites, use the website crawler:
+
+#### Basic Usage
+
+```bash
+# Crawl a website starting from a URL
+npm run crawl:website -- https://material.io/design
+
+# With custom depth and page limit
+npm run crawl:website -- https://polaris.shopify.com --max-depth 5 --max-pages 200
+
+# Crawl only specific sections
+npm run crawl:website -- https://primer.style --include "/components/" --include "/foundations/"
+
+# Resume a previous crawl
+npm run crawl:website -- https://material.io/design --resume
+```
+
+#### Crawler Options
+
+- `--max-depth <n>` - Maximum crawl depth (default: 3)
+- `--max-pages <n>` - Maximum number of pages to crawl (default: 100)
+- `--delay <ms>` - Delay between requests in milliseconds (default: 1000)
+- `--follow-external` - Follow links to external domains
+- `--include <pattern>` - Include URLs matching regex pattern (can be used multiple times)
+- `--exclude <pattern>` - Exclude URLs matching regex pattern (can be used multiple times)
+- `--no-robots` - Ignore robots.txt
+- `--resume` - Resume a previous crawl from the same URL
+- `--clear` - Clear previous crawl progress before starting
+- `--report` - Generate a crawl report after completion
+
+#### Advanced Examples
+
+```bash
+# Exclude certain paths
+npm run crawl:website -- https://ant.design --exclude "/changelog" --exclude "/blog"
+
+# Fast crawl with no delay (be careful!)
+npm run crawl:website -- https://chakra-ui.com --delay 0 --max-pages 50
+
+# Deep crawl with high limits
+npm run crawl:website -- https://design-system.com --max-depth 10 --max-pages 1000 --delay 500
+
+# Generate a report
+npm run crawl:website -- https://carbon.ibm.com --report
+```
+
+#### Key Features
+
+- **Automatic Progress Saving**: The crawler saves progress every 10 pages and can resume if interrupted
+- **Respects robots.txt**: By default, the crawler respects robots.txt directives
+- **Smart Link Extraction**: Extracts links from HTML content and follows them recursively
+- **Duplicate Detection**: Automatically skips already-visited pages
+- **Error Handling**: Continues crawling even if some pages fail
+- **Crawl Reports**: Generate detailed reports of crawled content
+
 ### Content Processing
 
 Content is automatically:
@@ -384,6 +461,7 @@ Content is automatically:
 - `npm run ingest:pdf <file>` - Ingest PDF content
 - `npm run ingest:url <url>` - Ingest web content
 - `npm run ingest:csv <file>` - Bulk ingest from CSV file containing URLs
+- `npm run crawl:website <url>` - Crawl and ingest entire websites
 - `npm run check:duplicates` - Check for duplicate URLs in content entries
 
 ### Content Quality Assurance

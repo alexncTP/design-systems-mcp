@@ -1,0 +1,161 @@
+{
+  "id": "MhYNX8mSB3nXCy5Mnq9dd",
+  "title": "Ahoy Design System from Teamleader",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/teamleader",
+    "ingested_at": "2025-08-30T13:10:05.839Z"
+  },
+  "content": "# Teamleader Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Ahoy from Directories: Components: Ahoy Design System enhances user experiences on the Teamleader platform. It encompasses design principles, guidelines, and components tailored for effective team management. Driven by accessibility and usability, Ahoy ensures seamless interactions for all users. It centralizes design assets and documentation, facilitating collaboration and maintaining consistency across projects. Advertisement Accessibility View source Color System Figma Repository Icons Illustrations Layout Patterns Responsive Spacing Storybook Typography Voice and Tone Action bar Alert banner Avatar Badges Button Cards Data table Date picker Dialog Empty state Filter input Label Menus Pagination Popover Progress bar Progress indicator Sidebar Snackbar Tabs Tag Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [AhoyfromTeamleader](./teamleader#up-pixel) [Source](https://ahoy.teamleader.design/3547946e7/p/223d3f-ahoy) [Figma](https://www.figma.com/@Teamleader) [Repository](https://github.com/teamleadercrm/ui#readme) [Storybook](https://components.teamleader.design/?path=/docs/about-ahoy--docs) [Accessibility](../directories/accessibility) [View source](https://ahoy.teamleader.design/3547946e7/p/805681-accessibility-guidelines) [Color System](../directories/color-system) [View source](https://ahoy.teamleader.design/3547946e7/p/015bf2-color/b/66edd6) [Figma](../directories/figma) [View source](https://www.figma.com/@Teamleader) [Repository](../directories/repository) [View source](https://github.com/teamleadercrm/ui#readme) [Icons](../directories/icons) [View source](https://ahoy.teamleader.design/3547946e7/p/15cca9-icons/b/71122d) [Illustrations](../directories/illustrations) [View source](https://ahoy.teamleader.design/3547946e7/p/569135-illustrations/b/6211a2) [Layout](../directories/layout) [View source](https://ahoy.teamleader.design/3547946e7/p/26a2ef-layout/b/50bd29) [Patterns](../directories/patterns) [View source](https://ahoy.teamleader.design/3547946e7/p/596374-filter-dropdowns/b/779156) [Responsive](../directories/responsive) [View source](https://ahoy.teamleader.design/3547946e7/p/26a2ef-layout/b/463dd2) [Spacing](../directories/spacing) [View source](https://ahoy.teamleader.design/3547946e7/p/26a2ef-layout/b/7366ec) [Storybook](../directories/storybook) [View source](https://components.teamleader.design/?path=/docs/about-ahoy--docs) [Typography](../directories/typography) [View source](https://ahoy.teamleader.design/3547946e7/p/910abb-typography/b/86f87b) [Voice and Tone](../directories/voice-and-tone) [View source](https://ahoy.teamleader.design/3547946e7/p/786828-tone-of-voice/b/469472) [Action bar](../components/action-bar) [View source](https://ahoy.teamleader.design/3547946e7/p/2361a3-action-bar/b/078511) [Alert banner](../components/alert-banner) [View source](https://ahoy.teamleader.design/3547946e7/p/8442a3-banner/b/284013) [Avatar](../components/avatar) [View source](https://ahoy.teamleader.design/3547946e7/p/14faa0-avatar/b/6040a9) [Badges](../components/badges) [View source](https://ahoy.teamleader.design/3547946e7/p/10a975-badge/b/37f371) [Button](../components/button) [View source](https://ahoy.teamleader.design/3547946e7/p/27a895-button/b/963db5) [Cards](../components/cards) [View source](https://ahoy.teamleader.design/3547946e7/p/51c4c4-card/b/385e81) [Data table](../components/data-table) [View source](https://ahoy.teamleader.design/3547946e7/p/075694-datagrid/b/92761c) [Date picker](../components/date-picker) [View source](https://ahoy.teamleader.design/3547946e7/p/4841f1-date-picker/b/111bd2) [Dialog](../components/dialog) [View source](https://ahoy.teamleader.design/3547946e7/p/23b7a1-dialog/b/47f0ab) [Empty state](../components/empty-state) [View source](https://ahoy.teamleader.design/3547946e7/p/86a518-empty-states/b/4443a7) [Filter input](../components/filter-input) [View source](https://ahoy.teamleader.design/3547946e7/p/971b9a-filters/b/11ac15) [Label](../components/label) [View source](https://ahoy.teamleader.design/3547946e7/p/64faa0-label-value-pair/b/237bcc) [Menus](../components/menus) [View source](https://ahoy.teamleader.design/3547946e7/p/068c1f-menus/b/67ddac) [Pagination](../components/pagination) [View source](https://ahoy.teamleader.design/3547946e7/p/45cdb4-pagination/b/861f0c) [Popover](../components/popover) [View source](https://ahoy.teamleader.design/3547946e7/p/495e7c-popover/b/173dc8) [Progress bar](../components/progress-bar) [View source](https://ahoy.teamleader.design/3547946e7/p/664449-progress-tracker/b/964bca) [Progress indicator](../components/progress-indicator) [View source](https://ahoy.teamleader.design/3547946e7/p/95222c-loading-component/b/994753) [Sidebar](../components/sidebar) [View source](https://ahoy.teamleader.design/3547946e7/p/588d50-navigation-in-progress/b/519d91) [Snackbar](../components/snackbar) [View source](https://ahoy.teamleader.design/3547946e7/p/215272-toast/b/89321b) [Tabs](../components/tabs) [View source](https://ahoy.teamleader.design/3547946e7/p/65d16d-tab/b/97267c) [Tag](../components/tag) [View source](https://ahoy.teamleader.design/3547946e7/p/19779f-tag/b/16898c) [Text field](../components/text-field) [View source](https://ahoy.teamleader.design/3547946e7/p/812011-form-elements/b/40b1cb) [Tooltip](../components/tooltip) [View source](https://ahoy.teamleader.design/3547946e7/p/067039-tooltip/b/320010) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Teamleader Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Ahoy from Directories: Components: Ahoy Design System enhances user experiences on the Teamleader platform. It encompasses design principles, guidelines, and components tailored for effective team management.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 983,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Directories: Components: Ahoy Design System enhances user experiences on the Teamleader platform. It encompasses design principles, guidelines, and components tailored for effective team management. Driven by accessibility and usability, Ahoy ensures seamless interactions for all users. It centralizes design assets and documentation, facilitating collaboration and maintaining consistency across projects. Advertisement Accessibility View source Color System Figma Repository Icons Illustrations Layout Patterns Responsive Spacing Storybook Typography Voice and Tone Action bar Alert banner Avatar Badges Button Cards Data table Date picker Dialog Empty state Filter input Label Menus Pagination Popover Progress bar Progress indicator Sidebar Snackbar Tabs Tag Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints)",
+      "metadata": {
+        "startIndex": 783,
+        "endIndex": 1768,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "esign .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon",
+      "metadata": {
+        "startIndex": 1568,
+        "endIndex": 2566,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "[GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2366,
+        "endIndex": 3294,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [AhoyfromTeamleader](./teamleader#up-pixel) [Source](https://ahoy.teamleader.design/3547946e7/p/223d3f-ahoy) [Figma](https://www.figma.com/@Teamleader) [Repository](https://github.com/teamleadercrm/ui#readme) [Storybook](https://components.teamleader.design/?path=/docs/about-ahoy--docs) [Accessibility](../directories/accessibility) [View source](https://ahoy.teamleader.design/3547946e7/p/805681-accessibility-guidelines) [Color",
+      "metadata": {
+        "startIndex": 3094,
+        "endIndex": 4090,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "mponents.teamleader.design/?path=/docs/about-ahoy--docs) [Accessibility](../directories/accessibility) [View source](https://ahoy.teamleader.design/3547946e7/p/805681-accessibility-guidelines) [Color System](../directories/color-system) [View source](https://ahoy.teamleader.design/3547946e7/p/015bf2-color/b/66edd6) [Figma](../directories/figma) [View source](https://www.figma.com/@Teamleader) [Repository](../directories/repository) [View source](https://github.com/teamleadercrm/ui#readme) [Icons](../directories/icons) [View source](https://ahoy.teamleader.design/3547946e7/p/15cca9-icons/b/71122d) [Illustrations](../directories/illustrations) [View source](https://ahoy.teamleader.design/3547946e7/p/569135-illustrations/b/6211a2) [Layout](../directories/layout) [View source](https://ahoy.teamleader.design/3547946e7/p/26a2ef-layout/b/50bd29) [Patterns](../directories/patterns) [View source](https://ahoy.teamleader.design/3547946e7/p/596374-filter-dropdowns/b/779156)",
+      "metadata": {
+        "startIndex": 3890,
+        "endIndex": 4868,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "urce](https://ahoy.teamleader.design/3547946e7/p/26a2ef-layout/b/50bd29) [Patterns](../directories/patterns) [View source](https://ahoy.teamleader.design/3547946e7/p/596374-filter-dropdowns/b/779156) [Responsive](../directories/responsive) [View source](https://ahoy.teamleader.design/3547946e7/p/26a2ef-layout/b/463dd2) [Spacing](../directories/spacing) [View source](https://ahoy.teamleader.design/3547946e7/p/26a2ef-layout/b/7366ec) [Storybook](../directories/storybook) [View source](https://components.teamleader.design/?path=/docs/about-ahoy--docs) [Typography](../directories/typography) [View source](https://ahoy.teamleader.design/3547946e7/p/910abb-typography/b/86f87b) [Voice and Tone](../directories/voice-and-tone) [View source](https://ahoy.teamleader.design/3547946e7/p/786828-tone-of-voice/b/469472) [Action bar](../components/action-bar) [View source](https://ahoy.teamleader.design/3547946e7/p/2361a3-action-bar/b/078511) [Alert banner](../components/alert-banner) [View",
+      "metadata": {
+        "startIndex": 4668,
+        "endIndex": 5657,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "28-tone-of-voice/b/469472) [Action bar](../components/action-bar) [View source](https://ahoy.teamleader.design/3547946e7/p/2361a3-action-bar/b/078511) [Alert banner](../components/alert-banner) [View source](https://ahoy.teamleader.design/3547946e7/p/8442a3-banner/b/284013) [Avatar](../components/avatar) [View source](https://ahoy.teamleader.design/3547946e7/p/14faa0-avatar/b/6040a9) [Badges](../components/badges) [View source](https://ahoy.teamleader.design/3547946e7/p/10a975-badge/b/37f371) [Button](../components/button) [View source](https://ahoy.teamleader.design/3547946e7/p/27a895-button/b/963db5) [Cards](../components/cards) [View source](https://ahoy.teamleader.design/3547946e7/p/51c4c4-card/b/385e81) [Data table](../components/data-table) [View source](https://ahoy.teamleader.design/3547946e7/p/075694-datagrid/b/92761c) [Date picker](../components/date-picker) [View source](https://ahoy.teamleader.design/3547946e7/p/4841f1-date-picker/b/111bd2) [Dialog](../components/dialog)",
+      "metadata": {
+        "startIndex": 5457,
+        "endIndex": 6455,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ign/3547946e7/p/075694-datagrid/b/92761c) [Date picker](../components/date-picker) [View source](https://ahoy.teamleader.design/3547946e7/p/4841f1-date-picker/b/111bd2) [Dialog](../components/dialog) [View source](https://ahoy.teamleader.design/3547946e7/p/23b7a1-dialog/b/47f0ab) [Empty state](../components/empty-state) [View source](https://ahoy.teamleader.design/3547946e7/p/86a518-empty-states/b/4443a7) [Filter input](../components/filter-input) [View source](https://ahoy.teamleader.design/3547946e7/p/971b9a-filters/b/11ac15) [Label](../components/label) [View source](https://ahoy.teamleader.design/3547946e7/p/64faa0-label-value-pair/b/237bcc) [Menus](../components/menus) [View source](https://ahoy.teamleader.design/3547946e7/p/068c1f-menus/b/67ddac) [Pagination](../components/pagination) [View source](https://ahoy.teamleader.design/3547946e7/p/45cdb4-pagination/b/861f0c) [Popover](../components/popover) [View",
+      "metadata": {
+        "startIndex": 6255,
+        "endIndex": 7181,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "n/3547946e7/p/068c1f-menus/b/67ddac) [Pagination](../components/pagination) [View source](https://ahoy.teamleader.design/3547946e7/p/45cdb4-pagination/b/861f0c) [Popover](../components/popover) [View source](https://ahoy.teamleader.design/3547946e7/p/495e7c-popover/b/173dc8) [Progress bar](../components/progress-bar) [View source](https://ahoy.teamleader.design/3547946e7/p/664449-progress-tracker/b/964bca) [Progress indicator](../components/progress-indicator) [View source](https://ahoy.teamleader.design/3547946e7/p/95222c-loading-component/b/994753) [Sidebar](../components/sidebar) [View source](https://ahoy.teamleader.design/3547946e7/p/588d50-navigation-in-progress/b/519d91) [Snackbar](../components/snackbar) [View source](https://ahoy.teamleader.design/3547946e7/p/215272-toast/b/89321b) [Tabs](../components/tabs) [View source](https://ahoy.teamleader.design/3547946e7/p/65d16d-tab/b/97267c) [Tag](../components/tag) [View",
+      "metadata": {
+        "startIndex": 6981,
+        "endIndex": 7919,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "tps://ahoy.teamleader.design/3547946e7/p/215272-toast/b/89321b) [Tabs](../components/tabs) [View source](https://ahoy.teamleader.design/3547946e7/p/65d16d-tab/b/97267c) [Tag](../components/tag) [View source](https://ahoy.teamleader.design/3547946e7/p/19779f-tag/b/16898c) [Text field](../components/text-field) [View source](https://ahoy.teamleader.design/3547946e7/p/812011-form-elements/b/40b1cb) [Tooltip](../components/tooltip) [View source](https://ahoy.teamleader.design/3547946e7/p/067039-tooltip/b/320010) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share",
+      "metadata": {
+        "startIndex": 7719,
+        "endIndex": 8713,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "-button) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8513,
+        "endIndex": 9513,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "input",
+      "card",
+      "form",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:05.839Z",
+    "source_url": "https://designsystems.surf/design-systems/teamleader"
+  }
+}

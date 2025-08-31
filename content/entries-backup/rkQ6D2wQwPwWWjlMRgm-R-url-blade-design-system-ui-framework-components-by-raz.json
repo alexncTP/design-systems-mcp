@@ -1,0 +1,162 @@
+{
+  "id": "rkQ6D2wQwPwWWjlMRgm-R",
+  "title": "Blade Design System – UI Framework & Components by Razorpay",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/razorpay",
+    "ingested_at": "2025-08-30T13:09:56.508Z"
+  },
+  "content": "# Razorpay Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Blade from Directories: Components: Blade Design System is a comprehensive toolkit designed to streamline the creation of cohesive and user-friendly digital experiences across Razopay platform. Blade offers a rich array of design guidelines, components, and tools. Design System empowers designers and developers to craft interfaces that seamlessly integrate with Razopay's brand identity while prioritizing accessibility and responsiveness. Advertisement Component status View source Elevation Figma Repository Motion Responsive Spacing Styles Theming Typography Accordion Alert banner Badges Bottom sheet Breadcrumb Button Button group Cards Checkbox Chip Data table Divider Drawer Dropdown Icon Link List Modal Popover Progress bar Progress indicator Radio button Snackbar Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [BladefromRazorpay](./razorpay#up-pixel) [Source](https://blade.razorpay.com/?path=/docs/guides-intro--docs) [Figma](https://www.figma.com/@razorpay_design) [Repository](https://github.com/razorpay) [Component status](../directories/component-status) [View source](https://blade.razorpay.com/?path=/docs/guides-component-status--docs) [Elevation](../directories/elevation) [View source](https://blade.razorpay.com/?path=/docs/tokens-elevation--docs) [Figma](../directories/figma) [View source](https://www.figma.com/@razorpay_design) [Repository](../directories/repository) [View source](https://github.com/razorpay) [Motion](../directories/motion) [View source](https://blade.razorpay.com/?path=/docs/tokens-motion--docs) [Responsive](../directories/responsive) [View source](https://blade.razorpay.com/?path=/docs/tokens-breakpoints--docs) [Spacing](../directories/spacing) [View source](https://blade.razorpay.com/?path=/docs/tokens-spacing--docs) [Styles](../directories/styles) [View source](https://blade.razorpay.com/?path=/docs/tokens-border--docs) [Theming](../directories/theming) [View source](https://blade.razorpay.com/?path=/docs/guides-theming-createtheme-function--docs) [Typography](../directories/typography) [View source](https://blade.razorpay.com/?path=/docs/tokens-typography--docs) [Accordion](../components/accordion) [View source](https://blade.razorpay.com/?path=/docs/components-accordion--docs) [Alert banner](../components/alert-banner) [View source](https://blade.razorpay.com/?path=/docs/components-alert--docs) [Badges](../components/badges) [View source](https://blade.razorpay.com/?path=/docs/components-badge--docs) [Bottom sheet](../components/bottom-sheet) [View source](https://blade.razorpay.com/?path=/docs/components-bottomsheet--docs) [Breadcrumb](../components/breadcrumbs) [View source](https://blade.razorpay.com/?path=/docs/components-breadcrumb--docs) [Button](../components/button) [View source](https://blade.razorpay.com/?path=/docs/components-button--docs) [Button group](../components/button-group) [View source](https://blade.razorpay.com/?path=/docs/components-buttongroup--docs) [Cards](../components/cards) [View source](https://blade.razorpay.com/?path=/docs/components-card--docs) [Checkbox](../components/checkbox) [View source](https://blade.razorpay.com/?path=/docs/components-checkbox-checkbox--docs) [Chip](../components/chip) [View source](https://blade.razorpay.com/?path=/docs/components-chip-chip--docs) [Data table](../components/data-table) [View source](https://blade.razorpay.com/?path=/docs/components-table--docs) [Divider](../components/divider) [View source](https://blade.razorpay.com/?path=/docs/components-divider--docs) [Drawer](../components/drawer) [View source](https://blade.razorpay.com/?path=/docs/components-drawer--docs) [Dropdown](../components/dropdown) [View source](https://blade.razorpay.com/?path=/docs/components-dropdown-actionlist-docs--docs) [Icon](../directories/icons) [View source](https://blade.razorpay.com/?path=/docs/components-icons--docs) [Link](../components/link) [View source](https://blade.razorpay.com/?path=/docs/components-link--docs) [List](../components/list) [View source](https://blade.razorpay.com/?path=/docs/components-list--docs) [Modal](../components/modal) [View source](https://blade.razorpay.com/?path=/docs/components-modal-modal--docs) [Popover](../components/popover) [View source](https://blade.razorpay.com/?path=/docs/components-popover--docs) [Progress bar](../components/progress-bar) [View source](https://blade.razorpay.com/?path=/docs/components-progressbar--docs) [Progress indicator](../components/progress-indicator) [View source](https://blade.razorpay.com/?path=/docs/components-spinner--docs) [Radio button](../components/radio-button) [View source](https://blade.razorpay.com/?path=/docs/components-radio-radiogroup--docs) [Snackbar](../components/snackbar) [View source](https://blade.razorpay.com/?path=/docs/components-toast--docs) [Switch](../components/switch) [View source](https://blade.razorpay.com/?path=/docs/components-switch--docs) [Tabs](../components/tabs) [View source](https://blade.razorpay.com/?path=/docs/components-tabs--docs) [Tag](../components/tag) [View source](https://blade.razorpay.com/?path=/docs/components-tag--docs) [Text area](../components/text-area) [View source](https://blade.razorpay.com/?path=/docs/components-input-textarea--docs) [Text field](../components/text-field) [View source](https://blade.razorpay.com/?path=/docs/components-input-textinput--docs) [Tooltip](../components/tooltip) [View source](https://blade.razorpay.com/?path=/docs/components-tooltip--docs) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Razorpay Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Blade from Directories: Components: Blade Design System is a comprehensive toolkit designed to streamline the creation of cohesive and user-friendly digital experiences across Razopay platform.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 968,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "cribe Blade from Directories: Components: Blade Design System is a comprehensive toolkit designed to streamline the creation of cohesive and user-friendly digital experiences across Razopay platform. Blade offers a rich array of design guidelines, components, and tools. Design System empowers designers and developers to craft interfaces that seamlessly integrate with Razopay's brand identity while prioritizing accessibility and responsiveness. Advertisement Component status View source Elevation Figma Repository Motion Responsive Spacing Styles Theming Typography Accordion Alert banner Badges Bottom sheet Breadcrumb Button Button group Cards Checkbox Chip Data table Divider Drawer Dropdown Icon Link List Modal Popover Progress bar Progress indicator Radio button Snackbar Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles)",
+      "metadata": {
+        "startIndex": 768,
+        "endIndex": 1767,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ext area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi)",
+      "metadata": {
+        "startIndex": 1567,
+        "endIndex": 2566,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "electric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2366,
+        "endIndex": 3322,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [BladefromRazorpay](./razorpay#up-pixel) [Source](https://blade.razorpay.com/?path=/docs/guides-intro--docs) [Figma](https://www.figma.com/@razorpay_design) [Repository](https://github.com/razorpay) [Component status](../directories/component-status) [View source](https://blade.razorpay.com/?path=/docs/guides-component-status--docs) [Elevation](../directories/elevation) [View",
+      "metadata": {
+        "startIndex": 3122,
+        "endIndex": 4066,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ithub.com/razorpay) [Component status](../directories/component-status) [View source](https://blade.razorpay.com/?path=/docs/guides-component-status--docs) [Elevation](../directories/elevation) [View source](https://blade.razorpay.com/?path=/docs/tokens-elevation--docs) [Figma](../directories/figma) [View source](https://www.figma.com/@razorpay_design) [Repository](../directories/repository) [View source](https://github.com/razorpay) [Motion](../directories/motion) [View source](https://blade.razorpay.com/?path=/docs/tokens-motion--docs) [Responsive](../directories/responsive) [View source](https://blade.razorpay.com/?path=/docs/tokens-breakpoints--docs) [Spacing](../directories/spacing) [View source](https://blade.razorpay.com/?path=/docs/tokens-spacing--docs) [Styles](../directories/styles) [View source](https://blade.razorpay.com/?path=/docs/tokens-border--docs) [Theming](../directories/theming) [View",
+      "metadata": {
+        "startIndex": 3866,
+        "endIndex": 4784,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "/blade.razorpay.com/?path=/docs/tokens-spacing--docs) [Styles](../directories/styles) [View source](https://blade.razorpay.com/?path=/docs/tokens-border--docs) [Theming](../directories/theming) [View source](https://blade.razorpay.com/?path=/docs/guides-theming-createtheme-function--docs) [Typography](../directories/typography) [View source](https://blade.razorpay.com/?path=/docs/tokens-typography--docs) [Accordion](../components/accordion) [View source](https://blade.razorpay.com/?path=/docs/components-accordion--docs) [Alert banner](../components/alert-banner) [View source](https://blade.razorpay.com/?path=/docs/components-alert--docs) [Badges](../components/badges) [View source](https://blade.razorpay.com/?path=/docs/components-badge--docs) [Bottom sheet](../components/bottom-sheet) [View source](https://blade.razorpay.com/?path=/docs/components-bottomsheet--docs) [Breadcrumb](../components/breadcrumbs) [View",
+      "metadata": {
+        "startIndex": 4584,
+        "endIndex": 5510,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ocs/components-badge--docs) [Bottom sheet](../components/bottom-sheet) [View source](https://blade.razorpay.com/?path=/docs/components-bottomsheet--docs) [Breadcrumb](../components/breadcrumbs) [View source](https://blade.razorpay.com/?path=/docs/components-breadcrumb--docs) [Button](../components/button) [View source](https://blade.razorpay.com/?path=/docs/components-button--docs) [Button group](../components/button-group) [View source](https://blade.razorpay.com/?path=/docs/components-buttongroup--docs) [Cards](../components/cards) [View source](https://blade.razorpay.com/?path=/docs/components-card--docs) [Checkbox](../components/checkbox) [View source](https://blade.razorpay.com/?path=/docs/components-checkbox-checkbox--docs) [Chip](../components/chip) [View source](https://blade.razorpay.com/?path=/docs/components-chip-chip--docs) [Data table](../components/data-table) [View source](https://blade.razorpay.com/?path=/docs/components-table--docs) [Divider](../components/divider)",
+      "metadata": {
+        "startIndex": 5310,
+        "endIndex": 6307,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "zorpay.com/?path=/docs/components-chip-chip--docs) [Data table](../components/data-table) [View source](https://blade.razorpay.com/?path=/docs/components-table--docs) [Divider](../components/divider) [View source](https://blade.razorpay.com/?path=/docs/components-divider--docs) [Drawer](../components/drawer) [View source](https://blade.razorpay.com/?path=/docs/components-drawer--docs) [Dropdown](../components/dropdown) [View source](https://blade.razorpay.com/?path=/docs/components-dropdown-actionlist-docs--docs) [Icon](../directories/icons) [View source](https://blade.razorpay.com/?path=/docs/components-icons--docs) [Link](../components/link) [View source](https://blade.razorpay.com/?path=/docs/components-link--docs) [List](../components/list) [View source](https://blade.razorpay.com/?path=/docs/components-list--docs) [Modal](../components/modal) [View source](https://blade.razorpay.com/?path=/docs/components-modal-modal--docs) [Popover](../components/popover) [View",
+      "metadata": {
+        "startIndex": 6107,
+        "endIndex": 7089,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": ".razorpay.com/?path=/docs/components-list--docs) [Modal](../components/modal) [View source](https://blade.razorpay.com/?path=/docs/components-modal-modal--docs) [Popover](../components/popover) [View source](https://blade.razorpay.com/?path=/docs/components-popover--docs) [Progress bar](../components/progress-bar) [View source](https://blade.razorpay.com/?path=/docs/components-progressbar--docs) [Progress indicator](../components/progress-indicator) [View source](https://blade.razorpay.com/?path=/docs/components-spinner--docs) [Radio button](../components/radio-button) [View source](https://blade.razorpay.com/?path=/docs/components-radio-radiogroup--docs) [Snackbar](../components/snackbar) [View source](https://blade.razorpay.com/?path=/docs/components-toast--docs) [Switch](../components/switch) [View source](https://blade.razorpay.com/?path=/docs/components-switch--docs) [Tabs](../components/tabs) [View source](https://blade.razorpay.com/?path=/docs/components-tabs--docs)",
+      "metadata": {
+        "startIndex": 6889,
+        "endIndex": 7877,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "components/switch) [View source](https://blade.razorpay.com/?path=/docs/components-switch--docs) [Tabs](../components/tabs) [View source](https://blade.razorpay.com/?path=/docs/components-tabs--docs) [Tag](../components/tag) [View source](https://blade.razorpay.com/?path=/docs/components-tag--docs) [Text area](../components/text-area) [View source](https://blade.razorpay.com/?path=/docs/components-input-textarea--docs) [Text field](../components/text-field) [View source](https://blade.razorpay.com/?path=/docs/components-input-textinput--docs) [Tooltip](../components/tooltip) [View source](https://blade.razorpay.com/?path=/docs/components-tooltip--docs) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Components](../components) [DesignSystems.surf](../) [X",
+      "metadata": {
+        "startIndex": 7677,
+        "endIndex": 8668,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8468,
+        "endIndex": 9468,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "modal",
+      "card",
+      "input",
+      "spacing",
+      "typography",
+      "border",
+      "color",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:56.508Z",
+    "source_url": "https://designsystems.surf/design-systems/razorpay"
+  }
+}

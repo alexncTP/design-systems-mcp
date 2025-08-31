@@ -1,0 +1,159 @@
+{
+  "id": "vI6rwJ4UHiOx4s95MdUYJ",
+  "title": "Codex Design System from Wikimedia",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/wikimedia",
+    "ingested_at": "2025-08-30T13:10:10.546Z"
+  },
+  "content": "# Wikimedia Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Codex from Directories: Components: Codex Design System by Wikimedia is a comprehensive toolkit for building user interfaces, emphasizing consistency across Wikimedia Foundation projects. System includes design tokens, a wide library of components, and a focus on accessibility, internationalization, and extensive browser and device support. Codex is maintained by the Wikimedia Foundation's Design Systems Team, with contributions from the wider Wikimedia community. Advertisement Accessibility View source Color System Component overview Figma Repository Icons Illustrations Motion Spacing Tokens Typography Voice and Tone Accordion Alert banner Autocomplete Avatar Button Button group Cards Checkbox Chip Combobox Dialog Icon Label Link Menus Progress bar Radio button Search Select Switch Tabs Text area Text field Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CodexfromWikimedia](./wikimedia#up-pixel) [Source](https://doc.wikimedia.org/codex/latest/) [Figma](https://www.figma.com/file/KoDuJMadWBXtsOtzGS4134/%E2%9D%96-Codex-components?type=design&node-id=1891-4420&mode=design) [Repository](https://github.com/wikimedia/design-codex) [Accessibility](../directories/accessibility) [View source](https://doc.wikimedia.org/codex/latest/style-guide/accessibility.html) [Color System](../directories/color-system) [View source](https://doc.wikimedia.org/codex/latest/style-guide/colors.html) [Component overview](../directories/component-overview) [View source](https://doc.wikimedia.org/codex/latest/components/overview.html) [Figma](../directories/figma) [View source](https://www.figma.com/file/KoDuJMadWBXtsOtzGS4134/%E2%9D%96-Codex-components?type=design&node-id=1891-4420&mode=design) [Repository](../directories/repository) [View source](https://github.com/wikimedia/design-codex) [Icons](../directories/icons) [View source](https://doc.wikimedia.org/codex/latest/style-guide/icons.html) [Illustrations](../directories/illustrations) [View source](https://doc.wikimedia.org/codex/latest/style-guide/illustrations.html) [Motion](../directories/motion) [View source](https://doc.wikimedia.org/codex/latest/design-tokens/animation.html) [Spacing](../directories/spacing) [View source](https://doc.wikimedia.org/codex/latest/design-tokens/spacing.html) [Tokens](../directories/tokens) [View source](https://doc.wikimedia.org/codex/latest/design-tokens/overview.html) [Typography](../directories/typography) [View source](https://doc.wikimedia.org/codex/latest/style-guide/typography.html) [Voice and Tone](../directories/voice-and-tone) [View source](https://doc.wikimedia.org/codex/latest/style-guide/voice-and-tone.html) [Accordion](../components/accordion) [View source](https://doc.wikimedia.org/codex/latest/components/demos/accordion.html) [Alert banner](../components/alert-banner) [View source](https://doc.wikimedia.org/codex/latest/components/demos/message.html) [Autocomplete](../components/autocomplete) [View source](https://doc.wikimedia.org/codex/latest/components/demos/lookup.html) [Avatar](../components/avatar) [View source](https://doc.wikimedia.org/codex/latest/components/demos/thumbnail.html) [Button](../components/button) [View source](https://doc.wikimedia.org/codex/latest/components/demos/button.html) [Button group](../components/button-group) [View source](https://doc.wikimedia.org/codex/latest/components/demos/button-group.html) [Cards](../components/cards) [View source](https://doc.wikimedia.org/codex/latest/components/demos/card.html) [Checkbox](../components/checkbox) [View source](https://doc.wikimedia.org/codex/latest/components/demos/checkbox.html) [Chip](../components/chip) [View source](https://doc.wikimedia.org/codex/latest/components/demos/chip-input.html) [Combobox](../components/combobox) [View source](https://doc.wikimedia.org/codex/latest/components/demos/combobox.html) [Dialog](../components/dialog) [View source](https://doc.wikimedia.org/codex/latest/components/demos/dialog.html) [Icon](../directories/icons) [View source](https://doc.wikimedia.org/codex/latest/components/demos/icon.html) [Label](../components/label) [View source](https://doc.wikimedia.org/codex/latest/components/demos/label.html) [Link](../components/link) [View source](https://doc.wikimedia.org/codex/latest/components/mixins/link.html) [Menus](../components/menus) [View source](https://doc.wikimedia.org/codex/latest/components/demos/menu.html) [Progress bar](../components/progress-bar) [View source](https://doc.wikimedia.org/codex/latest/components/demos/progress-bar.html) [Radio button](../components/radio-button) [View source](https://doc.wikimedia.org/codex/latest/components/demos/radio.html) [Search](../components/search) [View source](https://doc.wikimedia.org/codex/latest/components/demos/search-input.html) [Select](../components/select) [View source](https://doc.wikimedia.org/codex/latest/components/demos/select.html) [Switch](../components/switch) [View source](https://doc.wikimedia.org/codex/latest/components/demos/toggle-switch.html) [Tabs](../components/tabs) [View source](https://doc.wikimedia.org/codex/latest/components/demos/tabs.html) [Text area](../components/text-area) [View source](https://doc.wikimedia.org/codex/latest/components/demos/text-area.html) [Text field](../components/text-field) [View source](https://doc.wikimedia.org/codex/latest/components/demos/field.html) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Wikimedia Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Codex from Directories: Components: Codex Design System by Wikimedia is a comprehensive toolkit for building user interfaces, emphasizing consistency across Wikimedia Foundation projects.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 962,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "s Subscribe Codex from Directories: Components: Codex Design System by Wikimedia is a comprehensive toolkit for building user interfaces, emphasizing consistency across Wikimedia Foundation projects. System includes design tokens, a wide library of components, and a focus on accessibility, internationalization, and extensive browser and device support. Codex is maintained by the Wikimedia Foundation's Design Systems Team, with contributions from the wider Wikimedia community. Advertisement Accessibility View source Color System Component overview Figma Repository Icons Illustrations Motion Spacing Tokens Typography Voice and Tone Accordion Alert banner Autocomplete Avatar Button Button group Cards Checkbox Chip Combobox Dialog Icon Label Link Menus Progress bar Radio button Search Select Switch Tabs Text area Text field Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components)",
+      "metadata": {
+        "startIndex": 762,
+        "endIndex": 1741,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "utton Search Select Switch Tabs Text area Text field Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen)",
+      "metadata": {
+        "startIndex": 1541,
+        "endIndex": 2531,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2331,
+        "endIndex": 3321,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CodexfromWikimedia](./wikimedia#up-pixel) [Source](https://doc.wikimedia.org/codex/latest/) [Figma](https://www.figma.com/file/KoDuJMadWBXtsOtzGS4134/%E2%9D%96-Codex-components?type=design&node-id=1891-4420&mode=design) [Repository](https://github.com/wikimedia/design-codex) [Accessibility](../directories/accessibility) [View source](https://doc.wikimedia.org/codex/latest/style-guide/accessibility.html) [Color",
+      "metadata": {
+        "startIndex": 3121,
+        "endIndex": 4101,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "sign) [Repository](https://github.com/wikimedia/design-codex) [Accessibility](../directories/accessibility) [View source](https://doc.wikimedia.org/codex/latest/style-guide/accessibility.html) [Color System](../directories/color-system) [View source](https://doc.wikimedia.org/codex/latest/style-guide/colors.html) [Component overview](../directories/component-overview) [View source](https://doc.wikimedia.org/codex/latest/components/overview.html) [Figma](../directories/figma) [View source](https://www.figma.com/file/KoDuJMadWBXtsOtzGS4134/%E2%9D%96-Codex-components?type=design&node-id=1891-4420&mode=design) [Repository](../directories/repository) [View source](https://github.com/wikimedia/design-codex) [Icons](../directories/icons) [View source](https://doc.wikimedia.org/codex/latest/style-guide/icons.html) [Illustrations](../directories/illustrations) [View source](https://doc.wikimedia.org/codex/latest/style-guide/illustrations.html) [Motion](../directories/motion) [View",
+      "metadata": {
+        "startIndex": 3901,
+        "endIndex": 4888,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "latest/style-guide/icons.html) [Illustrations](../directories/illustrations) [View source](https://doc.wikimedia.org/codex/latest/style-guide/illustrations.html) [Motion](../directories/motion) [View source](https://doc.wikimedia.org/codex/latest/design-tokens/animation.html) [Spacing](../directories/spacing) [View source](https://doc.wikimedia.org/codex/latest/design-tokens/spacing.html) [Tokens](../directories/tokens) [View source](https://doc.wikimedia.org/codex/latest/design-tokens/overview.html) [Typography](../directories/typography) [View source](https://doc.wikimedia.org/codex/latest/style-guide/typography.html) [Voice and Tone](../directories/voice-and-tone) [View source](https://doc.wikimedia.org/codex/latest/style-guide/voice-and-tone.html) [Accordion](../components/accordion) [View source](https://doc.wikimedia.org/codex/latest/components/demos/accordion.html) [Alert banner](../components/alert-banner) [View",
+      "metadata": {
+        "startIndex": 4688,
+        "endIndex": 5622,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "-guide/voice-and-tone.html) [Accordion](../components/accordion) [View source](https://doc.wikimedia.org/codex/latest/components/demos/accordion.html) [Alert banner](../components/alert-banner) [View source](https://doc.wikimedia.org/codex/latest/components/demos/message.html) [Autocomplete](../components/autocomplete) [View source](https://doc.wikimedia.org/codex/latest/components/demos/lookup.html) [Avatar](../components/avatar) [View source](https://doc.wikimedia.org/codex/latest/components/demos/thumbnail.html) [Button](../components/button) [View source](https://doc.wikimedia.org/codex/latest/components/demos/button.html) [Button group](../components/button-group) [View source](https://doc.wikimedia.org/codex/latest/components/demos/button-group.html) [Cards](../components/cards) [View source](https://doc.wikimedia.org/codex/latest/components/demos/card.html) [Checkbox](../components/checkbox) [View source](https://doc.wikimedia.org/codex/latest/components/demos/checkbox.html)",
+      "metadata": {
+        "startIndex": 5422,
+        "endIndex": 6419,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "View source](https://doc.wikimedia.org/codex/latest/components/demos/card.html) [Checkbox](../components/checkbox) [View source](https://doc.wikimedia.org/codex/latest/components/demos/checkbox.html) [Chip](../components/chip) [View source](https://doc.wikimedia.org/codex/latest/components/demos/chip-input.html) [Combobox](../components/combobox) [View source](https://doc.wikimedia.org/codex/latest/components/demos/combobox.html) [Dialog](../components/dialog) [View source](https://doc.wikimedia.org/codex/latest/components/demos/dialog.html) [Icon](../directories/icons) [View source](https://doc.wikimedia.org/codex/latest/components/demos/icon.html) [Label](../components/label) [View source](https://doc.wikimedia.org/codex/latest/components/demos/label.html) [Link](../components/link) [View source](https://doc.wikimedia.org/codex/latest/components/mixins/link.html) [Menus](../components/menus) [View source](https://doc.wikimedia.org/codex/latest/components/demos/menu.html) [Progress",
+      "metadata": {
+        "startIndex": 6219,
+        "endIndex": 7217,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "iew source](https://doc.wikimedia.org/codex/latest/components/mixins/link.html) [Menus](../components/menus) [View source](https://doc.wikimedia.org/codex/latest/components/demos/menu.html) [Progress bar](../components/progress-bar) [View source](https://doc.wikimedia.org/codex/latest/components/demos/progress-bar.html) [Radio button](../components/radio-button) [View source](https://doc.wikimedia.org/codex/latest/components/demos/radio.html) [Search](../components/search) [View source](https://doc.wikimedia.org/codex/latest/components/demos/search-input.html) [Select](../components/select) [View source](https://doc.wikimedia.org/codex/latest/components/demos/select.html) [Switch](../components/switch) [View source](https://doc.wikimedia.org/codex/latest/components/demos/toggle-switch.html) [Tabs](../components/tabs) [View source](https://doc.wikimedia.org/codex/latest/components/demos/tabs.html) [Text area](../components/text-area) [View",
+      "metadata": {
+        "startIndex": 7017,
+        "endIndex": 7970,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "odex/latest/components/demos/toggle-switch.html) [Tabs](../components/tabs) [View source](https://doc.wikimedia.org/codex/latest/components/demos/tabs.html) [Text area](../components/text-area) [View source](https://doc.wikimedia.org/codex/latest/components/demos/text-area.html) [Text field](../components/text-field) [View source](https://doc.wikimedia.org/codex/latest/components/demos/field.html) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7770,
+        "endIndex": 8770,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "re feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8570,
+        "endIndex": 9570,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "card",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:10.546Z",
+    "source_url": "https://designsystems.surf/design-systems/wikimedia"
+  }
+}

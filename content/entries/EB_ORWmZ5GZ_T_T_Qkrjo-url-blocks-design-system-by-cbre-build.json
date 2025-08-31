@@ -1,0 +1,114 @@
+{
+  "id": "EB_ORWmZ5GZ_T_T_Qkrjo",
+  "title": "Blocks Design System by CBRE Build",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/cbrebuild",
+    "ingested_at": "2025-08-30T13:09:36.197Z"
+  },
+  "content": "# CBRE Build Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Blocks from Directories: Components: Block Design System is a collaborative framework promoting design and engineering consistency across CBRE Build digital products, including adaptable guidelines, while maintaining brand identity and user experience. System comprises detailed guidelines for product appearance, pattern usage, and implementation. Block provides repository of components that are used to solve a variety of design problems and to prevent inconsistent user experiences Advertisement Color System View source Icons Typography Voice and Tone Alert banner Button Checkbox Dropdown Link Modal Popover Radio button Segmented control Tabs Text field Tooltip",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# CBRE Build Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Blocks from Directories: Components: Block Design System is a collaborative framework promoting design and engineering consistency across CBRE Build digital products, including adaptable guidelines, while maintaining brand",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 997,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": ": Components: Block Design System is a collaborative framework promoting design and engineering consistency across CBRE Build digital products, including adaptable guidelines, while maintaining brand identity and user experience. System comprises detailed guidelines for product appearance, pattern usage, and implementation. Block provides repository of components that are used to solve a variety of design problems and to prevent inconsistent user experiences Advertisement Color System View source Icons Typography Voice and Tone Alert banner Button Checkbox Dropdown Link Modal Popover Radio button Segmented control Tabs Text field Tooltip",
+      "metadata": {
+        "startIndex": 797,
+        "endIndex": 1796,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "les5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom)",
+      "metadata": {
+        "startIndex": 1596,
+        "endIndex": 2588,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "/inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos)",
+      "metadata": {
+        "startIndex": 2388,
+        "endIndex": 3389,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [BlocksfromCBRE Build](./cbrebuild#up-pixel) [Source](https://blocks.cbrebuild.com/) [Color System](../directories/color-system) [View source](https://blocks.cbrebuild.com/styles/colors) [Icons](../directories/icons) [View source](https://blocks.cbrebuild.com/styles/icons) [Typography](../directories/typography) [View source](https://blocks.cbrebuild.com/styles/type) [Voice and Tone](../directories/voice-and-tone) [View source](https://blocks.cbrebuild.com/help/writing) [Alert banner](../components/alert-banner) [View source](https://blocks.cbrebuild.com/components/alerts) [Button](../components/button) [View",
+      "metadata": {
+        "startIndex": 3189,
+        "endIndex": 4152,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "[View source](https://blocks.cbrebuild.com/help/writing) [Alert banner](../components/alert-banner) [View source](https://blocks.cbrebuild.com/components/alerts) [Button](../components/button) [View source](https://blocks.cbrebuild.com/components/buttons) [Checkbox](../components/checkbox) [View source](https://blocks.cbrebuild.com/components/checkboxes) [Dropdown](../components/dropdown) [View source](https://blocks.cbrebuild.com/components/dropdowns) [Link](../components/link) [View source](https://blocks.cbrebuild.com/components/links) [Modal](../components/modal) [View source](https://blocks.cbrebuild.com/patterns/modals) [Popover](../components/popover) [View source](https://blocks.cbrebuild.com/components/popovers) [Radio button](../components/radio-button) [View source](https://blocks.cbrebuild.com/components/radiobuttons) [Segmented control](../components/segmented-control) [View source](https://blocks.cbrebuild.com/components/toggles) [Tabs](../components/tabs) [View",
+      "metadata": {
+        "startIndex": 3952,
+        "endIndex": 4944,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ps://blocks.cbrebuild.com/components/radiobuttons) [Segmented control](../components/segmented-control) [View source](https://blocks.cbrebuild.com/components/toggles) [Tabs](../components/tabs) [View source](https://blocks.cbrebuild.com/patterns/tabs) [Text field](../components/text-field) [View source](https://blocks.cbrebuild.com/components/textfields) [Tooltip](../components/tooltip) [View source](https://blocks.cbrebuild.com/components/tooltips) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 4744,
+        "endIndex": 5744,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 5544,
+        "endIndex": 6544,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "modal",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:36.197Z",
+    "source_url": "https://designsystems.surf/design-systems/cbrebuild"
+  }
+}

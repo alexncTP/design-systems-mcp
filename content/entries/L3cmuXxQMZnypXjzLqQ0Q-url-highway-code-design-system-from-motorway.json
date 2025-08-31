@@ -1,0 +1,137 @@
+{
+  "id": "L3cmuXxQMZnypXjzLqQ0Q",
+  "title": "Highway Code Design System from Motorway",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/motorway",
+    "ingested_at": "2025-08-30T13:09:50.242Z"
+  },
+  "content": "# Motorway Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Highway Code from Directories: Components: The Highway Code Design System serves as a foundational tool empowering teams to create cohesive and high-quality user experiences across Motorway's digital products, including adaptable guidelines, while maintaining brand identity and user experience. Design System streamlines the design and development process, ensuring consistency across various elements. By adhering to The Highway Code, teams at Motorway can efficiently collaborate and deliver user-centric solutions. Advertisement Color System View source Component overview Component status Elevation Icons Patterns Spacing Storybook Typography Voice and Tone Alert banner Badges Button Checkbox Chip Date picker Empty state Form Icon Link Progress bar Progress indicator Radio button Select Snackbar Switch Text area Text field",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Motorway Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Highway Code from Directories: Components: The Highway Code Design System serves as a foundational tool empowering teams to create cohesive and high-quality user experiences across Motorway's digital products, including",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 994,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "rectories: Components: The Highway Code Design System serves as a foundational tool empowering teams to create cohesive and high-quality user experiences across Motorway's digital products, including adaptable guidelines, while maintaining brand identity and user experience. Design System streamlines the design and development process, ensuring consistency across various elements. By adhering to The Highway Code, teams at Motorway can efficiently collaborate and deliver user-centric solutions. Advertisement Color System View source Component overview Component status Elevation Icons Patterns Spacing Storybook Typography Voice and Tone Alert banner Badges Button Checkbox Chip Date picker Empty state Form Icon Link Progress bar Progress indicator Radio button Select Snackbar Switch Text area Text field",
+      "metadata": {
+        "startIndex": 794,
+        "endIndex": 1778,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Switch Text area Text field",
+      "metadata": {
+        "startIndex": 1578,
+        "endIndex": 2577,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "electric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2377,
+        "endIndex": 3333,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Highway CodefromMotorway](./motorway#up-pixel) [Source](https://thc.motorway.co.uk/0566ad526/p/652544-the-highway-code) [Storybook](https://main--627a354ebc7e47004a3a41f4.chromatic.com/?path=/docs/components-badge--docs) [Color System](../directories/color-system) [View source](https://thc.motorway.co.uk/0566ad526/p/62203b-colors/b/091e40) [Component overview](../directories/component-overview) [View",
+      "metadata": {
+        "startIndex": 3133,
+        "endIndex": 4103,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "nts-badge--docs) [Color System](../directories/color-system) [View source](https://thc.motorway.co.uk/0566ad526/p/62203b-colors/b/091e40) [Component overview](../directories/component-overview) [View source](https://thc.motorway.co.uk/0566ad526/p/913798-components/b/893c50) [Component status](../directories/component-status) [View source](https://thc.motorway.co.uk/0566ad526/p/01362e-component-status) [Elevation](../directories/elevation) [View source](https://thc.motorway.co.uk/0566ad526/p/61b6f2-effects) [Icons](../directories/icons) [View source](https://thc.motorway.co.uk/0566ad526/p/3064fa-icons/b/45e7b2) [Patterns](../directories/patterns) [View source](https://thc.motorway.co.uk/0566ad526/p/90d02b-patterns/b/58cfbb) [Spacing](../directories/spacing) [View source](https://thc.motorway.co.uk/0566ad526/p/3777a1-spacing/b/674371) [Storybook](../directories/storybook) [View source](https://main--627a354ebc7e47004a3a41f4.chromatic.com/?path=/docs/components-badge--docs)",
+      "metadata": {
+        "startIndex": 3903,
+        "endIndex": 4889,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "://thc.motorway.co.uk/0566ad526/p/3777a1-spacing/b/674371) [Storybook](../directories/storybook) [View source](https://main--627a354ebc7e47004a3a41f4.chromatic.com/?path=/docs/components-badge--docs) [Typography](../directories/typography) [View source](https://thc.motorway.co.uk/0566ad526/p/592dc1-typography/b/30403b) [Voice and Tone](../directories/voice-and-tone) [View source](https://thc.motorway.co.uk/0566ad526/p/2237c1-introduction) [Alert banner](../components/alert-banner) [View source](https://thc.motorway.co.uk/0566ad526/p/47b614-notifications) [Badges](../components/badges) [View source](https://thc.motorway.co.uk/0566ad526/p/3203d2-badge/b/21f0dd) [Button](../components/button) [View source](https://thc.motorway.co.uk/0566ad526/p/25cef8-button/b/7257c8) [Checkbox](../components/checkbox) [View source](https://thc.motorway.co.uk/0566ad526/p/547f70-checkbox/b/88c271) [Chip](../components/chip) [View source](https://thc.motorway.co.uk/0566ad526/p/726649-chip/b/37f657) [Date",
+      "metadata": {
+        "startIndex": 4689,
+        "endIndex": 5687,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ts/checkbox) [View source](https://thc.motorway.co.uk/0566ad526/p/547f70-checkbox/b/88c271) [Chip](../components/chip) [View source](https://thc.motorway.co.uk/0566ad526/p/726649-chip/b/37f657) [Date picker](../components/date-picker) [View source](https://thc.motorway.co.uk/0566ad526/p/89b720-date-picker/b/89b672) [Empty state](../components/empty-state) [View source](https://thc.motorway.co.uk/0566ad526/p/06af35-empty-state) [Form](../components/form) [View source](https://thc.motorway.co.uk/0566ad526/p/42e3d8-forms-in-progress/b/472f1b) [Icon](../directories/icons) [View source](https://thc.motorway.co.uk/0566ad526/p/914733-icon/b/962b40) [Link](../components/link) [View source](https://thc.motorway.co.uk/0566ad526/p/21c9ea-hyperlink/b/862409) [Progress bar](../components/progress-bar) [View source](https://thc.motorway.co.uk/0566ad526/p/219d04-progress-bar/b/209b96) [Progress indicator](../components/progress-indicator) [View",
+      "metadata": {
+        "startIndex": 5487,
+        "endIndex": 6431,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "nk/b/862409) [Progress bar](../components/progress-bar) [View source](https://thc.motorway.co.uk/0566ad526/p/219d04-progress-bar/b/209b96) [Progress indicator](../components/progress-indicator) [View source](https://thc.motorway.co.uk/0566ad526/p/20b2a6-loadingindicator/b/614a40) [Radio button](../components/radio-button) [View source](https://thc.motorway.co.uk/0566ad526/p/187dff-radio/b/88c271) [Select](../components/select) [View source](https://thc.motorway.co.uk/0566ad526/p/69a8a1-select/b/57226a) [Snackbar](../components/snackbar) [View source](https://thc.motorway.co.uk/0566ad526/p/149e7a-toast/b/32e1a2) [Switch](../components/switch) [View source](https://thc.motorway.co.uk/0566ad526/p/565db8-toggle/b/74cb51) [Text area](../components/text-area) [View source](https://thc.motorway.co.uk/0566ad526/p/99c1ec-textarea/b/544ae1) [Text field](../components/text-field) [View source](https://thc.motorway.co.uk/0566ad526/p/669ccd-input/b/3867f1) [Design Systems](../design-systems) [Apple",
+      "metadata": {
+        "startIndex": 6231,
+        "endIndex": 7232,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": ".uk/0566ad526/p/99c1ec-textarea/b/544ae1) [Text field](../components/text-field) [View source](https://thc.motorway.co.uk/0566ad526/p/669ccd-input/b/3867f1) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7032,
+        "endIndex": 8032,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "form",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:50.242Z",
+    "source_url": "https://designsystems.surf/design-systems/motorway"
+  }
+}

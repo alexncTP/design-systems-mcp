@@ -48,12 +48,10 @@ function generateContentManifest(): ContentManifest {
 	return manifest;
 }
 
-// Run the script if called directly
-if (require.main === module) {
-	try {
-		generateContentManifest();
-	} catch (error) {
-		console.error('❌ Failed to generate manifest:', error);
-		process.exit(1);
-	}
+// Always run when this script is executed
+try {
+	generateContentManifest();
+} catch (error) {
+	console.error('❌ Failed to generate manifest:', error);
+	process.exit(1);
 }

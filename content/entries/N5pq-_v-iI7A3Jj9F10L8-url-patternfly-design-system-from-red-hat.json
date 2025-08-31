@@ -1,0 +1,173 @@
+{
+  "id": "N5pq-_v-iI7A3Jj9F10L8",
+  "title": "PatternFly Design System from Red Hat",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/redhat",
+    "ingested_at": "2025-08-30T13:09:57.308Z"
+  },
+  "content": "# Red Hat Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe PatternFly from Directories: Components: PatternFly is an open-source Design System maintained by Red Hat, fostering consistency and usability in enterprise products. It provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences. Design System includes foundations, components, layouts, patterns, accessibility guidelines, UX writing style guide, and extensions that provide reusable code for consistency across different platforms. Advertisement Accessibility View source Color System Component overview Data visualization Repository Icons Layout Patterns Spacing Typography Voice and Tone Accordion Action bar Action list Alert banner App bar Avatar Badges Breadcrumb Button Cards Checkbox Chip Code snippet Data table Date picker Divider Drawer Dropdown Empty state Form Help text Icon List Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Select Sidebar Slider Switch Tabs Tag Text area Text field Tooltip Tree view",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Red Hat Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe PatternFly from Directories: Components: PatternFly is an open-source Design System maintained by Red Hat, fostering consistency and usability in enterprise products.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 941,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "test in Design Systems Subscribe PatternFly from Directories: Components: PatternFly is an open-source Design System maintained by Red Hat, fostering consistency and usability in enterprise products. It provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences. Design System includes foundations, components, layouts, patterns, accessibility guidelines, UX writing style guide, and extensions that provide reusable code for consistency across different platforms. Advertisement Accessibility View source Color System Component overview Data visualization Repository Icons Layout Patterns Spacing Typography Voice and Tone Accordion Action bar Action list Alert banner App bar Avatar Badges Breadcrumb Button Cards Checkbox Chip Code snippet Data table Date picker Divider Drawer Dropdown Empty state Form Help text Icon List Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search",
+      "metadata": {
+        "startIndex": 741,
+        "endIndex": 1738,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Cards Checkbox Chip Code snippet Data table Date picker Divider Drawer Dropdown Empty state Form Help text Icon List Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Select Sidebar Slider Switch Tabs Tag Text area Text field Tooltip Tree view",
+      "metadata": {
+        "startIndex": 1538,
+        "endIndex": 2522,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek)",
+      "metadata": {
+        "startIndex": 2322,
+        "endIndex": 3309,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ntir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [PatternFlyfromRed Hat](./redhat#up-pixel) [Source](https://www.patternfly.org/) [Repository](https://github.com/patternfly) [Accessibility](../directories/accessibility) [View",
+      "metadata": {
+        "startIndex": 3109,
+        "endIndex": 4084,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "[Ad](../advertisement) [PatternFlyfromRed Hat](./redhat#up-pixel) [Source](https://www.patternfly.org/) [Repository](https://github.com/patternfly) [Accessibility](../directories/accessibility) [View source](https://www.patternfly.org/accessibility/accessibility-fundamentals) [Color System](../directories/color-system) [View source](https://www.patternfly.org/design-foundations/colors) [Component overview](../directories/component-overview) [View source](https://www.patternfly.org/components/all-components) [Data visualization](../directories/data-visualization) [View source](https://www.patternfly.org/charts/about) [Repository](../directories/repository) [View source](https://github.com/patternfly) [Icons](../directories/icons) [View source](https://www.patternfly.org/design-foundations/icons) [Layout](../directories/layout) [View source](https://www.patternfly.org/layouts/about) [Patterns](../directories/patterns) [View source](https://www.patternfly.org/patterns/about)",
+      "metadata": {
+        "startIndex": 3884,
+        "endIndex": 4871,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "foundations/icons) [Layout](../directories/layout) [View source](https://www.patternfly.org/layouts/about) [Patterns](../directories/patterns) [View source](https://www.patternfly.org/patterns/about) [Spacing](../directories/spacing) [View source](https://www.patternfly.org/design-foundations/spacers) [Typography](../directories/typography) [View source](https://www.patternfly.org/design-foundations/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://www.patternfly.org/ux-writing/about) [Accordion](../components/accordion) [View source](https://www.patternfly.org/components/accordion) [Action bar](../components/action-bar) [View source](https://www.patternfly.org/components/toolbar) [Action list](../components/action-list) [View source](https://www.patternfly.org/components/simple-list) [Alert banner](../components/alert-banner) [View source](https://www.patternfly.org/components/alert) [App bar](../components/app-bar) [View",
+      "metadata": {
+        "startIndex": 4671,
+        "endIndex": 5640,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "source](https://www.patternfly.org/components/simple-list) [Alert banner](../components/alert-banner) [View source](https://www.patternfly.org/components/alert) [App bar](../components/app-bar) [View source](https://www.patternfly.org/components/masthead) [Avatar](../components/avatar) [View source](https://www.patternfly.org/components/avatar) [Badges](../components/badges) [View source](https://www.patternfly.org/components/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://www.patternfly.org/components/breadcrumb) [Button](../components/button) [View source](https://www.patternfly.org/components/button) [Cards](../components/cards) [View source](https://www.patternfly.org/components/card) [Checkbox](../components/checkbox) [View source](https://www.patternfly.org/components/forms/checkbox) [Chip](../components/chip) [View source](https://www.patternfly.org/components/chip) [Code snippet](../components/code-snippet) [View",
+      "metadata": {
+        "startIndex": 5440,
+        "endIndex": 6396,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "iew source](https://www.patternfly.org/components/forms/checkbox) [Chip](../components/chip) [View source](https://www.patternfly.org/components/chip) [Code snippet](../components/code-snippet) [View source](https://www.patternfly.org/components/code-block) [Data table](../components/data-table) [View source](https://www.patternfly.org/components/table) [Date picker](../components/date-picker) [View source](https://www.patternfly.org/components/date-and-time/date-picker) [Divider](../components/divider) [View source](https://www.patternfly.org/components/divider) [Drawer](../components/drawer) [View source](https://www.patternfly.org/components/drawer) [Dropdown](../components/dropdown) [View source](https://www.patternfly.org/components/menus/dropdown) [Empty state](../components/empty-state) [View source](https://www.patternfly.org/components/empty-state) [Form](../components/form) [View source](https://www.patternfly.org/components/forms/form) [Help text](../components/help-text)",
+      "metadata": {
+        "startIndex": 6196,
+        "endIndex": 7194,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "state) [View source](https://www.patternfly.org/components/empty-state) [Form](../components/form) [View source](https://www.patternfly.org/components/forms/form) [Help text](../components/help-text) [View source](https://www.patternfly.org/components/helper-text) [Icon](../directories/icons) [View source](https://www.patternfly.org/components/icon) [List](../components/list) [View source](https://www.patternfly.org/components/list) [Menus](../components/menus) [View source](https://www.patternfly.org/components/menus/menu) [Modal](../components/modal) [View source](https://www.patternfly.org/components/modal) [Pagination](../components/pagination) [View source](https://www.patternfly.org/components/pagination) [Popover](../components/popover) [View source](https://www.patternfly.org/components/popover) [Progress bar](../components/progress-bar) [View source](https://www.patternfly.org/components/progress) [Progress indicator](../components/progress-indicator) [View",
+      "metadata": {
+        "startIndex": 6994,
+        "endIndex": 7975,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "atternfly.org/components/popover) [Progress bar](../components/progress-bar) [View source](https://www.patternfly.org/components/progress) [Progress indicator](../components/progress-indicator) [View source](https://www.patternfly.org/components/spinner) [Radio button](../components/radio-button) [View source](https://www.patternfly.org/components/forms/radio) [Search](../components/search) [View source](https://www.patternfly.org/components/search-input) [Select](../components/select) [View source](https://www.patternfly.org/components/menus/select) [Sidebar](../components/sidebar) [View source](https://www.patternfly.org/components/navigation) [Slider](../components/slider) [View source](https://www.patternfly.org/components/slider) [Switch](../components/switch) [View source](https://www.patternfly.org/components/switch) [Tabs](../components/tabs) [View source](https://www.patternfly.org/components/tabs) [Tag](../components/tag) [View",
+      "metadata": {
+        "startIndex": 7775,
+        "endIndex": 8727,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "](../components/switch) [View source](https://www.patternfly.org/components/switch) [Tabs](../components/tabs) [View source](https://www.patternfly.org/components/tabs) [Tag](../components/tag) [View source](https://www.patternfly.org/components/label) [Text area](../components/text-area) [View source](https://www.patternfly.org/components/forms/text-area) [Text field](../components/text-field) [View source](https://www.patternfly.org/components/forms/text-input) [Tooltip](../components/tooltip) [View source](https://www.patternfly.org/components/tooltip) [Tree view](../components/tree-view) [View source](https://www.patternfly.org/components/tree-view) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf)",
+      "metadata": {
+        "startIndex": 8527,
+        "endIndex": 9501,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 9301,
+        "endIndex": 10301,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "form",
+      "modal",
+      "card",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:57.308Z",
+    "source_url": "https://designsystems.surf/design-systems/redhat"
+  }
+}

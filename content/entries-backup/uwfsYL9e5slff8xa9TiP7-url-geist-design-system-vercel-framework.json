@@ -1,0 +1,136 @@
+{
+  "id": "uwfsYL9e5slff8xa9TiP7",
+  "title": "Geist Design System – Vercel Framework",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/vercel",
+    "ingested_at": "2025-08-30T13:10:09.006Z"
+  },
+  "content": "# Vercel Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Geist from Directories: Components: Geist Design System serves as a comprehensive framework for creating cohesive and uniform web experiences across Vercel products, include brand guidelines for Next.js and Turbo. Design System provides versatile components library, complete with live examples, enabling developers to efficiently craft web interfaces that adhere to the established design principles and branding of Vercel and its associated projects. Advertisement Color System View source Component overview Icons Layout Typography Accordion Avatar Badges Breadcrumb Button Checkbox Code snippet Combobox Data table Date picker Drawer Empty state Menus Modal Pagination Progress bar Progress indicator Radio button Segmented control Select Slider Snackbar Switch Tabs Text area Text field Tooltip Tree view Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [GeistfromVercel](./vercel#up-pixel) [Source](https://vercel.com/design/introduction) [Color System](../directories/color-system) [View source](https://vercel.com/design/color) [Component overview](../directories/component-overview) [View source](https://vercel.com/design/components) [Icons](../directories/icons) [View source](https://vercel.com/design/icons) [Layout](../directories/layout) [View source](https://vercel.com/design/grid) [Typography](../directories/typography) [View source](https://vercel.com/design/text) [Accordion](../components/accordion) [View source](https://vercel.com/design/collapse) [Avatar](../components/avatar) [View source](https://vercel.com/design/avatar) [Badges](../components/badges) [View source](https://vercel.com/design/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://vercel.com/design/breadcrumbs) [Button](../components/button) [View source](https://vercel.com/design/button) [Checkbox](../components/checkbox) [View source](https://vercel.com/design/checkbox) [Code snippet](../components/code-snippet) [View source](https://vercel.com/design/code-block) [Combobox](../components/combobox) [View source](https://vercel.com/design/combobox) [Data table](../components/data-table) [View source](https://vercel.com/design/table) [Date picker](../components/date-picker) [View source](https://vercel.com/design/calendar) [Drawer](../components/drawer) [View source](https://vercel.com/design/drawer) [Empty state](../components/empty-state) [View source](https://vercel.com/design/empty-state) [Menus](../components/menus) [View source](https://vercel.com/design/menu) [Modal](../components/modal) [View source](https://vercel.com/design/modal) [Pagination](../components/pagination) [View source](https://vercel.com/design/pagination) [Progress bar](../components/progress-bar) [View source](https://vercel.com/design/progress) [Progress indicator](../components/progress-indicator) [View source](https://vercel.com/design/spinner) [Radio button](../components/radio-button) [View source](https://vercel.com/design/radio) [Segmented control](../components/segmented-control) [View source](https://vercel.com/design/switch) [Select](../components/select) [View source](https://vercel.com/design/select) [Slider](../components/slider) [View source](https://vercel.com/design/slider) [Snackbar](../components/snackbar) [View source](https://vercel.com/design/toast) [Switch](../components/switch) [View source](https://vercel.com/design/toggle) [Tabs](../components/tabs) [View source](https://vercel.com/design/tabs) [Text area](../components/text-area) [View source](https://vercel.com/design/textarea) [Text field](../components/text-field) [View source](https://vercel.com/design/input) [Tooltip](../components/tooltip) [View source](https://vercel.com/design/tooltip) [Tree view](../components/tree-view) [View source](https://vercel.com/design/file-tree) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Vercel Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Geist from Directories: Components: Geist Design System serves as a comprehensive framework for creating cohesive and uniform web experiences across Vercel products, include brand guidelines for Next.js and Turbo.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 988,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ectories: Components: Geist Design System serves as a comprehensive framework for creating cohesive and uniform web experiences across Vercel products, include brand guidelines for Next.js and Turbo. Design System provides versatile components library, complete with live examples, enabling developers to efficiently craft web interfaces that adhere to the established design principles and branding of Vercel and its associated projects. Advertisement Color System View source Component overview Icons Layout Typography Accordion Avatar Badges Breadcrumb Button Checkbox Code snippet Combobox Data table Date picker Drawer Empty state Menus Modal Pagination Progress bar Progress indicator Radio button Segmented control Select Slider Snackbar Switch Tabs Text area Text field Tooltip Tree view Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints)",
+      "metadata": {
+        "startIndex": 788,
+        "endIndex": 1785,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "esign .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon",
+      "metadata": {
+        "startIndex": 1585,
+        "endIndex": 2583,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "[GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2383,
+        "endIndex": 3311,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [GeistfromVercel](./vercel#up-pixel) [Source](https://vercel.com/design/introduction) [Color System](../directories/color-system) [View source](https://vercel.com/design/color) [Component overview](../directories/component-overview) [View source](https://vercel.com/design/components) [Icons](../directories/icons) [View source](https://vercel.com/design/icons) [Layout](../directories/layout) [View",
+      "metadata": {
+        "startIndex": 3111,
+        "endIndex": 4076,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "/directories/component-overview) [View source](https://vercel.com/design/components) [Icons](../directories/icons) [View source](https://vercel.com/design/icons) [Layout](../directories/layout) [View source](https://vercel.com/design/grid) [Typography](../directories/typography) [View source](https://vercel.com/design/text) [Accordion](../components/accordion) [View source](https://vercel.com/design/collapse) [Avatar](../components/avatar) [View source](https://vercel.com/design/avatar) [Badges](../components/badges) [View source](https://vercel.com/design/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://vercel.com/design/breadcrumbs) [Button](../components/button) [View source](https://vercel.com/design/button) [Checkbox](../components/checkbox) [View source](https://vercel.com/design/checkbox) [Code snippet](../components/code-snippet) [View source](https://vercel.com/design/code-block) [Combobox](../components/combobox) [View",
+      "metadata": {
+        "startIndex": 3876,
+        "endIndex": 4839,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "nts/checkbox) [View source](https://vercel.com/design/checkbox) [Code snippet](../components/code-snippet) [View source](https://vercel.com/design/code-block) [Combobox](../components/combobox) [View source](https://vercel.com/design/combobox) [Data table](../components/data-table) [View source](https://vercel.com/design/table) [Date picker](../components/date-picker) [View source](https://vercel.com/design/calendar) [Drawer](../components/drawer) [View source](https://vercel.com/design/drawer) [Empty state](../components/empty-state) [View source](https://vercel.com/design/empty-state) [Menus](../components/menus) [View source](https://vercel.com/design/menu) [Modal](../components/modal) [View source](https://vercel.com/design/modal) [Pagination](../components/pagination) [View source](https://vercel.com/design/pagination) [Progress bar](../components/progress-bar) [View source](https://vercel.com/design/progress) [Progress indicator](../components/progress-indicator) [View",
+      "metadata": {
+        "startIndex": 4639,
+        "endIndex": 5629,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "source](https://vercel.com/design/pagination) [Progress bar](../components/progress-bar) [View source](https://vercel.com/design/progress) [Progress indicator](../components/progress-indicator) [View source](https://vercel.com/design/spinner) [Radio button](../components/radio-button) [View source](https://vercel.com/design/radio) [Segmented control](../components/segmented-control) [View source](https://vercel.com/design/switch) [Select](../components/select) [View source](https://vercel.com/design/select) [Slider](../components/slider) [View source](https://vercel.com/design/slider) [Snackbar](../components/snackbar) [View source](https://vercel.com/design/toast) [Switch](../components/switch) [View source](https://vercel.com/design/toggle) [Tabs](../components/tabs) [View source](https://vercel.com/design/tabs) [Text area](../components/text-area) [View source](https://vercel.com/design/textarea) [Text field](../components/text-field) [View source](https://vercel.com/design/input)",
+      "metadata": {
+        "startIndex": 5429,
+        "endIndex": 6428,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "://vercel.com/design/tabs) [Text area](../components/text-area) [View source](https://vercel.com/design/textarea) [Text field](../components/text-field) [View source](https://vercel.com/design/input) [Tooltip](../components/tooltip) [View source](https://vercel.com/design/tooltip) [Tree view](../components/tree-view) [View source](https://vercel.com/design/file-tree) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 6228,
+        "endIndex": 7228,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "s://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7028,
+        "endIndex": 8028,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "modal",
+      "input",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:09.006Z",
+    "source_url": "https://designsystems.surf/design-systems/vercel"
+  }
+}

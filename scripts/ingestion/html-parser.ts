@@ -5,7 +5,7 @@
 import { ContentEntry, ContentMetadata, SourceType } from "../../types/content";
 import { chunkBySection } from "../../src/lib/chunker";
 import { generateId } from "../../src/lib/id-generator";
-// Note: cheerio will need to be installed: npm install cheerio
+import * as cheerio from 'cheerio';
 
 export interface HTMLParseOptions {
   metadata?: Partial<ContentMetadata>;
@@ -21,51 +21,124 @@ export async function parseHTML(
   sourcePath: string,
   options: HTMLParseOptions = {}
 ): Promise<ContentEntry> {
-  // For now, we'll use a simple regex-based approach
-  // In production, use cheerio for better parsing
-
-  // Remove script and style tags
-  let cleanedHtml = htmlContent
-    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
-    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
-    .replace(/<noscript[^>]*>[\s\S]*?<\/noscript>/gi, '');
-
+  // Load HTML with cheerio
+  const $ = cheerio.load(htmlContent);
+  
+  // Remove unwanted elements entirely
+  $('script').remove();
+  $('style').remove();
+  $('noscript').remove();
+  $('svg').remove();
+  $('iframe').remove();
+  $('img').remove(); // Remove images as they don't contribute text
+  
+  // Don't remove elements based on classes or styles - just extract their text
+  // Many modern frameworks use these extensively
+  
   // Extract title
-  const titleMatch = cleanedHtml.match(/<title[^>]*>(.*?)<\/title>/i);
-  const h1Match = cleanedHtml.match(/<h1[^>]*>(.*?)<\/h1>/i);
-  const title = cleanText(titleMatch?.[1] || h1Match?.[1] || 'Untitled Document');
-
-  // Convert HTML to structured text
-  let textContent = cleanedHtml
-    // Convert headings to markdown-style
-    .replace(/<h1[^>]*>(.*?)<\/h1>/gi, '\n# $1\n')
-    .replace(/<h2[^>]*>(.*?)<\/h2>/gi, '\n## $1\n')
-    .replace(/<h3[^>]*>(.*?)<\/h3>/gi, '\n### $1\n')
-    .replace(/<h4[^>]*>(.*?)<\/h4>/gi, '\n#### $1\n')
-    .replace(/<h5[^>]*>(.*?)<\/h5>/gi, '\n##### $1\n')
-    .replace(/<h6[^>]*>(.*?)<\/h6>/gi, '\n###### $1\n')
-    // Convert paragraphs and divs
-    .replace(/<p[^>]*>(.*?)<\/p>/gi, '\n$1\n')
-    .replace(/<div[^>]*>(.*?)<\/div>/gi, '\n$1\n')
-    // Convert lists
-    .replace(/<li[^>]*>(.*?)<\/li>/gi, '• $1\n')
-    .replace(/<ul[^>]*>/gi, '\n')
-    .replace(/<\/ul>/gi, '\n')
-    .replace(/<ol[^>]*>/gi, '\n')
-    .replace(/<\/ol>/gi, '\n')
-    // Convert code blocks
-    .replace(/<code[^>]*>(.*?)<\/code>/gi, '`$1`')
-    .replace(/<pre[^>]*>(.*?)<\/pre>/gi, '\n```\n$1\n```\n')
-    // Convert links (preserve URL info)
-    .replace(/<a[^>]+href=["']([^"']+)["'][^>]*>(.*?)<\/a>/gi, '$2 [$1]')
-    // Remove remaining tags
-    .replace(/<[^>]+>/g, '')
-    // Clean up excessive whitespace
-    .replace(/\n{3,}/g, '\n\n')
-    .replace(/[ \t]+/g, ' ')
+  const title = $('title').text() || $('h1').first().text() || 'Untitled Document';
+  
+  // Build structured content
+  const contentParts: string[] = [];
+  const seenTexts = new Set<string>(); // Track seen text to avoid duplicates
+  
+  // Extract main content areas
+  const mainContent = $('main, article, [role="main"]').first();
+  const contentRoot = mainContent.length > 0 ? mainContent : $('body');
+  
+  // First, extract all headings to maintain structure
+  $('h1, h2, h3, h4, h5, h6').each((_, elem) => {
+    const $elem = $(elem);
+    const tagName = elem.tagName.toLowerCase();
+    const text = $elem.text().trim();
+    
+    // Skip empty or already seen
+    if (!text || seenTexts.has(text)) return;
+    seenTexts.add(text);
+    
+    // Format based on tag type
+    switch(tagName) {
+      case 'h1':
+        contentParts.push(`\n# ${text}\n`);
+        break;
+      case 'h2':
+        contentParts.push(`\n## ${text}\n`);
+        break;
+      case 'h3':
+        contentParts.push(`\n### ${text}\n`);
+        break;
+      case 'h4':
+        contentParts.push(`\n#### ${text}\n`);
+        break;
+      case 'h5':
+        contentParts.push(`\n##### ${text}\n`);
+        break;
+      case 'h6':
+        contentParts.push(`\n###### ${text}\n`);
+        break;
+    }
+  });
+  
+  // Then extract paragraphs and list items
+  $('p, li, td, th, div').each((_, elem) => {
+    const $elem = $(elem);
+    const tagName = elem.tagName.toLowerCase();
+    
+    // Get direct text content (not from children to avoid duplication)
+    const directText = $elem.clone().children().remove().end().text().trim();
+    
+    // Skip empty, very short, already seen, or numeric-only content
+    if (!directText || directText.length < 3 || seenTexts.has(directText)) return;
+    if (directText.match(/^[0-9.:,\s\/\-]+$/)) return;
+    
+    seenTexts.add(directText);
+    
+    // Format based on tag type
+    if (tagName === 'li') {
+      contentParts.push(`• ${directText}`);
+    } else {
+      contentParts.push(directText);
+    }
+  });
+  
+  // Extract links separately
+  const links: string[] = [];
+  $('a[href]').each((_, elem) => {
+    const $elem = $(elem);
+    const href = $elem.attr('href');
+    const text = $elem.text().trim();
+    
+    if (href && text && text.length > 1) {
+      // Skip anchor links and javascript links
+      if (!href.startsWith('#') && !href.startsWith('javascript:')) {
+        links.push(`[${text}](${href})`);
+      }
+    }
+  });
+  
+  // Combine content
+  let textContent = contentParts.join('\n');
+  
+  // Add links section if we have links
+  if (links.length > 0) {
+    // Deduplicate links
+    const uniqueLinks = [...new Set(links)];
+    textContent += '\n\n## Links\n' + uniqueLinks.join('\n');
+  }
+  
+  // Clean up the final text
+  textContent = textContent
+    // Remove excessive newlines
+    .replace(/\n{4,}/g, '\n\n\n')
+    // Remove excessive spaces
+    .replace(/[ \t]{2,}/g, ' ')
+    // Trim each line
+    .split('\n')
+    .map(line => line.trim())
+    .join('\n')
     .trim();
-
-  // Clean the text
+  
+  // Final cleaning
   textContent = cleanText(textContent);
 
   // Extract metadata hints from content

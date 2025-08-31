@@ -1,0 +1,272 @@
+{
+  "id": "6uTMtUun9jgSo4ReZOXEp",
+  "title": "Glossary",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/glossary",
+    "ingested_at": "2025-08-30T13:09:01.210Z"
+  },
+  "content": "# Glossary ## Accessibility ## Atomic Design ## Atom ## Breakpoints ## Color system ## Component ## Component library ## Data visualization ## Design language ## Design System ## Design System principles ## Design token ## Elevation ## Figma ## Framework ## Grid system ## Icons ## Information architecture ## Layout ## Material Design ## Molecule ## Motion ## Organism ## Pattern ## Prototype ## Properties ## Repository ## Responsive ## Single Source of Truth ## Slots ## Spacing ## States ## Storybook ## Style guide ## System architecture ## Theming ## Typography ## UI Kit ## Usability ## User-centered design ## User Experience (UX) ## User Interface (UI) ## Visual hierarchy ## Voice and Tone ## Wireframes ## What is a Design System Glossary? Systems Directories Components Articles Blueprints Guides Biweekly Digest Created by Design System Principles Grid System Style Guide Keep up with the latest in Design Systems Subscribe Available in the Database Accessibility ensures designs are usable by people with disabilities, adhering to guidelines such as WCAG. It involves considering color contrast, screen readers, keyboard navigation, and more to create inclusive digital experiences for all users. Database Advertisement Atomic Design is a methodology for creating , organizing hierarchically. It begins with the smallest elements (atoms) and builds up to molecules, organisms, templates, and pages, promoting scalability and consistency. Atom in refers to the smallest, indivisible elements of a design—like , , or . These are foundational that, when combined, form more complex UI elements. Breakpoints define specific screen widths at which a design changes to provide a responsive experience. These are essential in responsive web design to ensure across devices like desktops, tablets, and smartphones. Color system organizes a palette into semantically understandable and reusable values, with variations for different states and contexts. It ensures consistency across a UI and helps in achieving brand alignment and standards. Component is a reusable, self-contained UI element, like a or . It encapsulates HTML, CSS, and sometimes JavaScript functionality, enabling designers and developers to build modular and scalable interfaces. Component library is a collection of pre-built, reusable UI , each styled consistently according to a . It streamlines the design and development process by promoting reuse and reducing design inconsistencies. Data visualization transforms complex data sets into visual formats like charts, graphs, and maps. It enables users to understand trends, patterns, and insights at a glance, aiding in decision-making and storytelling. Design language is a unified set of design principles, guidelines, and visual elements that ensure consistency across products. It encompasses , , , and , shaping the overall . Design System is a set of standards, , and guidelines that provide a consistent design language across digital products. It promotes efficiency, scalability, and cohesion in design and development workflows. Design System principles are foundational guidelines that shape the design and development of a system. They focus on consistency, scalability, , and , ensuring a unified across platforms. Design tokens are variables used to store design values such as , , and other values. They ensure consistency across platforms by providing a for design-related properties in a system. Elevation refers to the visual layering of UI elements through shadows or z-index, creating depth and hierarchy in design. It's commonly used in , , , , and other to indicate the importance and interactivity of elements. Figma is a web-based design and prototyping tool that allows teams to collaborate in real time. It supports the creation of UI/UX designs, prototyping, and management, enhancing workflow efficiency. Framework is a pre-built structure of code and components that developers use to build applications. Popular front-end frameworks like React, Vue, and Angular simplify the development process by providing reusable solutions. Grid system is a layout framework that helps align and organize content on a page. It creates visual structure and balance, ensuring responsive, consistent designs across different devices and screen sizes. Icons are small, graphic symbols used to represent actions, objects, or ideas. They improve user understanding by visually conveying meaning, often simplifying text-heavy interfaces and enhancing navigation. Information architecture refers to the organization and structure of information within a product. It helps users find and navigate content efficiently, improving overall and . Layout refers to the arrangement of elements on a page or screen. It ensures visual hierarchy, balance, and by organizing in a way that supports user goals and aligns with the design's purpose. Material Design is a design system created by that emphasizes consistency across devices. It uses principles like grid-based , responsive animations, and like shadows to create intuitive . In , a molecule is a group of atoms combined to form a more complex UI element, such as a search ( and ). Molecules are the building blocks for more intricate and organisms. Motion in design refers to the use of animation and transitions to create fluid interactions. It guides users through an interface, adds context, and enhances by making digital environments feel more responsive. In , an organism is a relatively complex group of molecules that function together as a unit, like a navigation bar. It is one of the higher levels in the design hierarchy, built from smaller atomic units. Pattern is a repeatable design solution to common problems. It provides best practices and consistency across a product, improving and reducing cognitive load for users. Prototype is interactive, low- to high-fidelity representations of a product. They simulate the , allowing designers and stakeholders to test and refine interactions before full development begins. Properties in design refer to attributes assigned to elements, such as , size, or . They are the building blocks of style, helping define how look and behave across various . Repository is a storage location where code, design assets, or documentation are stored and managed. In , repositories ensure that all , guidelines, and are accessible and maintained consistently. Responsive design adapts layouts to various screen sizes and devices, providing an optimal on mobile, tablet, and desktop. It uses breakpoints, fluid grids, and flexible images to ensure content adjusts dynamically. Single Source of Truth refers to having a centralized reference point for design or development assets. In a , this ensures that all teams use consistent , , and guidelines, reducing inconsistencies. Slots refer to placeholder areas within that allow for content to be dynamically inserted. They offer flexibility, enabling the customization of reusable components without altering their core structure or functionality. Spacing refers to the use of padding, margins, and gaps between UI elements. Proper spacing ensures clarity, improves readability, and enhances the overall aesthetic and of a design, contributing to a balanced . States are variations of UI that indicate their behavior in different scenarios, such as hover, active, or disabled states. They provide users with visual feedback, improving interactivity and the overall . Storybook is an open-source tool for developing UI in isolation. It allows designers and developers to create, view, and test individual components outside the application, ensuring reusability and consistency. Style guide is a comprehensive document that outlines the rules for , , , and other design elements. It ensures consistency across all and reflects the brand’s visual identity. System architecture in design refers to the overall structure of a , including its , , and documentation. It provides a blueprint for how the system scales and integrates across teams and platforms. Theming refers to the application of specific styles, such as and , to alter the appearance of a while keeping the underlying structure intact. It allows for customization without changing the core . Typography refers to the style, arrangement, and appearance of text in a design. It plays a critical role in readability, visual hierarchy, and , impacting how users perceive and interact with content. UI Kit is a collection of pre-designed UI elements, like , , and , that are reusable across projects. It provides a set of standardized , enabling faster design and development while maintaining consistency. Usability measures how easily and efficiently users can interact with a product or system. It focuses on ease of use, user satisfaction, and error reduction, ensuring that users can achieve their goals with minimal friction. User-centered design is a design approach that prioritizes the needs, behaviors, and goals of the user. It involves user research, prototyping, and testing to create intuitive, user-friendly products that solve real problems. User experience (UX) encompasses all aspects of a user's interaction with a product, focusing on , functionality, and emotional satisfaction. A well-designed UX ensures users find value, efficiency, and enjoyment in the product. User interface (UI) refers to the visual elements through which users interact with a product. It includes components like , , and , focusing on aesthetics, , and user interaction. Visual hierarchy organizes elements in a design by importance, guiding users' attention and helping them process information effectively. Through size, , and , designers prioritize key content and improve . Voice and tone refers to the consistent personality of a brand, while tone changes based on context and audience. Together, they shape how users perceive the brand, influencing emotional engagement and the overall . Wireframes are low-fidelity, simplified visual representations of a design's structure. They outline key elements like navigation, content layout, and functionality, serving as the foundation for the final visual design. Glossary explains key Design System concepts and terms with clear descriptions, providing links to directories and components database, along with practical guidelines to enhance understanding and usage Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](./design-systems) [Directories24](./directories) [Components55](./components) [Articles5](./articles) [Blueprints7](./blueprints) [Guides18](./guides) [Glossary46](./glossary) [012Biweekly Digest](./subscribe) [Request Ad](./advertisement) [Ilya Greben](https://ilyagreben.com) [Accessibility](./glossary#accessibility) [Atomic Design](./glossary#atomic-design) [Atom](./glossary#atom) [Breakpoints](./glossary#breakpoints) [Color system](./glossary#color-system) [Component](./glossary#component) [Component library](./glossary#component-library) [Data visualization](./glossary#data-visualization) [Design language](./glossary#design-language) [Design System](./glossary#design-system) [Design System Principles](./glossary#design-system-principles) [Design token](./glossary#design-token) [Elevation](./glossary#elevation) [Figma](./glossary#figma) [Framework](./glossary#framework) [Grid System](./glossary#grid-system) [Icons](./glossary#icons) [Information architecture](./glossary#information-architecture) [Layout](./glossary#layout) [Material Design](./glossary#material-design) [Molecule](./glossary#molecule) [Motion](./glossary#motion) [Organism](./glossary#organism) [Pattern](./glossary#pattern) [Prototype](./glossary#prototype) [Properties](./glossary#properties) [Repository](./glossary#repository) [Responsive](./glossary#responsive) [Single Source of Truth](./glossary#single-source-of-truth) [Slots](./glossary#slots) [Spacing](./glossary#spacing) [States](./glossary#states) [Storybook](./glossary#storybook) [Style Guide](./glossary#style-guide) [System architecture](./glossary#system-architecture) [Theming](./glossary#theming) [Typography](./glossary#typography) [UI Kit](./glossary#ui-kit) [Usability](./glossary#usability) [User-centered design](./glossary#user-centered-design) [User Experience (UX)](./glossary#user-experience-(ux)) [User Interface (UI)](./glossary#user-interface-(ui)) [Visual hierarchy](./glossary#visual-hierarchy) [Voice and Tone](./glossary#voice-and-tone) [Wireframes](./glossary#wireframes) [012Biweekly DigestKeep up with the latest in Design Systems](./subscribe) [Subscribe](./subscribe) [Ad](./advertisement) [Glossary](./glossary#up-pixel) [49 sources](./directories/accessibility) [Database](./directories/accessibility) [Guides](./guides/accessibility) [Design Systems](./guides/design-system) [components](./guides/component) [Guides](./guides/atomic-design) [Atomic Design](./guides/atomic-design) [buttons](./components/button) [labels](./components/label) [text fields](./components/text-field) [components](./components) [layout](./guides/layout) [usability](./guides/usability) [70 sources](./directories/color-system) [accessibility](./guides/accessibility) [Database](./directories/color-system) [Guides](./guides/color) [55 categories](./components) [button](./components/button) [card](./components/cards) [Database](./components) [Guides](./guides/component) [Design System](./guides/design-system) [23 categories](./directories/data-visualization) [typography](./guides/typography) [colors](./guides/color) [icons](./guides/icons) [patterns](./guides/pattern) [user experience](./guides/user-experience) [74 sources](./design-systems) [Database](./design-systems) [Guides](./guides/design-system) [user experience](./guides/user-experience) [37 sources](./directories/tokens) [spacing](./guides/spacing) [Single Source of Truth](./guides/single-source-of-truth) [Database](./directories/tokens) [Guides](./guides/design-token) [32 sources](./directories/elevation) [Material Design](./design-systems/google) [Gitlab Pajamas](./design-systems/gitlab) [Atlassian Design System](./design-systems/atlassian) [Microsoft Fluent 2](./design-systems/microsoft) [Database](./directories/elevation) [Guides](./guides/elevation) [31 sources](./directories/figma) [Database](./directories/figma) [62 sources](./directories/icons) [Database](./directories/icons) [Guides](./guides/icons) [45 sources](./directories/layout) [Database](./directories/layout) [Guides](./guides/layout) [Google](./design-systems/google) [layouts](./guides/layout) [depth effects](./guides/elevation) [user interfaces](./guides/user-interface) [form](./components/form) [text field](./components/text-field) [30 sources](./directories/motion) [Database](./directories/motion) [34 sources](./directories/patterns) [user interface](./guides/user-interface) [Database](./directories/patterns) [Guides](./guides/pattern) [color](./guides/color) [states](./directories/states) [49 sources](./directories/repository) [tokens](./guides/design-token) [Database](./directories/repository) [20 sources](./directories/responsive) [Database](./directories/responsive) [Guides](./guides/single-source-of-truth) [46 sources](./directories/spacing) [Database](./directories/spacing) [Guides](./guides/spacing) [7 sources](./directories/states) [Database](./directories/states) [23 sources](./directories/storybook) [Database](./directories/storybook) [Design System](./guides/design-system) [23 sources](./directories/theming) [UI](./guides/user-interface) [Database](./directories/theming) [69 sources](./directories/typography) [Database](./directories/typography) [Guides](./guides/typography) [text fields](./components/text-field) [icons](./components/icon) [Guides](./guides/ui-kit) [Guides](./guides/usability) [Guides](./guides/user-experience) [forms](./components/form) [menus](./components/menus) [Guides](./guides/user-interface) [40 sources](./directories/voice-and-tone) [Database](./directories/voice-and-tone) [Design Systems](./design-systems) [Apple HIG](./design-systems/apple) [Google Material Design](./design-systems/google) [IBM Design System](./design-systems/ibm) [Directories](./directories) [Accessibility](./directories/accessibility) [Color System](./directories/color-system) [Figma](./directories/figma) [Typography](./directories/typography) [Components](./components) [Button](./components/button) [Checkbox](./components/checkbox) [Radio button](./components/radio-button) [Text field](./components/text-field) [DesignSystems.surf](./) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Glossary ## Accessibility ## Atomic Design ## Atom ## Breakpoints ## Color system ## Component ## Component library ## Data visualization ## Design language ## Design System ## Design System principles ## Design token ## Elevation ## Figma ## Framework ## Grid system ## Icons ## Information architecture ## Layout ## Material Design ## Molecule ## Motion ## Organism ## Pattern ## Prototype ## Properties ## Repository ## Responsive ## Single Source of Truth ## Slots ## Spacing ## States ## Storybook ## Style guide ## System architecture ## Theming ## Typography ## UI Kit ## Usability ## User-centered design ## User Experience (UX) ## User Interface (UI) ## Visual hierarchy ## Voice and Tone ## Wireframes ## What is a Design System Glossary? Systems Directories Components Articles Blueprints Guides Biweekly Digest Created by Design System Principles Grid System Style Guide Keep up with the latest in Design Systems Subscribe Available in the Database Accessibility ensures designs are",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 997,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ints Guides Biweekly Digest Created by Design System Principles Grid System Style Guide Keep up with the latest in Design Systems Subscribe Available in the Database Accessibility ensures designs are usable by people with disabilities, adhering to guidelines such as WCAG. It involves considering color contrast, screen readers, keyboard navigation, and more to create inclusive digital experiences for all users. Database Advertisement Atomic Design is a methodology for creating , organizing hierarchically. It begins with the smallest elements (atoms) and builds up to molecules, organisms, templates, and pages, promoting scalability and consistency. Atom in refers to the smallest, indivisible elements of a design—like , , or . These are foundational that, when combined, form more complex UI elements. Breakpoints define specific screen widths at which a design changes to provide a responsive experience.",
+      "metadata": {
+        "startIndex": 797,
+        "endIndex": 1710,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "design—like , , or . These are foundational that, when combined, form more complex UI elements. Breakpoints define specific screen widths at which a design changes to provide a responsive experience. These are essential in responsive web design to ensure across devices like desktops, tablets, and smartphones. Color system organizes a palette into semantically understandable and reusable values, with variations for different states and contexts. It ensures consistency across a UI and helps in achieving brand alignment and standards. Component is a reusable, self-contained UI element, like a or . It encapsulates HTML, CSS, and sometimes JavaScript functionality, enabling designers and developers to build modular and scalable interfaces. Component library is a collection of pre-built, reusable UI , each styled consistently according to a . It streamlines the design and development process by promoting reuse and reducing design inconsistencies.",
+      "metadata": {
+        "startIndex": 1510,
+        "endIndex": 2465,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "library is a collection of pre-built, reusable UI , each styled consistently according to a . It streamlines the design and development process by promoting reuse and reducing design inconsistencies. Data visualization transforms complex data sets into visual formats like charts, graphs, and maps. It enables users to understand trends, patterns, and insights at a glance, aiding in decision-making and storytelling. Design language is a unified set of design principles, guidelines, and visual elements that ensure consistency across products. It encompasses , , , and , shaping the overall . Design System is a set of standards, , and guidelines that provide a consistent design language across digital products. It promotes efficiency, scalability, and cohesion in design and development workflows. Design System principles are foundational guidelines that shape the design and development of a system. They focus on consistency, scalability, , and , ensuring a unified across platforms.",
+      "metadata": {
+        "startIndex": 2265,
+        "endIndex": 3257,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "workflows. Design System principles are foundational guidelines that shape the design and development of a system. They focus on consistency, scalability, , and , ensuring a unified across platforms. Design tokens are variables used to store design values such as , , and other values. They ensure consistency across platforms by providing a for design-related properties in a system. Elevation refers to the visual layering of UI elements through shadows or z-index, creating depth and hierarchy in design. It's commonly used in , , , , and other to indicate the importance and interactivity of elements. Figma is a web-based design and prototyping tool that allows teams to collaborate in real time. It supports the creation of UI/UX designs, prototyping, and management, enhancing workflow efficiency. Framework is a pre-built structure of code and components that developers use to build applications.",
+      "metadata": {
+        "startIndex": 3057,
+        "endIndex": 3963,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "upports the creation of UI/UX designs, prototyping, and management, enhancing workflow efficiency. Framework is a pre-built structure of code and components that developers use to build applications. Popular front-end frameworks like React, Vue, and Angular simplify the development process by providing reusable solutions. Grid system is a layout framework that helps align and organize content on a page. It creates visual structure and balance, ensuring responsive, consistent designs across different devices and screen sizes. Icons are small, graphic symbols used to represent actions, objects, or ideas. They improve user understanding by visually conveying meaning, often simplifying text-heavy interfaces and enhancing navigation. Information architecture refers to the organization and structure of information within a product. It helps users find and navigate content efficiently, improving overall and . Layout refers to the arrangement of elements on a page or screen.",
+      "metadata": {
+        "startIndex": 3763,
+        "endIndex": 4745,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "nization and structure of information within a product. It helps users find and navigate content efficiently, improving overall and . Layout refers to the arrangement of elements on a page or screen. It ensures visual hierarchy, balance, and by organizing in a way that supports user goals and aligns with the design's purpose. Material Design is a design system created by that emphasizes consistency across devices. It uses principles like grid-based , responsive animations, and like shadows to create intuitive . In , a molecule is a group of atoms combined to form a more complex UI element, such as a search ( and ). Molecules are the building blocks for more intricate and organisms. Motion in design refers to the use of animation and transitions to create fluid interactions. It guides users through an interface, adds context, and enhances by making digital environments feel more responsive.",
+      "metadata": {
+        "startIndex": 4545,
+        "endIndex": 5448,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "sign refers to the use of animation and transitions to create fluid interactions. It guides users through an interface, adds context, and enhances by making digital environments feel more responsive. In , an organism is a relatively complex group of molecules that function together as a unit, like a navigation bar. It is one of the higher levels in the design hierarchy, built from smaller atomic units. Pattern is a repeatable design solution to common problems. It provides best practices and consistency across a product, improving and reducing cognitive load for users. Prototype is interactive, low- to high-fidelity representations of a product. They simulate the , allowing designers and stakeholders to test and refine interactions before full development begins. Properties in design refer to attributes assigned to elements, such as , size, or . They are the building blocks of style, helping define how look and behave across various .",
+      "metadata": {
+        "startIndex": 5248,
+        "endIndex": 6197,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "full development begins. Properties in design refer to attributes assigned to elements, such as , size, or . They are the building blocks of style, helping define how look and behave across various . Repository is a storage location where code, design assets, or documentation are stored and managed. In , repositories ensure that all , guidelines, and are accessible and maintained consistently. Responsive design adapts layouts to various screen sizes and devices, providing an optimal on mobile, tablet, and desktop. It uses breakpoints, fluid grids, and flexible images to ensure content adjusts dynamically. Single Source of Truth refers to having a centralized reference point for design or development assets. In a , this ensures that all teams use consistent , , and guidelines, reducing inconsistencies. Slots refer to placeholder areas within that allow for content to be dynamically inserted.",
+      "metadata": {
+        "startIndex": 5997,
+        "endIndex": 6901,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ment assets. In a , this ensures that all teams use consistent , , and guidelines, reducing inconsistencies. Slots refer to placeholder areas within that allow for content to be dynamically inserted. They offer flexibility, enabling the customization of reusable components without altering their core structure or functionality. Spacing refers to the use of padding, margins, and gaps between UI elements. Proper spacing ensures clarity, improves readability, and enhances the overall aesthetic and of a design, contributing to a balanced . States are variations of UI that indicate their behavior in different scenarios, such as hover, active, or disabled states. They provide users with visual feedback, improving interactivity and the overall . Storybook is an open-source tool for developing UI in isolation. It allows designers and developers to create, view, and test individual components outside the application, ensuring reusability and consistency.",
+      "metadata": {
+        "startIndex": 6701,
+        "endIndex": 7661,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "s an open-source tool for developing UI in isolation. It allows designers and developers to create, view, and test individual components outside the application, ensuring reusability and consistency. Style guide is a comprehensive document that outlines the rules for , , , and other design elements. It ensures consistency across all and reflects the brand’s visual identity. System architecture in design refers to the overall structure of a , including its , , and documentation. It provides a blueprint for how the system scales and integrates across teams and platforms. Theming refers to the application of specific styles, such as and , to alter the appearance of a while keeping the underlying structure intact. It allows for customization without changing the core . Typography refers to the style, arrangement, and appearance of text in a design. It plays a critical role in readability, visual hierarchy, and , impacting how users perceive and interact with content.",
+      "metadata": {
+        "startIndex": 7461,
+        "endIndex": 8439,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "pography refers to the style, arrangement, and appearance of text in a design. It plays a critical role in readability, visual hierarchy, and , impacting how users perceive and interact with content. UI Kit is a collection of pre-designed UI elements, like , , and , that are reusable across projects. It provides a set of standardized , enabling faster design and development while maintaining consistency. Usability measures how easily and efficiently users can interact with a product or system. It focuses on ease of use, user satisfaction, and error reduction, ensuring that users can achieve their goals with minimal friction. User-centered design is a design approach that prioritizes the needs, behaviors, and goals of the user. It involves user research, prototyping, and testing to create intuitive, user-friendly products that solve real problems. User experience (UX) encompasses all aspects of a user's interaction with a product, focusing on , functionality, and emotional satisfaction.",
+      "metadata": {
+        "startIndex": 8239,
+        "endIndex": 9240,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "tuitive, user-friendly products that solve real problems. User experience (UX) encompasses all aspects of a user's interaction with a product, focusing on , functionality, and emotional satisfaction. A well-designed UX ensures users find value, efficiency, and enjoyment in the product. User interface (UI) refers to the visual elements through which users interact with a product. It includes components like , , and , focusing on aesthetics, , and user interaction. Visual hierarchy organizes elements in a design by importance, guiding users' attention and helping them process information effectively. Through size, , and , designers prioritize key content and improve . Voice and tone refers to the consistent personality of a brand, while tone changes based on context and audience. Together, they shape how users perceive the brand, influencing emotional engagement and the overall . Wireframes are low-fidelity, simplified visual representations of a design's structure.",
+      "metadata": {
+        "startIndex": 9040,
+        "endIndex": 10019,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "audience. Together, they shape how users perceive the brand, influencing emotional engagement and the overall . Wireframes are low-fidelity, simplified visual representations of a design's structure. They outline key elements like navigation, content layout, and functionality, serving as the foundation for the final visual design. Glossary explains key Design System concepts and terms with clear descriptions, providing links to directories and components database, along with practical guidelines to enhance understanding and usage Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](./design-systems) [Directories24](./directories) [Components55](./components) [Articles5](./articles) [Blueprints7](./blueprints) [Guides18](./guides) [Glossary46](./glossary) [012Biweekly Digest](./subscribe) [Request Ad](./advertisement) [Ilya Greben](https://ilyagreben.com) [Accessibility](./glossary#accessibility) [Atomic Design](./glossary#atomic-design) [Atom](./glossary#atom)",
+      "metadata": {
+        "startIndex": 9819,
+        "endIndex": 10807,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "ly Digest](./subscribe) [Request Ad](./advertisement) [Ilya Greben](https://ilyagreben.com) [Accessibility](./glossary#accessibility) [Atomic Design](./glossary#atomic-design) [Atom](./glossary#atom) [Breakpoints](./glossary#breakpoints) [Color system](./glossary#color-system) [Component](./glossary#component) [Component library](./glossary#component-library) [Data visualization](./glossary#data-visualization) [Design language](./glossary#design-language) [Design System](./glossary#design-system) [Design System Principles](./glossary#design-system-principles) [Design token](./glossary#design-token) [Elevation](./glossary#elevation) [Figma](./glossary#figma) [Framework](./glossary#framework) [Grid System](./glossary#grid-system) [Icons](./glossary#icons) [Information architecture](./glossary#information-architecture) [Layout](./glossary#layout) [Material Design](./glossary#material-design) [Molecule](./glossary#molecule) [Motion](./glossary#motion) [Organism](./glossary#organism)",
+      "metadata": {
+        "startIndex": 10607,
+        "endIndex": 11601,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "lossary#information-architecture) [Layout](./glossary#layout) [Material Design](./glossary#material-design) [Molecule](./glossary#molecule) [Motion](./glossary#motion) [Organism](./glossary#organism) [Pattern](./glossary#pattern) [Prototype](./glossary#prototype) [Properties](./glossary#properties) [Repository](./glossary#repository) [Responsive](./glossary#responsive) [Single Source of Truth](./glossary#single-source-of-truth) [Slots](./glossary#slots) [Spacing](./glossary#spacing) [States](./glossary#states) [Storybook](./glossary#storybook) [Style Guide](./glossary#style-guide) [System architecture](./glossary#system-architecture) [Theming](./glossary#theming) [Typography](./glossary#typography) [UI Kit](./glossary#ui-kit) [Usability](./glossary#usability) [User-centered design](./glossary#user-centered-design) [User Experience (UX)](./glossary#user-experience-(ux)) [User Interface (UI)](./glossary#user-interface-(ui)) [Visual hierarchy](./glossary#visual-hierarchy) [Voice and",
+      "metadata": {
+        "startIndex": 11401,
+        "endIndex": 12396,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "glossary#user-centered-design) [User Experience (UX)](./glossary#user-experience-(ux)) [User Interface (UI)](./glossary#user-interface-(ui)) [Visual hierarchy](./glossary#visual-hierarchy) [Voice and Tone](./glossary#voice-and-tone) [Wireframes](./glossary#wireframes) [012Biweekly DigestKeep up with the latest in Design Systems](./subscribe) [Subscribe](./subscribe) [Ad](./advertisement) [Glossary](./glossary#up-pixel) [49 sources](./directories/accessibility) [Database](./directories/accessibility) [Guides](./guides/accessibility) [Design Systems](./guides/design-system) [components](./guides/component) [Guides](./guides/atomic-design) [Atomic Design](./guides/atomic-design) [buttons](./components/button) [labels](./components/label) [text fields](./components/text-field) [components](./components) [layout](./guides/layout) [usability](./guides/usability) [70 sources](./directories/color-system) [accessibility](./guides/accessibility) [Database](./directories/color-system)",
+      "metadata": {
+        "startIndex": 12196,
+        "endIndex": 13185,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "onents](./components) [layout](./guides/layout) [usability](./guides/usability) [70 sources](./directories/color-system) [accessibility](./guides/accessibility) [Database](./directories/color-system) [Guides](./guides/color) [55 categories](./components) [button](./components/button) [card](./components/cards) [Database](./components) [Guides](./guides/component) [Design System](./guides/design-system) [23 categories](./directories/data-visualization) [typography](./guides/typography) [colors](./guides/color) [icons](./guides/icons) [patterns](./guides/pattern) [user experience](./guides/user-experience) [74 sources](./design-systems) [Database](./design-systems) [Guides](./guides/design-system) [user experience](./guides/user-experience) [37 sources](./directories/tokens) [spacing](./guides/spacing) [Single Source of Truth](./guides/single-source-of-truth) [Database](./directories/tokens) [Guides](./guides/design-token) [32 sources](./directories/elevation) [Material",
+      "metadata": {
+        "startIndex": 12985,
+        "endIndex": 13968,
+        "chunkIndex": 17,
+        "section": "Content",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "[spacing](./guides/spacing) [Single Source of Truth](./guides/single-source-of-truth) [Database](./directories/tokens) [Guides](./guides/design-token) [32 sources](./directories/elevation) [Material Design](./design-systems/google) [Gitlab Pajamas](./design-systems/gitlab) [Atlassian Design System](./design-systems/atlassian) [Microsoft Fluent 2](./design-systems/microsoft) [Database](./directories/elevation) [Guides](./guides/elevation) [31 sources](./directories/figma) [Database](./directories/figma) [62 sources](./directories/icons) [Database](./directories/icons) [Guides](./guides/icons) [45 sources](./directories/layout) [Database](./directories/layout) [Guides](./guides/layout) [Google](./design-systems/google) [layouts](./guides/layout) [depth effects](./guides/elevation) [user interfaces](./guides/user-interface) [form](./components/form) [text field](./components/text-field) [30 sources](./directories/motion) [Database](./directories/motion) [34",
+      "metadata": {
+        "startIndex": 13768,
+        "endIndex": 14738,
+        "chunkIndex": 18,
+        "section": "Content",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "(./guides/elevation) [user interfaces](./guides/user-interface) [form](./components/form) [text field](./components/text-field) [30 sources](./directories/motion) [Database](./directories/motion) [34 sources](./directories/patterns) [user interface](./guides/user-interface) [Database](./directories/patterns) [Guides](./guides/pattern) [color](./guides/color) [states](./directories/states) [49 sources](./directories/repository) [tokens](./guides/design-token) [Database](./directories/repository) [20 sources](./directories/responsive) [Database](./directories/responsive) [Guides](./guides/single-source-of-truth) [46 sources](./directories/spacing) [Database](./directories/spacing) [Guides](./guides/spacing) [7 sources](./directories/states) [Database](./directories/states) [23 sources](./directories/storybook) [Database](./directories/storybook) [Design System](./guides/design-system) [23 sources](./directories/theming) [UI](./guides/user-interface) [Database](./directories/theming) [69",
+      "metadata": {
+        "startIndex": 14538,
+        "endIndex": 15538,
+        "chunkIndex": 19,
+        "section": "Content",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "ectories/storybook) [Database](./directories/storybook) [Design System](./guides/design-system) [23 sources](./directories/theming) [UI](./guides/user-interface) [Database](./directories/theming) [69 sources](./directories/typography) [Database](./directories/typography) [Guides](./guides/typography) [text fields](./components/text-field) [icons](./components/icon) [Guides](./guides/ui-kit) [Guides](./guides/usability) [Guides](./guides/user-experience) [forms](./components/form) [menus](./components/menus) [Guides](./guides/user-interface) [40 sources](./directories/voice-and-tone) [Database](./directories/voice-and-tone) [Design Systems](./design-systems) [Apple HIG](./design-systems/apple) [Google Material Design](./design-systems/google) [IBM Design System](./design-systems/ibm) [Directories](./directories) [Accessibility](./directories/accessibility) [Color System](./directories/color-system) [Figma](./directories/figma) [Typography](./directories/typography)",
+      "metadata": {
+        "startIndex": 15338,
+        "endIndex": 16317,
+        "chunkIndex": 20,
+        "section": "Content",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "n-systems/ibm) [Directories](./directories) [Accessibility](./directories/accessibility) [Color System](./directories/color-system) [Figma](./directories/figma) [Typography](./directories/typography) [Components](./components) [Button](./components/button) [Checkbox](./components/checkbox) [Radio button](./components/radio-button) [Text field](./components/text-field) [DesignSystems.surf](./) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 16117,
+        "endIndex": 17117,
+        "chunkIndex": 21,
+        "section": "Content",
+        "globalChunkIndex": 21
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "form",
+      "button",
+      "card",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility",
+      "responsive",
+      "mobile",
+      "tablet"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:01.210Z",
+    "source_url": "https://designsystems.surf/glossary"
+  }
+}

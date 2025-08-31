@@ -1,0 +1,162 @@
+{
+  "id": "eDU50EWvRDYnSOlgEFRfu",
+  "title": "Horizon Design System – ServiceNow UI Framework",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/servicenow",
+    "ingested_at": "2025-08-30T13:10:01.140Z"
+  },
+  "content": "# ServiceNow Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Horizon from Directories: Components: Horizon is ServiceNow Design System, centralizing design guidance and resources. It fosters seamless connections across all platform applications, accelerating collaboration between designers, developers, and creators. Horizon includes pre-built, reusable assets and foundational design guidance to build exceptional experiences. ServiceNow Design System offers principles, foundation guidelines, component specs, best practice patterns, and resources like Figma libraries and learning programs, ensuring innovation and efficiency at an enterprise scale. Advertisement Accessibility View source Color System Component overview Data visualization Elevation Figma Icons Illustrations Layout Patterns Spacing Styles Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Cards Checkbox Chip Date picker Dropdown Empty state Icon Label Link Menus Modal Pagination Progress bar Progress indicator Radio button Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [HorizonfromServiceNow](./servicenow#up-pixel) [Source](https://horizon.servicenow.com/) [Figma](https://www.figma.com/@servicenow) [Accessibility](../directories/accessibility) [View source](https://horizon.servicenow.com/foundations/accessibility/a11y-overview) [Color System](../directories/color-system) [View source](https://horizon.servicenow.com/foundations/color/color-overview) [Component overview](../directories/component-overview) [View source](https://horizon.servicenow.com/components/all) [Data visualization](../directories/data-visualization) [View source](https://horizon.servicenow.com/foundations/data-visualization/data-vis-overview) [Elevation](../directories/elevation) [View source](https://horizon.servicenow.com/foundations/elevation) [Figma](../directories/figma) [View source](https://www.figma.com/@servicenow) [Icons](../directories/icons) [View source](https://horizon.servicenow.com/foundations/icons/icons-overview) [Illustrations](../directories/illustrations) [View source](https://horizon.servicenow.com/foundations/illustrations/illustrations-overview) [Layout](../directories/layout) [View source](https://horizon.servicenow.com/foundations/grids-and-layouts) [Patterns](../directories/patterns) [View source](https://horizon.servicenow.com/patterns/all) [Spacing](../directories/spacing) [View source](https://horizon.servicenow.com/foundations/spacing/spacing-overview) [Styles](../directories/styles) [View source](https://horizon.servicenow.com/foundations/corner-radius) [Typography](../directories/typography) [View source](https://horizon.servicenow.com/foundations/typography/typography-overview) [Voice and Tone](../directories/voice-and-tone) [View source](https://horizon.servicenow.com/foundations/words/the-words) [Accordion](../components/accordion) [View source](https://horizon.servicenow.com/components/now-accordion) [Alert banner](../components/alert-banner) [View source](https://horizon.servicenow.com/components/now-alert) [Avatar](../components/avatar) [View source](https://horizon.servicenow.com/components/now-avatar) [Badges](../components/badges) [View source](https://horizon.servicenow.com/components/now-badge) [Breadcrumb](../components/breadcrumbs) [View source](https://horizon.servicenow.com/components/now-breadcrumbs) [Button](../components/button) [View source](https://horizon.servicenow.com/components/now-button) [Cards](../components/cards) [View source](https://horizon.servicenow.com/components/now-card) [Checkbox](../components/checkbox) [View source](https://horizon.servicenow.com/components/now-checkbox) [Chip](../components/chip) [View source](https://horizon.servicenow.com/components/now-pill) [Date picker](../components/date-picker) [View source](https://horizon.servicenow.com/components/now-date-time) [Dropdown](../components/dropdown) [View source](https://horizon.servicenow.com/components/now-dropdown) [Empty state](../components/empty-state) [View source](https://horizon.servicenow.com/components/now-template-message-empty-state) [Icon](../directories/icons) [View source](https://horizon.servicenow.com/components/now-icon) [Label](../components/label) [View source](https://horizon.servicenow.com/components/now-label-value-inline) [Link](../components/link) [View source](https://horizon.servicenow.com/components/now-text-link) [Menus](../components/menus) [View source](https://horizon.servicenow.com/components/now-dropdown-list) [Modal](../components/modal) [View source](https://horizon.servicenow.com/components/now-modal) [Pagination](../components/pagination) [View source](https://horizon.servicenow.com/components/now-pagination-control) [Progress bar](../components/progress-bar) [View source](https://horizon.servicenow.com/components/now-progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://horizon.servicenow.com/components/now-loader) [Radio button](../components/radio-button) [View source](https://horizon.servicenow.com/components/now-radio-buttons) [Switch](../components/switch) [View source](https://horizon.servicenow.com/components/now-toggle) [Tabs](../components/tabs) [View source](https://horizon.servicenow.com/components/now-tabs) [Text area](../components/text-area) [View source](https://horizon.servicenow.com/components/now-textarea) [Text field](../components/text-field) [View source](https://horizon.servicenow.com/components/now-input) [Tooltip](../components/tooltip) [View source](https://horizon.servicenow.com/components/now-tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# ServiceNow Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Horizon from Directories: Components: Horizon is ServiceNow Design System, centralizing design guidance and resources. It fosters seamless connections across all platform applications, accelerating collaboration between",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 994,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ries: Components: Horizon is ServiceNow Design System, centralizing design guidance and resources. It fosters seamless connections across all platform applications, accelerating collaboration between designers, developers, and creators. Horizon includes pre-built, reusable assets and foundational design guidance to build exceptional experiences. ServiceNow Design System offers principles, foundation guidelines, component specs, best practice patterns, and resources like Figma libraries and learning programs, ensuring innovation and efficiency at an enterprise scale. Advertisement Accessibility View source Color System Component overview Data visualization Elevation Figma Icons Illustrations Layout Patterns Spacing Styles Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Cards Checkbox Chip Date picker Dropdown Empty state Icon Label Link Menus Modal Pagination Progress bar Progress indicator Radio button Switch Tabs Text area Text field Tooltip Design",
+      "metadata": {
+        "startIndex": 794,
+        "endIndex": 1791,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "adcrumb Button Cards Checkbox Chip Date picker Dropdown Empty state Icon Label Link Menus Modal Pagination Progress bar Progress indicator Radio button Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github)",
+      "metadata": {
+        "startIndex": 1591,
+        "endIndex": 2584,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "/cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout",
+      "metadata": {
+        "startIndex": 2384,
+        "endIndex": 3372,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [HorizonfromServiceNow](./servicenow#up-pixel) [Source](https://horizon.servicenow.com/) [Figma](https://www.figma.com/@servicenow) [Accessibility](../directories/accessibility) [View source](https://horizon.servicenow.com/foundations/accessibility/a11y-overview) [Color",
+      "metadata": {
+        "startIndex": 3172,
+        "endIndex": 4147,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": ".servicenow.com/) [Figma](https://www.figma.com/@servicenow) [Accessibility](../directories/accessibility) [View source](https://horizon.servicenow.com/foundations/accessibility/a11y-overview) [Color System](../directories/color-system) [View source](https://horizon.servicenow.com/foundations/color/color-overview) [Component overview](../directories/component-overview) [View source](https://horizon.servicenow.com/components/all) [Data visualization](../directories/data-visualization) [View source](https://horizon.servicenow.com/foundations/data-visualization/data-vis-overview) [Elevation](../directories/elevation) [View source](https://horizon.servicenow.com/foundations/elevation) [Figma](../directories/figma) [View source](https://www.figma.com/@servicenow) [Icons](../directories/icons) [View source](https://horizon.servicenow.com/foundations/icons/icons-overview) [Illustrations](../directories/illustrations) [View",
+      "metadata": {
+        "startIndex": 3947,
+        "endIndex": 4877,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ce](https://www.figma.com/@servicenow) [Icons](../directories/icons) [View source](https://horizon.servicenow.com/foundations/icons/icons-overview) [Illustrations](../directories/illustrations) [View source](https://horizon.servicenow.com/foundations/illustrations/illustrations-overview) [Layout](../directories/layout) [View source](https://horizon.servicenow.com/foundations/grids-and-layouts) [Patterns](../directories/patterns) [View source](https://horizon.servicenow.com/patterns/all) [Spacing](../directories/spacing) [View source](https://horizon.servicenow.com/foundations/spacing/spacing-overview) [Styles](../directories/styles) [View source](https://horizon.servicenow.com/foundations/corner-radius) [Typography](../directories/typography) [View source](https://horizon.servicenow.com/foundations/typography/typography-overview) [Voice and Tone](../directories/voice-and-tone) [View source](https://horizon.servicenow.com/foundations/words/the-words) [Accordion](../components/accordion)",
+      "metadata": {
+        "startIndex": 4677,
+        "endIndex": 5678,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ndations/typography/typography-overview) [Voice and Tone](../directories/voice-and-tone) [View source](https://horizon.servicenow.com/foundations/words/the-words) [Accordion](../components/accordion) [View source](https://horizon.servicenow.com/components/now-accordion) [Alert banner](../components/alert-banner) [View source](https://horizon.servicenow.com/components/now-alert) [Avatar](../components/avatar) [View source](https://horizon.servicenow.com/components/now-avatar) [Badges](../components/badges) [View source](https://horizon.servicenow.com/components/now-badge) [Breadcrumb](../components/breadcrumbs) [View source](https://horizon.servicenow.com/components/now-breadcrumbs) [Button](../components/button) [View source](https://horizon.servicenow.com/components/now-button) [Cards](../components/cards) [View source](https://horizon.servicenow.com/components/now-card) [Checkbox](../components/checkbox) [View source](https://horizon.servicenow.com/components/now-checkbox)",
+      "metadata": {
+        "startIndex": 5478,
+        "endIndex": 6468,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "[Cards](../components/cards) [View source](https://horizon.servicenow.com/components/now-card) [Checkbox](../components/checkbox) [View source](https://horizon.servicenow.com/components/now-checkbox) [Chip](../components/chip) [View source](https://horizon.servicenow.com/components/now-pill) [Date picker](../components/date-picker) [View source](https://horizon.servicenow.com/components/now-date-time) [Dropdown](../components/dropdown) [View source](https://horizon.servicenow.com/components/now-dropdown) [Empty state](../components/empty-state) [View source](https://horizon.servicenow.com/components/now-template-message-empty-state) [Icon](../directories/icons) [View source](https://horizon.servicenow.com/components/now-icon) [Label](../components/label) [View source](https://horizon.servicenow.com/components/now-label-value-inline) [Link](../components/link) [View source](https://horizon.servicenow.com/components/now-text-link) [Menus](../components/menus) [View",
+      "metadata": {
+        "startIndex": 6268,
+        "endIndex": 7246,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "(https://horizon.servicenow.com/components/now-label-value-inline) [Link](../components/link) [View source](https://horizon.servicenow.com/components/now-text-link) [Menus](../components/menus) [View source](https://horizon.servicenow.com/components/now-dropdown-list) [Modal](../components/modal) [View source](https://horizon.servicenow.com/components/now-modal) [Pagination](../components/pagination) [View source](https://horizon.servicenow.com/components/now-pagination-control) [Progress bar](../components/progress-bar) [View source](https://horizon.servicenow.com/components/now-progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://horizon.servicenow.com/components/now-loader) [Radio button](../components/radio-button) [View source](https://horizon.servicenow.com/components/now-radio-buttons) [Switch](../components/switch) [View source](https://horizon.servicenow.com/components/now-toggle) [Tabs](../components/tabs) [View",
+      "metadata": {
+        "startIndex": 7046,
+        "endIndex": 8020,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ource](https://horizon.servicenow.com/components/now-radio-buttons) [Switch](../components/switch) [View source](https://horizon.servicenow.com/components/now-toggle) [Tabs](../components/tabs) [View source](https://horizon.servicenow.com/components/now-tabs) [Text area](../components/text-area) [View source](https://horizon.servicenow.com/components/now-textarea) [Text field](../components/text-field) [View source](https://horizon.servicenow.com/components/now-input) [Tooltip](../components/tooltip) [View source](https://horizon.servicenow.com/components/now-tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share",
+      "metadata": {
+        "startIndex": 7820,
+        "endIndex": 8797,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "ponents) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8597,
+        "endIndex": 9597,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "modal",
+      "card",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "radius",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:01.140Z",
+    "source_url": "https://designsystems.surf/design-systems/servicenow"
+  }
+}

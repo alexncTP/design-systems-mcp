@@ -5,7 +5,6 @@
 
 import { ContentEntry, IngestionOptions, ContentMetadata } from "../../types/content";
 import { parseHTML } from "./html-parser";
-import { parsePDF } from "./pdf-parser";
 import { fetchURL } from "./url-fetcher";
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
@@ -44,6 +43,7 @@ export async function ingestContent(
       break;
 
     case 'pdf':
+      const { parsePDF } = await import("./pdf-parser");
       const pdfBuffer = await fs.readFile(source);
       entry = await parsePDF(pdfBuffer.buffer.slice(0), source, {
         metadata,
@@ -156,7 +156,7 @@ export async function batchIngest(
 }
 
 // CLI interface
-if (require.main === module) {
+if (import.meta.url.includes(process.argv[1])) {
   const args = process.argv.slice(2);
 
   if (args.length < 2) {

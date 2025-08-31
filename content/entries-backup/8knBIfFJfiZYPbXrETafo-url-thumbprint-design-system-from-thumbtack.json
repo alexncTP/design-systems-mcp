@@ -1,0 +1,140 @@
+{
+  "id": "8knBIfFJfiZYPbXrETafo",
+  "title": "Thumbprint Design System from Thumbtack",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/thumbtack",
+    "ingested_at": "2025-08-30T13:10:06.593Z"
+  },
+  "content": "# Thumbtack Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Thumbprint from Directories: Components: Thumbprint Design System by Thumbtack is a comprehensive framework aimed at fostering high-quality, consistent user experiences across its products. System includes guidelines for accessibility, a variety of components, and a set of design tokens. Thumbprint is a dynamic system that simplifies the design and development workflow by unifying, standardizing, and thoroughly documenting processes. Advertisement Accessibility View source Color System Component overview Component status Repository Icons Motion Responsive Spacing Tokens Typography Voice and Tone Alert banner Avatar Button Button group Checkbox Chip Date picker Dropdown Help text Label Link List Modal Navigation bar Popover Progress indicator Radio button Snackbar Switch Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [ThumbprintfromThumbtack](./thumbtack#up-pixel) [Source](https://thumbprint.design/) [Repository](https://github.com/thumbtack/thumbprint) [Accessibility](../directories/accessibility) [View source](https://thumbprint.design/overview/accessibility/) [Color System](../directories/color-system) [View source](https://thumbprint.design/guidelines/color/) [Component overview](../directories/component-overview) [View source](https://thumbprint.design/components/overview/) [Component status](../directories/component-status) [Repository](../directories/repository) [View source](https://github.com/thumbtack/thumbprint) [Icons](../directories/icons) [View source](https://thumbprint.design/guidelines/iconography/) [Motion](../directories/motion) [View source](https://thumbprint.design/guidelines/motion/) [Responsive](../directories/responsive) [View source](https://thumbprint.design/guidelines/breakpoints/) [Spacing](../directories/spacing) [View source](https://thumbprint.design/guidelines/spacers/) [Tokens](../directories/tokens) [View source](https://thumbprint.design/guidelines/design-tokens/) [Typography](../directories/typography) [View source](https://thumbprint.design/guidelines/typography/) [Voice and Tone](../directories/voice-and-tone) [View source](https://thumbprint.design/overview/content-design/voice-and-tone/) [Alert banner](../components/alert-banner) [View source](https://thumbprint.design/components/alert/react/) [Avatar](../components/avatar) [View source](https://thumbprint.design/components/avatar/usage/) [Button](../components/button) [View source](https://thumbprint.design/components/button/usage/) [Button group](../components/button-group) [View source](https://thumbprint.design/components/button-row/react/) [Checkbox](../components/checkbox) [View source](https://thumbprint.design/components/checkbox/react/) [Chip](../components/chip) [View source](https://thumbprint.design/components/chip/react/) [Date picker](../components/date-picker) [View source](https://thumbprint.design/components/calendar/react/) [Dropdown](../components/dropdown) [View source](https://thumbprint.design/components/dropdown/react/) [Help text](../components/help-text) [View source](https://thumbprint.design/components/form-note/react/) [Label](../components/label) [View source](https://thumbprint.design/components/label/react/) [Link](../components/link) [View source](https://thumbprint.design/components/link/react/) [List](../components/list) [View source](https://thumbprint.design/components/list/react/) [Modal](../components/modal) [View source](https://thumbprint.design/components/modal/usage/) [Navigation bar](../components/navigation-bar) [View source](https://thumbprint.design/components/navigation-bar/ios/) [Popover](../components/popover) [View source](https://thumbprint.design/components/popover/usage/) [Progress indicator](../components/progress-indicator) [View source](https://thumbprint.design/components/loader-dots/react/) [Radio button](../components/radio-button) [View source](https://thumbprint.design/components/radio/react/) [Snackbar](../components/snackbar) [View source](https://thumbprint.design/components/toast/ios/) [Switch](../components/switch) [View source](https://thumbprint.design/components/switch/ios/) [Tag](../components/tag) [View source](https://thumbprint.design/components/pill/usage/) [Text area](../components/text-area) [View source](https://thumbprint.design/components/text-area/react/) [Text field](../components/text-field) [View source](https://thumbprint.design/components/text-input/react/) [Tooltip](../components/tooltip) [View source](https://thumbprint.design/components/tooltip/usage/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Thumbtack Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Thumbprint from Directories: Components: Thumbprint Design System by Thumbtack is a comprehensive framework aimed at fostering high-quality, consistent user experiences across its products.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 964,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Subscribe Thumbprint from Directories: Components: Thumbprint Design System by Thumbtack is a comprehensive framework aimed at fostering high-quality, consistent user experiences across its products. System includes guidelines for accessibility, a variety of components, and a set of design tokens. Thumbprint is a dynamic system that simplifies the design and development workflow by unifying, standardizing, and thoroughly documenting processes. Advertisement Accessibility View source Color System Component overview Component status Repository Icons Motion Responsive Spacing Tokens Typography Voice and Tone Alert banner Avatar Button Button group Checkbox Chip Date picker Dropdown Help text Label Link List Modal Navigation bar Popover Progress indicator Radio button Snackbar Switch Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles)",
+      "metadata": {
+        "startIndex": 764,
+        "endIndex": 1760,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ext area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi)",
+      "metadata": {
+        "startIndex": 1560,
+        "endIndex": 2559,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "electric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2359,
+        "endIndex": 3315,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [ThumbprintfromThumbtack](./thumbtack#up-pixel) [Source](https://thumbprint.design/) [Repository](https://github.com/thumbtack/thumbprint) [Accessibility](../directories/accessibility) [View source](https://thumbprint.design/overview/accessibility/) [Color System](../directories/color-system) [View source](https://thumbprint.design/guidelines/color/) [Component overview](../directories/component-overview) [View",
+      "metadata": {
+        "startIndex": 3115,
+        "endIndex": 4095,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "nt.design/overview/accessibility/) [Color System](../directories/color-system) [View source](https://thumbprint.design/guidelines/color/) [Component overview](../directories/component-overview) [View source](https://thumbprint.design/components/overview/) [Component status](../directories/component-status) [Repository](../directories/repository) [View source](https://github.com/thumbtack/thumbprint) [Icons](../directories/icons) [View source](https://thumbprint.design/guidelines/iconography/) [Motion](../directories/motion) [View source](https://thumbprint.design/guidelines/motion/) [Responsive](../directories/responsive) [View source](https://thumbprint.design/guidelines/breakpoints/) [Spacing](../directories/spacing) [View source](https://thumbprint.design/guidelines/spacers/) [Tokens](../directories/tokens) [View source](https://thumbprint.design/guidelines/design-tokens/) [Typography](../directories/typography) [View source](https://thumbprint.design/guidelines/typography/) [Voice",
+      "metadata": {
+        "startIndex": 3895,
+        "endIndex": 4895,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "./directories/tokens) [View source](https://thumbprint.design/guidelines/design-tokens/) [Typography](../directories/typography) [View source](https://thumbprint.design/guidelines/typography/) [Voice and Tone](../directories/voice-and-tone) [View source](https://thumbprint.design/overview/content-design/voice-and-tone/) [Alert banner](../components/alert-banner) [View source](https://thumbprint.design/components/alert/react/) [Avatar](../components/avatar) [View source](https://thumbprint.design/components/avatar/usage/) [Button](../components/button) [View source](https://thumbprint.design/components/button/usage/) [Button group](../components/button-group) [View source](https://thumbprint.design/components/button-row/react/) [Checkbox](../components/checkbox) [View source](https://thumbprint.design/components/checkbox/react/) [Chip](../components/chip) [View source](https://thumbprint.design/components/chip/react/) [Date picker](../components/date-picker) [View",
+      "metadata": {
+        "startIndex": 4695,
+        "endIndex": 5673,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "source](https://thumbprint.design/components/checkbox/react/) [Chip](../components/chip) [View source](https://thumbprint.design/components/chip/react/) [Date picker](../components/date-picker) [View source](https://thumbprint.design/components/calendar/react/) [Dropdown](../components/dropdown) [View source](https://thumbprint.design/components/dropdown/react/) [Help text](../components/help-text) [View source](https://thumbprint.design/components/form-note/react/) [Label](../components/label) [View source](https://thumbprint.design/components/label/react/) [Link](../components/link) [View source](https://thumbprint.design/components/link/react/) [List](../components/list) [View source](https://thumbprint.design/components/list/react/) [Modal](../components/modal) [View source](https://thumbprint.design/components/modal/usage/) [Navigation bar](../components/navigation-bar) [View source](https://thumbprint.design/components/navigation-bar/ios/) [Popover](../components/popover) [View",
+      "metadata": {
+        "startIndex": 5473,
+        "endIndex": 6472,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "humbprint.design/components/modal/usage/) [Navigation bar](../components/navigation-bar) [View source](https://thumbprint.design/components/navigation-bar/ios/) [Popover](../components/popover) [View source](https://thumbprint.design/components/popover/usage/) [Progress indicator](../components/progress-indicator) [View source](https://thumbprint.design/components/loader-dots/react/) [Radio button](../components/radio-button) [View source](https://thumbprint.design/components/radio/react/) [Snackbar](../components/snackbar) [View source](https://thumbprint.design/components/toast/ios/) [Switch](../components/switch) [View source](https://thumbprint.design/components/switch/ios/) [Tag](../components/tag) [View source](https://thumbprint.design/components/pill/usage/) [Text area](../components/text-area) [View source](https://thumbprint.design/components/text-area/react/) [Text field](../components/text-field) [View source](https://thumbprint.design/components/text-input/react/)",
+      "metadata": {
+        "startIndex": 6272,
+        "endIndex": 7264,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "components/text-area) [View source](https://thumbprint.design/components/text-area/react/) [Text field](../components/text-field) [View source](https://thumbprint.design/components/text-input/react/) [Tooltip](../components/tooltip) [View source](https://thumbprint.design/components/tooltip/usage/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7064,
+        "endIndex": 8064,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "modal",
+      "form",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:06.593Z",
+    "source_url": "https://designsystems.surf/design-systems/thumbtack"
+  }
+}

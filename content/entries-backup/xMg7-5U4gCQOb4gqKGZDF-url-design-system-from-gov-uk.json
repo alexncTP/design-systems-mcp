@@ -1,0 +1,138 @@
+{
+  "id": "xMg7-5U4gCQOb4gqKGZDF",
+  "title": "Design System from GOV.UK",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/govuk",
+    "ingested_at": "2025-08-30T13:09:43.278Z"
+  },
+  "content": "# GOV.UK Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: GOV.UK Design System offers a comprehensive framework for creating government services that align with the GOV.UK style. It comprises a collection of styles, components, and patterns designed to streamline the development of accessible digital services. Design System places a strong emphasis on accessibility and inclusivity for a diverse audience, with the goal of unifying government digital services and enhancing user experiences. Advertisement Accessibility View source Color System Component overview Repository Icons Illustrations Layout Patterns Spacing Storybook Typography Voice and Tone Accordion Alert banner Breadcrumb Button Checkbox Data table Date picker Form Link List Page header Pagination Radio button Select Tabs Tag Text area Text field Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromGOV.UK](./govuk#up-pixel) [Source](https://design-system.service.gov.uk/) [Repository](https://github.com/alphagov) [Storybook](https://storybook.js.org/showcase/govuk-react) [Accessibility](../directories/accessibility) [View source](https://design-system.service.gov.uk/accessibility/accessibility-strategy/) [Color System](../directories/color-system) [View source](https://design-system.service.gov.uk/styles/colour/) [Component overview](../directories/component-overview) [View source](https://design-system.service.gov.uk/components/) [Repository](../directories/repository) [View source](https://github.com/alphagov) [Icons](../directories/icons) [View source](https://design-system.service.gov.uk/styles/images/#icons) [Illustrations](../directories/illustrations) [View source](https://design-system.service.gov.uk/styles/images/#illustrations) [Layout](../directories/layout) [View source](https://design-system.service.gov.uk/styles/layout/) [Patterns](../directories/patterns) [View source](https://design-system.service.gov.uk/patterns/) [Spacing](../directories/spacing) [View source](https://design-system.service.gov.uk/styles/spacing/) [Storybook](../directories/storybook) [View source](https://storybook.js.org/showcase/govuk-react) [Typography](../directories/typography) [View source](https://design-system.service.gov.uk/styles/type-scale/) [Voice and Tone](../directories/voice-and-tone) [View source](https://www.gov.uk/guidance/content-design) [Accordion](../components/accordion) [View source](https://design-system.service.gov.uk/components/accordion/) [Alert banner](../components/alert-banner) [View source](https://design-system.service.gov.uk/components/notification-banner/) [Breadcrumb](../components/breadcrumbs) [View source](https://design-system.service.gov.uk/components/breadcrumbs/) [Button](../components/button) [View source](https://design-system.service.gov.uk/components/button/) [Checkbox](../components/checkbox) [View source](https://design-system.service.gov.uk/components/checkboxes/) [Data table](../components/data-table) [View source](https://design-system.service.gov.uk/components/table/) [Date picker](../components/date-picker) [View source](https://design-system.service.gov.uk/components/date-input/) [Form](../components/form) [View source](https://design-system.service.gov.uk/components/fieldset/) [Link](../components/link) [View source](https://design-system.service.gov.uk/styles/links/) [List](../components/list) [View source](https://design-system.service.gov.uk/styles/lists/) [Page header](../components/page-header) [View source](https://design-system.service.gov.uk/components/header/) [Pagination](../components/pagination) [View source](https://design-system.service.gov.uk/components/pagination/) [Radio button](../components/radio-button) [View source](https://design-system.service.gov.uk/components/radios/) [Select](../components/select) [View source](https://design-system.service.gov.uk/components/select/) [Tabs](../components/tabs) [View source](https://design-system.service.gov.uk/components/tabs/) [Tag](../components/tag) [View source](https://design-system.service.gov.uk/components/tag/) [Text area](../components/text-area) [View source](https://design-system.service.gov.uk/components/textarea/) [Text field](../components/text-field) [View source](https://design-system.service.gov.uk/components/text-input/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# GOV.UK Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: GOV.UK Design System offers a comprehensive framework for creating government services that align with the GOV.UK style.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 939,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "latest in Design Systems Subscribe Design System from Directories: Components: GOV.UK Design System offers a comprehensive framework for creating government services that align with the GOV.UK style. It comprises a collection of styles, components, and patterns designed to streamline the development of accessible digital services. Design System places a strong emphasis on accessibility and inclusivity for a diverse audience, with the goal of unifying government digital services and enhancing user experiences. Advertisement Accessibility View source Color System Component overview Repository Icons Illustrations Layout Patterns Spacing Storybook Typography Voice and Tone Accordion Alert banner Breadcrumb Button Checkbox Data table Date picker Form Link List Page header Pagination Radio button Select Tabs Tag Text area Text field Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components)",
+      "metadata": {
+        "startIndex": 739,
+        "endIndex": 1725,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "on Radio button Select Tabs Tag Text area Text field Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen)",
+      "metadata": {
+        "startIndex": 1525,
+        "endIndex": 2515,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2315,
+        "endIndex": 3305,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromGOV.UK](./govuk#up-pixel) [Source](https://design-system.service.gov.uk/) [Repository](https://github.com/alphagov) [Storybook](https://storybook.js.org/showcase/govuk-react) [Accessibility](../directories/accessibility) [View source](https://design-system.service.gov.uk/accessibility/accessibility-strategy/) [Color System](../directories/color-system) [View",
+      "metadata": {
+        "startIndex": 3105,
+        "endIndex": 4049,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "/govuk-react) [Accessibility](../directories/accessibility) [View source](https://design-system.service.gov.uk/accessibility/accessibility-strategy/) [Color System](../directories/color-system) [View source](https://design-system.service.gov.uk/styles/colour/) [Component overview](../directories/component-overview) [View source](https://design-system.service.gov.uk/components/) [Repository](../directories/repository) [View source](https://github.com/alphagov) [Icons](../directories/icons) [View source](https://design-system.service.gov.uk/styles/images/#icons) [Illustrations](../directories/illustrations) [View source](https://design-system.service.gov.uk/styles/images/#illustrations) [Layout](../directories/layout) [View source](https://design-system.service.gov.uk/styles/layout/) [Patterns](../directories/patterns) [View source](https://design-system.service.gov.uk/patterns/) [Spacing](../directories/spacing) [View source](https://design-system.service.gov.uk/styles/spacing/)",
+      "metadata": {
+        "startIndex": 3849,
+        "endIndex": 4842,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "[Patterns](../directories/patterns) [View source](https://design-system.service.gov.uk/patterns/) [Spacing](../directories/spacing) [View source](https://design-system.service.gov.uk/styles/spacing/) [Storybook](../directories/storybook) [View source](https://storybook.js.org/showcase/govuk-react) [Typography](../directories/typography) [View source](https://design-system.service.gov.uk/styles/type-scale/) [Voice and Tone](../directories/voice-and-tone) [View source](https://www.gov.uk/guidance/content-design) [Accordion](../components/accordion) [View source](https://design-system.service.gov.uk/components/accordion/) [Alert banner](../components/alert-banner) [View source](https://design-system.service.gov.uk/components/notification-banner/) [Breadcrumb](../components/breadcrumbs) [View source](https://design-system.service.gov.uk/components/breadcrumbs/) [Button](../components/button) [View source](https://design-system.service.gov.uk/components/button/)",
+      "metadata": {
+        "startIndex": 4642,
+        "endIndex": 5614,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "mponents/breadcrumbs) [View source](https://design-system.service.gov.uk/components/breadcrumbs/) [Button](../components/button) [View source](https://design-system.service.gov.uk/components/button/) [Checkbox](../components/checkbox) [View source](https://design-system.service.gov.uk/components/checkboxes/) [Data table](../components/data-table) [View source](https://design-system.service.gov.uk/components/table/) [Date picker](../components/date-picker) [View source](https://design-system.service.gov.uk/components/date-input/) [Form](../components/form) [View source](https://design-system.service.gov.uk/components/fieldset/) [Link](../components/link) [View source](https://design-system.service.gov.uk/styles/links/) [List](../components/list) [View source](https://design-system.service.gov.uk/styles/lists/) [Page header](../components/page-header) [View source](https://design-system.service.gov.uk/components/header/) [Pagination](../components/pagination) [View",
+      "metadata": {
+        "startIndex": 5414,
+        "endIndex": 6392,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "esign-system.service.gov.uk/styles/lists/) [Page header](../components/page-header) [View source](https://design-system.service.gov.uk/components/header/) [Pagination](../components/pagination) [View source](https://design-system.service.gov.uk/components/pagination/) [Radio button](../components/radio-button) [View source](https://design-system.service.gov.uk/components/radios/) [Select](../components/select) [View source](https://design-system.service.gov.uk/components/select/) [Tabs](../components/tabs) [View source](https://design-system.service.gov.uk/components/tabs/) [Tag](../components/tag) [View source](https://design-system.service.gov.uk/components/tag/) [Text area](../components/text-area) [View source](https://design-system.service.gov.uk/components/textarea/) [Text field](../components/text-field) [View source](https://design-system.service.gov.uk/components/text-input/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM",
+      "metadata": {
+        "startIndex": 6192,
+        "endIndex": 7187,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "](../components/text-field) [View source](https://design-system.service.gov.uk/components/text-input/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 6987,
+        "endIndex": 7987,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "form",
+      "header",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:43.278Z",
+    "source_url": "https://designsystems.surf/design-systems/govuk"
+  }
+}

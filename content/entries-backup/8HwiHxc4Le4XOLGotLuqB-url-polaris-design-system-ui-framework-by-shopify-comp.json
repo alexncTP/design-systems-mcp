@@ -1,0 +1,183 @@
+{
+  "id": "8HwiHxc4Le4XOLGotLuqB",
+  "title": "Polaris Design System – UI Framework by Shopify, Components",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/shopify",
+    "ingested_at": "2025-08-30T13:10:01.932Z"
+  },
+  "content": "# Shopify Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Polaris from Directories: Components: Polaris is the design system for Shopify admin, used by designers, developers, and app creators. It provides design guidance, code libraries, and API documentation to build high-quality merchant experiences. Polaris components go through stages, meeting requirements for continuous improvement. The Shopify design team has developed guidelines for product information architecture, as well as best practices for app localization and advice on working with international design. Advertisement Accessibility View source Color System Component lifecycle Component overview Data visualization Figma Repository Icons Illustrations International Design Layout Patterns Spacing States Tokens Typography Voice and Tone Action list Alert banner App bar Autocomplete Avatar Badges Button Button group Cards Checkbox Combobox Data table Date picker Divider Empty state Filter input Form Icon Inline message Link List Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Slider Snackbar Tabs Tag Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [PolarisfromShopify](./shopify#up-pixel) [Source](https://polaris.shopify.com/) [Figma](https://www.figma.com/@shopify) [Repository](https://github.com/Shopify/polaris-react) [Accessibility](../directories/accessibility) [View source](https://polaris.shopify.com/foundations/accessibility) [Color System](../directories/color-system) [View source](https://polaris.shopify.com/design/colors) [Component lifecycle](../directories/component-lifecycle) [View source](https://polaris.shopify.com/getting-started/components-lifecycle) [Component overview](../directories/component-overview) [View source](https://polaris.shopify.com/components) [Data visualization](../directories/data-visualization) [View source](https://polaris.shopify.com/design/data-visualizations) [Figma](../directories/figma) [View source](https://www.figma.com/@shopify) [Repository](../directories/repository) [View source](https://github.com/Shopify/polaris-react) [Icons](../directories/icons) [View source](https://polaris.shopify.com/design/icons) [Illustrations](../directories/illustrations) [View source](https://polaris.shopify.com/design/illustrations) [International Design](../directories/international-design) [View source](https://polaris.shopify.com/foundations/internationalization) [Layout](../directories/layout) [View source](https://polaris.shopify.com/design/layout) [Patterns](../directories/patterns) [View source](https://polaris.shopify.com/patterns) [Spacing](../directories/spacing) [View source](https://polaris.shopify.com/design/space) [States](../directories/states) [View source](https://polaris.shopify.com/design/interaction-states) [Tokens](../directories/tokens) [View source](https://polaris.shopify.com/tokens) [Typography](../directories/typography) [View source](https://polaris.shopify.com/design/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://polaris.shopify.com/content) [Action list](../components/action-list) [View source](https://polaris.shopify.com/components/lists/action-list) [Alert banner](../components/alert-banner) [View source](https://polaris.shopify.com/components/feedback-indicators/banner) [App bar](../components/app-bar) [View source](https://polaris.shopify.com/components/navigation/top-bar) [Autocomplete](../components/autocomplete) [View source](https://polaris.shopify.com/components/selection-and-input/autocomplete) [Avatar](../components/avatar) [View source](https://polaris.shopify.com/components/images-and-icons/avatar) [Badges](../components/badges) [View source](https://polaris.shopify.com/components/feedback-indicators/badge) [Button](../components/button) [View source](https://polaris.shopify.com/components/actions/button) [Button group](../components/button-group) [View source](https://polaris.shopify.com/components/actions/button-group) [Cards](../components/cards) [View source](https://polaris.shopify.com/components/layout-and-structure/media-card) [Checkbox](../components/checkbox) [View source](https://polaris.shopify.com/components/selection-and-input/checkbox) [Combobox](../components/combobox) [View source](https://polaris.shopify.com/components/selection-and-input/combobox) [Data table](../components/data-table) [View source](https://polaris.shopify.com/components/tables/data-table) [Date picker](../components/date-picker) [View source](https://polaris.shopify.com/components/selection-and-input/date-picker) [Divider](../components/divider) [View source](https://polaris.shopify.com/components/layout-and-structure/divider) [Empty state](../components/empty-state) [View source](https://polaris.shopify.com/components/layout-and-structure/empty-state) [Filter input](../components/filter-input) [View source](https://polaris.shopify.com/components/selection-and-input/filters) [Form](../components/form) [View source](https://polaris.shopify.com/components/selection-and-input/form) [Icon](../directories/icons) [View source](https://polaris.shopify.com/components/images-and-icons/icon) [Inline message](../components/inline-message) [View source](https://polaris.shopify.com/components/selection-and-input/inline-error) [Link](../components/link) [View source](https://polaris.shopify.com/components/navigation/link) [List](../components/list) [View source](https://polaris.shopify.com/components/lists/list) [Menus](../components/menus) [View source](https://polaris.shopify.com/components/lists/listbox) [Modal](../components/modal) [View source](https://polaris.shopify.com/components/overlays/modal) [Pagination](../components/pagination) [View source](https://polaris.shopify.com/components/navigation/pagination) [Popover](../components/popover) [View source](https://polaris.shopify.com/components/overlays/popover) [Progress bar](../components/progress-bar) [View source](https://polaris.shopify.com/components/feedback-indicators/progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://polaris.shopify.com/components/feedback-indicators/spinner) [Radio button](../components/radio-button) [View source](https://polaris.shopify.com/components/selection-and-input/radio-button) [Select](../components/select) [View source](https://polaris.shopify.com/components/selection-and-input/select) [Sidebar](../components/sidebar) [View source](https://polaris.shopify.com/components/navigation/navigation) [Slider](../components/slider) [View source](https://polaris.shopify.com/components/selection-and-input/range-slider) [Snackbar](../components/snackbar) [View source](https://polaris.shopify.com/components/feedback-indicators/toast) [Tabs](../components/tabs) [View source](https://polaris.shopify.com/components/navigation/tabs) [Tag](../components/tag) [View source](https://polaris.shopify.com/components/selection-and-input/tag) [Text field](../components/text-field) [View source](https://polaris.shopify.com/components/selection-and-input/text-field) [Tooltip](../components/tooltip) [View source](https://polaris.shopify.com/components/overlays/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Shopify Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Polaris from Directories: Components: Polaris is the design system for Shopify admin, used by designers, developers, and app creators.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 909,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "rkOS Zendesk Keep up with the latest in Design Systems Subscribe Polaris from Directories: Components: Polaris is the design system for Shopify admin, used by designers, developers, and app creators. It provides design guidance, code libraries, and API documentation to build high-quality merchant experiences. Polaris components go through stages, meeting requirements for continuous improvement. The Shopify design team has developed guidelines for product information architecture, as well as best practices for app localization and advice on working with international design. Advertisement Accessibility View source Color System Component lifecycle Component overview Data visualization Figma Repository Icons Illustrations International Design Layout Patterns Spacing States Tokens Typography Voice and Tone Action list Alert banner App bar Autocomplete Avatar Badges Button Button group Cards Checkbox Combobox Data table Date picker Divider Empty state Filter input Form Icon Inline message",
+      "metadata": {
+        "startIndex": 709,
+        "endIndex": 1708,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Voice and Tone Action list Alert banner App bar Autocomplete Avatar Badges Button Button group Cards Checkbox Combobox Data table Date picker Divider Empty state Filter input Form Icon Inline message Link List Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Slider Snackbar Tabs Tag Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog)",
+      "metadata": {
+        "startIndex": 1508,
+        "endIndex": 2503,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "an](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei)",
+      "metadata": {
+        "startIndex": 2303,
+        "endIndex": 3284,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "alth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [PolarisfromShopify](./shopify#up-pixel) [Source](https://polaris.shopify.com/) [Figma](https://www.figma.com/@shopify)",
+      "metadata": {
+        "startIndex": 3084,
+        "endIndex": 4065,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [PolarisfromShopify](./shopify#up-pixel) [Source](https://polaris.shopify.com/) [Figma](https://www.figma.com/@shopify) [Repository](https://github.com/Shopify/polaris-react) [Accessibility](../directories/accessibility) [View source](https://polaris.shopify.com/foundations/accessibility) [Color System](../directories/color-system) [View source](https://polaris.shopify.com/design/colors) [Component lifecycle](../directories/component-lifecycle) [View source](https://polaris.shopify.com/getting-started/components-lifecycle) [Component overview](../directories/component-overview) [View source](https://polaris.shopify.com/components) [Data visualization](../directories/data-visualization) [View source](https://polaris.shopify.com/design/data-visualizations) [Figma](../directories/figma) [View source](https://www.figma.com/@shopify) [Repository](../directories/repository) [View",
+      "metadata": {
+        "startIndex": 3865,
+        "endIndex": 4832,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "zation) [View source](https://polaris.shopify.com/design/data-visualizations) [Figma](../directories/figma) [View source](https://www.figma.com/@shopify) [Repository](../directories/repository) [View source](https://github.com/Shopify/polaris-react) [Icons](../directories/icons) [View source](https://polaris.shopify.com/design/icons) [Illustrations](../directories/illustrations) [View source](https://polaris.shopify.com/design/illustrations) [International Design](../directories/international-design) [View source](https://polaris.shopify.com/foundations/internationalization) [Layout](../directories/layout) [View source](https://polaris.shopify.com/design/layout) [Patterns](../directories/patterns) [View source](https://polaris.shopify.com/patterns) [Spacing](../directories/spacing) [View source](https://polaris.shopify.com/design/space) [States](../directories/states) [View source](https://polaris.shopify.com/design/interaction-states) [Tokens](../directories/tokens) [View",
+      "metadata": {
+        "startIndex": 4632,
+        "endIndex": 5620,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ing) [View source](https://polaris.shopify.com/design/space) [States](../directories/states) [View source](https://polaris.shopify.com/design/interaction-states) [Tokens](../directories/tokens) [View source](https://polaris.shopify.com/tokens) [Typography](../directories/typography) [View source](https://polaris.shopify.com/design/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://polaris.shopify.com/content) [Action list](../components/action-list) [View source](https://polaris.shopify.com/components/lists/action-list) [Alert banner](../components/alert-banner) [View source](https://polaris.shopify.com/components/feedback-indicators/banner) [App bar](../components/app-bar) [View source](https://polaris.shopify.com/components/navigation/top-bar) [Autocomplete](../components/autocomplete) [View source](https://polaris.shopify.com/components/selection-and-input/autocomplete) [Avatar](../components/avatar) [View",
+      "metadata": {
+        "startIndex": 5420,
+        "endIndex": 6374,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "m/components/navigation/top-bar) [Autocomplete](../components/autocomplete) [View source](https://polaris.shopify.com/components/selection-and-input/autocomplete) [Avatar](../components/avatar) [View source](https://polaris.shopify.com/components/images-and-icons/avatar) [Badges](../components/badges) [View source](https://polaris.shopify.com/components/feedback-indicators/badge) [Button](../components/button) [View source](https://polaris.shopify.com/components/actions/button) [Button group](../components/button-group) [View source](https://polaris.shopify.com/components/actions/button-group) [Cards](../components/cards) [View source](https://polaris.shopify.com/components/layout-and-structure/media-card) [Checkbox](../components/checkbox) [View source](https://polaris.shopify.com/components/selection-and-input/checkbox) [Combobox](../components/combobox) [View source](https://polaris.shopify.com/components/selection-and-input/combobox) [Data table](../components/data-table) [View",
+      "metadata": {
+        "startIndex": 6174,
+        "endIndex": 7171,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "onents/selection-and-input/checkbox) [Combobox](../components/combobox) [View source](https://polaris.shopify.com/components/selection-and-input/combobox) [Data table](../components/data-table) [View source](https://polaris.shopify.com/components/tables/data-table) [Date picker](../components/date-picker) [View source](https://polaris.shopify.com/components/selection-and-input/date-picker) [Divider](../components/divider) [View source](https://polaris.shopify.com/components/layout-and-structure/divider) [Empty state](../components/empty-state) [View source](https://polaris.shopify.com/components/layout-and-structure/empty-state) [Filter input](../components/filter-input) [View source](https://polaris.shopify.com/components/selection-and-input/filters) [Form](../components/form) [View source](https://polaris.shopify.com/components/selection-and-input/form) [Icon](../directories/icons) [View source](https://polaris.shopify.com/components/images-and-icons/icon) [Inline",
+      "metadata": {
+        "startIndex": 6971,
+        "endIndex": 7952,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "s/form) [View source](https://polaris.shopify.com/components/selection-and-input/form) [Icon](../directories/icons) [View source](https://polaris.shopify.com/components/images-and-icons/icon) [Inline message](../components/inline-message) [View source](https://polaris.shopify.com/components/selection-and-input/inline-error) [Link](../components/link) [View source](https://polaris.shopify.com/components/navigation/link) [List](../components/list) [View source](https://polaris.shopify.com/components/lists/list) [Menus](../components/menus) [View source](https://polaris.shopify.com/components/lists/listbox) [Modal](../components/modal) [View source](https://polaris.shopify.com/components/overlays/modal) [Pagination](../components/pagination) [View source](https://polaris.shopify.com/components/navigation/pagination) [Popover](../components/popover) [View source](https://polaris.shopify.com/components/overlays/popover) [Progress bar](../components/progress-bar) [View",
+      "metadata": {
+        "startIndex": 7752,
+        "endIndex": 8730,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": ".shopify.com/components/navigation/pagination) [Popover](../components/popover) [View source](https://polaris.shopify.com/components/overlays/popover) [Progress bar](../components/progress-bar) [View source](https://polaris.shopify.com/components/feedback-indicators/progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://polaris.shopify.com/components/feedback-indicators/spinner) [Radio button](../components/radio-button) [View source](https://polaris.shopify.com/components/selection-and-input/radio-button) [Select](../components/select) [View source](https://polaris.shopify.com/components/selection-and-input/select) [Sidebar](../components/sidebar) [View source](https://polaris.shopify.com/components/navigation/navigation) [Slider](../components/slider) [View source](https://polaris.shopify.com/components/selection-and-input/range-slider) [Snackbar](../components/snackbar) [View",
+      "metadata": {
+        "startIndex": 8530,
+        "endIndex": 9458,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "fy.com/components/navigation/navigation) [Slider](../components/slider) [View source](https://polaris.shopify.com/components/selection-and-input/range-slider) [Snackbar](../components/snackbar) [View source](https://polaris.shopify.com/components/feedback-indicators/toast) [Tabs](../components/tabs) [View source](https://polaris.shopify.com/components/navigation/tabs) [Tag](../components/tag) [View source](https://polaris.shopify.com/components/selection-and-input/tag) [Text field](../components/text-field) [View source](https://polaris.shopify.com/components/selection-and-input/text-field) [Tooltip](../components/tooltip) [View source](https://polaris.shopify.com/components/overlays/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf)",
+      "metadata": {
+        "startIndex": 9258,
+        "endIndex": 10242,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 10042,
+        "endIndex": 11042,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "input",
+      "form",
+      "modal",
+      "card",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:01.932Z",
+    "source_url": "https://designsystems.surf/design-systems/shopify"
+  }
+}

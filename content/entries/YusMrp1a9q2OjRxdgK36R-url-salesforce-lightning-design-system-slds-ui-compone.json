@@ -1,0 +1,183 @@
+{
+  "id": "YusMrp1a9q2OjRxdgK36R",
+  "title": "Salesforce Lightning Design System (SLDS), UI Components",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/salesforce",
+    "ingested_at": "2025-08-30T13:09:25.106Z"
+  },
+  "content": "# Salesforce Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Lightning from Directories: Components: Salesforce Lightning Design System (SLDS) is a set of guidelines and resources by Salesforce to create cohesive and user-friendly interfaces for applications on their platform. It ensures a seamless user experience, covering design, layout, components, tokens and more. Salesforce was among the pioneers in the concept of design tokens and promoting this approach in product development. Design System provides a set of design guidelines, components, and resources that enable developers and designers to build applications with a consistent look and feel, enhancing user experience and streamlining development. Advertisement Accessibility View source Color System Component overview Component status Data visualization Figma Repository Icons Illustrations International Design Layout Motion Patterns Spacing Storybook Tokens Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Drawer Empty state Form Icon Inline message Menus Modal Page header Popover Progress bar Progress indicator Radio button Select Sidebar Slider Snackbar Tabs Text area Text field Tooltip Tree view",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Salesforce Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Lightning from Directories: Components: Salesforce Lightning Design System (SLDS) is a set of guidelines and resources by Salesforce to create cohesive and user-friendly interfaces for applications on their platform.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 991,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "rectories: Components: Salesforce Lightning Design System (SLDS) is a set of guidelines and resources by Salesforce to create cohesive and user-friendly interfaces for applications on their platform. It ensures a seamless user experience, covering design, layout, components, tokens and more. Salesforce was among the pioneers in the concept of design tokens and promoting this approach in product development. Design System provides a set of design guidelines, components, and resources that enable developers and designers to build applications with a consistent look and feel, enhancing user experience and streamlining development. Advertisement Accessibility View source Color System Component overview Component status Data visualization Figma Repository Icons Illustrations International Design Layout Motion Patterns Spacing Storybook Tokens Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Drawer",
+      "metadata": {
+        "startIndex": 791,
+        "endIndex": 1789,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ign Layout Motion Patterns Spacing Storybook Tokens Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Drawer Empty state Form Icon Inline message Menus Modal Page header Popover Progress bar Progress indicator Radio button Select Sidebar Slider Snackbar Tabs Text area Text field Tooltip Tree view",
+      "metadata": {
+        "startIndex": 1589,
+        "endIndex": 2590,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "n](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red",
+      "metadata": {
+        "startIndex": 2390,
+        "endIndex": 3381,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "zilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [LightningfromSalesforce](./salesforce#up-pixel) [introducing](https://www.youtube.com/watch?v=wDBEc3dJJV8)",
+      "metadata": {
+        "startIndex": 3181,
+        "endIndex": 4178,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "he latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [LightningfromSalesforce](./salesforce#up-pixel) [introducing](https://www.youtube.com/watch?v=wDBEc3dJJV8) [Source](https://www.lightningdesignsystem.com/) [Figma](https://www.figma.com/@salesforce) [Repository](https://github.com/salesforce/lwc) [Storybook](https://storybook.js.org/showcase/salesforce-lightning-design-system-for-react) [Accessibility](../directories/accessibility) [View source](https://www.lightningdesignsystem.com/accessibility/overview/) [Color System](../directories/color-system) [View source](https://www.lightningdesignsystem.com/2e1ef8501/p/655b28-color) [Component overview](../directories/component-overview) [View source](https://www.lightningdesignsystem.com/components/overview/) [Component status](../directories/component-status) [Data visualization](../directories/data-visualization) [View",
+      "metadata": {
+        "startIndex": 3978,
+        "endIndex": 4899,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "t-overview) [View source](https://www.lightningdesignsystem.com/components/overview/) [Component status](../directories/component-status) [Data visualization](../directories/data-visualization) [View source](https://www.lightningdesignsystem.com/guidelines/data-visualization/charts/) [Figma](../directories/figma) [View source](https://www.figma.com/@salesforce) [Repository](../directories/repository) [View source](https://github.com/salesforce/lwc) [Icons](../directories/icons) [View source](https://www.lightningdesignsystem.com/guidelines/iconography/) [Illustrations](../directories/illustrations) [View source](https://www.lightningdesignsystem.com/guidelines/messaging/components/illustration-inline-text/#site-main-content) [International Design](../directories/international-design) [View source](https://www.lightningdesignsystem.com/guidelines/localization/) [Layout](../directories/layout) [View source](https://www.lightningdesignsystem.com/guidelines/layout/)",
+      "metadata": {
+        "startIndex": 4699,
+        "endIndex": 5676,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "rnational-design) [View source](https://www.lightningdesignsystem.com/guidelines/localization/) [Layout](../directories/layout) [View source](https://www.lightningdesignsystem.com/guidelines/layout/) [Motion](../directories/motion) [View source](https://www.lightningdesignsystem.com/kinetics/overview/) [Patterns](../directories/patterns) [View source](https://www.lightningdesignsystem.com/accessibility/patterns/overview/) [Spacing](../directories/spacing) [View source](https://www.lightningdesignsystem.com/design-tokens/#category-spacing) [Storybook](../directories/storybook) [View source](https://storybook.js.org/showcase/salesforce-lightning-design-system-for-react) [Tokens](../directories/tokens) [View source](https://www.lightningdesignsystem.com/design-tokens/#site-main-content) [Typography](../directories/typography) [View source](https://www.lightningdesignsystem.com/2e1ef8501/p/93288f-typography) [Voice and Tone](../directories/voice-and-tone) [View",
+      "metadata": {
+        "startIndex": 5476,
+        "endIndex": 6448,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ns/#site-main-content) [Typography](../directories/typography) [View source](https://www.lightningdesignsystem.com/2e1ef8501/p/93288f-typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://www.lightningdesignsystem.com/guidelines/voice-and-tone/#site-main-content) [Accordion](../components/accordion) [View source](https://www.lightningdesignsystem.com/components/accordion/) [Alert banner](../components/alert-banner) [View source](https://www.lightningdesignsystem.com/components/alert/) [Avatar](../components/avatar) [View source](https://www.lightningdesignsystem.com/components/avatar/) [Badges](../components/badges) [View source](https://www.lightningdesignsystem.com/components/badges/) [Breadcrumb](../components/breadcrumbs) [View source](https://www.lightningdesignsystem.com/components/breadcrumbs/) [Button](../components/button) [View source](https://www.lightningdesignsystem.com/components/buttons/) [Button group](../components/button-group) [View",
+      "metadata": {
+        "startIndex": 6248,
+        "endIndex": 7242,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "tningdesignsystem.com/components/breadcrumbs/) [Button](../components/button) [View source](https://www.lightningdesignsystem.com/components/buttons/) [Button group](../components/button-group) [View source](https://www.lightningdesignsystem.com/components/button-groups/) [Cards](../components/cards) [View source](https://www.lightningdesignsystem.com/components/cards/) [Checkbox](../components/checkbox) [View source](https://www.lightningdesignsystem.com/components/checkbox/) [Combobox](../components/combobox) [View source](https://www.lightningdesignsystem.com/components/combobox/) [Data table](../components/data-table) [View source](https://www.lightningdesignsystem.com/components/data-tables/) [Date picker](../components/date-picker) [View source](https://www.lightningdesignsystem.com/components/datepickers/) [Drawer](../components/drawer) [View source](https://www.lightningdesignsystem.com/components/panels/) [Empty state](../components/empty-state) [View",
+      "metadata": {
+        "startIndex": 7042,
+        "endIndex": 8017,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ightningdesignsystem.com/components/datepickers/) [Drawer](../components/drawer) [View source](https://www.lightningdesignsystem.com/components/panels/) [Empty state](../components/empty-state) [View source](https://www.lightningdesignsystem.com/guidelines/empty-state/) [Form](../components/form) [View source](https://www.lightningdesignsystem.com/components/form-element/) [Icon](../directories/icons) [View source](https://www.lightningdesignsystem.com/components/icons/) [Inline message](../components/inline-message) [View source](https://www.lightningdesignsystem.com/guidelines/messaging/components/inline-text/) [Menus](../components/menus) [View source](https://www.lightningdesignsystem.com/components/menus/) [Modal](../components/modal) [View source](https://www.lightningdesignsystem.com/components/modals/) [Page header](../components/page-header) [View source](https://www.lightningdesignsystem.com/components/page-headers/) [Popover](../components/popover) [View",
+      "metadata": {
+        "startIndex": 7817,
+        "endIndex": 8797,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "tningdesignsystem.com/components/modals/) [Page header](../components/page-header) [View source](https://www.lightningdesignsystem.com/components/page-headers/) [Popover](../components/popover) [View source](https://www.lightningdesignsystem.com/components/popovers/) [Progress bar](../components/progress-bar) [View source](https://www.lightningdesignsystem.com/components/progress-bar/) [Progress indicator](../components/progress-indicator) [View source](https://www.lightningdesignsystem.com/components/spinners/) [Radio button](../components/radio-button) [View source](https://www.lightningdesignsystem.com/components/radio-group/) [Select](../components/select) [View source](https://www.lightningdesignsystem.com/components/select/) [Sidebar](../components/sidebar) [View source](https://www.lightningdesignsystem.com/components/vertical-navigation/) [Slider](../components/slider) [View source](https://www.lightningdesignsystem.com/components/slider/) [Snackbar](../components/snackbar)",
+      "metadata": {
+        "startIndex": 8597,
+        "endIndex": 9594,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "ww.lightningdesignsystem.com/components/vertical-navigation/) [Slider](../components/slider) [View source](https://www.lightningdesignsystem.com/components/slider/) [Snackbar](../components/snackbar) [View source](https://www.lightningdesignsystem.com/components/toast/) [Tabs](../components/tabs) [View source](https://www.lightningdesignsystem.com/components/tabs/) [Text area](../components/text-area) [View source](https://www.lightningdesignsystem.com/components/textarea/) [Text field](../components/text-field) [View source](https://www.lightningdesignsystem.com/components/input/#site-main-content) [Tooltip](../components/tooltip) [View source](https://www.lightningdesignsystem.com/components/tooltips/) [Tree view](../components/tree-view) [View source](https://www.lightningdesignsystem.com/components/trees/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft)",
+      "metadata": {
+        "startIndex": 9394,
+        "endIndex": 10369,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "w.lightningdesignsystem.com/components/trees/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 10169,
+        "endIndex": 11169,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "form",
+      "modal",
+      "header",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:25.106Z",
+    "source_url": "https://designsystems.surf/design-systems/salesforce"
+  }
+}

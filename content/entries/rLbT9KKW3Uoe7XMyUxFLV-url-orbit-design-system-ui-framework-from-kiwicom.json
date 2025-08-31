@@ -1,0 +1,161 @@
+{
+  "id": "rLbT9KKW3Uoe7XMyUxFLV",
+  "title": "Orbit Design System – UI Framework from Kiwicom",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/kiwicom",
+    "ingested_at": "2025-08-30T13:09:47.135Z"
+  },
+  "content": "# Kiwicom Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Orbit from Directories: Components: Orbit is a design system developed by the Kiwicom team for designing the interface of their travel app. The aim of Orbit is to bring order and consistency to Kiwicom products and the processes behind building them. The documentation and guides for Orbit contain best practices for accessibility and internationalization, as well as advanced theming and travel-specific components for travel products. Advertisement Accessibility View source Color System Component overview Component status Elevation Figma Repository Icons Illustrations Patterns Spacing Storybook Styles Tokens Typography Voice and Tone Accordion Action list Alert banner App bar Badges Breadcrumb Button Button group Cards Checkbox Data table Dialog Divider Drawer Empty state Icon Link List Modal Pagination Popover Progress indicator Radio button Segmented control Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Kiwicom Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Orbit from Directories: Components: Orbit is a design system developed by the Kiwicom team for designing the interface of their travel app.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 914,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Zendesk Keep up with the latest in Design Systems Subscribe Orbit from Directories: Components: Orbit is a design system developed by the Kiwicom team for designing the interface of their travel app. The aim of Orbit is to bring order and consistency to Kiwicom products and the processes behind building them. The documentation and guides for Orbit contain best practices for accessibility and internationalization, as well as advanced theming and travel-specific components for travel products. Advertisement Accessibility View source Color System Component overview Component status Elevation Figma Repository Icons Illustrations Patterns Spacing Storybook Styles Tokens Typography Voice and Tone Accordion Action list Alert banner App bar Badges Breadcrumb Button Button group Cards Checkbox Data table Dialog Divider Drawer Empty state Icon Link List Modal Pagination Popover Progress indicator Radio button Segmented control Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip",
+      "metadata": {
+        "startIndex": 714,
+        "endIndex": 1713,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "a table Dialog Divider Drawer Empty state Icon Link List Modal Pagination Popover Progress indicator Radio button Segmented control Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip",
+      "metadata": {
+        "startIndex": 1513,
+        "endIndex": 2513,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "/cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout",
+      "metadata": {
+        "startIndex": 2313,
+        "endIndex": 3301,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [OrbitfromKiwicom](./kiwicom#up-pixel) [Source](https://orbit.kiwi/) [Figma](https://www.figma.com/@OrbitByKiwi) [Repository](https://github.com/kiwicom/orbit) [Storybook](https://storybook.js.org/showcase/kiwicom-orbit) [Accessibility](../directories/accessibility) [View",
+      "metadata": {
+        "startIndex": 3101,
+        "endIndex": 4078,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ma](https://www.figma.com/@OrbitByKiwi) [Repository](https://github.com/kiwicom/orbit) [Storybook](https://storybook.js.org/showcase/kiwicom-orbit) [Accessibility](../directories/accessibility) [View source](https://orbit.kiwi/foundation/accessibility/) [Color System](../directories/color-system) [View source](https://orbit.kiwi/foundation/color/) [Component overview](../directories/component-overview) [View source](https://orbit.kiwi/components/) [Component status](../directories/component-status) [View source](https://orbit.kiwi/component-status/) [Elevation](../directories/elevation) [View source](https://orbit.kiwi/foundation/elevation/) [Figma](../directories/figma) [View source](https://www.figma.com/@OrbitByKiwi) [Repository](../directories/repository) [View source](https://github.com/kiwicom/orbit) [Icons](../directories/icons) [View source](https://orbit.kiwi/foundation/icons/) [Illustrations](../directories/illustrations) [View",
+      "metadata": {
+        "startIndex": 3878,
+        "endIndex": 4830,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ories/repository) [View source](https://github.com/kiwicom/orbit) [Icons](../directories/icons) [View source](https://orbit.kiwi/foundation/icons/) [Illustrations](../directories/illustrations) [View source](https://orbit.kiwi/foundation/illustrations/) [Patterns](../directories/patterns) [View source](https://orbit.kiwi/design-patterns/) [Spacing](../directories/spacing) [View source](https://orbit.kiwi/foundation/spacing/) [Storybook](../directories/storybook) [View source](https://storybook.js.org/showcase/kiwicom-orbit) [Styles](../directories/styles) [View source](https://orbit.kiwi/foundation/border-radiuses/) [Tokens](../directories/tokens) [View source](https://orbit.kiwi/foundation/design-tokens/) [Typography](../directories/typography) [View source](https://orbit.kiwi/foundation/typography/) [Voice and Tone](../directories/voice-and-tone) [View source](https://orbit.kiwi/kiwi-use/content/) [Accordion](../components/accordion) [View",
+      "metadata": {
+        "startIndex": 4630,
+        "endIndex": 5586,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "[View source](https://orbit.kiwi/foundation/typography/) [Voice and Tone](../directories/voice-and-tone) [View source](https://orbit.kiwi/kiwi-use/content/) [Accordion](../components/accordion) [View source](https://orbit.kiwi/components/structure/accordion/) [Action list](../components/action-list) [View source](https://orbit.kiwi/components/input/listchoice/) [Alert banner](../components/alert-banner) [View source](https://orbit.kiwi/components/information/alert/) [App bar](../components/app-bar) [View source](https://orbit.kiwi/components/navigation/navigationbar/) [Badges](../components/badges) [View source](https://orbit.kiwi/components/information/badge/) [Breadcrumb](../components/breadcrumbs) [View source](https://orbit.kiwi/components/navigation/breadcrumbs/) [Button](../components/button) [View source](https://orbit.kiwi/components/action/button/) [Button group](../components/button-group) [View source](https://orbit.kiwi/components/action/buttongroup/)",
+      "metadata": {
+        "startIndex": 5386,
+        "endIndex": 6364,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "[Button](../components/button) [View source](https://orbit.kiwi/components/action/button/) [Button group](../components/button-group) [View source](https://orbit.kiwi/components/action/buttongroup/) [Cards](../components/cards) [View source](https://orbit.kiwi/components/structure/card/) [Checkbox](../components/checkbox) [View source](https://orbit.kiwi/components/input/checkbox/) [Data table](../components/data-table) [View source](https://orbit.kiwi/components/structure/table/) [Dialog](../components/dialog) [View source](https://orbit.kiwi/components/overlay/dialog/) [Divider](../components/divider) [View source](https://orbit.kiwi/components/structure/separator/) [Drawer](../components/drawer) [View source](https://orbit.kiwi/components/overlay/drawer/) [Empty state](../components/empty-state) [View source](https://orbit.kiwi/components/progress-indicators/emptystate/) [Icon](../directories/icons) [View source](https://orbit.kiwi/components/visuals/icon/)",
+      "metadata": {
+        "startIndex": 6164,
+        "endIndex": 7140,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "state](../components/empty-state) [View source](https://orbit.kiwi/components/progress-indicators/emptystate/) [Icon](../directories/icons) [View source](https://orbit.kiwi/components/visuals/icon/) [Link](../components/link) [View source](https://orbit.kiwi/components/action/textlink/) [List](../components/list) [View source](https://orbit.kiwi/components/structure/list/) [Modal](../components/modal) [View source](https://orbit.kiwi/components/overlay/modal/) [Pagination](../components/pagination) [View source](https://orbit.kiwi/components/navigation/pagination/) [Popover](../components/popover) [View source](https://orbit.kiwi/components/overlay/popover/) [Progress indicator](../components/progress-indicator) [View source](https://orbit.kiwi/components/progress-indicators/loading/) [Radio button](../components/radio-button) [View source](https://orbit.kiwi/components/input/radio/) [Segmented control](../components/segmented-control) [View",
+      "metadata": {
+        "startIndex": 6940,
+        "endIndex": 7897,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "omponents/progress-indicators/loading/) [Radio button](../components/radio-button) [View source](https://orbit.kiwi/components/input/radio/) [Segmented control](../components/segmented-control) [View source](https://orbit.kiwi/components/interaction/segmentedswitch/) [Select](../components/select) [View source](https://orbit.kiwi/components/input/select/) [Slider](../components/slider) [View source](https://orbit.kiwi/components/interaction/slider/) [Snackbar](../components/snackbar) [View source](https://orbit.kiwi/components/information/toast/) [Switch](../components/switch) [View source](https://orbit.kiwi/components/interaction/switch/) [Tabs](../components/tabs) [View source](https://orbit.kiwi/components/structure/tabs/) [Tag](../components/tag) [View source](https://orbit.kiwi/components/interaction/tag/) [Text area](../components/text-area) [View source](https://orbit.kiwi/components/input/textarea/) [Text field](../components/text-field) [View",
+      "metadata": {
+        "startIndex": 7697,
+        "endIndex": 8664,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "source](https://orbit.kiwi/components/interaction/tag/) [Text area](../components/text-area) [View source](https://orbit.kiwi/components/input/textarea/) [Text field](../components/text-field) [View source](https://orbit.kiwi/components/input/inputfield/) [Tooltip](../components/tooltip) [View source](https://orbit.kiwi/components/overlay/tooltip/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8464,
+        "endIndex": 9464,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "modal",
+      "input",
+      "card",
+      "color",
+      "spacing",
+      "typography",
+      "border",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:47.135Z",
+    "source_url": "https://designsystems.surf/design-systems/kiwicom"
+  }
+}

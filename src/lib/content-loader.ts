@@ -22,9 +22,28 @@ export async function loadAllContentEntries(): Promise<ContentEntry[]> {
 		// Load each file dynamically using imports
 		const loadPromises = manifest.files.map(async (filename) => {
 			try {
+				// Skip non-JSON files
+				if (!filename.endsWith('.json')) {
+					console.warn(`⚠️  Skipping non-JSON file: ${filename}`);
+					return null;
+				}
+				
+				// Skip files that look like system/metadata files
+				if (filename.startsWith('.') || filename.includes('crawl-progress') || filename.includes('manifest')) {
+					console.warn(`⚠️  Skipping system file: ${filename}`);
+					return null;
+				}
+				
 				// Import the JSON file directly - this works in Cloudflare Workers
 				const contentModule = await import(`../../content/entries/${filename}`);
 				const content = contentModule.default as ContentEntry;
+				
+				// Validate basic structure before logging
+				if (!content || !content.title) {
+					console.warn(`⚠️  Invalid content structure in ${filename}:`, content);
+					return null;
+				}
+				
 				console.log(`✅ Loaded: ${content.title}`);
 				return content;
 			} catch (error) {

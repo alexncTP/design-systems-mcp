@@ -1,0 +1,172 @@
+{
+  "id": "PhJdD9cepiy8JNU9LJZk-",
+  "title": "Atlassian Design System – Jira, Confluence UI guidelines",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/atlassian",
+    "ingested_at": "2025-08-30T13:09:21.182Z"
+  },
+  "content": "# Atlassian Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The Atlassian Design System is a comprehensive set of design guidelines and principles for Atlassian products such as Jira, Confluence, and Trello. Its main goal is to ensure a seamless and coherent user experience across different products and platforms. Atlassian improves usability and productivity by standardizing design elements, patterns, and interactions in their software ecosystem. The system allows for flexibility and customization to meet specific product needs while maintaining design principles. Users can find UI patterns, use inclusive language, access design guidelines and Figma libraries, and use Atlassian Design System components, design tokens, and devtools in their environment. Advertisement Accessibility View source Color System Component overview Data visualization Elevation Figma Repository Icons Illustrations Patterns Spacing Storybook Tokens Typography Alert banner App bar Avatar Badges Breadcrumb Button Button group Checkbox Code snippet Data table Date picker Drawer Dropdown Empty state Form Icon Inline message Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Slider Switch Tabs Tag Text area Text field Tooltip Tree view",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Atlassian Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The Atlassian Design System is a comprehensive set of design guidelines and principles for Atlassian products such as Jira, Confluence, and Trello.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 966,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "bscribe Design System from Directories: Components: The Atlassian Design System is a comprehensive set of design guidelines and principles for Atlassian products such as Jira, Confluence, and Trello. Its main goal is to ensure a seamless and coherent user experience across different products and platforms. Atlassian improves usability and productivity by standardizing design elements, patterns, and interactions in their software ecosystem. The system allows for flexibility and customization to meet specific product needs while maintaining design principles. Users can find UI patterns, use inclusive language, access design guidelines and Figma libraries, and use Atlassian Design System components, design tokens, and devtools in their environment. Advertisement Accessibility View source Color System Component overview Data visualization Elevation Figma Repository Icons Illustrations Patterns Spacing Storybook Tokens Typography Alert banner App bar Avatar Badges Breadcrumb Button Button",
+      "metadata": {
+        "startIndex": 766,
+        "endIndex": 1765,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "or System Component overview Data visualization Elevation Figma Repository Icons Illustrations Patterns Spacing Storybook Tokens Typography Alert banner App bar Avatar Badges Breadcrumb Button Button group Checkbox Code snippet Data table Date picker Drawer Dropdown Empty state Form Icon Inline message Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Slider Switch Tabs Tag Text area Text field Tooltip Tree view",
+      "metadata": {
+        "startIndex": 1565,
+        "endIndex": 2552,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir)",
+      "metadata": {
+        "startIndex": 2352,
+        "endIndex": 3334,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "soft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design",
+      "metadata": {
+        "startIndex": 3134,
+        "endIndex": 4134,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "flow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromAtlassian](./atlassian#up-pixel) [Source](https://atlassian.design/) [Figma](https://www.figma.com/@atlassian) [Repository](https://bitbucket.org/atlassian/atlaskit) [Storybook](https://atlaskit.atlassian.com/packages) [Accessibility](../directories/accessibility) [View source](https://atlassian.design/foundations/accessibility/) [Color System](../directories/color-system) [View source](https://atlassian.design/foundations/color-new/) [Component overview](../directories/component-overview) [View source](https://atlassian.design/components) [Data visualization](../directories/data-visualization) [View source](https://atlassian.design/foundations/color-new/data-visualization-color/) [Elevation](../directories/elevation) [View source](https://atlassian.design/foundations/elevation/)",
+      "metadata": {
+        "startIndex": 3934,
+        "endIndex": 4935,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "alization) [View source](https://atlassian.design/foundations/color-new/data-visualization-color/) [Elevation](../directories/elevation) [View source](https://atlassian.design/foundations/elevation/) [Figma](../directories/figma) [View source](https://www.figma.com/@atlassian) [Repository](../directories/repository) [View source](https://bitbucket.org/atlassian/atlaskit) [Icons](../directories/icons) [View source](https://atlassian.design/foundations/iconography/) [Illustrations](../directories/illustrations) [View source](https://atlassian.design/foundations/illustrations/) [Patterns](../directories/patterns) [View source](https://atlassian.design/patterns) [Spacing](../directories/spacing) [View source](https://atlassian.design/foundations/spacing/) [Storybook](../directories/storybook) [View source](https://atlaskit.atlassian.com/packages) [Tokens](../directories/tokens) [View source](https://atlassian.design/tokens/design-tokens/) [Typography](../directories/typography) [View",
+      "metadata": {
+        "startIndex": 4735,
+        "endIndex": 5730,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ook) [View source](https://atlaskit.atlassian.com/packages) [Tokens](../directories/tokens) [View source](https://atlassian.design/tokens/design-tokens/) [Typography](../directories/typography) [View source](https://atlassian.design/foundations/typography/) [Alert banner](../components/alert-banner) [View source](https://atlassian.design/components/section-message) [App bar](../components/app-bar) [View source](https://atlassian.design/components/atlassian-navigation) [Avatar](../components/avatar) [View source](https://atlassian.design/components/avatar) [Badges](../components/badges) [View source](https://atlassian.design/components/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://atlassian.design/components/breadcrumbs) [Button](../components/button) [View source](https://atlassian.design/components/button) [Button group](../components/button-group) [View source](https://atlassian.design/components/button/button-group) [Checkbox](../components/checkbox) [View",
+      "metadata": {
+        "startIndex": 5530,
+        "endIndex": 6527,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "(https://atlassian.design/components/button) [Button group](../components/button-group) [View source](https://atlassian.design/components/button/button-group) [Checkbox](../components/checkbox) [View source](https://atlassian.design/components/checkbox) [Code snippet](../components/code-snippet) [View source](https://atlassian.design/components/code) [Data table](../components/data-table) [View source](https://atlassian.design/components/dynamic-table) [Date picker](../components/date-picker) [View source](https://atlassian.design/components/datetime-picker/date-picker) [Drawer](../components/drawer) [View source](https://atlassian.design/components/drawer) [Dropdown](../components/dropdown) [View source](https://atlassian.design/components/dropdown-menu) [Empty state](../components/empty-state) [View source](https://atlassian.design/components/empty-state) [Form](../components/form) [View source](https://atlassian.design/components/form) [Icon](../directories/icons) [View",
+      "metadata": {
+        "startIndex": 6327,
+        "endIndex": 7315,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "nents/empty-state) [View source](https://atlassian.design/components/empty-state) [Form](../components/form) [View source](https://atlassian.design/components/form) [Icon](../directories/icons) [View source](https://atlassian.design/components/icon) [Inline message](../components/inline-message) [View source](https://atlassian.design/components/inline-message) [Menus](../components/menus) [View source](https://atlassian.design/components/menu) [Modal](../components/modal) [View source](https://atlassian.design/components/modal-dialog) [Page header](../components/page-header) [View source](https://atlassian.design/components/page-header) [Pagination](../components/pagination) [View source](https://atlassian.design/components/pagination) [Popover](../components/popover) [View source](https://atlassian.design/components/popup) [Progress bar](../components/progress-bar) [View source](https://atlassian.design/components/progress-bar) [Progress indicator](../components/progress-indicator)",
+      "metadata": {
+        "startIndex": 7115,
+        "endIndex": 8113,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "://atlassian.design/components/popup) [Progress bar](../components/progress-bar) [View source](https://atlassian.design/components/progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://atlassian.design/components/spinner) [Radio button](../components/radio-button) [View source](https://atlassian.design/components/radio) [Select](../components/select) [View source](https://atlassian.design/components/select) [Sidebar](../components/sidebar) [View source](https://atlassian.design/components/side-navigation) [Slider](../components/slider) [View source](https://atlassian.design/components/range) [Switch](../components/switch) [View source](https://atlassian.design/components/toggle) [Tabs](../components/tabs) [View source](https://atlassian.design/components/tabs) [Tag](../components/tag) [View source](https://atlassian.design/components/tag) [Text area](../components/text-area) [View source](https://atlassian.design/components/textarea) [Text",
+      "metadata": {
+        "startIndex": 7913,
+        "endIndex": 8904,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "components/tabs) [Tag](../components/tag) [View source](https://atlassian.design/components/tag) [Text area](../components/text-area) [View source](https://atlassian.design/components/textarea) [Text field](../components/text-field) [View source](https://atlassian.design/components/textfield) [Tooltip](../components/tooltip) [View source](https://atlassian.design/components/tooltip) [Tree view](../components/tree-view) [View source](https://atlassian.design/components/table-tree) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8704,
+        "endIndex": 9704,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": ".com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 9504,
+        "endIndex": 10504,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "form",
+      "modal",
+      "header",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:21.182Z",
+    "source_url": "https://designsystems.surf/design-systems/atlassian"
+  }
+}

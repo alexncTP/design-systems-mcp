@@ -1,0 +1,149 @@
+{
+  "id": "376RBsTlxAXNndwXextEr",
+  "title": "The UAE Design System (DLS)",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/uae",
+    "ingested_at": "2025-08-30T13:09:05.519Z"
+  },
+  "content": "# UAE Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The UAE Design System is the official design framework for UAE federal government websites. It brings together modular UI components, clear guidelines, and WCAG-compliant patterns to ensure consistency, accessibility, and trust across digital public services. Designed by the TDRA, it supports both designers and developers with Figma files, design tokens, and a TailwindCSS plugin — making it easier to build scalable and user-first interfaces for millions of users across the Emirates. Advertisement Accessibility View source Color System Component overview Repository Icons Illustrations Layout Patterns Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Cards Checkbox Date picker Dropdown Link Modal Navigation bar Pagination Popover Progress bar Radio button Select Slider Snackbar Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromUAE](./uae#up-pixel) [Source](https://designsystem.gov.ae/) [Repository](https://github.com/TDRA-ae/aegov-dls) [Accessibility](../directories/accessibility) [View source](https://designsystem.gov.ae/guidelines/accessibility) [Color System](../directories/color-system) [View source](https://designsystem.gov.ae/guidelines/colour-system) [Component overview](../directories/component-overview) [View source](https://designsystem.gov.ae/docs/components) [Repository](../directories/repository) [View source](https://github.com/TDRA-ae/aegov-dls) [Icons](../directories/icons) [View source](https://designsystem.gov.ae/guidelines/iconography) [Illustrations](../directories/illustrations) [View source](https://designsystem.gov.ae/guidelines/imagery) [Layout](../directories/layout) [View source](https://designsystem.gov.ae/guidelines/layout) [Patterns](../directories/patterns) [View source](https://designsystem.gov.ae/docs/patterns) [Typography](../directories/typography) [View source](https://designsystem.gov.ae/guidelines/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://designsystem.gov.ae/guidelines/content) [Accordion](../components/accordion) [View source](https://designsystem.gov.ae/docs/components/accordion) [Alert banner](../components/alert-banner) [View source](https://designsystem.gov.ae/docs/components/alert) [Avatar](../components/avatar) [View source](https://designsystem.gov.ae/docs/components/avatar) [Badges](../components/badges) [View source](https://designsystem.gov.ae/docs/components/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://designsystem.gov.ae/docs/components/breadcrumbs) [Button](../components/button) [View source](https://designsystem.gov.ae/docs/components/button) [Cards](../components/cards) [View source](https://designsystem.gov.ae/docs/components/card) [Checkbox](../components/checkbox) [View source](https://designsystem.gov.ae/docs/components/checkbox) [Date picker](../components/date-picker) [View source](https://designsystem.gov.ae/docs/patterns/date) [Dropdown](../components/dropdown) [View source](https://designsystem.gov.ae/docs/components/dropdown) [Link](../components/link) [View source](https://designsystem.gov.ae/docs/components/hyperlink) [Modal](../components/modal) [View source](https://designsystem.gov.ae/docs/components/modal) [Navigation bar](../components/navigation-bar) [View source](https://designsystem.gov.ae/docs/components/navigation) [Pagination](../components/pagination) [View source](https://designsystem.gov.ae/docs/components/pagination) [Popover](../components/popover) [View source](https://designsystem.gov.ae/docs/components/popover) [Progress bar](../components/progress-bar) [View source](https://designsystem.gov.ae/docs/components/steps) [Radio button](../components/radio-button) [View source](https://designsystem.gov.ae/docs/components/radio) [Select](../components/select) [View source](https://designsystem.gov.ae/docs/components/select) [Slider](../components/slider) [View source](https://designsystem.gov.ae/docs/components/range-slider) [Snackbar](../components/snackbar) [View source](https://designsystem.gov.ae/docs/components/toast) [Switch](../components/switch) [View source](https://designsystem.gov.ae/docs/components/toggle) [Tabs](../components/tabs) [View source](https://designsystem.gov.ae/docs/components/tabs) [Text area](../components/text-area) [View source](https://designsystem.gov.ae/docs/components/textarea) [Text field](../components/text-field) [View source](https://designsystem.gov.ae/docs/components/input) [Tooltip](../components/tooltip) [View source](https://designsystem.gov.ae/docs/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# UAE Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The UAE Design System is the official design framework for UAE federal government websites.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 910,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "kOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The UAE Design System is the official design framework for UAE federal government websites. It brings together modular UI components, clear guidelines, and WCAG-compliant patterns to ensure consistency, accessibility, and trust across digital public services. Designed by the TDRA, it supports both designers and developers with Figma files, design tokens, and a TailwindCSS plugin — making it easier to build scalable and user-first interfaces for millions of users across the Emirates. Advertisement Accessibility View source Color System Component overview Repository Icons Illustrations Layout Patterns Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Cards Checkbox Date picker Dropdown Link Modal Navigation bar Pagination Popover Progress bar Radio button Select Slider Snackbar Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ.",
+      "metadata": {
+        "startIndex": 710,
+        "endIndex": 1702,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ton Cards Checkbox Date picker Dropdown Link Modal Navigation bar Pagination Popover Progress bar Radio button Select Slider Snackbar Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab)",
+      "metadata": {
+        "startIndex": 1502,
+        "endIndex": 2496,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
+      "metadata": {
+        "startIndex": 2296,
+        "endIndex": 3289,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromUAE](./uae#up-pixel) [Source](https://designsystem.gov.ae/) [Repository](https://github.com/TDRA-ae/aegov-dls) [Accessibility](../directories/accessibility) [View source](https://designsystem.gov.ae/guidelines/accessibility) [Color System](../directories/color-system) [View",
+      "metadata": {
+        "startIndex": 3089,
+        "endIndex": 4062,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "tps://github.com/TDRA-ae/aegov-dls) [Accessibility](../directories/accessibility) [View source](https://designsystem.gov.ae/guidelines/accessibility) [Color System](../directories/color-system) [View source](https://designsystem.gov.ae/guidelines/colour-system) [Component overview](../directories/component-overview) [View source](https://designsystem.gov.ae/docs/components) [Repository](../directories/repository) [View source](https://github.com/TDRA-ae/aegov-dls) [Icons](../directories/icons) [View source](https://designsystem.gov.ae/guidelines/iconography) [Illustrations](../directories/illustrations) [View source](https://designsystem.gov.ae/guidelines/imagery) [Layout](../directories/layout) [View source](https://designsystem.gov.ae/guidelines/layout) [Patterns](../directories/patterns) [View source](https://designsystem.gov.ae/docs/patterns) [Typography](../directories/typography) [View source](https://designsystem.gov.ae/guidelines/typography) [Voice and",
+      "metadata": {
+        "startIndex": 3862,
+        "endIndex": 4837,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "](../directories/patterns) [View source](https://designsystem.gov.ae/docs/patterns) [Typography](../directories/typography) [View source](https://designsystem.gov.ae/guidelines/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://designsystem.gov.ae/guidelines/content) [Accordion](../components/accordion) [View source](https://designsystem.gov.ae/docs/components/accordion) [Alert banner](../components/alert-banner) [View source](https://designsystem.gov.ae/docs/components/alert) [Avatar](../components/avatar) [View source](https://designsystem.gov.ae/docs/components/avatar) [Badges](../components/badges) [View source](https://designsystem.gov.ae/docs/components/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://designsystem.gov.ae/docs/components/breadcrumbs) [Button](../components/button) [View source](https://designsystem.gov.ae/docs/components/button) [Cards](../components/cards) [View",
+      "metadata": {
+        "startIndex": 4637,
+        "endIndex": 5586,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ew source](https://designsystem.gov.ae/docs/components/breadcrumbs) [Button](../components/button) [View source](https://designsystem.gov.ae/docs/components/button) [Cards](../components/cards) [View source](https://designsystem.gov.ae/docs/components/card) [Checkbox](../components/checkbox) [View source](https://designsystem.gov.ae/docs/components/checkbox) [Date picker](../components/date-picker) [View source](https://designsystem.gov.ae/docs/patterns/date) [Dropdown](../components/dropdown) [View source](https://designsystem.gov.ae/docs/components/dropdown) [Link](../components/link) [View source](https://designsystem.gov.ae/docs/components/hyperlink) [Modal](../components/modal) [View source](https://designsystem.gov.ae/docs/components/modal) [Navigation bar](../components/navigation-bar) [View source](https://designsystem.gov.ae/docs/components/navigation) [Pagination](../components/pagination) [View source](https://designsystem.gov.ae/docs/components/pagination)",
+      "metadata": {
+        "startIndex": 5386,
+        "endIndex": 6369,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ents/navigation-bar) [View source](https://designsystem.gov.ae/docs/components/navigation) [Pagination](../components/pagination) [View source](https://designsystem.gov.ae/docs/components/pagination) [Popover](../components/popover) [View source](https://designsystem.gov.ae/docs/components/popover) [Progress bar](../components/progress-bar) [View source](https://designsystem.gov.ae/docs/components/steps) [Radio button](../components/radio-button) [View source](https://designsystem.gov.ae/docs/components/radio) [Select](../components/select) [View source](https://designsystem.gov.ae/docs/components/select) [Slider](../components/slider) [View source](https://designsystem.gov.ae/docs/components/range-slider) [Snackbar](../components/snackbar) [View source](https://designsystem.gov.ae/docs/components/toast) [Switch](../components/switch) [View source](https://designsystem.gov.ae/docs/components/toggle) [Tabs](../components/tabs) [View",
+      "metadata": {
+        "startIndex": 6169,
+        "endIndex": 7115,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "bar) [View source](https://designsystem.gov.ae/docs/components/toast) [Switch](../components/switch) [View source](https://designsystem.gov.ae/docs/components/toggle) [Tabs](../components/tabs) [View source](https://designsystem.gov.ae/docs/components/tabs) [Text area](../components/text-area) [View source](https://designsystem.gov.ae/docs/components/textarea) [Text field](../components/text-field) [View source](https://designsystem.gov.ae/docs/components/input) [Tooltip](../components/tooltip) [View source](https://designsystem.gov.ae/docs/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share",
+      "metadata": {
+        "startIndex": 6915,
+        "endIndex": 7914,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ponents) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7714,
+        "endIndex": 8714,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "modal",
+      "card",
+      "input",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:05.519Z",
+    "source_url": "https://designsystems.surf/design-systems/uae"
+  }
+}

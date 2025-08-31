@@ -1,0 +1,150 @@
+{
+  "id": "enzUBi3ShkuELkYu4xWhJ",
+  "title": "Sirio Design System from INPS",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/inps",
+    "ingested_at": "2025-08-30T13:09:14.484Z"
+  },
+  "content": "# INPS Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Sirio from Directories: Components: INPS Design System is a tailored framework for the Istituto Nazionale della Previdenza Sociale in Italy. It combines design standards, principles, and reusable components to create intuitive, accessible, and visually coherent interfaces for INPS's digital platforms. Sirio emphasizes user-centric design and accessibility, ensuring that services are easy to navigate and inclusive for a diverse audience, from young workers to elderly pensioners. Advertisement Accessibility View source Color System Elevation Figma Repository Icons Layout Patterns Responsive Spacing Tokens Typography Voice and Tone Accordion Alert banner Breadcrumb Button Cards Checkbox Chip Data table Date picker Dialog Dropdown Navigation bar Page header Pagination Progress bar Radio button Search Slider Switch Tabs Tag Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [SiriofromINPS](./inps#up-pixel) [Source](https://www.inps.design/) [Figma](https://www.figma.com/@inps) [Repository](https://github.com/INPS-it/sirio-design-token) [Accessibility](../directories/accessibility) [View source](https://www.inps.design/3e7e2b0f5/p/41fa12-accessibilita-e-inclusione) [Color System](../directories/color-system) [View source](https://www.inps.design/3e7e2b0f5/p/290a73-colori/b/51885f) [Elevation](../directories/elevation) [View source](https://www.inps.design/3e7e2b0f5/p/863937-superfici/b/14d161) [Figma](../directories/figma) [View source](https://www.figma.com/@inps) [Repository](../directories/repository) [View source](https://github.com/INPS-it/sirio-design-token) [Icons](../directories/icons) [View source](https://www.inps.design/3e7e2b0f5/p/534be1-icone/b/26ff48) [Layout](../directories/layout) [View source](https://www.inps.design/3e7e2b0f5/p/295f98-griglie/b/786f73) [Patterns](../directories/patterns) [View source](https://www.inps.design/3e7e2b0f5/p/91cb71-global-header/b/9204f0) [Responsive](../directories/responsive) [View source](https://www.inps.design/3e7e2b0f5/p/295f98-griglie/b/099827) [Spacing](../directories/spacing) [View source](https://www.inps.design/3e7e2b0f5/p/295f98-griglie/b/11f521) [Tokens](../directories/tokens) [View source](https://www.inps.design/3e7e2b0f5/p/778ba1-design-token/b/351021) [Typography](../directories/typography) [View source](https://www.inps.design/3e7e2b0f5/p/5834f1-tipografia/b/84898b) [Voice and Tone](../directories/voice-and-tone) [View source](https://www.inps.design/3e7e2b0f5/p/86fb7b-il-tono-di-voce-inps) [Accordion](../components/accordion) [View source](https://www.inps.design/3e7e2b0f5/p/081a80-accordion/b/705f94) [Alert banner](../components/alert-banner) [View source](https://www.inps.design/3e7e2b0f5/p/39e481-notifiche/b/3712b7) [Breadcrumb](../components/breadcrumbs) [View source](https://www.inps.design/3e7e2b0f5/p/28530e-breadcrumb/b/07dfe6) [Button](../components/button) [View source](https://www.inps.design/3e7e2b0f5/p/7263cb-bottoni/b/32e1a2) [Cards](../components/cards) [View source](https://www.inps.design/3e7e2b0f5/p/50934d-card/b/57fae6) [Checkbox](../components/checkbox) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/2896ce) [Chip](../components/chip) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/43009b) [Data table](../components/data-table) [View source](https://www.inps.design/3e7e2b0f5/p/85163d-tabelle/b/130976) [Date picker](../components/date-picker) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/8955c5) [Dialog](../components/dialog) [View source](https://www.inps.design/3e7e2b0f5/p/972e79-dialog/b/2113e1) [Dropdown](../components/dropdown) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/0206c8) [Navigation bar](../components/navigation-bar) [View source](https://www.inps.design/3e7e2b0f5/p/402b83-tab-bar/b/93d375) [Page header](../components/page-header) [View source](https://www.inps.design/3e7e2b0f5/p/00c556-title-bar/b/0170e0) [Pagination](../components/pagination) [View source](https://www.inps.design/3e7e2b0f5/p/5852e7-paginazione/b/308ff2) [Progress bar](../components/progress-bar) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/50cd9c) [Radio button](../components/radio-button) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/827407) [Search](../components/search) [View source](https://www.inps.design/3e7e2b0f5/p/842e5c-searchbar/b/155c2e) [Slider](../components/slider) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/703d72) [Switch](../components/switch) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/94185b) [Tabs](../components/tabs) [View source](https://www.inps.design/3e7e2b0f5/p/40bda6-tabs/b/702e75) [Tag](../components/tag) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/04dc28) [Text field](../components/text-field) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/34d612) [Tooltip](../components/tooltip) [View source](https://www.inps.design/3e7e2b0f5/p/6267d1-tooltip/b/33fc9b) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# INPS Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Sirio from Directories: Components: INPS Design System is a tailored framework for the Istituto Nazionale della Previdenza Sociale in Italy.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 915,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "endesk Keep up with the latest in Design Systems Subscribe Sirio from Directories: Components: INPS Design System is a tailored framework for the Istituto Nazionale della Previdenza Sociale in Italy. It combines design standards, principles, and reusable components to create intuitive, accessible, and visually coherent interfaces for INPS's digital platforms. Sirio emphasizes user-centric design and accessibility, ensuring that services are easy to navigate and inclusive for a diverse audience, from young workers to elderly pensioners. Advertisement Accessibility View source Color System Elevation Figma Repository Icons Layout Patterns Responsive Spacing Tokens Typography Voice and Tone Accordion Alert banner Breadcrumb Button Cards Checkbox Chip Data table Date picker Dialog Dropdown Navigation bar Page header Pagination Progress bar Radio button Search Slider Switch Tabs Tag Text field Tooltip Design .surf © Dzeya OÜ.",
+      "metadata": {
+        "startIndex": 715,
+        "endIndex": 1649,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "on Cards Checkbox Chip Data table Date picker Dialog Dropdown Navigation bar Page header Pagination Progress bar Radio button Search Slider Switch Tabs Tag Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab)",
+      "metadata": {
+        "startIndex": 1449,
+        "endIndex": 2443,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
+      "metadata": {
+        "startIndex": 2243,
+        "endIndex": 3236,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [SiriofromINPS](./inps#up-pixel) [Source](https://www.inps.design/) [Figma](https://www.figma.com/@inps) [Repository](https://github.com/INPS-it/sirio-design-token) [Accessibility](../directories/accessibility) [View source](https://www.inps.design/3e7e2b0f5/p/41fa12-accessibilita-e-inclusione) [Color",
+      "metadata": {
+        "startIndex": 3036,
+        "endIndex": 4019,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": ") [Repository](https://github.com/INPS-it/sirio-design-token) [Accessibility](../directories/accessibility) [View source](https://www.inps.design/3e7e2b0f5/p/41fa12-accessibilita-e-inclusione) [Color System](../directories/color-system) [View source](https://www.inps.design/3e7e2b0f5/p/290a73-colori/b/51885f) [Elevation](../directories/elevation) [View source](https://www.inps.design/3e7e2b0f5/p/863937-superfici/b/14d161) [Figma](../directories/figma) [View source](https://www.figma.com/@inps) [Repository](../directories/repository) [View source](https://github.com/INPS-it/sirio-design-token) [Icons](../directories/icons) [View source](https://www.inps.design/3e7e2b0f5/p/534be1-icone/b/26ff48) [Layout](../directories/layout) [View source](https://www.inps.design/3e7e2b0f5/p/295f98-griglie/b/786f73) [Patterns](../directories/patterns) [View source](https://www.inps.design/3e7e2b0f5/p/91cb71-global-header/b/9204f0) [Responsive](../directories/responsive) [View",
+      "metadata": {
+        "startIndex": 3819,
+        "endIndex": 4792,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "3e7e2b0f5/p/295f98-griglie/b/786f73) [Patterns](../directories/patterns) [View source](https://www.inps.design/3e7e2b0f5/p/91cb71-global-header/b/9204f0) [Responsive](../directories/responsive) [View source](https://www.inps.design/3e7e2b0f5/p/295f98-griglie/b/099827) [Spacing](../directories/spacing) [View source](https://www.inps.design/3e7e2b0f5/p/295f98-griglie/b/11f521) [Tokens](../directories/tokens) [View source](https://www.inps.design/3e7e2b0f5/p/778ba1-design-token/b/351021) [Typography](../directories/typography) [View source](https://www.inps.design/3e7e2b0f5/p/5834f1-tipografia/b/84898b) [Voice and Tone](../directories/voice-and-tone) [View source](https://www.inps.design/3e7e2b0f5/p/86fb7b-il-tono-di-voce-inps) [Accordion](../components/accordion) [View source](https://www.inps.design/3e7e2b0f5/p/081a80-accordion/b/705f94) [Alert banner](../components/alert-banner) [View source](https://www.inps.design/3e7e2b0f5/p/39e481-notifiche/b/3712b7)",
+      "metadata": {
+        "startIndex": 4592,
+        "endIndex": 5561,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "n) [View source](https://www.inps.design/3e7e2b0f5/p/081a80-accordion/b/705f94) [Alert banner](../components/alert-banner) [View source](https://www.inps.design/3e7e2b0f5/p/39e481-notifiche/b/3712b7) [Breadcrumb](../components/breadcrumbs) [View source](https://www.inps.design/3e7e2b0f5/p/28530e-breadcrumb/b/07dfe6) [Button](../components/button) [View source](https://www.inps.design/3e7e2b0f5/p/7263cb-bottoni/b/32e1a2) [Cards](../components/cards) [View source](https://www.inps.design/3e7e2b0f5/p/50934d-card/b/57fae6) [Checkbox](../components/checkbox) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/2896ce) [Chip](../components/chip) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/43009b) [Data table](../components/data-table) [View source](https://www.inps.design/3e7e2b0f5/p/85163d-tabelle/b/130976) [Date picker](../components/date-picker) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/8955c5)",
+      "metadata": {
+        "startIndex": 5361,
+        "endIndex": 6337,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "able) [View source](https://www.inps.design/3e7e2b0f5/p/85163d-tabelle/b/130976) [Date picker](../components/date-picker) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/8955c5) [Dialog](../components/dialog) [View source](https://www.inps.design/3e7e2b0f5/p/972e79-dialog/b/2113e1) [Dropdown](../components/dropdown) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/0206c8) [Navigation bar](../components/navigation-bar) [View source](https://www.inps.design/3e7e2b0f5/p/402b83-tab-bar/b/93d375) [Page header](../components/page-header) [View source](https://www.inps.design/3e7e2b0f5/p/00c556-title-bar/b/0170e0) [Pagination](../components/pagination) [View source](https://www.inps.design/3e7e2b0f5/p/5852e7-paginazione/b/308ff2) [Progress bar](../components/progress-bar) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/50cd9c) [Radio button](../components/radio-button) [View",
+      "metadata": {
+        "startIndex": 6137,
+        "endIndex": 7083,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "/5852e7-paginazione/b/308ff2) [Progress bar](../components/progress-bar) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/50cd9c) [Radio button](../components/radio-button) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/827407) [Search](../components/search) [View source](https://www.inps.design/3e7e2b0f5/p/842e5c-searchbar/b/155c2e) [Slider](../components/slider) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/703d72) [Switch](../components/switch) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/94185b) [Tabs](../components/tabs) [View source](https://www.inps.design/3e7e2b0f5/p/40bda6-tabs/b/702e75) [Tag](../components/tag) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/04dc28) [Text field](../components/text-field) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/34d612) [Tooltip](../components/tooltip) [View",
+      "metadata": {
+        "startIndex": 6883,
+        "endIndex": 7839,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ign/3e7e2b0f5/p/477c8c-data-entry/t/04dc28) [Text field](../components/text-field) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/34d612) [Tooltip](../components/tooltip) [View source](https://www.inps.design/3e7e2b0f5/p/6267d1-tooltip/b/33fc9b) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7639,
+        "endIndex": 8639,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "header",
+      "card",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:14.484Z",
+    "source_url": "https://designsystems.surf/design-systems/inps"
+  }
+}

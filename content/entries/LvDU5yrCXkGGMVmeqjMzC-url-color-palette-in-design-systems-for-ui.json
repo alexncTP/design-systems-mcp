@@ -1,0 +1,224 @@
+{
+  "id": "LvDU5yrCXkGGMVmeqjMzC",
+  "title": "Color Palette in Design Systems for UI",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/articles/color-in-design-systems",
+    "ingested_at": "2025-08-30T13:09:03.249Z"
+  },
+  "content": "# How Design Systems use Color to bring order and clarity ## What makes color so important in design ## Anatomy of a Color System ### Base Palette ### Semantic Colors ### Usage or Contextual Styles ## Naming, structuring, and scaling ### Examples ### Here’s how it breaks down ## Accessibility: beyond just contrast ### Focus and navigation ### States and differentiation ### Size and readability ### Meaning beyond color ## Design system color palette in practice ### USWDS (U.S. Web Design System) ### Material 3 (Google) ### Wise ### Polaris (Shopify) ### Adobe Spectrum ### IBM / Carbon ## Common pitfalls to avoid ### Assigning colors directly without a naming layer ### Lack of documentation ### Designing without context ### Over-engineering too early ## Wrapping Up Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe Article Aug 20, 2025 8 min read Color sets the tone, guides attention, and strengthens brand identity. But without structure, it can create inconsistency and confusion. This article explores how smart color systems bring clarity and scalability across products and teams. Contributors By , and from Design Systems Surf team Before you get into tools or naming rules, it helps to take a step back and think about what color actually does in a product. It’s not just decoration. Color brings structure to the screen, guides attention, shows what’s interactive, signals success or error, and helps products feel consistent and recognizable. It also shapes how people feel when they use your product — calm, focused, playful, or alert. But when colors are chosen at random or used inconsistently, things quickly become confusing. A single style might mean one thing in one place and something completely different elsewhere. Changing a color in one part of the interface might accidentally affect another. As your product grows or more people join the team, these problems only get worse. That’s why even a basic structure, with clear roles for each color and guidance on where to use them, can make a big difference. A well-organized system doesn’t limit creativity. It helps you maintain it as your product grows. You don’t need a full token setup to build a clear color system. What matters is the thinking behind your colors, not the way they’re stored. A strong design system color palette typically includes these layers, providing both semantic meaning and UI relevance across tokens in Figma. The core colors such as brand hues, grays, and neutrals, usually defined across a range of tints and shades. These assign meaning to colors, such as error, success, or info. You might label them semantically in your design files or simply refer to them that way in team documentation. These answer the question For example, in backgrounds, buttons, borders, or icons. A bit of structure goes a long way. Even something as simple as ten well-named, consistently used styles in Figma can bring clarity and prevent the kind of mess that happens when every color decision is made in isolation. Imagine you haven’t set up a complex token system yet, but you have a clear color structure. That alone can bring order to your design process. You might start with a base palette: five shades of your brand blue, a range of grays for text and backgrounds, plus a couple of neutrals. These get saved as Figma styles like , , and . Next comes the semantic layer. Let’s say you use for error messages and name it error-default. Even though the style still points to in Figma, it now has meaning. It’s no longer just a shade of red; it’s the designated error color. Finally, you add contextual styles. That same error-default might become border-error or bg-error-subtle, depending on where and how it’s used. Each style now answers not just , but The result is a color palette that’s structured, scalable, and easy to explain to the team, without needing to dive into full-blown token complexity. Most importantly, you avoid the chaos that comes from every designer inventing their own shades. Advertisement Naming is more than semantics — it’s infrastructure. Without clear, consistent naming, even the most well-chosen colors can become a source of confusion. One designer calls it primary, another says main, someone else names it accent or 01. Everyone ends up interpreting it differently. Mature design systems rely on a naming convention that reflects four key attributes, following the structure used in Figma and modern UI codebases: the default background color for primary elements a soft alert color for text on hover a stronger neutral color for borders Let’s say you’re defining the hover background of a secondary button. Instead of something vague like , you name it: = category (used for backgrounds) = intent (this style applies to secondary buttons) = variant (the default version, as opposed to success or danger) = state (applies on hover) This structure scales easily. Want to add an active or disabled state later? You don’t need to invent a new system. Just follow the same logic and add states like active, disabled, or anything else you need. Most importantly, this makes your system understandable and maintainable. It’s easy to teach, easy to document, and easy to sync between Figma and code. When a developer sees , they instantly recognize it as in code. No guessing, no misalignment. Without this kind of structure, designers start naming things however they want, and developers are left to interpret what was meant. It’s not about being “correct.” It’s about making the same logic work across different brains. When it comes to accessibility, most designers tend to think of just one thing: contrast. Check your colors against WCAG, make sure the text is readable and the job feels done. But in reality, this is just the starting point. Here’s what to aim for: Aim for at least 4.5:1 contrast for normal text Use 3:1 for large or bold text Check combinations like text on buttons, icons on backgrounds, or states like hover and disabled But contrast is just one piece. Accessible systems also avoid using color as the only signal. A red outline might not be enough, so pair it with an icon, a message, or an underline. And remember, not everyone sees color the same way. Use colorblind simulators and double-check key UI elements like errors, links, and success states. Still, accessibility goes beyond color. It’s not just about whether something is visible— it’s about whether it’s . Interfaces need to work well in different states, under various conditions, and for users with different abilities or ways of processing information. Contrast is the starting point. But if you want to build a truly inclusive system, here’s what else to consider: Do all interactive elements have a clear focus state? Is it obvious where the user is when navigating with a keyboard? Can users easily tell the difference between hover, active, disabled, and selected? Or are the variations too subtle to notice? Does your typography scale well across screen sizes? Is the text still readable when zoomed in? If someone can’t distinguish red from green, will they still understand what’s happening? Are icons, text, or other visual cues reinforcing the color signals? For example: you might have a button with perfect contrast, but the focus ring is a barely visible outline. A keyboard user won’t know where they are. And a low-vision user may not even realize it’s interactive. Now flip it: the button has a strong focus ring, a visible hover state, and a clear icon or label that explains its purpose. It’s legible, perceivable, and functional for more people, in more contexts. Accessibility doesn’t require a huge system. It just requires thoughtfulness and testing. There’s no one-size-fits-all approach to design system color palettes, but real-world examples show how the best colors for user interface consistency can be applied at scale. Designed for government websites, emphasizes clarity and accessibility. It organizes colors by purpose, such as foreground, background, and borders, and includes clear guidance on usage and contrast. Instead of focusing on brand-driven palettes, it prioritizes function, which makes it a great fit for high-trust, high-clarity environments. The latest version of introduces dynamic theming. Instead of using a fixed set of colors, it creates semantic palettes based on user preferences or system themes, such as Android’s wallpaper-based Material You. This approach requires a well-structured token system, but it allows for more personalized and consistent experiences across the interface. Designed by , this system keeps things simple and vibrant with a strong green brand anchor (Bright Green, Forest Green) supported by energetic secondary accents like bright orange and yellow. It strikes a balance between brand identity and accessibility, making it both delightful and usable. uses a contextual and purpose-driven system that clearly separates brand color from utility. Tokens like surface-subdued, text-muted, and icon-disabled allow for consistent styling across admin interfaces and make it easy to apply different themes without rewriting logic. color palette spans multiple grayscale tints and shades of color, carefully structured for UI flexibility. The grayscale system supports neutral layouts that coexist with vibrant hues, all while maintaining accessibility standards. Built atop IBM’s design language, the IBM and center around a core blue, extended into ten swatches with nuanced gradients and grayscale families. Every hue has 10 steps (light to dark), with guidelines for contrast, gradients, and color in UI contexts. These systems differ in tone and scope, but all share one principle: color is a tool, not a decoration. Even a simple color system can go wrong if there’s no shared logic behind it. Here are a few things to watch out for: Using raw hex codes in your components (or naming styles , ) makes it hard to know what the color is for. When one element needs to change, it risks breaking many others. Instead, name for purpose: Button Background, Error Border, Muted Text. If someone new joins your team, how would they know which blue to use? Write it down. Even a short note like “Use this for primary buttons only” helps preserve consistency. Colors need to work on real UI, not just in swatches. Test your styles inside buttons, form inputs, modals, and cards. See how they behave in light and dark modes, on hover and disabled states. Not every project needs 40 tokens or a full design-to-code handoff pipeline. If you’re working on a smaller product, keep it simple. Build the structure you need today and evolve it as your product grows. A color system is one of the quiet forces behind great product design. When structured well, it helps teams work faster, communicate clearly, and scale with confidence. It supports accessibility, strengthens branding, and reduces design debt. Before choosing a palette or naming a style, take a step back. Define what color means in your system and how it will scale. Plan for edge cases. Align with developers. And build for clarity, not just for today but for every screen and every contributor down the line.",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# How Design Systems use Color to bring order and clarity ## What makes color so important in design ## Anatomy of a Color System ### Base Palette ### Semantic Colors ### Usage or Contextual Styles ## Naming, structuring, and scaling ### Examples ### Here’s how it breaks down ## Accessibility: beyond just contrast ### Focus and navigation ### States and differentiation ### Size and readability ### Meaning beyond color ## Design system color palette in practice ### USWDS (U.S. Web Design System) ### Material 3 (Google) ### Wise ### Polaris (Shopify) ### Adobe Spectrum ### IBM / Carbon ## Common pitfalls to avoid ### Assigning colors directly without a naming layer ### Lack of documentation ### Designing without context ### Over-engineering too early ## Wrapping Up Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe Article Aug 20, 2025 8 min read Color sets the tone, guides attention, and",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 995,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "omponents Articles Blueprints Guides Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe Article Aug 20, 2025 8 min read Color sets the tone, guides attention, and strengthens brand identity. But without structure, it can create inconsistency and confusion. This article explores how smart color systems bring clarity and scalability across products and teams. Contributors By , and from Design Systems Surf team Before you get into tools or naming rules, it helps to take a step back and think about what color actually does in a product. It’s not just decoration. Color brings structure to the screen, guides attention, shows what’s interactive, signals success or error, and helps products feel consistent and recognizable. It also shapes how people feel when they use your product — calm, focused, playful, or alert. But when colors are chosen at random or used inconsistently, things quickly become confusing.",
+      "metadata": {
+        "startIndex": 795,
+        "endIndex": 1746,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "cognizable. It also shapes how people feel when they use your product — calm, focused, playful, or alert. But when colors are chosen at random or used inconsistently, things quickly become confusing. A single style might mean one thing in one place and something completely different elsewhere. Changing a color in one part of the interface might accidentally affect another. As your product grows or more people join the team, these problems only get worse. That’s why even a basic structure, with clear roles for each color and guidance on where to use them, can make a big difference. A well-organized system doesn’t limit creativity. It helps you maintain it as your product grows. You don’t need a full token setup to build a clear color system. What matters is the thinking behind your colors, not the way they’re stored. A strong design system color palette typically includes these layers, providing both semantic meaning and UI relevance across tokens in Figma.",
+      "metadata": {
+        "startIndex": 1546,
+        "endIndex": 2517,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "thinking behind your colors, not the way they’re stored. A strong design system color palette typically includes these layers, providing both semantic meaning and UI relevance across tokens in Figma. The core colors such as brand hues, grays, and neutrals, usually defined across a range of tints and shades. These assign meaning to colors, such as error, success, or info. You might label them semantically in your design files or simply refer to them that way in team documentation. These answer the question For example, in backgrounds, buttons, borders, or icons. A bit of structure goes a long way. Even something as simple as ten well-named, consistently used styles in Figma can bring clarity and prevent the kind of mess that happens when every color decision is made in isolation. Imagine you haven’t set up a complex token system yet, but you have a clear color structure. That alone can bring order to your design process.",
+      "metadata": {
+        "startIndex": 2317,
+        "endIndex": 3251,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "happens when every color decision is made in isolation. Imagine you haven’t set up a complex token system yet, but you have a clear color structure. That alone can bring order to your design process. You might start with a base palette: five shades of your brand blue, a range of grays for text and backgrounds, plus a couple of neutrals. These get saved as Figma styles like , , and . Next comes the semantic layer. Let’s say you use for error messages and name it error-default. Even though the style still points to in Figma, it now has meaning. It’s no longer just a shade of red; it’s the designated error color. Finally, you add contextual styles. That same error-default might become border-error or bg-error-subtle, depending on where and how it’s used. Each style now answers not just , but The result is a color palette that’s structured, scalable, and easy to explain to the team, without needing to dive into full-blown token complexity.",
+      "metadata": {
+        "startIndex": 3051,
+        "endIndex": 4001,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "it’s used. Each style now answers not just , but The result is a color palette that’s structured, scalable, and easy to explain to the team, without needing to dive into full-blown token complexity. Most importantly, you avoid the chaos that comes from every designer inventing their own shades. Advertisement Naming is more than semantics — it’s infrastructure. Without clear, consistent naming, even the most well-chosen colors can become a source of confusion. One designer calls it primary, another says main, someone else names it accent or 01. Everyone ends up interpreting it differently. Mature design systems rely on a naming convention that reflects four key attributes, following the structure used in Figma and modern UI codebases: the default background color for primary elements a soft alert color for text on hover a stronger neutral color for borders Let’s say you’re defining the hover background of a secondary button.",
+      "metadata": {
+        "startIndex": 3801,
+        "endIndex": 4740,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ases: the default background color for primary elements a soft alert color for text on hover a stronger neutral color for borders Let’s say you’re defining the hover background of a secondary button. Instead of something vague like , you name it: = category (used for backgrounds) = intent (this style applies to secondary buttons) = variant (the default version, as opposed to success or danger) = state (applies on hover) This structure scales easily. Want to add an active or disabled state later? You don’t need to invent a new system. Just follow the same logic and add states like active, disabled, or anything else you need. Most importantly, this makes your system understandable and maintainable. It’s easy to teach, easy to document, and easy to sync between Figma and code. When a developer sees , they instantly recognize it as in code. No guessing, no misalignment. Without this kind of structure, designers start naming things however they want, and developers are left to interpret",
+      "metadata": {
+        "startIndex": 4540,
+        "endIndex": 5537,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "oper sees , they instantly recognize it as in code. No guessing, no misalignment. Without this kind of structure, designers start naming things however they want, and developers are left to interpret what was meant. It’s not about being “correct.” It’s about making the same logic work across different brains. When it comes to accessibility, most designers tend to think of just one thing: contrast. Check your colors against WCAG, make sure the text is readable and the job feels done. But in reality, this is just the starting point. Here’s what to aim for: Aim for at least 4.5:1 contrast for normal text Use 3:1 for large or bold text Check combinations like text on buttons, icons on backgrounds, or states like hover and disabled But contrast is just one piece. Accessible systems also avoid using color as the only signal. A red outline might not be enough, so pair it with an icon, a message, or an underline. And remember, not everyone sees color the same way.",
+      "metadata": {
+        "startIndex": 5337,
+        "endIndex": 6308,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "cessible systems also avoid using color as the only signal. A red outline might not be enough, so pair it with an icon, a message, or an underline. And remember, not everyone sees color the same way. Use colorblind simulators and double-check key UI elements like errors, links, and success states. Still, accessibility goes beyond color. It’s not just about whether something is visible— it’s about whether it’s . Interfaces need to work well in different states, under various conditions, and for users with different abilities or ways of processing information. Contrast is the starting point. But if you want to build a truly inclusive system, here’s what else to consider: Do all interactive elements have a clear focus state? Is it obvious where the user is when navigating with a keyboard? Can users easily tell the difference between hover, active, disabled, and selected? Or are the variations too subtle to notice? Does your typography scale well across screen sizes?",
+      "metadata": {
+        "startIndex": 6108,
+        "endIndex": 7086,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "g with a keyboard? Can users easily tell the difference between hover, active, disabled, and selected? Or are the variations too subtle to notice? Does your typography scale well across screen sizes? Is the text still readable when zoomed in? If someone can’t distinguish red from green, will they still understand what’s happening? Are icons, text, or other visual cues reinforcing the color signals? For example: you might have a button with perfect contrast, but the focus ring is a barely visible outline. A keyboard user won’t know where they are. And a low-vision user may not even realize it’s interactive. Now flip it: the button has a strong focus ring, a visible hover state, and a clear icon or label that explains its purpose. It’s legible, perceivable, and functional for more people, in more contexts. Accessibility doesn’t require a huge system. It just requires thoughtfulness and testing.",
+      "metadata": {
+        "startIndex": 6886,
+        "endIndex": 7792,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "label that explains its purpose. It’s legible, perceivable, and functional for more people, in more contexts. Accessibility doesn’t require a huge system. It just requires thoughtfulness and testing. There’s no one-size-fits-all approach to design system color palettes, but real-world examples show how the best colors for user interface consistency can be applied at scale. Designed for government websites, emphasizes clarity and accessibility. It organizes colors by purpose, such as foreground, background, and borders, and includes clear guidance on usage and contrast. Instead of focusing on brand-driven palettes, it prioritizes function, which makes it a great fit for high-trust, high-clarity environments. The latest version of introduces dynamic theming. Instead of using a fixed set of colors, it creates semantic palettes based on user preferences or system themes, such as Android’s wallpaper-based Material You.",
+      "metadata": {
+        "startIndex": 7592,
+        "endIndex": 8520,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "version of introduces dynamic theming. Instead of using a fixed set of colors, it creates semantic palettes based on user preferences or system themes, such as Android’s wallpaper-based Material You. This approach requires a well-structured token system, but it allows for more personalized and consistent experiences across the interface. Designed by , this system keeps things simple and vibrant with a strong green brand anchor (Bright Green, Forest Green) supported by energetic secondary accents like bright orange and yellow. It strikes a balance between brand identity and accessibility, making it both delightful and usable. uses a contextual and purpose-driven system that clearly separates brand color from utility. Tokens like surface-subdued, text-muted, and icon-disabled allow for consistent styling across admin interfaces and make it easy to apply different themes without rewriting logic.",
+      "metadata": {
+        "startIndex": 8320,
+        "endIndex": 9226,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "color from utility. Tokens like surface-subdued, text-muted, and icon-disabled allow for consistent styling across admin interfaces and make it easy to apply different themes without rewriting logic. color palette spans multiple grayscale tints and shades of color, carefully structured for UI flexibility. The grayscale system supports neutral layouts that coexist with vibrant hues, all while maintaining accessibility standards. Built atop IBM’s design language, the IBM and center around a core blue, extended into ten swatches with nuanced gradients and grayscale families. Every hue has 10 steps (light to dark), with guidelines for contrast, gradients, and color in UI contexts. These systems differ in tone and scope, but all share one principle: color is a tool, not a decoration. Even a simple color system can go wrong if there’s no shared logic behind it. Here are a few things to watch out for: Using raw hex codes in your components (or naming styles , ) makes it hard to know what the",
+      "metadata": {
+        "startIndex": 9026,
+        "endIndex": 10026,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "ple color system can go wrong if there’s no shared logic behind it. Here are a few things to watch out for: Using raw hex codes in your components (or naming styles , ) makes it hard to know what the color is for. When one element needs to change, it risks breaking many others. Instead, name for purpose: Button Background, Error Border, Muted Text. If someone new joins your team, how would they know which blue to use? Write it down. Even a short note like “Use this for primary buttons only” helps preserve consistency. Colors need to work on real UI, not just in swatches. Test your styles inside buttons, form inputs, modals, and cards. See how they behave in light and dark modes, on hover and disabled states. Not every project needs 40 tokens or a full design-to-code handoff pipeline. If you’re working on a smaller product, keep it simple. Build the structure you need today and evolve it as your product grows. A color system is one of the quiet forces behind great product design.",
+      "metadata": {
+        "startIndex": 9826,
+        "endIndex": 10820,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "If you’re working on a smaller product, keep it simple. Build the structure you need today and evolve it as your product grows. A color system is one of the quiet forces behind great product design. When structured well, it helps teams work faster, communicate clearly, and scale with confidence. It supports accessibility, strengthens branding, and reduces design debt. Before choosing a palette or naming a style, take a step back. Define what color means in your system and how it will scale. Plan for edge cases. Align with developers. And build for clarity, not just for today but for every screen and every contributor down the line.",
+      "metadata": {
+        "startIndex": 10620,
+        "endIndex": 11614,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "les5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Articles](../articles) [Article](./color-in-design-systems) [Polina Reut](https://www.linkedin.com/in/polinareut/) [Hanna Matsiyeuskaya](https://www.linkedin.com/in/hanna-matsiyeuskaya-b5835bab/) [Ilya Greben](https://www.linkedin.com/in/ilyagreben/) [USWDS](../design-systems/uswds) [Material Design](../design-systems/google) [Wise](../design-systems/wise) [Polaris](../design-systems/shopify) [Spectrum’s](../design-systems/adobe) [Carbon Design Systems](../design-systems/ibm) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent",
+      "metadata": {
+        "startIndex": 11414,
+        "endIndex": 12406,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "n-systems/ibm) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Figma](../directories/figma) [Typography](../directories/typography) [Components](../components) [Button](../components/button) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text field](../components/text-field) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 12206,
+        "endIndex": 13206,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "ttps://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 13006,
+        "endIndex": 14006,
+        "chunkIndex": 17,
+        "section": "Content",
+        "globalChunkIndex": 17
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "form",
+      "color",
+      "border",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:03.249Z",
+    "source_url": "https://designsystems.surf/articles/color-in-design-systems"
+  }
+}

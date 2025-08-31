@@ -1,0 +1,147 @@
+{
+  "id": "YOFERyWOZjXi7aAA0EVa6",
+  "title": "Figma in Design System",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/directories/figma",
+    "ingested_at": "2025-08-30T13:09:27.484Z"
+  },
+  "content": "# Figma Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Accessibility Color System Component lifecycle Component overview Component status Data visualization Elevation Icons Illustrations International Design Layout Motion Patterns Repository Responsive Spacing States Storybook Styles Theming Tokens Typography Voice and Tone Keep up with the latest in Design Systems Subscribe Figma is a primary tool for designers to establish and maintain a robust Design System. It offers a centralized platform for creating and managing a comprehensive library of design components. With Figma, teams can streamline their workflow, ensure consistency, and improve efficiency. The tool allows for the creation and reuse of UI elements, making it easy to maintain a cohesive design language. Its collaborative features enable real-time collaboration and feedback, fostering a unified vision among design teams. Advertisement in Design Systems Amazon Cloudscape View source Apple HIG Atlassian Design System Brainly Pencil Datadog Druids eBay Evo Elastic Esri Calcite Github Primer GitLab Pajamas Google Material Design IBM Carbon INPS Sirio Kiwicom Orbit Lemon Squeezy Wedges Microsoft Fluent 2 Monday.com Vibe Porsche Razorpay Blade Rei Cedar Salesforce Lightning Segment Evergreen ServiceNow Horizon Shopify Polaris Teamleader Ahoy Twilio Paste U.S. Web Uber Base Visa Washington Post Wikimedia Codex WorkOS Radix Zendesk Garden Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [AccessibilityAccessibilityAccessibility](./accessibility) [Color SystemColor SystemColor System](./color-system) [Component lifecycleComponent lifecycleComponent lifecycle](./component-lifecycle) [Component overviewComponent overviewComponent overview](./component-overview) [Component statusComponent statusComponent status](./component-status) [Data visualizationData visualizationData visualization](./data-visualization) [ElevationElevationElevation](./elevation) [FigmaFigmaFigma](./figma) [IconsIconsIcons](./icons) [IllustrationsIllustrationsIllustrations](./illustrations) [International DesignInternational DesignInternational Design](./international-design) [LayoutLayoutLayout](./layout) [MotionMotionMotion](./motion) [PatternsPatternsPatterns](./patterns) [RepositoryRepositoryRepository](./repository) [ResponsiveResponsiveResponsive](./responsive) [SpacingSpacingSpacing](./spacing) [StatesStatesStates](./states) [StorybookStorybookStorybook](./storybook) [StylesStylesStyles](./styles) [ThemingThemingTheming](./theming) [TokensTokensTokens](./tokens) [TypographyTypographyTypography](./typography) [Voice and ToneVoice and ToneVoice and Tone](./voice-and-tone) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Figma31](./figma#up-pixel) [AmazonCloudscape](../design-systems/amazon) [View source](https://www.figma.com/@cloudscape) [AppleHIG](../design-systems/apple) [View source](https://www.figma.com/@apple) [AtlassianDesign System](../design-systems/atlassian) [View source](https://www.figma.com/@atlassian) [BrainlyPencil](../design-systems/brainly) [View source](https://www.figma.com/@brainly) [DatadogDruids](../design-systems/datadog) [View source](https://www.figma.com/@datadog) [eBayEvo](../design-systems/ebay) [View source](https://www.figma.com/@ebay) [ElasticDesign System](../design-systems/elastic) [View source](https://www.figma.com/@elastic) [EsriCalcite](../design-systems/esri) [View source](https://www.figma.com/@esri) [GithubPrimer](../design-systems/github) [View source](https://www.figma.com/@primer) [GitLabPajamas](../design-systems/gitlab) [View source](https://www.figma.com/@GitLabDesign) [GoogleMaterial Design](../design-systems/google) [View source](https://www.figma.com/@materialdesign) [IBMCarbon](../design-systems/ibm) [View source](https://www.figma.com/@ibmorg) [INPSSirio](../design-systems/inps) [View source](https://www.figma.com/@inps) [KiwicomOrbit](../design-systems/kiwicom) [View source](https://www.figma.com/@OrbitByKiwi) [Lemon SqueezyWedges](../design-systems/lemon-squeezy) [View source](https://www.lemonsqueezy.com/wedges/figma) [MicrosoftFluent 2](../design-systems/microsoft) [View source](https://www.figma.com/@microsoft) [Monday.comVibe](../design-systems/mondaycom) [View source](https://www.figma.com/community/file/940242815162888749/monday-com-ui-kit) [PorscheDesign System](../design-systems/porsche) [View source](https://www.figma.com/@porsche) [RazorpayBlade](../design-systems/razorpay) [View source](https://www.figma.com/@razorpay_design) [ReiCedar](../design-systems/rei) [View source](https://www.figma.com/@rei_cedar) [SalesforceLightning](../design-systems/salesforce) [View source](https://www.figma.com/@salesforce) [SegmentEvergreen](../design-systems/segment) [View source](https://www.figma.com/@twilio) [ServiceNowHorizon](../design-systems/servicenow) [View source](https://www.figma.com/@servicenow) [ShopifyPolaris](../design-systems/shopify) [View source](https://www.figma.com/@shopify) [TeamleaderAhoy](../design-systems/teamleader) [View source](https://www.figma.com/@Teamleader) [TwilioPaste](../design-systems/twilio) [U.S. WebDesign System](../design-systems/uswds) [View source](https://www.figma.com/@uswds) [UberBase](../design-systems/uber) [View source](https://www.figma.com/@uber) [VisaDesign System](../design-systems/visa) [View source](https://www.figma.com/@visa) [Washington PostDesign System](../design-systems/washingtonpost) [View source](https://www.figma.com/@WPDS) [WikimediaCodex](../design-systems/wikimedia) [View source](https://www.figma.com/file/KoDuJMadWBXtsOtzGS4134/%E2%9D%96-Codex-components?type=design&node-id=1891-4420&mode=design) [WorkOSRadix](../design-systems/workos) [View source](https://www.figma.com/community/file/1280428825266545105/radix-themes) [ZendeskGarden](../design-systems/zendesk) [View source](https://www.figma.com/@zendesk) [Amazon](../design-systems/amazon) [Apple](../design-systems/apple) [Atlassian](../design-systems/atlassian) [Brainly](../design-systems/brainly) [Datadog](../design-systems/datadog) [eBay](../design-systems/ebay) [Elastic](../design-systems/elastic) [Esri](../design-systems/esri) [Github](../design-systems/github) [GitLab](../design-systems/gitlab) [Google](../design-systems/google) [IBM](../design-systems/ibm) [INPS](../design-systems/inps) [Kiwicom](../design-systems/kiwicom) [Lemon Squeezy](../design-systems/lemon-squeezy) [Microsoft](../design-systems/microsoft) [Monday.com](../design-systems/mondaycom) [Porsche](../design-systems/porsche) [Razorpay](../design-systems/razorpay) [Rei](../design-systems/rei) [Salesforce](../design-systems/salesforce) [Segment](../design-systems/segment) [ServiceNow](../design-systems/servicenow) [Shopify](../design-systems/shopify) [Teamleader](../design-systems/teamleader) [Twilio](../design-systems/twilio) [U.S. Web](../design-systems/uswds) [Uber](../design-systems/uber) [Visa](../design-systems/visa) [Washington Post](../design-systems/washingtonpost) [Wikimedia](../design-systems/wikimedia) [WorkOS](../design-systems/workos) [Zendesk](../design-systems/zendesk) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](./accessibility) [Color System](./color-system) [Figma](./figma) [Typography](./typography) [Components](../components) [Button](../components/button) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text field](../components/text-field) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Figma Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Accessibility Color System Component lifecycle Component overview Component status Data visualization Elevation Icons Illustrations International Design Layout Motion Patterns Repository Responsive Spacing States Storybook Styles Theming Tokens Typography Voice and Tone Keep up with the latest in Design Systems Subscribe Figma is a primary tool for designers to establish and maintain a robust Design System. It offers a centralized platform for creating and managing a comprehensive library of design components. With Figma, teams can streamline their workflow, ensure consistency, and improve efficiency. The tool allows for the creation and reuse of UI elements, making it easy to maintain a cohesive design language. Its collaborative features enable real-time collaboration and feedback, fostering a unified vision among design teams.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 944,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "and reuse of UI elements, making it easy to maintain a cohesive design language. Its collaborative features enable real-time collaboration and feedback, fostering a unified vision among design teams. Advertisement in Design Systems Amazon Cloudscape View source Apple HIG Atlassian Design System Brainly Pencil Datadog Druids eBay Evo Elastic Esri Calcite Github Primer GitLab Pajamas Google Material Design IBM Carbon INPS Sirio Kiwicom Orbit Lemon Squeezy Wedges Microsoft Fluent 2 Monday.com Vibe Porsche Razorpay Blade Rei Cedar Salesforce Lightning Segment Evergreen ServiceNow Horizon Shopify Polaris Teamleader Ahoy Twilio Paste U.S. Web Uber Base Visa Washington Post Wikimedia Codex WorkOS Radix Zendesk Garden Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly",
+      "metadata": {
+        "startIndex": 744,
+        "endIndex": 1726,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [AccessibilityAccessibilityAccessibility](./accessibility) [Color SystemColor SystemColor System](./color-system) [Component lifecycleComponent lifecycleComponent lifecycle](./component-lifecycle) [Component overviewComponent overviewComponent overview](./component-overview) [Component statusComponent statusComponent status](./component-status) [Data visualizationData visualizationData visualization](./data-visualization) [ElevationElevationElevation](./elevation) [FigmaFigmaFigma](./figma) [IconsIconsIcons](./icons) [IllustrationsIllustrationsIllustrations](./illustrations) [International DesignInternational DesignInternational Design](./international-design) [LayoutLayoutLayout](./layout)",
+      "metadata": {
+        "startIndex": 1526,
+        "endIndex": 2517,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "nsIconsIcons](./icons) [IllustrationsIllustrationsIllustrations](./illustrations) [International DesignInternational DesignInternational Design](./international-design) [LayoutLayoutLayout](./layout) [MotionMotionMotion](./motion) [PatternsPatternsPatterns](./patterns) [RepositoryRepositoryRepository](./repository) [ResponsiveResponsiveResponsive](./responsive) [SpacingSpacingSpacing](./spacing) [StatesStatesStates](./states) [StorybookStorybookStorybook](./storybook) [StylesStylesStyles](./styles) [ThemingThemingTheming](./theming) [TokensTokensTokens](./tokens) [TypographyTypographyTypography](./typography) [Voice and ToneVoice and ToneVoice and Tone](./voice-and-tone) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Figma31](./figma#up-pixel) [AmazonCloudscape](../design-systems/amazon) [View source](https://www.figma.com/@cloudscape) [AppleHIG](../design-systems/apple) [View",
+      "metadata": {
+        "startIndex": 2317,
+        "endIndex": 3286,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "./subscribe) [Ad](../advertisement) [Figma31](./figma#up-pixel) [AmazonCloudscape](../design-systems/amazon) [View source](https://www.figma.com/@cloudscape) [AppleHIG](../design-systems/apple) [View source](https://www.figma.com/@apple) [AtlassianDesign System](../design-systems/atlassian) [View source](https://www.figma.com/@atlassian) [BrainlyPencil](../design-systems/brainly) [View source](https://www.figma.com/@brainly) [DatadogDruids](../design-systems/datadog) [View source](https://www.figma.com/@datadog) [eBayEvo](../design-systems/ebay) [View source](https://www.figma.com/@ebay) [ElasticDesign System](../design-systems/elastic) [View source](https://www.figma.com/@elastic) [EsriCalcite](../design-systems/esri) [View source](https://www.figma.com/@esri) [GithubPrimer](../design-systems/github) [View source](https://www.figma.com/@primer) [GitLabPajamas](../design-systems/gitlab) [View source](https://www.figma.com/@GitLabDesign) [GoogleMaterial Design](../design-systems/google)",
+      "metadata": {
+        "startIndex": 3086,
+        "endIndex": 4087,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ems/github) [View source](https://www.figma.com/@primer) [GitLabPajamas](../design-systems/gitlab) [View source](https://www.figma.com/@GitLabDesign) [GoogleMaterial Design](../design-systems/google) [View source](https://www.figma.com/@materialdesign) [IBMCarbon](../design-systems/ibm) [View source](https://www.figma.com/@ibmorg) [INPSSirio](../design-systems/inps) [View source](https://www.figma.com/@inps) [KiwicomOrbit](../design-systems/kiwicom) [View source](https://www.figma.com/@OrbitByKiwi) [Lemon SqueezyWedges](../design-systems/lemon-squeezy) [View source](https://www.lemonsqueezy.com/wedges/figma) [MicrosoftFluent 2](../design-systems/microsoft) [View source](https://www.figma.com/@microsoft) [Monday.comVibe](../design-systems/mondaycom) [View source](https://www.figma.com/community/file/940242815162888749/monday-com-ui-kit) [PorscheDesign System](../design-systems/porsche) [View source](https://www.figma.com/@porsche) [RazorpayBlade](../design-systems/razorpay) [View",
+      "metadata": {
+        "startIndex": 3887,
+        "endIndex": 4881,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "/community/file/940242815162888749/monday-com-ui-kit) [PorscheDesign System](../design-systems/porsche) [View source](https://www.figma.com/@porsche) [RazorpayBlade](../design-systems/razorpay) [View source](https://www.figma.com/@razorpay_design) [ReiCedar](../design-systems/rei) [View source](https://www.figma.com/@rei_cedar) [SalesforceLightning](../design-systems/salesforce) [View source](https://www.figma.com/@salesforce) [SegmentEvergreen](../design-systems/segment) [View source](https://www.figma.com/@twilio) [ServiceNowHorizon](../design-systems/servicenow) [View source](https://www.figma.com/@servicenow) [ShopifyPolaris](../design-systems/shopify) [View source](https://www.figma.com/@shopify) [TeamleaderAhoy](../design-systems/teamleader) [View source](https://www.figma.com/@Teamleader) [TwilioPaste](../design-systems/twilio) [U.S. WebDesign System](../design-systems/uswds) [View source](https://www.figma.com/@uswds) [UberBase](../design-systems/uber) [View",
+      "metadata": {
+        "startIndex": 4681,
+        "endIndex": 5662,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ww.figma.com/@Teamleader) [TwilioPaste](../design-systems/twilio) [U.S. WebDesign System](../design-systems/uswds) [View source](https://www.figma.com/@uswds) [UberBase](../design-systems/uber) [View source](https://www.figma.com/@uber) [VisaDesign System](../design-systems/visa) [View source](https://www.figma.com/@visa) [Washington PostDesign System](../design-systems/washingtonpost) [View source](https://www.figma.com/@WPDS) [WikimediaCodex](../design-systems/wikimedia) [View source](https://www.figma.com/file/KoDuJMadWBXtsOtzGS4134/%E2%9D%96-Codex-components?type=design&node-id=1891-4420&mode=design) [WorkOSRadix](../design-systems/workos) [View source](https://www.figma.com/community/file/1280428825266545105/radix-themes) [ZendeskGarden](../design-systems/zendesk) [View source](https://www.figma.com/@zendesk) [Amazon](../design-systems/amazon) [Apple](../design-systems/apple) [Atlassian](../design-systems/atlassian) [Brainly](../design-systems/brainly)",
+      "metadata": {
+        "startIndex": 5462,
+        "endIndex": 6434,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "endesk) [View source](https://www.figma.com/@zendesk) [Amazon](../design-systems/amazon) [Apple](../design-systems/apple) [Atlassian](../design-systems/atlassian) [Brainly](../design-systems/brainly) [Datadog](../design-systems/datadog) [eBay](../design-systems/ebay) [Elastic](../design-systems/elastic) [Esri](../design-systems/esri) [Github](../design-systems/github) [GitLab](../design-systems/gitlab) [Google](../design-systems/google) [IBM](../design-systems/ibm) [INPS](../design-systems/inps) [Kiwicom](../design-systems/kiwicom) [Lemon Squeezy](../design-systems/lemon-squeezy) [Microsoft](../design-systems/microsoft) [Monday.com](../design-systems/mondaycom) [Porsche](../design-systems/porsche) [Razorpay](../design-systems/razorpay) [Rei](../design-systems/rei) [Salesforce](../design-systems/salesforce) [Segment](../design-systems/segment) [ServiceNow](../design-systems/servicenow) [Shopify](../design-systems/shopify) [Teamleader](../design-systems/teamleader)",
+      "metadata": {
+        "startIndex": 6234,
+        "endIndex": 7212,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "lesforce](../design-systems/salesforce) [Segment](../design-systems/segment) [ServiceNow](../design-systems/servicenow) [Shopify](../design-systems/shopify) [Teamleader](../design-systems/teamleader) [Twilio](../design-systems/twilio) [U.S. Web](../design-systems/uswds) [Uber](../design-systems/uber) [Visa](../design-systems/visa) [Washington Post](../design-systems/washingtonpost) [Wikimedia](../design-systems/wikimedia) [WorkOS](../design-systems/workos) [Zendesk](../design-systems/zendesk) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](./accessibility) [Color System](./color-system) [Figma](./figma) [Typography](./typography) [Components](../components) [Button](../components/button) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text",
+      "metadata": {
+        "startIndex": 7012,
+        "endIndex": 8008,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "olor-system) [Figma](./figma) [Typography](./typography) [Components](../components) [Button](../components/button) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text field](../components/text-field) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7808,
+        "endIndex": 8808,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:27.484Z",
+    "source_url": "https://designsystems.surf/directories/figma"
+  }
+}

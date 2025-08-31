@@ -1,0 +1,128 @@
+{
+  "id": "0CsqiZGGglep1zwV2TSoB",
+  "title": "Audi Design System – UI Guidelines, Components",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/audi",
+    "ingested_at": "2025-08-30T13:09:33.989Z"
+  },
+  "content": "# Audi Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Audi Design System is a comprehensive framework that encompasses a wide range of user interfaces, including responsive websites and specialized service applications. System provides a variety of solutions while maintaining a consistent user experience across all platforms, from mobile apps to Audi vehicles. Design System includes a wide collection of components, modules, and animations, providing documentation and guidance for creating responsive UI designs and incorporating UI animations to enhance the overall user experience. Advertisement Color System View source Icons Illustrations Motion Responsive Theming Typography Voice and Tone Alert banner Badges Breadcrumb Button Cards Checkbox Data table Dialog Icon Modal Pagination Popover Progress indicator Radio button Search Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromAudi](./audi#up-pixel) [Source](https://styleguide.audi.com/document/2865?#/-/ui-introduction) [Color System](../directories/color-system) [View source](https://styleguide.audi.com/document/1811#/-/colours) [Icons](../directories/icons) [View source](https://styleguide.audi.com/document/1811#/-/icons) [Illustrations](../directories/illustrations) [View source](https://styleguide.audi.com/document/1811#/-/illustration) [Motion](../directories/motion) [View source](https://styleguide.audi.com/document/2440#/ui-animation/functional-animation) [Responsive](../directories/responsive) [View source](https://styleguide.audi.com/document/2440#/-/responsive-ui) [Theming](../directories/theming) [View source](https://styleguide.audi.com/document/2440#/-/themes) [Typography](../directories/typography) [View source](https://styleguide.audi.com/document/1811#/-/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://styleguide.audi.com/document/1811#/-/tone-of-voice) [Alert banner](../components/alert-banner) [View source](https://styleguide.audi.com/document/2442#/-/notifications) [Badges](../components/badges) [Breadcrumb](../components/breadcrumbs) [View source](https://styleguide.audi.com/document/2442#/-/navigation) [Button](../components/button) [View source](https://styleguide.audi.com/document/2442#/-/buttons) [Cards](../components/cards) [View source](https://styleguide.audi.com/document/2442#/-/card) [Checkbox](../components/checkbox) [View source](https://styleguide.audi.com/document/2442#/-/selection-controls) [Data table](../components/data-table) [View source](https://styleguide.audi.com/document/2442#/-/table) [Dialog](../components/dialog) [View source](https://styleguide.audi.com/document/2442#/-/overlays) [Icon](../directories/icons) [View source](https://styleguide.audi.com/document/2853#/-/icon-library) [Modal](../components/modal) [Pagination](../components/pagination) [View source](https://styleguide.audi.com/document/2442#/-/pagination) [Popover](../components/popover) [Progress indicator](../components/progress-indicator) [View source](https://styleguide.audi.com/document/2442#/-/loader) [Radio button](../components/radio-button) [Search](../components/search) [View source](https://styleguide.audi.com/document/2442#/-/input-fields) [Sidebar](../components/sidebar) [Slider](../components/slider) [View source](https://styleguide.audi.com/document/2442#/-/slider) [Snackbar](../components/snackbar) [Switch](../components/switch) [Tabs](../components/tabs) [Text area](../components/text-area) [Text field](../components/text-field) [Tooltip](../components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Audi Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Audi Design System is a comprehensive framework that encompasses a wide range of user interfaces, including responsive websites and specialized service applications.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 984,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "tem from Directories: Components: Audi Design System is a comprehensive framework that encompasses a wide range of user interfaces, including responsive websites and specialized service applications. System provides a variety of solutions while maintaining a consistent user experience across all platforms, from mobile apps to Audi vehicles. Design System includes a wide collection of components, modules, and animations, providing documentation and guidance for creating responsive UI designs and incorporating UI animations to enhance the overall user experience. Advertisement Color System View source Icons Illustrations Motion Responsive Theming Typography Voice and Tone Alert banner Badges Breadcrumb Button Cards Checkbox Data table Dialog Icon Modal Pagination Popover Progress indicator Radio button Search Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ.",
+      "metadata": {
+        "startIndex": 784,
+        "endIndex": 1693,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Button Cards Checkbox Data table Dialog Icon Modal Pagination Popover Progress indicator Radio button Search Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab)",
+      "metadata": {
+        "startIndex": 1493,
+        "endIndex": 2487,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
+      "metadata": {
+        "startIndex": 2287,
+        "endIndex": 3280,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromAudi](./audi#up-pixel) [Source](https://styleguide.audi.com/document/2865?#/-/ui-introduction) [Color System](../directories/color-system) [View source](https://styleguide.audi.com/document/1811#/-/colours) [Icons](../directories/icons) [View source](https://styleguide.audi.com/document/1811#/-/icons)",
+      "metadata": {
+        "startIndex": 3080,
+        "endIndex": 4081,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ystem](../directories/color-system) [View source](https://styleguide.audi.com/document/1811#/-/colours) [Icons](../directories/icons) [View source](https://styleguide.audi.com/document/1811#/-/icons) [Illustrations](../directories/illustrations) [View source](https://styleguide.audi.com/document/1811#/-/illustration) [Motion](../directories/motion) [View source](https://styleguide.audi.com/document/2440#/ui-animation/functional-animation) [Responsive](../directories/responsive) [View source](https://styleguide.audi.com/document/2440#/-/responsive-ui) [Theming](../directories/theming) [View source](https://styleguide.audi.com/document/2440#/-/themes) [Typography](../directories/typography) [View source](https://styleguide.audi.com/document/1811#/-/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://styleguide.audi.com/document/1811#/-/tone-of-voice) [Alert banner](../components/alert-banner) [View",
+      "metadata": {
+        "startIndex": 3881,
+        "endIndex": 4821,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "document/1811#/-/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://styleguide.audi.com/document/1811#/-/tone-of-voice) [Alert banner](../components/alert-banner) [View source](https://styleguide.audi.com/document/2442#/-/notifications) [Badges](../components/badges) [Breadcrumb](../components/breadcrumbs) [View source](https://styleguide.audi.com/document/2442#/-/navigation) [Button](../components/button) [View source](https://styleguide.audi.com/document/2442#/-/buttons) [Cards](../components/cards) [View source](https://styleguide.audi.com/document/2442#/-/card) [Checkbox](../components/checkbox) [View source](https://styleguide.audi.com/document/2442#/-/selection-controls) [Data table](../components/data-table) [View source](https://styleguide.audi.com/document/2442#/-/table) [Dialog](../components/dialog) [View source](https://styleguide.audi.com/document/2442#/-/overlays) [Icon](../directories/icons) [View",
+      "metadata": {
+        "startIndex": 4621,
+        "endIndex": 5578,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "View source](https://styleguide.audi.com/document/2442#/-/table) [Dialog](../components/dialog) [View source](https://styleguide.audi.com/document/2442#/-/overlays) [Icon](../directories/icons) [View source](https://styleguide.audi.com/document/2853#/-/icon-library) [Modal](../components/modal) [Pagination](../components/pagination) [View source](https://styleguide.audi.com/document/2442#/-/pagination) [Popover](../components/popover) [Progress indicator](../components/progress-indicator) [View source](https://styleguide.audi.com/document/2442#/-/loader) [Radio button](../components/radio-button) [Search](../components/search) [View source](https://styleguide.audi.com/document/2442#/-/input-fields) [Sidebar](../components/sidebar) [Slider](../components/slider) [View source](https://styleguide.audi.com/document/2442#/-/slider) [Snackbar](../components/snackbar) [Switch](../components/switch) [Tabs](../components/tabs) [Text area](../components/text-area) [Text",
+      "metadata": {
+        "startIndex": 5378,
+        "endIndex": 6353,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ew source](https://styleguide.audi.com/document/2442#/-/slider) [Snackbar](../components/snackbar) [Switch](../components/switch) [Tabs](../components/tabs) [Text area](../components/text-area) [Text field](../components/text-field) [Tooltip](../components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 6153,
+        "endIndex": 7153,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "modal",
+      "card",
+      "input",
+      "color",
+      "typography",
+      "responsive",
+      "mobile",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:33.989Z",
+    "source_url": "https://designsystems.surf/design-systems/audi"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "id": "583rqpv4r5kuqRMWn0I9D",
+  "title": "U.S. Web Design System (USWDS) for United States Government",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/uswds",
+    "ingested_at": "2025-08-30T13:09:08.564Z"
+  },
+  "content": "# U.S. Web Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The U.S. Web Design System (USWDS) is the federal government's answer to making digital life easier for everyday Americans. This system gives government web developers the tools they need—everything from color schemes to button designs—to build sites that actually work for real people. The goal is simple: make government websites consistent, accessible, and efficient. Hundreds of teams across all levels of government use it, improving it based on how people actually interact with their sites. It's a rare example of government tech that evolves through genuine public collaboration. Advertisement Color System View source Component lifecycle Component overview Component status Data visualization Elevation Figma Repository Layout Patterns Spacing Styles Tokens Typography Accordion Alert banner Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Form Icon Link List Modal Page header Pagination Progress bar Radio button Search Select Sidebar Slider Tag Text field Tooltip",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# U.S. Web Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The U.S. Web Design System (USWDS) is the federal government's answer to making digital life easier for everyday Americans.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 942,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "est in Design Systems Subscribe Design System from Directories: Components: The U.S. Web Design System (USWDS) is the federal government's answer to making digital life easier for everyday Americans. This system gives government web developers the tools they need—everything from color schemes to button designs—to build sites that actually work for real people. The goal is simple: make government websites consistent, accessible, and efficient. Hundreds of teams across all levels of government use it, improving it based on how people actually interact with their sites. It's a rare example of government tech that evolves through genuine public collaboration. Advertisement Color System View source Component lifecycle Component overview Component status Data visualization Elevation Figma Repository Layout Patterns Spacing Styles Tokens Typography Accordion Alert banner Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Form Icon Link List Modal Page header",
+      "metadata": {
+        "startIndex": 742,
+        "endIndex": 1735,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Repository Layout Patterns Spacing Styles Tokens Typography Accordion Alert banner Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Form Icon Link List Modal Page header Pagination Progress bar Radio button Search Select Sidebar Slider Tag Text field Tooltip",
+      "metadata": {
+        "startIndex": 1535,
+        "endIndex": 2531,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek)",
+      "metadata": {
+        "startIndex": 2331,
+        "endIndex": 3318,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ntir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromU.S. Web](./uswds#up-pixel) [Source](https://designsystem.digital.gov/) [Figma](https://www.figma.com/@uswds) [Repository](https://github.com/uswds/uswds) [Color",
+      "metadata": {
+        "startIndex": 3118,
+        "endIndex": 4096,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "](../advertisement) [Design SystemfromU.S. Web](./uswds#up-pixel) [Source](https://designsystem.digital.gov/) [Figma](https://www.figma.com/@uswds) [Repository](https://github.com/uswds/uswds) [Color System](../directories/color-system) [View source](https://designsystem.digital.gov/design-tokens/color/overview/) [Component lifecycle](../directories/component-lifecycle) [View source](https://designsystem.digital.gov/components/lifecycle/) [Component overview](../directories/component-overview) [View source](https://designsystem.digital.gov/components/overview/) [Component status](../directories/component-status) [View source](https://designsystem.digital.gov/components/status/) [Data visualization](../directories/data-visualization) [View source](https://designsystem.digital.gov/components/data-visualizations/) [Elevation](../directories/elevation) [View source](https://designsystem.digital.gov/design-tokens/shadow/) [Figma](../directories/figma) [View",
+      "metadata": {
+        "startIndex": 3896,
+        "endIndex": 4863,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "signsystem.digital.gov/components/data-visualizations/) [Elevation](../directories/elevation) [View source](https://designsystem.digital.gov/design-tokens/shadow/) [Figma](../directories/figma) [View source](https://www.figma.com/@uswds) [Repository](../directories/repository) [View source](https://github.com/uswds/uswds) [Layout](../directories/layout) [View source](https://designsystem.digital.gov/utilities/layout-grid/) [Patterns](../directories/patterns) [View source](https://designsystem.digital.gov/patterns/) [Spacing](../directories/spacing) [View source](https://designsystem.digital.gov/design-tokens/spacing-units/) [Styles](../directories/styles) [View source](https://designsystem.digital.gov/design-tokens/opacity/) [Tokens](../directories/tokens) [View source](https://designsystem.digital.gov/design-tokens/) [Typography](../directories/typography) [View source](https://designsystem.digital.gov/design-tokens/typesetting/overview/) [Accordion](../components/accordion) [View",
+      "metadata": {
+        "startIndex": 4663,
+        "endIndex": 5660,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "stem.digital.gov/design-tokens/) [Typography](../directories/typography) [View source](https://designsystem.digital.gov/design-tokens/typesetting/overview/) [Accordion](../components/accordion) [View source](https://designsystem.digital.gov/components/accordion/) [Alert banner](../components/alert-banner) [View source](https://designsystem.digital.gov/components/alert/) [Breadcrumb](../components/breadcrumbs) [View source](https://designsystem.digital.gov/components/breadcrumb/) [Button](../components/button) [View source](https://designsystem.digital.gov/components/button/) [Button group](../components/button-group) [View source](https://designsystem.digital.gov/components/button-group/) [Cards](../components/cards) [View source](https://designsystem.digital.gov/components/card/) [Checkbox](../components/checkbox) [View source](https://designsystem.digital.gov/components/checkbox/) [Combobox](../components/combobox) [View source](https://designsystem.digital.gov/components/combo-box/)",
+      "metadata": {
+        "startIndex": 5460,
+        "endIndex": 6461,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "](../components/checkbox) [View source](https://designsystem.digital.gov/components/checkbox/) [Combobox](../components/combobox) [View source](https://designsystem.digital.gov/components/combo-box/) [Data table](../components/data-table) [View source](https://designsystem.digital.gov/components/table/) [Date picker](../components/date-picker) [View source](https://designsystem.digital.gov/components/date-picker/) [Form](../components/form) [View source](https://designsystem.digital.gov/components/form/) [Icon](../directories/icons) [View source](https://designsystem.digital.gov/components/icon/) [Link](../components/link) [View source](https://designsystem.digital.gov/components/link/) [List](../components/list) [View source](https://designsystem.digital.gov/components/list/) [Modal](../components/modal) [View source](https://designsystem.digital.gov/components/modal/) [Page header](../components/page-header) [View source](https://designsystem.digital.gov/components/header/)",
+      "metadata": {
+        "startIndex": 6261,
+        "endIndex": 7252,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "dal](../components/modal) [View source](https://designsystem.digital.gov/components/modal/) [Page header](../components/page-header) [View source](https://designsystem.digital.gov/components/header/) [Pagination](../components/pagination) [View source](https://designsystem.digital.gov/components/pagination/) [Progress bar](../components/progress-bar) [View source](https://designsystem.digital.gov/components/step-indicator/) [Radio button](../components/radio-button) [View source](https://designsystem.digital.gov/components/radio-buttons/) [Search](../components/search) [View source](https://designsystem.digital.gov/components/search/) [Select](../components/select) [View source](https://designsystem.digital.gov/components/select/) [Sidebar](../components/sidebar) [View source](https://designsystem.digital.gov/components/side-navigation/) [Slider](../components/slider) [View source](https://designsystem.digital.gov/components/range-slider/) [Tag](../components/tag) [View",
+      "metadata": {
+        "startIndex": 7052,
+        "endIndex": 8037,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "e](https://designsystem.digital.gov/components/side-navigation/) [Slider](../components/slider) [View source](https://designsystem.digital.gov/components/range-slider/) [Tag](../components/tag) [View source](https://designsystem.digital.gov/components/tag/) [Text field](../components/text-field) [View source](https://designsystem.digital.gov/components/text-input/) [Tooltip](../components/tooltip) [View source](https://designsystem.digital.gov/components/tooltip/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7837,
+        "endIndex": 8837,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "stagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8637,
+        "endIndex": 9637,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "form",
+      "modal",
+      "header",
+      "card",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "shadow"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:08.564Z",
+    "source_url": "https://designsystems.surf/design-systems/uswds"
+  }
+}

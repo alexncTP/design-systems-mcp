@@ -1,0 +1,125 @@
+{
+  "id": "zo40AdLHhy163npw7kFih",
+  "title": "Wedges Design System for React UI by Lemon Squeezy",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/lemon-squeezy",
+    "ingested_at": "2025-08-30T13:09:04.007Z"
+  },
+  "content": "# Lemon Squeezy Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Wedges from Directories: Components: Wedges is a developer-friendly UI library by Lemon Squeezy, built with Radix primitives and Tailwind CSS. Wedges focuses on clean, reusable components that work out of the box and adapt to your existing styles. It’s ideal for projects that value speed, consistency, and developer experience. Advertisement Color System View source Figma Repository Tokens Alert banner Avatar Badges Button Button group Checkbox Dropdown Label Popover Progress bar Progress indicator Radio button Select Slider Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [WedgesfromLemon Squeezy](./lemon-squeezy#up-pixel) [Source](https://www.lemonsqueezy.com/wedges) [Figma](https://www.lemonsqueezy.com/wedges/figma) [Repository](https://github.com/lmsqueezy/wedges) [Color System](../directories/color-system) [View source](https://www.lemonsqueezy.com/wedges/docs/theming/color-system) [Figma](../directories/figma) [View source](https://www.lemonsqueezy.com/wedges/figma) [Repository](../directories/repository) [View source](https://github.com/lmsqueezy/wedges) [Tokens](../directories/tokens) [View source](https://www.lemonsqueezy.com/wedges/docs/theming/additional-utilities) [Alert banner](../components/alert-banner) [View source](https://www.lemonsqueezy.com/wedges/docs/components/alert) [Avatar](../components/avatar) [View source](https://www.lemonsqueezy.com/wedges/docs/components/avatar) [Badges](../components/badges) [View source](https://www.lemonsqueezy.com/wedges/docs/components/badge) [Button](../components/button) [View source](https://www.lemonsqueezy.com/wedges/docs/components/button) [Button group](../components/button-group) [View source](https://www.lemonsqueezy.com/wedges/docs/components/button-group) [Checkbox](../components/checkbox) [View source](https://www.lemonsqueezy.com/wedges/docs/components/checkbox) [Dropdown](../components/dropdown) [View source](https://www.lemonsqueezy.com/wedges/docs/components/dropdown-menu) [Label](../components/label) [View source](https://www.lemonsqueezy.com/wedges/docs/components/label) [Popover](../components/popover) [View source](https://www.lemonsqueezy.com/wedges/docs/components/popover) [Progress bar](../components/progress-bar) [View source](https://www.lemonsqueezy.com/wedges/docs/components/progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://www.lemonsqueezy.com/wedges/docs/components/loading) [Radio button](../components/radio-button) [View source](https://www.lemonsqueezy.com/wedges/docs/components/radio-group) [Select](../components/select) [View source](https://www.lemonsqueezy.com/wedges/docs/components/select) [Slider](../components/slider) [View source](https://www.lemonsqueezy.com/wedges/docs/components/slider) [Switch](../components/switch) [View source](https://www.lemonsqueezy.com/wedges/docs/components/switch) [Tabs](../components/tabs) [View source](https://www.lemonsqueezy.com/wedges/docs/components/tabs) [Tag](../components/tag) [View source](https://www.lemonsqueezy.com/wedges/docs/components/tag) [Text area](../components/text-area) [View source](https://www.lemonsqueezy.com/wedges/docs/components/textarea) [Text field](../components/text-field) [View source](https://www.lemonsqueezy.com/wedges/docs/components/input) [Tooltip](../components/tooltip) [View source](https://www.lemonsqueezy.com/wedges/docs/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Typography](../directories/typography) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Lemon Squeezy Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Wedges from Directories: Components: Wedges is a developer-friendly UI library by Lemon Squeezy, built with Radix primitives and Tailwind CSS.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 917,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "desk Keep up with the latest in Design Systems Subscribe Wedges from Directories: Components: Wedges is a developer-friendly UI library by Lemon Squeezy, built with Radix primitives and Tailwind CSS. Wedges focuses on clean, reusable components that work out of the box and adapt to your existing styles. It’s ideal for projects that value speed, consistency, and developer experience. Advertisement Color System View source Figma Repository Tokens Alert banner Avatar Badges Button Button group Checkbox Dropdown Label Popover Progress bar Progress indicator Radio button Select Slider Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com)",
+      "metadata": {
+        "startIndex": 717,
+        "endIndex": 1702,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "les5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom)",
+      "metadata": {
+        "startIndex": 1502,
+        "endIndex": 2494,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "/inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos)",
+      "metadata": {
+        "startIndex": 2294,
+        "endIndex": 3295,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [WedgesfromLemon Squeezy](./lemon-squeezy#up-pixel) [Source](https://www.lemonsqueezy.com/wedges) [Figma](https://www.lemonsqueezy.com/wedges/figma) [Repository](https://github.com/lmsqueezy/wedges) [Color System](../directories/color-system) [View source](https://www.lemonsqueezy.com/wedges/docs/theming/color-system) [Figma](../directories/figma) [View source](https://www.lemonsqueezy.com/wedges/figma) [Repository](../directories/repository) [View source](https://github.com/lmsqueezy/wedges) [Tokens](../directories/tokens) [View source](https://www.lemonsqueezy.com/wedges/docs/theming/additional-utilities) [Alert",
+      "metadata": {
+        "startIndex": 3095,
+        "endIndex": 4063,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "/directories/repository) [View source](https://github.com/lmsqueezy/wedges) [Tokens](../directories/tokens) [View source](https://www.lemonsqueezy.com/wedges/docs/theming/additional-utilities) [Alert banner](../components/alert-banner) [View source](https://www.lemonsqueezy.com/wedges/docs/components/alert) [Avatar](../components/avatar) [View source](https://www.lemonsqueezy.com/wedges/docs/components/avatar) [Badges](../components/badges) [View source](https://www.lemonsqueezy.com/wedges/docs/components/badge) [Button](../components/button) [View source](https://www.lemonsqueezy.com/wedges/docs/components/button) [Button group](../components/button-group) [View source](https://www.lemonsqueezy.com/wedges/docs/components/button-group) [Checkbox](../components/checkbox) [View source](https://www.lemonsqueezy.com/wedges/docs/components/checkbox) [Dropdown](../components/dropdown) [View source](https://www.lemonsqueezy.com/wedges/docs/components/dropdown-menu)",
+      "metadata": {
+        "startIndex": 3863,
+        "endIndex": 4836,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "eckbox) [View source](https://www.lemonsqueezy.com/wedges/docs/components/checkbox) [Dropdown](../components/dropdown) [View source](https://www.lemonsqueezy.com/wedges/docs/components/dropdown-menu) [Label](../components/label) [View source](https://www.lemonsqueezy.com/wedges/docs/components/label) [Popover](../components/popover) [View source](https://www.lemonsqueezy.com/wedges/docs/components/popover) [Progress bar](../components/progress-bar) [View source](https://www.lemonsqueezy.com/wedges/docs/components/progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://www.lemonsqueezy.com/wedges/docs/components/loading) [Radio button](../components/radio-button) [View source](https://www.lemonsqueezy.com/wedges/docs/components/radio-group) [Select](../components/select) [View source](https://www.lemonsqueezy.com/wedges/docs/components/select) [Slider](../components/slider) [View source](https://www.lemonsqueezy.com/wedges/docs/components/slider)",
+      "metadata": {
+        "startIndex": 4636,
+        "endIndex": 5631,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "./components/select) [View source](https://www.lemonsqueezy.com/wedges/docs/components/select) [Slider](../components/slider) [View source](https://www.lemonsqueezy.com/wedges/docs/components/slider) [Switch](../components/switch) [View source](https://www.lemonsqueezy.com/wedges/docs/components/switch) [Tabs](../components/tabs) [View source](https://www.lemonsqueezy.com/wedges/docs/components/tabs) [Tag](../components/tag) [View source](https://www.lemonsqueezy.com/wedges/docs/components/tag) [Text area](../components/text-area) [View source](https://www.lemonsqueezy.com/wedges/docs/components/textarea) [Text field](../components/text-field) [View source](https://www.lemonsqueezy.com/wedges/docs/components/input) [Tooltip](../components/tooltip) [View source](https://www.lemonsqueezy.com/wedges/docs/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft)",
+      "metadata": {
+        "startIndex": 5431,
+        "endIndex": 6417,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "monsqueezy.com/wedges/docs/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Typography](../directories/typography) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 6217,
+        "endIndex": 7217,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "input",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:04.007Z",
+    "source_url": "https://designsystems.surf/design-systems/lemon-squeezy"
+  }
+}

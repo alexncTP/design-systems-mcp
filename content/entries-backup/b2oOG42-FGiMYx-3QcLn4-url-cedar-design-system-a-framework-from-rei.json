@@ -1,0 +1,140 @@
+{
+  "id": "b2oOG42-FGiMYx-3QcLn4",
+  "title": "Cedar Design System – A Framework from Rei",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/rei",
+    "ingested_at": "2025-08-30T13:09:58.091Z"
+  },
+  "content": "# Rei Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Cedar from Directories: Components: Cedar Design System is a comprehensive framework and set of guidelines created by REI, tailored for digital products and experiences, aligning with the brand's visual language. Design System distributes flexible design elements, typography, color system, and UI elements empowering teams with the tools needed to craft functional, reusable components while maintaining alignment with the brand. Advertisement Accessibility View source Color System Component overview Elevation Figma Repository Icons Motion Patterns Responsive Spacing Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Breadcrumb Button Cards Checkbox Chip Data table Icon Link List Modal Pagination Popover Radio button Segmented control Select Snackbar Switch Tabs Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CedarfromRei](./rei#up-pixel) [Source](https://cedar.rei.com/) [Figma](https://www.figma.com/@rei_cedar) [Repository](https://github.com/rei/rei-cedar) [Accessibility](../directories/accessibility) [View source](https://cedar.rei.com/guidelines/accessibility) [Color System](../directories/color-system) [View source](https://cedar.rei.com/guidelines/color) [Component overview](../directories/component-overview) [View source](https://cedar.rei.com/components) [Elevation](../directories/elevation) [View source](https://cedar.rei.com/guidelines/prominence) [Figma](../directories/figma) [View source](https://www.figma.com/@rei_cedar) [Repository](../directories/repository) [View source](https://github.com/rei/rei-cedar) [Icons](../directories/icons) [View source](https://cedar.rei.com/guidelines/icons) [Motion](../directories/motion) [View source](https://cedar.rei.com/guidelines/motion) [Patterns](../directories/patterns) [View source](https://cedar.rei.com/patterns) [Responsive](../directories/responsive) [View source](https://cedar.rei.com/guidelines/responsive) [Spacing](../directories/spacing) [View source](https://cedar.rei.com/guidelines/spacing) [Styles](../directories/styles) [View source](https://cedar.rei.com/guidelines/radius) [Theming](../directories/theming) [View source](https://cedar.rei.com/guidelines/palettes) [Tokens](../directories/tokens) [View source](https://cedar.rei.com/tokens) [Typography](../directories/typography) [View source](https://cedar.rei.com/guidelines/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://cedar.rei.com/guidelines/writing-content) [Accordion](../components/accordion) [View source](https://cedar.rei.com/components/accordion) [Alert banner](../components/alert-banner) [View source](https://cedar.rei.com/components/banner) [Breadcrumb](../components/breadcrumbs) [View source](https://cedar.rei.com/components/breadcrumb) [Button](../components/button) [View source](https://cedar.rei.com/components/button) [Cards](../components/cards) [View source](https://cedar.rei.com/components/card) [Checkbox](../components/checkbox) [View source](https://cedar.rei.com/components/checkbox) [Chip](../components/chip) [View source](https://cedar.rei.com/components/chip) [Data table](../components/data-table) [View source](https://cedar.rei.com/components/table) [Icon](../directories/icons) [View source](https://cedar.rei.com/components/icon) [Link](../components/link) [View source](https://cedar.rei.com/components/link) [List](../components/list) [View source](https://cedar.rei.com/components/list) [Modal](../components/modal) [View source](https://cedar.rei.com/components/modal) [Pagination](../components/pagination) [View source](https://cedar.rei.com/components/pagination) [Popover](../components/popover) [View source](https://cedar.rei.com/components/popover) [Radio button](../components/radio-button) [View source](https://cedar.rei.com/components/radio-button) [Segmented control](../components/segmented-control) [View source](https://cedar.rei.com/components/toggle-button) [Select](../components/select) [View source](https://cedar.rei.com/components/select) [Snackbar](../components/snackbar) [View source](https://cedar.rei.com/components/toast) [Switch](../components/switch) [View source](https://cedar.rei.com/components/switch) [Tabs](../components/tabs) [View source](https://cedar.rei.com/components/tab) [Text field](../components/text-field) [View source](https://cedar.rei.com/components/input) [Tooltip](../components/tooltip) [View source](https://cedar.rei.com/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Rei Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Cedar from Directories: Components: Cedar Design System is a comprehensive framework and set of guidelines created by REI, tailored for digital products and experiences, aligning with the brand's visual language.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 987,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "rectories: Components: Cedar Design System is a comprehensive framework and set of guidelines created by REI, tailored for digital products and experiences, aligning with the brand's visual language. Design System distributes flexible design elements, typography, color system, and UI elements empowering teams with the tools needed to craft functional, reusable components while maintaining alignment with the brand. Advertisement Accessibility View source Color System Component overview Elevation Figma Repository Icons Motion Patterns Responsive Spacing Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Breadcrumb Button Cards Checkbox Chip Data table Icon Link List Modal Pagination Popover Radio button Segmented control Select Snackbar Switch Tabs Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints)",
+      "metadata": {
+        "startIndex": 787,
+        "endIndex": 1784,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "esign .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon",
+      "metadata": {
+        "startIndex": 1584,
+        "endIndex": 2582,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "[GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2382,
+        "endIndex": 3310,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CedarfromRei](./rei#up-pixel) [Source](https://cedar.rei.com/) [Figma](https://www.figma.com/@rei_cedar) [Repository](https://github.com/rei/rei-cedar) [Accessibility](../directories/accessibility) [View source](https://cedar.rei.com/guidelines/accessibility) [Color System](../directories/color-system) [View source](https://cedar.rei.com/guidelines/color) [Component overview](../directories/component-overview) [View",
+      "metadata": {
+        "startIndex": 3110,
+        "endIndex": 4096,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "cedar.rei.com/guidelines/accessibility) [Color System](../directories/color-system) [View source](https://cedar.rei.com/guidelines/color) [Component overview](../directories/component-overview) [View source](https://cedar.rei.com/components) [Elevation](../directories/elevation) [View source](https://cedar.rei.com/guidelines/prominence) [Figma](../directories/figma) [View source](https://www.figma.com/@rei_cedar) [Repository](../directories/repository) [View source](https://github.com/rei/rei-cedar) [Icons](../directories/icons) [View source](https://cedar.rei.com/guidelines/icons) [Motion](../directories/motion) [View source](https://cedar.rei.com/guidelines/motion) [Patterns](../directories/patterns) [View source](https://cedar.rei.com/patterns) [Responsive](../directories/responsive) [View source](https://cedar.rei.com/guidelines/responsive) [Spacing](../directories/spacing) [View source](https://cedar.rei.com/guidelines/spacing) [Styles](../directories/styles) [View",
+      "metadata": {
+        "startIndex": 3896,
+        "endIndex": 4881,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "/responsive) [View source](https://cedar.rei.com/guidelines/responsive) [Spacing](../directories/spacing) [View source](https://cedar.rei.com/guidelines/spacing) [Styles](../directories/styles) [View source](https://cedar.rei.com/guidelines/radius) [Theming](../directories/theming) [View source](https://cedar.rei.com/guidelines/palettes) [Tokens](../directories/tokens) [View source](https://cedar.rei.com/tokens) [Typography](../directories/typography) [View source](https://cedar.rei.com/guidelines/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://cedar.rei.com/guidelines/writing-content) [Accordion](../components/accordion) [View source](https://cedar.rei.com/components/accordion) [Alert banner](../components/alert-banner) [View source](https://cedar.rei.com/components/banner) [Breadcrumb](../components/breadcrumbs) [View source](https://cedar.rei.com/components/breadcrumb) [Button](../components/button) [View",
+      "metadata": {
+        "startIndex": 4681,
+        "endIndex": 5637,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "-banner) [View source](https://cedar.rei.com/components/banner) [Breadcrumb](../components/breadcrumbs) [View source](https://cedar.rei.com/components/breadcrumb) [Button](../components/button) [View source](https://cedar.rei.com/components/button) [Cards](../components/cards) [View source](https://cedar.rei.com/components/card) [Checkbox](../components/checkbox) [View source](https://cedar.rei.com/components/checkbox) [Chip](../components/chip) [View source](https://cedar.rei.com/components/chip) [Data table](../components/data-table) [View source](https://cedar.rei.com/components/table) [Icon](../directories/icons) [View source](https://cedar.rei.com/components/icon) [Link](../components/link) [View source](https://cedar.rei.com/components/link) [List](../components/list) [View source](https://cedar.rei.com/components/list) [Modal](../components/modal) [View source](https://cedar.rei.com/components/modal) [Pagination](../components/pagination) [View",
+      "metadata": {
+        "startIndex": 5437,
+        "endIndex": 6403,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "./components/list) [View source](https://cedar.rei.com/components/list) [Modal](../components/modal) [View source](https://cedar.rei.com/components/modal) [Pagination](../components/pagination) [View source](https://cedar.rei.com/components/pagination) [Popover](../components/popover) [View source](https://cedar.rei.com/components/popover) [Radio button](../components/radio-button) [View source](https://cedar.rei.com/components/radio-button) [Segmented control](../components/segmented-control) [View source](https://cedar.rei.com/components/toggle-button) [Select](../components/select) [View source](https://cedar.rei.com/components/select) [Snackbar](../components/snackbar) [View source](https://cedar.rei.com/components/toast) [Switch](../components/switch) [View source](https://cedar.rei.com/components/switch) [Tabs](../components/tabs) [View source](https://cedar.rei.com/components/tab) [Text field](../components/text-field) [View source](https://cedar.rei.com/components/input)",
+      "metadata": {
+        "startIndex": 6203,
+        "endIndex": 7197,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": ".rei.com/components/switch) [Tabs](../components/tabs) [View source](https://cedar.rei.com/components/tab) [Text field](../components/text-field) [View source](https://cedar.rei.com/components/input) [Tooltip](../components/tooltip) [View source](https://cedar.rei.com/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 6997,
+        "endIndex": 7997,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "modal",
+      "card",
+      "input",
+      "typography",
+      "color",
+      "spacing",
+      "radius",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:58.091Z",
+    "source_url": "https://designsystems.surf/design-systems/rei"
+  }
+}

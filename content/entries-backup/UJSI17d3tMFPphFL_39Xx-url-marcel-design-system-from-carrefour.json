@@ -1,0 +1,161 @@
+{
+  "id": "UJSI17d3tMFPphFL_39Xx",
+  "title": "Marcel Design System from Carrefour",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/carrefour",
+    "ingested_at": "2025-08-30T13:09:10.750Z"
+  },
+  "content": "# Carrefour Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Marcel from Directories: Components: Marcel is Carrefour’s design system, designed to unify digital experiences across its platforms and services. As a single source of truth for Carrefour’s digital identity, Marcel helps teams create seamless customer experiences—whether shopping online, using the mobile app, or engaging with in-store digital touchpoints. Marcel also enables teams to build user-friendly interfaces across international markets while maintaining Carrefour’s brand identity. Advertisement Accessibility View source Color System Component overview Component status Elevation Icons Motion Patterns Spacing Theming Tokens Typography Voice and Tone Accordion Action list Autocomplete Badges Breadcrumb Button Cards Checkbox Chip Date picker Drawer Link Modal Navigation bar Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [MarcelfromCarrefour](./carrefour#up-pixel) [Source](https://carrefour.design/) [Accessibility](../directories/accessibility) [View source](https://carrefour.design/328eff0d7/p/997be8-accessibilty) [Color System](../directories/color-system) [View source](https://carrefour.design/328eff0d7/p/01e4ec-colors) [Component overview](../directories/component-overview) [View source](https://carrefour.design/328eff0d7/p/940054-components) [Component status](../directories/component-status) [View source](https://carrefour.design/328eff0d7/p/06b8f7-components-status) [Elevation](../directories/elevation) [View source](https://carrefour.design/328eff0d7/p/1097b4-elevation) [Icons](../directories/icons) [View source](https://carrefour.design/328eff0d7/p/3920dd-icons) [Motion](../directories/motion) [View source](https://carrefour.design/328eff0d7/p/279801-motion-guidelines) [Patterns](../directories/patterns) [View source](https://carrefour.design/328eff0d7/p/40d52a-design-patterns) [Spacing](../directories/spacing) [View source](https://carrefour.design/328eff0d7/p/26ca2a-spacing) [Theming](../directories/theming) [View source](https://carrefour.design/328eff0d7/p/4371d4-themes) [Tokens](../directories/tokens) [View source](https://carrefour.design/328eff0d7/p/86b995-token-architecture) [Typography](../directories/typography) [View source](https://carrefour.design/328eff0d7/p/08f9c9-text-styles) [Voice and Tone](../directories/voice-and-tone) [View source](https://carrefour.design/328eff0d7/p/25970c-ux-writing) [Accordion](../components/accordion) [View source](https://carrefour.design/328eff0d7/p/23146a-accordion) [Action list](../components/action-list) [View source](https://carrefour.design/328eff0d7/p/393d00-list-item) [Autocomplete](../components/autocomplete) [View source](https://carrefour.design/328eff0d7/p/9616a9-input-autocomplete) [Badges](../components/badges) [View source](https://carrefour.design/328eff0d7/p/76c520-badge) [Breadcrumb](../components/breadcrumbs) [View source](https://carrefour.design/328eff0d7/p/50f298-breadcrumb) [Button](../components/button) [View source](https://carrefour.design/328eff0d7/p/46fd9d-button) [Cards](../components/cards) [View source](https://carrefour.design/328eff0d7/p/044d5c-card) [Checkbox](../components/checkbox) [View source](https://carrefour.design/328eff0d7/p/03b7d7-checkbox) [Chip](../components/chip) [View source](https://carrefour.design/328eff0d7/p/9783f0-chip) [Date picker](../components/date-picker) [View source](https://carrefour.design/328eff0d7/p/377752-date-picker) [Drawer](../components/drawer) [View source](https://carrefour.design/328eff0d7/p/3325c1-drawer) [Link](../components/link) [View source](https://carrefour.design/328eff0d7/p/353837-link) [Modal](../components/modal) [View source](https://carrefour.design/328eff0d7/p/67f5de-modal) [Navigation bar](../components/navigation-bar) [View source](https://carrefour.design/328eff0d7/p/717621-tab-bar) [Pagination](../components/pagination) [View source](https://carrefour.design/328eff0d7/p/311c1e-pagination-item) [Popover](../components/popover) [View source](https://carrefour.design/328eff0d7/p/666d8a-popover) [Progress bar](../components/progress-bar) [View source](https://carrefour.design/328eff0d7/p/38bfba-progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://carrefour.design/328eff0d7/p/343dbf-spinner) [Radio button](../components/radio-button) [View source](https://carrefour.design/328eff0d7/p/1749b5-radio) [Search](../components/search) [View source](https://carrefour.design/328eff0d7/p/514236-input-search) [Segmented control](../components/segmented-control) [View source](https://carrefour.design/328eff0d7/p/430a68-segmented-control) [Select](../components/select) [View source](https://carrefour.design/328eff0d7/p/685ec5-input-select) [Slider](../components/slider) [View source](https://carrefour.design/328eff0d7/p/381593-input-range) [Snackbar](../components/snackbar) [View source](https://carrefour.design/328eff0d7/p/90c122-toasters) [Switch](../components/switch) [View source](https://carrefour.design/328eff0d7/p/090eed-toggle) [Tabs](../components/tabs) [View source](https://carrefour.design/328eff0d7/p/4516e9-tab) [Tag](../components/tag) [View source](https://carrefour.design/328eff0d7/p/215118-tag) [Text area](../components/text-area) [View source](https://carrefour.design/328eff0d7/p/15f96e-text-area) [Text field](../components/text-field) [View source](https://carrefour.design/328eff0d7/p/270b0d-input-text) [Tooltip](../components/tooltip) [View source](https://carrefour.design/328eff0d7/p/674d7f-tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Carrefour Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Marcel from Directories: Components: Marcel is Carrefour’s design system, designed to unify digital experiences across its platforms and services.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 921,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Keep up with the latest in Design Systems Subscribe Marcel from Directories: Components: Marcel is Carrefour’s design system, designed to unify digital experiences across its platforms and services. As a single source of truth for Carrefour’s digital identity, Marcel helps teams create seamless customer experiences—whether shopping online, using the mobile app, or engaging with in-store digital touchpoints. Marcel also enables teams to build user-friendly interfaces across international markets while maintaining Carrefour’s brand identity. Advertisement Accessibility View source Color System Component overview Component status Elevation Icons Motion Patterns Spacing Theming Tokens Typography Voice and Tone Accordion Action list Autocomplete Badges Breadcrumb Button Cards Checkbox Chip Date picker Drawer Link Modal Navigation bar Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip",
+      "metadata": {
+        "startIndex": 721,
+        "endIndex": 1720,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "te picker Drawer Link Modal Navigation bar Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github)",
+      "metadata": {
+        "startIndex": 1520,
+        "endIndex": 2520,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "/cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout",
+      "metadata": {
+        "startIndex": 2320,
+        "endIndex": 3308,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [MarcelfromCarrefour](./carrefour#up-pixel) [Source](https://carrefour.design/) [Accessibility](../directories/accessibility) [View source](https://carrefour.design/328eff0d7/p/997be8-accessibilty) [Color System](../directories/color-system) [View",
+      "metadata": {
+        "startIndex": 3108,
+        "endIndex": 4060,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "rce](https://carrefour.design/) [Accessibility](../directories/accessibility) [View source](https://carrefour.design/328eff0d7/p/997be8-accessibilty) [Color System](../directories/color-system) [View source](https://carrefour.design/328eff0d7/p/01e4ec-colors) [Component overview](../directories/component-overview) [View source](https://carrefour.design/328eff0d7/p/940054-components) [Component status](../directories/component-status) [View source](https://carrefour.design/328eff0d7/p/06b8f7-components-status) [Elevation](../directories/elevation) [View source](https://carrefour.design/328eff0d7/p/1097b4-elevation) [Icons](../directories/icons) [View source](https://carrefour.design/328eff0d7/p/3920dd-icons) [Motion](../directories/motion) [View source](https://carrefour.design/328eff0d7/p/279801-motion-guidelines) [Patterns](../directories/patterns) [View source](https://carrefour.design/328eff0d7/p/40d52a-design-patterns) [Spacing](../directories/spacing) [View",
+      "metadata": {
+        "startIndex": 3860,
+        "endIndex": 4837,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "our.design/328eff0d7/p/279801-motion-guidelines) [Patterns](../directories/patterns) [View source](https://carrefour.design/328eff0d7/p/40d52a-design-patterns) [Spacing](../directories/spacing) [View source](https://carrefour.design/328eff0d7/p/26ca2a-spacing) [Theming](../directories/theming) [View source](https://carrefour.design/328eff0d7/p/4371d4-themes) [Tokens](../directories/tokens) [View source](https://carrefour.design/328eff0d7/p/86b995-token-architecture) [Typography](../directories/typography) [View source](https://carrefour.design/328eff0d7/p/08f9c9-text-styles) [Voice and Tone](../directories/voice-and-tone) [View source](https://carrefour.design/328eff0d7/p/25970c-ux-writing) [Accordion](../components/accordion) [View source](https://carrefour.design/328eff0d7/p/23146a-accordion) [Action list](../components/action-list) [View source](https://carrefour.design/328eff0d7/p/393d00-list-item) [Autocomplete](../components/autocomplete) [View",
+      "metadata": {
+        "startIndex": 4637,
+        "endIndex": 5602,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "our.design/328eff0d7/p/23146a-accordion) [Action list](../components/action-list) [View source](https://carrefour.design/328eff0d7/p/393d00-list-item) [Autocomplete](../components/autocomplete) [View source](https://carrefour.design/328eff0d7/p/9616a9-input-autocomplete) [Badges](../components/badges) [View source](https://carrefour.design/328eff0d7/p/76c520-badge) [Breadcrumb](../components/breadcrumbs) [View source](https://carrefour.design/328eff0d7/p/50f298-breadcrumb) [Button](../components/button) [View source](https://carrefour.design/328eff0d7/p/46fd9d-button) [Cards](../components/cards) [View source](https://carrefour.design/328eff0d7/p/044d5c-card) [Checkbox](../components/checkbox) [View source](https://carrefour.design/328eff0d7/p/03b7d7-checkbox) [Chip](../components/chip) [View source](https://carrefour.design/328eff0d7/p/9783f0-chip) [Date picker](../components/date-picker) [View source](https://carrefour.design/328eff0d7/p/377752-date-picker)",
+      "metadata": {
+        "startIndex": 5402,
+        "endIndex": 6376,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ip](../components/chip) [View source](https://carrefour.design/328eff0d7/p/9783f0-chip) [Date picker](../components/date-picker) [View source](https://carrefour.design/328eff0d7/p/377752-date-picker) [Drawer](../components/drawer) [View source](https://carrefour.design/328eff0d7/p/3325c1-drawer) [Link](../components/link) [View source](https://carrefour.design/328eff0d7/p/353837-link) [Modal](../components/modal) [View source](https://carrefour.design/328eff0d7/p/67f5de-modal) [Navigation bar](../components/navigation-bar) [View source](https://carrefour.design/328eff0d7/p/717621-tab-bar) [Pagination](../components/pagination) [View source](https://carrefour.design/328eff0d7/p/311c1e-pagination-item) [Popover](../components/popover) [View source](https://carrefour.design/328eff0d7/p/666d8a-popover) [Progress bar](../components/progress-bar) [View source](https://carrefour.design/328eff0d7/p/38bfba-progress-bar) [Progress indicator](../components/progress-indicator) [View",
+      "metadata": {
+        "startIndex": 6176,
+        "endIndex": 7162,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ff0d7/p/666d8a-popover) [Progress bar](../components/progress-bar) [View source](https://carrefour.design/328eff0d7/p/38bfba-progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://carrefour.design/328eff0d7/p/343dbf-spinner) [Radio button](../components/radio-button) [View source](https://carrefour.design/328eff0d7/p/1749b5-radio) [Search](../components/search) [View source](https://carrefour.design/328eff0d7/p/514236-input-search) [Segmented control](../components/segmented-control) [View source](https://carrefour.design/328eff0d7/p/430a68-segmented-control) [Select](../components/select) [View source](https://carrefour.design/328eff0d7/p/685ec5-input-select) [Slider](../components/slider) [View source](https://carrefour.design/328eff0d7/p/381593-input-range) [Snackbar](../components/snackbar) [View source](https://carrefour.design/328eff0d7/p/90c122-toasters) [Switch](../components/switch) [View",
+      "metadata": {
+        "startIndex": 6962,
+        "endIndex": 7909,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "e](https://carrefour.design/328eff0d7/p/381593-input-range) [Snackbar](../components/snackbar) [View source](https://carrefour.design/328eff0d7/p/90c122-toasters) [Switch](../components/switch) [View source](https://carrefour.design/328eff0d7/p/090eed-toggle) [Tabs](../components/tabs) [View source](https://carrefour.design/328eff0d7/p/4516e9-tab) [Tag](../components/tag) [View source](https://carrefour.design/328eff0d7/p/215118-tag) [Text area](../components/text-area) [View source](https://carrefour.design/328eff0d7/p/15f96e-text-area) [Text field](../components/text-field) [View source](https://carrefour.design/328eff0d7/p/270b0d-input-text) [Tooltip](../components/tooltip) [View source](https://carrefour.design/328eff0d7/p/674d7f-tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components)",
+      "metadata": {
+        "startIndex": 7709,
+        "endIndex": 8703,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "e HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8503,
+        "endIndex": 9503,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "modal",
+      "input",
+      "card",
+      "color",
+      "spacing",
+      "typography",
+      "mobile",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:10.750Z",
+    "source_url": "https://designsystems.surf/design-systems/carrefour"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "id": "RR5k5jC8gIQyz_4bYlnmp",
+  "title": "Accessibility in Design System",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/directories/accessibility",
+    "ingested_at": "2025-08-30T13:09:25.900Z"
+  },
+  "content": "# Accessibility Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Color System Component lifecycle Component overview Component status Data visualization Elevation Figma Icons Illustrations International Design Layout Motion Patterns Repository Responsive Spacing States Storybook Styles Theming Tokens Typography Voice and Tone Keep up with the latest in Design Systems Subscribe Accessibility is the practice of creating inclusive experiences that can be accessed and used by people with diverse abilities. It involves considering the needs of individuals with disabilities, such as visual, auditory, motor, or cognitive impairments, and ensuring that digital products and interfaces are designed to accommodate these needs. Accessibility features may include alternative text for images, captions for videos, keyboard navigation, color contrast, and clear, concise content. By incorporating accessibility into design processes, products become more inclusive, allowing a wider range of users to engage with and benefit from digital experiences, ultimately fostering equality and equal access for all. Advertisement in Design Systems Adobe Spectrum View source Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Carrefour Marcel Cisco Momentum Design Dell eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kiwicom Orbit LocalTapiola Duet Michelin Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Nordhealth Orange Palantir Blueprint Pinterest Gestalt Porsche Red Hat PatternFly Rei Cedar Salesforce Lightning Samsung One UI ServiceNow Horizon Shopify Polaris Skoda Flow Teamleader Ahoy Thumbtack Thumbprint Twilio Paste UAE Uber Base Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas WorkOS Radix Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [AccessibilityAccessibilityAccessibility](./accessibility) [Color SystemColor SystemColor System](./color-system) [Component lifecycleComponent lifecycleComponent lifecycle](./component-lifecycle) [Component overviewComponent overviewComponent overview](./component-overview) [Component statusComponent statusComponent status](./component-status) [Data visualizationData visualizationData visualization](./data-visualization) [ElevationElevationElevation](./elevation) [FigmaFigmaFigma](./figma) [IconsIconsIcons](./icons) [IllustrationsIllustrationsIllustrations](./illustrations) [International DesignInternational DesignInternational Design](./international-design) [LayoutLayoutLayout](./layout) [MotionMotionMotion](./motion) [PatternsPatternsPatterns](./patterns) [RepositoryRepositoryRepository](./repository) [ResponsiveResponsiveResponsive](./responsive) [SpacingSpacingSpacing](./spacing) [StatesStatesStates](./states) [StorybookStorybookStorybook](./storybook) [StylesStylesStyles](./styles) [ThemingThemingTheming](./theming) [TokensTokensTokens](./tokens) [TypographyTypographyTypography](./typography) [Voice and ToneVoice and ToneVoice and Tone](./voice-and-tone) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Accessibility49](./accessibility#up-pixel) [AdobeSpectrum](../design-systems/adobe) [View source](https://spectrum.adobe.com/page/inclusive-design/) [Alaska AirlinesAuro](../design-systems/alaskaairlines) [View source](https://auro.alaskaair.com/a11y-statement#gsc.tab=0&gsc.sort=) [AmazonCloudscape](../design-systems/amazon) [View source](https://cloudscape.design/foundation/core-principles/accessibility/) [AppleHIG](../design-systems/apple) [View source](https://developer.apple.com/design/human-interface-guidelines/accessibility) [AtlassianDesign System](../design-systems/atlassian) [View source](https://atlassian.design/foundations/accessibility/) [CarrefourMarcel](../design-systems/carrefour) [View source](https://carrefour.design/328eff0d7/p/997be8-accessibilty) [CiscoMomentum Design](../design-systems/cisco) [View source](https://momentum.design/guidelines/accessibility) [DellDesign System](../design-systems/dell) [View source](https://www.delldesignsystem.com/getting-started/annotation-kit/) [eBayEvo](../design-systems/ebay) [View source](https://playbook.ebay.com/foundations/accessibility) [ElasticDesign System](../design-systems/elastic) [View source](https://elastic.github.io/eui/#/guidelines/accessibility) [EsriCalcite](../design-systems/esri) [View source](https://developers.arcgis.com/calcite-design-system/foundations/accessibility/) [General ElectricEdison](../design-systems/generalelectric) [View source](https://eds.gehealthcare.com/accessibility) [GithubPrimer](../design-systems/github) [View source](https://primer.style/design/guides/accessibility) [GitLabPajamas](../design-systems/gitlab) [View source](https://design.gitlab.com/accessibility/best-practices) [GoogleMaterial Design](../design-systems/google) [View source](https://m3.material.io/foundations/accessible-design/overview) [GOV.UKDesign System](../design-systems/govuk) [View source](https://design-system.service.gov.uk/accessibility/accessibility-strategy/) [GustoWorkbench](../design-systems/gusto) [View source](https://workbench.gusto.com/foundations/accessibility/) [Helly HansenDesign System](../design-systems/hellyhansen) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/74b52b-accessibility-20) [IBMCarbon](../design-systems/ibm) [View source](https://carbondesignsystem.com/guidelines/accessibility/overview/) [IdeagenHelix](../design-systems/ideagen) [View source](https://www.helixui.com/9904796d6/p/33fe40-intro-to-accessibility/b/40a009) [INPSSirio](../design-systems/inps) [View source](https://www.inps.design/3e7e2b0f5/p/41fa12-accessibilita-e-inclusione) [KiwicomOrbit](../design-systems/kiwicom) [View source](https://orbit.kiwi/foundation/accessibility/) [LocalTapiolaDuet](../design-systems/localtapiola) [View source](https://www.duetds.com/accessibility/) [MichelinMotion](../design-systems/michelin) [View source](https://designsystem.michelin.com/accessibility/introduction) [MicrosoftFluent 2](../design-systems/microsoft) [View source](https://fluent2.microsoft.design/accessibility) [Monday.comVibe](../design-systems/mondaycom) [View source](https://style.monday.com/?path=/docs/foundations-accessibility--docs) [MongoDBLeafyGreen](../design-systems/mongodb) [View source](https://www.mongodb.design/resources/accessibility) [NordhealthDesign System](../design-systems/nordhealth) [View source](https://nordhealth.design/accessibility-checklist/) [OrangeDesign System](../design-systems/orange) [View source](https://system.design.orange.com/0c1af118d/p/75891b-accessibility) [PalantirBlueprint](../design-systems/palantir) [View source](https://blueprintjs.com/docs/#core/accessibility) [PinterestGestalt](../design-systems/pinterest) [View source](https://gestalt.pinterest.systems/foundations/accessibility) [PorscheDesign System](../design-systems/porsche) [View source](https://designsystem.porsche.com/v3/must-know/accessibility/introduction) [Red HatPatternFly](../design-systems/redhat) [View source](https://www.patternfly.org/accessibility/accessibility-fundamentals) [ReiCedar](../design-systems/rei) [View source](https://cedar.rei.com/guidelines/accessibility) [SalesforceLightning](../design-systems/salesforce) [View source](https://www.lightningdesignsystem.com/accessibility/overview/) [SamsungOne UI](../design-systems/samsung) [View source](https://developer.samsung.com/one-ui/accessibility/intro.html) [ServiceNowHorizon](../design-systems/servicenow) [View source](https://horizon.servicenow.com/foundations/accessibility/a11y-overview) [ShopifyPolaris](../design-systems/shopify) [View source](https://polaris.shopify.com/foundations/accessibility) [SkodaFlow](../design-systems/skoda) [View source](https://flow.skoda-brand.com/d/6aQMrmD6PhWL/foundation#/principles/accessibility) [TeamleaderAhoy](../design-systems/teamleader) [View source](https://ahoy.teamleader.design/3547946e7/p/805681-accessibility-guidelines) [ThumbtackThumbprint](../design-systems/thumbtack) [View source](https://thumbprint.design/overview/accessibility/) [TwilioPaste](../design-systems/twilio) [View source](https://paste.twilio.design/inclusive-design) [UAEDesign System](../design-systems/uae) [View source](https://designsystem.gov.ae/guidelines/accessibility) [UberBase](../design-systems/uber) [View source](https://base.uber.com/6d2425e9f/p/4462ce-a11y-first-process) [VisaDesign System](../design-systems/visa) [View source](https://design.visa.com/about-VPDS/accessibility/) [Washington PostDesign System](../design-systems/washingtonpost) [View source](https://build.washingtonpost.com/foundations/principles#Accessibility) [WikimediaCodex](../design-systems/wikimedia) [View source](https://doc.wikimedia.org/codex/latest/style-guide/accessibility.html) [WiseDesign System](../design-systems/wise) [View source](https://wise.design/foundations/colour#colour-accessibility) [WonderflowWanda](../design-systems/wonderflow) [View source](https://design.wonderflow.ai/get-started/documentation/get-started/accessibility) [WorkdayCanvas](../design-systems/workday) [View source](https://canvas.workday.com/guidelines/accessibility/overview/) [WorkOSRadix](../design-systems/workos) [View source](https://www.radix-ui.com/primitives/docs/overview/accessibility) [Adobe](../design-systems/adobe) [Alaska Airlines](../design-systems/alaskaairlines) [Amazon](../design-systems/amazon) [Apple](../design-systems/apple) [Atlassian](../design-systems/atlassian) [Carrefour](../design-systems/carrefour) [Cisco](../design-systems/cisco) [Dell](../design-systems/dell) [eBay](../design-systems/ebay) [Elastic](../design-systems/elastic) [Esri](../design-systems/esri) [General Electric](../design-systems/generalelectric) [Github](../design-systems/github) [GitLab](../design-systems/gitlab) [Google](../design-systems/google) [GOV.UK](../design-systems/govuk) [Gusto](../design-systems/gusto) [Helly Hansen](../design-systems/hellyhansen) [IBM](../design-systems/ibm) [Ideagen](../design-systems/ideagen) [INPS](../design-systems/inps) [Kiwicom](../design-systems/kiwicom) [LocalTapiola](../design-systems/localtapiola) [Michelin](../design-systems/michelin) [Microsoft](../design-systems/microsoft) [Monday.com](../design-systems/mondaycom) [MongoDB](../design-systems/mongodb) [Nordhealth](../design-systems/nordhealth) [Orange](../design-systems/orange) [Palantir](../design-systems/palantir) [Pinterest](../design-systems/pinterest) [Porsche](../design-systems/porsche) [Red Hat](../design-systems/redhat) [Rei](../design-systems/rei) [Salesforce](../design-systems/salesforce) [Samsung](../design-systems/samsung) [ServiceNow](../design-systems/servicenow) [Shopify](../design-systems/shopify) [Skoda](../design-systems/skoda) [Teamleader](../design-systems/teamleader) [Thumbtack](../design-systems/thumbtack) [Twilio](../design-systems/twilio) [UAE](../design-systems/uae) [Uber](../design-systems/uber) [Visa](../design-systems/visa) [Washington Post](../design-systems/washingtonpost) [Wikimedia](../design-systems/wikimedia) [Wise](../design-systems/wise) [Wonderflow](../design-systems/wonderflow) [Workday](../design-systems/workday) [WorkOS](../design-systems/workos) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](./accessibility) [Color System](./color-system) [Figma](./figma) [Typography](./typography) [Components](../components) [Button](../components/button) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text field](../components/text-field) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Accessibility Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Color System Component lifecycle Component overview Component status Data visualization Elevation Figma Icons Illustrations International Design Layout Motion Patterns Repository Responsive Spacing States Storybook Styles Theming Tokens Typography Voice and Tone Keep up with the latest in Design Systems Subscribe Accessibility is the practice of creating inclusive experiences that can be accessed and used by people with diverse abilities. It involves considering the needs of individuals with disabilities, such as visual, auditory, motor, or cognitive impairments, and ensuring that digital products and interfaces are designed to accommodate these needs. Accessibility features may include alternative text for images, captions for videos, keyboard navigation, color contrast, and clear, concise content.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 921,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "terfaces are designed to accommodate these needs. Accessibility features may include alternative text for images, captions for videos, keyboard navigation, color contrast, and clear, concise content. By incorporating accessibility into design processes, products become more inclusive, allowing a wider range of users to engage with and benefit from digital experiences, ultimately fostering equality and equal access for all. Advertisement in Design Systems Adobe Spectrum View source Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Carrefour Marcel Cisco Momentum Design Dell eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kiwicom Orbit LocalTapiola Duet Michelin Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Nordhealth Orange Palantir Blueprint Pinterest Gestalt Porsche Red Hat PatternFly Rei Cedar Salesforce Lightning Samsung One",
+      "metadata": {
+        "startIndex": 721,
+        "endIndex": 1722,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "apiola Duet Michelin Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Nordhealth Orange Palantir Blueprint Pinterest Gestalt Porsche Red Hat PatternFly Rei Cedar Salesforce Lightning Samsung One UI ServiceNow Horizon Shopify Polaris Skoda Flow Teamleader Ahoy Thumbtack Thumbprint Twilio Paste UAE Uber Base Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas WorkOS Radix Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [AccessibilityAccessibilityAccessibility](./accessibility) [Color SystemColor SystemColor System](./color-system) [Component lifecycleComponent lifecycleComponent lifecycle](./component-lifecycle) [Component overviewComponent overviewComponent",
+      "metadata": {
+        "startIndex": 1522,
+        "endIndex": 2519,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "accessibility) [Color SystemColor SystemColor System](./color-system) [Component lifecycleComponent lifecycleComponent lifecycle](./component-lifecycle) [Component overviewComponent overviewComponent overview](./component-overview) [Component statusComponent statusComponent status](./component-status) [Data visualizationData visualizationData visualization](./data-visualization) [ElevationElevationElevation](./elevation) [FigmaFigmaFigma](./figma) [IconsIconsIcons](./icons) [IllustrationsIllustrationsIllustrations](./illustrations) [International DesignInternational DesignInternational Design](./international-design) [LayoutLayoutLayout](./layout) [MotionMotionMotion](./motion) [PatternsPatternsPatterns](./patterns) [RepositoryRepositoryRepository](./repository) [ResponsiveResponsiveResponsive](./responsive) [SpacingSpacingSpacing](./spacing) [StatesStatesStates](./states) [StorybookStorybookStorybook](./storybook) [StylesStylesStyles](./styles) [ThemingThemingTheming](./theming)",
+      "metadata": {
+        "startIndex": 2319,
+        "endIndex": 3314,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "esponsive](./responsive) [SpacingSpacingSpacing](./spacing) [StatesStatesStates](./states) [StorybookStorybookStorybook](./storybook) [StylesStylesStyles](./styles) [ThemingThemingTheming](./theming) [TokensTokensTokens](./tokens) [TypographyTypographyTypography](./typography) [Voice and ToneVoice and ToneVoice and Tone](./voice-and-tone) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Accessibility49](./accessibility#up-pixel) [AdobeSpectrum](../design-systems/adobe) [View source](https://spectrum.adobe.com/page/inclusive-design/) [Alaska AirlinesAuro](../design-systems/alaskaairlines) [View source](https://auro.alaskaair.com/a11y-statement#gsc.tab=0&gsc.sort=) [AmazonCloudscape](../design-systems/amazon) [View source](https://cloudscape.design/foundation/core-principles/accessibility/) [AppleHIG](../design-systems/apple) [View",
+      "metadata": {
+        "startIndex": 3114,
+        "endIndex": 4033,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "tatement#gsc.tab=0&gsc.sort=) [AmazonCloudscape](../design-systems/amazon) [View source](https://cloudscape.design/foundation/core-principles/accessibility/) [AppleHIG](../design-systems/apple) [View source](https://developer.apple.com/design/human-interface-guidelines/accessibility) [AtlassianDesign System](../design-systems/atlassian) [View source](https://atlassian.design/foundations/accessibility/) [CarrefourMarcel](../design-systems/carrefour) [View source](https://carrefour.design/328eff0d7/p/997be8-accessibilty) [CiscoMomentum Design](../design-systems/cisco) [View source](https://momentum.design/guidelines/accessibility) [DellDesign System](../design-systems/dell) [View source](https://www.delldesignsystem.com/getting-started/annotation-kit/) [eBayEvo](../design-systems/ebay) [View source](https://playbook.ebay.com/foundations/accessibility) [ElasticDesign System](../design-systems/elastic) [View source](https://elastic.github.io/eui/#/guidelines/accessibility)",
+      "metadata": {
+        "startIndex": 3833,
+        "endIndex": 4817,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "tems/ebay) [View source](https://playbook.ebay.com/foundations/accessibility) [ElasticDesign System](../design-systems/elastic) [View source](https://elastic.github.io/eui/#/guidelines/accessibility) [EsriCalcite](../design-systems/esri) [View source](https://developers.arcgis.com/calcite-design-system/foundations/accessibility/) [General ElectricEdison](../design-systems/generalelectric) [View source](https://eds.gehealthcare.com/accessibility) [GithubPrimer](../design-systems/github) [View source](https://primer.style/design/guides/accessibility) [GitLabPajamas](../design-systems/gitlab) [View source](https://design.gitlab.com/accessibility/best-practices) [GoogleMaterial Design](../design-systems/google) [View source](https://m3.material.io/foundations/accessible-design/overview) [GOV.UKDesign System](../design-systems/govuk) [View source](https://design-system.service.gov.uk/accessibility/accessibility-strategy/) [GustoWorkbench](../design-systems/gusto) [View",
+      "metadata": {
+        "startIndex": 4617,
+        "endIndex": 5596,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "sign/overview) [GOV.UKDesign System](../design-systems/govuk) [View source](https://design-system.service.gov.uk/accessibility/accessibility-strategy/) [GustoWorkbench](../design-systems/gusto) [View source](https://workbench.gusto.com/foundations/accessibility/) [Helly HansenDesign System](../design-systems/hellyhansen) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/74b52b-accessibility-20) [IBMCarbon](../design-systems/ibm) [View source](https://carbondesignsystem.com/guidelines/accessibility/overview/) [IdeagenHelix](../design-systems/ideagen) [View source](https://www.helixui.com/9904796d6/p/33fe40-intro-to-accessibility/b/40a009) [INPSSirio](../design-systems/inps) [View source](https://www.inps.design/3e7e2b0f5/p/41fa12-accessibilita-e-inclusione) [KiwicomOrbit](../design-systems/kiwicom) [View source](https://orbit.kiwi/foundation/accessibility/) [LocalTapiolaDuet](../design-systems/localtapiola) [View source](https://www.duetds.com/accessibility/)",
+      "metadata": {
+        "startIndex": 5396,
+        "endIndex": 6376,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "omOrbit](../design-systems/kiwicom) [View source](https://orbit.kiwi/foundation/accessibility/) [LocalTapiolaDuet](../design-systems/localtapiola) [View source](https://www.duetds.com/accessibility/) [MichelinMotion](../design-systems/michelin) [View source](https://designsystem.michelin.com/accessibility/introduction) [MicrosoftFluent 2](../design-systems/microsoft) [View source](https://fluent2.microsoft.design/accessibility) [Monday.comVibe](../design-systems/mondaycom) [View source](https://style.monday.com/?path=/docs/foundations-accessibility--docs) [MongoDBLeafyGreen](../design-systems/mongodb) [View source](https://www.mongodb.design/resources/accessibility) [NordhealthDesign System](../design-systems/nordhealth) [View source](https://nordhealth.design/accessibility-checklist/) [OrangeDesign System](../design-systems/orange) [View source](https://system.design.orange.com/0c1af118d/p/75891b-accessibility) [PalantirBlueprint](../design-systems/palantir) [View",
+      "metadata": {
+        "startIndex": 6176,
+        "endIndex": 7156,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "lity-checklist/) [OrangeDesign System](../design-systems/orange) [View source](https://system.design.orange.com/0c1af118d/p/75891b-accessibility) [PalantirBlueprint](../design-systems/palantir) [View source](https://blueprintjs.com/docs/#core/accessibility) [PinterestGestalt](../design-systems/pinterest) [View source](https://gestalt.pinterest.systems/foundations/accessibility) [PorscheDesign System](../design-systems/porsche) [View source](https://designsystem.porsche.com/v3/must-know/accessibility/introduction) [Red HatPatternFly](../design-systems/redhat) [View source](https://www.patternfly.org/accessibility/accessibility-fundamentals) [ReiCedar](../design-systems/rei) [View source](https://cedar.rei.com/guidelines/accessibility) [SalesforceLightning](../design-systems/salesforce) [View source](https://www.lightningdesignsystem.com/accessibility/overview/) [SamsungOne UI](../design-systems/samsung) [View source](https://developer.samsung.com/one-ui/accessibility/intro.html)",
+      "metadata": {
+        "startIndex": 6956,
+        "endIndex": 7949,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "e) [View source](https://www.lightningdesignsystem.com/accessibility/overview/) [SamsungOne UI](../design-systems/samsung) [View source](https://developer.samsung.com/one-ui/accessibility/intro.html) [ServiceNowHorizon](../design-systems/servicenow) [View source](https://horizon.servicenow.com/foundations/accessibility/a11y-overview) [ShopifyPolaris](../design-systems/shopify) [View source](https://polaris.shopify.com/foundations/accessibility) [SkodaFlow](../design-systems/skoda) [View source](https://flow.skoda-brand.com/d/6aQMrmD6PhWL/foundation#/principles/accessibility) [TeamleaderAhoy](../design-systems/teamleader) [View source](https://ahoy.teamleader.design/3547946e7/p/805681-accessibility-guidelines) [ThumbtackThumbprint](../design-systems/thumbtack) [View source](https://thumbprint.design/overview/accessibility/) [TwilioPaste](../design-systems/twilio) [View source](https://paste.twilio.design/inclusive-design) [UAEDesign System](../design-systems/uae) [View",
+      "metadata": {
+        "startIndex": 7749,
+        "endIndex": 8732,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "(https://thumbprint.design/overview/accessibility/) [TwilioPaste](../design-systems/twilio) [View source](https://paste.twilio.design/inclusive-design) [UAEDesign System](../design-systems/uae) [View source](https://designsystem.gov.ae/guidelines/accessibility) [UberBase](../design-systems/uber) [View source](https://base.uber.com/6d2425e9f/p/4462ce-a11y-first-process) [VisaDesign System](../design-systems/visa) [View source](https://design.visa.com/about-VPDS/accessibility/) [Washington PostDesign System](../design-systems/washingtonpost) [View source](https://build.washingtonpost.com/foundations/principles#Accessibility) [WikimediaCodex](../design-systems/wikimedia) [View source](https://doc.wikimedia.org/codex/latest/style-guide/accessibility.html) [WiseDesign System](../design-systems/wise) [View source](https://wise.design/foundations/colour#colour-accessibility) [WonderflowWanda](../design-systems/wonderflow) [View",
+      "metadata": {
+        "startIndex": 8532,
+        "endIndex": 9467,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "-guide/accessibility.html) [WiseDesign System](../design-systems/wise) [View source](https://wise.design/foundations/colour#colour-accessibility) [WonderflowWanda](../design-systems/wonderflow) [View source](https://design.wonderflow.ai/get-started/documentation/get-started/accessibility) [WorkdayCanvas](../design-systems/workday) [View source](https://canvas.workday.com/guidelines/accessibility/overview/) [WorkOSRadix](../design-systems/workos) [View source](https://www.radix-ui.com/primitives/docs/overview/accessibility) [Adobe](../design-systems/adobe) [Alaska Airlines](../design-systems/alaskaairlines) [Amazon](../design-systems/amazon) [Apple](../design-systems/apple) [Atlassian](../design-systems/atlassian) [Carrefour](../design-systems/carrefour) [Cisco](../design-systems/cisco) [Dell](../design-systems/dell) [eBay](../design-systems/ebay) [Elastic](../design-systems/elastic) [Esri](../design-systems/esri) [General Electric](../design-systems/generalelectric)",
+      "metadata": {
+        "startIndex": 9267,
+        "endIndex": 10248,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "-systems/cisco) [Dell](../design-systems/dell) [eBay](../design-systems/ebay) [Elastic](../design-systems/elastic) [Esri](../design-systems/esri) [General Electric](../design-systems/generalelectric) [Github](../design-systems/github) [GitLab](../design-systems/gitlab) [Google](../design-systems/google) [GOV.UK](../design-systems/govuk) [Gusto](../design-systems/gusto) [Helly Hansen](../design-systems/hellyhansen) [IBM](../design-systems/ibm) [Ideagen](../design-systems/ideagen) [INPS](../design-systems/inps) [Kiwicom](../design-systems/kiwicom) [LocalTapiola](../design-systems/localtapiola) [Michelin](../design-systems/michelin) [Microsoft](../design-systems/microsoft) [Monday.com](../design-systems/mondaycom) [MongoDB](../design-systems/mongodb) [Nordhealth](../design-systems/nordhealth) [Orange](../design-systems/orange) [Palantir](../design-systems/palantir) [Pinterest](../design-systems/pinterest) [Porsche](../design-systems/porsche) [Red Hat](../design-systems/redhat)",
+      "metadata": {
+        "startIndex": 10048,
+        "endIndex": 11037,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "nordhealth) [Orange](../design-systems/orange) [Palantir](../design-systems/palantir) [Pinterest](../design-systems/pinterest) [Porsche](../design-systems/porsche) [Red Hat](../design-systems/redhat) [Rei](../design-systems/rei) [Salesforce](../design-systems/salesforce) [Samsung](../design-systems/samsung) [ServiceNow](../design-systems/servicenow) [Shopify](../design-systems/shopify) [Skoda](../design-systems/skoda) [Teamleader](../design-systems/teamleader) [Thumbtack](../design-systems/thumbtack) [Twilio](../design-systems/twilio) [UAE](../design-systems/uae) [Uber](../design-systems/uber) [Visa](../design-systems/visa) [Washington Post](../design-systems/washingtonpost) [Wikimedia](../design-systems/wikimedia) [Wise](../design-systems/wise) [Wonderflow](../design-systems/wonderflow) [Workday](../design-systems/workday) [WorkOS](../design-systems/workos) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM",
+      "metadata": {
+        "startIndex": 10837,
+        "endIndex": 11837,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "Workday](../design-systems/workday) [WorkOS](../design-systems/workos) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](./accessibility) [Color System](./color-system) [Figma](./figma) [Typography](./typography) [Components](../components) [Button](../components/button) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text field](../components/text-field) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 11637,
+        "endIndex": 12637,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "k](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 12437,
+        "endIndex": 13437,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility",
+      "responsive",
+      "a11y"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:25.900Z",
+    "source_url": "https://designsystems.surf/directories/accessibility"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "E12mXBLcCw6SLs50vlYIq",
+  "title": "The Washington Post's Design System (WPDS)",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/washingtonpost",
+    "ingested_at": "2025-08-30T13:10:09.786Z"
+  },
+  "content": "# Washington Post Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The Washington Post Design System (WPDS) is an evolving repository of design elements and interactive features tailored specifically for washingtonpost.com WPDS empowers The Washington Post's design and development teams to deliver reader-focused digital products that are not only modular and elegant but also accessible. It ensures visual coherence across various platforms and scales, facilitating the creation of engaging and user-friendly experiences. Advertisement Accessibility View source Color System Component status Elevation Figma Repository Icons Responsive Spacing Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Avatar Button Cards Checkbox Dialog Divider Drawer Icon Menus Navigation bar Pagination Popover Radio button Search Select Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromWashington Post](./washingtonpost#up-pixel) [Source](https://build.washingtonpost.com/) [Figma](https://www.figma.com/@WPDS) [Repository](https://github.com/washingtonpost/wpds-ui-kit) [Accessibility](../directories/accessibility) [View source](https://build.washingtonpost.com/foundations/principles#Accessibility) [Color System](../directories/color-system) [View source](https://build.washingtonpost.com/foundations/color) [Component status](../directories/component-status) [View source](https://build.washingtonpost.com/support/component-status) [Elevation](../directories/elevation) [View source](https://build.washingtonpost.com/foundations/shadow) [Figma](../directories/figma) [View source](https://www.figma.com/@WPDS) [Repository](../directories/repository) [View source](https://github.com/washingtonpost/wpds-ui-kit) [Icons](../directories/icons) [View source](https://build.washingtonpost.com/foundations/icons) [Responsive](../directories/responsive) [View source](https://build.washingtonpost.com/foundations/breakpoints) [Spacing](../directories/spacing) [View source](https://build.washingtonpost.com/foundations/space) [Styles](../directories/styles) [View source](https://build.washingtonpost.com/foundations/radius) [Theming](../directories/theming) [View source](https://build.washingtonpost.com/foundations/principles#Themes) [Tokens](../directories/tokens) [View source](https://build.washingtonpost.com/foundations/color#Color%20tokens) [Typography](../directories/typography) [View source](https://build.washingtonpost.com/foundations/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://build.washingtonpost.com/resources/accessibility/plain-language-and-labeling) [Accordion](../components/accordion) [View source](https://build.washingtonpost.com/components/accordion) [Alert banner](../components/alert-banner) [View source](https://build.washingtonpost.com/components/alert-banner) [Avatar](../components/avatar) [View source](https://build.washingtonpost.com/components/avatar) [Button](../components/button) [View source](https://build.washingtonpost.com/components/button) [Cards](../components/cards) [View source](https://build.washingtonpost.com/components/card) [Checkbox](../components/checkbox) [View source](https://build.washingtonpost.com/components/checkbox) [Dialog](../components/dialog) [View source](https://build.washingtonpost.com/components/dialog) [Divider](../components/divider) [View source](https://build.washingtonpost.com/components/divider) [Drawer](../components/drawer) [View source](https://build.washingtonpost.com/components/drawer) [Icon](../directories/icons) [View source](https://build.washingtonpost.com/components/icon) [Menus](../components/menus) [View source](https://build.washingtonpost.com/components/action-menu) [Navigation bar](../components/navigation-bar) [View source](https://build.washingtonpost.com/components/navigation-menu) [Pagination](../components/pagination) [View source](https://build.washingtonpost.com/components/pagination-dots) [Popover](../components/popover) [View source](https://build.washingtonpost.com/components/popover) [Radio button](../components/radio-button) [View source](https://build.washingtonpost.com/components/radio-group) [Search](../components/search) [View source](https://build.washingtonpost.com/components/input-search) [Select](../components/select) [View source](https://build.washingtonpost.com/components/select) [Switch](../components/switch) [View source](https://build.washingtonpost.com/components/switch) [Tabs](../components/tabs) [View source](https://build.washingtonpost.com/components/tabs) [Text area](../components/text-area) [View source](https://build.washingtonpost.com/components/input-textarea) [Text field](../components/text-field) [View source](https://build.washingtonpost.com/components/input-text) [Tooltip](../components/tooltip) [View source](https://build.washingtonpost.com/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Washington Post Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: The Washington Post Design System (WPDS) is an evolving repository of design elements and interactive features tailored specifically for washingtonpost.com WPDS empowers The",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 992,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Directories: Components: The Washington Post Design System (WPDS) is an evolving repository of design elements and interactive features tailored specifically for washingtonpost.com WPDS empowers The Washington Post's design and development teams to deliver reader-focused digital products that are not only modular and elegant but also accessible. It ensures visual coherence across various platforms and scales, facilitating the creation of engaging and user-friendly experiences. Advertisement Accessibility View source Color System Component status Elevation Figma Repository Icons Responsive Spacing Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Avatar Button Cards Checkbox Dialog Divider Drawer Icon Menus Navigation bar Pagination Popover Radio button Search Select Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components)",
+      "metadata": {
+        "startIndex": 792,
+        "endIndex": 1779,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "arch Select Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen)",
+      "metadata": {
+        "startIndex": 1579,
+        "endIndex": 2569,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2369,
+        "endIndex": 3359,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromWashington Post](./washingtonpost#up-pixel) [Source](https://build.washingtonpost.com/) [Figma](https://www.figma.com/@WPDS) [Repository](https://github.com/washingtonpost/wpds-ui-kit) [Accessibility](../directories/accessibility) [View source](https://build.washingtonpost.com/foundations/principles#Accessibility) [Color System](../directories/color-system) [View",
+      "metadata": {
+        "startIndex": 3159,
+        "endIndex": 4108,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "npost/wpds-ui-kit) [Accessibility](../directories/accessibility) [View source](https://build.washingtonpost.com/foundations/principles#Accessibility) [Color System](../directories/color-system) [View source](https://build.washingtonpost.com/foundations/color) [Component status](../directories/component-status) [View source](https://build.washingtonpost.com/support/component-status) [Elevation](../directories/elevation) [View source](https://build.washingtonpost.com/foundations/shadow) [Figma](../directories/figma) [View source](https://www.figma.com/@WPDS) [Repository](../directories/repository) [View source](https://github.com/washingtonpost/wpds-ui-kit) [Icons](../directories/icons) [View source](https://build.washingtonpost.com/foundations/icons) [Responsive](../directories/responsive) [View source](https://build.washingtonpost.com/foundations/breakpoints) [Spacing](../directories/spacing) [View source](https://build.washingtonpost.com/foundations/space)",
+      "metadata": {
+        "startIndex": 3908,
+        "endIndex": 4880,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "(../directories/responsive) [View source](https://build.washingtonpost.com/foundations/breakpoints) [Spacing](../directories/spacing) [View source](https://build.washingtonpost.com/foundations/space) [Styles](../directories/styles) [View source](https://build.washingtonpost.com/foundations/radius) [Theming](../directories/theming) [View source](https://build.washingtonpost.com/foundations/principles#Themes) [Tokens](../directories/tokens) [View source](https://build.washingtonpost.com/foundations/color#Color%20tokens) [Typography](../directories/typography) [View source](https://build.washingtonpost.com/foundations/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://build.washingtonpost.com/resources/accessibility/plain-language-and-labeling) [Accordion](../components/accordion) [View source](https://build.washingtonpost.com/components/accordion) [Alert banner](../components/alert-banner) [View",
+      "metadata": {
+        "startIndex": 4680,
+        "endIndex": 5618,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "s/accessibility/plain-language-and-labeling) [Accordion](../components/accordion) [View source](https://build.washingtonpost.com/components/accordion) [Alert banner](../components/alert-banner) [View source](https://build.washingtonpost.com/components/alert-banner) [Avatar](../components/avatar) [View source](https://build.washingtonpost.com/components/avatar) [Button](../components/button) [View source](https://build.washingtonpost.com/components/button) [Cards](../components/cards) [View source](https://build.washingtonpost.com/components/card) [Checkbox](../components/checkbox) [View source](https://build.washingtonpost.com/components/checkbox) [Dialog](../components/dialog) [View source](https://build.washingtonpost.com/components/dialog) [Divider](../components/divider) [View source](https://build.washingtonpost.com/components/divider) [Drawer](../components/drawer) [View source](https://build.washingtonpost.com/components/drawer) [Icon](../directories/icons) [View",
+      "metadata": {
+        "startIndex": 5418,
+        "endIndex": 6403,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "[View source](https://build.washingtonpost.com/components/divider) [Drawer](../components/drawer) [View source](https://build.washingtonpost.com/components/drawer) [Icon](../directories/icons) [View source](https://build.washingtonpost.com/components/icon) [Menus](../components/menus) [View source](https://build.washingtonpost.com/components/action-menu) [Navigation bar](../components/navigation-bar) [View source](https://build.washingtonpost.com/components/navigation-menu) [Pagination](../components/pagination) [View source](https://build.washingtonpost.com/components/pagination-dots) [Popover](../components/popover) [View source](https://build.washingtonpost.com/components/popover) [Radio button](../components/radio-button) [View source](https://build.washingtonpost.com/components/radio-group) [Search](../components/search) [View source](https://build.washingtonpost.com/components/input-search) [Select](../components/select) [View",
+      "metadata": {
+        "startIndex": 6203,
+        "endIndex": 7151,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "e](https://build.washingtonpost.com/components/radio-group) [Search](../components/search) [View source](https://build.washingtonpost.com/components/input-search) [Select](../components/select) [View source](https://build.washingtonpost.com/components/select) [Switch](../components/switch) [View source](https://build.washingtonpost.com/components/switch) [Tabs](../components/tabs) [View source](https://build.washingtonpost.com/components/tabs) [Text area](../components/text-area) [View source](https://build.washingtonpost.com/components/input-textarea) [Text field](../components/text-field) [View source](https://build.washingtonpost.com/components/input-text) [Tooltip](../components/tooltip) [View source](https://build.washingtonpost.com/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components)",
+      "metadata": {
+        "startIndex": 6951,
+        "endIndex": 7930,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "tems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7730,
+        "endIndex": 8730,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "card",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "shadow",
+      "radius",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:09.786Z",
+    "source_url": "https://designsystems.surf/design-systems/washingtonpost"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "rl4VncsYRRgM_WsTT2DTG",
+  "title": "Pencil Design System by Brainly – UI Tools & Components",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/brainly",
+    "ingested_at": "2025-08-30T13:09:35.475Z"
+  },
+  "content": "# Brainly Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Pencil from Directories: Components: Pencil Design System crafted to enhance user experiences on Brainly's platform. System offers a diverse array of design principles, guidelines, and reusable components. Design System provides a centralized hub for design assets and documentation, fostering collaboration and consistency across projects. Pencil serves as the foundation of Brainly's mission to empower learners worldwide, fostering a community-driven approach to education and knowledge sharing. Advertisement Color System View source Component overview Elevation Figma Icons Illustrations Layout Motion Spacing Storybook Styles Theming Typography Voice and Tone Badges Button Cards Chip Dialog Popover Progress bar Select Snackbar Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [PencilfromBrainly](./brainly#up-pixel) [Source](https://design.brainly.com/) [Figma](https://www.figma.com/@brainly) [Storybook](https://styleguide.brainly.com/225.12.0/docs/) [Color System](../directories/color-system) [View source](https://design.brainly.com/8adfd5f36/p/28096a-colors/b/46064f) [Component overview](../directories/component-overview) [View source](https://design.brainly.com/8adfd5f36/p/93b3a5-components) [Elevation](../directories/elevation) [View source](https://design.brainly.com/8adfd5f36/p/70668f-shadow--elevation) [Figma](../directories/figma) [View source](https://www.figma.com/@brainly) [Icons](../directories/icons) [View source](https://design.brainly.com/8adfd5f36/p/434bf5-icons/b/8042f9) [Illustrations](../directories/illustrations) [View source](https://design.brainly.com/8adfd5f36/p/14d415-illustrations/b/71759e) [Layout](../directories/layout) [View source](https://design.brainly.com/8adfd5f36/p/122c11-layout) [Motion](../directories/motion) [View source](https://design.brainly.com/8adfd5f36/p/091f75-ux-motion/b/5018fa) [Spacing](../directories/spacing) [View source](https://design.brainly.com/8adfd5f36/p/367bcd-spatial-units) [Storybook](../directories/storybook) [View source](https://styleguide.brainly.com/225.12.0/docs/) [Styles](../directories/styles) [View source](https://design.brainly.com/8adfd5f36/p/36c7b9-border-radius/b/96450c) [Theming](../directories/theming) [View source](https://design.brainly.com/8adfd5f36/p/805c69-dark-mode/b/92fafc) [Typography](../directories/typography) [View source](https://design.brainly.com/8adfd5f36/p/44cf68-typography/b/889445) [Voice and Tone](../directories/voice-and-tone) [View source](https://design.brainly.com/8adfd5f36/p/520545-persona--voice) [Badges](../components/badges) [View source](https://design.brainly.com/8adfd5f36/p/75770e-label/b/12f403) [Button](../components/button) [View source](https://design.brainly.com/8adfd5f36/p/10c2a5-button) [Cards](../components/cards) [View source](https://design.brainly.com/8adfd5f36/p/4842f2-card/b/81b31d) [Chip](../components/chip) [View source](https://design.brainly.com/8adfd5f36/p/59471e-chip/b/444bb6) [Dialog](../components/dialog) [View source](https://design.brainly.com/8adfd5f36/p/23a1e2-dialog/b/363307) [Popover](../components/popover) [View source](https://design.brainly.com/8adfd5f36/p/71f1d8-popover/b/310ba7) [Progress bar](../components/progress-bar) [View source](https://design.brainly.com/8adfd5f36/p/98d538-progress-bar/b/02ce36) [Select](../components/select) [View source](https://design.brainly.com/8adfd5f36/p/95f057-select-menu/b/98ffd8) [Snackbar](../components/snackbar) [View source](https://design.brainly.com/8adfd5f36/p/98ac3d-toast/b/17749c) [Tooltip](../components/tooltip) [View source](https://design.brainly.com/8adfd5f36/p/72cd79-tooltip/b/242dca) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Components](../components) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text field](../components/text-field) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Brainly Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Pencil from Directories: Components: Pencil Design System crafted to enhance user experiences on Brainly's platform. System offers a diverse array of design principles, guidelines, and reusable components.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 980,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "from Directories: Components: Pencil Design System crafted to enhance user experiences on Brainly's platform. System offers a diverse array of design principles, guidelines, and reusable components. Design System provides a centralized hub for design assets and documentation, fostering collaboration and consistency across projects. Pencil serves as the foundation of Brainly's mission to empower learners worldwide, fostering a community-driven approach to education and knowledge sharing. Advertisement Color System View source Component overview Elevation Figma Icons Illustrations Layout Motion Spacing Storybook Styles Theming Typography Voice and Tone Badges Button Cards Chip Dialog Popover Progress bar Select Snackbar Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly",
+      "metadata": {
+        "startIndex": 780,
+        "endIndex": 1779,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line)",
+      "metadata": {
+        "startIndex": 1579,
+        "endIndex": 2557,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "OV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost)",
+      "metadata": {
+        "startIndex": 2357,
+        "endIndex": 3356,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [PencilfromBrainly](./brainly#up-pixel) [Source](https://design.brainly.com/) [Figma](https://www.figma.com/@brainly) [Storybook](https://styleguide.brainly.com/225.12.0/docs/) [Color System](../directories/color-system) [View source](https://design.brainly.com/8adfd5f36/p/28096a-colors/b/46064f) [Component overview](../directories/component-overview) [View source](https://design.brainly.com/8adfd5f36/p/93b3a5-components) [Elevation](../directories/elevation) [View source](https://design.brainly.com/8adfd5f36/p/70668f-shadow--elevation)",
+      "metadata": {
+        "startIndex": 3156,
+        "endIndex": 4152,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "-overview) [View source](https://design.brainly.com/8adfd5f36/p/93b3a5-components) [Elevation](../directories/elevation) [View source](https://design.brainly.com/8adfd5f36/p/70668f-shadow--elevation) [Figma](../directories/figma) [View source](https://www.figma.com/@brainly) [Icons](../directories/icons) [View source](https://design.brainly.com/8adfd5f36/p/434bf5-icons/b/8042f9) [Illustrations](../directories/illustrations) [View source](https://design.brainly.com/8adfd5f36/p/14d415-illustrations/b/71759e) [Layout](../directories/layout) [View source](https://design.brainly.com/8adfd5f36/p/122c11-layout) [Motion](../directories/motion) [View source](https://design.brainly.com/8adfd5f36/p/091f75-ux-motion/b/5018fa) [Spacing](../directories/spacing) [View source](https://design.brainly.com/8adfd5f36/p/367bcd-spatial-units) [Storybook](../directories/storybook) [View source](https://styleguide.brainly.com/225.12.0/docs/) [Styles](../directories/styles) [View",
+      "metadata": {
+        "startIndex": 3952,
+        "endIndex": 4922,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "](https://design.brainly.com/8adfd5f36/p/367bcd-spatial-units) [Storybook](../directories/storybook) [View source](https://styleguide.brainly.com/225.12.0/docs/) [Styles](../directories/styles) [View source](https://design.brainly.com/8adfd5f36/p/36c7b9-border-radius/b/96450c) [Theming](../directories/theming) [View source](https://design.brainly.com/8adfd5f36/p/805c69-dark-mode/b/92fafc) [Typography](../directories/typography) [View source](https://design.brainly.com/8adfd5f36/p/44cf68-typography/b/889445) [Voice and Tone](../directories/voice-and-tone) [View source](https://design.brainly.com/8adfd5f36/p/520545-persona--voice) [Badges](../components/badges) [View source](https://design.brainly.com/8adfd5f36/p/75770e-label/b/12f403) [Button](../components/button) [View source](https://design.brainly.com/8adfd5f36/p/10c2a5-button) [Cards](../components/cards) [View source](https://design.brainly.com/8adfd5f36/p/4842f2-card/b/81b31d) [Chip](../components/chip) [View",
+      "metadata": {
+        "startIndex": 4722,
+        "endIndex": 5702,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "source](https://design.brainly.com/8adfd5f36/p/10c2a5-button) [Cards](../components/cards) [View source](https://design.brainly.com/8adfd5f36/p/4842f2-card/b/81b31d) [Chip](../components/chip) [View source](https://design.brainly.com/8adfd5f36/p/59471e-chip/b/444bb6) [Dialog](../components/dialog) [View source](https://design.brainly.com/8adfd5f36/p/23a1e2-dialog/b/363307) [Popover](../components/popover) [View source](https://design.brainly.com/8adfd5f36/p/71f1d8-popover/b/310ba7) [Progress bar](../components/progress-bar) [View source](https://design.brainly.com/8adfd5f36/p/98d538-progress-bar/b/02ce36) [Select](../components/select) [View source](https://design.brainly.com/8adfd5f36/p/95f057-select-menu/b/98ffd8) [Snackbar](../components/snackbar) [View source](https://design.brainly.com/8adfd5f36/p/98ac3d-toast/b/17749c) [Tooltip](../components/tooltip) [View source](https://design.brainly.com/8adfd5f36/p/72cd79-tooltip/b/242dca) [Design Systems](../design-systems) [Apple",
+      "metadata": {
+        "startIndex": 5502,
+        "endIndex": 6494,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "rainly.com/8adfd5f36/p/98ac3d-toast/b/17749c) [Tooltip](../components/tooltip) [View source](https://design.brainly.com/8adfd5f36/p/72cd79-tooltip/b/242dca) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Components](../components) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text field](../components/text-field) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 6294,
+        "endIndex": 7294,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "card",
+      "color",
+      "spacing",
+      "typography",
+      "shadow",
+      "border",
+      "radius",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:35.475Z",
+    "source_url": "https://designsystems.surf/design-systems/brainly"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "id": "9ChQaHVDm_jQ3aKu_EwIG",
+  "title": "The Anatomy of Typography in Design Systems",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/articles/more-than-just-fonts-the-anatomy-of-typography-in-design-systems",
+    "ingested_at": "2025-08-30T13:09:04.721Z"
+  },
+  "content": "# More than just fonts: the anatomy of Typography in Design Systems ## Typography is not just \"Text Styling\" ## What makes a strong typographic system? ## How to build a type system (without overcomplicating it) ### Start with the basics ### Define levels and roles ### Link styles to tokens ### Test it in real layouts ### Add a quick guide ## Common pitfalls (even great teams make them) ### Lack of visual hierarchy ### Inconsistent application ### Misused line height ### Ignored letter spacing ## Design Systems that nail typography ## Final thoughts Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe Article Jul 7, 2025 8 min read Typography sets the rhythm of a UI. When it’s inconsistent, users notice. A clear typography system brings structure, clarity, and trust—this article looks at how great design systems get it right. Contributors By , and from Design Systems Surf team In UI design, we deal with a lot of components: buttons, cards, modals, menus. But behind every interface is language — and typography is how that language comes alive. From the smallest label to the largest headline, typography touches every corner of your product. It defines tone, readability, accessibility, and trust. Without a thoughtful system in place, it’s easy for your product’s voice to become inconsistent or incoherent — especially across multiple platforms or teams. A typography foundation solves that. It gives teams a shared vocabulary. It codifies structure. And it makes sure the design is not only beautiful, but legible, usable, and scalable. Advertisement At the core of strong typography is clarity. Good typography makes it obvious what’s primary and what’s secondary. There’s no need to guess where the headline is, where the description goes, or which line is a caption. The hierarchy is clear — not just visually, but logically. For example, when you name a style “Title,” “Body,” or “Caption,” you’re defining roles, not just font sizes. That gives you flexibility: styles can adapt to different screen sizes while maintaining structure. A Title might be 32px on desktop and 24px on mobile, but it’s still a Title, not “some 24px text.” Strong systems are consistent. If “Subtitle” is defined as bold and 20px, it should stay that way across all screens. If “Body” uses a line height of 150%, it shouldn’t become 120% just because it looks nicer in one mockup. In well-built systems, every style is tied to tokens. You’re not just typing “18px” into Figma — you’re using something like . That connection allows design and code to stay in sync, makes updates easier, and adds meaning to every value. Most importantly, typography doesn’t live in isolation. You’re not designing styles for the sake of aesthetics — you’re solving real interface problems. How should a product card look? What’s the first thing you see on a user profile? What kind of caption makes sense under a form field? Styles exist inside components, patterns, and use cases. That’s what makes the system usable — not just good-looking. For typography to work across a product, visual decisions need to be formalized. That’s why every system, big or small, should define a few key parameters: Which fonts are used What font sizes map to which roles Available font weights and their purpose Line height and letter spacing (or tracking) rules Even if you only have three or four styles, if these values are defined, agreed on, and applied consistently — you have a system. Not just “text in a layout,” but a clear set of decisions that can be reused, scaled, and handed off to development without confusion. Typography is one of the easiest ways to bring order to a product. Why? Because it appears on every screen, in every interface state. But it only works when it’s built as a system, not just a loose set of styles based on instinct. In many products, everything looks fine at first glance. But look closer and the cracks show. One heading is 20px, another is 18px. Line height is 120% in one block and 150% in another, with no clear reason. Captions use a gray color, but it’s a different gray each time. No one knows which style to apply, because there’s no shared logic behind the decisions. Now imagine a different scenario: you’ve defined a small set of roles for text styles. Each one uses the same sizes, colors, and spacing, and is connected to tokens. The team knows what to use and where. Developers get clear specs. Designers don’t have to reinvent the same decisions on every screen. This isn’t just visual tidiness — it’s systems thinking. And the best part? You don’t need a complex setup to get there. A strong typographic system isn’t about fonts. It’s about structure, repetition, and clarity. Here’s how to build one: Pick your base font and a default text size (typically something like Body M). Define a vertical rhythm using line height, a type scale (1.125 / 1.25 / 1.5), and sizing steps. This is your foundation. Choose five to seven text roles: Title, Subtitle, Body, Label, Caption. No more. Each role should have a clear purpose and visual distinction. Use names that describe intent, not just size. Describe each style as a token (for example: , ). This connects your Figma files to code and eliminates manual syncing. Try your system on actual screens: a card, a form, a data table. Good typography should work in dense layouts and in airy ones. If everything reads clearly, you’re on the right track. A short explanation of your principles, style roles, and examples is enough. No need to write a book, just make it clear when to use Body vs. Label, or Title S vs. Title L. One important reminder: typography isn’t just about visual style. It’s a tool for meaning and navigation. Making it easy to understand helps the entire team — designers, developers, and users alike. Now picture your system in place. You’ve got six clearly named text roles, each one connected to tokens. Everyone uses the same sizes and rules. It’s obvious in the layout what’s a heading, what’s a caption, what’s body text. Designers stop guessing. Developers stop asking. It just works because everyone agreed on how it should. Now imagine the opposite. Every screen is a patchwork: 16px here, 15.5px there, line height switching between 120% and 140%. Styles multiply, duplicates appear, and no one can recreate the same layout twice. After a month, no one remembers what was used where. The difference between those two scenarios isn’t the font. It’s whether there’s logic and alignment behind your typography. That’s what turns it into a system. ​​Even with a solid foundation, typography systems can break down in practice, especially when scaling across teams, products, or time. Small missteps like unclear hierarchy, arbitrary overrides, or neglected spacing can erode the clarity and usability of your interface. Let’s look at the most common issues and how to avoid them. If all text looks the same, nothing stands out. When headings and body text are too close in size or style, users have to work harder to scan the page or understand content structure. A well-defined type scale with clearly differentiated roles like H1, H2, and body visually signals importance and creates intuitive reading flow. Design systems fall apart when designers create ad-hoc text styles without referring to the foundation. Over time, this leads to visual drift, bloated style libraries, and disjointed UX. To avoid this, define a strict set of semantic styles (like \"Body/Paragraph,\" \"Heading 2,\" etc.) and make them easily accessible in design tools, documentation, and code components. Line height is often adjusted arbitrarily — but small tweaks can drastically affect readability. If the spacing is too tight, especially for small font sizes, letters blur together. Too loose, and longer passages start to feel disjointed and hard to track. A good system calibrates line height per text role and takes content length into account (e.g., dense UIs vs. long-form reading). Letter spacing (tracking) may seem like a minor detail, but it has a major impact on perception. All-caps buttons with no tracking often look cramped and overly aggressive. On the flip side, too much spacing in headings can break the unity of a block of text. Pay special attention to display styles, uppercase treatments, and very small text sizes — these are where tracking issues show most clearly. Want to see how strong typography foundations come to life in real design systems? The best examples document clear hierarchies, flexible patterns, accessibility standards, and guidance for when and how to use each style. Studying them can help you understand what great typographic thinking looks like in practice. — Their system is refreshingly minimal, with a tight set of styles and a clear focus on accessibility and visual simplicity. It's a great reference for anyone looking to scale a lean but effective type system. — Offers a comprehensive structure with semantic text roles, a strong scale, and useful guidance on how and when to apply styles. Their type tokens are also clearly mapped to development use. — Built for performance and efficiency, Uber’s system keeps things tight and reusable. It prioritizes utility and speed, making it ideal for mobile and real-time interfaces. — Highly technical and well-documented, Carbon supports extensive use cases including data-heavy enterprise apps. The typography is paired with detailed accessibility guidance and visual examples. — Google’s system is extremely modular and flexible. It allows designers to switch fonts globally while preserving hierarchy, thanks to variable font support and deep tokenization. Material 3 is also a go-to reference for anyone working with Material UI typography, as it balances system-level control with designer flexibility. — HIG provides not just styles, but deep guidance on responsive typography, optical alignment, and native behavior across Apple platforms. It’s a model for mobile-first text systems. — A visual-first reference that highlights how typography can support brand personality. Their modular structure also makes it easy to translate design styles into code. Typography is one of the most powerful tools in design and one of the most underrated aspects of a typography design system. When done well, it disappears. It lets the interface breathe, the message shine, and the experience feel effortless. When done poorly, it confuses, distracts, or even frustrates. Building a typography foundation is about creating clarity, rhythm, and harmony. Start with five simple elements. Scale thoughtfully. Name your styles with purpose. And never forget: if your users can read clearly, they’re already one step closer to trusting you.",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# More than just fonts: the anatomy of Typography in Design Systems ## Typography is not just \"Text Styling\" ## What makes a strong typographic system? ## How to build a type system (without overcomplicating it) ### Start with the basics ### Define levels and roles ### Link styles to tokens ### Test it in real layouts ### Add a quick guide ## Common pitfalls (even great teams make them) ### Lack of visual hierarchy ### Inconsistent application ### Misused line height ### Ignored letter spacing ## Design Systems that nail typography ## Final thoughts Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe Article Jul 7, 2025 8 min read Typography sets the rhythm of a UI. When it’s inconsistent, users notice. A clear typography system brings structure, clarity, and trust—this article looks at how great design systems get it right.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 931,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "d Typography sets the rhythm of a UI. When it’s inconsistent, users notice. A clear typography system brings structure, clarity, and trust—this article looks at how great design systems get it right. Contributors By , and from Design Systems Surf team In UI design, we deal with a lot of components: buttons, cards, modals, menus. But behind every interface is language — and typography is how that language comes alive. From the smallest label to the largest headline, typography touches every corner of your product. It defines tone, readability, accessibility, and trust. Without a thoughtful system in place, it’s easy for your product’s voice to become inconsistent or incoherent — especially across multiple platforms or teams. A typography foundation solves that. It gives teams a shared vocabulary. It codifies structure. And it makes sure the design is not only beautiful, but legible, usable, and scalable. Advertisement At the core of strong typography is clarity.",
+      "metadata": {
+        "startIndex": 731,
+        "endIndex": 1707,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ves teams a shared vocabulary. It codifies structure. And it makes sure the design is not only beautiful, but legible, usable, and scalable. Advertisement At the core of strong typography is clarity. Good typography makes it obvious what’s primary and what’s secondary. There’s no need to guess where the headline is, where the description goes, or which line is a caption. The hierarchy is clear — not just visually, but logically. For example, when you name a style “Title,” “Body,” or “Caption,” you’re defining roles, not just font sizes. That gives you flexibility: styles can adapt to different screen sizes while maintaining structure. A Title might be 32px on desktop and 24px on mobile, but it’s still a Title, not “some 24px text.” Strong systems are consistent. If “Subtitle” is defined as bold and 20px, it should stay that way across all screens. If “Body” uses a line height of 150%, it shouldn’t become 120% just because it looks nicer in one mockup.",
+      "metadata": {
+        "startIndex": 1507,
+        "endIndex": 2473,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "stent. If “Subtitle” is defined as bold and 20px, it should stay that way across all screens. If “Body” uses a line height of 150%, it shouldn’t become 120% just because it looks nicer in one mockup. In well-built systems, every style is tied to tokens. You’re not just typing “18px” into Figma — you’re using something like . That connection allows design and code to stay in sync, makes updates easier, and adds meaning to every value. Most importantly, typography doesn’t live in isolation. You’re not designing styles for the sake of aesthetics — you’re solving real interface problems. How should a product card look? What’s the first thing you see on a user profile? What kind of caption makes sense under a form field? Styles exist inside components, patterns, and use cases. That’s what makes the system usable — not just good-looking. For typography to work across a product, visual decisions need to be formalized.",
+      "metadata": {
+        "startIndex": 2273,
+        "endIndex": 3198,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "Styles exist inside components, patterns, and use cases. That’s what makes the system usable — not just good-looking. For typography to work across a product, visual decisions need to be formalized. That’s why every system, big or small, should define a few key parameters: Which fonts are used What font sizes map to which roles Available font weights and their purpose Line height and letter spacing (or tracking) rules Even if you only have three or four styles, if these values are defined, agreed on, and applied consistently — you have a system. Not just “text in a layout,” but a clear set of decisions that can be reused, scaled, and handed off to development without confusion. Typography is one of the easiest ways to bring order to a product. Why? Because it appears on every screen, in every interface state. But it only works when it’s built as a system, not just a loose set of styles based on instinct. In many products, everything looks fine at first glance.",
+      "metadata": {
+        "startIndex": 2998,
+        "endIndex": 3974,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "rs on every screen, in every interface state. But it only works when it’s built as a system, not just a loose set of styles based on instinct. In many products, everything looks fine at first glance. But look closer and the cracks show. One heading is 20px, another is 18px. Line height is 120% in one block and 150% in another, with no clear reason. Captions use a gray color, but it’s a different gray each time. No one knows which style to apply, because there’s no shared logic behind the decisions. Now imagine a different scenario: you’ve defined a small set of roles for text styles. Each one uses the same sizes, colors, and spacing, and is connected to tokens. The team knows what to use and where. Developers get clear specs. Designers don’t have to reinvent the same decisions on every screen. This isn’t just visual tidiness — it’s systems thinking. And the best part? You don’t need a complex setup to get there. A strong typographic system isn’t about fonts.",
+      "metadata": {
+        "startIndex": 3774,
+        "endIndex": 4747,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "same decisions on every screen. This isn’t just visual tidiness — it’s systems thinking. And the best part? You don’t need a complex setup to get there. A strong typographic system isn’t about fonts. It’s about structure, repetition, and clarity. Here’s how to build one: Pick your base font and a default text size (typically something like Body M). Define a vertical rhythm using line height, a type scale (1.125 / 1.25 / 1.5), and sizing steps. This is your foundation. Choose five to seven text roles: Title, Subtitle, Body, Label, Caption. No more. Each role should have a clear purpose and visual distinction. Use names that describe intent, not just size. Describe each style as a token (for example: , ). This connects your Figma files to code and eliminates manual syncing. Try your system on actual screens: a card, a form, a data table. Good typography should work in dense layouts and in airy ones. If everything reads clearly, you’re on the right track.",
+      "metadata": {
+        "startIndex": 4547,
+        "endIndex": 5514,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "manual syncing. Try your system on actual screens: a card, a form, a data table. Good typography should work in dense layouts and in airy ones. If everything reads clearly, you’re on the right track. A short explanation of your principles, style roles, and examples is enough. No need to write a book, just make it clear when to use Body vs. Label, or Title S vs. Title L. One important reminder: typography isn’t just about visual style. It’s a tool for meaning and navigation. Making it easy to understand helps the entire team — designers, developers, and users alike. Now picture your system in place. You’ve got six clearly named text roles, each one connected to tokens. Everyone uses the same sizes and rules. It’s obvious in the layout what’s a heading, what’s a caption, what’s body text. Designers stop guessing. Developers stop asking. It just works because everyone agreed on how it should. Now imagine the opposite.",
+      "metadata": {
+        "startIndex": 5314,
+        "endIndex": 6243,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "in the layout what’s a heading, what’s a caption, what’s body text. Designers stop guessing. Developers stop asking. It just works because everyone agreed on how it should. Now imagine the opposite. Every screen is a patchwork: 16px here, 15.5px there, line height switching between 120% and 140%. Styles multiply, duplicates appear, and no one can recreate the same layout twice. After a month, no one remembers what was used where. The difference between those two scenarios isn’t the font. It’s whether there’s logic and alignment behind your typography. That’s what turns it into a system. ​​Even with a solid foundation, typography systems can break down in practice, especially when scaling across teams, products, or time. Small missteps like unclear hierarchy, arbitrary overrides, or neglected spacing can erode the clarity and usability of your interface. Let’s look at the most common issues and how to avoid them. If all text looks the same, nothing stands out.",
+      "metadata": {
+        "startIndex": 6043,
+        "endIndex": 7018,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "rary overrides, or neglected spacing can erode the clarity and usability of your interface. Let’s look at the most common issues and how to avoid them. If all text looks the same, nothing stands out. When headings and body text are too close in size or style, users have to work harder to scan the page or understand content structure. A well-defined type scale with clearly differentiated roles like H1, H2, and body visually signals importance and creates intuitive reading flow. Design systems fall apart when designers create ad-hoc text styles without referring to the foundation. Over time, this leads to visual drift, bloated style libraries, and disjointed UX. To avoid this, define a strict set of semantic styles (like \"Body/Paragraph,\" \"Heading 2,\" etc.) and make them easily accessible in design tools, documentation, and code components. Line height is often adjusted arbitrarily — but small tweaks can drastically affect readability.",
+      "metadata": {
+        "startIndex": 6818,
+        "endIndex": 7766,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "Heading 2,\" etc.) and make them easily accessible in design tools, documentation, and code components. Line height is often adjusted arbitrarily — but small tweaks can drastically affect readability. If the spacing is too tight, especially for small font sizes, letters blur together. Too loose, and longer passages start to feel disjointed and hard to track. A good system calibrates line height per text role and takes content length into account (e.g., dense UIs vs. long-form reading). Letter spacing (tracking) may seem like a minor detail, but it has a major impact on perception. All-caps buttons with no tracking often look cramped and overly aggressive. On the flip side, too much spacing in headings can break the unity of a block of text. Pay special attention to display styles, uppercase treatments, and very small text sizes — these are where tracking issues show most clearly. Want to see how strong typography foundations come to life in real design systems?",
+      "metadata": {
+        "startIndex": 7566,
+        "endIndex": 8541,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "display styles, uppercase treatments, and very small text sizes — these are where tracking issues show most clearly. Want to see how strong typography foundations come to life in real design systems? The best examples document clear hierarchies, flexible patterns, accessibility standards, and guidance for when and how to use each style. Studying them can help you understand what great typographic thinking looks like in practice. — Their system is refreshingly minimal, with a tight set of styles and a clear focus on accessibility and visual simplicity. It's a great reference for anyone looking to scale a lean but effective type system. — Offers a comprehensive structure with semantic text roles, a strong scale, and useful guidance on how and when to apply styles. Their type tokens are also clearly mapped to development use. — Built for performance and efficiency, Uber’s system keeps things tight and reusable.",
+      "metadata": {
+        "startIndex": 8341,
+        "endIndex": 9263,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "d useful guidance on how and when to apply styles. Their type tokens are also clearly mapped to development use. — Built for performance and efficiency, Uber’s system keeps things tight and reusable. It prioritizes utility and speed, making it ideal for mobile and real-time interfaces. — Highly technical and well-documented, Carbon supports extensive use cases including data-heavy enterprise apps. The typography is paired with detailed accessibility guidance and visual examples. — Google’s system is extremely modular and flexible. It allows designers to switch fonts globally while preserving hierarchy, thanks to variable font support and deep tokenization. Material 3 is also a go-to reference for anyone working with Material UI typography, as it balances system-level control with designer flexibility. — HIG provides not just styles, but deep guidance on responsive typography, optical alignment, and native behavior across Apple platforms. It’s a model for mobile-first text systems.",
+      "metadata": {
+        "startIndex": 9063,
+        "endIndex": 10059,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "ner flexibility. — HIG provides not just styles, but deep guidance on responsive typography, optical alignment, and native behavior across Apple platforms. It’s a model for mobile-first text systems. — A visual-first reference that highlights how typography can support brand personality. Their modular structure also makes it easy to translate design styles into code. Typography is one of the most powerful tools in design and one of the most underrated aspects of a typography design system. When done well, it disappears. It lets the interface breathe, the message shine, and the experience feel effortless. When done poorly, it confuses, distracts, or even frustrates. Building a typography foundation is about creating clarity, rhythm, and harmony. Start with five simple elements. Scale thoughtfully. Name your styles with purpose. And never forget: if your users can read clearly, they’re already one step closer to trusting you. Design .surf © Dzeya OÜ.",
+      "metadata": {
+        "startIndex": 9859,
+        "endIndex": 10822,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "th five simple elements. Scale thoughtfully. Name your styles with purpose. And never forget: if your users can read clearly, they’re already one step closer to trusting you.",
+      "metadata": {
+        "startIndex": 10622,
+        "endIndex": 11623,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "nareut/) [Hanna Matsiyeuskaya](https://www.linkedin.com/in/hanna-matsiyeuskaya-b5835bab/) [Ilya Greben](https://www.linkedin.com/in/ilyagreben/) [Wise](https://designsystems.surf/design-systems/wise) [Atlassian](https://atlassian.design/foundations/typography) [Uber Base](https://designsystems.surf/design-systems/uber) [Carbon (IBM)](https://designsystems.surf/design-systems/ibm) [Material 3](https://designsystems.surf/design-systems/google) [Apple HIG](https://designsystems.surf/design-systems/apple) [eBay Playbook](https://designsystems.surf/design-systems/ebay) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Figma](../directories/figma) [Typography](../directories/typography)",
+      "metadata": {
+        "startIndex": 11423,
+        "endIndex": 12401,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "icrosoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Figma](../directories/figma) [Typography](../directories/typography) [Components](../components) [Button](../components/button) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [Text field](../components/text-field) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 12201,
+        "endIndex": 13201,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "card",
+      "form",
+      "button",
+      "typography",
+      "spacing",
+      "color",
+      "accessibility",
+      "desktop",
+      "mobile",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:04.721Z",
+    "source_url": "https://designsystems.surf/articles/more-than-just-fonts-the-anatomy-of-typography-in-design-systems"
+  }
+}

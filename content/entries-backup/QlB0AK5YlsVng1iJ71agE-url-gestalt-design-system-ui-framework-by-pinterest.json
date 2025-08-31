@@ -1,0 +1,161 @@
+{
+  "id": "QlB0AK5YlsVng1iJ71agE",
+  "title": "Gestalt Design System – UI Framework by Pinterest",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/pinterest",
+    "ingested_at": "2025-08-30T13:09:54.939Z"
+  },
+  "content": "# Pinterest Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Gestalt from Directories: Components: Gestalt Design System developed by Pinterest team to create cohesive and accessible digital experiences. System include interactive components, design principles, guidelines, and design patterns to enable high-quality experiences. Design System describes in detail each component and documentation, as well as guidelines for working inside the system with a detailed guide to the design files hygiene. Advertisement Accessibility View source Color System Component overview Component status Data visualization Elevation Repository Icons Illustrations Layout Motion Responsive Tokens Typography Voice and Tone Alert banner Avatar Badges Button Button group Checkbox Combobox Data table Date picker Divider Dropdown Form Icon Label Link List Modal Page header Popover Progress indicator Radio button Segmented control Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [GestaltfromPinterest](./pinterest#up-pixel) [Source](https://gestalt.pinterest.systems/home) [Repository](https://github.com/pinterest/gestalt) [Accessibility](../directories/accessibility) [View source](https://gestalt.pinterest.systems/foundations/accessibility) [Color System](../directories/color-system) [View source](https://gestalt.pinterest.systems/foundations/color/palette) [Component overview](../directories/component-overview) [View source](https://gestalt.pinterest.systems/web/overview) [Component status](../directories/component-status) [View source](https://gestalt.pinterest.systems/web/component_status) [Data visualization](../directories/data-visualization) [View source](https://gestalt.pinterest.systems/foundations/data_visualization/overview) [Elevation](../directories/elevation) [View source](https://gestalt.pinterest.systems/foundations/elevation) [Repository](../directories/repository) [View source](https://github.com/pinterest/gestalt) [Icons](../directories/icons) [View source](https://gestalt.pinterest.systems/foundations/iconography/usage) [Illustrations](../directories/illustrations) [View source](https://gestalt.pinterest.systems/foundations/illustration) [Layout](../directories/layout) [View source](https://gestalt.pinterest.systems/foundations/layout) [Motion](../directories/motion) [View source](https://gestalt.pinterest.systems/foundations/motion/guidelines) [Responsive](../directories/responsive) [View source](https://gestalt.pinterest.systems/foundations/screen_sizes) [Tokens](../directories/tokens) [View source](https://gestalt.pinterest.systems/foundations/design_tokens/overview) [Typography](../directories/typography) [View source](https://gestalt.pinterest.systems/foundations/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://gestalt.pinterest.systems/foundations/content_standards/voice) [Alert banner](../components/alert-banner) [View source](https://gestalt.pinterest.systems/web/bannercallout) [Avatar](../components/avatar) [View source](https://gestalt.pinterest.systems/web/avatar) [Badges](../components/badges) [View source](https://gestalt.pinterest.systems/web/badge) [Button](../components/button) [View source](https://gestalt.pinterest.systems/web/button) [Button group](../components/button-group) [View source](https://gestalt.pinterest.systems/web/buttongroup) [Checkbox](../components/checkbox) [View source](https://gestalt.pinterest.systems/web/checkbox) [Combobox](../components/combobox) [View source](https://gestalt.pinterest.systems/web/combobox) [Data table](../components/data-table) [View source](https://gestalt.pinterest.systems/web/table) [Date picker](../components/date-picker) [View source](https://gestalt.pinterest.systems/web/datepicker) [Divider](../components/divider) [View source](https://gestalt.pinterest.systems/web/divider) [Dropdown](../components/dropdown) [View source](https://gestalt.pinterest.systems/web/dropdown) [Form](../components/form) [View source](https://gestalt.pinterest.systems/foundations/forms/overview) [Icon](../directories/icons) [View source](https://gestalt.pinterest.systems/web/icon) [Label](../components/label) [View source](https://gestalt.pinterest.systems/web/label) [Link](../components/link) [View source](https://gestalt.pinterest.systems/web/link) [List](../components/list) [View source](https://gestalt.pinterest.systems/web/list) [Modal](../components/modal) [View source](https://gestalt.pinterest.systems/web/modal) [Page header](../components/page-header) [View source](https://gestalt.pinterest.systems/web/pageheader) [Popover](../components/popover) [View source](https://gestalt.pinterest.systems/web/popover) [Progress indicator](../components/progress-indicator) [View source](https://gestalt.pinterest.systems/web/spinner) [Radio button](../components/radio-button) [View source](https://gestalt.pinterest.systems/web/radiogroup) [Segmented control](../components/segmented-control) [View source](https://gestalt.pinterest.systems/web/segmentedcontrol) [Switch](../components/switch) [View source](https://gestalt.pinterest.systems/web/switch) [Tabs](../components/tabs) [View source](https://gestalt.pinterest.systems/web/tabs) [Tag](../components/tag) [View source](https://gestalt.pinterest.systems/web/tag) [Text area](../components/text-area) [View source](https://gestalt.pinterest.systems/web/textarea) [Text field](../components/text-field) [View source](https://gestalt.pinterest.systems/web/textfield) [Tooltip](../components/tooltip) [View source](https://gestalt.pinterest.systems/web/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Pinterest Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Gestalt from Directories: Components: Gestalt Design System developed by Pinterest team to create cohesive and accessible digital experiences.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 917,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "desk Keep up with the latest in Design Systems Subscribe Gestalt from Directories: Components: Gestalt Design System developed by Pinterest team to create cohesive and accessible digital experiences. System include interactive components, design principles, guidelines, and design patterns to enable high-quality experiences. Design System describes in detail each component and documentation, as well as guidelines for working inside the system with a detailed guide to the design files hygiene. Advertisement Accessibility View source Color System Component overview Component status Data visualization Elevation Repository Icons Illustrations Layout Motion Responsive Tokens Typography Voice and Tone Alert banner Avatar Badges Button Button group Checkbox Combobox Data table Date picker Divider Dropdown Form Icon Label Link List Modal Page header Popover Progress indicator Radio button Segmented control Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ.",
+      "metadata": {
+        "startIndex": 717,
+        "endIndex": 1698,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ate picker Divider Dropdown Form Icon Label Link List Modal Page header Popover Progress indicator Radio button Segmented control Switch Tabs Tag Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab)",
+      "metadata": {
+        "startIndex": 1498,
+        "endIndex": 2492,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
+      "metadata": {
+        "startIndex": 2292,
+        "endIndex": 3285,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [GestaltfromPinterest](./pinterest#up-pixel) [Source](https://gestalt.pinterest.systems/home) [Repository](https://github.com/pinterest/gestalt) [Accessibility](../directories/accessibility) [View source](https://gestalt.pinterest.systems/foundations/accessibility) [Color System](../directories/color-system) [View",
+      "metadata": {
+        "startIndex": 3085,
+        "endIndex": 4081,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ithub.com/pinterest/gestalt) [Accessibility](../directories/accessibility) [View source](https://gestalt.pinterest.systems/foundations/accessibility) [Color System](../directories/color-system) [View source](https://gestalt.pinterest.systems/foundations/color/palette) [Component overview](../directories/component-overview) [View source](https://gestalt.pinterest.systems/web/overview) [Component status](../directories/component-status) [View source](https://gestalt.pinterest.systems/web/component_status) [Data visualization](../directories/data-visualization) [View source](https://gestalt.pinterest.systems/foundations/data_visualization/overview) [Elevation](../directories/elevation) [View source](https://gestalt.pinterest.systems/foundations/elevation) [Repository](../directories/repository) [View source](https://github.com/pinterest/gestalt) [Icons](../directories/icons) [View source](https://gestalt.pinterest.systems/foundations/iconography/usage)",
+      "metadata": {
+        "startIndex": 3881,
+        "endIndex": 4845,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "Repository](../directories/repository) [View source](https://github.com/pinterest/gestalt) [Icons](../directories/icons) [View source](https://gestalt.pinterest.systems/foundations/iconography/usage) [Illustrations](../directories/illustrations) [View source](https://gestalt.pinterest.systems/foundations/illustration) [Layout](../directories/layout) [View source](https://gestalt.pinterest.systems/foundations/layout) [Motion](../directories/motion) [View source](https://gestalt.pinterest.systems/foundations/motion/guidelines) [Responsive](../directories/responsive) [View source](https://gestalt.pinterest.systems/foundations/screen_sizes) [Tokens](../directories/tokens) [View source](https://gestalt.pinterest.systems/foundations/design_tokens/overview) [Typography](../directories/typography) [View source](https://gestalt.pinterest.systems/foundations/typography) [Voice and Tone](../directories/voice-and-tone) [View",
+      "metadata": {
+        "startIndex": 4645,
+        "endIndex": 5572,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "undations/design_tokens/overview) [Typography](../directories/typography) [View source](https://gestalt.pinterest.systems/foundations/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://gestalt.pinterest.systems/foundations/content_standards/voice) [Alert banner](../components/alert-banner) [View source](https://gestalt.pinterest.systems/web/bannercallout) [Avatar](../components/avatar) [View source](https://gestalt.pinterest.systems/web/avatar) [Badges](../components/badges) [View source](https://gestalt.pinterest.systems/web/badge) [Button](../components/button) [View source](https://gestalt.pinterest.systems/web/button) [Button group](../components/button-group) [View source](https://gestalt.pinterest.systems/web/buttongroup) [Checkbox](../components/checkbox) [View source](https://gestalt.pinterest.systems/web/checkbox) [Combobox](../components/combobox) [View source](https://gestalt.pinterest.systems/web/combobox) [Data",
+      "metadata": {
+        "startIndex": 5372,
+        "endIndex": 6341,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "[Checkbox](../components/checkbox) [View source](https://gestalt.pinterest.systems/web/checkbox) [Combobox](../components/combobox) [View source](https://gestalt.pinterest.systems/web/combobox) [Data table](../components/data-table) [View source](https://gestalt.pinterest.systems/web/table) [Date picker](../components/date-picker) [View source](https://gestalt.pinterest.systems/web/datepicker) [Divider](../components/divider) [View source](https://gestalt.pinterest.systems/web/divider) [Dropdown](../components/dropdown) [View source](https://gestalt.pinterest.systems/web/dropdown) [Form](../components/form) [View source](https://gestalt.pinterest.systems/foundations/forms/overview) [Icon](../directories/icons) [View source](https://gestalt.pinterest.systems/web/icon) [Label](../components/label) [View source](https://gestalt.pinterest.systems/web/label) [Link](../components/link) [View source](https://gestalt.pinterest.systems/web/link) [List](../components/list) [View",
+      "metadata": {
+        "startIndex": 6141,
+        "endIndex": 7125,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "](../components/label) [View source](https://gestalt.pinterest.systems/web/label) [Link](../components/link) [View source](https://gestalt.pinterest.systems/web/link) [List](../components/list) [View source](https://gestalt.pinterest.systems/web/list) [Modal](../components/modal) [View source](https://gestalt.pinterest.systems/web/modal) [Page header](../components/page-header) [View source](https://gestalt.pinterest.systems/web/pageheader) [Popover](../components/popover) [View source](https://gestalt.pinterest.systems/web/popover) [Progress indicator](../components/progress-indicator) [View source](https://gestalt.pinterest.systems/web/spinner) [Radio button](../components/radio-button) [View source](https://gestalt.pinterest.systems/web/radiogroup) [Segmented control](../components/segmented-control) [View source](https://gestalt.pinterest.systems/web/segmentedcontrol) [Switch](../components/switch) [View source](https://gestalt.pinterest.systems/web/switch)",
+      "metadata": {
+        "startIndex": 6925,
+        "endIndex": 7901,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "trol](../components/segmented-control) [View source](https://gestalt.pinterest.systems/web/segmentedcontrol) [Switch](../components/switch) [View source](https://gestalt.pinterest.systems/web/switch) [Tabs](../components/tabs) [View source](https://gestalt.pinterest.systems/web/tabs) [Tag](../components/tag) [View source](https://gestalt.pinterest.systems/web/tag) [Text area](../components/text-area) [View source](https://gestalt.pinterest.systems/web/textarea) [Text field](../components/text-field) [View source](https://gestalt.pinterest.systems/web/textfield) [Tooltip](../components/tooltip) [View source](https://gestalt.pinterest.systems/web/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf)",
+      "metadata": {
+        "startIndex": 7701,
+        "endIndex": 8675,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8475,
+        "endIndex": 9475,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "form",
+      "modal",
+      "header",
+      "color",
+      "typography",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:54.939Z",
+    "source_url": "https://designsystems.surf/design-systems/pinterest"
+  }
+}

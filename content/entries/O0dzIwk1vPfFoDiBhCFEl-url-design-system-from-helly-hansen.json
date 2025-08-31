@@ -1,0 +1,138 @@
+{
+  "id": "O0dzIwk1vPfFoDiBhCFEl",
+  "title": "Design System from Helly Hansen ",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/hellyhansen",
+    "ingested_at": "2025-08-30T13:09:44.844Z"
+  },
+  "content": "# Helly Hansen Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Helly Hansen Design System is a comprehensive framework comprising reusable components, guidelines and cohesive principles, seamlessly integrated to ensure consistent and efficient design. Tailored for a leading sports brand, it unifies e-commerce, wholesale, social media, and display marketing elements. Design System empowers Helly Hansen to generate content at scale, fostering a harmonized visual identity across diverse platforms. Advertisement Accessibility View source Color System Icons Illustrations Layout Spacing Styles Tokens Typography Voice and Tone Accordion Alert banner Avatar Button Cards Checkbox Data table Divider Dropdown Link List Modal Page header Radio button Switch Tabs Tag Text field Tooltip",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Helly Hansen Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Helly Hansen Design System is a comprehensive framework comprising reusable components, guidelines and cohesive principles, seamlessly integrated to ensure consistent and efficient",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 999,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ories: Components: Helly Hansen Design System is a comprehensive framework comprising reusable components, guidelines and cohesive principles, seamlessly integrated to ensure consistent and efficient design. Tailored for a leading sports brand, it unifies e-commerce, wholesale, social media, and display marketing elements. Design System empowers Helly Hansen to generate content at scale, fostering a harmonized visual identity across diverse platforms. Advertisement Accessibility View source Color System Icons Illustrations Layout Spacing Styles Tokens Typography Voice and Tone Accordion Alert banner Avatar Button Cards Checkbox Data table Divider Dropdown Link List Modal Page header Radio button Switch Tabs Tag Text field Tooltip",
+      "metadata": {
+        "startIndex": 799,
+        "endIndex": 1788,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "inks [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line)",
+      "metadata": {
+        "startIndex": 1588,
+        "endIndex": 2579,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "OV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost)",
+      "metadata": {
+        "startIndex": 2379,
+        "endIndex": 3378,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromHelly Hansen](./hellyhansen#up-pixel) [Source](https://design.hellyhansen.com/) [Accessibility](../directories/accessibility) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/74b52b-accessibility-20) [Color System](../directories/color-system) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/84a823-colours-20/b/25f39f) [Icons](../directories/icons) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/03cf8f-icons-20) [Illustrations](../directories/illustrations) [View",
+      "metadata": {
+        "startIndex": 3178,
+        "endIndex": 4142,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "com/1b4c2ca6d/p/84a823-colours-20/b/25f39f) [Icons](../directories/icons) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/03cf8f-icons-20) [Illustrations](../directories/illustrations) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/062811-images-20) [Layout](../directories/layout) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/08d071-grids-layout-20/b/80c303) [Spacing](../directories/spacing) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/2799ac-spacing-20) [Styles](../directories/styles) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/625ccf-borders-20) [Tokens](../directories/tokens) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/30ca4e-tokens) [Typography](../directories/typography) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/05006e-typography-20/b/562f72) [Voice and Tone](../directories/voice-and-tone) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/72c41e-principles)",
+      "metadata": {
+        "startIndex": 3942,
+        "endIndex": 4907,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "](https://design.hellyhansen.com/1b4c2ca6d/p/05006e-typography-20/b/562f72) [Voice and Tone](../directories/voice-and-tone) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/72c41e-principles) [Accordion](../components/accordion) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/243444-accordions-20/b/63c5a2) [Alert banner](../components/alert-banner) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/70b79e-notifications-20/b/14213e) [Avatar](../components/avatar) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/448b87-avatars-12/b/38069e) [Button](../components/button) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/87d730-buttons-20/b/48de8d) [Cards](../components/cards) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/48fd3c-cards-content-20/b/25b49d) [Checkbox](../components/checkbox) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/90436c-checkboxes-20/b/156217) [Data table](../components/data-table) [View",
+      "metadata": {
+        "startIndex": 4707,
+        "endIndex": 5686,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "fd3c-cards-content-20/b/25b49d) [Checkbox](../components/checkbox) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/90436c-checkboxes-20/b/156217) [Data table](../components/data-table) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/13027c-tables-11/b/54d537) [Divider](../components/divider) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/42a81c-dividers-20/b/695a46) [Dropdown](../components/dropdown) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/953f5f-dropdowns) [Link](../components/link) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/440e02-links-20/b/19a339) [List](../components/list) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/8381f8-lists-10) [Modal](../components/modal) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/3158ad-modals-20/b/977140) [Page header](../components/page-header) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/130154-header-main-navigation-20) [Radio",
+      "metadata": {
+        "startIndex": 5486,
+        "endIndex": 6456,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "esign.hellyhansen.com/1b4c2ca6d/p/3158ad-modals-20/b/977140) [Page header](../components/page-header) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/130154-header-main-navigation-20) [Radio button](../components/radio-button) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/75e1cb-radio-buttons-20/b/376933) [Switch](../components/switch) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/556997-toggle-20/b/177b07) [Tabs](../components/tabs) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/351d0b-tabs-20/b/93477d) [Tag](../components/tag) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/58873a-tags-20/b/099f00) [Text field](../components/text-field) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/10e358-inputs-20/b/65d820) [Tooltip](../components/tooltip) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/44a1ed-tooltips-20/b/812ef2) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM",
+      "metadata": {
+        "startIndex": 6256,
+        "endIndex": 7253,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ponents/tooltip) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/44a1ed-tooltips-20/b/812ef2) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7053,
+        "endIndex": 8053,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "modal",
+      "header",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:44.844Z",
+    "source_url": "https://designsystems.surf/design-systems/hellyhansen"
+  }
+}

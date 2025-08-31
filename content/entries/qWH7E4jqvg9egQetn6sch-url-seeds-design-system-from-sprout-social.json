@@ -1,0 +1,151 @@
+{
+  "id": "qWH7E4jqvg9egQetn6sch",
+  "title": "Seeds Design System from Sprout Social",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/sproutsocial",
+    "ingested_at": "2025-08-30T13:10:03.467Z"
+  },
+  "content": "# Sprout Social Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Seeds from Directories: Components: Seeds is a Design System developed by Sprout Social for social media management and intelligence platform. It provides a comprehensive set of tools and resources to understand, creatively express, and inspire meaningful customer interactions in alignment with Sprout's brand guidelines. Organized into atoms, molecules, and organisms, Seeds ensures consistent and harmonious visual identity across Sprout Social's product ecosystem. Advertisement Color System View source Data visualization Elevation Repository Illustrations Layout Motion Patterns Spacing Styles Theming Typography Voice and Tone Alert banner Avatar Badges Breadcrumb Button Cards Checkbox Chip Data table Date picker Drawer Empty state Form Icon Label Link Menus Modal Progress indicator Radio button Segmented control Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Sprout Social Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Seeds from Directories: Components: Seeds is a Design System developed by Sprout Social for social media management and intelligence platform.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 917,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "desk Keep up with the latest in Design Systems Subscribe Seeds from Directories: Components: Seeds is a Design System developed by Sprout Social for social media management and intelligence platform. It provides a comprehensive set of tools and resources to understand, creatively express, and inspire meaningful customer interactions in alignment with Sprout's brand guidelines. Organized into atoms, molecules, and organisms, Seeds ensures consistent and harmonious visual identity across Sprout Social's product ecosystem. Advertisement Color System View source Data visualization Elevation Repository Illustrations Layout Motion Patterns Spacing Styles Theming Typography Voice and Tone Alert banner Avatar Badges Breadcrumb Button Cards Checkbox Chip Data table Date picker Drawer Empty state Form Icon Label Link Menus Modal Progress indicator Radio button Segmented control Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ.",
+      "metadata": {
+        "startIndex": 717,
+        "endIndex": 1688,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "picker Drawer Empty state Form Icon Label Link Menus Modal Progress indicator Radio button Segmented control Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
+      "metadata": {
+        "startIndex": 1488,
+        "endIndex": 2482,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
+      "metadata": {
+        "startIndex": 2282,
+        "endIndex": 3275,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [SeedsfromSprout Social](./sproutsocial#up-pixel) [Source](https://seeds.sproutsocial.com/) [Repository](https://github.com/sproutsocial) [Color System](../directories/color-system) [View source](https://seeds.sproutsocial.com/visual/color) [Data visualization](../directories/data-visualization) [View",
+      "metadata": {
+        "startIndex": 3075,
+        "endIndex": 4058,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "](https://github.com/sproutsocial) [Color System](../directories/color-system) [View source](https://seeds.sproutsocial.com/visual/color) [Data visualization](../directories/data-visualization) [View source](https://seeds.sproutsocial.com/visual/dataviz) [Elevation](../directories/elevation) [View source](https://seeds.sproutsocial.com/visual/elevation) [Repository](../directories/repository) [View source](https://github.com/sproutsocial) [Illustrations](../directories/illustrations) [View source](https://seeds.sproutsocial.com/visual/illustration) [Layout](../directories/layout) [View source](https://seeds.sproutsocial.com/patterns/layout) [Motion](../directories/motion) [View source](https://seeds.sproutsocial.com/visual/motion) [Patterns](../directories/patterns) [View source](https://seeds.sproutsocial.com/patterns/) [Spacing](../directories/spacing) [View source](https://seeds.sproutsocial.com/visual/space) [Styles](../directories/styles) [View",
+      "metadata": {
+        "startIndex": 3858,
+        "endIndex": 4822,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "es/patterns) [View source](https://seeds.sproutsocial.com/patterns/) [Spacing](../directories/spacing) [View source](https://seeds.sproutsocial.com/visual/space) [Styles](../directories/styles) [View source](https://seeds.sproutsocial.com/visual/border) [Theming](../directories/theming) [View source](https://seeds.sproutsocial.com/components/theme) [Typography](../directories/typography) [View source](https://seeds.sproutsocial.com/visual/product-typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://seeds.sproutsocial.com/writing/) [Alert banner](../components/alert-banner) [View source](https://seeds.sproutsocial.com/components/banner) [Avatar](../components/avatar) [View source](https://seeds.sproutsocial.com/components/avatar) [Badges](../components/badges) [View source](https://seeds.sproutsocial.com/components/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://seeds.sproutsocial.com/components/breadcrumb) [Button](../components/button)",
+      "metadata": {
+        "startIndex": 4622,
+        "endIndex": 5623,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "iew source](https://seeds.sproutsocial.com/components/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://seeds.sproutsocial.com/components/breadcrumb) [Button](../components/button) [View source](https://seeds.sproutsocial.com/components/button) [Cards](../components/cards) [View source](https://seeds.sproutsocial.com/components/card) [Checkbox](../components/checkbox) [View source](https://seeds.sproutsocial.com/components/checkbox) [Chip](../components/chip) [View source](https://seeds.sproutsocial.com/components/token) [Data table](../components/data-table) [View source](https://seeds.sproutsocial.com/components/table) [Date picker](../components/date-picker) [View source](https://seeds.sproutsocial.com/components/date-picker) [Drawer](../components/drawer) [View source](https://seeds.sproutsocial.com/components/drawer) [Empty state](../components/empty-state) [View source](https://seeds.sproutsocial.com/components/empty-state) [Form](../components/form) [View",
+      "metadata": {
+        "startIndex": 5423,
+        "endIndex": 6419,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ource](https://seeds.sproutsocial.com/components/drawer) [Empty state](../components/empty-state) [View source](https://seeds.sproutsocial.com/components/empty-state) [Form](../components/form) [View source](https://seeds.sproutsocial.com/components/form-field) [Icon](../directories/icons) [View source](https://seeds.sproutsocial.com/components/icon) [Label](../components/label) [View source](https://seeds.sproutsocial.com/components/label) [Link](../components/link) [View source](https://seeds.sproutsocial.com/components/link) [Menus](../components/menus) [View source](https://seeds.sproutsocial.com/components/menu) [Modal](../components/modal) [View source](https://seeds.sproutsocial.com/components/modal) [Progress indicator](../components/progress-indicator) [View source](https://seeds.sproutsocial.com/components/loader) [Radio button](../components/radio-button) [View source](https://seeds.sproutsocial.com/components/radio) [Segmented control](../components/segmented-control) [View",
+      "metadata": {
+        "startIndex": 6219,
+        "endIndex": 7220,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "proutsocial.com/components/loader) [Radio button](../components/radio-button) [View source](https://seeds.sproutsocial.com/components/radio) [Segmented control](../components/segmented-control) [View source](https://seeds.sproutsocial.com/components/segmented-control) [Select](../components/select) [View source](https://seeds.sproutsocial.com/components/select) [Sidebar](../components/sidebar) [View source](https://seeds.sproutsocial.com/patterns/navigation) [Snackbar](../components/snackbar) [View source](https://seeds.sproutsocial.com/components/toast) [Switch](../components/switch) [View source](https://seeds.sproutsocial.com/components/switch) [Tabs](../components/tabs) [View source](https://seeds.sproutsocial.com/components/tabs) [Text area](../components/text-area) [View source](https://seeds.sproutsocial.com/components/textarea) [Text field](../components/text-field) [View source](https://seeds.sproutsocial.com/components/input) [Tooltip](../components/tooltip) [View",
+      "metadata": {
+        "startIndex": 7020,
+        "endIndex": 8009,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ource](https://seeds.sproutsocial.com/components/textarea) [Text field](../components/text-field) [View source](https://seeds.sproutsocial.com/components/input) [Tooltip](../components/tooltip) [View source](https://seeds.sproutsocial.com/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7809,
+        "endIndex": 8809,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "form",
+      "modal",
+      "card",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "border",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:03.467Z",
+    "source_url": "https://designsystems.surf/design-systems/sproutsocial"
+  }
+}

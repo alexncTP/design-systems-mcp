@@ -1,0 +1,148 @@
+{
+  "id": "fE_HkN1ktK3ohFLPBhfu_",
+  "title": "Wanda Design System from Wonderflow",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/wonderflow",
+    "ingested_at": "2025-08-30T13:10:12.099Z"
+  },
+  "content": "# Wonderflow Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Wanda from Directories: Components: Wanda Design System is a comprehensive resource for building Wonderflow’s digital products. Wanda encapsulates core design elements like colors, spacing, and fonts as design tokens, ensuring consistency across platforms. Design System provides a set of customizable React components and styles for seamless integration, streamlining the development process while maintaining design language. Advertisement Accessibility View source Color System Elevation Repository Icons Motion Storybook Theming Tokens Typography Accordion Autocomplete Avatar Button Cards Checkbox Chip Data table Divider Drawer Icon List Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Slider Snackbar Switch Tabs Text field Tooltip",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Wonderflow Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Wanda from Directories: Components: Wanda Design System is a comprehensive resource for building Wonderflow’s digital products.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 902,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "kday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Wanda from Directories: Components: Wanda Design System is a comprehensive resource for building Wonderflow’s digital products. Wanda encapsulates core design elements like colors, spacing, and fonts as design tokens, ensuring consistency across platforms. Design System provides a set of customizable React components and styles for seamless integration, streamlining the development process while maintaining design language. Advertisement Accessibility View source Color System Elevation Repository Icons Motion Storybook Theming Tokens Typography Accordion Autocomplete Avatar Button Cards Checkbox Chip Data table Divider Drawer Icon List Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Slider Snackbar Switch Tabs Text field Tooltip",
+      "metadata": {
+        "startIndex": 702,
+        "endIndex": 1695,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "elect Slider Snackbar Switch Tabs Text field Tooltip",
+      "metadata": {
+        "startIndex": 1495,
+        "endIndex": 2485,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2285,
+        "endIndex": 3275,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [WandafromWonderflow](./wonderflow#up-pixel) [Source](https://design.wonderflow.ai/) [Repository](https://github.com/wonderflow-bv/wanda) [Storybook](https://wonderflow-bv.github.io/wanda/?path=/story/layouts-card--default) [Accessibility](../directories/accessibility) [View source](https://design.wonderflow.ai/get-started/documentation/get-started/accessibility) [Color System](../directories/color-system) [View",
+      "metadata": {
+        "startIndex": 3075,
+        "endIndex": 4056,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "efault) [Accessibility](../directories/accessibility) [View source](https://design.wonderflow.ai/get-started/documentation/get-started/accessibility) [Color System](../directories/color-system) [View source](https://design.wonderflow.ai/get-started/documentation/design/foundation/colors) [Elevation](../directories/elevation) [View source](https://design.wonderflow.ai/get-started/documentation/design/foundation/elevations) [Repository](../directories/repository) [View source](https://github.com/wonderflow-bv/wanda) [Icons](../directories/icons) [View source](https://design.wonderflow.ai/get-started/symbols) [Motion](../directories/motion) [View source](https://design.wonderflow.ai/get-started/documentation/design/motion/principles) [Storybook](../directories/storybook) [View source](https://wonderflow-bv.github.io/wanda/?path=/story/layouts-card--default) [Theming](../directories/theming) [View source](https://design.wonderflow.ai/get-started/documentation/design/themes)",
+      "metadata": {
+        "startIndex": 3856,
+        "endIndex": 4841,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "source](https://wonderflow-bv.github.io/wanda/?path=/story/layouts-card--default) [Theming](../directories/theming) [View source](https://design.wonderflow.ai/get-started/documentation/design/themes) [Tokens](../directories/tokens) [View source](https://design.wonderflow.ai/get-started/documentation/develop/design-tokens) [Typography](../directories/typography) [View source](https://design.wonderflow.ai/get-started/documentation/design/foundation/typography) [Accordion](../components/accordion) [View source](https://design.wonderflow.ai/get-started/components/actions/accordion) [Autocomplete](../components/autocomplete) [View source](https://design.wonderflow.ai/get-started/components/inputs/autocomplete) [Avatar](../components/avatar) [View source](https://design.wonderflow.ai/get-started/components/widgets/avatar) [Button](../components/button) [View source](https://design.wonderflow.ai/get-started/components/actions/button) [Cards](../components/cards) [View",
+      "metadata": {
+        "startIndex": 4641,
+        "endIndex": 5617,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "onderflow.ai/get-started/components/widgets/avatar) [Button](../components/button) [View source](https://design.wonderflow.ai/get-started/components/actions/button) [Cards](../components/cards) [View source](https://design.wonderflow.ai/get-started/components/layouts/card) [Checkbox](../components/checkbox) [View source](https://design.wonderflow.ai/get-started/components/inputs/selection-controls) [Chip](../components/chip) [View source](https://design.wonderflow.ai/get-started/components/widgets/chip) [Data table](../components/data-table) [View source](https://design.wonderflow.ai/get-started/components/layouts/table) [Divider](../components/divider) [View source](https://design.wonderflow.ai/get-started/components/layouts/separator) [Drawer](../components/drawer) [View source](https://design.wonderflow.ai/get-started/components/dialogs/drawer) [Icon](../directories/icons) [View source](https://design.wonderflow.ai/get-started/components/widgets/symbol) [List](../components/list)",
+      "metadata": {
+        "startIndex": 5417,
+        "endIndex": 6415,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "//design.wonderflow.ai/get-started/components/dialogs/drawer) [Icon](../directories/icons) [View source](https://design.wonderflow.ai/get-started/components/widgets/symbol) [List](../components/list) [View source](https://design.wonderflow.ai/get-started/components/typography/list) [Menus](../components/menus) [View source](https://design.wonderflow.ai/get-started/components/navigation/menu) [Modal](../components/modal) [View source](https://design.wonderflow.ai/get-started/components/dialogs/modal) [Pagination](../components/pagination) [View source](https://design.wonderflow.ai/get-started/components/navigation/pagination) [Popover](../components/popover) [View source](https://design.wonderflow.ai/get-started/components/dialogs/popover) [Progress bar](../components/progress-bar) [View source](https://design.wonderflow.ai/get-started/components/loading/linear-progress) [Progress indicator](../components/progress-indicator) [View",
+      "metadata": {
+        "startIndex": 6215,
+        "endIndex": 7159,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ver) [Progress bar](../components/progress-bar) [View source](https://design.wonderflow.ai/get-started/components/loading/linear-progress) [Progress indicator](../components/progress-indicator) [View source](https://design.wonderflow.ai/get-started/components/loading/spinner) [Radio button](../components/radio-button) [Select](../components/select) [View source](https://design.wonderflow.ai/get-started/components/inputs/select) [Slider](../components/slider) [View source](https://design.wonderflow.ai/get-started/components/inputs/slider) [Snackbar](../components/snackbar) [View source](https://design.wonderflow.ai/get-started/components/dialogs/snackbar) [Switch](../components/switch) [Tabs](../components/tabs) [View source](https://design.wonderflow.ai/get-started/components/navigation/tab) [Text field](../components/text-field) [View source](https://design.wonderflow.ai/get-started/components/inputs/textfield) [Tooltip](../components/tooltip) [View",
+      "metadata": {
+        "startIndex": 6959,
+        "endIndex": 7924,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "et-started/components/navigation/tab) [Text field](../components/text-field) [View source](https://design.wonderflow.ai/get-started/components/inputs/textfield) [Tooltip](../components/tooltip) [View source](https://design.wonderflow.ai/get-started/components/dialogs/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7724,
+        "endIndex": 8724,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "modal",
+      "card",
+      "spacing",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:10:12.099Z",
+    "source_url": "https://designsystems.surf/design-systems/wonderflow"
+  }
+}

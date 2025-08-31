@@ -15,17 +15,26 @@
 		"ingest:csv": "tsx scripts/ingestion/ingest-csv.ts --",
 		"ingest:pdf": "tsx scripts/ingestion/ingest.ts pdf",
 		"ingest:url": "tsx scripts/ingestion/ingest.ts url",
+		"crawl:website": "tsx scripts/ingestion/crawl-website.ts",
 		"build:manifest": "tsx scripts/build/generate-manifest.ts",
 		"check:duplicates": "tsx scripts/check-duplicates.ts",
 		"prebuild": "npm run build:manifest",
-		"mcp:standalone": "node standalone-mcp-server.js"
+		"mcp:standalone": "node standalone-mcp-server.js",
+		"ingest:vectors": "tsx scripts/ingest-vectors.ts --",
+		"compare:search": "tsx scripts/compare-search-quality.ts",
+		"test:vector": "tsx scripts/test-vector-search.ts"
 	},
 	"dependencies": {
 		"@modelcontextprotocol/sdk": "^1.0.7",
+		"@supabase/supabase-js": "^2.56.1",
+		"@types/cheerio": "^0.22.35",
 		"agents": "^0.0.95",
+		"cheerio": "^1.1.0",
+		"dotenv": "^17.2.1",
+		"openai": "^4.67.3",
 		"pdf-parse": "^1.1.1",
-		"zod": "^3.23.8",
-		"openai": "^4.67.3"
+		"uuid": "^11.1.0",
+		"zod": "^3.23.8"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.0.4",

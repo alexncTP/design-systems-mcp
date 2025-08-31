@@ -1,0 +1,161 @@
+{
+  "id": "QnMh8jSOxae0UMGAIu6Si",
+  "title": "MongoDB's Design System – LeafyGreen Framework",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/mongodb",
+    "ingested_at": "2025-08-30T13:09:49.477Z"
+  },
+  "content": "# MongoDB Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe LeafyGreen from Directories: Components: LeafyGreen is MongoDB's Design System, designed for internal products. Design System provides a set of detailed guidelines for various elements, including icon creation and grid layouts. Design System contains a wide-ranging component library with live examples, design guides, and code documentation. LeafyGreen streamlines the design and development process, ensuring consistency and coherence across MongoDB's product ecosystem. Advertisement Accessibility View source Color System Repository Icons Layout Storybook Tokens Typography Accordion Alert banner Avatar Badges Button Cards Checkbox Chip Code snippet Combobox Data table Date picker Empty state Form Icon Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# MongoDB Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe LeafyGreen from Directories: Components: LeafyGreen is MongoDB's Design System, designed for internal products. Design System provides a set of detailed guidelines for various elements, including icon creation and grid",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 993,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ectories: Components: LeafyGreen is MongoDB's Design System, designed for internal products. Design System provides a set of detailed guidelines for various elements, including icon creation and grid layouts. Design System contains a wide-ranging component library with live examples, design guides, and code documentation. LeafyGreen streamlines the design and development process, ensuring consistency and coherence across MongoDB's product ecosystem. Advertisement Accessibility View source Color System Repository Icons Layout Storybook Tokens Typography Accordion Alert banner Avatar Badges Button Cards Checkbox Chip Code snippet Combobox Data table Date picker Empty state Form Icon Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
+      "metadata": {
+        "startIndex": 793,
+        "endIndex": 1766,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Segmented control Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
+      "metadata": {
+        "startIndex": 1566,
+        "endIndex": 2565,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack)",
+      "metadata": {
+        "startIndex": 2365,
+        "endIndex": 3351,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [LeafyGreenfromMongoDB](./mongodb#up-pixel) [Source](https://www.mongodb.design/) [Repository](https://github.com/mongodb/leafygreen-ui) [Storybook](https://storybook.js.org/showcase/mongodb-leafygreen) [Accessibility](../directories/accessibility) [View source](https://www.mongodb.design/resources/accessibility) [Color System](../directories/color-system) [View",
+      "metadata": {
+        "startIndex": 3151,
+        "endIndex": 4106,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "k.js.org/showcase/mongodb-leafygreen) [Accessibility](../directories/accessibility) [View source](https://www.mongodb.design/resources/accessibility) [Color System](../directories/color-system) [View source](https://www.mongodb.design/foundations/palette) [Repository](../directories/repository) [View source](https://github.com/mongodb/leafygreen-ui) [Icons](../directories/icons) [View source](https://www.mongodb.design/foundations/icons) [Layout](../directories/layout) [View source](https://www.mongodb.design/foundations/grid) [Storybook](../directories/storybook) [View source](https://storybook.js.org/showcase/mongodb-leafygreen) [Tokens](../directories/tokens) [View source](https://www.mongodb.design/foundations/tokens) [Typography](../directories/typography) [View source](https://www.mongodb.design/foundations/typography) [Accordion](../components/accordion) [View source](https://www.mongodb.design/component/expandable-card/live-example) [Alert banner](../components/alert-banner)",
+      "metadata": {
+        "startIndex": 3906,
+        "endIndex": 4904,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "mongodb.design/foundations/typography) [Accordion](../components/accordion) [View source](https://www.mongodb.design/component/expandable-card/live-example) [Alert banner](../components/alert-banner) [View source](https://www.mongodb.design/component/banner/live-example/) [Avatar](../components/avatar) [View source](https://www.mongodb.design/component/avatar/live-example) [Badges](../components/badges) [View source](https://www.mongodb.design/component/badge/live-example/) [Button](../components/button) [View source](https://www.mongodb.design/component/button/live-example) [Cards](../components/cards) [View source](https://www.mongodb.design/component/card/live-example) [Checkbox](../components/checkbox) [View source](https://www.mongodb.design/component/checkbox/live-example/) [Chip](../components/chip) [View source](https://www.mongodb.design/component/chip/live-example) [Code snippet](../components/code-snippet) [View source](https://www.mongodb.design/component/code/live-example)",
+      "metadata": {
+        "startIndex": 4704,
+        "endIndex": 5705,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "components/chip) [View source](https://www.mongodb.design/component/chip/live-example) [Code snippet](../components/code-snippet) [View source](https://www.mongodb.design/component/code/live-example) [Combobox](../components/combobox) [View source](https://www.mongodb.design/component/combobox/live-example) [Data table](../components/data-table) [View source](https://www.mongodb.design/component/table/live-example) [Date picker](../components/date-picker) [View source](https://www.mongodb.design/component/date-picker/live-example) [Empty state](../components/empty-state) [View source](https://www.mongodb.design/component/empty-state/live-example/) [Form](../components/form) [View source](https://www.mongodb.design/foundations/forms) [Icon](../directories/icons) [View source](https://www.mongodb.design/component/icon/live-example) [Menus](../components/menus) [View source](https://www.mongodb.design/component/menu/live-example/) [Modal](../components/modal) [View",
+      "metadata": {
+        "startIndex": 5505,
+        "endIndex": 6482,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "source](https://www.mongodb.design/component/icon/live-example) [Menus](../components/menus) [View source](https://www.mongodb.design/component/menu/live-example/) [Modal](../components/modal) [View source](https://www.mongodb.design/component/modal/live-example) [Pagination](../components/pagination) [View source](https://www.mongodb.design/component/pagination/live-example) [Popover](../components/popover) [View source](https://www.mongodb.design/component/popover/live-example/) [Progress bar](../components/progress-bar) [View source](https://www.mongodb.design/component/stepper/design-docs) [Progress indicator](../components/progress-indicator) [View source](https://www.mongodb.design/component/loading-indicator/live-example) [Radio button](../components/radio-button) [View source](https://www.mongodb.design/component/radio-group/live-example/) [Search](../components/search) [View source](https://www.mongodb.design/component/search-input/live-example/) [Segmented",
+      "metadata": {
+        "startIndex": 6282,
+        "endIndex": 7264,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "[View source](https://www.mongodb.design/component/radio-group/live-example/) [Search](../components/search) [View source](https://www.mongodb.design/component/search-input/live-example/) [Segmented control](../components/segmented-control) [View source](https://www.mongodb.design/component/segmented-control/live-example) [Select](../components/select) [View source](https://www.mongodb.design/component/select/live-example) [Sidebar](../components/sidebar) [View source](https://www.mongodb.design/component/side-nav/live-example/) [Snackbar](../components/snackbar) [View source](https://www.mongodb.design/component/toast/live-example/) [Switch](../components/switch) [View source](https://www.mongodb.design/component/toggle/live-example/) [Tabs](../components/tabs) [View source](https://www.mongodb.design/component/tabs/live-example/) [Text area](../components/text-area) [View source](https://www.mongodb.design/component/text-area/live-example) [Text field](../components/text-field)",
+      "metadata": {
+        "startIndex": 7064,
+        "endIndex": 8060,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "www.mongodb.design/component/tabs/live-example/) [Text area](../components/text-area) [View source](https://www.mongodb.design/component/text-area/live-example) [Text field](../components/text-field) [View source](https://www.mongodb.design/component/text-input/live-example) [Tooltip](../components/tooltip) [View source](https://www.mongodb.design/component/tooltip/live-example/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 7860,
+        "endIndex": 8860,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "s.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8660,
+        "endIndex": 9660,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "form",
+      "modal",
+      "card",
+      "input",
+      "nav",
+      "color",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:49.477Z",
+    "source_url": "https://designsystems.surf/design-systems/mongodb"
+  }
+}

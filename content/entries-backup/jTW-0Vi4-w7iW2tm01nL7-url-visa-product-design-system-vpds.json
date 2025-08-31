@@ -1,0 +1,172 @@
+{
+  "id": "jTW-0Vi4-w7iW2tm01nL7",
+  "title": "Visa Product Design System (VPDS)",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/visa",
+    "ingested_at": "2025-08-30T13:09:07.774Z"
+  },
+  "content": "# Visa Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Visa Design System brings together everything teams need to create experiences that feel consistent and trustworthy, no matter where or how people interact with Visa around the world. From the basic building blocks to complete design patterns, this system helps craft financial journeys that users can easily understand and navigate. Advertisement Accessibility View source Color System Component overview Data visualization Elevation Figma Repository Patterns Responsive Spacing States Tokens Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Cards Checkbox Chip Combobox Data table Date picker Dialog Divider Dropdown Icon Link List Navigation bar Pagination Progress bar Radio button Segmented control Select Sidebar Slider Switch Tabs Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromVisa](./visa#up-pixel) [Source](https://design.visa.com/) [Figma](https://www.figma.com/@visa) [Repository](https://github.com/visa) [Accessibility](../directories/accessibility) [View source](https://design.visa.com/about-VPDS/accessibility/) [Color System](../directories/color-system) [View source](https://design.visa.com/base-elements/color/) [Component overview](../directories/component-overview) [View source](https://design.visa.com/components/) [Data visualization](../directories/data-visualization) [View source](https://design.visa.com/data-visualization/design-visualization-guidelines/overview/) [Elevation](../directories/elevation) [View source](https://design.visa.com/base-elements/elevation/?code_library=css&version=1.6.2) [Figma](../directories/figma) [View source](https://www.figma.com/@visa) [Repository](../directories/repository) [View source](https://github.com/visa) [Patterns](../directories/patterns) [View source](https://design.visa.com/patterns/) [Responsive](../directories/responsive) [View source](https://design.visa.com/base-elements/responsive-grid-system/) [Spacing](../directories/spacing) [View source](https://design.visa.com/base-elements/spacing/?code_library=css&version=1.6.2) [States](../directories/states) [View source](https://design.visa.com/base-elements/states/) [Tokens](../directories/tokens) [View source](https://design.visa.com/base-elements/design-tokens/overview/) [Typography](../directories/typography) [View source](https://design.visa.com/base-elements/typography/?code_library=css&version=1.6.2) [Voice and Tone](../directories/voice-and-tone) [View source](https://design.visa.com/content/) [Accordion](../components/accordion) [View source](https://design.visa.com/components/accordion/?code_library=css&version=1.6.2) [Alert banner](../components/alert-banner) [View source](https://design.visa.com/components/banner/?code_library=css&version=1.6.2) [Avatar](../components/avatar) [View source](https://design.visa.com/components/avatar/?code_library=css&version=1.6.2) [Badges](../components/badges) [View source](https://design.visa.com/components/badge/?code_library=css&version=1.6.2) [Breadcrumb](../components/breadcrumbs) [View source](https://design.visa.com/components/breadcrumbs/?code_library=css&version=1.6.2) [Button](../components/button) [View source](https://design.visa.com/components/button/?code_library=css&version=1.6.2) [Cards](../components/cards) [View source](https://design.visa.com/components/content-card/?code_library=css&version=1.6.2) [Checkbox](../components/checkbox) [View source](https://design.visa.com/components/checkbox/?code_library=css&version=1.6.2) [Chip](../components/chip) [View source](https://design.visa.com/components/chips/?code_library=css&version=1.6.2) [Combobox](../components/combobox) [View source](https://design.visa.com/components/combobox/?code_library=css&version=1.6.2) [Data table](../components/data-table) [View source](https://design.visa.com/components/table/?code_library=angular&version=5.1.3) [Date picker](../components/date-picker) [View source](https://design.visa.com/components/date-selector/?code_library=css&version=1.6.2) [Dialog](../components/dialog) [View source](https://design.visa.com/components/dialog/?code_library=css&version=1.6.2) [Divider](../components/divider) [View source](https://design.visa.com/components/divider/?code_library=css&version=1.6.2) [Dropdown](../components/dropdown) [View source](https://design.visa.com/components/dropdown-menu/?code_library=css&version=1.6.2) [Icon](../directories/icons) [View source](https://design.visa.com/components/icons-illustrations/) [Link](../components/link) [View source](https://design.visa.com/components/link/?code_library=css&version=1.6.2) [List](../components/list) [View source](https://design.visa.com/components/list-item/?code_library=flutter&version=8.1.2) [Navigation bar](../components/navigation-bar) [View source](https://design.visa.com/components/horizontal-navigation/?code_library=css&version=1.6.2) [Pagination](../components/pagination) [View source](https://design.visa.com/components/pagination/?code_library=angular&version=5.1.3) [Progress bar](../components/progress-bar) [View source](https://design.visa.com/components/progress/?code_library=angular&version=5.1.3) [Radio button](../components/radio-button) [View source](https://design.visa.com/components/radio/?code_library=angular&version=5.1.3) [Segmented control](../components/segmented-control) [View source](https://design.visa.com/components/toggle-button/?code_library=angular&version=5.1.3) [Select](../components/select) [View source](https://design.visa.com/components/select/?code_library=angular&version=5.1.3#default-selects) [Sidebar](../components/sidebar) [View source](https://design.visa.com/components/vertical-navigation/?code_library=angular&version=5.1.3#default-vertical-navigations) [Slider](../components/slider) [View source](https://design.visa.com/components/slider/) [Switch](../components/switch) [View source](https://design.visa.com/components/switch/?code_library=angular&version=5.1.3) [Tabs](../components/tabs) [View source](https://design.visa.com/components/tabs/?code_library=angular&version=5.1.3) [Text field](../components/text-field) [View source](https://design.visa.com/components/input/?code_library=css&version=1.6.2) [Tooltip](../components/tooltip) [View source](https://design.visa.com/components/tooltip/?code_library=angular&version=5.1.3) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Visa Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Visa Design System brings together everything teams need to create experiences that feel consistent and trustworthy, no matter where or how people interact with Visa around the",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 995,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "rectories: Components: Visa Design System brings together everything teams need to create experiences that feel consistent and trustworthy, no matter where or how people interact with Visa around the world. From the basic building blocks to complete design patterns, this system helps craft financial journeys that users can easily understand and navigate. Advertisement Accessibility View source Color System Component overview Data visualization Elevation Figma Repository Patterns Responsive Spacing States Tokens Typography Voice and Tone Accordion Alert banner Avatar Badges Breadcrumb Button Cards Checkbox Chip Combobox Data table Date picker Dialog Divider Dropdown Icon Link List Navigation bar Pagination Progress bar Radio button Segmented control Select Sidebar Slider Switch Tabs Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles)",
+      "metadata": {
+        "startIndex": 795,
+        "endIndex": 1779,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "tch Tabs Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi)",
+      "metadata": {
+        "startIndex": 1579,
+        "endIndex": 2578,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "electric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
+      "metadata": {
+        "startIndex": 2378,
+        "endIndex": 3334,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromVisa](./visa#up-pixel) [Source](https://design.visa.com/) [Figma](https://www.figma.com/@visa) [Repository](https://github.com/visa) [Accessibility](../directories/accessibility) [View source](https://design.visa.com/about-VPDS/accessibility/) [Color System](../directories/color-system) [View source](https://design.visa.com/base-elements/color/) [Component overview](../directories/component-overview) [View",
+      "metadata": {
+        "startIndex": 3134,
+        "endIndex": 4127,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "sa.com/about-VPDS/accessibility/) [Color System](../directories/color-system) [View source](https://design.visa.com/base-elements/color/) [Component overview](../directories/component-overview) [View source](https://design.visa.com/components/) [Data visualization](../directories/data-visualization) [View source](https://design.visa.com/data-visualization/design-visualization-guidelines/overview/) [Elevation](../directories/elevation) [View source](https://design.visa.com/base-elements/elevation/?code_library=css&version=1.6.2) [Figma](../directories/figma) [View source](https://www.figma.com/@visa) [Repository](../directories/repository) [View source](https://github.com/visa) [Patterns](../directories/patterns) [View source](https://design.visa.com/patterns/) [Responsive](../directories/responsive) [View source](https://design.visa.com/base-elements/responsive-grid-system/) [Spacing](../directories/spacing) [View",
+      "metadata": {
+        "startIndex": 3927,
+        "endIndex": 4855,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "source](https://design.visa.com/patterns/) [Responsive](../directories/responsive) [View source](https://design.visa.com/base-elements/responsive-grid-system/) [Spacing](../directories/spacing) [View source](https://design.visa.com/base-elements/spacing/?code_library=css&version=1.6.2) [States](../directories/states) [View source](https://design.visa.com/base-elements/states/) [Tokens](../directories/tokens) [View source](https://design.visa.com/base-elements/design-tokens/overview/) [Typography](../directories/typography) [View source](https://design.visa.com/base-elements/typography/?code_library=css&version=1.6.2) [Voice and Tone](../directories/voice-and-tone) [View source](https://design.visa.com/content/) [Accordion](../components/accordion) [View source](https://design.visa.com/components/accordion/?code_library=css&version=1.6.2) [Alert banner](../components/alert-banner) [View source](https://design.visa.com/components/banner/?code_library=css&version=1.6.2)",
+      "metadata": {
+        "startIndex": 4655,
+        "endIndex": 5637,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "sign.visa.com/components/accordion/?code_library=css&version=1.6.2) [Alert banner](../components/alert-banner) [View source](https://design.visa.com/components/banner/?code_library=css&version=1.6.2) [Avatar](../components/avatar) [View source](https://design.visa.com/components/avatar/?code_library=css&version=1.6.2) [Badges](../components/badges) [View source](https://design.visa.com/components/badge/?code_library=css&version=1.6.2) [Breadcrumb](../components/breadcrumbs) [View source](https://design.visa.com/components/breadcrumbs/?code_library=css&version=1.6.2) [Button](../components/button) [View source](https://design.visa.com/components/button/?code_library=css&version=1.6.2) [Cards](../components/cards) [View source](https://design.visa.com/components/content-card/?code_library=css&version=1.6.2) [Checkbox](../components/checkbox) [View source](https://design.visa.com/components/checkbox/?code_library=css&version=1.6.2) [Chip](../components/chip) [View",
+      "metadata": {
+        "startIndex": 5437,
+        "endIndex": 6413,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "nt-card/?code_library=css&version=1.6.2) [Checkbox](../components/checkbox) [View source](https://design.visa.com/components/checkbox/?code_library=css&version=1.6.2) [Chip](../components/chip) [View source](https://design.visa.com/components/chips/?code_library=css&version=1.6.2) [Combobox](../components/combobox) [View source](https://design.visa.com/components/combobox/?code_library=css&version=1.6.2) [Data table](../components/data-table) [View source](https://design.visa.com/components/table/?code_library=angular&version=5.1.3) [Date picker](../components/date-picker) [View source](https://design.visa.com/components/date-selector/?code_library=css&version=1.6.2) [Dialog](../components/dialog) [View source](https://design.visa.com/components/dialog/?code_library=css&version=1.6.2) [Divider](../components/divider) [View source](https://design.visa.com/components/divider/?code_library=css&version=1.6.2) [Dropdown](../components/dropdown) [View",
+      "metadata": {
+        "startIndex": 6213,
+        "endIndex": 7173,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "og/?code_library=css&version=1.6.2) [Divider](../components/divider) [View source](https://design.visa.com/components/divider/?code_library=css&version=1.6.2) [Dropdown](../components/dropdown) [View source](https://design.visa.com/components/dropdown-menu/?code_library=css&version=1.6.2) [Icon](../directories/icons) [View source](https://design.visa.com/components/icons-illustrations/) [Link](../components/link) [View source](https://design.visa.com/components/link/?code_library=css&version=1.6.2) [List](../components/list) [View source](https://design.visa.com/components/list-item/?code_library=flutter&version=8.1.2) [Navigation bar](../components/navigation-bar) [View source](https://design.visa.com/components/horizontal-navigation/?code_library=css&version=1.6.2) [Pagination](../components/pagination) [View source](https://design.visa.com/components/pagination/?code_library=angular&version=5.1.3) [Progress bar](../components/progress-bar) [View",
+      "metadata": {
+        "startIndex": 6973,
+        "endIndex": 7936,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "version=1.6.2) [Pagination](../components/pagination) [View source](https://design.visa.com/components/pagination/?code_library=angular&version=5.1.3) [Progress bar](../components/progress-bar) [View source](https://design.visa.com/components/progress/?code_library=angular&version=5.1.3) [Radio button](../components/radio-button) [View source](https://design.visa.com/components/radio/?code_library=angular&version=5.1.3) [Segmented control](../components/segmented-control) [View source](https://design.visa.com/components/toggle-button/?code_library=angular&version=5.1.3) [Select](../components/select) [View source](https://design.visa.com/components/select/?code_library=angular&version=5.1.3#default-selects) [Sidebar](../components/sidebar) [View source](https://design.visa.com/components/vertical-navigation/?code_library=angular&version=5.1.3#default-vertical-navigations) [Slider](../components/slider) [View source](https://design.visa.com/components/slider/)",
+      "metadata": {
+        "startIndex": 7736,
+        "endIndex": 8710,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "sign.visa.com/components/vertical-navigation/?code_library=angular&version=5.1.3#default-vertical-navigations) [Slider](../components/slider) [View source](https://design.visa.com/components/slider/) [Switch](../components/switch) [View source](https://design.visa.com/components/switch/?code_library=angular&version=5.1.3) [Tabs](../components/tabs) [View source](https://design.visa.com/components/tabs/?code_library=angular&version=5.1.3) [Text field](../components/text-field) [View source](https://design.visa.com/components/input/?code_library=css&version=1.6.2) [Tooltip](../components/tooltip) [View source](https://design.visa.com/components/tooltip/?code_library=angular&version=5.1.3) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf)",
+      "metadata": {
+        "startIndex": 8510,
+        "endIndex": 9488,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 9288,
+        "endIndex": 10288,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "card",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:07.774Z",
+    "source_url": "https://designsystems.surf/design-systems/visa"
+  }
+}

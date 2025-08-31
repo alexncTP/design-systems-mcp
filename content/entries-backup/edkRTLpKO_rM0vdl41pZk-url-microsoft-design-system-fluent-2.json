@@ -1,0 +1,171 @@
+{
+  "id": "edkRTLpKO_rM0vdl41pZk",
+  "title": "Microsoft Design System Fluent 2",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/microsoft",
+    "ingested_at": "2025-08-30T13:09:24.283Z"
+  },
+  "content": "# Microsoft Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Fluent 2 from Directories: Components: Microsoft Design System created for designing internal products. Fluent 2 is a wide library of guidelines, examples, and recommendations based on deep expertise in product design helps designers and developers collaborate more effectively, and it functions seamlessly across various Apps and devices. Microsoft Design System includes design principles and guidelines and components for Web React, iOS, Windows, and Android. UI kits encompass design assets perfectly aligned with the code libraries, ensuring a smooth transition from design to development consistently. Advertisement Accessibility View source Color System Component overview Elevation Figma Repository Icons Layout Motion Responsive Spacing States Storybook Styles Theming Tokens Typography Voice and Tone Accordion Action bar Avatar Badges Button Cards Checkbox Combobox Dialog Divider Dropdown Icon Label Link Menus Popover Progress bar Progress indicator Radio button Select Slider Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Fluent 2fromMicrosoft](./microsoft#up-pixel) [Source](https://fluent2.microsoft.design/) [Figma](https://www.figma.com/@microsoft) [Repository](https://github.com/microsoft/fluentui) [Storybook](https://react.fluentui.dev/?path=/docs/concepts-introduction--page) [Accessibility](../directories/accessibility) [View source](https://fluent2.microsoft.design/accessibility) [Color System](../directories/color-system) [View source](https://fluent2.microsoft.design/color) [Component overview](../directories/component-overview) [View source](https://fluent2.microsoft.design/components/web/react) [Elevation](../directories/elevation) [View source](https://fluent2.microsoft.design/elevation) [Figma](../directories/figma) [View source](https://www.figma.com/@microsoft) [Repository](../directories/repository) [View source](https://github.com/microsoft/fluentui) [Icons](../directories/icons) [View source](https://fluent2.microsoft.design/iconography) [Layout](../directories/layout) [View source](https://fluent2.microsoft.design/layout) [Motion](../directories/motion) [View source](https://fluent2.microsoft.design/motion) [Responsive](../directories/responsive) [View source](https://fluent2.microsoft.design/layout#:~:text=other%20interface%20elements.-,Responsive%20design,-Responsive%20design%20is) [Spacing](../directories/spacing) [View source](https://fluent2.microsoft.design/layout#:~:text=Spacing%20and%20proximity) [States](../directories/states) [View source](https://fluent2.microsoft.design/color#:~:text=Alias%20colors%0AStorybook-,Interaction%20States,-The%20Fluent%20palettes) [Storybook](../directories/storybook) [View source](https://react.fluentui.dev/?path=/docs/concepts-introduction--page) [Styles](../directories/styles) [View source](https://fluent2.microsoft.design/shapes) [Theming](../directories/theming) [View source](https://fluent2.microsoft.design/design-tokens#:~:text=the%20exact%20values.-,Theming,-Fluent%E2%80%99s%20robust%20design) [Tokens](../directories/tokens) [View source](https://fluent2.microsoft.design/design-tokens) [Typography](../directories/typography) [View source](https://fluent2.microsoft.design/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://fluent2.microsoft.design/content-design) [Accordion](../components/accordion) [View source](https://fluent2.microsoft.design/components/web/react/accordion/usage) [Action bar](../components/action-bar) [View source](https://fluent2.microsoft.design/components/web/react/toolbar/usage) [Avatar](../components/avatar) [View source](https://fluent2.microsoft.design/components/web/react/avatar/usage) [Badges](../components/badges) [View source](https://fluent2.microsoft.design/components/web/react/badge/usage) [Button](../components/button) [View source](https://fluent2.microsoft.design/components/web/react/button/usage) [Cards](../components/cards) [View source](https://fluent2.microsoft.design/components/web/react/card/usage) [Checkbox](../components/checkbox) [View source](https://fluent2.microsoft.design/components/web/react/checkbox/usage) [Combobox](../components/combobox) [View source](https://fluent2.microsoft.design/components/web/react/combobox/usage) [Dialog](../components/dialog) [View source](https://fluent2.microsoft.design/components/web/react/dialog/usage) [Divider](../components/divider) [View source](https://fluent2.microsoft.design/components/web/react/divider/usage) [Dropdown](../components/dropdown) [View source](https://fluent2.microsoft.design/components/web/react/dropdown/usage) [Icon](../directories/icons) [View source](https://fluent2.microsoft.design/components/web/react/icon/code) [Label](../components/label) [View source](https://fluent2.microsoft.design/components/web/react/label/usage) [Link](../components/link) [View source](https://fluent2.microsoft.design/components/web/react/link/usage) [Menus](../components/menus) [View source](https://fluent2.microsoft.design/components/web/react/menu/usage) [Popover](../components/popover) [View source](https://fluent2.microsoft.design/components/web/react/popover/usage) [Progress bar](../components/progress-bar) [View source](https://fluent2.microsoft.design/components/web/react/progressbar/usage) [Progress indicator](../components/progress-indicator) [View source](https://fluent2.microsoft.design/components/web/react/spinner/usage) [Radio button](../components/radio-button) [View source](https://fluent2.microsoft.design/components/web/react/radiogroup/usage) [Select](../components/select) [View source](https://fluent2.microsoft.design/components/web/react/select/usage) [Slider](../components/slider) [View source](https://fluent2.microsoft.design/components/web/react/slider/usage) [Switch](../components/switch) [View source](https://fluent2.microsoft.design/components/web/react/switch/usage) [Tabs](../components/tabs) [View source](https://fluent2.microsoft.design/components/web/react/tablist/usage) [Text area](../components/text-area) [View source](https://fluent2.microsoft.design/components/web/react/textarea/usage) [Text field](../components/text-field) [View source](https://fluent2.microsoft.design/components/web/react/field/usage) [Tooltip](../components/tooltip) [View source](https://fluent2.microsoft.design/components/web/react/tooltip/usage) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Microsoft Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Fluent 2 from Directories: Components: Microsoft Design System created for designing internal products. Fluent 2 is a wide library of guidelines, examples, and recommendations based on deep expertise in product design helps",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 998,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "s: Components: Microsoft Design System created for designing internal products. Fluent 2 is a wide library of guidelines, examples, and recommendations based on deep expertise in product design helps designers and developers collaborate more effectively, and it functions seamlessly across various Apps and devices. Microsoft Design System includes design principles and guidelines and components for Web React, iOS, Windows, and Android. UI kits encompass design assets perfectly aligned with the code libraries, ensuring a smooth transition from design to development consistently. Advertisement Accessibility View source Color System Component overview Elevation Figma Repository Icons Layout Motion Responsive Spacing States Storybook Styles Theming Tokens Typography Voice and Tone Accordion Action bar Avatar Badges Button Cards Checkbox Combobox Dialog Divider Dropdown Icon Label Link Menus Popover Progress bar Progress indicator Radio button Select Slider Switch Tabs Text area Text field",
+      "metadata": {
+        "startIndex": 798,
+        "endIndex": 1797,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "tion bar Avatar Badges Button Cards Checkbox Combobox Dialog Divider Dropdown Icon Label Link Menus Popover Progress bar Progress indicator Radio button Select Slider Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric)",
+      "metadata": {
+        "startIndex": 1597,
+        "endIndex": 2586,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "app) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda)",
+      "metadata": {
+        "startIndex": 2386,
+        "endIndex": 3385,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "rpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Fluent 2fromMicrosoft](./microsoft#up-pixel) [Source](https://fluent2.microsoft.design/) [Figma](https://www.figma.com/@microsoft) [Repository](https://github.com/microsoft/fluentui) [Storybook](https://react.fluentui.dev/?path=/docs/concepts-introduction--page)",
+      "metadata": {
+        "startIndex": 3185,
+        "endIndex": 4161,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "luent2.microsoft.design/) [Figma](https://www.figma.com/@microsoft) [Repository](https://github.com/microsoft/fluentui) [Storybook](https://react.fluentui.dev/?path=/docs/concepts-introduction--page) [Accessibility](../directories/accessibility) [View source](https://fluent2.microsoft.design/accessibility) [Color System](../directories/color-system) [View source](https://fluent2.microsoft.design/color) [Component overview](../directories/component-overview) [View source](https://fluent2.microsoft.design/components/web/react) [Elevation](../directories/elevation) [View source](https://fluent2.microsoft.design/elevation) [Figma](../directories/figma) [View source](https://www.figma.com/@microsoft) [Repository](../directories/repository) [View source](https://github.com/microsoft/fluentui) [Icons](../directories/icons) [View source](https://fluent2.microsoft.design/iconography) [Layout](../directories/layout) [View source](https://fluent2.microsoft.design/layout)",
+      "metadata": {
+        "startIndex": 3961,
+        "endIndex": 4936,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "om/microsoft/fluentui) [Icons](../directories/icons) [View source](https://fluent2.microsoft.design/iconography) [Layout](../directories/layout) [View source](https://fluent2.microsoft.design/layout) [Motion](../directories/motion) [View source](https://fluent2.microsoft.design/motion) [Responsive](../directories/responsive) [View source](https://fluent2.microsoft.design/layout#:~:text=other%20interface%20elements.-,Responsive%20design,-Responsive%20design%20is) [Spacing](../directories/spacing) [View source](https://fluent2.microsoft.design/layout#:~:text=Spacing%20and%20proximity) [States](../directories/states) [View source](https://fluent2.microsoft.design/color#:~:text=Alias%20colors%0AStorybook-,Interaction%20States,-The%20Fluent%20palettes) [Storybook](../directories/storybook) [View source](https://react.fluentui.dev/?path=/docs/concepts-introduction--page) [Styles](../directories/styles) [View source](https://fluent2.microsoft.design/shapes) [Theming](../directories/theming)",
+      "metadata": {
+        "startIndex": 4736,
+        "endIndex": 5735,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ew source](https://react.fluentui.dev/?path=/docs/concepts-introduction--page) [Styles](../directories/styles) [View source](https://fluent2.microsoft.design/shapes) [Theming](../directories/theming) [View source](https://fluent2.microsoft.design/design-tokens#:~:text=the%20exact%20values.-,Theming,-Fluent%E2%80%99s%20robust%20design) [Tokens](../directories/tokens) [View source](https://fluent2.microsoft.design/design-tokens) [Typography](../directories/typography) [View source](https://fluent2.microsoft.design/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://fluent2.microsoft.design/content-design) [Accordion](../components/accordion) [View source](https://fluent2.microsoft.design/components/web/react/accordion/usage) [Action bar](../components/action-bar) [View source](https://fluent2.microsoft.design/components/web/react/toolbar/usage) [Avatar](../components/avatar) [View source](https://fluent2.microsoft.design/components/web/react/avatar/usage)",
+      "metadata": {
+        "startIndex": 5535,
+        "endIndex": 6533,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ar) [View source](https://fluent2.microsoft.design/components/web/react/toolbar/usage) [Avatar](../components/avatar) [View source](https://fluent2.microsoft.design/components/web/react/avatar/usage) [Badges](../components/badges) [View source](https://fluent2.microsoft.design/components/web/react/badge/usage) [Button](../components/button) [View source](https://fluent2.microsoft.design/components/web/react/button/usage) [Cards](../components/cards) [View source](https://fluent2.microsoft.design/components/web/react/card/usage) [Checkbox](../components/checkbox) [View source](https://fluent2.microsoft.design/components/web/react/checkbox/usage) [Combobox](../components/combobox) [View source](https://fluent2.microsoft.design/components/web/react/combobox/usage) [Dialog](../components/dialog) [View source](https://fluent2.microsoft.design/components/web/react/dialog/usage) [Divider](../components/divider) [View source](https://fluent2.microsoft.design/components/web/react/divider/usage)",
+      "metadata": {
+        "startIndex": 6333,
+        "endIndex": 7334,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": ") [View source](https://fluent2.microsoft.design/components/web/react/dialog/usage) [Divider](../components/divider) [View source](https://fluent2.microsoft.design/components/web/react/divider/usage) [Dropdown](../components/dropdown) [View source](https://fluent2.microsoft.design/components/web/react/dropdown/usage) [Icon](../directories/icons) [View source](https://fluent2.microsoft.design/components/web/react/icon/code) [Label](../components/label) [View source](https://fluent2.microsoft.design/components/web/react/label/usage) [Link](../components/link) [View source](https://fluent2.microsoft.design/components/web/react/link/usage) [Menus](../components/menus) [View source](https://fluent2.microsoft.design/components/web/react/menu/usage) [Popover](../components/popover) [View source](https://fluent2.microsoft.design/components/web/react/popover/usage) [Progress bar](../components/progress-bar) [View source](https://fluent2.microsoft.design/components/web/react/progressbar/usage)",
+      "metadata": {
+        "startIndex": 7134,
+        "endIndex": 8133,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "(https://fluent2.microsoft.design/components/web/react/popover/usage) [Progress bar](../components/progress-bar) [View source](https://fluent2.microsoft.design/components/web/react/progressbar/usage) [Progress indicator](../components/progress-indicator) [View source](https://fluent2.microsoft.design/components/web/react/spinner/usage) [Radio button](../components/radio-button) [View source](https://fluent2.microsoft.design/components/web/react/radiogroup/usage) [Select](../components/select) [View source](https://fluent2.microsoft.design/components/web/react/select/usage) [Slider](../components/slider) [View source](https://fluent2.microsoft.design/components/web/react/slider/usage) [Switch](../components/switch) [View source](https://fluent2.microsoft.design/components/web/react/switch/usage) [Tabs](../components/tabs) [View source](https://fluent2.microsoft.design/components/web/react/tablist/usage) [Text area](../components/text-area) [View",
+      "metadata": {
+        "startIndex": 7933,
+        "endIndex": 8892,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "soft.design/components/web/react/switch/usage) [Tabs](../components/tabs) [View source](https://fluent2.microsoft.design/components/web/react/tablist/usage) [Text area](../components/text-area) [View source](https://fluent2.microsoft.design/components/web/react/textarea/usage) [Text field](../components/text-field) [View source](https://fluent2.microsoft.design/components/web/react/field/usage) [Tooltip](../components/tooltip) [View source](https://fluent2.microsoft.design/components/web/react/tooltip/usage) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 8692,
+        "endIndex": 9692,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "tagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 9492,
+        "endIndex": 10492,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "card",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility",
+      "responsive"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:24.283Z",
+    "source_url": "https://designsystems.surf/design-systems/microsoft"
+  }
+}

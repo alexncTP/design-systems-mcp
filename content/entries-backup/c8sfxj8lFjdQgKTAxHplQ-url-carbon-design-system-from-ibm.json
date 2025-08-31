@@ -1,0 +1,173 @@
+{
+  "id": "c8sfxj8lFjdQgKTAxHplQ",
+  "title": "Carbon Design System from IBM",
+  "source": {
+    "type": "url",
+    "location": "https://designsystems.surf/design-systems/ibm",
+    "ingested_at": "2025-08-30T13:09:23.505Z"
+  },
+  "content": "# IBM Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Carbon from Directories: Components: Carbon is IBM's open-source design system for products and digital experiences. Funded and built by IBM, Carbon is open source and available for anyone to use and contribute to. The design system includes detailed guides, components, patterns, principles, standards, and the philosophy of design at IBM. With the as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors. Advertisement Accessibility View source Color System Component overview Data visualization Figma Repository Icons Layout Motion Patterns Spacing Storybook Theming Typography Accordion Alert banner Breadcrumb Button Cards Checkbox Code snippet Data table Date picker Dropdown Form Link List Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Slider Switch Tabs Tag Text field Tooltip Tree view Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CarbonfromIBM](./ibm#up-pixel) [IBM Design Language](https://www.ibm.com/design/language/) [Source](https://carbondesignsystem.com/) [Figma](https://www.figma.com/@ibmorg) [Repository](https://github.com/carbon-design-system) [Storybook](https://react.carbondesignsystem.com/?path=/docs/getting-started-welcome--welcome) [Accessibility](../directories/accessibility) [View source](https://carbondesignsystem.com/guidelines/accessibility/overview/) [Color System](../directories/color-system) [View source](https://carbondesignsystem.com/elements/color/overview/) [Component overview](../directories/component-overview) [View source](https://carbondesignsystem.com/components/overview/components/) [Data visualization](../directories/data-visualization) [View source](https://carbondesignsystem.com/data-visualization/chart-types/) [Figma](../directories/figma) [View source](https://www.figma.com/@ibmorg) [Repository](../directories/repository) [View source](https://github.com/carbon-design-system) [Icons](../directories/icons) [View source](https://carbondesignsystem.com/elements/icons/library/) [Layout](../directories/layout) [View source](https://carbondesignsystem.com/elements/2x-grid/overview/) [Motion](../directories/motion) [View source](https://carbondesignsystem.com/elements/motion/overview/) [Patterns](../directories/patterns) [View source](https://carbondesignsystem.com/patterns/overview/) [Spacing](../directories/spacing) [View source](https://carbondesignsystem.com/elements/spacing/overview/) [Storybook](../directories/storybook) [View source](https://react.carbondesignsystem.com/?path=/docs/getting-started-welcome--welcome) [Theming](../directories/theming) [View source](https://carbondesignsystem.com/elements/themes/overview/) [Typography](../directories/typography) [View source](https://carbondesignsystem.com/elements/typography/overview/) [Accordion](../components/accordion) [View source](https://carbondesignsystem.com/components/accordion/usage/) [Alert banner](../components/alert-banner) [View source](https://carbondesignsystem.com/components/notification/usage/) [Breadcrumb](../components/breadcrumbs) [View source](https://carbondesignsystem.com/components/breadcrumb/usage/) [Button](../components/button) [View source](https://carbondesignsystem.com/components/button/usage/) [Cards](../components/cards) [View source](https://carbondesignsystem.com/components/tile/usage/) [Checkbox](../components/checkbox) [View source](https://carbondesignsystem.com/components/checkbox/usage/) [Code snippet](../components/code-snippet) [View source](https://carbondesignsystem.com/components/code-snippet/usage/) [Data table](../components/data-table) [View source](https://carbondesignsystem.com/components/data-table/usage/) [Date picker](../components/date-picker) [View source](https://carbondesignsystem.com/components/date-picker/usage/) [Dropdown](../components/dropdown) [View source](https://carbondesignsystem.com/components/dropdown/usage/) [Form](../components/form) [View source](https://carbondesignsystem.com/components/form/usage/) [Link](../components/link) [View source](https://carbondesignsystem.com/components/link/usage/) [List](../components/list) [View source](https://carbondesignsystem.com/components/list/usage/) [Menus](../components/menus) [View source](https://carbondesignsystem.com/components/overflow-menu/usage/) [Modal](../components/modal) [View source](https://carbondesignsystem.com/components/modal/usage/) [Page header](../components/page-header) [View source](https://carbondesignsystem.com/components/UI-shell-header/usage/) [Pagination](../components/pagination) [View source](https://carbondesignsystem.com/components/pagination/usage/) [Popover](../components/popover) [View source](https://carbondesignsystem.com/components/popover/usage/) [Progress bar](../components/progress-bar) [View source](https://carbondesignsystem.com/components/progress-bar/usage/) [Progress indicator](../components/progress-indicator) [View source](https://carbondesignsystem.com/components/loading/usage/) [Radio button](../components/radio-button) [View source](https://carbondesignsystem.com/components/radio-button/usage/) [Search](../components/search) [View source](https://carbondesignsystem.com/components/search/usage/) [Segmented control](../components/segmented-control) [View source](https://carbondesignsystem.com/components/content-switcher/usage/) [Select](../components/select) [View source](https://carbondesignsystem.com/components/select/usage/) [Slider](../components/slider) [View source](https://carbondesignsystem.com/components/slider/usage/) [Switch](../components/switch) [View source](https://carbondesignsystem.com/components/toggle/usage/) [Tabs](../components/tabs) [View source](https://carbondesignsystem.com/components/tabs/usage/) [Tag](../components/tag) [View source](https://carbondesignsystem.com/components/tag/usage/) [Text field](../components/text-field) [View source](https://carbondesignsystem.com/components/text-input/usage/) [Tooltip](../components/tooltip) [View source](https://carbondesignsystem.com/components/tooltip/usage/) [Tree view](../components/tree-view) [View source](https://carbondesignsystem.com/components/tree-view/usage/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# IBM Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Carbon from Directories: Components: Carbon is IBM's open-source design system for products and digital experiences. Funded and built by IBM, Carbon is open source and available for anyone to use and contribute to.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 989,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ectories: Components: Carbon is IBM's open-source design system for products and digital experiences. Funded and built by IBM, Carbon is open source and available for anyone to use and contribute to. The design system includes detailed guides, components, patterns, principles, standards, and the philosophy of design at IBM. With the as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors. Advertisement Accessibility View source Color System Component overview Data visualization Figma Repository Icons Layout Motion Patterns Spacing Storybook Theming Typography Accordion Alert banner Breadcrumb Button Cards Checkbox Code snippet Data table Date picker Dropdown Form Link List Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Slider Switch Tabs Tag Text field Tooltip Tree view Design .surf © Dzeya OÜ.",
+      "metadata": {
+        "startIndex": 789,
+        "endIndex": 1764,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "st Menus Modal Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Slider Switch Tabs Tag Text field Tooltip Tree view Design .surf © Dzeya OÜ. All rights reserved ## Links [Systems74](../design-systems) [Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab)",
+      "metadata": {
+        "startIndex": 1564,
+        "endIndex": 2558,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
+      "metadata": {
+        "startIndex": 2358,
+        "endIndex": 3351,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CarbonfromIBM](./ibm#up-pixel) [IBM Design Language](https://www.ibm.com/design/language/) [Source](https://carbondesignsystem.com/) [Figma](https://www.figma.com/@ibmorg) [Repository](https://github.com/carbon-design-system)",
+      "metadata": {
+        "startIndex": 3151,
+        "endIndex": 4058,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "xel) [IBM Design Language](https://www.ibm.com/design/language/) [Source](https://carbondesignsystem.com/) [Figma](https://www.figma.com/@ibmorg) [Repository](https://github.com/carbon-design-system) [Storybook](https://react.carbondesignsystem.com/?path=/docs/getting-started-welcome--welcome) [Accessibility](../directories/accessibility) [View source](https://carbondesignsystem.com/guidelines/accessibility/overview/) [Color System](../directories/color-system) [View source](https://carbondesignsystem.com/elements/color/overview/) [Component overview](../directories/component-overview) [View source](https://carbondesignsystem.com/components/overview/components/) [Data visualization](../directories/data-visualization) [View source](https://carbondesignsystem.com/data-visualization/chart-types/) [Figma](../directories/figma) [View source](https://www.figma.com/@ibmorg) [Repository](../directories/repository) [View source](https://github.com/carbon-design-system)",
+      "metadata": {
+        "startIndex": 3858,
+        "endIndex": 4833,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "a-visualization/chart-types/) [Figma](../directories/figma) [View source](https://www.figma.com/@ibmorg) [Repository](../directories/repository) [View source](https://github.com/carbon-design-system) [Icons](../directories/icons) [View source](https://carbondesignsystem.com/elements/icons/library/) [Layout](../directories/layout) [View source](https://carbondesignsystem.com/elements/2x-grid/overview/) [Motion](../directories/motion) [View source](https://carbondesignsystem.com/elements/motion/overview/) [Patterns](../directories/patterns) [View source](https://carbondesignsystem.com/patterns/overview/) [Spacing](../directories/spacing) [View source](https://carbondesignsystem.com/elements/spacing/overview/) [Storybook](../directories/storybook) [View source](https://react.carbondesignsystem.com/?path=/docs/getting-started-welcome--welcome) [Theming](../directories/theming) [View source](https://carbondesignsystem.com/elements/themes/overview/) [Typography](../directories/typography)",
+      "metadata": {
+        "startIndex": 4633,
+        "endIndex": 5631,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "tem.com/?path=/docs/getting-started-welcome--welcome) [Theming](../directories/theming) [View source](https://carbondesignsystem.com/elements/themes/overview/) [Typography](../directories/typography) [View source](https://carbondesignsystem.com/elements/typography/overview/) [Accordion](../components/accordion) [View source](https://carbondesignsystem.com/components/accordion/usage/) [Alert banner](../components/alert-banner) [View source](https://carbondesignsystem.com/components/notification/usage/) [Breadcrumb](../components/breadcrumbs) [View source](https://carbondesignsystem.com/components/breadcrumb/usage/) [Button](../components/button) [View source](https://carbondesignsystem.com/components/button/usage/) [Cards](../components/cards) [View source](https://carbondesignsystem.com/components/tile/usage/) [Checkbox](../components/checkbox) [View source](https://carbondesignsystem.com/components/checkbox/usage/) [Code snippet](../components/code-snippet) [View",
+      "metadata": {
+        "startIndex": 5431,
+        "endIndex": 6410,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ondesignsystem.com/components/tile/usage/) [Checkbox](../components/checkbox) [View source](https://carbondesignsystem.com/components/checkbox/usage/) [Code snippet](../components/code-snippet) [View source](https://carbondesignsystem.com/components/code-snippet/usage/) [Data table](../components/data-table) [View source](https://carbondesignsystem.com/components/data-table/usage/) [Date picker](../components/date-picker) [View source](https://carbondesignsystem.com/components/date-picker/usage/) [Dropdown](../components/dropdown) [View source](https://carbondesignsystem.com/components/dropdown/usage/) [Form](../components/form) [View source](https://carbondesignsystem.com/components/form/usage/) [Link](../components/link) [View source](https://carbondesignsystem.com/components/link/usage/) [List](../components/list) [View source](https://carbondesignsystem.com/components/list/usage/) [Menus](../components/menus) [View",
+      "metadata": {
+        "startIndex": 6210,
+        "endIndex": 7143,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "[View source](https://carbondesignsystem.com/components/link/usage/) [List](../components/list) [View source](https://carbondesignsystem.com/components/list/usage/) [Menus](../components/menus) [View source](https://carbondesignsystem.com/components/overflow-menu/usage/) [Modal](../components/modal) [View source](https://carbondesignsystem.com/components/modal/usage/) [Page header](../components/page-header) [View source](https://carbondesignsystem.com/components/UI-shell-header/usage/) [Pagination](../components/pagination) [View source](https://carbondesignsystem.com/components/pagination/usage/) [Popover](../components/popover) [View source](https://carbondesignsystem.com/components/popover/usage/) [Progress bar](../components/progress-bar) [View source](https://carbondesignsystem.com/components/progress-bar/usage/) [Progress indicator](../components/progress-indicator) [View source](https://carbondesignsystem.com/components/loading/usage/) [Radio button](../components/radio-button)",
+      "metadata": {
+        "startIndex": 6943,
+        "endIndex": 7944,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "mponents/progress-bar/usage/) [Progress indicator](../components/progress-indicator) [View source](https://carbondesignsystem.com/components/loading/usage/) [Radio button](../components/radio-button) [View source](https://carbondesignsystem.com/components/radio-button/usage/) [Search](../components/search) [View source](https://carbondesignsystem.com/components/search/usage/) [Segmented control](../components/segmented-control) [View source](https://carbondesignsystem.com/components/content-switcher/usage/) [Select](../components/select) [View source](https://carbondesignsystem.com/components/select/usage/) [Slider](../components/slider) [View source](https://carbondesignsystem.com/components/slider/usage/) [Switch](../components/switch) [View source](https://carbondesignsystem.com/components/toggle/usage/) [Tabs](../components/tabs) [View source](https://carbondesignsystem.com/components/tabs/usage/) [Tag](../components/tag) [View",
+      "metadata": {
+        "startIndex": 7744,
+        "endIndex": 8690,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": ") [View source](https://carbondesignsystem.com/components/toggle/usage/) [Tabs](../components/tabs) [View source](https://carbondesignsystem.com/components/tabs/usage/) [Tag](../components/tag) [View source](https://carbondesignsystem.com/components/tag/usage/) [Text field](../components/text-field) [View source](https://carbondesignsystem.com/components/text-input/usage/) [Tooltip](../components/tooltip) [View source](https://carbondesignsystem.com/components/tooltip/usage/) [Tree view](../components/tree-view) [View source](https://carbondesignsystem.com/components/tree-view/usage/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share",
+      "metadata": {
+        "startIndex": 8490,
+        "endIndex": 9484,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "ponents) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
+      "metadata": {
+        "startIndex": 9284,
+        "endIndex": 10284,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "button",
+      "dropdown",
+      "form",
+      "modal",
+      "header",
+      "input",
+      "color",
+      "spacing",
+      "typography",
+      "accessibility"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-08-30T13:09:23.505Z",
+    "source_url": "https://designsystems.surf/design-systems/ibm"
+  }
+}
