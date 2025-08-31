@@ -173,3 +173,46 @@ dist
 
 # macOS
 .DS_Store
+
+# Test files and local development
+test-*.ts
+test-*.js
+**/test-*.ts
+**/test-*.js
+scripts/test-*.ts
+scripts/test-*.js
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+
+# Local HTML test files
+*.html
+chat-test.html
+ai-chat.html
+
+# Database files (should not be in repo)
+*.sql
+database/*.sql
+database/
+
+# Local content and reports
+content-quality-report.json
+local-content-library/
+content/entries/.crawl-progress.json
+
+# Migration and setup docs (move to wiki/docs if needed)
+migration-guide.md
+VECTOR_SEARCH_SETUP.md
+
+# Temporary and generated files
+*.tmp
+*.temp
+*.log
+*.bak
+*~
+
+# Local scripts output
+scripts/output/
+scripts/tmp/
+scripts/logs/
