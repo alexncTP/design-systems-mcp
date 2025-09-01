@@ -157,14 +157,16 @@ RESPONSE STRUCTURE (REQUIRED):
 Always structure your response with these two sections in this exact order:
 
 ## 📚 From the Knowledge Base
-[CRITICAL: This section MUST contain ONLY the results from your MCP tool searches (search_chunks and search_design_knowledge). Include ALL relevant information found from your searches with proper citations and source links. This is where the curated design systems content goes. If searches return results, summarize them here with their sources. Only say "no content found" if searches genuinely return empty results.
+[CRITICAL: This section MUST contain ONLY the results from your MCP tool searches (search_chunks and search_design_knowledge). Include ALL relevant information found from your searches with proper citations and source links. This is where the curated design systems content goes. If searches return results, provide COMPREHENSIVE summaries with their sources. This section should be RICH and DETAILED - more so than general knowledge because it contains specialized, curated content.
 
-⚠️ NEVER PUT GENERAL AI KNOWLEDGE HERE - ONLY MCP SEARCH RESULTS]
+⚠️ NEVER PUT GENERAL AI KNOWLEDGE HERE - ONLY MCP SEARCH RESULTS
+✅ This section should be the PRIMARY source of information, with more detail than General Knowledge]
 
 ## 🧠 From General Knowledge
-[CRITICAL: This section MUST contain ONLY your built-in training knowledge - NOT MCP search results. Add additional context, best practices, and insights from your training data that complement the knowledge base content above.
+[CRITICAL: This section MUST contain ONLY your built-in training knowledge - NOT MCP search results. Add brief, complementary context that supplements the rich Knowledge Base content above. This section should be SHORTER than Knowledge Base since the MCP has specialized content.
 
-⚠️ NEVER PUT MCP SEARCH RESULTS, CITATIONS, OR SOURCE LINKS HERE - ONLY YOUR TRAINING DATA]
+⚠️ NEVER PUT MCP SEARCH RESULTS, CITATIONS, OR SOURCE LINKS HERE - ONLY YOUR TRAINING DATA
+✅ Keep this section concise - the Knowledge Base above has the detailed, authoritative content]
 
 SEARCH STRATEGY:
 1. ALWAYS search using search_chunks for detailed information
@@ -211,7 +213,7 @@ const MCP_TOOLS = [
 					},
 					limit: {
 						type: "number",
-						description: "Maximum number of results (default: 15, paid plan optimized)"
+						description: "Maximum number of results (default: 20, paid plan optimized)"
 					}
 				},
 				required: ["query"]
@@ -232,7 +234,7 @@ const MCP_TOOLS = [
 					},
 					limit: {
 						type: "number",
-						description: "Maximum number of chunks (default: 8, paid plan optimized)"
+						description: "Maximum number of chunks (default: 12, paid plan optimized)"
 					}
 				},
 				required: ["query"]
@@ -282,7 +284,7 @@ async function callMcpTool(toolName: string, args: any, env?: any): Promise<stri
 			const searchResults = await searchEntries({
 				query: args.query,
 				category: args.category as Category | undefined,
-				limit: args.limit || 15,
+				limit: args.limit || 20,
 			}, env);
 
 			if (searchResults.length === 0) {
@@ -298,7 +300,7 @@ async function callMcpTool(toolName: string, args: any, env?: any): Promise<stri
 <em>⭐ Confidence:</em> ${entry.metadata.confidence}
 <em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
 
-${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
+${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
 <hr style="border: 1px solid #ddd; margin: 20px 0;">`
 			).join("\n\n");
@@ -308,7 +310,7 @@ ${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
 ${formattedResults}`;
 
 		case "search_chunks":
-			const chunkResults = searchChunks(args.query, args.limit || 8, {
+			const chunkResults = searchChunks(args.query, args.limit || 12, {
 				enableDiversity: true,
 				maxPerSource: 2,
 				preferUrls: true,
@@ -579,7 +581,7 @@ server.tool(
 <em>⭐ Confidence:</em> ${entry.metadata.confidence}
 <em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
 
-${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
+${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
 <hr style="border: 1px solid #ddd; margin: 20px 0;">`
 		).join("\n\n");
@@ -885,7 +887,7 @@ async function handleMcpRequest(request: Request, env?: Env): Promise<Response> 
 <em>⭐ Confidence:</em> ${entry.metadata.confidence}
 <em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
 
-${entry.content.slice(0, 300)}${entry.content.length > 300 ? "..." : ""}
+${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
 <hr style="border: 1px solid #ddd; margin: 20px 0;">`
 						).join("\n\n");
