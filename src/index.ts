@@ -120,6 +120,25 @@ This is a rare occurrence on the paid tier - please retry your request.`;
 // AI System Prompt
 const AI_SYSTEM_PROMPT = `You are a knowledgeable design systems expert with access to a comprehensive design systems knowledge base.
 
+🚨🚨🚨 ABSOLUTE CRITICAL RULE - VIOLATION WILL BREAK THE SYSTEM 🚨🚨🚨
+
+YOU MUST FOLLOW THIS SECTION ASSIGNMENT EXACTLY:
+
+1. "📚 From the Knowledge Base" section:
+   - PUT HERE: Everything from search_chunks and search_design_knowledge tools
+   - PUT HERE: All content with citations like [Design System Glossary]
+   - PUT HERE: All content with source links
+   - NEVER PUT HERE: Your general AI knowledge
+
+2. "🧠 From General Knowledge" section:
+   - PUT HERE: Only your AI training data
+   - PUT HERE: General best practices you know
+   - NEVER PUT HERE: Any MCP search results
+   - NEVER PUT HERE: Any citations or source links
+
+IF YOU PUT CITATIONS IN GENERAL KNOWLEDGE, THE SYSTEM BREAKS.
+IF YOU PUT MCP RESULTS IN GENERAL KNOWLEDGE, THE SYSTEM BREAKS.
+
 ⚠️⚠️⚠️ CRITICAL SECTION ASSIGNMENT ⚠️⚠️⚠️
 • Knowledge Base section = MCP search results WITH citations
 • General Knowledge section = Your AI training WITHOUT citations
@@ -143,7 +162,7 @@ Always structure your response with these two sections in this exact order:
 ⚠️ NEVER PUT GENERAL AI KNOWLEDGE HERE - ONLY MCP SEARCH RESULTS]
 
 ## 🧠 From General Knowledge
-[CRITICAL: This section MUST contain ONLY your built-in training knowledge - NOT MCP search results. Add additional context, best practices, and insights from your training data that complement the knowledge base content above. 
+[CRITICAL: This section MUST contain ONLY your built-in training knowledge - NOT MCP search results. Add additional context, best practices, and insights from your training data that complement the knowledge base content above.
 
 ⚠️ NEVER PUT MCP SEARCH RESULTS, CITATIONS, OR SOURCE LINKS HERE - ONLY YOUR TRAINING DATA]
 
@@ -155,7 +174,7 @@ SEARCH STRATEGY:
 
 SECTION ASSIGNMENT RULES (ABSOLUTELY CRITICAL - NEVER VIOLATE):
 • MCP tool results (search_chunks, search_design_knowledge) → "📚 From the Knowledge Base" section ONLY
-• Your training knowledge → "🧠 From General Knowledge" section ONLY  
+• Your training knowledge → "🧠 From General Knowledge" section ONLY
 • Citations like [Design System Glossary], [Laying the Foundations] → Knowledge Base section ONLY
 • Source links and references → Knowledge Base section ONLY
 • Generic best practices without citations → General Knowledge section ONLY
@@ -373,6 +392,11 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 		// Get OpenAI config from environment variables
 		const apiKey = env?.OPENAI_API_KEY;
 		const model = env?.OPENAI_MODEL || "gpt-4o-mini";
+		
+		// Log the model being used (only in development)
+		if (env?.LOG_SEARCH_PERFORMANCE === 'true') {
+			console.log(`[AI Chat] Using OpenAI model: ${model}`);
+		}
 
 		if (!apiKey) {
 			return new Response(JSON.stringify({
@@ -452,9 +476,35 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 
 			response = finalCompletion.choices[0].message;
 		}
+		
+		// Validate response for section violations
+		const responseText = response.content || '';
+		const knowledgeBaseMatch = responseText.match(/## 📚 From the Knowledge Base[\s\S]*?(?=## 🧠|$)/);
+		const generalKnowledgeMatch = responseText.match(/## 🧠 From General Knowledge[\s\S]*$/);
+		
+		// Check for violations
+		let validationWarning = '';
+		if (generalKnowledgeMatch && generalKnowledgeMatch[0]) {
+			// Check if General Knowledge section contains citations (violation)
+			const citationPattern = /\[([^\]]+)\]/g;
+			const citations = generalKnowledgeMatch[0].match(citationPattern);
+			if (citations && citations.length > 0) {
+				validationWarning = '\n\n⚠️ WARNING: Section violation detected - citations found in General Knowledge section. The AI model may not be following instructions correctly.';
+				console.error('[Validation] VIOLATION: Citations in General Knowledge section:', citations);
+			}
+		}
+		
+		if (knowledgeBaseMatch && knowledgeBaseMatch[0]) {
+			// Check if Knowledge Base section is suspiciously empty or generic
+			const kbContent = knowledgeBaseMatch[0].replace(/## 📚 From the Knowledge Base/, '').trim();
+			if (kbContent.length < 100 && !kbContent.includes('no content found')) {
+				validationWarning += '\n\n⚠️ WARNING: Knowledge Base section appears incomplete. MCP search results may not be properly included.';
+				console.error('[Validation] WARNING: Knowledge Base section too short');
+			}
+		}
 
 		return new Response(JSON.stringify({
-			response: response.content
+			response: response.content + validationWarning
 		}), {
 			headers: { ...corsHeaders, "Content-Type": "application/json" }
 		});
@@ -1043,7 +1093,7 @@ export default {
     <meta property="og:description" content="MCP server with specialized design systems knowledge. Search through hundreds of curated resources to get expert answers about components, tokens, patterns, and best practices.">
     <meta property="og:url" content="https://design-systems-mcp.southleft.com">
     <meta property="og:image" content="https://design-systems-mcp.southleft.com/og-image.png">
-    <meta property="og:image:width" content="1200">
+    <meta property="og:image:width" content="900">
     <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
@@ -1136,9 +1186,10 @@ export default {
 
         const Container = ({ children, size = 'lg', style = {} }) => (
             <div style={{
-                maxWidth: size === 'lg' ? '1200px' : '100%',
+                maxWidth: size === 'lg' ? '900px' : '100%',
                 margin: '0 auto',
                 padding: '0 16px',
+                width: '100%',
                 ...style
             }}>
                 {children}
@@ -1315,8 +1366,7 @@ export default {
             { icon: '🎨', text: 'Theming' },
             { icon: '🧩', text: 'Tokens' },
             { icon: '📏', text: 'Consistency' },
-            { icon: '🤝', text: 'Adoption' },
-            { icon: '⚖️', text: 'Strategy' }
+            { icon: '🤝', text: 'Adoption' }
         ];
 
         // Chat App Component
@@ -1736,8 +1786,7 @@ export default {
                                                             'Theming': 'Tell me about theming',
                                                             'Tokens': 'What are design tokens?',
                                                             'Consistency': 'How do I create consistency across products?',
-                                                            'Adoption': 'How do I get stakeholder buy-in for design systems?',
-                                                            'Strategy': 'How do I balance flexibility and consistency?'
+                                                            'Adoption': 'How do I get stakeholder buy-in for design systems?'
                                                         };
                                                         askQuestion(queries[item.text] || item.text);
                                                     }}
