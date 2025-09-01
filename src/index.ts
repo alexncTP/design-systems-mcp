@@ -393,7 +393,14 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 
 		// Get OpenAI config from environment variables
 		const apiKey = env?.OPENAI_API_KEY;
-		const model = env?.OPENAI_MODEL || "gpt-4o-mini";
+		let model = env?.OPENAI_MODEL || "gpt-4o";
+		
+		// Validate model name (include GPT-5 models)
+		const validModels = ['gpt-5-nano', 'gpt-5', 'gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-4', 'gpt-3.5-turbo'];
+		// Only warn if model doesn't match any known pattern
+		if (!validModels.some(m => model.includes(m)) && !model.includes('gpt')) {
+			console.warn(`[AI Chat] Unknown model "${model}" specified, proceeding anyway`);
+		}
 		
 		// Log the model being used (only in development)
 		if (env?.LOG_SEARCH_PERFORMANCE === 'true') {
@@ -1178,10 +1185,8 @@ export default {
         const { useState, useEffect, useRef } = React;
         const { createRoot } = ReactDOM;
 
-        // Set dark theme on document
-        React.useEffect(() => {
-            document.documentElement.setAttribute('data-color-scheme', 'dark');
-        }, []);
+        // Set dark theme on document immediately (not in useEffect)
+        document.documentElement.setAttribute('data-color-scheme', 'dark');
 
         const Container = ({ children, size = 'lg', style = {} }) => (
             <div style={{
