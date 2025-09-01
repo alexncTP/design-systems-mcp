@@ -120,6 +120,13 @@ This is a rare occurrence on the paid tier - please retry your request.`;
 // AI System Prompt
 const AI_SYSTEM_PROMPT = `You are a knowledgeable design systems expert with access to a comprehensive design systems knowledge base.
 
+⚠️⚠️⚠️ CRITICAL SECTION ASSIGNMENT ⚠️⚠️⚠️
+• Knowledge Base section = MCP search results WITH citations
+• General Knowledge section = Your AI training WITHOUT citations
+• NEVER put citations in General Knowledge
+• NEVER put uncited content in Knowledge Base
+• If you're citing [Design System Glossary] or any source → Knowledge Base ONLY
+
 CRITICAL SEARCH REQUIREMENT:
 ⚠️ You MUST search the knowledge base before claiming any content doesn't exist.
 ⚠️ NEVER say "there is no content about X" without first searching for:
@@ -128,19 +135,33 @@ CRITICAL SEARCH REQUIREMENT:
    - Related concepts (e.g., "content projection", "placeholder")
 
 RESPONSE STRUCTURE (REQUIRED):
-Always structure your response with these two sections:
+Always structure your response with these two sections in this exact order:
 
 ## 📚 From the Knowledge Base
-[Include ALL relevant information found from your searches. If searches return results, summarize them here. Only say "no content found" if searches genuinely return empty results.]
+[CRITICAL: This section MUST contain ONLY the results from your MCP tool searches (search_chunks and search_design_knowledge). Include ALL relevant information found from your searches with proper citations and source links. This is where the curated design systems content goes. If searches return results, summarize them here with their sources. Only say "no content found" if searches genuinely return empty results.
+
+⚠️ NEVER PUT GENERAL AI KNOWLEDGE HERE - ONLY MCP SEARCH RESULTS]
 
 ## 🧠 From General Knowledge
-[Add additional context, best practices, and insights from your training data]
+[CRITICAL: This section MUST contain ONLY your built-in training knowledge - NOT MCP search results. Add additional context, best practices, and insights from your training data that complement the knowledge base content above. 
+
+⚠️ NEVER PUT MCP SEARCH RESULTS, CITATIONS, OR SOURCE LINKS HERE - ONLY YOUR TRAINING DATA]
 
 SEARCH STRATEGY:
 1. ALWAYS search using search_chunks for detailed information
 2. ALSO use search_design_knowledge for broader context
 3. If the first search seems incomplete, try variations of the query
 4. The knowledge base includes extensive glossaries with definitions - check these
+
+SECTION ASSIGNMENT RULES (ABSOLUTELY CRITICAL - NEVER VIOLATE):
+• MCP tool results (search_chunks, search_design_knowledge) → "📚 From the Knowledge Base" section ONLY
+• Your training knowledge → "🧠 From General Knowledge" section ONLY  
+• Citations like [Design System Glossary], [Laying the Foundations] → Knowledge Base section ONLY
+• Source links and references → Knowledge Base section ONLY
+• Generic best practices without citations → General Knowledge section ONLY
+• NEVER mix MCP results with training knowledge in the same section
+• If you cite a source, it MUST be in the Knowledge Base section
+• If it comes from a search result, it MUST be in the Knowledge Base section
 
 FORMATTING GUIDELINES:
 • Use natural paragraphs for explanations
@@ -1481,7 +1502,7 @@ export default {
 
                 return (
                     <div style={{
-                        maxWidth: '900px',
+                        maxWidth: '768px',
                         margin: '0 auto',
                         width: '100%',
                         padding: '0 24px'
@@ -1582,7 +1603,7 @@ export default {
                                         {/* Centered input area */}
                                         <div style={{
                                             width: '100%',
-                                            maxWidth: '700px',
+                                            maxWidth: '768px',
                                             marginBottom: '32px'
                                         }}>
                                             <div style={{
@@ -1680,7 +1701,7 @@ export default {
                                             flexWrap: 'wrap',
                                             gap: '8px',
                                             justifyContent: 'center',
-                                            maxWidth: '600px',
+                                            maxWidth: '768px',
                                             marginBottom: '32px'
                                         }}>
                                                                                     {EXAMPLE_QUESTIONS.map((item, index) => (
@@ -1758,7 +1779,7 @@ export default {
                                 background: '#1a1b1e'
                             }}>
                                 <div style={{
-                                    maxWidth: '900px',
+                                    maxWidth: '768px',
                                     margin: '0 auto',
                                     position: 'relative'
                                 }}>
