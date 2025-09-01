@@ -302,7 +302,7 @@ async function callMcpTool(toolName: string, args: any, env?: any): Promise<stri
 
 ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
-<hr style="border: 1px solid #ddd; margin: 20px 0;">`
+<hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`
 			).join("\n\n");
 
 			return `FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}:
@@ -333,10 +333,10 @@ ${formattedResults}`;
 					.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
 					.trim();
 
-				return `<div style="margin-bottom: 24px;">
-<strong>${result.chunk.metadata?.section || "Insight"}</strong> from ${sourceLink}:
+				return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
+<strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
 
-<p style="margin: 12px 0; line-height: 1.6;">${cleanText}</p>
+<div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
 </div>`;
 			}).join("\n");
 
@@ -583,7 +583,7 @@ server.tool(
 
 ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
-<hr style="border: 1px solid #ddd; margin: 20px 0;">`
+<hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`
 		).join("\n\n");
 
 		return {
@@ -631,12 +631,13 @@ server.tool(
 			const cleanText = result.chunk.text
 				.replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
 				.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+				.replace(/^\s+|\s+$/gm, '') // Trim each line
 				.trim();
 
-			return `<div style="margin-bottom: 24px;">
-<strong>${result.chunk.metadata?.section || "Insight"}</strong> from ${sourceLink}:
+			return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
+<strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
 
-<p style="margin: 12px 0; line-height: 1.6;">${cleanText}</p>
+<div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
 </div>`;
 		}).join("\n");
 
@@ -889,7 +890,7 @@ async function handleMcpRequest(request: Request, env?: Env): Promise<Response> 
 
 ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
-<hr style="border: 1px solid #ddd; margin: 20px 0;">`
+<hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`
 						).join("\n\n");
 
 						result = {
@@ -931,10 +932,10 @@ ${formattedResults}`
 								.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
 								.trim();
 
-							return `<div style="margin-bottom: 24px;">
-<strong>${result.chunk.metadata?.section || "Insight"}</strong> from ${sourceLink}:
+							return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
+<strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
 
-<p style="margin: 12px 0; line-height: 1.6;">${cleanText}</p>
+<div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
 </div>`;
 						}).join("\n");
 
@@ -1161,30 +1162,26 @@ export default {
     <!-- Babel Standalone for JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Mantine Core and Hooks -->
-    <script src="https://unpkg.com/@mantine/core@7.12.2/esm/index.js" type="module"></script>
-    <script src="https://unpkg.com/@mantine/hooks@7.12.2/esm/index.js" type="module"></script>
-
-    <!-- Mantine CSS -->
-    <link href="https://unpkg.com/@mantine/core@7.12.2/styles.css" rel="stylesheet" />
-
-    <!-- Marked for markdown parsing -->
+    <!-- Marked for markdown parsing - preload for better performance -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/marked/marked.min.js" as="script">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    <!-- Tabler Icons -->
-    <script src="https://unpkg.com/@tabler/icons-react@3.14.0/dist/index.umd.js"></script>
-
     <script type="text/babel">
+        // Configure marked for better rendering
+        marked.setOptions({
+            breaks: true,
+            gfm: true,
+            headerIds: false,
+            mangle: false
+        });
+        
         const { useState, useEffect, useRef } = React;
         const { createRoot } = ReactDOM;
 
-        // Mock Mantine components and hooks (since CDN import might not work perfectly)
-        const MantineProvider = ({ children, defaultColorScheme }) => {
-            React.useEffect(() => {
-                document.documentElement.setAttribute('data-mantine-color-scheme', defaultColorScheme);
-            }, [defaultColorScheme]);
-            return children;
-        };
+        // Set dark theme on document
+        React.useEffect(() => {
+            document.documentElement.setAttribute('data-color-scheme', 'dark');
+        }, []);
 
         const Container = ({ children, size = 'lg', style = {} }) => (
             <div style={{
@@ -1383,6 +1380,11 @@ export default {
             const textareaRef = useRef(null);
             const textareaRef2 = useRef(null);
 
+            // Set dark theme on document
+            useEffect(() => {
+                document.documentElement.setAttribute('data-color-scheme', 'dark');
+            }, []);
+
             const scrollToBottom = () => {
                 messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
             };
@@ -1391,18 +1393,25 @@ export default {
                 scrollToBottom();
             }, [messages]);
 
-            // Auto-resize textareas
-            useEffect(() => {
-                const autoResize = (textarea) => {
-                    if (textarea) {
-                        textarea.style.height = 'auto';
-                        textarea.style.height = Math.min(textarea.scrollHeight, 200) + 'px';
-                    }
-                };
+            // Auto-resize textareas with improved UX
+            const autoResizeTextarea = (textarea) => {
+                if (textarea) {
+                    textarea.style.height = 'auto';
+                    const newHeight = Math.min(Math.max(textarea.scrollHeight, 52), 200);
+                    textarea.style.height = newHeight + 'px';
+                }
+            };
 
-                autoResize(textareaRef.current);
-                autoResize(textareaRef2.current);
+            useEffect(() => {
+                autoResizeTextarea(textareaRef.current);
+                autoResizeTextarea(textareaRef2.current);
             }, [inputValue]);
+
+            // Add input handler for real-time resizing
+            const handleTextareaInput = (e) => {
+                setInputValue(e.target.value);
+                autoResizeTextarea(e.target);
+            };
 
             const addMessage = (type, content) => {
                 setMessages(prev => [...prev, { type, content, id: Date.now() }]);
@@ -1561,7 +1570,7 @@ export default {
                     }}>
                         <div style={getMessageStyle(message.type)}>
                             {message.type === 'assistant' ? (
-                                <div dangerouslySetInnerHTML={renderContent(message.content, message.type)} />
+                                <div className="message-content" dangerouslySetInnerHTML={renderContent(message.content, message.type)} />
                             ) : (
                                 renderContent(message.content, message.type)
                             )}
@@ -1674,7 +1683,7 @@ export default {
                                                     ref={textareaRef}
                                                     placeholder="Ask me anything about design systems..."
                                                     value={inputValue}
-                                                    onChange={(e) => setInputValue(e.target.value)}
+                                                    onChange={(e) => handleTextareaInput(e)}
                                                     onKeyDown={handleKeyPress}
                                                     rows={1}
                                                     style={{
@@ -1959,11 +1968,7 @@ export default {
         function init() {
             document.getElementById('loader').style.display = 'none';
             const root = createRoot(document.getElementById('root'));
-            root.render(
-                <MantineProvider defaultColorScheme="dark">
-                    <ChatApp />
-                </MantineProvider>
-            );
+            root.render(<ChatApp />);
         }
 
         // Initialize when everything is loaded
@@ -1999,6 +2004,113 @@ export default {
         }
         ::-webkit-scrollbar-thumb:hover {
             background: #5c6370;
+        }
+
+        /* Enhanced markdown styling */
+        .message-content {
+            line-height: 1.6;
+            color: #c1c2c5;
+        }
+        
+        .message-content h1,
+        .message-content h2,
+        .message-content h3,
+        .message-content h4,
+        .message-content h5,
+        .message-content h6 {
+            color: #e9ecef;
+            margin: 16px 0 12px 0;
+            font-weight: 600;
+        }
+        
+        .message-content h1 { font-size: 24px; }
+        .message-content h2 { font-size: 20px; }
+        .message-content h3 { font-size: 18px; }
+        .message-content h4 { font-size: 16px; }
+        
+        .message-content p {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+        
+        .message-content ul,
+        .message-content ol {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+        
+        .message-content li {
+            margin: 4px 0;
+            line-height: 1.4;
+        }
+        
+        .message-content ul li {
+            list-style-type: disc;
+        }
+        
+        .message-content ol li {
+            list-style-type: decimal;
+        }
+        
+        .message-content a {
+            color: #339af0;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        
+        .message-content a:hover {
+            border-bottom-color: #339af0;
+        }
+        
+        .message-content code {
+            background: #2c2e33;
+            color: #ff7979;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+            font-size: 14px;
+        }
+        
+        .message-content pre {
+            background: #2c2e33;
+            color: #c1c2c5;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+        
+        .message-content pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        
+        .message-content blockquote {
+            border-left: 3px solid #339af0;
+            background: #2c2e33;
+            margin: 16px 0;
+            padding: 12px 16px;
+            color: #909296;
+            font-style: italic;
+        }
+        
+        .message-content hr {
+            border: none;
+            border-top: 1px solid #2c2e33;
+            margin: 16px 0;
+            opacity: 0.5;
+        }
+        
+        .message-content strong {
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        .message-content em {
+            color: #b3b6ba;
+            font-style: italic;
         }
     </style>
 </body>
