@@ -436,6 +436,7 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 			],
 			tools: MCP_TOOLS,
 			tool_choice: "auto",
+			max_tokens: 4000,  // Ensure we get full responses
 		});
 
 		let response = completion.choices[0].message;
@@ -481,6 +482,7 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 			const finalCompletion = await openai.chat.completions.create({
 				model: model,
 				messages: messages,
+				max_tokens: 4000,  // Ensure we get full responses
 			});
 
 			response = finalCompletion.choices[0].message;
@@ -1398,11 +1400,11 @@ export default {
                 scrollToBottom();
             }, [messages]);
 
-            // Auto-resize textareas with improved UX
+            // Auto-resize textareas
             const autoResizeTextarea = (textarea) => {
                 if (textarea) {
                     textarea.style.height = 'auto';
-                    const newHeight = Math.min(Math.max(textarea.scrollHeight, 52), 200);
+                    const newHeight = Math.min(textarea.scrollHeight, 200);
                     textarea.style.height = newHeight + 'px';
                 }
             };
@@ -1700,9 +1702,8 @@ export default {
                                                         fontFamily: 'inherit',
                                                         resize: 'none',
                                                         outline: 'none',
-                                                        padding: '16px 20px',
+                                                        padding: '12px 16px',
                                                         lineHeight: '1.5',
-                                                        minHeight: '52px',
                                                         maxHeight: '200px',
                                                         overflowY: 'auto'
                                                     }}
@@ -1872,9 +1873,8 @@ export default {
                                                 fontFamily: 'inherit',
                                                 resize: 'none',
                                                 outline: 'none',
-                                                padding: '16px 20px',
+                                                padding: '12px 16px',
                                                 lineHeight: '1.5',
-                                                minHeight: '52px',
                                                 maxHeight: '200px',
                                                 overflowY: 'auto'
                                             }}
@@ -2023,8 +2023,8 @@ export default {
         .message-content h4,
         .message-content h5,
         .message-content h6 {
-            color: #e9ecef;
-            margin: 16px 0 12px 0;
+            color: #339af0;
+            margin: 24px 0 16px 0;
             font-weight: 600;
         }
         
@@ -2034,8 +2034,8 @@ export default {
         .message-content h4 { font-size: 16px; }
         
         .message-content p {
-            margin: 8px 0;
-            line-height: 1.5;
+            margin: 12px 0;
+            line-height: 1.6;
         }
         
         .message-content ul,
@@ -2103,9 +2103,8 @@ export default {
         
         .message-content hr {
             border: none;
-            border-top: 1px solid #2c2e33;
-            margin: 16px 0;
-            opacity: 0.5;
+            border-top: 1px solid #373a40;
+            margin: 20px 0;
         }
         
         .message-content strong {
