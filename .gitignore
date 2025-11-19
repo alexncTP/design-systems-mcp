@@ -216,3 +216,14 @@ VECTOR_SEARCH_SETUP.md
 scripts/output/
 scripts/tmp/
 scripts/logs/
+
+# MCP Server cache and configuration
+.serena/
+
+# Backup directories
+content/entries.backup/
+
+# Temporary documentation and analysis
+CRITICAL_ANALYSIS.md
+SETUP_VECTOR_SEARCH.md
+docs/

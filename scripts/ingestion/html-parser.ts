@@ -24,27 +24,61 @@ export async function parseHTML(
   // Load HTML with cheerio
   const $ = cheerio.load(htmlContent);
   
-  // Remove unwanted elements entirely
+  // Remove unwanted elements entirely - do this FIRST before any extraction
   $('script').remove();
   $('style').remove();
   $('noscript').remove();
   $('svg').remove();
   $('iframe').remove();
-  $('img').remove(); // Remove images as they don't contribute text
-  
-  // Don't remove elements based on classes or styles - just extract their text
-  // Many modern frameworks use these extensively
-  
+  $('img').remove();
+  $('nav').remove();
+  $('header').remove();
+  $('footer').remove();
+  $('aside').remove();
+  $('menu').remove();
+  $('.navigation, .nav, .menu, .header, .footer, .sidebar, .cookie, .ad, .advertisement, .promo, .social, .share').remove();
+  $('[role="navigation"], [role="banner"], [role="contentinfo"], [role="complementary"]').remove();
+
   // Extract title
   const title = $('title').text() || $('h1').first().text() || 'Untitled Document';
-  
+
   // Build structured content
   const contentParts: string[] = [];
   const seenTexts = new Set<string>(); // Track seen text to avoid duplicates
-  
-  // Extract main content areas
-  const mainContent = $('main, article, [role="main"]').first();
-  const contentRoot = mainContent.length > 0 ? mainContent : $('body');
+
+  // Smart content extraction: Try multiple strategies in priority order
+  let contentRoot = $('article').first(); // 1. Try <article> tag first (best for blog posts/articles)
+
+  if (contentRoot.length === 0) {
+    contentRoot = $('main, [role="main"]').first(); // 2. Try <main> or role="main"
+  }
+
+  if (contentRoot.length === 0) {
+    // 3. Fallback: Find H1 and use its parent container
+    const h1 = $('h1').first();
+    if (h1.length > 0) {
+      // Traverse up to find a meaningful container (section, div, or article)
+      let parent = h1.parent();
+      while (parent.length > 0 && parent.prop('tagName') !== 'BODY') {
+        const tagName = parent.prop('tagName').toLowerCase();
+        // Stop at semantic containers
+        if (['article', 'section', 'main', 'div'].includes(tagName)) {
+          // Check if this container has substantial content
+          const textLength = parent.text().trim().length;
+          if (textLength > 500) { // Reasonable content threshold
+            contentRoot = parent;
+            break;
+          }
+        }
+        parent = parent.parent();
+      }
+    }
+  }
+
+  // Final fallback to body if nothing found
+  if (contentRoot.length === 0) {
+    contentRoot = $('body');
+  }
   
   // First, extract all headings to maintain structure
   $('h1, h2, h3, h4, h5, h6').each((_, elem) => {
