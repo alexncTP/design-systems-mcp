@@ -802,7 +802,12 @@ async function handleMcpRequest(request: Request, env?: Env): Promise<Response> 
           serverInfo: {
             name: "Design Systems Knowledge Base",
             version: "1.0.0",
-            icon: "🎨"
+            icons: [
+              {
+                url: "https://design-systems-mcp.southleft.com/icon.png",
+                mimeType: "image/png"
+              }
+            ]
           }
         }
       }), {
