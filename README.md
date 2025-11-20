@@ -137,10 +137,7 @@ Choose your AI coding tool below for setup instructions:
 
 **Quick Setup via CLI:**
 ```bash
-claude mcp add design-systems \
-  --type http \
-  --url https://design-systems-mcp.southleft.com/mcp \
-  --scope project
+claude mcp add --transport http design-systems https://design-systems-mcp.southleft.com/mcp
 ```
 
 **Or manually edit `.mcp.json`:**
