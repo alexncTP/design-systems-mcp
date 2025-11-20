@@ -944,23 +944,23 @@ async function handleMcpRequest(request: Request, env?: Env): Promise<Response> 
             };
           } else {
             const formattedResults = searchResults.map((entry, index) =>
-              `<strong>🔍 ${index + 1}. ${entry.title}</strong>
+              `**🔍 ${index + 1}. ${entry.title}**
 
-<em>📂 Category:</em> ${entry.metadata.category}
-<em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
-<em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
-<em>⭐ Confidence:</em> ${entry.metadata.confidence}
-<em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
+📂 Category: ${entry.metadata.category}
+🏷️ System: ${entry.metadata.system || "N/A"}
+🔖 Tags: ${entry.metadata.tags.join(", ")}
+⭐ Confidence: ${entry.metadata.confidence}
+🔗 Source: [${entry.source?.location || entry.metadata?.source_url || "N/A"}](${entry.source?.location || entry.metadata?.source_url || "#"})
 
 ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
-<hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`
+---`
             ).join("\n\n");
 
             result = {
               content: [{
                 type: "text",
-                text: `<strong>🔍 FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}</strong>
+                text: `**🔍 FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}**
 
 ${formattedResults}`
               }],
@@ -1010,7 +1010,7 @@ ${formattedResults}`
             const formattedChunkResults = chunkResultsList.map((chunkResult, index) => {
               const { displayName, url } = formatSourceReference(chunkResult.entry);
               const sourceLink = url
-                ? `<a href="${url}" target="_blank">${displayName}</a>`
+                ? `[${displayName}](${url})`
                 : displayName;
 
               // Clean up the chunk text to avoid nested bullets
@@ -1019,17 +1019,18 @@ ${formattedResults}`
                 .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
                 .trim();
 
-              return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
-<strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${chunkResult.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
+              return `### ${chunkResult.chunk.metadata?.section || "Insight"}
+*Source: ${sourceLink}*
 
-<div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
-</div>`;
-            }).join("\n");
+${cleanText}
+
+---`;
+            }).join("\n\n");
 
             result = {
               content: [{
                 type: "text",
-                text: `<strong>🎯 FOUND ${chunkResultsList.length} RELEVANT CHUNK${chunkResultsList.length === 1 ? "" : "S"}</strong>
+                text: `**🎯 FOUND ${chunkResultsList.length} RELEVANT CHUNK${chunkResultsList.length === 1 ? "" : "S"}**
 
 ${formattedChunkResults}`
               }],
