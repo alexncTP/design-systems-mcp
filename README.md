@@ -6,14 +6,23 @@ An AI-powered Model Context Protocol (MCP) server providing intelligent access t
 
 ## Features
 
-- 🎯 **Semantic Vector Search** - Supabase + OpenAI embeddings with 188+ curated entries
-- 📚 **Authoritative Content** - W3C DTCG, WCAG 2.2, ARIA practices, and leading design systems
-- 🤖 **AI-Powered Chat** - Natural language queries with GPT-4 integration
-- 🔍 **Hybrid Search** - Combines vector similarity with keyword matching (0.15 threshold)
-- 🚀 **Cloudflare Workers** - Scalable serverless deployment with edge distribution
-- 🌐 **Universal MCP Support** - Works with Claude Desktop, Cursor, Cline, and any MCP client
-- 🎨 **Rich Formatting** - Markdown rendering with syntax highlighting
-- 🧪 **Local Development** - Full local testing environment
+### Core Capabilities
+- 🎯 **Production Vector Search** - Supabase pgvector with OpenAI embeddings for semantic understanding
+- 📚 **188+ Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, and 10+ major design systems
+- 🔍 **Hybrid Search Architecture** - Combines vector similarity with keyword matching (0.15 threshold)
+- 🚀 **Edge-Optimized** - Cloudflare Workers deployment with global distribution
+
+### Latest Updates
+- ✨ **36 New Authoritative Sources** - Fresh content from Style Dictionary, Figma docs, CSS specs, and more
+- 🔧 **Production Vector Search** - Now fully operational with proper Supabase integration
+- 📖 **Universal MCP Client Support** - Pre-configured setups for 7+ popular AI coding tools
+- 🎨 **Rich Content Formatting** - Enhanced markdown rendering with syntax highlighting
+
+### Developer Experience
+- 🌐 **Zero Setup Required** - Public MCP endpoint ready to use
+- 🤖 **AI Chat Interface** - Natural language queries with GPT-4o integration
+- 🧪 **Local Development** - Complete testing environment with hot reload
+- 📝 **Comprehensive Docs** - Updated setup guides for every major MCP client
 
 ## Content Library
 
@@ -85,10 +94,26 @@ See [Connect to MCP Clients](#connect-to-mcp-clients) section below for detailed
 
 ## Connect to MCP Clients
 
-### Claude Desktop
+Choose your AI coding tool below for setup instructions:
+
+<details>
+<summary><b>Claude Desktop</b> - Click to expand configuration</summary>
 
 **Location:** macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
 
+**Option 1: SSE Transport (Recommended)**
+```json
+{
+  "mcpServers": {
+    "design-systems": {
+      "url": "https://design-systems-mcp.southleft.com/mcp",
+      "transport": "sse"
+    }
+  }
+}
+```
+
+**Option 2: Node Proxy**
 ```json
 {
   "mcpServers": {
@@ -103,22 +128,42 @@ See [Connect to MCP Clients](#connect-to-mcp-clients) section below for detailed
 }
 ```
 
-Or use SSE transport:
+**Restart Claude Desktop** after updating the configuration.
 
+</details>
+
+<details>
+<summary><b>Claude Code (CLI)</b> - Click to expand configuration</summary>
+
+**Quick Setup via CLI:**
+```bash
+claude mcp add design-systems \
+  --type http \
+  --url https://design-systems-mcp.southleft.com/mcp \
+  --scope project
+```
+
+**Or manually edit `.mcp.json`:**
 ```json
 {
   "mcpServers": {
     "design-systems": {
-      "url": "https://design-systems-mcp.southleft.com/mcp",
-      "transport": "sse"
+      "type": "http",
+      "url": "https://design-systems-mcp.southleft.com/mcp"
     }
   }
 }
 ```
 
-**Restart Claude Desktop** after updating the configuration.
+**Verify connection:**
+```bash
+claude mcp list
+```
 
-### Cursor IDE
+</details>
+
+<details>
+<summary><b>Cursor IDE</b> - Click to expand configuration</summary>
 
 **Location:** `~/.cursor/mcp_config.json` or `~/.config/cursor/mcp_config.json`
 
@@ -134,12 +179,14 @@ Or use SSE transport:
 
 **Restart Cursor** after updating the configuration.
 
-### Cline (VSCode Extension)
+</details>
+
+<details>
+<summary><b>Cline (VSCode Extension)</b> - Click to expand configuration</summary>
 
 **Location:** VSCode Settings → Extensions → Cline → MCP Settings
 
-Add to MCP servers configuration:
-
+**Add to MCP servers configuration:**
 ```json
 {
   "design-systems": {
@@ -149,30 +196,14 @@ Add to MCP servers configuration:
 }
 ```
 
-Or add via Command Palette: `Cline: Add MCP Server`
+**Or add via Command Palette:** `Cline: Add MCP Server`
 
 **Reload VSCode** after configuration.
 
-### Claude Code (CLI)
+</details>
 
-Add to `~/.claude-code/mcp.json`:
-
-```json
-{
-  "mcpServers": {
-    "design-systems": {
-      "url": "https://design-systems-mcp.southleft.com/mcp"
-    }
-  }
-}
-```
-
-Verify connection:
-```bash
-claude-code mcp list
-```
-
-### Continue (VSCode Extension)
+<details>
+<summary><b>Continue (VSCode Extension)</b> - Click to expand configuration</summary>
 
 **Location:** VSCode Settings → Extensions → Continue → config.json
 
@@ -188,7 +219,10 @@ claude-code mcp list
 }
 ```
 
-### Zed Editor
+</details>
+
+<details>
+<summary><b>Zed Editor</b> - Click to expand configuration</summary>
 
 **Location:** `~/.config/zed/settings.json`
 
@@ -204,7 +238,10 @@ claude-code mcp list
 }
 ```
 
-### Generic MCP Client Configuration
+</details>
+
+<details>
+<summary><b>Generic MCP Client</b> - Click to expand configuration</summary>
 
 For any MCP client supporting remote servers:
 
@@ -214,9 +251,12 @@ For any MCP client supporting remote servers:
 
 **Transport:** Standard MCP transport (stdio, SSE, or HTTP)
 
-### Local Development Setup
+</details>
 
-To connect to your local development server instead:
+<details>
+<summary><b>Local Development Setup</b> - Click to expand configuration</summary>
+
+To connect to your local development server instead of the public endpoint:
 
 ```json
 {
@@ -229,6 +269,8 @@ To connect to your local development server instead:
 ```
 
 **Note:** Local server requires running `npm run dev` first.
+
+</details>
 
 ### Connection Troubleshooting
 
