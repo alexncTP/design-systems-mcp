@@ -1,0 +1,190 @@
+{
+  "id": "bZOngTUCQgIsbdUamk9Eo",
+  "title": "ITCSS Architecture",
+  "source": {
+    "type": "url",
+    "location": "https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/",
+    "ingested_at": "2025-11-20T13:23:07.106Z"
+  },
+  "content": "# ITCSS: Scalable and Maintainable CSS Architecture ## Introduction ## What is ITCSS? ## Tips on using ITCSS ### Adjust ITCSS to your needs ### Use BEMIT ### Organize layers to subfolders ### Use one file per component ### Limit nesting ### Do not overuse objects (or omit them completely) ### Separate spacing system from components ### Don’t worry about styles repetition ## Conclusion ## Resources ## Version history ### Related Solutions #### Custom Web Development #### Website Maintenance Plans ### Related Problems #### Technology Debt ### Related Insights ### Stay Ahead with Expert Insights ### About the author Oct 21, 2021 How do I make my CSS scalable and maintainable? It’s a concern for every front-end developer. ITCSS has an answer. In 2016, we published an article on ITCSS (Inverted Triangle CSS), where we shared our experience with its implementation into our own development workflow. Back then ITCSS, created by , was a new CSS methodology. Resources on ITCSS were rare so our post got to the first position in Google and has stayed there till today. This allows us to share some first-hand data about people’s interest in it. Over the years, the blog post has accumulated 290k page views. It still gets about 1500 page views a month, but there is a clear declining trend visible. This is in line with findings, where interest in ITCSS dropped from 40% to 37% in one year. If we look at from the same resource, we will find ITCSS in the low usage / high satisfaction quadrant. ITCSS remains partially proprietary and there isn’t any open source documentation available. While this prevents ITCSS wider adoption, we respect Harry’s intellectual property. The best way to learn ITCSS is his . Once you are familiar with the basic ideas, this article helps you gain a wider perspective on ITCSS and fill in some blanks. ITCSS stands for It helps you organize your project CSS files in such a way that you can better CSS specifics like and . You can use ITCSS with preprocessors or without them and it is compatible with CSS methodologies like BEM, SMACSS or OOCSS. The main idea of ITCSS is that it separates your CSS codebase into several sections (called ), which can be represented as sections of an inverted triangle: Those layers are: • – used with preprocessors and contain font, colors definitions, etc. • – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers. • – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS. • – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here. • – class-based selectors which define undecorated design patterns, for example the media object known from OOCSS • – specific UI components. This is where most of our work takes place. We often compose UI components of Objects and Components • – utilities and helper classes with ability to override anything which goes before in the triangle, e.g. hide helper class The triangle also shows how styles appear in the resulting CSS: from generic styles to explicit ones, from low-specificity selectors to more specific ones and from far-reaching to localized ones. Such CSS organization will help you avoid Specificity Wars and will result in . Over the years of using ITCSS at Xfive, we have collected a few tips on how to work with it. ITCSS is flexible in terms of your workflow and tools. Are you concerned about the amount of boilerplate involved? This is up to you. ITCSS doesn’t prescribe that you need to have all layers present (only in what order they should be if they are present). In a minimal setup, you can have just components with default elements styling coming from the browser. Of course, this is not very practical. Almost everyone uses some settings, reset and/or normalize CSS for good reasons. Use the , especially its Namespaces (.c-user, .o-media, etc.). This will allow you to focus on solving front-end challenges rather than thinking up style names and their location. In-depth helps as well. Organize ITCSS layers into subfolders and use Sass or another preprocessor to compile newly added files. Store each component to its own file. Do not mix styles from different components in one file like this: If you use modern UI libraries like React or Vue you can keep all component related files in one folder: Limit nesting to 2 levels. Many developers think that using the (&) is a requirement just because they use Sass. There’s nothing wrong with flat structure with full selectors expanded, either. Often it’s easier to scan and search the code. Use the style you prefer, but avoid deep nesting, which results in overqualified selectors. Those are against the spirit of ITCSS. Objects are the most confusing part of ITCSS. In theory, they make perfect sense, but things can get out of control easily. Check out this example from our own website built a few years ago: The premise of ITCSS is that it’s easy to track down where particular styles come from and how they affect the styling of elements on the page. This can be difficult to do if the style of a component comes from two or more sources, like an object and a component. But often it’s hard to draw clear boundaries between various CSS properties and whether they belong to an object or a component. There are a few things you can do to avoid this: • Omit objects from ITCSS completely and only use components • Nest objects and components in HTML to avoid placing too many classes on one HTML element • Separate your spacing system from your objects and components, as we’ll discuss in the next point In the words of , “Margin breaks component encapsulation. A well-built component should not affect anything outside itself.” A reusable component can appear in different contexts where its distance from other elements may differ. If we try to deal with all the different contexts by adding margins to the component itself, we usually end up with many modifier classes. One way to solve this in ITCSS is to use wrapper or spacer objects or components. Another, even more flexible solution, would be to create utility classes for margins and spacing, similar to what . If there is any concern with a component based CSS architecture like ITCSS, it might be style repetition. Components encapsulate styles and allow us to avoid CSS conflicts and overrides, but they can also lead to style repetition. Don’t worry about style repetition too much and don’t abstract too many styles into objects. It is much easier to update a particular style that is repeated in a few independent components than it is to track down a chain of styles abstracted into multiple objects or components. If you do this too often, utility-first systems might be more suitable for your way of thinking. At Xfive, we’ve been using ITCSS for the past 5 years. It’s great for those types of projects which don’t come with built-in support for scoping CSS, for example WordPress projects. ITCSS is part of our custom WordPress development framework . However, often it’s our go-to approach even on projects where scoping of CSS is more common, for example React projects. You simply cannot go wrong with ITCSS. It’s the result of the experience and many years of work by Harry Roberts, one of the most respected CSS authors out there. If you don’t mind digging into the resources a bit, you will learn a simple but powerful architecture that will allow you to create scalable and maintainable CSS for your smaller or bigger projects. • Feb 2016 – the first version of this article • Nov 2021 – updated version of the article Your business is unique, and your platform should reflect that. Custom development gives you control, scalability, and performance you won’t get from prepackaged solutions. Read more Your website is your most visible digital asset, and it never sleeps. With a proper xfive maintenance plan, you stay protected, optimized, and ready for growth without the internal overhead. Legacy code, quick fixes, and outdated tooling may keep things running. For now. But technical debt compounds. Eventually, it slows delivery, frustrates teams, and drives up long-term costs. Replatforming isn’t always necessary, but the strategy is. Better Design Handoff with Figma and Utopia Guess What’s Back? Chisel Is Back! Subscribe for the latest market insights, professional advice, and practical strategies delivered directly to your email. Almost done! Check your email and confirm your subscription. Oops! Something went wrong while submitting the form. Hi, I'm a Marketing Specialist at xfive. Lubos is a Marketing Specialist at xfive, leveraging 19 years of web development and analytical skills to enhance Webflow sites and marketing processes. Connect on LinkedIn ## Links [Home](/) [Insights](/blog) [Websites](/categories/websites) [Web Apps](/categories/web-apps) [Harry Roberts](https://csswizardry.com/) [State of CSS 2020](https://2020.stateofcss.com/) [Satisfaction vs. Usage diagram](https://2020.stateofcss.com/en-US/technologies/) [Skillshare class](https://skl.sh/harry) [a healthy specificity graph](https://jonassebastianohlsson.com/specificity-graph/) [BEMIT naming convention](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) [knowledge of BEM](https://en.bem.info/methodology/) [parent selector](https://sass-lang.com/documentation/style-rules/parent-selector) [Max Stoiber](https://mxstbr.com/thoughts/margin/) [Tailwind does](https://tailwindcss.com/docs/margin) [Chisel](https://www.getchisel.co/) [ITCSS × Skillshare – CSS Wizardry](https://csswizardry.com/2018/11/itcss-and-skillshare/) [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) [Harry Roberts – Managing CSS Projects with ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) [BEMIT: Taking the BEM Naming Convention a Step Further – CSS Wizardry](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) [Immutable CSS – CSS Wizardry](https://csswizardry.com/2015/03/immutable-css/) [More Transparent UI Code with Namespaces – CSS Wizardry](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) [How To Solve Large-Scale CSS Bottlenecks with ITCSS and BEM](https://www.digitalocean.com/community/tutorials/how-to-solve-large-scale-css-bottlenecks-with-itcss-and-bem) [Utility-First CSS and ITCSS architecture, is it possible?](https://medium.com/@tomaszbujnowicz/utility-first-css-and-itcss-architecture-is-it-possible-535e43898cc8) [BEM Naming Cheat Sheet by 9 elements](https://9elements.com/bem-cheat-sheet/) [How to have clean CSS structure with RSCSS/ITCSS](https://jtway.co/how-to-have-clean-css-structure-with-rscss-itcss-2afc2e309126) [Spacing in CSS](https://ishadeed.com/article/spacing-in-css/) [Understanding ITCSS: Real case using ITCSS](https://www.carloscaballero.io/understanding-itcss-real-case-using-itcss-https-carloscaballero-io/) [inuitcss/inuitcss: Extensible, scalable, Sass-based, OOCSS framework for large and long-lasting UI projects.](https://github.com/inuitcss/inuitcss) [CSS Guidelines (2.2.5) – High-level advice and guidelines for writing sane, manageable, scalable CSS](https://cssguidelin.es/) [Custom Web DevelopmentYour business is unique, and your platform should reflect that. Custom development gives you control, scalability, and performance you won’t get from prepackaged solutions.Read more](/solutions/custom-web-development) [Website Maintenance PlansYour website is your most visible digital asset, and it never sleeps. With a proper xfive maintenance plan, you stay protected, optimized, and ready for growth without the internal overhead.Read more](/solutions/website-maintenance-plans) [Technology DebtLegacy code, quick fixes, and outdated tooling may keep things running. For now. But technical debt compounds. Eventually, it slows delivery, frustrates teams, and drives up long-term costs. Replatforming isn’t always necessary, but the strategy is.Read more](/problems/technology-debt) [Better Design Handoff with Figma and Utopia](/blog/design-handoff-figma-utopia) [Guess What’s Back? Chisel Is Back!](/blog/wordpress-theme-development-tool-chisel) [Lubos Kmetko](/team/lubos-kmetko) [Connect on LinkedIn](https://www.linkedin.com/in/luboskmetko/)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# ITCSS: Scalable and Maintainable CSS Architecture ## Introduction ## What is ITCSS? ## Tips on using ITCSS ### Adjust ITCSS to your needs ### Use BEMIT ### Organize layers to subfolders ### Use one file per component ### Limit nesting ### Do not overuse objects (or omit them completely) ### Separate spacing system from components ### Don’t worry about styles repetition ## Conclusion ## Resources ## Version history ### Related Solutions #### Custom Web Development #### Website Maintenance Plans ### Related Problems #### Technology Debt ### Related Insights ### Stay Ahead with Expert Insights ### About the author Oct 21, 2021 How do I make my CSS scalable and maintainable? It’s a concern for every front-end developer. ITCSS has an answer. In 2016, we published an article on ITCSS (Inverted Triangle CSS), where we shared our experience with its implementation into our own development workflow. Back then ITCSS, created by , was a new CSS methodology.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 963,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ntation into our own development workflow. Back then ITCSS, created by , was a new CSS methodology. Resources on ITCSS were rare so our post got to the first position in Google and has stayed there till today. This allows us to share some first-hand data about people’s interest in it. Over the years, the blog post has accumulated 290k page views. It still gets about 1500 page views a month, but there is a clear declining trend visible. This is in line with findings, where interest in ITCSS dropped from 40% to 37% in one year. If we look at from the same resource, we will find ITCSS in the low usage / high satisfaction quadrant. ITCSS remains partially proprietary and there isn’t any open source documentation available. While this prevents ITCSS wider adoption, we respect Harry’s intellectual property. The best way to learn ITCSS is his . Once you are familiar with the basic ideas, this article helps you gain a wider perspective on ITCSS and fill in some blanks.",
+      "metadata": {
+        "startIndex": 863,
+        "endIndex": 1839,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "the basic ideas, this article helps you gain a wider perspective on ITCSS and fill in some blanks. ITCSS stands for It helps you organize your project CSS files in such a way that you can better CSS specifics like and . You can use ITCSS with preprocessors or without them and it is compatible with CSS methodologies like BEM, SMACSS or OOCSS. The main idea of ITCSS is that it separates your CSS codebase into several sections (called ), which can be represented as sections of an inverted triangle: Those layers are: • – used with preprocessors and contain font, colors definitions, etc. • – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers. • – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS. • – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.",
+      "metadata": {
+        "startIndex": 1739,
+        "endIndex": 2679,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "(like H1, A, etc.). These come with default styling from the browser so we can redefine them here. • – class-based selectors which define undecorated design patterns, for example the media object known from OOCSS • – specific UI components. This is where most of our work takes place. We often compose UI components of Objects and Components • – utilities and helper classes with ability to override anything which goes before in the triangle, e.g. hide helper class The triangle also shows how styles appear in the resulting CSS: from generic styles to explicit ones, from low-specificity selectors to more specific ones and from far-reaching to localized ones. Such CSS organization will help you avoid Specificity Wars and will result in . Over the years of using ITCSS at Xfive, we have collected a few tips on how to work with it. ITCSS is flexible in terms of your workflow and tools. Are you concerned about the amount of boilerplate involved? This is up to you.",
+      "metadata": {
+        "startIndex": 2579,
+        "endIndex": 3550,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "workflow and tools. Are you concerned about the amount of boilerplate involved? This is up to you. ITCSS doesn’t prescribe that you need to have all layers present (only in what order they should be if they are present). In a minimal setup, you can have just components with default elements styling coming from the browser. Of course, this is not very practical. Almost everyone uses some settings, reset and/or normalize CSS for good reasons. Use the , especially its Namespaces (.c-user, .o-media, etc.). This will allow you to focus on solving front-end challenges rather than thinking up style names and their location. In-depth helps as well. Organize ITCSS layers into subfolders and use Sass or another preprocessor to compile newly added files. Store each component to its own file. Do not mix styles from different components in one file like this: If you use modern UI libraries like React or Vue you can keep all component related files in one folder: Limit nesting to 2 levels.",
+      "metadata": {
+        "startIndex": 3450,
+        "endIndex": 4442,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ike React or Vue you can keep all component related files in one folder: Limit nesting to 2 levels. Many developers think that using the (&) is a requirement just because they use Sass. There’s nothing wrong with flat structure with full selectors expanded, either. Often it’s easier to scan and search the code. Use the style you prefer, but avoid deep nesting, which results in overqualified selectors. Those are against the spirit of ITCSS. Objects are the most confusing part of ITCSS. In theory, they make perfect sense, but things can get out of control easily. Check out this example from our own website built a few years ago: The premise of ITCSS is that it’s easy to track down where particular styles come from and how they affect the styling of elements on the page. This can be difficult to do if the style of a component comes from two or more sources, like an object and a component. But often it’s hard to draw clear boundaries between various CSS properties and whether they belong",
+      "metadata": {
+        "startIndex": 4342,
+        "endIndex": 5341,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "But often it’s hard to draw clear boundaries between various CSS properties and whether they belong to an object or a component. There are a few things you can do to avoid this: • Omit objects from ITCSS completely and only use components • Nest objects and components in HTML to avoid placing too many classes on one HTML element • Separate your spacing system from your objects and components, as we’ll discuss in the next point In the words of , “Margin breaks component encapsulation. A well-built component should not affect anything outside itself.” A reusable component can appear in different contexts where its distance from other elements may differ. If we try to deal with all the different contexts by adding margins to the component itself, we usually end up with many modifier classes. One way to solve this in ITCSS is to use wrapper or spacer objects or components. Another, even more flexible solution, would be to create utility classes for margins and spacing, similar to what .",
+      "metadata": {
+        "startIndex": 5241,
+        "endIndex": 6239,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "re flexible solution, would be to create utility classes for margins and spacing, similar to what . If there is any concern with a component based CSS architecture like ITCSS, it might be style repetition. Components encapsulate styles and allow us to avoid CSS conflicts and overrides, but they can also lead to style repetition. Don’t worry about style repetition too much and don’t abstract too many styles into objects. It is much easier to update a particular style that is repeated in a few independent components than it is to track down a chain of styles abstracted into multiple objects or components. If you do this too often, utility-first systems might be more suitable for your way of thinking. At Xfive, we’ve been using ITCSS for the past 5 years. It’s great for those types of projects which don’t come with built-in support for scoping CSS, for example WordPress projects. ITCSS is part of our custom WordPress development framework .",
+      "metadata": {
+        "startIndex": 6139,
+        "endIndex": 7091,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "CSS, for example WordPress projects. ITCSS is part of our custom WordPress development framework . However, often it’s our go-to approach even on projects where scoping of CSS is more common, for example React projects. You simply cannot go wrong with ITCSS. It’s the result of the experience and many years of work by Harry Roberts, one of the most respected CSS authors out there. If you don’t mind digging into the resources a bit, you will learn a simple but powerful architecture that will allow you to create scalable and maintainable CSS for your smaller or bigger projects. • Feb 2016 – the first version of this article • Nov 2021 – updated version of the article Your business is unique, and your platform should reflect that. Custom development gives you control, scalability, and performance you won’t get from prepackaged solutions. Read more Your website is your most visible digital asset, and it never sleeps.",
+      "metadata": {
+        "startIndex": 6991,
+        "endIndex": 7918,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "packaged solutions. Read more Your website is your most visible digital asset, and it never sleeps. With a proper xfive maintenance plan, you stay protected, optimized, and ready for growth without the internal overhead. Legacy code, quick fixes, and outdated tooling may keep things running. For now. But technical debt compounds. Eventually, it slows delivery, frustrates teams, and drives up long-term costs. Replatforming isn’t always necessary, but the strategy is. Better Design Handoff with Figma and Utopia Guess What’s Back? Chisel Is Back! Subscribe for the latest market insights, professional advice, and practical strategies delivered directly to your email. Almost done! Check your email and confirm your subscription. Oops! Something went wrong while submitting the form. Hi, I'm a Marketing Specialist at xfive. Lubos is a Marketing Specialist at xfive, leveraging 19 years of web development and analytical skills to enhance Webflow sites and marketing processes.",
+      "metadata": {
+        "startIndex": 7818,
+        "endIndex": 8799,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "19 years of web development and analytical skills to enhance Webflow sites and marketing processes. Connect on LinkedIn ## Links [Home](/) [Insights](/blog) [Websites](/categories/websites) [Web Apps](/categories/web-apps) [Harry Roberts](https://csswizardry.com/) [State of CSS 2020](https://2020.stateofcss.com/) [Satisfaction vs. Usage diagram](https://2020.stateofcss.com/en-US/technologies/) [Skillshare class](https://skl.sh/harry) [a healthy specificity graph](https://jonassebastianohlsson.com/specificity-graph/) [BEMIT naming convention](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) [knowledge of BEM](https://en.bem.info/methodology/) [parent selector](https://sass-lang.com/documentation/style-rules/parent-selector) [Max Stoiber](https://mxstbr.com/thoughts/margin/) [Tailwind does](https://tailwindcss.com/docs/margin) [Chisel](https://www.getchisel.co/) [ITCSS × Skillshare – CSS",
+      "metadata": {
+        "startIndex": 8699,
+        "endIndex": 9637,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "(https://tailwindcss.com/docs/margin) [Chisel](https://www.getchisel.co/) [ITCSS × Skillshare – CSS Wizardry](https://csswizardry.com/2018/11/itcss-and-skillshare/) [Manage large CSS projects with ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) [Harry Roberts – Managing CSS Projects with ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) [BEMIT: Taking the BEM Naming Convention a Step Further – CSS Wizardry](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) [Immutable CSS – CSS Wizardry](https://csswizardry.com/2015/03/immutable-css/) [More Transparent UI Code with Namespaces – CSS Wizardry](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) [How To Solve Large-Scale CSS Bottlenecks with ITCSS and BEM](https://www.digitalocean.com/community/tutorials/how-to-solve-large-scale-css-bottlenecks-with-itcss-and-bem) [Utility-First CSS and ITCSS architecture, is it",
+      "metadata": {
+        "startIndex": 9537,
+        "endIndex": 10513,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "ve-large-scale-css-bottlenecks-with-itcss-and-bem) [Utility-First CSS and ITCSS architecture, is it possible?](https://medium.com/@tomaszbujnowicz/utility-first-css-and-itcss-architecture-is-it-possible-535e43898cc8) [BEM Naming Cheat Sheet by 9 elements](https://9elements.com/bem-cheat-sheet/) [How to have clean CSS structure with RSCSS/ITCSS](https://jtway.co/how-to-have-clean-css-structure-with-rscss-itcss-2afc2e309126) [Spacing in CSS](https://ishadeed.com/article/spacing-in-css/) [Understanding ITCSS: Real case using ITCSS](https://www.carloscaballero.io/understanding-itcss-real-case-using-itcss-https-carloscaballero-io/) [inuitcss/inuitcss: Extensible, scalable, Sass-based, OOCSS framework for large and long-lasting UI projects.](https://github.com/inuitcss/inuitcss) [CSS Guidelines (2.2.5) – High-level advice and guidelines for writing sane, manageable, scalable CSS](https://cssguidelin.es/) [Custom Web DevelopmentYour business is unique, and your platform should reflect that.",
+      "metadata": {
+        "startIndex": 10413,
+        "endIndex": 11412,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "uidelin.es/) [Custom Web DevelopmentYour business is unique, and your platform should reflect that. Custom development gives you control, scalability, and performance you won’t get from prepackaged solutions.Read more](/solutions/custom-web-development) [Website Maintenance PlansYour website is your most visible digital asset, and it never sleeps. With a proper xfive maintenance plan, you stay protected, optimized, and ready for growth without the internal overhead.Read more](/solutions/website-maintenance-plans) [Technology DebtLegacy code, quick fixes, and outdated tooling may keep things running. For now. But technical debt compounds. Eventually, it slows delivery, frustrates teams, and drives up long-term costs. Replatforming isn’t always necessary, but the strategy is.Read more](/problems/technology-debt) [Better Design Handoff with Figma and Utopia](/blog/design-handoff-figma-utopia) [Guess What’s Back?",
+      "metadata": {
+        "startIndex": 11312,
+        "endIndex": 12235,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "Better Design Handoff with Figma and Utopia](/blog/design-handoff-figma-utopia) [Guess What’s Back? Chisel Is Back!](/blog/wordpress-theme-development-tool-chisel) [Lubos Kmetko](/team/lubos-kmetko) [Connect on LinkedIn](https://www.linkedin.com/in/luboskmetko/)",
+      "metadata": {
+        "startIndex": 12135,
+        "endIndex": 13135,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    }
+  ],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "css",
+      "architecture",
+      "methodology"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:23:07.106Z",
+    "system": "ITCSS",
+    "author": "Harry Roberts",
+    "source_url": "https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/"
+  }
+}

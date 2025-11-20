@@ -1,0 +1,102 @@
+{
+  "id": "Y2sxJ6WH9ldcDTKRelajI",
+  "title": "Tokens Studio Format Guide",
+  "source": {
+    "type": "url",
+    "location": "https://docs.tokens.studio/manage-settings/token-format",
+    "ingested_at": "2025-11-20T13:22:31.277Z"
+  },
+  "content": "## Token formats W3C DTCG vs Legacy ### What's the difference? ### In the plugin ### 1. Settings page ### 2. Sync actions ### Convert between Token Formats #### Push changes to remote storage ### Transforming Tokens ### Resources #### Known Issues and Bugs #### Requests, roadmap and changelog In support of moving towards the , as managed by the Design Tokens Community Group (DTCG), you can choose a Design Token Format (how tokens are written in their JSON files) from within the Tokens Studio Plugin. Current Tokens Studio \"legacy\" format W3C DTCG spec format The DTCG format prefixes the properties of a design token in the JSON file with the dollar sign () Restrictions of special characters in token names are introduced to support this: When creating Token names with these characters, an error message appears, and the action is blocked. The DTCG and their accepted values, which we will support in future releases. The choice of Token Format can be defined for Tokens stored in the local file or remote via a sync provider. For Git sync providers, different branches can have different Token Formats. You can select a token format in two locations: Plugin settings > sync/storage providers. Sync actions at the bottom of the plugin when a remote storage provider is active. You can change between the W3C DTCG and Legacy token formats at any time by following the steps below. On the plugin's settings page, you can see the being used in your file next to your token storage provider. The default is When you make the switch, you'll see If your tokens are stored locally in the Figma file (no external storage or sync providers), the is to the right of the option. When your tokens are stored externally via the for the active sync provider will show. The for other sync providers will be hidden. When synced to external storage, the current also appears at the bottom of the plugin alongside the other . It's possible for different branches of a sync provider to have different token formats, so you can the to switch formats if needed. Select the to start the process of changing formats (from the settings page or sync actions): A appears to explain the process. your decision to switch formats. The plugin will convert your token JSON files to the format of your choice. The plugin will convert your token JSON files to the format of your choice without any further action from you. If you have unsaved changes that need to be synced to a remote storage provider that requires it, the plugin will prompt you to so you don't lose your work. A is automatically created for you with updated JSON files. The modal will open. A pre-filled is added to help your engineers know what to do when they receive your changes. Follow the prompts in the plugin to to your sync provider. Once you've synced your changes, the plugin will automatically have you working in the newly created branch. You'll see the W3C DTCG Token Format indicators next to the branch name at the bottom of the plugin. Engineers typically transform Tokens used in code with , which is tool-agnostic. Tokens coming from Tokens Studio require an additional step: , an npm package that prepares Tokens for Style Dictionary. When your design token format is set to using the steps above, you'll need to configure Style Dictionary to support this. For each Token Type the SD-Transforms package will automatically convert the Tokens Studio specific Token Type to align with the DTCG Format Token Type where necessary. Mentioned in this doc: SD-Transforms - Style Dictionary - Design Tokens Community Group - Community resources: None yet! 💡 Something to share? Tokens Studio Plugin GitHub - Add empty line when writing to files (sync providers + local export) Tokens Studio Plugin Github - Remove composition tokens [#2800](# Remove composition tokens #2800) Change boxShadow values from x and y to offsetX and offsetY Allow description in token groups 🐞 If you are experiencing an issue not listed here, please reach out to us on the Troubleshooting channel of our , , or send us an email None 💌 Visit to contribute or subscribe to updates. Last updated Was this helpful? ## Links [W3C Specifications for Design Tokens](https://tr.designtokens.org/format/) [Learn more about Token Names based on their Technical Specifications.](/manage-tokens/token-names/technical-specs) [specifies additional token types](https://tr.designtokens.org/format/#types) [Learn more about the Branch Switching (pro) feature](/token-storage/remote-branch-switch) [Style Dictionary](https://styledictionary.com/) [@Tokens-studio/sd-transforms](https://www.npmjs.com/package/@tokens-studio/sd-transforms) [Style Dictionary V4 Utils - convertToDTCG](https://v4.styledictionary.com/reference/utils/dtcg/) [SD-Transforms Read-Me Doc, Using the preprocessor](https://github.com/Tokens-studio/sd-transforms/?tab=readme-ov-file#using-the-preprocessor) [Token Types](/manage-tokens/token-types) [Read Me](https://github.com/tokens-studio/sd-transforms#readme) [convertToDTCG](https://v4.styledictionary.com/reference/utils/dtcg/) [https://styledictionary.com/](https://styledictionary.com/) [W3C Draft](https://tr.designtokens.org/format/) [Submit it here!](https://feedback.tokens.studio/) [Open issues for Token Format](https://github.com/tokens-studio/figma-plugin/labels/Token%20Format) [#2970](https://github.com/tokens-studio/figma-plugin/issues/2970) [Open issues for W3C DTCG](https://github.com/tokens-studio/figma-plugin/labels/W3C%20DTCG) [#2052](https://github.com/tokens-studio/figma-plugin/issues/2052) [#1811](https://github.com/tokens-studio/figma-plugin/issues/1811) [community Slack](https://tokens.studio/slack) [submit it on our feedback tool](https://feedback.tokens.studio/) [[email protected]](/cdn-cgi/l/email-protection) [https://feedback.tokens.studio/](https://feedback.tokens.studio/ ) [PreviousBase Font Size Setting](/manage-settings/base-font-size) [NextLocal Document - Figma File Token Storage](/token-storage/local)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## Token formats W3C DTCG vs Legacy ### What's the difference? ### In the plugin ### 1. Settings page ### 2. Sync actions ### Convert between Token Formats #### Push changes to remote storage ### Transforming Tokens ### Resources #### Known Issues and Bugs #### Requests, roadmap and changelog In support of moving towards the , as managed by the Design Tokens Community Group (DTCG), you can choose a Design Token Format (how tokens are written in their JSON files) from within the Tokens Studio Plugin. Current Tokens Studio \"legacy\" format W3C DTCG spec format The DTCG format prefixes the properties of a design token in the JSON file with the dollar sign () Restrictions of special characters in token names are introduced to support this: When creating Token names with these characters, an error message appears, and the action is blocked. The DTCG and their accepted values, which we will support in future releases.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 925,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "he action is blocked. The DTCG and their accepted values, which we will support in future releases. The choice of Token Format can be defined for Tokens stored in the local file or remote via a sync provider. For Git sync providers, different branches can have different Token Formats. You can select a token format in two locations: Plugin settings > sync/storage providers. Sync actions at the bottom of the plugin when a remote storage provider is active. You can change between the W3C DTCG and Legacy token formats at any time by following the steps below. On the plugin's settings page, you can see the being used in your file next to your token storage provider. The default is When you make the switch, you'll see If your tokens are stored locally in the Figma file (no external storage or sync providers), the is to the right of the option. When your tokens are stored externally via the for the active sync provider will show. The for other sync providers will be hidden.",
+      "metadata": {
+        "startIndex": 825,
+        "endIndex": 1807,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "rnally via the for the active sync provider will show. The for other sync providers will be hidden. When synced to external storage, the current also appears at the bottom of the plugin alongside the other . It's possible for different branches of a sync provider to have different token formats, so you can the to switch formats if needed. Select the to start the process of changing formats (from the settings page or sync actions): A appears to explain the process. your decision to switch formats. The plugin will convert your token JSON files to the format of your choice. The plugin will convert your token JSON files to the format of your choice without any further action from you. If you have unsaved changes that need to be synced to a remote storage provider that requires it, the plugin will prompt you to so you don't lose your work. A is automatically created for you with updated JSON files. The modal will open.",
+      "metadata": {
+        "startIndex": 1707,
+        "endIndex": 2635,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "'t lose your work. A is automatically created for you with updated JSON files. The modal will open. A pre-filled is added to help your engineers know what to do when they receive your changes. Follow the prompts in the plugin to to your sync provider. Once you've synced your changes, the plugin will automatically have you working in the newly created branch. You'll see the W3C DTCG Token Format indicators next to the branch name at the bottom of the plugin. Engineers typically transform Tokens used in code with , which is tool-agnostic. Tokens coming from Tokens Studio require an additional step: , an npm package that prepares Tokens for Style Dictionary. When your design token format is set to using the steps above, you'll need to configure Style Dictionary to support this. For each Token Type the SD-Transforms package will automatically convert the Tokens Studio specific Token Type to align with the DTCG Format Token Type where necessary.",
+      "metadata": {
+        "startIndex": 2535,
+        "endIndex": 3490,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "ert the Tokens Studio specific Token Type to align with the DTCG Format Token Type where necessary. Mentioned in this doc: SD-Transforms - Style Dictionary - Design Tokens Community Group - Community resources: None yet! 💡 Something to share? Tokens Studio Plugin GitHub - Add empty line when writing to files (sync providers + local export) Tokens Studio Plugin Github - Remove composition tokens [#2800](# Remove composition tokens #2800) Change boxShadow values from x and y to offsetX and offsetY Allow description in token groups 🐞 If you are experiencing an issue not listed here, please reach out to us on the Troubleshooting channel of our , , or send us an email None 💌 Visit to contribute or subscribe to updates. Last updated Was this helpful? ## Links [W3C Specifications for Design Tokens](https://tr.designtokens.org/format/) [Learn more about Token Names based on their Technical Specifications.](/manage-tokens/token-names/technical-specs) [specifies additional token",
+      "metadata": {
+        "startIndex": 3390,
+        "endIndex": 4377,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "Technical Specifications.](/manage-tokens/token-names/technical-specs) [specifies additional token types](https://tr.designtokens.org/format/#types) [Learn more about the Branch Switching (pro) feature](/token-storage/remote-branch-switch) [Style Dictionary](https://styledictionary.com/) [@Tokens-studio/sd-transforms](https://www.npmjs.com/package/@tokens-studio/sd-transforms) [Style Dictionary V4 Utils - convertToDTCG](https://v4.styledictionary.com/reference/utils/dtcg/) [SD-Transforms Read-Me Doc, Using the preprocessor](https://github.com/Tokens-studio/sd-transforms/?tab=readme-ov-file#using-the-preprocessor) [Token Types](/manage-tokens/token-types) [Read Me](https://github.com/tokens-studio/sd-transforms#readme) [convertToDTCG](https://v4.styledictionary.com/reference/utils/dtcg/) [https://styledictionary.com/](https://styledictionary.com/) [W3C Draft](https://tr.designtokens.org/format/) [Submit it here!](https://feedback.tokens.studio/) [Open issues for Token",
+      "metadata": {
+        "startIndex": 4277,
+        "endIndex": 5260,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "designtokens.org/format/) [Submit it here!](https://feedback.tokens.studio/) [Open issues for Token Format](https://github.com/tokens-studio/figma-plugin/labels/Token%20Format) [#2970](https://github.com/tokens-studio/figma-plugin/issues/2970) [Open issues for W3C DTCG](https://github.com/tokens-studio/figma-plugin/labels/W3C%20DTCG) [#2052](https://github.com/tokens-studio/figma-plugin/issues/2052) [#1811](https://github.com/tokens-studio/figma-plugin/issues/1811) [community Slack](https://tokens.studio/slack) [submit it on our feedback tool](https://feedback.tokens.studio/) [[email protected]](/cdn-cgi/l/email-protection) [https://feedback.tokens.studio/](https://feedback.tokens.studio/ ) [PreviousBase Font Size Setting](/manage-settings/base-font-size) [NextLocal Document - Figma File Token Storage](/token-storage/local)",
+      "metadata": {
+        "startIndex": 5160,
+        "endIndex": 6160,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "tokens",
+      "figma",
+      "dtcg",
+      "format"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:31.277Z",
+    "system": "Tokens Studio",
+    "source_url": "https://docs.tokens.studio/manage-settings/token-format"
+  }
+}

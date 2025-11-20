@@ -1,0 +1,36 @@
+{
+  "id": "20ywNXhZp5T6LiN08schZ",
+  "title": "Tokens Studio Documentation",
+  "source": {
+    "type": "url",
+    "location": "https://docs.tokens.studio/",
+    "ingested_at": "2025-11-20T13:22:31.228Z"
+  },
+  "content": "## Tokens Studio for Figma ### Slack Channel is a allowing you to integrate Tokens into your Figma designs. It gives you reusable tokens that can be used for a whole range of design options, from border radius or spacer units to semantic color and typography styles. It allows you to change tokens and see these changes applied to the whole document or its styles. We have a dedicated Slack server so the community can exchange ideas, best practices or simply ask a question. . Last updated Was this helpful? ## Links [Figma Plugin](https://www.figma.com/community/plugin/843461159747178978/tokens-studio-for-figma) [Join the Slack channel](https://www.tokens.studio/slack) [NextInstall the Figma Plugin](/get-started/install-figma-plugin)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## Tokens Studio for Figma ### Slack Channel is a allowing you to integrate Tokens into your Figma designs. It gives you reusable tokens that can be used for a whole range of design options, from border radius or spacer units to semantic color and typography styles. It allows you to change tokens and see these changes applied to the whole document or its styles. We have a dedicated Slack server so the community can exchange ideas, best practices or simply ask a question. . Last updated Was this helpful? ## Links [Figma Plugin](https://www.figma.com/community/plugin/843461159747178978/tokens-studio-for-figma) [Join the Slack channel](https://www.tokens.studio/slack) [NextInstall the Figma Plugin](/get-started/install-figma-plugin)",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "tokens",
+      "figma",
+      "dtcg",
+      "design-tokens"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:31.228Z",
+    "system": "Tokens Studio",
+    "source_url": "https://docs.tokens.studio/"
+  }
+}

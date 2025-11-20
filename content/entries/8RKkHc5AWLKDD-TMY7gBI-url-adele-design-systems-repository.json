@@ -1,0 +1,872 @@
+{
+  "id": "8RKkHc5AWLKDD-TMY7gBI",
+  "title": "Adele Design Systems Repository",
+  "source": {
+    "type": "url",
+    "location": "https://adele.uxpin.com/",
+    "ingested_at": "2025-11-20T13:22:20.801Z"
+  },
+  "content": "### why adele? ## Adele Goldberg. The Icon. ### do you need help with your system? ## Evangelize Design System with a Free Template! ## UXPin: Prototype and Manage Your Design System Company System Placeholder HTML/CSS yes hound scss lint Sass natural (e.g. red, light red) • npm • Bower HTML/CSS/JS Vanilla • ESLint • StyleLint Gulp • natural (e.g. red) • specific (e.g. success) React • Jest • Enzyme • Sinon Radium Webpack natural (e.g. red_400) • Yarn Qunit Less natural (e.g. teal) • Chai • Mocha • Stylus • postStylus • natural (e.g. color red) • abstract (e.g. color oil) • Lerna prettier • styled-components • stylis natural (e.g. red0) json natural (e.g. blue) stlylus natural (e.g. green primary) postCSS • natural (e.g. gold) visual only hex, rgb, cmyk, pms only jQuery natural (e.g. yellow) CSS • branded (e.g. trello blue 50) • natural • Glamorous • Sketch • UXPin natural (e.g. red_10) Jade natural (e.g. blue-900) abstract (e.g. cloud) yaml natual (e.g. orange-dark) Grunt • natural (e.g. fill-red) • specific (e.g.fill-facebook) rollup • natural (e.g. gray darkest) • abstract (e.g. Primary) specific (e.g. $button-colour) • Sasslint • inuit • structured (e.g. accent-1) • specific (e.g. critical) • natural (e.g. gray) Jasmine jshint specific (e.g. $feature-copy) Fela abstract (e.g. grass) Bitbucket any • sass • natural (e.g. $mds-color-black) • abstract (e.g. $mds-color-neutral-20 • specific (e.g. warning) Markdown • natural (e.g. light blue) • abstract (e.g. jazzy orange) branded and natural (e.g.NIBlueBrush) • glamor • natural (e.g. psColorsWhite) • abstract (e.g. psColorsBone) • Vue • Karma • cssLint proprietary branded (e.g. audi black) • branded (e.g. brand blue) • specific (e.g. link color) • CSS Modules hex only HTML/CSS/TS • TSLint • Stylelint • PostCSS • theo • Rollup • abstract (e.g. sky) • natural (e.g. green) natural (e.g. color-blue-500 • scsslint natural (e.g. green-dark) • abstract (e.g. prom dress) • generic (T500) gulp • abstract (e.g. endeavour), natural (palette_gray_2) specific (e.g. text-01) Polymer • WCT • specific (e.g. $status-red3, $primary-default, $gray8) • Angular • Prettier • ESlint natural (e.g. Red Medium) no data • Bourbon • Neat • Browserify natural (e.g. blue, gray, white) ESlint, Sasslint natural (e.g. blue primary) abstract (e.g. Sunset Orange) private • natural (eg: $purple-lighten-10) • structured: ${base-color-name}-{darken/lighten}-{step} Icon Font jasmine • specific (e.g. error-1) • structure (e.g. accent-1) • Pa11y CI webpack • natural (e.g. teal), abstract (e.g. sky) • natural (e.g. orange-400) • abstract (e.g. powder-100) harmony • natural (e.g. green 01) • branded (e.g. quickbooks green) generig (e.g. color-1) AVA natural (e.g. gray-300) • Visual Regression abstract (e.g. calypso) • yarn Natural (e.g. $mintPrimary) • abstract (e.g. $color-developer) • natural (e.g. $color-silver) • specific (e.g. $color-success) natural (e.g. orange) GitHub • natural (e.g. Light Green) • abstract (e.g. stone) specific (e.g. success color) abstract (e.g. event cyan) • branded (e.g. eurostar blue) • abstract (e.g. metallic gold) • natural (e.g. c-cyan) • specific (e.g. c-inputgrey) • bower • ruby gem • Selenium • natural (e.g. green-1) • specific (e.g. alertOrange) HTML/CSS/JS/SWIFT Adobe XD • specific (e.g. themeDarkAlt) • branded (e.g. brand-primary) • natural e.g. gray-base natural pattern • Natural (e.g. $color-brand-orange) • Abstract (e.g. $color-identity-apple) • Cypress • ChromaticQA • Emotion Abstract (e.g. Peach) • Visual regression natural (e.g. green-500) • Branded (e.q. Quickbooks Green) • Natural (e.g. Green 01) • Jest-styled-components • abstract (e.g. verdigis) • natural (e.g. grey–800) natural (e.g. dark_indigo) • Pa11y semantic Node • Chromatic Tachyons semantic (e.g. $bg-action-primary) • NPM • VTEX IO jest emotion sass-lint Natural SVG • Abstract Private • Vue.js • Ember • Axe • Proprietary • Sass-lint • CSS Custom Properties • JSON • XML • Stencil SASS Adobe XD / SVG Private GitHub no yet • specific (e.g. border) • Cucumber • Percy • Style Dictionary • Branded • Semantic • Specific • Nexus • React Testing Library natural (e.g. neutral-500) HTML/CSS/JS/TS • BackstopJS • aXe • Web Component Tester • abstract (e.g. default-color--200) • natural (e.g. green-100) • specific (e.g. BackgroundColor--dark-300) aXe (a11y) not yet GitHub Packages • natural (e.g. violet) • abstract (e.g. ocean) • specific (e.g. error) • aXe-core specific (e.g. color-background-error) tailwindcss yes (defined in tailwind.config) natural (e.g. blue-500) WCAG 2.1 Level AA yarn monorepo HTML/CSS/JS/SWIFT/KOTLIN • react-testing-library • puppeteer • eslint Blazor style-components specific • nupkg • HTML • JavaScript No. Adele – the Design Systems Repository, is not named after Adele – the singer. This is a tribute to one of the most important computer scientists focused on graphic user interfaces, design patterns and object-oriented programming – . Adele Goldberg worked at XEROX PARC in the 70s and managed the System Concepts Laboratory where, together with Alan Kay and others, she developed Smalltalk-80 – an object-oriented, dynamically typed programming language that was meant to power the \"human-computer symbiosis\". Needless to say, SmallTalk also pioneered many concepts important to all modern design systems. Objects in Smalltalk were easily transferable between applications and customizable. Smalltalk also served as the foundation of PARC's work on graphically based user interfaces (many GUI concepts have been developed by Adele Goldberg and her group!). 40+ Slides ready for action. Perfect for team and stakeholder presentation. Available as a powerpoint and keynote deck. Join thousands of companies (including PayPal, Sapient and HBO) and optimize your design process with UXPin. ## Links [dropbox](/dropbox-scooter) [scooter Deprecated](http://dropbox.github.io/scooter/index.html) [GitHub](https://github.com/dropbox/scooter) [yes](https://dropbox.github.io/scooter/#colors) [yes](https://dropbox.github.io/scooter/#grid) [yes](http://dropbox.github.io/scooter/) [HTML](https://dropbox.github.io/scooter/) [royal canin](/royal-canin-royal-canin-s-design-language) [royal canin’s design language](http://developer.royalcanin.com/) [GitHub](https://github.com/First10/) [Sketch](http://developer.royalcanin.com/resources.html) [Photoshop](http://developer.royalcanin.com/resources.html) [yes](http://developer.royalcanin.com/identity/logos.html) [yes](http://developer.royalcanin.com/identity/colour.html) [yes](http://developer.royalcanin.com/identity/typography/typeStyles.html) [SVG Sprite](http://developer.royalcanin.com/identity/icons.html) [yes](https://github.com/First10/) [yes](http://developer.royalcanin.com/welcome.html) [HTML](http://developer.royalcanin.com/components/cards.html) [instacart](/instacart-snacks) [snacks](https://instacart.github.io/Snacks/) [GitHub](https://github.com/instacart/Snacks) [yes](https://instacart.github.io/Snacks/#colors) [Icon Font](https://instacart.github.io/Snacks/#icons) [yes](https://instacart.github.io/Snacks/#grid) [yes](https://instacart.github.io/Snacks/#buttons) [Markdown](https://github.com/instacart/Snacks/blob/master/src/components/Grid/docs/Grid.md) [consumer financial protection bureau](/consumer-financial-protection-bureau-cfpb-design-manual) [cfpb design manual](https://cfpb.github.io/design-manual/index.html) [GitHub](https://github.com/cfpb/capital-framework) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/beam-pattern.html) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/color-principles.html) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/typography.html) [Icon Font](https://cfpb.github.io/design-manual-archive/brand-guidelines/minicons.html#asset-library) [yes](https://cfpb.github.io/design-system/foundation/grid) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/illustration.html) [yes](https://cfpb.github.io/design-manual-archive/data-visualization/data-visualization.html) [yes](https://cfpb.github.io/design-manual-archive/best-practices/best-practices.html) [yes](https://cfpb.github.io/design-manual-archive/best-practices/design-principles.html) [yes](https://cfpb.github.io/design-manual/index.html) [Markdown](https://github.com/cfpb/capital-framework/blob/canary/src/cf-buttons/usage.md) [auth0](/auth0-styleguide) [styleguide Deprecated](https://styleguide.auth0.com) [GitHub](https://github.com/auth0/styleguide) [yes](https://styleguide.auth0.com/#/design/primary-colors) [yes](https://styleguide.auth0.com/#/design/typography) [SVG](https://styleguide.auth0.com/#/resources) [yes](https://github.com/auth0/styleguide/blob/master/packages/core/src/grid/index.styl) [yes](https://styleguide.auth0.com/#/) [Markdown](https://github.com/auth0/styleguide/blob/master/packages/react-components/README.md) [yes](https://styleguide.auth0.com/#/react/select) [priceline](/priceline-priceline-design-system) [priceline design system](https://pricelinelabs.github.io/design-system/) [GitHub](https://github.com/pricelinelabs/design-system) [yes](https://pricelinelabs.github.io/design-system/?selectedKind=Color&selectedStory=Palette&full=0&down=1&left=1&panelRight=0&downPanel=storybook%2Factions%2Factions-panel) [SVG](https://pricelinelabs.github.io/design-system/?selectedKind=Icon&selectedStory=Icons&full=0&down=1&left=1&panelRight=0&downPanel=storybook%2Factions%2Factions-panel) [Markdown](https://github.com/pricelinelabs/design-system/blob/master/docs/Button.md) [yes](https://pricelinelabs.github.io/design-system/?selectedKind=BackgroundImage&selectedStory=Basic&full=0&down=1&left=1&panelRight=0&downPanel=storybook%2Factions%2Factions-panel) [mozilla firefox](/mozilla-firefox-photon-design-system) [photon design system](http://design.firefox.com/) [GitHub](https://github.com/FirefoxUX/photon) [yes](http://design.firefox.com/photon/visuals/product-identity-assets.html) [yes](http://design.firefox.com/photon/visuals/color.html) [yes](http://design.firefox.com/photon/visuals/typography.html) [SVG](http://design.firefox.com/icons/viewer/) [yes](http://design.firefox.com/photon/visuals/grid.html) [yes](http://design.firefox.com/photon/visuals/illustration.html) [yes](http://design.firefox.com/photon/motion/duration-and-easing.html) [yes](http://design.firefox.com/photon/copy/voice-and-tone.html) [yes](http://design.firefox.com/photon/introduction/design-for-inclusion.html) [yes](http://design.firefox.com/photon/introduction/principles.html) [yes](http://design.firefox.com/) [HTML](http://design.firefox.com/photon/components/input-fields.html) [family search](/family-search-frontier) [frontier](https://www.familysearch.org/frontier/styleguide/) [GitHub](https://github.com/fs-webdev/fs-styles) [yes](https://www.familysearch.org/frontier/styleguide/#colors-logo-colors) [yes](https://www.familysearch.org/frontier/styleguide/#typography) [SVG](https://www.familysearch.org/frontier/styleguide/#icons) [yes](https://www.familysearch.org/frontier/styleguide/) [appear here](/appear-here-bloom) [bloom](http://bloom.appearhere.co.uk/) [GitHub](https://github.com/appearhere/bloom/) [yes](http://bloom.appearhere.co.uk/design/colors) [yes](http://bloom.appearhere.co.uk/design/typography) [SVG](http://bloom.appearhere.co.uk/design/iconography) [yes](http://bloom.appearhere.co.uk/patterns/animation) [yes](http://bloom.appearhere.co.uk/patterns/accessibility) [yes](http://bloom.appearhere.co.uk/) [HTML](http://bloom.appearhere.co.uk/patterns/buttons) [estonia](/estonia-brand-estonia) [brand estonia](https://brand.estonia.ee/) [yes](https://brand.estonia.ee/guidelines/?lang=en) [yes](https://brand.estonia.ee/design/colour/) [yes](https://brand.estonia.ee/design/typography/) [PNG Sprite](https://brand.estonia.ee/?lang=en) [yes](https://brand.estonia.ee/design/layout/) [yes](https://brand.estonia.ee/design/imagery/) [yes](https://brand.estonia.ee/design/video-animation/) [yes](https://brand.estonia.ee/) [help scout](/help-scout-style-guide-seed) [style guide & seed](http://style.helpscout.com/) [GitHub](https://github.com/helpscout/seed-base) [yes](http://style.helpscout.com/brand/logo/) [yes](http://style.helpscout.com/brand/color/) [yes](http://style.helpscout.com/brand/typography/) [Icon Font](http://style.helpscout.com/icons/scouticons/) [no](http://style.helpscout.com/brand/illustration/) [yes](http://style.helpscout.com/copy/docs/) [yes](http://style.helpscout.com/) [HTML](http://style.helpscout.com/web-app/accordion/) [trello](/trello-nachos) [nachos](https://design.trello.com/) [Sketch](https://design.trello.com/assets/Trello_Mockup_Sketch_File.zip) [yes](https://design.trello.com/style/brand) [yes](https://design.trello.com/style/color) [yes](https://design.trello.com/style/typography) [SVG](https://design.trello.com/style/icons) [yes](https://design.trello.com/style/layout) [yes](https://design.trello.com/style/motions) [yes](https://design.trello.com/principles) [yes](https://design.trello.com/) [CA Technologies](/ca-technologies-mineral-ui) [Mineral UI](https://mineral-ui.netlify.app/) [GitHub](https://github.com/mineral-ui/mineral-ui) [yes](https://mineral-ui.com/theming/#common-scenarios-theme-structure) [yes](https://mineral-ui.com/color/) [yes](https://mineral-ui.com/typography/) [SVG](https://mineral-ui.com/components/icon/) [yes](https://mineral-ui.com/color/#guidelines-accessibility-(a11y)) [yes](https://mineral-ui.com/) [HTML](https://mineral-ui.com/components/button/) [mixpanel](/mixpanel-mixpanel-ds) [Mixpanel DS](https://design.mixpanel.com/) [yes](https://github.com/mixpanel/) [SVG](https://github.com/mixpanel/) [HTML](https://github.com/mixpanel/) [duolingo](/duolingo-design-guidelines) [design guidelines](https://www.duolingo.com/design/) [yes](https://www.duolingo.com/design/) [yes](https://www.duolingo.com/design) [PNG](https://www.duolingo.com/design) [envato](/envato-foundation-design-system) [foundation design system](https://envato.github.io/foundation-design-system/) [GitHub](https://github.com/envato/foundation-design-system-tokens) [yes](https://envato.github.io/foundation-design-system/design-tokens#colors) [yes](https://envato.github.io/foundation-design-system/design-tokens#typography) [Icon Font](https://github.com/envato/foundation-design-system-tokens/tree/master/packages/glyphs) [yes](https://envato.github.io/foundation-design-system/design-tokens#spacing) [yes](https://envato.github.io/foundation-design-system/) [HTML](https://envato.github.io/foundation-design-system/components/button) [buzzfeed](/buzzfeed-solid) [solid](http://solid.buzzfeed.com/) [GitHub](https://github.com/buzzfeed/solid) [Sketch](https://www.dropbox.com/s/rfk8qptfjxk7s3k/solid-style-template.sketch?dl=0) [yes](http://solid.buzzfeed.com/colors.html) [yes](http://solid.buzzfeed.com/typography.html) [SVG](http://solid.buzzfeed.com/svg-icons.html) [yes](http://solid.buzzfeed.com/grid.html) [yes](http://solid.buzzfeed.com/) [HTML](http://solid.buzzfeed.com/buttons.html) [bring & posten](/bring-posten-hedwig) [hedwig](https://hedwig-docs.herokuapp.com/) [GitHub](https://github.com/bring/hedwig) [yes](https://hedwig-docs.herokuapp.com/bring.html#/Colors) [yes](https://hedwig-docs.herokuapp.com/posten.html#/Colors) [yes](https://hedwig-docs.herokuapp.com/posten.html#/Typography) [SVG](https://hedwig-docs.herokuapp.com/posten.html#/Icon) [yes](https://hedwig-docs.herokuapp.com/bring.html#/Spacing) [yes](https://hedwig-docs.herokuapp.com/bring.html#/) [yes](https://hedwig-docs.herokuapp.com/posten.html#/) [Markdown](https://github.com/bring/hedwig/blob/master/src/shared/components/button/Buttons.md) [future learn](/future-learn-pattern-library) [pattern library](https://www.futurelearn.com/pattern-library) [yes](https://www.futurelearn.com/pattern-library/admin/core-patterns/colours) [yes](https://www.futurelearn.com/pattern-library/admin/core-patterns/typography) [SVG](https://www.futurelearn.com/pattern-library/admin/core-patterns/icons) [yes](https://www.futurelearn.com/pattern-library/admin/core-patterns/interactive-states) [yes](https://www.futurelearn.com/pattern-library/admin/core-patterns/microcopy#feedback-messages) [yes](https://www.futurelearn.com/pattern-library) [GOV.UK](/gov-uk-gov-uk-design-system) [GOV.UK Design System](https://design-system.service.gov.uk/) [GitHub](https://github.com/alphagov/govuk-design-system) [yes](https://design-system.service.gov.uk/components/) [yes](https://design-system.service.gov.uk/styles/colour/) [yes](https://design-system.service.gov.uk/styles/typography/) [yes](https://design-system.service.gov.uk/styles/layout/) [yes](https://www.gov.uk/service-manual/helping-people-to-use-your-service) [yes](https://www.gov.uk/guidance/government-design-principles) [yes](https://www.gov.uk/service-manual) [heroku](/heroku-purple3) [purple3](https://purple3.herokuapp.com/) [yes](https://purple3.herokuapp.com/documentation.html#typography) [SVG Sprite](https://purple3.herokuapp.com/icons.html) [yes](https://purple3.herokuapp.com/documentation.html#spacing) [yes](https://purple3.herokuapp.com/documentation.html) [HP enterprise](/hp-enterprise-grommet) [grommet](http://grommet.io/) [GitHub](https://github.com/grommet/grommet) [Sketch](https://github.com/grommet/grommet-design/tree/master/hpe) [Illustrator](https://github.com/grommet/grommet-design/tree/master/hpe) [yes](http://grommet.io/docs/color) [yes](http://grommet.io/docs/typography) [SVG](http://grommet.io/docs/icon) [yes](http://grommet.io/docs/padding) [yes](http://grommet.io/docs/chart) [yes](http://grommet.io/docs/animate) [yes](http://grommet.io/docs/writing-style) [yes](http://grommet.io/docs/accessibility) [yes](http://grommet.io/docs/best-practices) [yes](http://grommet.io/) [HTML](http://grommet.io/docs/accordion) [BBC](/bbc-gel) [gel](http://www.bbc.co.uk/gel) [GitHub](https://github.com/bbc/gel) [yes](http://www.bbc.co.uk/gel/guidelines/typography) [SVG](http://bbc.github.io/gel-iconography/) [yes](http://www.bbc.co.uk/gel/guidelines/grid) [yes](http://www.bbc.co.uk/gel/guidelines/how-to-design-for-accessibility) [yes](http://www.bbc.co.uk/gel/articles/what-is-gel) [yes](http://www.bbc.co.uk/gel) [Markdown](https://github.com/bbc/gel/blob/master/README.md) [lonely planet](/lonely-planet-rizzo) [rizzo](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours) [GitHub](https://github.com/lonelyplanet/rizzo) [yes](http://rizzo.lonelyplanet.com/styleguide/design-elements/ui-colours) [yes](http://rizzo.lonelyplanet.com/styleguide/design-elements/typography) [SVG](http://rizzo.lonelyplanet.com/styleguide/design-elements/destination-icons) [yes](http://rizzo.lonelyplanet.com/styleguide/css-utilities/proportional-grid) [yes](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours) [HTML](http://rizzo.lonelyplanet.com/styleguide/ui-components/cards) [cloudflare](/cloudflare-cf-ui) [cf-ui](https://cloudflare.github.io/cf-ui/) [GitHub](https://github.com/cloudflare/cf-ui) [yes](https://cloudflare.github.io/cf-ui/#cf-design-colors) [SVG](https://cloudflare.github.io/cf-ui/#cf-design-icons) [yes](https://cloudflare.github.io/cf-ui/#cf-component-page) [Markdown](https://github.com/cloudflare/cf-ui/blob/master/packages/cf-component-dropdown/README.md) [morningstar](/morningstar-morningstar-design-system) [morningstar design system](http://designsystem.morningstar.com/) [Sketch](http://designsystem.morningstar.com/assets/resources/mds-design-assets-v1.1.sketch) [yes](http://designsystem.morningstar.com/visual-language/color.html) [yes](http://designsystem.morningstar.com/visual-language/typography.html) [SVG](http://designsystem.morningstar.com/visual-language/iconography.html) [yes](http://designsystem.morningstar.com/visual-language/space.html) [no](http://designsystem.morningstar.com/charts/getting-started.html) [yes](http://designsystem.morningstar.com/editorial/voice-principles.html) [yes](http://designsystem.morningstar.com/components/dialogs.html#accessibility-1) [yes](http://designsystem.morningstar.com/) [automattic](/automattic-wordpress-com-design-handbook) [wordpress.com design handbook](https://dotcombrand.wordpress.com/) [GitHub](https://github.com/Automattic/wp-calypso) [Sketch](https://www.dropbox.com/s/ohmbmypbi213mc1/Calypso%20Templates.sketch?dl=0) [yes](https://wordpress.com/design-handbook/logotype/) [yes](https://wordpress.com/design-handbook/colors/) [yes](https://wordpress.com/design-handbook/typography/) [SVG](https://github.com/automattic/gridicons) [yes](https://wordpress.com/design-handbook/index.html) [Markdown](https://github.com/Automattic/wp-calypso/blob/master/client/components/button/README.md) [national instruments](/national-instruments-fuse) [Fuse](https://ni.github.io/design-system/) [GitHub](https://github.com/ni/design-system) [yes](https://ni.github.io/design-system/style/colors/) [yes](https://ni.github.io/design-system/style/typography/) [PNG](https://ni.github.io/design-system/style/icons/) [yes](https://ni.github.io/design-system/design-tenets/) [yes](https://ni.github.io/design-system/) [Markdown](https://github.com/ni/design-system/blob/master/app/_elements/dialogs.md) [openAQ](/openaq-openaq-design-system) [openAQ design system](https://github.com/openaq/openaq-design-system) [GitHub](https://github.com/openaq/openaq-design-system) [yes](https://github.com/openaq/openaq-design-system/blob/master/assets/styles/openaq-design-system/core/_typography.scss) [SVG](https://github.com/openaq/openaq-design-system/tree/master/assets/icons) [pluralsight](/pluralsight-pluralsight-design-system) [pluralsight design system](http://design-system.pluralsight.com/) [GitHub](https://github.com/pluralsight/design-system) [yes](http://design-system.pluralsight.com/core/color/) [yes](http://design-system.pluralsight.com/core/typography/) [SVG](http://design-system.pluralsight.com/components/icon/) [yes](http://design-system.pluralsight.com/core/spacing/) [yes](http://design-system.pluralsight.com/core/motion/) [yes](http://design-system.pluralsight.com/) [HTML](http://design-system.pluralsight.com/components/button/) [rei](/rei-cedar) [cedar](http://rei.github.io/rei-cedar/) [GitHub](https://github.com/rei/rei-cedar) [GitHub](https://github.com/rei/rei-cedar/tree/future-vue) [yes](https://github.com/rei/rei-cedar/tree/next/src/css) [Icon Font](https://github.com/rei/rei-cedar/tree/master/src/less/icon-font) [SVG](https://github.com/rei/rei-cedar/tree/future-vue/src/assets/icons/rei) [Markdown](https://github.com/rei/rei-cedar/tree/next/src/components/button) [yes](http://rei.github.io/rei-cedar/) [audi](/audi-audi-ui) [audi ui](http://www.audi.com/ci/en/guides/user-interface/introduction.html) [GitHub](https://github.com/audi/audi-ui) [Sketch](http://www.audi.com/content/dam/ci/Downloads_EN/audi-ui-kit_sketch_v1.1.sketch.zip) [Photoshop](http://www.audi.com/content/dam/ci/Downloads_EN/audi-ui-kit_ps_v1.1.psd.zip) [yes](http://www.audi.com/ci/en/intro/brand-appearance.html) [yes](http://www.audi.com/ci/en/intro/basics/colours.html) [yes](http://www.audi.com/ci/en/intro/basics/typography.html) [SVG Sprite](http://www.audi.com/ci/en/intro/basics/icons.html#db6f52) [Icon font](http://www.audi.com/ci/en/intro/basics/icons.html#db6f52) [yes](http://www.audi.com/ci/en/guides/user-interface/responsive-ui.html) [yes](http://www.audi.com/ci/en/intro/basics/illustration.html) [yes](http://www.audi.com/ci/en/intro/basics/animation.html) [yes](http://www.audi.com/ci/en/guides/user-interface/ux-paradigms.html) [yes](http://www.audi.com/ci/en/renewed-brand.html) [Markdown](https://github.com/audi/audi-ui/blob/master/src/button/README.md) [co-op](/co-op-design-manual) [design manual](https://coop-design-manual.herokuapp.com/) [GitHub](https://github.com/coopdigital/coop-frontend-toolkit) [Sketch](https://github.com/coopdigital/coop-design-assets/raw/master//sketch%20files/CoopStyle.sketch) [yes](https://github.com/coopdigital/coop-design-assets/raw/master/brand/WR_B_024-Brand%20Guidelines_16_9Low.pdf) [yes](https://coop-design-manual.herokuapp.com/styles/colours.html) [yes](https://coop-design-manual.herokuapp.com/styles/typography.html) [yes](https://coop-design-manual.herokuapp.com/styles/grid.html) [yes](https://coop-design-manual.herokuapp.com/content.html) [yes](https://coop-design-manual.herokuapp.com/accessibility.html) [yes](https://coop-design-manual.herokuapp.com/principles.html) [yes](https://coop-design-manual.herokuapp.com/index.html) [Markdown](https://github.com/coopdigital/coop-frontend-toolkit/blob/master/README.md) [seek](/seek-style-guide) [style guide](https://seek-oss.github.io/seek-style-guide/) [GitHub](https://github.com/seek-oss/seek-style-guide) [yes](https://seek-oss.github.io/seek-style-guide/) [yes](https://seek-oss.github.io/seek-style-guide/typography) [SVG](https://seek-oss.github.io/seek-style-guide/) [yes](https://seek-oss.github.io/seek-style-guide/page-layout) [Markdown](https://github.com/seek-oss/seek-style-guide/blob/master/README.md) [shopify](/shopify-polaris) [polaris](https://polaris.shopify.com) [GitHub](https://github.com/Shopify/polaris-react) [Sketch](https://github.com/Shopify/polaris-react/releases/download/v1.10.2/Sketch.UI.Kit.zip) [yes](https://polaris.shopify.com/design/colors) [yes](https://polaris.shopify.com/design/colors#section-accessibility) [yes](https://polaris.shopify.com/design/typography) [SVG](https://polaris-icons.shopify.com) [yes](https://polaris.shopify.com/components/structure/layout) [yes](https://polaris.shopify.com/design/illustrations) [yes](https://polaris.shopify.com/design/data-visualizations) [yes](https://polaris.shopify.com/content/product-content) [yes](https://polaris.shopify.com/patterns-and-guides/accessibility) [yes](https://polaris.shopify.com/experiences/billing#section-principles) [yes](https://polaris.shopify.com/components/get-started) [Markdown](https://github.com/Shopify/polaris-react/tree/master/src/components/Card) [yes](https://polaris-storybook.myshopify.com/) [skyscanner](/skyscanner-backpack) [backpack](https://backpack.github.io/) [GitHub](https://github.com/backpack/backpack.github.io) [Sketch](https://www.dropbox.com/sh/3um2nc6ei6kgj28/AADk_AZ_hX_AyPMxYWFd5EhIa?dl=0) [yes](https://backpack.github.io/guidelines/colour) [yes](https://backpack.github.io/tokens/typesetting) [SVG](https://backpack.github.io/components/accordion/?platform=web) [yes](https://backpack.github.io/tokens/spacing) [yes](https://backpack.github.io/tokens/animation) [yes](https://backpack.github.io/) [HTML](https://backpack.github.io/components/form?platform=web) [USAJobs](/usajobs-usa-jobs-design-system) [USA jobs design system](http://usajobs.github.io/design-system/) [GitHub](https://github.com/USAJOBS/design-system) [yes](http://usajobs.github.io/design-system/visual-style/#logo) [yes](http://usajobs.github.io/design-system/visual-style/#colors) [yes](http://usajobs.github.io/design-system/visual-style/#text-accessibility) [yes](http://usajobs.github.io/design-system/visual-style/#typography) [Icon Font](http://usajobs.github.io/design-system/icons/) [yes](http://usajobs.github.io/design-system/grid/) [yes](http://usajobs.github.io/design-system/) [HTML](http://usajobs.github.io/design-system/button-bar/) [atlassian](/atlassian-atlassian-design-guidelines) [atlassian design guidelines](https://atlassian.design/) [Bitbucket](https://bitbucket.org/atlassian/atlaskit) [Sketch](https://atlassian.design/guidelines/product/resources/web-product-gui-pack) [yes](https://atlassian.design/guidelines/brand/personality) [yes](https://atlassian.design/guidelines/product/foundations/color) [yes](https://atlassian.design/guidelines/product/foundations/typography) [Guidelines](https://atlassian.design/guidelines/product/foundations/iconography) [SVG](https://atlaskit.atlassian.com/packages/core/icon/example/icon-explorer) [yes](https://atlassian.design/guidelines/product/foundations/grid) [yes](https://atlassian.design/guidelines/brand/illustrations) [yes](https://atlassian.design/guidelines/product/foundations/writing-style) [yes](https://atlassian.design/guidelines/product/foundations/accessibility) [yes](https://atlassian.design/) [yes](https://atlaskit.atlassian.com) [yes](https://atlaskit.atlassian.com/packages) [npm](h) [salesforce](/salesforce-lightning) [lightning](https://www.lightningdesignsystem.com/) [GitHub](https://github.com/salesforce-ux/design-system) [Sketch](https://github.com/salesforce-ux/design-system-ui-kit/archive/master.zip) [yes](https://www.lightningdesignsystem.com/guidelines/color) [yes](https://www.lightningdesignsystem.com/guidelines/typography) [SVG](https://www.lightningdesignsystem.com/icons) [yes](https://www.lightningdesignsystem.com/utilities/grid) [yes](https://github.com/salesforce-ux/design-system/tree/master/assets/images/illustrations) [yes](https://www.lightningdesignsystem.com/guidelines/animation/gallery) [yes](https://www.lightningdesignsystem.com/guidelines/voice-and-tone) [yes](https://www.lightningdesignsystem.com/accessibility/overview) [yes](https://www.lightningdesignsystem.com/guidelines/overview) [yes](https://www.lightningdesignsystem.com/) [Scss](https://github.com/salesforce-ux/design-system/blob/master/ui/components/app-launcher/_doc.scss) [IBM](/ibm-carbon) [carbon](http://carbondesignsystem.com/) [GitHub](https://github.com/carbon-design-system) [Sketch](https://github.com/carbon-design-system/carbon-design-kit) [yes](http://carbondesignsystem.com/style/colors/swatches) [yes](http://carbondesignsystem.com/style/typography/overview) [SVG](http://carbondesignsystem.com/style/iconography/library) [yes](http://carbondesignsystem.com/style/grid/design) [yes](http://carbondesignsystem.com/style/motion) [yes](http://carbondesignsystem.com/guidelines/content/general) [yes](http://carbondesignsystem.com/guidelines/accessibility) [yes](http://carbondesignsystem.com/) [Markdown](https://github.com/carbon-design-system/carbon-components/blob/master/src/components/card/README.md) [yes](http://react.carbondesignsystem.com/) [GE Digital](/ge-digital-predix-design-system) [Predix Design System](https://www.predix-ui.com) [GitHub](https://github.com/predixdesignsystem) [Sketch](https://github.com/predixdesignsystem/predix-design-stencil) [yes](https://www.predix-ui.com/#/css/visual/px-colors-design) [yes](https://www.predix-ui.com/#/design/color) [yes](https://www.predix-ui.com/#/design/typography) [yes](https://www.predix-ui.com/#/design/iconography) [yes](https://www.predix-ui.com/#/design/page-layout) [yes](https://www.predix-ui.com/#/design/data-vis) [yes](https://www.predix-ui.com/#/design/writing) [yes](https://www.predix-ui.com/#/about/introduction) [HTML](https://www.predix-ui.com/#/elements/px-app-nav) [Quicken Loans](/quicken-loans-spark-design-system) [Spark Design System](https://sparkdesignsystem.com) [GitHub](https://github.com/sparkdesignsystem/spark-design-system) [yes](https://sparkdesignsystem.com/using-spark) [yes](https://sparkdesignsystem.com/using-spark/foundations/color-codes) [yes](https://sparkdesignsystem.com/using-spark/foundations/color-accessibility) [yes](https://sparkdesignsystem.com/using-spark/foundations/typography) [yes](https://sparkdesignsystem.com/using-spark/components/icon) [yes](https://sparkdesignsystem.com/using-spark/foundations/space) [yes](https://sparkdesignsystem.com/using-spark/foundations/color-usage#charts-and-graphs) [yes](https://sparkdesignsystem.com/principles/accessibility-guidelines) [yes](https://sparkdesignsystem.com) [HTML](https://sparkdesignsystem.com/using-spark) [liferay](/liferay-lexicon) [Lexicon](https://lexicondesign.io/) [GitHub](https://github.com/liferay/lexicon-site) [metal.js](https://metaljs.com/) [yes](https://lexicondesign.io/docs/designPrinciples/colors.html) [yes](https://lexicondesign.io/docs/designPrinciples/typography.html) [SVG](https://lexicondesign.io/docs/patterns/icons.html) [yes](https://lexicondesign.io/docs/designPrinciples/grid.html) [yes](https://lexicondesign.io/docs/patterns/Charts/charts.html) [no](https://lexicondesign.io/docs/designPrinciples/writingstyle.html) [yes](https://lexicondesign.io/docs/lexicon/) [18F](/18f-u-s-web-design-system) [U.S. Web Design System](https://designsystem.digital.gov/) [GitHub](https://github.com/uswds/uswds) [Sketch](https://designsystem.digital.gov/files/uswds-assets-sketch.zip) [Illustrator](https://designsystem.digital.gov/files/uswds-assets-ai.zip) [EPS](https://github.com/uswds/uswds/releases/download/v2.12.1/uswds-2.12.1.zip) [yes](https://designsystem.digital.gov/design-principles/) [yes](https://designsystem.digital.gov/components/colors/) [yes](https://designsystem.digital.gov/components/typography/) [yes](https://designsystem.digital.gov/components/grids/) [yes](https://content-guide.18f.gov/voice-and-tone/) [yes](https://designsystem.digital.gov/getting-started/developers/#notes-on-accessibility) [yes](https://designsystem.digital.gov) [yes](https://designsystem.digital.gov/getting-started/developers/) [Pegasystems](/pegasystems-pega-design-system) [Pega Design System](https://design.pega.com/) [Sketch](https://pdn.pega.com/exchange/components/pega-ux-design-system-ui-kit-files) [AI](https://pdn.pega.com/exchange/components/pega-ux-design-system-ui-kit-files) [XD](https://pdn.pega.com/exchange/components/pega-ux-design-system-ui-kit-files) [SVG](https://pdn.pega.com/exchange/components/pega-ux-design-system-ui-kit-files) [yes](https://design.pega.com/design/) [charts](https://design.pega.com/design/) [principles](https://design.pega.com/design/) [yes](https://design.pega.com/) [Altinn](/altinn-altinn-designsystem) [Altinn Designsystem](http://altinn.no/designsystem) [GitHub](https://github.com/Altinn/DesignSystem) [Figma](https://altinn.github.io/designsystem-styleguide/) [yes](https://altinn.github.io/designsystem-styleguide/) [fortAwesome](https://altinn.github.io/designsystem-styleguide/) [npm](https://www.npmjs.com/package/altinn-designsystem) [Ant Financial](/ant-financial-ant-design) [Ant Design](https://ant.design) [GitHub](https://github.com/ant-design/ant-design) [Axure](http://ux.ant.design/download/Ant_UX_Axure.zip) [Sketch](http://ux.ant.design/download/Ant_UX_Sketch.zip) [OmniGraffle](http://ux.ant.design/download/Ant_UX_OG.zip) [Affinity](http://ux.ant.design/download/Ant_UX_Affinity.zip) [Adobe XD](http://ux.ant.design/download/Ant_UX_XD.zip) [yes](https://ant.design/docs/spec/colors) [yes](https://ant.design/docs/spec/colors#Product-level-Color-System) [yes](https://ant.design/docs/spec/font) [SVG](https://ant.design/docs/spec/icon) [yes](https://ant.design/docs/spec/layout) [yes](https://antv.alipay.com/) [yes](https://motion.ant.design/) [yes](https://ant.design/docs/spec/copywriting) [yes](https://ant.design/docs/spec/proximity) [yes](https://ant.design) [Markdown](https://github.com/ant-design/ant-design/blob/master/README.md) [ACL](/acl-starling) [Starling](http://design.acl.com/page/Home) [yes](http://design.acl.com/page/Colors) [yes](http://design.acl.com/page/Typography) [yes](http://design.acl.com/page/Charts) [yes](http://design.acl.com/page/Writing-Principles#tone) [yes](http://design.acl.com/page/Intro-and-Goals) [yes](http://design.acl.com/page/Home) [pivotal software](/pivotal-software-pivotal-ui) [Pivotal UI](https://styleguide.pivotal.io/) [GitHub](https://github.com/pivotal-cf/pivotal-ui) [yes](https://styleguide.pivotal.io/modifiers/colors/) [yes](https://styleguide.pivotal.io/modifiers/typography/) [SVG](https://styleguide.pivotal.io/components/icons/) [yes](https://styleguide.pivotal.io/components/grids/) [yes](https://styleguide.pivotal.io/about/getting-started/) [HTML](https://styleguide.pivotal.io/components/autocomplete/) [financial times](/financial-times-origami) [Origami](http://origami.ft.com/) [GitHub](https://github.com/Financial-Times/ft-origami) [yes](https://registry.origami.ft.com/components/o-colors) [yes](https://registry.origami.ft.com/components/o-typography@5.4.2) [SVG](http://registry.origami.ft.com/components/fticons) [yes](http://registry.origami.ft.com/components/o-grid@4.3.7) [yes](http://origami.ft.com/docs/developer-guide/general-best-practices/#accessibility) [yes](http://registry.origami.ft.com/components/o-colors@4.1.5) [Markdown](https://github.com/Financial-Times/o-tabs/blob/master/README.md) [stack overflow](/stack-overflow-stacks) [Stacks](https://stackoverflow.design/) [yes](https://stackoverflow.design/base/colors) [yes](https://stackoverflow.design/base/typography) [SVG](https://stackoverflow.design/resources/icons) [yes](https://stackoverflow.design/base/grid) [yes](https://stackoverflow.design/) [HTML](https://stackoverflow.design/components/buttons) [intuit](/intuit-harmony) [yes](http://harmony.intuit.com/the-new-brand/) [yes](http://harmony.intuit.com/color/) [PNG](http://harmony.intuit.com/iconography/) [yes](http://harmony.intuit.com/app-frameworks/layouts/) [yes](http://harmony.intuit.com/illustration/) [yes](http://harmony.intuit.com/animations-transitions/) [yes](http://harmony.intuit.com/voice-tone/) [yes](http://harmony.intuit.com/app-frameworks/discovery/) [yes](http://harmony.intuit.com/) [JetBrains](/jetbrains-jetbrains-web-ui) [JetBrains Web UI](http://www.jetbrains.org/ring-ui/index.html) [GitHub](https://github.com/JetBrains/ring-ui) [yes](http://www.jetbrains.org/ring-ui/palette.html) [SVG](http://www.jetbrains.org/ring-ui/icon.html) [yes](http://www.jetbrains.org/ring-ui/grid.html) [yes](http://www.jetbrains.org/ring-ui/index.html) [HTML](http://www.jetbrains.org/ring-ui/table.html) [github](/github-primer) [primer](https://primer.style/) [GitHub](https://github.com/primer/css) [Scss](https://github.com/primer/css/tree/master/src/support) [yes](https://github.com/primer/css/blob/master/src/support/variables/color-system.scss) [yes](https://github.com/primer/css/blob/master/src/support/variables/typography.scss) [Octicons (SVG)](https://github.com/primer/octicons) [yes](https://github.com/primer/css/blob/master/src/support/variables/layout.scss) [Markdown](https://github.com/primer/css/tree/master/src/buttons) [npm](https://www.npmjs.com/package/@primer/css) [hubspot](/hubspot-canvas) [canvas](https://canvas.hubspot.com/) [yes](https://canvas.hubspot.com/styles/colors) [yes](https://canvas.hubspot.com/styles/typography) [yes](https://canvas.hubspot.com/styles/icons) [yes](https://canvas.hubspot.com/styles/illustrations) [yes](https://canvas.hubspot.com/graphs/types-overview) [yes](https://canvas.hubspot.com/styles/motion) [yes](https://canvas.hubspot.com/styles/voice-and-tone) [yes](https://canvas.hubspot.com/styles/design-principles) [yes](https://canvas.hubspot.com/) [yes](https://canvas.hubspot.com/components) [meetup](/meetup-swarm-design-system) [swarm design system](https://meetup.github.io/swarm-design-system/) [GitHub](https://github.com/meetup/swarm-design-system) [yes](https://meetup.github.io/swarm-design-system/brand/) [yes](https://meetup.github.io/swarm-design-system/design/color/) [yes](https://meetup.github.io/swarm-design-system/design/typography/) [yes](https://meetup.github.io/swarm-design-system/design/icons/) [yes](https://meetup.github.io/swarm-design-system/design/layout/spacing/) [yes](https://meetup.github.io/swarm-design-system/brand/brandvoice/) [yes](https://meetup.github.io/swarm-design-system/design/usability/a11y/) [yes](https://meetup.github.io/swarm-design-system/) [yes](https://meetup.github.io/meetup-web-components/) [brainly](/brainly-brainly-style-guide) [Brainly Style Guide](https://styleguide.brainly.com/130.0.1/docs/) [GitHub](https://github.com/brainly/style-guide) [yes](https://styleguide.brainly.com/130.0.1/docs/basics.html#colors) [yes](https://styleguide.brainly.com/130.0.1/docs/basics.html#text) [SVG](https://styleguide.brainly.com/130.0.1/docs/basics.html#icons) [yes](https://styleguide.brainly.com) [yes](https://styleguide.brainly.com/130.0.1/docs/interactive.html) [pusher](/pusher-chameleon) [Chameleon](https://pusher.github.io/chameleon/) [GitHub](https://github.com/pusher/chameleon) [yes](https://pusher.github.io/chameleon/layout/colors/) [yes](https://pusher.github.io/chameleon/layout/typography/) [yes](https://pusher.github.io/chameleon) [mesosphere](/mesosphere-cnvs) [CNVS](http://mesosphere.github.io/cnvs/) [GitHub](https://github.com/mesosphere/cnvs) [yes](http://mesosphere.github.io/cnvs/content/colors/) [yes](http://mesosphere.github.io/cnvs/content/typography/) [yes](http://mesosphere.github.io/cnvs/layout/grid/) [yes](http://mesosphere.github.io/cnvs/) [Wonderbly](/wonderbly-wonderbly-design-system) [Wonderbly Design System](http://design-system.lostmy.name/) [yes](http://design-system.lostmy.name/rules/Colour) [yes](http://design-system.lostmy.name/rules/Grid) [yes](http://design-system.lostmy.name/components/wrappers/Animation) [yes](http://design-system.lostmy.name/design-principles) [yes](http://design-system.lostmy.name/) [opower](/opower-opattern) [opattern](https://ux.opower.com/opattern) [yes](https://ux.opower.com/opattern/color.html) [yes](https://ux.opower.com/opattern/typography.html) [SVG](https://ux.opower.com/opattern/icons.html) [yes](https://ux.opower.com/opattern/web.html) [yes](https://ux.opower.com/opattern/illustrations.html) [yes](https://ux.opower.com/opattern/how-to-charts.html) [yes](https://ux.opower.com/opattern/animation.html) [yes](https://ux.opower.com/opattern/opattern-voice.html) [yes](https://ux.opower.com/opattern) [mapbox](/mapbox-base) [base](https://www.mapbox.com/base/) [yes](https://www.mapbox.com/base/styling/color/) [yes](https://www.mapbox.com/base/styling/text-blocks/) [Icon Font](https://www.mapbox.com/base/styling/icons/) [yes](https://www.mapbox.com/base/styling/grid-system/) [yes](https://www.mapbox.com/base/animation/) [yes](https://www.mapbox.com/base/copy/) [yes](https://www.mapbox.com/base) [barricade](/barricade-style-guide) [Style Guide](https://styleguide.barricade.io/index.html) [GitHub](https://github.com/barricadeio/styleguide) [yes](https://styleguide.barricade.io/styles.html#colors) [yes](https://styleguide.barricade.io/styles.html#typography) [Icon Font](https://styleguide.barricade.io/styles.html#icons) [no data](https://styleguide.barricade.io) [eurostar](/eurostar-glu) [GLU](https://style.eurostar.com/) [yes](https://style.eurostar.com/components/detail/colors.html) [yes](https://style.eurostar.com/components/detail/typography.html) [SVG](https://style.eurostar.com/components/detail/icons.html) [yes](https://style.eurostar.com/components/detail/microcopy.html) [yes](https://style.eurostar.com) [uSwitch](/uswitch-ustyle) [uStyle](https://ustyle.guide) [GitHub](https://github.com/uswitch/ustyle) [yes](https://ustyle.guide/brand/index.html) [yes](https://ustyle.guide/brand/colours.html) [yes](https://ustyle.guide/pattern-library/typography.html) [SVG](https://ustyle.guide/design/icons.html) [yes](https://ustyle.guide/pattern-library/grid.html) [yes](https://ustyle.guide/design/index.html) [yes](https://ustyle.guide/language/tone.html) [yes](https://ustyle.guide/design/accessibility-testing.html) [yes](https://ustyle.guide/pattern-library/components.html) [HTML](https://ustyle.guide/pattern-library/components.html) [VMware](/vmware-clarity-design-system) [Clarity Design System](https://vmware.github.io/clarity/) [GitHub](https://github.com/vmware/clarity) [Sketch](https://vmware.github.io/clarity/documentation/v0.11/get-started#designResources) [yes](https://vmware.github.io/clarity/documentation/v0.11/color) [yes](https://vmware.github.io/clarity/documentation/v0.11/color#guidelines) [yes](https://vmware.github.io/clarity/documentation/v0.11/typography) [SVG](https://github.com/vmware/clarity/tree/master/src/clr-icons) [yes](https://vmware.github.io/clarity/documentation/v0.11/grid) [typescript](https://vmware.github.io/clarity/documentation/v0.11/color) [yes](https://vmware.github.io/clarity) [HTML](https://vmware.github.io/clarity/documentation) [mongoDB](/mongodb-ui-design-system) [UI Design System](http://mongodb.design/#/ui-design-system/welcome) [GitHub](https://github.com/mongodb/design) [Sketch](http://mongodb.design/#/ui-design-system/resources) [yes](http://mongodb.design/#/ui-design-system/base-styles/colors) [yes](http://mongodb.design/#/ui-design-system/base-styles/typography) [Icon Font](http://mongodb.design/#/ui-design-system/base-styles/icons) [yes](http://mongodb.design/#/ui-design-system/guidelines/grid) [yes](http://mongodb.design/#/ui-design-system/principles) [yes](http://mongodb.design/#/ui-design-system/welcome) [HTML](http://mongodb.design/#/ui-design-system/components/buttons) [microsoft](/microsoft-office-ui-fabric) [Office UI Fabric](https://developer.microsoft.com/en-us/fabric) [GitHub](https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react) [yes](https://developer.microsoft.com/en-us/fabric#/styles/colors) [yes](https://developer.microsoft.com/en-us/fabric#/styles/typography) [Icon Font](https://developer.microsoft.com/en-us/fabric#/styles/icons) [yes](https://developer.microsoft.com/en-us/fabric#/styles/layout) [yes](https://developer.microsoft.com/en-us/fabric#/styles/animations) [yes](https://developer.microsoft.com/en-us/fabric#/get-started) [HTML](https://developer.microsoft.com/en-us/fabric#/components/button) [MYOB](/myob-feelix) [Feelix](http://feelix.myob.com/) [yes](http://feelix.myob.com/foundations/colours/) [yes](http://feelix.myob.com/foundations/typography/) [SVG](http://feelix.myob.com/components/Icons/) [yes](http://feelix.myob.com/foundations/grid/) [yes](http://feelix.myob.com/design-principles/) [yes](http://feelix.myob.com/) [StudyPortals](/studyportals-styleguide) [Styleguide](https://styleguide.studyportals.com) [yes](https://styleguide.studyportals.com/student/brandidentity/logo) [yes](https://styleguide.studyportals.com/student/brandidentity/colour) [yes](https://styleguide.studyportals.com/student/brandidentity/typography) [Icon Font](https://styleguide.studyportals.com/student/brandidentity/icons) [yes](https://styleguide.studyportals.com/student/components/grid) [yes](https://styleguide.studyportals.com/student/principles) [hudl](/hudl-uniform) [uniform](http://uniform.hudl.com/) [Sketch](http://uniform.hudl.com/resources/design-assets/sketch-library) [yes](http://uniform.hudl.com/guidelines/colors/design) [yes](http://uniform.hudl.com/guidelines/typography/design) [SVG](http://uniform.hudl.com/guidelines/iconography/design) [yes](http://uniform.hudl.com/guidelines/space/design) [yes](http://uniform.hudl.com/components/buttons/button/code) [workday](/workday-canvas) [canvas](https://design.workday.com/) [GitHub](https://github.com/Workday/canvas-kit) [yes](https://design.workday.com/guidelines) [yes](https://design.workday.com/resources/colors) [yes](https://design.workday.com/guidelines/visual/type) [SVG](https://design.workday.com/guidelines/visual/icons) [yes](https://design.workday.com/guidelines/visual/space) [yes](https://design.workday.com/content/voice-and-tone/voice-and-tone) [yes](https://design.workday.com/guidelines/accessibility/overview) [yes](https://design.workday.com/guidelines/design-principles/overview) [yes](https://design.workday.com) [yes](https://design.workday.com/components) [yes](https://workday.github.io/canvas-kit) [GitLab](/gitlab-pajamas-design-system) [Pajamas Design System](https://design.gitlab.com) [GitLab](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com) [yes](https://design.gitlab.com/components/overview) [Scss](https://design.gitlab.com/product-foundations/colors) [Figma](https://www.figma.com/community/file/781156790581391771) [yes](https://design.gitlab.com/brand/basics) [yes](https://design.gitlab.com/product-foundations/colors) [yes](https://design.gitlab.com/product-foundations/colors#accessibility) [yes](https://design.gitlab.com/product-foundations/type-fundamentals) [SVG](https://gitlab-org.gitlab.io/gitlab-svgs/) [yes](https://design.gitlab.com/layout/spacing) [yes](https://design.gitlab.com/product-foundations/illustration) [yes](https://design.gitlab.com/data-visualization/charts) [yes](https://design.gitlab.com/product-foundations/motion) [yes](https://design.gitlab.com/content/voice-tone) [yes](https://design.gitlab.com/accessibility/a11y) [yes](https://design.gitlab.com/get-started/principles) [yes](https://design.gitlab.com) [yes](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/CONTRIBUTING.md) [yes](https://gitlab-org.gitlab.io/gitlab-ui/) [intuit](/intuit-quickbooks-design-system) [QuickBooks Design System](https://designsystem.quickbooks.com/) [yes](https://designsystem.quickbooks.com/visual-assets/logos/) [yes](https://designsystem.quickbooks.com/foundations/color-palette/) [yes](https://designsystem.quickbooks.com/foundations/typography/) [Icon Font](https://designsystem.quickbooks.com/visual-assets/icon-font/) [yes](https://designsystem.quickbooks.com/foundations/digital-grid/) [yes](https://designsystem.quickbooks.com/visual-assets/illustration/) [yes](https://designsystem.quickbooks.com/data-viz/) [yes](https://designsystem.quickbooks.com/motion/) [yes](https://designsystem.quickbooks.com/voice-and-tone/) [yes](https://designsystem.quickbooks.com/accessibility/) [yes](https://designsystem.quickbooks.com/component/accordion/) [SpareBank 1](/sparebank-1-sparebank-1-designsystem) [SpareBank 1 Designsystem](https://design.sparebank1.no/) [GitHub](https://github.com/SpareBank1/designsystem) [yes](https://design.sparebank1.no/stil-og-tone.html) [yes](https://design.sparebank1.no/visuell-identitet.html#visuell-identitet_farger) [yes](https://design.sparebank1.no/styleguidist/index.html#!/Typografi) [SVG](https://design.sparebank1.no/styleguidist/index.html#!/Ikoner) [yes](https://design.sparebank1.no/styleguidist/index.html#!/Grid) [yes](https://design.sparebank1.no/visuell-identitet.html#visuell-identitet_animasjoner) [yes](https://design.sparebank1.no/stil-og-tone.html#stil-og-tone_stil-og-tone) [yes](https://design.sparebank1.no/universell-utforming.html) [yes](https://design.sparebank1.no/) [Markdown](https://github.com/SpareBank1/designsystem/blob/develop/README.md) [Zendesk](/zendesk-garden) [Garden](https://garden.zendesk.com/) [GitHub](https://github.com/zendeskgarden) [yes](https://garden.zendesk.com/css-components/utilities/color/) [yes](https://garden.zendesk.com/css-components/utilities/typography/) [SVG](https://garden.zendesk.com/design/icons/12#main-content) [yes](https://garden.zendesk.com/components/tooltip#main-content) [Pinterest](/pinterest-gestalt) [Gestalt](https://pinterest.github.io/gestalt/#/) [GitHub](https://github.com/pinterest/gestalt) [yes](https://pinterest.github.io/gestalt/#/IconButton) [Alfa-Bank](/alfa-bank-feather) [Feather](https://design.alfabank.ru/) [GitHub](https://github.com/alfa-laboratory/arui-feather) [yes](https://design.alfabank.ru/style/colors) [yes](https://design.alfabank.ru/style/typography) [SVG](https://github.com/alfa-laboratory/arui-feather/tree/master/src/icon) [yes](https://design.alfabank.ru/principles) [yes](https://design.alfabank.ru/components/dropdown) [Markdown](https://github.com/alfa-laboratory/arui-feather/tree/master/src/amount) [Digital Transformation Agency](/digital-transformation-agency-australian-government-design-system) [Australian Government Design System](https://designsystem.gov.au) [GitHub](https://github.com/govau/design-system-components) [Pancake](https://github.com/govau/pancake) [yes](https://www.dta.gov.au/help-and-advice/guides-and-tools/requirements-australian-government-websites/branding) [yes](https://designsystem.gov.au/components/core/) [yes](https://github.com/govau/sass-a11ycolor) [yes](https://designsystem.gov.au/components/grid-12/) [yes](https://designsystem.gov.au/components/animate/) [yes](https://guides.service.gov.au/content-guide/writing-style/#tone) [yes](https://designsystem.gov.au/components/header/accessibility/) [yes](https://designsystem.gov.au/) [yes](https://designsystem.gov.au/components/accordion/code/) [mozilla](/mozilla-protocol) [protocol](https://protocol.mozilla.org/) [GitHub](https://github.com/mozilla/protocol) [yes](https://mozilla.design/) [yes](https://protocol.mozilla.org/fundamentals/color.html) [yes](https://protocol.mozilla.org/fundamentals/typography.html) [yes](https://protocol.mozilla.org/demos/card-layout.html) [yes](https://protocol.mozilla.org/fundamentals/principles.html) [yes](https://protocol.mozilla.org/) [CSS](https://protocol.mozilla.org/docs/css-guide.html) [auth0](/auth0-cosmos) [cosmos](https://auth0-cosmos.now.sh) [GitHub](https://github.com/auth0/cosmos) [yes](https://auth0-cosmos.now.sh/docs/#/overview) [yes](https://auth0-cosmos.now.sh/docs/#/component/icon#icon-library) [yes](https://auth0-cosmos.now.sh/docs/) [yes](https://auth0-cosmos.now.sh/docs/#/component/alert) [yes](https://auth0-cosmos.now.sh/sandbox) [VTEX](/vtex-styleguide) [Styleguide](http://styleguide.vtex.com) [GitHub](https://github.com/vtex/styleguide) [VTEX IO](https://vtex.io/) [Figma](https://www.figma.com/file/a94lX91ZmYGIDBxvb8shwLn8/VTEX-Styleguide) [yes](http://brand.vtex.com/) [yes](https://styleguide.vtex.com/#/Styles?id=colors) [yes](https://styleguide.vtex.com/#/Styles?id=typography) [SVG](https://styleguide.vtex.com/#/Icons) [yes](https://styleguide.vtex.com/#/Styles?id=spacing) [yes](https://styleguide.vtex.com/#/Charts) [yes](https://styleguide.vtex.com/) [Markdown](https://styleguide.vtex.com/) [Government of Canada](/government-of-canada-aurora-design-system) [Aurora Design System](https://design.gccollab.ca/) [GitHub](https://github.com/gctools-outilsgc/design-system-code) [yes](https://design.gccollab.ca/component/colour) [yes](https://design.gccollab.ca/component/typography) [yes](https://design.gccollab.ca/component/icons) [yes](https://design.gccollab.ca/component/grids-and-spacing) [yes](https://design.gccollab.ca/data/data-overview) [yes](https://design.gccollab.ca/content/content-guidelines) [yes](https://design.gccollab.ca/overview/introduction) [yes](https://design.gccollab.ca/component) [bridge](/bridge-bold-design-system) [bold design system](https://bold.bridge.ufsc.br/) [GitHub](https://github.com/laboratoriobridge/bold) [Skecth](https://bold.bridge.ufsc.br/resources/) [yes](https://bold.bridge.ufsc.br/design-guidelines/color/) [yes](https://bold.bridge.ufsc.br/design-guidelines/color/usage/) [yes](https://bold.bridge.ufsc.br/design-guidelines/typography/) [yes](https://bold.bridge.ufsc.br/design-guidelines/iconography/) [yes](https://bold.bridge.ufsc.br/design-guidelines/grid/) [yes](https://bold.bridge.ufsc.br/design-guidelines/accessibility/) [yes](https://bold.bridge.ufsc.br/) [yes](https://bold.bridge.ufsc.br/storybook) [canonical](/canonical-vanilla-framework) [vanilla framework](https://vanillaframework.io/) [GitHub](https://github.com/canonical-web-and-design/vanilla-framework) [Sketch](https://assets.ubuntu.com/latest-redirects/vanilla-framework.sketch) [yes](https://design.ubuntu.com/brand/) [yes](https://docs.vanillaframework.io/settings/color-settings/) [yes](https://docs.vanillaframework.io/base/typography/) [yes](https://docs.vanillaframework.io/patterns/icons/) [yes](https://docs.vanillaframework.io/patterns/grid/) [yes](https://docs.vanillaframework.io/settings/animation-settings/) [yes](https://vanillaframework.io/accessibility) [yes](https://docs.vanillaframework.io/) [ServiceTitan](/servicetitan-anvil) [Anvil](http://anvil.servicetitan.com) [yes](http://anvil.servicetitan.com) [TOTVS](/totvs-portinari-ui) [Portinari UI](https://portinari.io) [GitHub](https://github.com/portinariui/portinari-angular) [yes](https://po-ui.io/guides/typography) [yes](https://po-ui.io/guides/icons) [yes](https://po-ui.io/guides/grid-system) [yes](https://po-ui.io/documentation/po-chart) [yes](https://po-ui.io/documentation) [HTML](https://po-ui.io/) [LocalTapiola Services Ltd](/localtapiola-services-ltd-duet-design-system) [Duet Design System](https://www.duetds.com/) [Sketch](https://www.duetds.com/abstract/) [yes](https://www.duetds.com/resources/) [yes](https://www.duetds.com/tokens/) [yes](https://www.duetds.com/typography/) [yes](https://www.duetds.com/iconography/) [yes](https://www.duetds.com/spacing/) [yes](https://www.duetds.com/illustrations/) [yes](https://www.duetds.com/accessibility/) [yes](https://www.duetds.com/design-principles/) [yes](https://www.duetds.com/) [yes](https://www.duetds.com/developers/) [NPM](https://www.npmjs.com/org/duetds) [SUSE](/suse-eos-design-system) [EOS Design System](https://eosdesignsystem.com/) [Gitlab](https://gitlab.com/SUSE-UIUX/eos) [yes](https://suse.eosdesignsystem.com/colors) [yes](https://suse.eosdesignsystem.com/colors/usage) [yes](https://suse.eosdesignsystem.com/typography) [yes](http://icons.eosdesignsystem.com/) [yes](https://suse.eosdesignsystem.com/patterns/spacing) [yes](https://suse.eosdesignsystem.com/writing/brand-tone) [yes](https://suse.eosdesignsystem.com/installing-npm) [ENGIE](/engie-fluid) [fluid](https://www.engie.design/) [Sketch](https://www.engie.design/fluid-design-system/getting-started/designers/) [yes](https://www.engie.design/fluid-design-system/brand/colors/) [Natural](http://chir.ag/projects/name-that-color/) [yes](https://getstark.co/) [yes](https://www.engie.design/fluid-design-system/brand/typography/) [yes](https://www.engie.design/fluid-design-system/brand/icons/) [yes](https://www.engie.design/fluid-design-system/components/grid/) [yes](https://www.engie.design/fluid-design-system/brand/accessibility/) [yes](https://www.engie.design/fluid-design-system/ux-principles/) [yes](https://www.engie.design/fluid-design-system/) [yes](https://www.engie.design/fluid-design-system/getting-started/developers/introduction/) [yes](https://pages.github.tools.digital.engie.com/GBSEngieDigitalDesignSystem/fluid-design-system/) [NPM](https://www.npmjs.com/package/@engie-group/fluid-design-system) [sellerscale](/sellerscale-nude-elements) [NUDE Elements](https://numl.tenphi.now.sh) [GitHub](https://github.com/tenphi/nude) [yes](https://github.com/tenphi/nude/tree/master/docs) [yes](https://numl.tenphi.now.sh) [sainsbury's](/sainsbury-s-luna) [luna](https://luna.sainsburys.co.uk/) [yes](https://luna.sainsburys.co.uk/guidelines) [yes](https://luna.sainsburys.co.uk/styles/colours) [yes](https://luna.sainsburys.co.uk/styles/typography) [yes](https://luna.sainsburys.co.uk/styles/icons) [yes](https://luna.sainsburys.co.uk/styles/grid) [yes](https://luna.sainsburys.co.uk/guidelines/language) [yes](https://luna.sainsburys.co.uk/accessibility) [Markdown](https://jsainsburyplc.github.io/luna/) [iStreamPlanet](/istreamplanet-pebble-design-system) [Pebble Design System](https://pebble.istreamplanet.net/) [GitHub](https://github.com/istreamlabs/pebble) [yes](https://pebble.istreamplanet.net/#/Styles/Color) [yes](https://pebble.istreamplanet.net/#/Styles/Typography) [yes](https://pebble.istreamplanet.net/#/Components/Icon) [yes](https://pebble.istreamplanet.net/#/Styles/Spacing) [yes](https://pebble.istreamplanet.net/) [npm](https://www.npmjs.com/package/@istreamplanet/pebble) [Nulogy](/nulogy-nulogy-design-system) [Nulogy Design System](http://nulogy.design) [GitHub](https://github.com/nulogy/design-system) [yes](https://nulogy.design/design-language/colour/) [yes](https://nulogy.design/design-language/typography/) [yes](https://nulogy.design/components/icon/) [yes](https://nulogy.design/design-language/spacing/) [yes](https://nulogy.design/) [yes](https://storybook.nulogy.design/) [Red Hat](/red-hat-patternfly-design-system) [Patternfly Design System](https://www.patternfly.org/) [GitHub](https://github.com/patternfly) [Patternfly](https://www.patternfly.org/v4/get-started/develop#htmlcss) [Sketch](https://github.com/patternfly/patternfly-design-kit) [yes](https://www.patternfly.org/v4/guidelines/colors/) [yes](https://www.patternfly.org/v4/guidelines/colors#color-palette) [yes](https://www.patternfly.org/v4/guidelines/colors#contrast-ratios) [yes](https://www.patternfly.org/v4/guidelines/typography/) [Font Awesome Free](https://www.patternfly.org/v4/guidelines/icons/) [yes](https://www.patternfly.org/v4/layouts/grid/) [yes](https://www.patternfly.org/v3/pattern-library/data-visualization/area-chart/) [yes](https://www.patternfly.org/v4/components/empty-state/design-guidelines/#voice-and-tone) [yes](https://www.patternfly.org/v4/accessibility/accessibility-fundamentals/) [yes](https://www.patternfly.org/v4/get-started/develop/#getting-started) [yes](https://www.patternfly.org/v4/contribute/about/) [yes](https://www.patternfly.org/v4/get-started/develop/#react) [yes](https://www.patternfly.org/v4/) [Buildit | Wipro Digital](/buildit-wipro-digital-gravity) [Gravity](http://style.buildit.digital/) [GitHub](https://github.com/buildit/gravity-ui-web) [Style Dictionary](https://github.com/buildit/gravity-particles/) [yes](http://style.buildit.digital/components/detail/color-palettes.html) [semantic](http://style.buildit.digital/docs/gravity-for-the-web/color-system.html) [yes](http://style.buildit.digital/components/detail/color-schemes.html) [yes](http://style.buildit.digital/components/detail/fonts.html) [yes](http://style.buildit.digital/components/detail/logos-and-icons--ui-svg-symbols.html) [yes](http://style.buildit.digital/docs/gravity-for-the-web/layout.html) [yes](http://style.buildit.digital/docs/about-gravity/principles.html) [yes](http://style.buildit.digital/) [npm (ui-web)](https://www.npmjs.com/package/@buildit/gravity-ui-web) [npm (particles)](https://www.npmjs.com/package/@buildit/gravity-particles) [drawbotics](/drawbotics-drylus) [drylus](https://drawbotics.github.io/drylus) [yes](https://drawbotics.github.io/drylus/component-kit/brand/colors) [yes](https://drawbotics.github.io/drylus/component-kit/components/icon) [yes](https://drawbotics.github.io/drylus/component-kit/layout/grid) [yes](https://drawbotics.github.io/drylus/component-kit/components/animated-item) [yes](https://drawbotics.github.io/drylus) [HTML](https://drawbotics.github.io/drylus/coding-guidelines/introduction) [finastra](/finastra-finastra-design-system) [Finastra Design System](https://design.fusionfabric.cloud/) [GitHub](https://github.com/fusionfabric/finastra-design-system) [Sketch](https://github.com/fusionfabric/finastra-design-kit) [XD](https://github.com/fusionfabric/finastra-design-kit) [yes](https://design.fusionfabric.cloud/foundations) [yes](https://design.fusionfabric.cloud/foundations/colors) [yes](https://design.fusionfabric.cloud/foundations/typography) [yes](https://design.fusionfabric.cloud/foundations/icons) [yes](https://design.fusionfabric.cloud/foundations/spacings) [yes](https://design.fusionfabric.cloud/components/data-visualization) [yes](https://design.fusionfabric.cloud/get-started/designers) [yes](https://design.fusionfabric.cloud/) [yes](https://design.fusionfabric.cloud/get-started/developers) [npm](https://www.npmjs.com/package/@ffdc/uxg-angular-theme) [twilio](/twilio-paste) [paste](https://paste.twilio.design/) [GitHub](https://github.com/twilio-labs/paste) [Sketch](https://share.goabstract.com/786b3d8f-b87a-4140-af7d-eb4cdd40e8ed) [Twilio Brand](https://www.twilio.com/brand) [yes](https://paste.twilio.design/tokens) [SVG](https://paste.twilio.design/icons) [yes](https://paste.twilio.design/layout) [yes](https://paste.twilio.design/illustrations) [yes](https://paste.twilio.design/content/voice-and-tone) [yes](https://paste.twilio.design/inclusive-design) [yes](https://paste.twilio.design/principles) [yes](https://paste.twilio.design/) [yes](https://paste.twilio.design/getting-started/engineering) [yes](https://twilio-labs.github.io/paste) [npm](https://www.npmjs.com/package/@twilio-paste/core) [sipgate](/sipgate-pandaui) [pandaUI](https://panda.sipgatedesign.com) [yes](https://www.sipgatedesign.com/) [yes](https://panda.sipgatedesign.com/?path=/docs/foundation-color--page) [yes](https://panda.sipgatedesign.com/?path=/docs/foundation-color--page#kontrastmatrix) [yes](https://panda.sipgatedesign.com/?path=/docs/foundation-typography--page) [yes](https://panda.sipgatedesign.com/?path=/docs/foundation-layout--page) [yes](https://panda.sipgatedesign.com) [Telefónica](/telef-nica-m-stica) [Mística](https://brandfactory.telefonica.com/mistica) [GitHub](https://github.com/Telefonica/mistica) [yes](https://brandfactory.telefonica.com/mistica) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/color-constants) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/typography) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/icons) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/spacing) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/design-values) [yes](https://github.com/Telefonica/mistica) [yes](https://mistica-web.vercel.app/?path=/story/welcome-welcome--mistica) [Elia Group](/elia-group-nova) [Nova](https://nova.eliagroup.io) [yes](https://nova.eliagroup.io/brand/) [yes](https://nova.eliagroup.io/brand/colors/) [yes](https://nova.eliagroup.io/brand/typography/) [yes](https://nova.eliagroup.io/brand/iconography/) [yes](https://nova.eliagroup.io/documentation/foundations/spacing/guide/) [yes](https://www.highcharts.com/docs/chart-and-series-types/pie-chart) [yes](https://nova.eliagroup.io/brand/purpose/) [yes](https://nova.eliagroup.io/overview/design-principles/) [yes](https://nova.eliagroup.io) [Kajabi](/kajabi-sage) [Sage](https://sage.kajabi.com) [GitHub](https://github.com/Kajabi/sage-lib) [yes](https://sage.kajabi.com/pages/foundations/color) [yes](https://sage.kajabi.com/pages/foundations/typography) [yes](https://sage.kajabi.com/pages/foundations/icon) [yes](https://sage.kajabi.com/pages/patterns/grid) [yes](https://sage.kajabi.com/pages/foundations/design_principles) [yes](https://sage.kajabi.com) [yes](https://sage.kajabi.com/pages/component/sage_component?tab=preview) [yes](https://sage-lib-storybook.production.kajabi.farm/?path=/docs/) [Adele Goldberg](https://en.wikipedia.org/wiki/Adele_Goldberg_(computer_scientist)) [Learn more & download](https://www.uxpin.com/evangelizing-design-system-roi-template?utm_source=adele.uxpin.com&utm_medium=upartner&utm_campaign=Adele) [Start a free trial now!](https://www.uxpin.com?utm_source=adele.uxpin.com&utm_medium=upartner&utm_campaign=Adele)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "### why adele? ## Adele Goldberg. The Icon. ### do you need help with your system? ## Evangelize Design System with a Free Template! ## UXPin: Prototype and Manage Your Design System Company System Placeholder HTML/CSS yes hound scss lint Sass natural (e.g. red, light red) • npm • Bower HTML/CSS/JS Vanilla • ESLint • StyleLint Gulp • natural (e.g. red) • specific (e.g. success) React • Jest • Enzyme • Sinon Radium Webpack natural (e.g. red_400) • Yarn Qunit Less natural (e.g. teal) • Chai • Mocha • Stylus • postStylus • natural (e.g. color red) • abstract (e.g. color oil) • Lerna prettier • styled-components • stylis natural (e.g. red0) json natural (e.g. blue) stlylus natural (e.g. green primary) postCSS • natural (e.g. gold) visual only hex, rgb, cmyk, pms only jQuery natural (e.g. yellow) CSS • branded (e.g. trello blue 50) • natural • Glamorous • Sketch • UXPin natural (e.g. red_10) Jade natural (e.g. blue-900) abstract (e.g. cloud) yaml natual (e.g.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 969,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "• UXPin natural (e.g. red_10) Jade natural (e.g. blue-900) abstract (e.g. cloud) yaml natual (e.g. orange-dark) Grunt • natural (e.g. fill-red) • specific (e.g.fill-facebook) rollup • natural (e.g. gray darkest) • abstract (e.g. Primary) specific (e.g. $button-colour) • Sasslint • inuit • structured (e.g. accent-1) • specific (e.g. critical) • natural (e.g. gray) Jasmine jshint specific (e.g. $feature-copy) Fela abstract (e.g. grass) Bitbucket any • sass • natural (e.g. $mds-color-black) • abstract (e.g. $mds-color-neutral-20 • specific (e.g. warning) Markdown • natural (e.g. light blue) • abstract (e.g. jazzy orange) branded and natural (e.g.NIBlueBrush) • glamor • natural (e.g. psColorsWhite) • abstract (e.g. psColorsBone) • Vue • Karma • cssLint proprietary branded (e.g. audi black) • branded (e.g. brand blue) • specific (e.g. link color) • CSS Modules hex only HTML/CSS/TS • TSLint • Stylelint • PostCSS • theo • Rollup • abstract (e.g. sky) • natural (e.g. green) natural (e.g.",
+      "metadata": {
+        "startIndex": 869,
+        "endIndex": 1865,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "nt • Stylelint • PostCSS • theo • Rollup • abstract (e.g. sky) • natural (e.g. green) natural (e.g. color-blue-500 • scsslint natural (e.g. green-dark) • abstract (e.g. prom dress) • generic (T500) gulp • abstract (e.g. endeavour), natural (palette_gray_2) specific (e.g. text-01) Polymer • WCT • specific (e.g. $status-red3, $primary-default, $gray8) • Angular • Prettier • ESlint natural (e.g. Red Medium) no data • Bourbon • Neat • Browserify natural (e.g. blue, gray, white) ESlint, Sasslint natural (e.g. blue primary) abstract (e.g. Sunset Orange) private • natural (eg: $purple-lighten-10) • structured: ${base-color-name}-{darken/lighten}-{step} Icon Font jasmine • specific (e.g. error-1) • structure (e.g. accent-1) • Pa11y CI webpack • natural (e.g. teal), abstract (e.g. sky) • natural (e.g. orange-400) • abstract (e.g. powder-100) harmony • natural (e.g. green 01) • branded (e.g. quickbooks green) generig (e.g. color-1) AVA natural (e.g. gray-300) • Visual Regression abstract (e.g.",
+      "metadata": {
+        "startIndex": 1765,
+        "endIndex": 2764,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "kbooks green) generig (e.g. color-1) AVA natural (e.g. gray-300) • Visual Regression abstract (e.g. calypso) • yarn Natural (e.g. $mintPrimary) • abstract (e.g. $color-developer) • natural (e.g. $color-silver) • specific (e.g. $color-success) natural (e.g. orange) GitHub • natural (e.g. Light Green) • abstract (e.g. stone) specific (e.g. success color) abstract (e.g. event cyan) • branded (e.g. eurostar blue) • abstract (e.g. metallic gold) • natural (e.g. c-cyan) • specific (e.g. c-inputgrey) • bower • ruby gem • Selenium • natural (e.g. green-1) • specific (e.g. alertOrange) HTML/CSS/JS/SWIFT Adobe XD • specific (e.g. themeDarkAlt) • branded (e.g. brand-primary) • natural e.g. gray-base natural pattern • Natural (e.g. $color-brand-orange) • Abstract (e.g. $color-identity-apple) • Cypress • ChromaticQA • Emotion Abstract (e.g. Peach) • Visual regression natural (e.g. green-500) • Branded (e.q. Quickbooks Green) • Natural (e.g. Green 01) • Jest-styled-components • abstract (e.g.",
+      "metadata": {
+        "startIndex": 2664,
+        "endIndex": 3658,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "Branded (e.q. Quickbooks Green) • Natural (e.g. Green 01) • Jest-styled-components • abstract (e.g. verdigis) • natural (e.g. grey–800) natural (e.g. dark_indigo) • Pa11y semantic Node • Chromatic Tachyons semantic (e.g. $bg-action-primary) • NPM • VTEX IO jest emotion sass-lint Natural SVG • Abstract Private • Vue.js • Ember • Axe • Proprietary • Sass-lint • CSS Custom Properties • JSON • XML • Stencil SASS Adobe XD / SVG Private GitHub no yet • specific (e.g. border) • Cucumber • Percy • Style Dictionary • Branded • Semantic • Specific • Nexus • React Testing Library natural (e.g. neutral-500) HTML/CSS/JS/TS • BackstopJS • aXe • Web Component Tester • abstract (e.g. default-color--200) • natural (e.g. green-100) • specific (e.g. BackgroundColor--dark-300) aXe (a11y) not yet GitHub Packages • natural (e.g. violet) • abstract (e.g. ocean) • specific (e.g. error) • aXe-core specific (e.g. color-background-error) tailwindcss yes (defined in tailwind.config) natural (e.g.",
+      "metadata": {
+        "startIndex": 3558,
+        "endIndex": 4542,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "e specific (e.g. color-background-error) tailwindcss yes (defined in tailwind.config) natural (e.g. blue-500) WCAG 2.1 Level AA yarn monorepo HTML/CSS/JS/SWIFT/KOTLIN • react-testing-library • puppeteer • eslint Blazor style-components specific • nupkg • HTML • JavaScript No. Adele – the Design Systems Repository, is not named after Adele – the singer. This is a tribute to one of the most important computer scientists focused on graphic user interfaces, design patterns and object-oriented programming – . Adele Goldberg worked at XEROX PARC in the 70s and managed the System Concepts Laboratory where, together with Alan Kay and others, she developed Smalltalk-80 – an object-oriented, dynamically typed programming language that was meant to power the \"human-computer symbiosis\". Needless to say, SmallTalk also pioneered many concepts important to all modern design systems. Objects in Smalltalk were easily transferable between applications and customizable.",
+      "metadata": {
+        "startIndex": 4442,
+        "endIndex": 5409,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "esign systems. Objects in Smalltalk were easily transferable between applications and customizable. Smalltalk also served as the foundation of PARC's work on graphically based user interfaces (many GUI concepts have been developed by Adele Goldberg and her group!). 40+ Slides ready for action. Perfect for team and stakeholder presentation. Available as a powerpoint and keynote deck. Join thousands of companies (including PayPal, Sapient and HBO) and optimize your design process with UXPin. ## Links [dropbox](/dropbox-scooter) [scooter Deprecated](http://dropbox.github.io/scooter/index.html) [GitHub](https://github.com/dropbox/scooter) [yes](https://dropbox.github.io/scooter/#colors) [yes](https://dropbox.github.io/scooter/#grid) [yes](http://dropbox.github.io/scooter/) [HTML](https://dropbox.github.io/scooter/) [royal canin](/royal-canin-royal-canin-s-design-language) [royal canin’s design language](http://developer.royalcanin.com/) [GitHub](https://github.com/First10/)",
+      "metadata": {
+        "startIndex": 5309,
+        "endIndex": 6294,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "al canin’s design language](http://developer.royalcanin.com/) [GitHub](https://github.com/First10/) [Sketch](http://developer.royalcanin.com/resources.html) [Photoshop](http://developer.royalcanin.com/resources.html) [yes](http://developer.royalcanin.com/identity/logos.html) [yes](http://developer.royalcanin.com/identity/colour.html) [yes](http://developer.royalcanin.com/identity/typography/typeStyles.html) [SVG Sprite](http://developer.royalcanin.com/identity/icons.html) [yes](https://github.com/First10/) [yes](http://developer.royalcanin.com/welcome.html) [HTML](http://developer.royalcanin.com/components/cards.html) [instacart](/instacart-snacks) [snacks](https://instacart.github.io/Snacks/) [GitHub](https://github.com/instacart/Snacks) [yes](https://instacart.github.io/Snacks/#colors) [Icon Font](https://instacart.github.io/Snacks/#icons) [yes](https://instacart.github.io/Snacks/#grid) [yes](https://instacart.github.io/Snacks/#buttons)",
+      "metadata": {
+        "startIndex": 6194,
+        "endIndex": 7147,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "[yes](https://instacart.github.io/Snacks/#grid) [yes](https://instacart.github.io/Snacks/#buttons) [Markdown](https://github.com/instacart/Snacks/blob/master/src/components/Grid/docs/Grid.md) [consumer financial protection bureau](/consumer-financial-protection-bureau-cfpb-design-manual) [cfpb design manual](https://cfpb.github.io/design-manual/index.html) [GitHub](https://github.com/cfpb/capital-framework) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/beam-pattern.html) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/color-principles.html) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/typography.html) [Icon Font](https://cfpb.github.io/design-manual-archive/brand-guidelines/minicons.html#asset-library) [yes](https://cfpb.github.io/design-system/foundation/grid) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/illustration.html)",
+      "metadata": {
+        "startIndex": 7047,
+        "endIndex": 7972,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "dation/grid) [yes](https://cfpb.github.io/design-manual-archive/brand-guidelines/illustration.html) [yes](https://cfpb.github.io/design-manual-archive/data-visualization/data-visualization.html) [yes](https://cfpb.github.io/design-manual-archive/best-practices/best-practices.html) [yes](https://cfpb.github.io/design-manual-archive/best-practices/design-principles.html) [yes](https://cfpb.github.io/design-manual/index.html) [Markdown](https://github.com/cfpb/capital-framework/blob/canary/src/cf-buttons/usage.md) [auth0](/auth0-styleguide) [styleguide Deprecated](https://styleguide.auth0.com) [GitHub](https://github.com/auth0/styleguide) [yes](https://styleguide.auth0.com/#/design/primary-colors) [yes](https://styleguide.auth0.com/#/design/typography) [SVG](https://styleguide.auth0.com/#/resources) [yes](https://github.com/auth0/styleguide/blob/master/packages/core/src/grid/index.styl) [yes](https://styleguide.auth0.com/#/)",
+      "metadata": {
+        "startIndex": 7872,
+        "endIndex": 8808,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "h0/styleguide/blob/master/packages/core/src/grid/index.styl) [yes](https://styleguide.auth0.com/#/) [Markdown](https://github.com/auth0/styleguide/blob/master/packages/react-components/README.md) [yes](https://styleguide.auth0.com/#/react/select) [priceline](/priceline-priceline-design-system) [priceline design system](https://pricelinelabs.github.io/design-system/) [GitHub](https://github.com/pricelinelabs/design-system) [yes](https://pricelinelabs.github.io/design-system/?selectedKind=Color&selectedStory=Palette&full=0&down=1&left=1&panelRight=0&downPanel=storybook%2Factions%2Factions-panel) [SVG](https://pricelinelabs.github.io/design-system/?selectedKind=Icon&selectedStory=Icons&full=0&down=1&left=1&panelRight=0&downPanel=storybook%2Factions%2Factions-panel) [Markdown](https://github.com/pricelinelabs/design-system/blob/master/docs/Button.md)",
+      "metadata": {
+        "startIndex": 8708,
+        "endIndex": 9567,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "ctions-panel) [Markdown](https://github.com/pricelinelabs/design-system/blob/master/docs/Button.md) [yes](https://pricelinelabs.github.io/design-system/?selectedKind=BackgroundImage&selectedStory=Basic&full=0&down=1&left=1&panelRight=0&downPanel=storybook%2Factions%2Factions-panel) [mozilla firefox](/mozilla-firefox-photon-design-system) [photon design system](http://design.firefox.com/) [GitHub](https://github.com/FirefoxUX/photon) [yes](http://design.firefox.com/photon/visuals/product-identity-assets.html) [yes](http://design.firefox.com/photon/visuals/color.html) [yes](http://design.firefox.com/photon/visuals/typography.html) [SVG](http://design.firefox.com/icons/viewer/) [yes](http://design.firefox.com/photon/visuals/grid.html) [yes](http://design.firefox.com/photon/visuals/illustration.html) [yes](http://design.firefox.com/photon/motion/duration-and-easing.html) [yes](http://design.firefox.com/photon/copy/voice-and-tone.html)",
+      "metadata": {
+        "startIndex": 9467,
+        "endIndex": 10412,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "n/motion/duration-and-easing.html) [yes](http://design.firefox.com/photon/copy/voice-and-tone.html) [yes](http://design.firefox.com/photon/introduction/design-for-inclusion.html) [yes](http://design.firefox.com/photon/introduction/principles.html) [yes](http://design.firefox.com/) [HTML](http://design.firefox.com/photon/components/input-fields.html) [family search](/family-search-frontier) [frontier](https://www.familysearch.org/frontier/styleguide/) [GitHub](https://github.com/fs-webdev/fs-styles) [yes](https://www.familysearch.org/frontier/styleguide/#colors-logo-colors) [yes](https://www.familysearch.org/frontier/styleguide/#typography) [SVG](https://www.familysearch.org/frontier/styleguide/#icons) [yes](https://www.familysearch.org/frontier/styleguide/) [appear here](/appear-here-bloom) [bloom](http://bloom.appearhere.co.uk/) [GitHub](https://github.com/appearhere/bloom/) [yes](http://bloom.appearhere.co.uk/design/colors) [yes](http://bloom.appearhere.co.uk/design/typography)",
+      "metadata": {
+        "startIndex": 10312,
+        "endIndex": 11307,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "http://bloom.appearhere.co.uk/design/colors) [yes](http://bloom.appearhere.co.uk/design/typography) [SVG](http://bloom.appearhere.co.uk/design/iconography) [yes](http://bloom.appearhere.co.uk/patterns/animation) [yes](http://bloom.appearhere.co.uk/patterns/accessibility) [yes](http://bloom.appearhere.co.uk/) [HTML](http://bloom.appearhere.co.uk/patterns/buttons) [estonia](/estonia-brand-estonia) [brand estonia](https://brand.estonia.ee/) [yes](https://brand.estonia.ee/guidelines/?lang=en) [yes](https://brand.estonia.ee/design/colour/) [yes](https://brand.estonia.ee/design/typography/) [PNG Sprite](https://brand.estonia.ee/?lang=en) [yes](https://brand.estonia.ee/design/layout/) [yes](https://brand.estonia.ee/design/imagery/) [yes](https://brand.estonia.ee/design/video-animation/) [yes](https://brand.estonia.ee/) [help scout](/help-scout-style-guide-seed) [style guide & seed](http://style.helpscout.com/) [GitHub](https://github.com/helpscout/seed-base)",
+      "metadata": {
+        "startIndex": 11207,
+        "endIndex": 12173,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "[style guide & seed](http://style.helpscout.com/) [GitHub](https://github.com/helpscout/seed-base) [yes](http://style.helpscout.com/brand/logo/) [yes](http://style.helpscout.com/brand/color/) [yes](http://style.helpscout.com/brand/typography/) [Icon Font](http://style.helpscout.com/icons/scouticons/) [no](http://style.helpscout.com/brand/illustration/) [yes](http://style.helpscout.com/copy/docs/) [yes](http://style.helpscout.com/) [HTML](http://style.helpscout.com/web-app/accordion/) [trello](/trello-nachos) [nachos](https://design.trello.com/) [Sketch](https://design.trello.com/assets/Trello_Mockup_Sketch_File.zip) [yes](https://design.trello.com/style/brand) [yes](https://design.trello.com/style/color) [yes](https://design.trello.com/style/typography) [SVG](https://design.trello.com/style/icons) [yes](https://design.trello.com/style/layout) [yes](https://design.trello.com/style/motions) [yes](https://design.trello.com/principles) [yes](https://design.trello.com/) [CA",
+      "metadata": {
+        "startIndex": 12073,
+        "endIndex": 13058,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "om/style/motions) [yes](https://design.trello.com/principles) [yes](https://design.trello.com/) [CA Technologies](/ca-technologies-mineral-ui) [Mineral UI](https://mineral-ui.netlify.app/) [GitHub](https://github.com/mineral-ui/mineral-ui) [yes](https://mineral-ui.com/theming/#common-scenarios-theme-structure) [yes](https://mineral-ui.com/color/) [yes](https://mineral-ui.com/typography/) [SVG](https://mineral-ui.com/components/icon/) [yes](https://mineral-ui.com/color/#guidelines-accessibility-(a11y)) [yes](https://mineral-ui.com/) [HTML](https://mineral-ui.com/components/button/) [mixpanel](/mixpanel-mixpanel-ds) [Mixpanel DS](https://design.mixpanel.com/) [yes](https://github.com/mixpanel/) [SVG](https://github.com/mixpanel/) [HTML](https://github.com/mixpanel/) [duolingo](/duolingo-design-guidelines) [design guidelines](https://www.duolingo.com/design/) [yes](https://www.duolingo.com/design/) [yes](https://www.duolingo.com/design) [PNG](https://www.duolingo.com/design)",
+      "metadata": {
+        "startIndex": 12958,
+        "endIndex": 13945,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "duolingo.com/design/) [yes](https://www.duolingo.com/design) [PNG](https://www.duolingo.com/design) [envato](/envato-foundation-design-system) [foundation design system](https://envato.github.io/foundation-design-system/) [GitHub](https://github.com/envato/foundation-design-system-tokens) [yes](https://envato.github.io/foundation-design-system/design-tokens#colors) [yes](https://envato.github.io/foundation-design-system/design-tokens#typography) [Icon Font](https://github.com/envato/foundation-design-system-tokens/tree/master/packages/glyphs) [yes](https://envato.github.io/foundation-design-system/design-tokens#spacing) [yes](https://envato.github.io/foundation-design-system/) [HTML](https://envato.github.io/foundation-design-system/components/button) [buzzfeed](/buzzfeed-solid) [solid](http://solid.buzzfeed.com/) [GitHub](https://github.com/buzzfeed/solid) [Sketch](https://www.dropbox.com/s/rfk8qptfjxk7s3k/solid-style-template.sketch?dl=0) [yes](http://solid.buzzfeed.com/colors.html)",
+      "metadata": {
+        "startIndex": 13845,
+        "endIndex": 14845,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "om/s/rfk8qptfjxk7s3k/solid-style-template.sketch?dl=0) [yes](http://solid.buzzfeed.com/colors.html) [yes](http://solid.buzzfeed.com/typography.html) [SVG](http://solid.buzzfeed.com/svg-icons.html) [yes](http://solid.buzzfeed.com/grid.html) [yes](http://solid.buzzfeed.com/) [HTML](http://solid.buzzfeed.com/buttons.html) [bring & posten](/bring-posten-hedwig) [hedwig](https://hedwig-docs.herokuapp.com/) [GitHub](https://github.com/bring/hedwig) [yes](https://hedwig-docs.herokuapp.com/bring.html#/Colors) [yes](https://hedwig-docs.herokuapp.com/posten.html#/Colors) [yes](https://hedwig-docs.herokuapp.com/posten.html#/Typography) [SVG](https://hedwig-docs.herokuapp.com/posten.html#/Icon) [yes](https://hedwig-docs.herokuapp.com/bring.html#/Spacing) [yes](https://hedwig-docs.herokuapp.com/bring.html#/) [yes](https://hedwig-docs.herokuapp.com/posten.html#/) [Markdown](https://github.com/bring/hedwig/blob/master/src/shared/components/button/Buttons.md) [future",
+      "metadata": {
+        "startIndex": 14745,
+        "endIndex": 15711,
+        "chunkIndex": 17,
+        "section": "Content",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "kdown](https://github.com/bring/hedwig/blob/master/src/shared/components/button/Buttons.md) [future learn](/future-learn-pattern-library) [pattern library](https://www.futurelearn.com/pattern-library) [yes](https://www.futurelearn.com/pattern-library/admin/core-patterns/colours) [yes](https://www.futurelearn.com/pattern-library/admin/core-patterns/typography) [SVG](https://www.futurelearn.com/pattern-library/admin/core-patterns/icons) [yes](https://www.futurelearn.com/pattern-library/admin/core-patterns/interactive-states) [yes](https://www.futurelearn.com/pattern-library/admin/core-patterns/microcopy#feedback-messages) [yes](https://www.futurelearn.com/pattern-library) [GOV.UK](/gov-uk-gov-uk-design-system) [GOV.UK Design System](https://design-system.service.gov.uk/) [GitHub](https://github.com/alphagov/govuk-design-system) [yes](https://design-system.service.gov.uk/components/) [yes](https://design-system.service.gov.uk/styles/colour/)",
+      "metadata": {
+        "startIndex": 15611,
+        "endIndex": 16564,
+        "chunkIndex": 18,
+        "section": "Content",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "esign-system.service.gov.uk/components/) [yes](https://design-system.service.gov.uk/styles/colour/) [yes](https://design-system.service.gov.uk/styles/typography/) [yes](https://design-system.service.gov.uk/styles/layout/) [yes](https://www.gov.uk/service-manual/helping-people-to-use-your-service) [yes](https://www.gov.uk/guidance/government-design-principles) [yes](https://www.gov.uk/service-manual) [heroku](/heroku-purple3) [purple3](https://purple3.herokuapp.com/) [yes](https://purple3.herokuapp.com/documentation.html#typography) [SVG Sprite](https://purple3.herokuapp.com/icons.html) [yes](https://purple3.herokuapp.com/documentation.html#spacing) [yes](https://purple3.herokuapp.com/documentation.html) [HP enterprise](/hp-enterprise-grommet) [grommet](http://grommet.io/) [GitHub](https://github.com/grommet/grommet) [Sketch](https://github.com/grommet/grommet-design/tree/master/hpe) [Illustrator](https://github.com/grommet/grommet-design/tree/master/hpe)",
+      "metadata": {
+        "startIndex": 16464,
+        "endIndex": 17433,
+        "chunkIndex": 19,
+        "section": "Content",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "et-design/tree/master/hpe) [Illustrator](https://github.com/grommet/grommet-design/tree/master/hpe) [yes](http://grommet.io/docs/color) [yes](http://grommet.io/docs/typography) [SVG](http://grommet.io/docs/icon) [yes](http://grommet.io/docs/padding) [yes](http://grommet.io/docs/chart) [yes](http://grommet.io/docs/animate) [yes](http://grommet.io/docs/writing-style) [yes](http://grommet.io/docs/accessibility) [yes](http://grommet.io/docs/best-practices) [yes](http://grommet.io/) [HTML](http://grommet.io/docs/accordion) [BBC](/bbc-gel) [gel](http://www.bbc.co.uk/gel) [GitHub](https://github.com/bbc/gel) [yes](http://www.bbc.co.uk/gel/guidelines/typography) [SVG](http://bbc.github.io/gel-iconography/) [yes](http://www.bbc.co.uk/gel/guidelines/grid) [yes](http://www.bbc.co.uk/gel/guidelines/how-to-design-for-accessibility) [yes](http://www.bbc.co.uk/gel/articles/what-is-gel) [yes](http://www.bbc.co.uk/gel) [Markdown](https://github.com/bbc/gel/blob/master/README.md) [lonely",
+      "metadata": {
+        "startIndex": 17333,
+        "endIndex": 18318,
+        "chunkIndex": 20,
+        "section": "Content",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "yes](http://www.bbc.co.uk/gel) [Markdown](https://github.com/bbc/gel/blob/master/README.md) [lonely planet](/lonely-planet-rizzo) [rizzo](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours) [GitHub](https://github.com/lonelyplanet/rizzo) [yes](http://rizzo.lonelyplanet.com/styleguide/design-elements/ui-colours) [yes](http://rizzo.lonelyplanet.com/styleguide/design-elements/typography) [SVG](http://rizzo.lonelyplanet.com/styleguide/design-elements/destination-icons) [yes](http://rizzo.lonelyplanet.com/styleguide/css-utilities/proportional-grid) [yes](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours) [HTML](http://rizzo.lonelyplanet.com/styleguide/ui-components/cards) [cloudflare](/cloudflare-cf-ui) [cf-ui](https://cloudflare.github.io/cf-ui/) [GitHub](https://github.com/cloudflare/cf-ui) [yes](https://cloudflare.github.io/cf-ui/#cf-design-colors) [SVG](https://cloudflare.github.io/cf-ui/#cf-design-icons)",
+      "metadata": {
+        "startIndex": 18218,
+        "endIndex": 19165,
+        "chunkIndex": 21,
+        "section": "Content",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "flare.github.io/cf-ui/#cf-design-colors) [SVG](https://cloudflare.github.io/cf-ui/#cf-design-icons) [yes](https://cloudflare.github.io/cf-ui/#cf-component-page) [Markdown](https://github.com/cloudflare/cf-ui/blob/master/packages/cf-component-dropdown/README.md) [morningstar](/morningstar-morningstar-design-system) [morningstar design system](http://designsystem.morningstar.com/) [Sketch](http://designsystem.morningstar.com/assets/resources/mds-design-assets-v1.1.sketch) [yes](http://designsystem.morningstar.com/visual-language/color.html) [yes](http://designsystem.morningstar.com/visual-language/typography.html) [SVG](http://designsystem.morningstar.com/visual-language/iconography.html) [yes](http://designsystem.morningstar.com/visual-language/space.html) [no](http://designsystem.morningstar.com/charts/getting-started.html) [yes](http://designsystem.morningstar.com/editorial/voice-principles.html) [yes](http://designsystem.morningstar.com/components/dialogs.html#accessibility-1)",
+      "metadata": {
+        "startIndex": 19065,
+        "endIndex": 20059,
+        "chunkIndex": 22,
+        "section": "Content",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "principles.html) [yes](http://designsystem.morningstar.com/components/dialogs.html#accessibility-1) [yes](http://designsystem.morningstar.com/) [automattic](/automattic-wordpress-com-design-handbook) [wordpress.com design handbook](https://dotcombrand.wordpress.com/) [GitHub](https://github.com/Automattic/wp-calypso) [Sketch](https://www.dropbox.com/s/ohmbmypbi213mc1/Calypso%20Templates.sketch?dl=0) [yes](https://wordpress.com/design-handbook/logotype/) [yes](https://wordpress.com/design-handbook/colors/) [yes](https://wordpress.com/design-handbook/typography/) [SVG](https://github.com/automattic/gridicons) [yes](https://wordpress.com/design-handbook/index.html) [Markdown](https://github.com/Automattic/wp-calypso/blob/master/client/components/button/README.md) [national instruments](/national-instruments-fuse) [Fuse](https://ni.github.io/design-system/) [GitHub](https://github.com/ni/design-system) [yes](https://ni.github.io/design-system/style/colors/)",
+      "metadata": {
+        "startIndex": 19959,
+        "endIndex": 20927,
+        "chunkIndex": 23,
+        "section": "Content",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "itHub](https://github.com/ni/design-system) [yes](https://ni.github.io/design-system/style/colors/) [yes](https://ni.github.io/design-system/style/typography/) [PNG](https://ni.github.io/design-system/style/icons/) [yes](https://ni.github.io/design-system/design-tenets/) [yes](https://ni.github.io/design-system/) [Markdown](https://github.com/ni/design-system/blob/master/app/_elements/dialogs.md) [openAQ](/openaq-openaq-design-system) [openAQ design system](https://github.com/openaq/openaq-design-system) [GitHub](https://github.com/openaq/openaq-design-system) [yes](https://github.com/openaq/openaq-design-system/blob/master/assets/styles/openaq-design-system/core/_typography.scss) [SVG](https://github.com/openaq/openaq-design-system/tree/master/assets/icons) [pluralsight](/pluralsight-pluralsight-design-system) [pluralsight design system](http://design-system.pluralsight.com/) [GitHub](https://github.com/pluralsight/design-system) [yes](http://design-system.pluralsight.com/core/color/)",
+      "metadata": {
+        "startIndex": 20827,
+        "endIndex": 21828,
+        "chunkIndex": 24,
+        "section": "Content",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "tps://github.com/pluralsight/design-system) [yes](http://design-system.pluralsight.com/core/color/) [yes](http://design-system.pluralsight.com/core/typography/) [SVG](http://design-system.pluralsight.com/components/icon/) [yes](http://design-system.pluralsight.com/core/spacing/) [yes](http://design-system.pluralsight.com/core/motion/) [yes](http://design-system.pluralsight.com/) [HTML](http://design-system.pluralsight.com/components/button/) [rei](/rei-cedar) [cedar](http://rei.github.io/rei-cedar/) [GitHub](https://github.com/rei/rei-cedar) [GitHub](https://github.com/rei/rei-cedar/tree/future-vue) [yes](https://github.com/rei/rei-cedar/tree/next/src/css) [Icon Font](https://github.com/rei/rei-cedar/tree/master/src/less/icon-font) [SVG](https://github.com/rei/rei-cedar/tree/future-vue/src/assets/icons/rei) [Markdown](https://github.com/rei/rei-cedar/tree/next/src/components/button) [yes](http://rei.github.io/rei-cedar/) [audi](/audi-audi-ui) [audi",
+      "metadata": {
+        "startIndex": 21728,
+        "endIndex": 22691,
+        "chunkIndex": 25,
+        "section": "Content",
+        "globalChunkIndex": 25
+      }
+    },
+    {
+      "id": "chunk-26",
+      "text": "tree/next/src/components/button) [yes](http://rei.github.io/rei-cedar/) [audi](/audi-audi-ui) [audi ui](http://www.audi.com/ci/en/guides/user-interface/introduction.html) [GitHub](https://github.com/audi/audi-ui) [Sketch](http://www.audi.com/content/dam/ci/Downloads_EN/audi-ui-kit_sketch_v1.1.sketch.zip) [Photoshop](http://www.audi.com/content/dam/ci/Downloads_EN/audi-ui-kit_ps_v1.1.psd.zip) [yes](http://www.audi.com/ci/en/intro/brand-appearance.html) [yes](http://www.audi.com/ci/en/intro/basics/colours.html) [yes](http://www.audi.com/ci/en/intro/basics/typography.html) [SVG Sprite](http://www.audi.com/ci/en/intro/basics/icons.html#db6f52) [Icon font](http://www.audi.com/ci/en/intro/basics/icons.html#db6f52) [yes](http://www.audi.com/ci/en/guides/user-interface/responsive-ui.html) [yes](http://www.audi.com/ci/en/intro/basics/illustration.html) [yes](http://www.audi.com/ci/en/intro/basics/animation.html) [yes](http://www.audi.com/ci/en/guides/user-interface/ux-paradigms.html)",
+      "metadata": {
+        "startIndex": 22591,
+        "endIndex": 23581,
+        "chunkIndex": 26,
+        "section": "Content",
+        "globalChunkIndex": 26
+      }
+    },
+    {
+      "id": "chunk-27",
+      "text": "tro/basics/animation.html) [yes](http://www.audi.com/ci/en/guides/user-interface/ux-paradigms.html) [yes](http://www.audi.com/ci/en/renewed-brand.html) [Markdown](https://github.com/audi/audi-ui/blob/master/src/button/README.md) [co-op](/co-op-design-manual) [design manual](https://coop-design-manual.herokuapp.com/) [GitHub](https://github.com/coopdigital/coop-frontend-toolkit) [Sketch](https://github.com/coopdigital/coop-design-assets/raw/master//sketch%20files/CoopStyle.sketch) [yes](https://github.com/coopdigital/coop-design-assets/raw/master/brand/WR_B_024-Brand%20Guidelines_16_9Low.pdf) [yes](https://coop-design-manual.herokuapp.com/styles/colours.html) [yes](https://coop-design-manual.herokuapp.com/styles/typography.html) [yes](https://coop-design-manual.herokuapp.com/styles/grid.html) [yes](https://coop-design-manual.herokuapp.com/content.html) [yes](https://coop-design-manual.herokuapp.com/accessibility.html) [yes](https://coop-design-manual.herokuapp.com/principles.html)",
+      "metadata": {
+        "startIndex": 23481,
+        "endIndex": 24476,
+        "chunkIndex": 27,
+        "section": "Content",
+        "globalChunkIndex": 27
+      }
+    },
+    {
+      "id": "chunk-28",
+      "text": "l.herokuapp.com/accessibility.html) [yes](https://coop-design-manual.herokuapp.com/principles.html) [yes](https://coop-design-manual.herokuapp.com/index.html) [Markdown](https://github.com/coopdigital/coop-frontend-toolkit/blob/master/README.md) [seek](/seek-style-guide) [style guide](https://seek-oss.github.io/seek-style-guide/) [GitHub](https://github.com/seek-oss/seek-style-guide) [yes](https://seek-oss.github.io/seek-style-guide/) [yes](https://seek-oss.github.io/seek-style-guide/typography) [SVG](https://seek-oss.github.io/seek-style-guide/) [yes](https://seek-oss.github.io/seek-style-guide/page-layout) [Markdown](https://github.com/seek-oss/seek-style-guide/blob/master/README.md) [shopify](/shopify-polaris) [polaris](https://polaris.shopify.com) [GitHub](https://github.com/Shopify/polaris-react) [Sketch](https://github.com/Shopify/polaris-react/releases/download/v1.10.2/Sketch.UI.Kit.zip) [yes](https://polaris.shopify.com/design/colors)",
+      "metadata": {
+        "startIndex": 24376,
+        "endIndex": 25333,
+        "chunkIndex": 28,
+        "section": "Content",
+        "globalChunkIndex": 28
+      }
+    },
+    {
+      "id": "chunk-29",
+      "text": "react/releases/download/v1.10.2/Sketch.UI.Kit.zip) [yes](https://polaris.shopify.com/design/colors) [yes](https://polaris.shopify.com/design/colors#section-accessibility) [yes](https://polaris.shopify.com/design/typography) [SVG](https://polaris-icons.shopify.com) [yes](https://polaris.shopify.com/components/structure/layout) [yes](https://polaris.shopify.com/design/illustrations) [yes](https://polaris.shopify.com/design/data-visualizations) [yes](https://polaris.shopify.com/content/product-content) [yes](https://polaris.shopify.com/patterns-and-guides/accessibility) [yes](https://polaris.shopify.com/experiences/billing#section-principles) [yes](https://polaris.shopify.com/components/get-started) [Markdown](https://github.com/Shopify/polaris-react/tree/master/src/components/Card) [yes](https://polaris-storybook.myshopify.com/) [skyscanner](/skyscanner-backpack) [backpack](https://backpack.github.io/) [GitHub](https://github.com/backpack/backpack.github.io)",
+      "metadata": {
+        "startIndex": 25233,
+        "endIndex": 26204,
+        "chunkIndex": 29,
+        "section": "Content",
+        "globalChunkIndex": 29
+      }
+    },
+    {
+      "id": "chunk-30",
+      "text": "k) [backpack](https://backpack.github.io/) [GitHub](https://github.com/backpack/backpack.github.io) [Sketch](https://www.dropbox.com/sh/3um2nc6ei6kgj28/AADk_AZ_hX_AyPMxYWFd5EhIa?dl=0) [yes](https://backpack.github.io/guidelines/colour) [yes](https://backpack.github.io/tokens/typesetting) [SVG](https://backpack.github.io/components/accordion/?platform=web) [yes](https://backpack.github.io/tokens/spacing) [yes](https://backpack.github.io/tokens/animation) [yes](https://backpack.github.io/) [HTML](https://backpack.github.io/components/form?platform=web) [USAJobs](/usajobs-usa-jobs-design-system) [USA jobs design system](http://usajobs.github.io/design-system/) [GitHub](https://github.com/USAJOBS/design-system) [yes](http://usajobs.github.io/design-system/visual-style/#logo) [yes](http://usajobs.github.io/design-system/visual-style/#colors) [yes](http://usajobs.github.io/design-system/visual-style/#text-accessibility) [yes](http://usajobs.github.io/design-system/visual-style/#typography)",
+      "metadata": {
+        "startIndex": 26104,
+        "endIndex": 27103,
+        "chunkIndex": 30,
+        "section": "Content",
+        "globalChunkIndex": 30
+      }
+    },
+    {
+      "id": "chunk-31",
+      "text": "l-style/#text-accessibility) [yes](http://usajobs.github.io/design-system/visual-style/#typography) [Icon Font](http://usajobs.github.io/design-system/icons/) [yes](http://usajobs.github.io/design-system/grid/) [yes](http://usajobs.github.io/design-system/) [HTML](http://usajobs.github.io/design-system/button-bar/) [atlassian](/atlassian-atlassian-design-guidelines) [atlassian design guidelines](https://atlassian.design/) [Bitbucket](https://bitbucket.org/atlassian/atlaskit) [Sketch](https://atlassian.design/guidelines/product/resources/web-product-gui-pack) [yes](https://atlassian.design/guidelines/brand/personality) [yes](https://atlassian.design/guidelines/product/foundations/color) [yes](https://atlassian.design/guidelines/product/foundations/typography) [Guidelines](https://atlassian.design/guidelines/product/foundations/iconography) [SVG](https://atlaskit.atlassian.com/packages/core/icon/example/icon-explorer) [yes](https://atlassian.design/guidelines/product/foundations/grid)",
+      "metadata": {
+        "startIndex": 27003,
+        "endIndex": 28001,
+        "chunkIndex": 31,
+        "section": "Content",
+        "globalChunkIndex": 31
+      }
+    },
+    {
+      "id": "chunk-32",
+      "text": "ore/icon/example/icon-explorer) [yes](https://atlassian.design/guidelines/product/foundations/grid) [yes](https://atlassian.design/guidelines/brand/illustrations) [yes](https://atlassian.design/guidelines/product/foundations/writing-style) [yes](https://atlassian.design/guidelines/product/foundations/accessibility) [yes](https://atlassian.design/) [yes](https://atlaskit.atlassian.com) [yes](https://atlaskit.atlassian.com/packages) [npm](h) [salesforce](/salesforce-lightning) [lightning](https://www.lightningdesignsystem.com/) [GitHub](https://github.com/salesforce-ux/design-system) [Sketch](https://github.com/salesforce-ux/design-system-ui-kit/archive/master.zip) [yes](https://www.lightningdesignsystem.com/guidelines/color) [yes](https://www.lightningdesignsystem.com/guidelines/typography) [SVG](https://www.lightningdesignsystem.com/icons) [yes](https://www.lightningdesignsystem.com/utilities/grid)",
+      "metadata": {
+        "startIndex": 27901,
+        "endIndex": 28813,
+        "chunkIndex": 32,
+        "section": "Content",
+        "globalChunkIndex": 32
+      }
+    },
+    {
+      "id": "chunk-33",
+      "text": "://www.lightningdesignsystem.com/icons) [yes](https://www.lightningdesignsystem.com/utilities/grid) [yes](https://github.com/salesforce-ux/design-system/tree/master/assets/images/illustrations) [yes](https://www.lightningdesignsystem.com/guidelines/animation/gallery) [yes](https://www.lightningdesignsystem.com/guidelines/voice-and-tone) [yes](https://www.lightningdesignsystem.com/accessibility/overview) [yes](https://www.lightningdesignsystem.com/guidelines/overview) [yes](https://www.lightningdesignsystem.com/) [Scss](https://github.com/salesforce-ux/design-system/blob/master/ui/components/app-launcher/_doc.scss) [IBM](/ibm-carbon) [carbon](http://carbondesignsystem.com/) [GitHub](https://github.com/carbon-design-system) [Sketch](https://github.com/carbon-design-system/carbon-design-kit) [yes](http://carbondesignsystem.com/style/colors/swatches) [yes](http://carbondesignsystem.com/style/typography/overview) [SVG](http://carbondesignsystem.com/style/iconography/library)",
+      "metadata": {
+        "startIndex": 28713,
+        "endIndex": 29698,
+        "chunkIndex": 33,
+        "section": "Content",
+        "globalChunkIndex": 33
+      }
+    },
+    {
+      "id": "chunk-34",
+      "text": "ystem.com/style/typography/overview) [SVG](http://carbondesignsystem.com/style/iconography/library) [yes](http://carbondesignsystem.com/style/grid/design) [yes](http://carbondesignsystem.com/style/motion) [yes](http://carbondesignsystem.com/guidelines/content/general) [yes](http://carbondesignsystem.com/guidelines/accessibility) [yes](http://carbondesignsystem.com/) [Markdown](https://github.com/carbon-design-system/carbon-components/blob/master/src/components/card/README.md) [yes](http://react.carbondesignsystem.com/) [GE Digital](/ge-digital-predix-design-system) [Predix Design System](https://www.predix-ui.com) [GitHub](https://github.com/predixdesignsystem) [Sketch](https://github.com/predixdesignsystem/predix-design-stencil) [yes](https://www.predix-ui.com/#/css/visual/px-colors-design) [yes](https://www.predix-ui.com/#/design/color) [yes](https://www.predix-ui.com/#/design/typography) [yes](https://www.predix-ui.com/#/design/iconography)",
+      "metadata": {
+        "startIndex": 29598,
+        "endIndex": 30556,
+        "chunkIndex": 34,
+        "section": "Content",
+        "globalChunkIndex": 34
+      }
+    },
+    {
+      "id": "chunk-35",
+      "text": "ttps://www.predix-ui.com/#/design/typography) [yes](https://www.predix-ui.com/#/design/iconography) [yes](https://www.predix-ui.com/#/design/page-layout) [yes](https://www.predix-ui.com/#/design/data-vis) [yes](https://www.predix-ui.com/#/design/writing) [yes](https://www.predix-ui.com/#/about/introduction) [HTML](https://www.predix-ui.com/#/elements/px-app-nav) [Quicken Loans](/quicken-loans-spark-design-system) [Spark Design System](https://sparkdesignsystem.com) [GitHub](https://github.com/sparkdesignsystem/spark-design-system) [yes](https://sparkdesignsystem.com/using-spark) [yes](https://sparkdesignsystem.com/using-spark/foundations/color-codes) [yes](https://sparkdesignsystem.com/using-spark/foundations/color-accessibility) [yes](https://sparkdesignsystem.com/using-spark/foundations/typography) [yes](https://sparkdesignsystem.com/using-spark/components/icon) [yes](https://sparkdesignsystem.com/using-spark/foundations/space)",
+      "metadata": {
+        "startIndex": 30456,
+        "endIndex": 31400,
+        "chunkIndex": 35,
+        "section": "Content",
+        "globalChunkIndex": 35
+      }
+    },
+    {
+      "id": "chunk-36",
+      "text": "com/using-spark/components/icon) [yes](https://sparkdesignsystem.com/using-spark/foundations/space) [yes](https://sparkdesignsystem.com/using-spark/foundations/color-usage#charts-and-graphs) [yes](https://sparkdesignsystem.com/principles/accessibility-guidelines) [yes](https://sparkdesignsystem.com) [HTML](https://sparkdesignsystem.com/using-spark) [liferay](/liferay-lexicon) [Lexicon](https://lexicondesign.io/) [GitHub](https://github.com/liferay/lexicon-site) [metal.js](https://metaljs.com/) [yes](https://lexicondesign.io/docs/designPrinciples/colors.html) [yes](https://lexicondesign.io/docs/designPrinciples/typography.html) [SVG](https://lexicondesign.io/docs/patterns/icons.html) [yes](https://lexicondesign.io/docs/designPrinciples/grid.html) [yes](https://lexicondesign.io/docs/patterns/Charts/charts.html) [no](https://lexicondesign.io/docs/designPrinciples/writingstyle.html) [yes](https://lexicondesign.io/docs/lexicon/) [18F](/18f-u-s-web-design-system) [U.S.",
+      "metadata": {
+        "startIndex": 31300,
+        "endIndex": 32278,
+        "chunkIndex": 36,
+        "section": "Content",
+        "globalChunkIndex": 36
+      }
+    },
+    {
+      "id": "chunk-37",
+      "text": "ngstyle.html) [yes](https://lexicondesign.io/docs/lexicon/) [18F](/18f-u-s-web-design-system) [U.S. Web Design System](https://designsystem.digital.gov/) [GitHub](https://github.com/uswds/uswds) [Sketch](https://designsystem.digital.gov/files/uswds-assets-sketch.zip) [Illustrator](https://designsystem.digital.gov/files/uswds-assets-ai.zip) [EPS](https://github.com/uswds/uswds/releases/download/v2.12.1/uswds-2.12.1.zip) [yes](https://designsystem.digital.gov/design-principles/) [yes](https://designsystem.digital.gov/components/colors/) [yes](https://designsystem.digital.gov/components/typography/) [yes](https://designsystem.digital.gov/components/grids/) [yes](https://content-guide.18f.gov/voice-and-tone/) [yes](https://designsystem.digital.gov/getting-started/developers/#notes-on-accessibility) [yes](https://designsystem.digital.gov) [yes](https://designsystem.digital.gov/getting-started/developers/) [Pegasystems](/pegasystems-pega-design-system) [Pega Design",
+      "metadata": {
+        "startIndex": 32178,
+        "endIndex": 33152,
+        "chunkIndex": 37,
+        "section": "Content",
+        "globalChunkIndex": 37
+      }
+    },
+    {
+      "id": "chunk-38",
+      "text": "igital.gov/getting-started/developers/) [Pegasystems](/pegasystems-pega-design-system) [Pega Design System](https://design.pega.com/) [Sketch](https://pdn.pega.com/exchange/components/pega-ux-design-system-ui-kit-files) [AI](https://pdn.pega.com/exchange/components/pega-ux-design-system-ui-kit-files) [XD](https://pdn.pega.com/exchange/components/pega-ux-design-system-ui-kit-files) [SVG](https://pdn.pega.com/exchange/components/pega-ux-design-system-ui-kit-files) [yes](https://design.pega.com/design/) [charts](https://design.pega.com/design/) [principles](https://design.pega.com/design/) [yes](https://design.pega.com/) [Altinn](/altinn-altinn-designsystem) [Altinn Designsystem](http://altinn.no/designsystem) [GitHub](https://github.com/Altinn/DesignSystem) [Figma](https://altinn.github.io/designsystem-styleguide/) [yes](https://altinn.github.io/designsystem-styleguide/) [fortAwesome](https://altinn.github.io/designsystem-styleguide/)",
+      "metadata": {
+        "startIndex": 33052,
+        "endIndex": 33999,
+        "chunkIndex": 38,
+        "section": "Content",
+        "globalChunkIndex": 38
+      }
+    },
+    {
+      "id": "chunk-39",
+      "text": "ithub.io/designsystem-styleguide/) [fortAwesome](https://altinn.github.io/designsystem-styleguide/) [npm](https://www.npmjs.com/package/altinn-designsystem) [Ant Financial](/ant-financial-ant-design) [Ant Design](https://ant.design) [GitHub](https://github.com/ant-design/ant-design) [Axure](http://ux.ant.design/download/Ant_UX_Axure.zip) [Sketch](http://ux.ant.design/download/Ant_UX_Sketch.zip) [OmniGraffle](http://ux.ant.design/download/Ant_UX_OG.zip) [Affinity](http://ux.ant.design/download/Ant_UX_Affinity.zip) [Adobe XD](http://ux.ant.design/download/Ant_UX_XD.zip) [yes](https://ant.design/docs/spec/colors) [yes](https://ant.design/docs/spec/colors#Product-level-Color-System) [yes](https://ant.design/docs/spec/font) [SVG](https://ant.design/docs/spec/icon) [yes](https://ant.design/docs/spec/layout) [yes](https://antv.alipay.com/) [yes](https://motion.ant.design/) [yes](https://ant.design/docs/spec/copywriting) [yes](https://ant.design/docs/spec/proximity) [yes](https://ant.design)",
+      "metadata": {
+        "startIndex": 33899,
+        "endIndex": 34898,
+        "chunkIndex": 39,
+        "section": "Content",
+        "globalChunkIndex": 39
+      }
+    },
+    {
+      "id": "chunk-40",
+      "text": "sign/docs/spec/copywriting) [yes](https://ant.design/docs/spec/proximity) [yes](https://ant.design) [Markdown](https://github.com/ant-design/ant-design/blob/master/README.md) [ACL](/acl-starling) [Starling](http://design.acl.com/page/Home) [yes](http://design.acl.com/page/Colors) [yes](http://design.acl.com/page/Typography) [yes](http://design.acl.com/page/Charts) [yes](http://design.acl.com/page/Writing-Principles#tone) [yes](http://design.acl.com/page/Intro-and-Goals) [yes](http://design.acl.com/page/Home) [pivotal software](/pivotal-software-pivotal-ui) [Pivotal UI](https://styleguide.pivotal.io/) [GitHub](https://github.com/pivotal-cf/pivotal-ui) [yes](https://styleguide.pivotal.io/modifiers/colors/) [yes](https://styleguide.pivotal.io/modifiers/typography/) [SVG](https://styleguide.pivotal.io/components/icons/) [yes](https://styleguide.pivotal.io/components/grids/) [yes](https://styleguide.pivotal.io/about/getting-started/)",
+      "metadata": {
+        "startIndex": 34798,
+        "endIndex": 35741,
+        "chunkIndex": 40,
+        "section": "Content",
+        "globalChunkIndex": 40
+      }
+    },
+    {
+      "id": "chunk-41",
+      "text": "tyleguide.pivotal.io/components/grids/) [yes](https://styleguide.pivotal.io/about/getting-started/) [HTML](https://styleguide.pivotal.io/components/autocomplete/) [financial times](/financial-times-origami) [Origami](http://origami.ft.com/) [GitHub](https://github.com/Financial-Times/ft-origami) [yes](https://registry.origami.ft.com/components/o-colors) [yes](https://registry.origami.ft.com/components/o-typography@5.4.2) [SVG](http://registry.origami.ft.com/components/fticons) [yes](http://registry.origami.ft.com/components/o-grid@4.3.7) [yes](http://origami.ft.com/docs/developer-guide/general-best-practices/#accessibility) [yes](http://registry.origami.ft.com/components/o-colors@4.1.5) [Markdown](https://github.com/Financial-Times/o-tabs/blob/master/README.md) [stack overflow](/stack-overflow-stacks) [Stacks](https://stackoverflow.design/) [yes](https://stackoverflow.design/base/colors) [yes](https://stackoverflow.design/base/typography)",
+      "metadata": {
+        "startIndex": 35641,
+        "endIndex": 36594,
+        "chunkIndex": 41,
+        "section": "Content",
+        "globalChunkIndex": 41
+      }
+    },
+    {
+      "id": "chunk-42",
+      "text": "[yes](https://stackoverflow.design/base/colors) [yes](https://stackoverflow.design/base/typography) [SVG](https://stackoverflow.design/resources/icons) [yes](https://stackoverflow.design/base/grid) [yes](https://stackoverflow.design/) [HTML](https://stackoverflow.design/components/buttons) [intuit](/intuit-harmony) [yes](http://harmony.intuit.com/the-new-brand/) [yes](http://harmony.intuit.com/color/) [PNG](http://harmony.intuit.com/iconography/) [yes](http://harmony.intuit.com/app-frameworks/layouts/) [yes](http://harmony.intuit.com/illustration/) [yes](http://harmony.intuit.com/animations-transitions/) [yes](http://harmony.intuit.com/voice-tone/) [yes](http://harmony.intuit.com/app-frameworks/discovery/) [yes](http://harmony.intuit.com/) [JetBrains](/jetbrains-jetbrains-web-ui) [JetBrains Web UI](http://www.jetbrains.org/ring-ui/index.html) [GitHub](https://github.com/JetBrains/ring-ui) [yes](http://www.jetbrains.org/ring-ui/palette.html)",
+      "metadata": {
+        "startIndex": 36494,
+        "endIndex": 37449,
+        "chunkIndex": 42,
+        "section": "Content",
+        "globalChunkIndex": 42
+      }
+    },
+    {
+      "id": "chunk-43",
+      "text": "[GitHub](https://github.com/JetBrains/ring-ui) [yes](http://www.jetbrains.org/ring-ui/palette.html) [SVG](http://www.jetbrains.org/ring-ui/icon.html) [yes](http://www.jetbrains.org/ring-ui/grid.html) [yes](http://www.jetbrains.org/ring-ui/index.html) [HTML](http://www.jetbrains.org/ring-ui/table.html) [github](/github-primer) [primer](https://primer.style/) [GitHub](https://github.com/primer/css) [Scss](https://github.com/primer/css/tree/master/src/support) [yes](https://github.com/primer/css/blob/master/src/support/variables/color-system.scss) [yes](https://github.com/primer/css/blob/master/src/support/variables/typography.scss) [Octicons (SVG)](https://github.com/primer/octicons) [yes](https://github.com/primer/css/blob/master/src/support/variables/layout.scss) [Markdown](https://github.com/primer/css/tree/master/src/buttons) [npm](https://www.npmjs.com/package/@primer/css) [hubspot](/hubspot-canvas) [canvas](https://canvas.hubspot.com/)",
+      "metadata": {
+        "startIndex": 37349,
+        "endIndex": 38303,
+        "chunkIndex": 43,
+        "section": "Content",
+        "globalChunkIndex": 43
+      }
+    },
+    {
+      "id": "chunk-44",
+      "text": "www.npmjs.com/package/@primer/css) [hubspot](/hubspot-canvas) [canvas](https://canvas.hubspot.com/) [yes](https://canvas.hubspot.com/styles/colors) [yes](https://canvas.hubspot.com/styles/typography) [yes](https://canvas.hubspot.com/styles/icons) [yes](https://canvas.hubspot.com/styles/illustrations) [yes](https://canvas.hubspot.com/graphs/types-overview) [yes](https://canvas.hubspot.com/styles/motion) [yes](https://canvas.hubspot.com/styles/voice-and-tone) [yes](https://canvas.hubspot.com/styles/design-principles) [yes](https://canvas.hubspot.com/) [yes](https://canvas.hubspot.com/components) [meetup](/meetup-swarm-design-system) [swarm design system](https://meetup.github.io/swarm-design-system/) [GitHub](https://github.com/meetup/swarm-design-system) [yes](https://meetup.github.io/swarm-design-system/brand/) [yes](https://meetup.github.io/swarm-design-system/design/color/) [yes](https://meetup.github.io/swarm-design-system/design/typography/)",
+      "metadata": {
+        "startIndex": 38203,
+        "endIndex": 39163,
+        "chunkIndex": 44,
+        "section": "Content",
+        "globalChunkIndex": 44
+      }
+    },
+    {
+      "id": "chunk-45",
+      "text": "design-system/design/color/) [yes](https://meetup.github.io/swarm-design-system/design/typography/) [yes](https://meetup.github.io/swarm-design-system/design/icons/) [yes](https://meetup.github.io/swarm-design-system/design/layout/spacing/) [yes](https://meetup.github.io/swarm-design-system/brand/brandvoice/) [yes](https://meetup.github.io/swarm-design-system/design/usability/a11y/) [yes](https://meetup.github.io/swarm-design-system/) [yes](https://meetup.github.io/meetup-web-components/) [brainly](/brainly-brainly-style-guide) [Brainly Style Guide](https://styleguide.brainly.com/130.0.1/docs/) [GitHub](https://github.com/brainly/style-guide) [yes](https://styleguide.brainly.com/130.0.1/docs/basics.html#colors) [yes](https://styleguide.brainly.com/130.0.1/docs/basics.html#text) [SVG](https://styleguide.brainly.com/130.0.1/docs/basics.html#icons) [yes](https://styleguide.brainly.com) [yes](https://styleguide.brainly.com/130.0.1/docs/interactive.html) [pusher](/pusher-chameleon)",
+      "metadata": {
+        "startIndex": 39063,
+        "endIndex": 40055,
+        "chunkIndex": 45,
+        "section": "Content",
+        "globalChunkIndex": 45
+      }
+    },
+    {
+      "id": "chunk-46",
+      "text": "om) [yes](https://styleguide.brainly.com/130.0.1/docs/interactive.html) [pusher](/pusher-chameleon) [Chameleon](https://pusher.github.io/chameleon/) [GitHub](https://github.com/pusher/chameleon) [yes](https://pusher.github.io/chameleon/layout/colors/) [yes](https://pusher.github.io/chameleon/layout/typography/) [yes](https://pusher.github.io/chameleon) [mesosphere](/mesosphere-cnvs) [CNVS](http://mesosphere.github.io/cnvs/) [GitHub](https://github.com/mesosphere/cnvs) [yes](http://mesosphere.github.io/cnvs/content/colors/) [yes](http://mesosphere.github.io/cnvs/content/typography/) [yes](http://mesosphere.github.io/cnvs/layout/grid/) [yes](http://mesosphere.github.io/cnvs/) [Wonderbly](/wonderbly-wonderbly-design-system) [Wonderbly Design System](http://design-system.lostmy.name/) [yes](http://design-system.lostmy.name/rules/Colour) [yes](http://design-system.lostmy.name/rules/Grid) [yes](http://design-system.lostmy.name/components/wrappers/Animation)",
+      "metadata": {
+        "startIndex": 39955,
+        "endIndex": 40921,
+        "chunkIndex": 46,
+        "section": "Content",
+        "globalChunkIndex": 46
+      }
+    },
+    {
+      "id": "chunk-47",
+      "text": "ystem.lostmy.name/rules/Grid) [yes](http://design-system.lostmy.name/components/wrappers/Animation) [yes](http://design-system.lostmy.name/design-principles) [yes](http://design-system.lostmy.name/) [opower](/opower-opattern) [opattern](https://ux.opower.com/opattern) [yes](https://ux.opower.com/opattern/color.html) [yes](https://ux.opower.com/opattern/typography.html) [SVG](https://ux.opower.com/opattern/icons.html) [yes](https://ux.opower.com/opattern/web.html) [yes](https://ux.opower.com/opattern/illustrations.html) [yes](https://ux.opower.com/opattern/how-to-charts.html) [yes](https://ux.opower.com/opattern/animation.html) [yes](https://ux.opower.com/opattern/opattern-voice.html) [yes](https://ux.opower.com/opattern) [mapbox](/mapbox-base) [base](https://www.mapbox.com/base/) [yes](https://www.mapbox.com/base/styling/color/) [yes](https://www.mapbox.com/base/styling/text-blocks/) [Icon Font](https://www.mapbox.com/base/styling/icons/)",
+      "metadata": {
+        "startIndex": 40821,
+        "endIndex": 41774,
+        "chunkIndex": 47,
+        "section": "Content",
+        "globalChunkIndex": 47
+      }
+    },
+    {
+      "id": "chunk-48",
+      "text": "//www.mapbox.com/base/styling/text-blocks/) [Icon Font](https://www.mapbox.com/base/styling/icons/) [yes](https://www.mapbox.com/base/styling/grid-system/) [yes](https://www.mapbox.com/base/animation/) [yes](https://www.mapbox.com/base/copy/) [yes](https://www.mapbox.com/base) [barricade](/barricade-style-guide) [Style Guide](https://styleguide.barricade.io/index.html) [GitHub](https://github.com/barricadeio/styleguide) [yes](https://styleguide.barricade.io/styles.html#colors) [yes](https://styleguide.barricade.io/styles.html#typography) [Icon Font](https://styleguide.barricade.io/styles.html#icons) [no data](https://styleguide.barricade.io) [eurostar](/eurostar-glu) [GLU](https://style.eurostar.com/) [yes](https://style.eurostar.com/components/detail/colors.html) [yes](https://style.eurostar.com/components/detail/typography.html) [SVG](https://style.eurostar.com/components/detail/icons.html) [yes](https://style.eurostar.com/components/detail/microcopy.html)",
+      "metadata": {
+        "startIndex": 41674,
+        "endIndex": 42647,
+        "chunkIndex": 48,
+        "section": "Content",
+        "globalChunkIndex": 48
+      }
+    },
+    {
+      "id": "chunk-49",
+      "text": "om/components/detail/icons.html) [yes](https://style.eurostar.com/components/detail/microcopy.html) [yes](https://style.eurostar.com) [uSwitch](/uswitch-ustyle) [uStyle](https://ustyle.guide) [GitHub](https://github.com/uswitch/ustyle) [yes](https://ustyle.guide/brand/index.html) [yes](https://ustyle.guide/brand/colours.html) [yes](https://ustyle.guide/pattern-library/typography.html) [SVG](https://ustyle.guide/design/icons.html) [yes](https://ustyle.guide/pattern-library/grid.html) [yes](https://ustyle.guide/design/index.html) [yes](https://ustyle.guide/language/tone.html) [yes](https://ustyle.guide/design/accessibility-testing.html) [yes](https://ustyle.guide/pattern-library/components.html) [HTML](https://ustyle.guide/pattern-library/components.html) [VMware](/vmware-clarity-design-system) [Clarity Design System](https://vmware.github.io/clarity/) [GitHub](https://github.com/vmware/clarity) [Sketch](https://vmware.github.io/clarity/documentation/v0.11/get-started#designResources)",
+      "metadata": {
+        "startIndex": 42547,
+        "endIndex": 43545,
+        "chunkIndex": 49,
+        "section": "Content",
+        "globalChunkIndex": 49
+      }
+    },
+    {
+      "id": "chunk-50",
+      "text": "clarity) [Sketch](https://vmware.github.io/clarity/documentation/v0.11/get-started#designResources) [yes](https://vmware.github.io/clarity/documentation/v0.11/color) [yes](https://vmware.github.io/clarity/documentation/v0.11/color#guidelines) [yes](https://vmware.github.io/clarity/documentation/v0.11/typography) [SVG](https://github.com/vmware/clarity/tree/master/src/clr-icons) [yes](https://vmware.github.io/clarity/documentation/v0.11/grid) [typescript](https://vmware.github.io/clarity/documentation/v0.11/color) [yes](https://vmware.github.io/clarity) [HTML](https://vmware.github.io/clarity/documentation) [mongoDB](/mongodb-ui-design-system) [UI Design System](http://mongodb.design/#/ui-design-system/welcome) [GitHub](https://github.com/mongodb/design) [Sketch](http://mongodb.design/#/ui-design-system/resources) [yes](http://mongodb.design/#/ui-design-system/base-styles/colors) [yes](http://mongodb.design/#/ui-design-system/base-styles/typography) [Icon",
+      "metadata": {
+        "startIndex": 43445,
+        "endIndex": 44414,
+        "chunkIndex": 50,
+        "section": "Content",
+        "globalChunkIndex": 50
+      }
+    },
+    {
+      "id": "chunk-51",
+      "text": "em/base-styles/colors) [yes](http://mongodb.design/#/ui-design-system/base-styles/typography) [Icon Font](http://mongodb.design/#/ui-design-system/base-styles/icons) [yes](http://mongodb.design/#/ui-design-system/guidelines/grid) [yes](http://mongodb.design/#/ui-design-system/principles) [yes](http://mongodb.design/#/ui-design-system/welcome) [HTML](http://mongodb.design/#/ui-design-system/components/buttons) [microsoft](/microsoft-office-ui-fabric) [Office UI Fabric](https://developer.microsoft.com/en-us/fabric) [GitHub](https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react) [yes](https://developer.microsoft.com/en-us/fabric#/styles/colors) [yes](https://developer.microsoft.com/en-us/fabric#/styles/typography) [Icon Font](https://developer.microsoft.com/en-us/fabric#/styles/icons) [yes](https://developer.microsoft.com/en-us/fabric#/styles/layout) [yes](https://developer.microsoft.com/en-us/fabric#/styles/animations)",
+      "metadata": {
+        "startIndex": 44314,
+        "endIndex": 45287,
+        "chunkIndex": 51,
+        "section": "Content",
+        "globalChunkIndex": 51
+      }
+    },
+    {
+      "id": "chunk-52",
+      "text": "en-us/fabric#/styles/layout) [yes](https://developer.microsoft.com/en-us/fabric#/styles/animations) [yes](https://developer.microsoft.com/en-us/fabric#/get-started) [HTML](https://developer.microsoft.com/en-us/fabric#/components/button) [MYOB](/myob-feelix) [Feelix](http://feelix.myob.com/) [yes](http://feelix.myob.com/foundations/colours/) [yes](http://feelix.myob.com/foundations/typography/) [SVG](http://feelix.myob.com/components/Icons/) [yes](http://feelix.myob.com/foundations/grid/) [yes](http://feelix.myob.com/design-principles/) [yes](http://feelix.myob.com/) [StudyPortals](/studyportals-styleguide) [Styleguide](https://styleguide.studyportals.com) [yes](https://styleguide.studyportals.com/student/brandidentity/logo) [yes](https://styleguide.studyportals.com/student/brandidentity/colour) [yes](https://styleguide.studyportals.com/student/brandidentity/typography) [Icon Font](https://styleguide.studyportals.com/student/brandidentity/icons)",
+      "metadata": {
+        "startIndex": 45187,
+        "endIndex": 46146,
+        "chunkIndex": 52,
+        "section": "Content",
+        "globalChunkIndex": 52
+      }
+    },
+    {
+      "id": "chunk-53",
+      "text": "ndidentity/typography) [Icon Font](https://styleguide.studyportals.com/student/brandidentity/icons) [yes](https://styleguide.studyportals.com/student/components/grid) [yes](https://styleguide.studyportals.com/student/principles) [hudl](/hudl-uniform) [uniform](http://uniform.hudl.com/) [Sketch](http://uniform.hudl.com/resources/design-assets/sketch-library) [yes](http://uniform.hudl.com/guidelines/colors/design) [yes](http://uniform.hudl.com/guidelines/typography/design) [SVG](http://uniform.hudl.com/guidelines/iconography/design) [yes](http://uniform.hudl.com/guidelines/space/design) [yes](http://uniform.hudl.com/components/buttons/button/code) [workday](/workday-canvas) [canvas](https://design.workday.com/) [GitHub](https://github.com/Workday/canvas-kit) [yes](https://design.workday.com/guidelines) [yes](https://design.workday.com/resources/colors) [yes](https://design.workday.com/guidelines/visual/type) [SVG](https://design.workday.com/guidelines/visual/icons)",
+      "metadata": {
+        "startIndex": 46046,
+        "endIndex": 47024,
+        "chunkIndex": 53,
+        "section": "Content",
+        "globalChunkIndex": 53
+      }
+    },
+    {
+      "id": "chunk-54",
+      "text": "esign.workday.com/guidelines/visual/type) [SVG](https://design.workday.com/guidelines/visual/icons) [yes](https://design.workday.com/guidelines/visual/space) [yes](https://design.workday.com/content/voice-and-tone/voice-and-tone) [yes](https://design.workday.com/guidelines/accessibility/overview) [yes](https://design.workday.com/guidelines/design-principles/overview) [yes](https://design.workday.com) [yes](https://design.workday.com/components) [yes](https://workday.github.io/canvas-kit) [GitLab](/gitlab-pajamas-design-system) [Pajamas Design System](https://design.gitlab.com) [GitLab](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com) [yes](https://design.gitlab.com/components/overview) [Scss](https://design.gitlab.com/product-foundations/colors) [Figma](https://www.figma.com/community/file/781156790581391771) [yes](https://design.gitlab.com/brand/basics) [yes](https://design.gitlab.com/product-foundations/colors)",
+      "metadata": {
+        "startIndex": 46924,
+        "endIndex": 47867,
+        "chunkIndex": 54,
+        "section": "Content",
+        "globalChunkIndex": 54
+      }
+    },
+    {
+      "id": "chunk-55",
+      "text": "https://design.gitlab.com/brand/basics) [yes](https://design.gitlab.com/product-foundations/colors) [yes](https://design.gitlab.com/product-foundations/colors#accessibility) [yes](https://design.gitlab.com/product-foundations/type-fundamentals) [SVG](https://gitlab-org.gitlab.io/gitlab-svgs/) [yes](https://design.gitlab.com/layout/spacing) [yes](https://design.gitlab.com/product-foundations/illustration) [yes](https://design.gitlab.com/data-visualization/charts) [yes](https://design.gitlab.com/product-foundations/motion) [yes](https://design.gitlab.com/content/voice-tone) [yes](https://design.gitlab.com/accessibility/a11y) [yes](https://design.gitlab.com/get-started/principles) [yes](https://design.gitlab.com) [yes](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/CONTRIBUTING.md) [yes](https://gitlab-org.gitlab.io/gitlab-ui/) [intuit](/intuit-quickbooks-design-system) [QuickBooks Design System](https://designsystem.quickbooks.com/)",
+      "metadata": {
+        "startIndex": 47767,
+        "endIndex": 48717,
+        "chunkIndex": 55,
+        "section": "Content",
+        "globalChunkIndex": 55
+      }
+    },
+    {
+      "id": "chunk-56",
+      "text": "(/intuit-quickbooks-design-system) [QuickBooks Design System](https://designsystem.quickbooks.com/) [yes](https://designsystem.quickbooks.com/visual-assets/logos/) [yes](https://designsystem.quickbooks.com/foundations/color-palette/) [yes](https://designsystem.quickbooks.com/foundations/typography/) [Icon Font](https://designsystem.quickbooks.com/visual-assets/icon-font/) [yes](https://designsystem.quickbooks.com/foundations/digital-grid/) [yes](https://designsystem.quickbooks.com/visual-assets/illustration/) [yes](https://designsystem.quickbooks.com/data-viz/) [yes](https://designsystem.quickbooks.com/motion/) [yes](https://designsystem.quickbooks.com/voice-and-tone/) [yes](https://designsystem.quickbooks.com/accessibility/) [yes](https://designsystem.quickbooks.com/component/accordion/) [SpareBank 1](/sparebank-1-sparebank-1-designsystem) [SpareBank 1 Designsystem](https://design.sparebank1.no/) [GitHub](https://github.com/SpareBank1/designsystem)",
+      "metadata": {
+        "startIndex": 48617,
+        "endIndex": 49581,
+        "chunkIndex": 56,
+        "section": "Content",
+        "globalChunkIndex": 56
+      }
+    },
+    {
+      "id": "chunk-57",
+      "text": "1 Designsystem](https://design.sparebank1.no/) [GitHub](https://github.com/SpareBank1/designsystem) [yes](https://design.sparebank1.no/stil-og-tone.html) [yes](https://design.sparebank1.no/visuell-identitet.html#visuell-identitet_farger) [yes](https://design.sparebank1.no/styleguidist/index.html#!/Typografi) [SVG](https://design.sparebank1.no/styleguidist/index.html#!/Ikoner) [yes](https://design.sparebank1.no/styleguidist/index.html#!/Grid) [yes](https://design.sparebank1.no/visuell-identitet.html#visuell-identitet_animasjoner) [yes](https://design.sparebank1.no/stil-og-tone.html#stil-og-tone_stil-og-tone) [yes](https://design.sparebank1.no/universell-utforming.html) [yes](https://design.sparebank1.no/) [Markdown](https://github.com/SpareBank1/designsystem/blob/develop/README.md) [Zendesk](/zendesk-garden) [Garden](https://garden.zendesk.com/) [GitHub](https://github.com/zendeskgarden) [yes](https://garden.zendesk.com/css-components/utilities/color/)",
+      "metadata": {
+        "startIndex": 49481,
+        "endIndex": 50447,
+        "chunkIndex": 57,
+        "section": "Content",
+        "globalChunkIndex": 57
+      }
+    },
+    {
+      "id": "chunk-58",
+      "text": "https://github.com/zendeskgarden) [yes](https://garden.zendesk.com/css-components/utilities/color/) [yes](https://garden.zendesk.com/css-components/utilities/typography/) [SVG](https://garden.zendesk.com/design/icons/12#main-content) [yes](https://garden.zendesk.com/components/tooltip#main-content) [Pinterest](/pinterest-gestalt) [Gestalt](https://pinterest.github.io/gestalt/#/) [GitHub](https://github.com/pinterest/gestalt) [yes](https://pinterest.github.io/gestalt/#/IconButton) [Alfa-Bank](/alfa-bank-feather) [Feather](https://design.alfabank.ru/) [GitHub](https://github.com/alfa-laboratory/arui-feather) [yes](https://design.alfabank.ru/style/colors) [yes](https://design.alfabank.ru/style/typography) [SVG](https://github.com/alfa-laboratory/arui-feather/tree/master/src/icon) [yes](https://design.alfabank.ru/principles) [yes](https://design.alfabank.ru/components/dropdown) [Markdown](https://github.com/alfa-laboratory/arui-feather/tree/master/src/amount) [Digital Transformation",
+      "metadata": {
+        "startIndex": 50347,
+        "endIndex": 51341,
+        "chunkIndex": 58,
+        "section": "Content",
+        "globalChunkIndex": 58
+      }
+    },
+    {
+      "id": "chunk-59",
+      "text": "wn](https://github.com/alfa-laboratory/arui-feather/tree/master/src/amount) [Digital Transformation Agency](/digital-transformation-agency-australian-government-design-system) [Australian Government Design System](https://designsystem.gov.au) [GitHub](https://github.com/govau/design-system-components) [Pancake](https://github.com/govau/pancake) [yes](https://www.dta.gov.au/help-and-advice/guides-and-tools/requirements-australian-government-websites/branding) [yes](https://designsystem.gov.au/components/core/) [yes](https://github.com/govau/sass-a11ycolor) [yes](https://designsystem.gov.au/components/grid-12/) [yes](https://designsystem.gov.au/components/animate/) [yes](https://guides.service.gov.au/content-guide/writing-style/#tone) [yes](https://designsystem.gov.au/components/header/accessibility/) [yes](https://designsystem.gov.au/) [yes](https://designsystem.gov.au/components/accordion/code/) [mozilla](/mozilla-protocol) [protocol](https://protocol.mozilla.org/)",
+      "metadata": {
+        "startIndex": 51241,
+        "endIndex": 52221,
+        "chunkIndex": 59,
+        "section": "Content",
+        "globalChunkIndex": 59
+      }
+    },
+    {
+      "id": "chunk-60",
+      "text": "/components/accordion/code/) [mozilla](/mozilla-protocol) [protocol](https://protocol.mozilla.org/) [GitHub](https://github.com/mozilla/protocol) [yes](https://mozilla.design/) [yes](https://protocol.mozilla.org/fundamentals/color.html) [yes](https://protocol.mozilla.org/fundamentals/typography.html) [yes](https://protocol.mozilla.org/demos/card-layout.html) [yes](https://protocol.mozilla.org/fundamentals/principles.html) [yes](https://protocol.mozilla.org/) [CSS](https://protocol.mozilla.org/docs/css-guide.html) [auth0](/auth0-cosmos) [cosmos](https://auth0-cosmos.now.sh) [GitHub](https://github.com/auth0/cosmos) [yes](https://auth0-cosmos.now.sh/docs/#/overview) [yes](https://auth0-cosmos.now.sh/docs/#/component/icon#icon-library) [yes](https://auth0-cosmos.now.sh/docs/) [yes](https://auth0-cosmos.now.sh/docs/#/component/alert) [yes](https://auth0-cosmos.now.sh/sandbox) [VTEX](/vtex-styleguide) [Styleguide](http://styleguide.vtex.com) [GitHub](https://github.com/vtex/styleguide)",
+      "metadata": {
+        "startIndex": 52121,
+        "endIndex": 53117,
+        "chunkIndex": 60,
+        "section": "Content",
+        "globalChunkIndex": 60
+      }
+    },
+    {
+      "id": "chunk-61",
+      "text": "x-styleguide) [Styleguide](http://styleguide.vtex.com) [GitHub](https://github.com/vtex/styleguide) [VTEX IO](https://vtex.io/) [Figma](https://www.figma.com/file/a94lX91ZmYGIDBxvb8shwLn8/VTEX-Styleguide) [yes](http://brand.vtex.com/) [yes](https://styleguide.vtex.com/#/Styles?id=colors) [yes](https://styleguide.vtex.com/#/Styles?id=typography) [SVG](https://styleguide.vtex.com/#/Icons) [yes](https://styleguide.vtex.com/#/Styles?id=spacing) [yes](https://styleguide.vtex.com/#/Charts) [yes](https://styleguide.vtex.com/) [Markdown](https://styleguide.vtex.com/) [Government of Canada](/government-of-canada-aurora-design-system) [Aurora Design System](https://design.gccollab.ca/) [GitHub](https://github.com/gctools-outilsgc/design-system-code) [yes](https://design.gccollab.ca/component/colour) [yes](https://design.gccollab.ca/component/typography) [yes](https://design.gccollab.ca/component/icons) [yes](https://design.gccollab.ca/component/grids-and-spacing)",
+      "metadata": {
+        "startIndex": 53017,
+        "endIndex": 53985,
+        "chunkIndex": 61,
+        "section": "Content",
+        "globalChunkIndex": 61
+      }
+    },
+    {
+      "id": "chunk-62",
+      "text": "//design.gccollab.ca/component/icons) [yes](https://design.gccollab.ca/component/grids-and-spacing) [yes](https://design.gccollab.ca/data/data-overview) [yes](https://design.gccollab.ca/content/content-guidelines) [yes](https://design.gccollab.ca/overview/introduction) [yes](https://design.gccollab.ca/component) [bridge](/bridge-bold-design-system) [bold design system](https://bold.bridge.ufsc.br/) [GitHub](https://github.com/laboratoriobridge/bold) [Skecth](https://bold.bridge.ufsc.br/resources/) [yes](https://bold.bridge.ufsc.br/design-guidelines/color/) [yes](https://bold.bridge.ufsc.br/design-guidelines/color/usage/) [yes](https://bold.bridge.ufsc.br/design-guidelines/typography/) [yes](https://bold.bridge.ufsc.br/design-guidelines/iconography/) [yes](https://bold.bridge.ufsc.br/design-guidelines/grid/) [yes](https://bold.bridge.ufsc.br/design-guidelines/accessibility/) [yes](https://bold.bridge.ufsc.br/) [yes](https://bold.bridge.ufsc.br/storybook)",
+      "metadata": {
+        "startIndex": 53885,
+        "endIndex": 54853,
+        "chunkIndex": 62,
+        "section": "Content",
+        "globalChunkIndex": 62
+      }
+    },
+    {
+      "id": "chunk-63",
+      "text": "es/accessibility/) [yes](https://bold.bridge.ufsc.br/) [yes](https://bold.bridge.ufsc.br/storybook) [canonical](/canonical-vanilla-framework) [vanilla framework](https://vanillaframework.io/) [GitHub](https://github.com/canonical-web-and-design/vanilla-framework) [Sketch](https://assets.ubuntu.com/latest-redirects/vanilla-framework.sketch) [yes](https://design.ubuntu.com/brand/) [yes](https://docs.vanillaframework.io/settings/color-settings/) [yes](https://docs.vanillaframework.io/base/typography/) [yes](https://docs.vanillaframework.io/patterns/icons/) [yes](https://docs.vanillaframework.io/patterns/grid/) [yes](https://docs.vanillaframework.io/settings/animation-settings/) [yes](https://vanillaframework.io/accessibility) [yes](https://docs.vanillaframework.io/) [ServiceTitan](/servicetitan-anvil) [Anvil](http://anvil.servicetitan.com) [yes](http://anvil.servicetitan.com) [TOTVS](/totvs-portinari-ui) [Portinari UI](https://portinari.io)",
+      "metadata": {
+        "startIndex": 54753,
+        "endIndex": 55705,
+        "chunkIndex": 63,
+        "section": "Content",
+        "globalChunkIndex": 63
+      }
+    },
+    {
+      "id": "chunk-64",
+      "text": "s](http://anvil.servicetitan.com) [TOTVS](/totvs-portinari-ui) [Portinari UI](https://portinari.io) [GitHub](https://github.com/portinariui/portinari-angular) [yes](https://po-ui.io/guides/typography) [yes](https://po-ui.io/guides/icons) [yes](https://po-ui.io/guides/grid-system) [yes](https://po-ui.io/documentation/po-chart) [yes](https://po-ui.io/documentation) [HTML](https://po-ui.io/) [LocalTapiola Services Ltd](/localtapiola-services-ltd-duet-design-system) [Duet Design System](https://www.duetds.com/) [Sketch](https://www.duetds.com/abstract/) [yes](https://www.duetds.com/resources/) [yes](https://www.duetds.com/tokens/) [yes](https://www.duetds.com/typography/) [yes](https://www.duetds.com/iconography/) [yes](https://www.duetds.com/spacing/) [yes](https://www.duetds.com/illustrations/) [yes](https://www.duetds.com/accessibility/) [yes](https://www.duetds.com/design-principles/) [yes](https://www.duetds.com/) [yes](https://www.duetds.com/developers/)",
+      "metadata": {
+        "startIndex": 55605,
+        "endIndex": 56576,
+        "chunkIndex": 64,
+        "section": "Content",
+        "globalChunkIndex": 64
+      }
+    },
+    {
+      "id": "chunk-65",
+      "text": "ds.com/design-principles/) [yes](https://www.duetds.com/) [yes](https://www.duetds.com/developers/) [NPM](https://www.npmjs.com/org/duetds) [SUSE](/suse-eos-design-system) [EOS Design System](https://eosdesignsystem.com/) [Gitlab](https://gitlab.com/SUSE-UIUX/eos) [yes](https://suse.eosdesignsystem.com/colors) [yes](https://suse.eosdesignsystem.com/colors/usage) [yes](https://suse.eosdesignsystem.com/typography) [yes](http://icons.eosdesignsystem.com/) [yes](https://suse.eosdesignsystem.com/patterns/spacing) [yes](https://suse.eosdesignsystem.com/writing/brand-tone) [yes](https://suse.eosdesignsystem.com/installing-npm) [ENGIE](/engie-fluid) [fluid](https://www.engie.design/) [Sketch](https://www.engie.design/fluid-design-system/getting-started/designers/) [yes](https://www.engie.design/fluid-design-system/brand/colors/) [Natural](http://chir.ag/projects/name-that-color/) [yes](https://getstark.co/) [yes](https://www.engie.design/fluid-design-system/brand/typography/)",
+      "metadata": {
+        "startIndex": 56476,
+        "endIndex": 57459,
+        "chunkIndex": 65,
+        "section": "Content",
+        "globalChunkIndex": 65
+      }
+    },
+    {
+      "id": "chunk-66",
+      "text": ") [yes](https://getstark.co/) [yes](https://www.engie.design/fluid-design-system/brand/typography/) [yes](https://www.engie.design/fluid-design-system/brand/icons/) [yes](https://www.engie.design/fluid-design-system/components/grid/) [yes](https://www.engie.design/fluid-design-system/brand/accessibility/) [yes](https://www.engie.design/fluid-design-system/ux-principles/) [yes](https://www.engie.design/fluid-design-system/) [yes](https://www.engie.design/fluid-design-system/getting-started/developers/introduction/) [yes](https://pages.github.tools.digital.engie.com/GBSEngieDigitalDesignSystem/fluid-design-system/) [NPM](https://www.npmjs.com/package/@engie-group/fluid-design-system) [sellerscale](/sellerscale-nude-elements) [NUDE Elements](https://numl.tenphi.now.sh) [GitHub](https://github.com/tenphi/nude) [yes](https://github.com/tenphi/nude/tree/master/docs) [yes](https://numl.tenphi.now.sh) [sainsbury's](/sainsbury-s-luna) [luna](https://luna.sainsburys.co.uk/)",
+      "metadata": {
+        "startIndex": 57359,
+        "endIndex": 58338,
+        "chunkIndex": 66,
+        "section": "Content",
+        "globalChunkIndex": 66
+      }
+    },
+    {
+      "id": "chunk-67",
+      "text": "https://numl.tenphi.now.sh) [sainsbury's](/sainsbury-s-luna) [luna](https://luna.sainsburys.co.uk/) [yes](https://luna.sainsburys.co.uk/guidelines) [yes](https://luna.sainsburys.co.uk/styles/colours) [yes](https://luna.sainsburys.co.uk/styles/typography) [yes](https://luna.sainsburys.co.uk/styles/icons) [yes](https://luna.sainsburys.co.uk/styles/grid) [yes](https://luna.sainsburys.co.uk/guidelines/language) [yes](https://luna.sainsburys.co.uk/accessibility) [Markdown](https://jsainsburyplc.github.io/luna/) [iStreamPlanet](/istreamplanet-pebble-design-system) [Pebble Design System](https://pebble.istreamplanet.net/) [GitHub](https://github.com/istreamlabs/pebble) [yes](https://pebble.istreamplanet.net/#/Styles/Color) [yes](https://pebble.istreamplanet.net/#/Styles/Typography) [yes](https://pebble.istreamplanet.net/#/Components/Icon) [yes](https://pebble.istreamplanet.net/#/Styles/Spacing) [yes](https://pebble.istreamplanet.net/) [npm](https://www.npmjs.com/package/@istreamplanet/pebble)",
+      "metadata": {
+        "startIndex": 58238,
+        "endIndex": 59239,
+        "chunkIndex": 67,
+        "section": "Content",
+        "globalChunkIndex": 67
+      }
+    },
+    {
+      "id": "chunk-68",
+      "text": "[yes](https://pebble.istreamplanet.net/) [npm](https://www.npmjs.com/package/@istreamplanet/pebble) [Nulogy](/nulogy-nulogy-design-system) [Nulogy Design System](http://nulogy.design) [GitHub](https://github.com/nulogy/design-system) [yes](https://nulogy.design/design-language/colour/) [yes](https://nulogy.design/design-language/typography/) [yes](https://nulogy.design/components/icon/) [yes](https://nulogy.design/design-language/spacing/) [yes](https://nulogy.design/) [yes](https://storybook.nulogy.design/) [Red Hat](/red-hat-patternfly-design-system) [Patternfly Design System](https://www.patternfly.org/) [GitHub](https://github.com/patternfly) [Patternfly](https://www.patternfly.org/v4/get-started/develop#htmlcss) [Sketch](https://github.com/patternfly/patternfly-design-kit) [yes](https://www.patternfly.org/v4/guidelines/colors/) [yes](https://www.patternfly.org/v4/guidelines/colors#color-palette) [yes](https://www.patternfly.org/v4/guidelines/colors#contrast-ratios)",
+      "metadata": {
+        "startIndex": 59139,
+        "endIndex": 60124,
+        "chunkIndex": 68,
+        "section": "Content",
+        "globalChunkIndex": 68
+      }
+    },
+    {
+      "id": "chunk-69",
+      "text": "elines/colors#color-palette) [yes](https://www.patternfly.org/v4/guidelines/colors#contrast-ratios) [yes](https://www.patternfly.org/v4/guidelines/typography/) [Font Awesome Free](https://www.patternfly.org/v4/guidelines/icons/) [yes](https://www.patternfly.org/v4/layouts/grid/) [yes](https://www.patternfly.org/v3/pattern-library/data-visualization/area-chart/) [yes](https://www.patternfly.org/v4/components/empty-state/design-guidelines/#voice-and-tone) [yes](https://www.patternfly.org/v4/accessibility/accessibility-fundamentals/) [yes](https://www.patternfly.org/v4/get-started/develop/#getting-started) [yes](https://www.patternfly.org/v4/contribute/about/) [yes](https://www.patternfly.org/v4/get-started/develop/#react) [yes](https://www.patternfly.org/v4/) [Buildit | Wipro Digital](/buildit-wipro-digital-gravity) [Gravity](http://style.buildit.digital/) [GitHub](https://github.com/buildit/gravity-ui-web) [Style Dictionary](https://github.com/buildit/gravity-particles/)",
+      "metadata": {
+        "startIndex": 60024,
+        "endIndex": 61009,
+        "chunkIndex": 69,
+        "section": "Content",
+        "globalChunkIndex": 69
+      }
+    },
+    {
+      "id": "chunk-70",
+      "text": "ithub.com/buildit/gravity-ui-web) [Style Dictionary](https://github.com/buildit/gravity-particles/) [yes](http://style.buildit.digital/components/detail/color-palettes.html) [semantic](http://style.buildit.digital/docs/gravity-for-the-web/color-system.html) [yes](http://style.buildit.digital/components/detail/color-schemes.html) [yes](http://style.buildit.digital/components/detail/fonts.html) [yes](http://style.buildit.digital/components/detail/logos-and-icons--ui-svg-symbols.html) [yes](http://style.buildit.digital/docs/gravity-for-the-web/layout.html) [yes](http://style.buildit.digital/docs/about-gravity/principles.html) [yes](http://style.buildit.digital/) [npm (ui-web)](https://www.npmjs.com/package/@buildit/gravity-ui-web) [npm (particles)](https://www.npmjs.com/package/@buildit/gravity-particles) [drawbotics](/drawbotics-drylus) [drylus](https://drawbotics.github.io/drylus) [yes](https://drawbotics.github.io/drylus/component-kit/brand/colors)",
+      "metadata": {
+        "startIndex": 60909,
+        "endIndex": 61872,
+        "chunkIndex": 70,
+        "section": "Content",
+        "globalChunkIndex": 70
+      }
+    },
+    {
+      "id": "chunk-71",
+      "text": "/drawbotics.github.io/drylus) [yes](https://drawbotics.github.io/drylus/component-kit/brand/colors) [yes](https://drawbotics.github.io/drylus/component-kit/components/icon) [yes](https://drawbotics.github.io/drylus/component-kit/layout/grid) [yes](https://drawbotics.github.io/drylus/component-kit/components/animated-item) [yes](https://drawbotics.github.io/drylus) [HTML](https://drawbotics.github.io/drylus/coding-guidelines/introduction) [finastra](/finastra-finastra-design-system) [Finastra Design System](https://design.fusionfabric.cloud/) [GitHub](https://github.com/fusionfabric/finastra-design-system) [Sketch](https://github.com/fusionfabric/finastra-design-kit) [XD](https://github.com/fusionfabric/finastra-design-kit) [yes](https://design.fusionfabric.cloud/foundations) [yes](https://design.fusionfabric.cloud/foundations/colors) [yes](https://design.fusionfabric.cloud/foundations/typography) [yes](https://design.fusionfabric.cloud/foundations/icons)",
+      "metadata": {
+        "startIndex": 61772,
+        "endIndex": 62741,
+        "chunkIndex": 71,
+        "section": "Content",
+        "globalChunkIndex": 71
+      }
+    },
+    {
+      "id": "chunk-72",
+      "text": "sionfabric.cloud/foundations/typography) [yes](https://design.fusionfabric.cloud/foundations/icons) [yes](https://design.fusionfabric.cloud/foundations/spacings) [yes](https://design.fusionfabric.cloud/components/data-visualization) [yes](https://design.fusionfabric.cloud/get-started/designers) [yes](https://design.fusionfabric.cloud/) [yes](https://design.fusionfabric.cloud/get-started/developers) [npm](https://www.npmjs.com/package/@ffdc/uxg-angular-theme) [twilio](/twilio-paste) [paste](https://paste.twilio.design/) [GitHub](https://github.com/twilio-labs/paste) [Sketch](https://share.goabstract.com/786b3d8f-b87a-4140-af7d-eb4cdd40e8ed) [Twilio Brand](https://www.twilio.com/brand) [yes](https://paste.twilio.design/tokens) [SVG](https://paste.twilio.design/icons) [yes](https://paste.twilio.design/layout) [yes](https://paste.twilio.design/illustrations) [yes](https://paste.twilio.design/content/voice-and-tone) [yes](https://paste.twilio.design/inclusive-design)",
+      "metadata": {
+        "startIndex": 62641,
+        "endIndex": 63618,
+        "chunkIndex": 72,
+        "section": "Content",
+        "globalChunkIndex": 72
+      }
+    },
+    {
+      "id": "chunk-73",
+      "text": "s://paste.twilio.design/content/voice-and-tone) [yes](https://paste.twilio.design/inclusive-design) [yes](https://paste.twilio.design/principles) [yes](https://paste.twilio.design/) [yes](https://paste.twilio.design/getting-started/engineering) [yes](https://twilio-labs.github.io/paste) [npm](https://www.npmjs.com/package/@twilio-paste/core) [sipgate](/sipgate-pandaui) [pandaUI](https://panda.sipgatedesign.com) [yes](https://www.sipgatedesign.com/) [yes](https://panda.sipgatedesign.com/?path=/docs/foundation-color--page) [yes](https://panda.sipgatedesign.com/?path=/docs/foundation-color--page#kontrastmatrix) [yes](https://panda.sipgatedesign.com/?path=/docs/foundation-typography--page) [yes](https://panda.sipgatedesign.com/?path=/docs/foundation-layout--page) [yes](https://panda.sipgatedesign.com) [Telefónica](/telef-nica-m-stica) [Mística](https://brandfactory.telefonica.com/mistica) [GitHub](https://github.com/Telefonica/mistica) [yes](https://brandfactory.telefonica.com/mistica)",
+      "metadata": {
+        "startIndex": 63518,
+        "endIndex": 64515,
+        "chunkIndex": 73,
+        "section": "Content",
+        "globalChunkIndex": 73
+      }
+    },
+    {
+      "id": "chunk-74",
+      "text": "[GitHub](https://github.com/Telefonica/mistica) [yes](https://brandfactory.telefonica.com/mistica) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/color-constants) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/typography) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/icons) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/spacing) [yes](https://brandfactory.telefonica.com/d/iSp7b1DkYygv/n-a#/fundamentals/design-values) [yes](https://github.com/Telefonica/mistica) [yes](https://mistica-web.vercel.app/?path=/story/welcome-welcome--mistica) [Elia Group](/elia-group-nova) [Nova](https://nova.eliagroup.io) [yes](https://nova.eliagroup.io/brand/) [yes](https://nova.eliagroup.io/brand/colors/) [yes](https://nova.eliagroup.io/brand/typography/) [yes](https://nova.eliagroup.io/brand/iconography/) [yes](https://nova.eliagroup.io/documentation/foundations/spacing/guide/)",
+      "metadata": {
+        "startIndex": 64415,
+        "endIndex": 65400,
+        "chunkIndex": 74,
+        "section": "Content",
+        "globalChunkIndex": 74
+      }
+    },
+    {
+      "id": "chunk-75",
+      "text": "up.io/brand/iconography/) [yes](https://nova.eliagroup.io/documentation/foundations/spacing/guide/) [yes](https://www.highcharts.com/docs/chart-and-series-types/pie-chart) [yes](https://nova.eliagroup.io/brand/purpose/) [yes](https://nova.eliagroup.io/overview/design-principles/) [yes](https://nova.eliagroup.io) [Kajabi](/kajabi-sage) [Sage](https://sage.kajabi.com) [GitHub](https://github.com/Kajabi/sage-lib) [yes](https://sage.kajabi.com/pages/foundations/color) [yes](https://sage.kajabi.com/pages/foundations/typography) [yes](https://sage.kajabi.com/pages/foundations/icon) [yes](https://sage.kajabi.com/pages/patterns/grid) [yes](https://sage.kajabi.com/pages/foundations/design_principles) [yes](https://sage.kajabi.com) [yes](https://sage.kajabi.com/pages/component/sage_component?tab=preview) [yes](https://sage-lib-storybook.production.kajabi.farm/?path=/docs/) [Adele Goldberg](https://en.wikipedia.org/wiki/Adele_Goldberg_(computer_scientist)) [Learn more &",
+      "metadata": {
+        "startIndex": 65300,
+        "endIndex": 66274,
+        "chunkIndex": 75,
+        "section": "Content",
+        "globalChunkIndex": 75
+      }
+    },
+    {
+      "id": "chunk-76",
+      "text": ") [Adele Goldberg](https://en.wikipedia.org/wiki/Adele_Goldberg_(computer_scientist)) [Learn more & download](https://www.uxpin.com/evangelizing-design-system-roi-template?utm_source=adele.uxpin.com&utm_medium=upartner&utm_campaign=Adele) [Start a free trial now!](https://www.uxpin.com?utm_source=adele.uxpin.com&utm_medium=upartner&utm_campaign=Adele)",
+      "metadata": {
+        "startIndex": 66174,
+        "endIndex": 67174,
+        "chunkIndex": 76,
+        "section": "Content",
+        "globalChunkIndex": 76
+      }
+    }
+  ],
+  "metadata": {
+    "category": "general",
+    "tags": [
+      "design-systems",
+      "repository",
+      "analysis"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:20.801Z",
+    "system": "Adele",
+    "author": "UXPin",
+    "source_url": "https://adele.uxpin.com/"
+  }
+}

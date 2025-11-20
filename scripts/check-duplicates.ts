@@ -158,8 +158,9 @@ async function main() {
   }
 }
 
-// Run if this script is executed directly
-if (require.main === module) {
+// Run if this script is executed directly (ES module compatible)
+const isMainModule = import.meta.url === `file://${process.argv[1]}`;
+if (isMainModule) {
   main().catch(error => {
     console.error(`❌ Unexpected error: ${error}`);
     process.exit(1);

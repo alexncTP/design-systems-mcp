@@ -1,0 +1,200 @@
+{
+  "id": "iflmVkGPhJcbCLi_Nb-Wy",
+  "title": "Design Tokens Guide",
+  "source": {
+    "type": "url",
+    "location": "https://backlight.dev/blog/design-tokens",
+    "ingested_at": "2025-11-20T13:22:22.196Z"
+  },
+  "content": "## Where it all started ## What are Design Tokens? ## Design Tokens usage ## W3C Draft Specification for Design Tokens ### Composing Tokens ### Token explicitness ### Themes #### Separate token files for each theme #### Combining themes into a single group #### Combining themes into a single token ## Future Backlight.dev is shutting down June 1st 2025. For more information, please contact In this blog, we will talk about design tokens and their usage. We will expand on how different tools work with them, including our tool: . Finally, we will discuss the and how this will change the Design Token landscape. A was released on September 23rd, 2021, and there is now an open discussion on the draft, so make sure to ! The way digital products get designed and developed has changed dramatically over the years. Not long ago, designers would spend days making the perfect visual representation of a website or interface. Then, developers would spend the same amount of time - if not more - to break it down into code, based on what they could see in the image file the designer provided. Soon, the digital product industry realized this wasn’t an efficient way of working, and design tools began to better represent the designs in the development way of thinking. These new tools and ways of working made space for component libraries and design systems. We’re now at the next step of this evolution: design tokens. With design systems, individual items on a screen - like a text input - turned into components: reusable elements that are built in one place and referenced in different parts of the product. Similarly, the most basic brand definitions like color, typography, spacing, etc., are turning into Design Tokens. These design decisions are “hard-coded” values, but with Design Tokens they are turned into a string that gets registered in one place - like a JSON file - and re-used everywhere in the interface, enabling an extra layer of consistency to an ever-evolving product. The advantage of the Design Tokens approach is the ability to store the design decisions generically. This information can then get translated into any technology or platform. We utilize Design Tokens to describe visual styles. The most common examples are colors, typography, radii, spacing, sizing, and shadows. However, the breakdown of each category is starting to grow. For example, typography is used to define just a couple of design decisions, like the font-family and default font-sizes. Nowadays, it makes sense to define every aspect of the typography as a token: line-height, font-weight, letter spacing, text case, and text-decoration. Additionally, the abstraction layers in which we can define a “design decision” are also expanding. A basic example is expanding our main colors, for example, . We can also describe a more component-specific token, like a . Recently, a new W3C community group emerged specifically to standardize around Design Tokens: , . The Design Tokens Community Group’s goal is to provide standards upon which products and design tools can rely for sharing stylistic pieces of a design system at scale. Here, we will focus on the design tools part, as Backlight is a tool for building design systems. If you want to get more details on the design token spec, do . Given how fast it is being iterated upon, this blog will get outdated quickly. The reason a standard format for design tokens is important is that there’s a lot of tooling that gets involved with Design Tokens: • creating design tokens • maintaining and storing design tokens • consuming the tokens, for example, in a design tool like Figma • exporting tokens to different platforms, so coded components can use them. Think CSS variables, iOS/Android tokens, etc. For these tools to be working together nicely, a standardized format for design tokens is necessary. Right now, the situation is that for which transformers/converters need to be written and maintained over time. One example of such converters is going from to , for which we wrote a transformer which outlines. The maintainer of this Figma Tokens Plugin even wrote . In summary, a Design Token as specified by the draft looks like this: Or a more realistic example: Here, you can see that tokens may be nested in groups and that a type can apply to a group and an individual token. The spec is still very much work in progress, and there are many things that have yet to be specified or for which best practices still need to emerge. Therefore, tools still have some way to go in converging to this spec, but they’re making progress already. Examples are Style Dictionary and Figma Tokens Plugin. Below are some examples that are either unspecified or still lack best practices. We recommend reading . It’s a great resource on how to name and compose tokens. Many of its conclusions are very similar to how we ended up authoring tokens after multiple iterations of struggling. Let’s imagine for a minute that we have a tokenized input component. The upper property key is the name of the component, and its children are the different parts of the component: • the label • the input element itself • a help text • a feedback message However, things quickly get more complicated, as you may have different variants of inputs. For inputs, this might not make a whole lot of sense. However, for a component like a button, variants like CTA, primary, outline, secondary, etc., are quite common. How do you go about grouping those in design tokens? Then to make things more complicated, there are also states like hover, disabled, focused, etc. It may make sense to group in this order: variants -> states -> parts -> etc., but this is not a trivial choice to make; it can be tricky representing a multi-dimensional matrix of variations into a JSON object. Continuing our example of a tokenized input component, let’s imagine an extension called input-amount, which has a fixed width of . The question to ask here is: “Why are we duplicating the label group if it’s identical to the one in our regular input tokens?“. It’s a valid question, one that . How explicit do you make your tokens when they are overrides from another existing token group? There’s essentially a spectrum where on the one hand, you have minimal, and on the other hand, you have explicit. Minimal Explicit If you choose explicitly, you get the token snippet above. If you go with a minimal approach, you get this: The property I added here is just an idea and not part of the spec. Perhaps it helps tools understand that one token group is extending another. The pro of using the minimal approach is a lot less maintenance of duplicated tokens, a lot less repeating ourselves. The cons are that in terms of token consumption in CSS, it may require additional knowledge: It may be counter-intuitive to the developer implementing the coded component that they are required to use the tokens from the base component in some areas and the tokens from the extension component in others. Another con is that if the designer suddenly decides the is now different from the regular amount in terms of the label color, it requires a change in the CSS to activate that design change. In the example above, we use explicit tokens, which means we get a lot of duplicate parts in our JSON, but at least it makes the CSS more stable for future change. There’s a finite but large number of parameters that a designer can change in the future, requiring a CSS change. Are we going to parameterize every possible CSS property to be forward compatible with every potential change in the design? For me, the answer is no, because that would create a huge CSS bloat, exponentially increasing for each variation of the component: In this example, it’s just two variations, and we didn’t even cover nearly every relevant CSS property, so you can probably see how this would escalate quickly. Therefore, my personal preference is to use a minimal approach for tokenizing, only overriding a token where needed. With some metadata, it should help tools understand the inheritance. Here’s another example where this might be useful: Note: this property is just an idea. It’s not part of the spec at the time of writing this. There’s a big open question about dealing with themes inside design tokens. I will discuss some options I’ve seen thrown around. First of all, what is theming exactly? The first response to that may be dark/light theme. However, answers can take a broader scope. What about high-contrast mode for users with impaired vision? What about a solarized version of your brand? What about changing just the luminosity of your default theme? What about entirely custom themes with different color palettes? What about a theme that increases space or font-size on your page? There are many things under the umbrella of a theme, far more than dark/light theme. It all depends on how much the author of an app wants to play into the customization desires of its users. One approach to separate themes is using the exact same token structures but dividing them into different folders. Then when running something like style-dictionary, you could run two instances, one for each theme. It’s a clear separation, but the downside is more duplicate token code, meaning if you restructure your tokens, you have to apply the same changes in all your themes. Instead of the approach above, let’s try combining the different themes into a single token structure by using groups to differentiate. The hierarchy is perhaps a bit complex, but essentially there’s a base variant of the button, which looks the same for light and dark theme. Therefore, the dark theme extends the light theme. The outline button has a transparent background. Therefore, the text color depends on the theme. Thus, the outline light theme extends the base light theme except with an override for the background and the text color. The dark theme then extends the light theme of the outline button but changes the text color to light to contrast on dark theme. A big pro of this approach is that you’re combining into a single token structure rather than completely separating between themes which enables easier restructures/refactors because you essentially have less duplicate code going around. A downside is that hierarchies and grouping can get pretty complicated to reason about. Having metadata present describing the hierarchies can help if tooling like autocomplete can interpret the metadata and assist the user using the tokens. Instead of using groups to differentiate and deal with complicated references/hierarchies, let’s combine themes into a single token. In the above example, we make the $value of the token an object, which defines the different values for each theme. A big upside of this is that it reduces duplicate code to an absolute minimum. Complicated nestings/hierarchies/groupings aren’t a problem. You only create $value objects if theming differences apply. Otherwise, it’s the same value for all themes. Combining into a single token makes sense because . I don’t personally see a downside of this approach. It is my personal preference. It’s similar to an approach outlined by Daniel Banks, one of the maintainers of , he talks about it in . Two things will probably happen: • The Design Tokens specification will expand and improve and grow towards consensus, including the topics I discussed • Tools will start to align and converge to the spec as the spec reaches maturity As this happens, the experience for developers and design tool users will improve as a consequence of tools and platforms starting to achieve seamless integration. In the end, this is why this standardization is important. For us, it means that developers and designers can be better integrated inside a single workflow, solving current problems with design diverging from code. ## Links [hello@divriots.com](mailto:hello@divriots.com) [Backlight](https://backlight.dev/) [W3C Draft Specification for Design Tokens](https://design-tokens.github.io/community-group/format/) [first public editor’s draft of the spec](https://design-tokens.github.io/community-group/format/) [join the conversation on GitHub](https://github.com/design-tokens/community-group/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22Format+Issue%22) [Design Tokens Community Group](https://www.w3.org/groups/cg/design-tokens) [this is their homepage](https://www.w3.org/community/design-tokens/) [check out the spec](https://design-tokens.github.io/community-group/format/) [Style-Dictionary](https://amzn.github.io/style-dictionary/#/) [Figma Tokens Plugin](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens) [this article](https://backlight.dev/docs/design-tokens-using-sd-figma) [a transformer that essentially does the reverse operation](https://www.npmjs.com/package/token-transformer) [Naming Tokens in Design Systems](https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676) [I asked on Twitter a while ago](https://twitter.com/jorenbroekema/status/1481624006763728906) [a blogpost](https://dbanks.design/blog/dark-mode-with-style-dictionary/#Single-token-method) [Tweet](https://twitter.com/share?text=Design%20Tokens%20and%20how%20a%20W3C%20specification%20will%20help%20going%20forward&url=https%3A%2F%2Fbacklight.dev%2Fblog%2Fdesign-tokens%2F) [Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbacklight.dev%2Fblog%2Fdesign-tokens%2F&text=Design%20Tokens%20and%20how%20a%20W3C%20specification%20will%20help%20going%20forward)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## Where it all started ## What are Design Tokens? ## Design Tokens usage ## W3C Draft Specification for Design Tokens ### Composing Tokens ### Token explicitness ### Themes #### Separate token files for each theme #### Combining themes into a single group #### Combining themes into a single token ## Future Backlight.dev is shutting down June 1st 2025. For more information, please contact In this blog, we will talk about design tokens and their usage. We will expand on how different tools work with them, including our tool: . Finally, we will discuss the and how this will change the Design Token landscape. A was released on September 23rd, 2021, and there is now an open discussion on the draft, so make sure to ! The way digital products get designed and developed has changed dramatically over the years. Not long ago, designers would spend days making the perfect visual representation of a website or interface.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 924,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "ago, designers would spend days making the perfect visual representation of a website or interface. Then, developers would spend the same amount of time - if not more - to break it down into code, based on what they could see in the image file the designer provided. Soon, the digital product industry realized this wasn’t an efficient way of working, and design tools began to better represent the designs in the development way of thinking. These new tools and ways of working made space for component libraries and design systems. We’re now at the next step of this evolution: design tokens. With design systems, individual items on a screen - like a text input - turned into components: reusable elements that are built in one place and referenced in different parts of the product. Similarly, the most basic brand definitions like color, typography, spacing, etc., are turning into Design Tokens.",
+      "metadata": {
+        "startIndex": 824,
+        "endIndex": 1726,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "most basic brand definitions like color, typography, spacing, etc., are turning into Design Tokens. These design decisions are “hard-coded” values, but with Design Tokens they are turned into a string that gets registered in one place - like a JSON file - and re-used everywhere in the interface, enabling an extra layer of consistency to an ever-evolving product. The advantage of the Design Tokens approach is the ability to store the design decisions generically. This information can then get translated into any technology or platform. We utilize Design Tokens to describe visual styles. The most common examples are colors, typography, radii, spacing, sizing, and shadows. However, the breakdown of each category is starting to grow. For example, typography is used to define just a couple of design decisions, like the font-family and default font-sizes. Nowadays, it makes sense to define every aspect of the typography as a token: line-height, font-weight, letter spacing, text case, and",
+      "metadata": {
+        "startIndex": 1626,
+        "endIndex": 2623,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "every aspect of the typography as a token: line-height, font-weight, letter spacing, text case, and text-decoration. Additionally, the abstraction layers in which we can define a “design decision” are also expanding. A basic example is expanding our main colors, for example, . We can also describe a more component-specific token, like a . Recently, a new W3C community group emerged specifically to standardize around Design Tokens: , . The Design Tokens Community Group’s goal is to provide standards upon which products and design tools can rely for sharing stylistic pieces of a design system at scale. Here, we will focus on the design tools part, as Backlight is a tool for building design systems. If you want to get more details on the design token spec, do . Given how fast it is being iterated upon, this blog will get outdated quickly. The reason a standard format for design tokens is important is that there’s a lot of tooling that gets involved with Design Tokens: • creating design",
+      "metadata": {
+        "startIndex": 2523,
+        "endIndex": 3521,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "important is that there’s a lot of tooling that gets involved with Design Tokens: • creating design tokens • maintaining and storing design tokens • consuming the tokens, for example, in a design tool like Figma • exporting tokens to different platforms, so coded components can use them. Think CSS variables, iOS/Android tokens, etc. For these tools to be working together nicely, a standardized format for design tokens is necessary. Right now, the situation is that for which transformers/converters need to be written and maintained over time. One example of such converters is going from to , for which we wrote a transformer which outlines. The maintainer of this Figma Tokens Plugin even wrote . In summary, a Design Token as specified by the draft looks like this: Or a more realistic example: Here, you can see that tokens may be nested in groups and that a type can apply to a group and an individual token.",
+      "metadata": {
+        "startIndex": 3421,
+        "endIndex": 4339,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "e that tokens may be nested in groups and that a type can apply to a group and an individual token. The spec is still very much work in progress, and there are many things that have yet to be specified or for which best practices still need to emerge. Therefore, tools still have some way to go in converging to this spec, but they’re making progress already. Examples are Style Dictionary and Figma Tokens Plugin. Below are some examples that are either unspecified or still lack best practices. We recommend reading . It’s a great resource on how to name and compose tokens. Many of its conclusions are very similar to how we ended up authoring tokens after multiple iterations of struggling. Let’s imagine for a minute that we have a tokenized input component. The upper property key is the name of the component, and its children are the different parts of the component: • the label • the input element itself • a help text • a feedback message However, things quickly get more complicated, as",
+      "metadata": {
+        "startIndex": 4239,
+        "endIndex": 5238,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "element itself • a help text • a feedback message However, things quickly get more complicated, as you may have different variants of inputs. For inputs, this might not make a whole lot of sense. However, for a component like a button, variants like CTA, primary, outline, secondary, etc., are quite common. How do you go about grouping those in design tokens? Then to make things more complicated, there are also states like hover, disabled, focused, etc. It may make sense to group in this order: variants -> states -> parts -> etc., but this is not a trivial choice to make; it can be tricky representing a multi-dimensional matrix of variations into a JSON object. Continuing our example of a tokenized input component, let’s imagine an extension called input-amount, which has a fixed width of . The question to ask here is: “Why are we duplicating the label group if it’s identical to the one in our regular input tokens?“. It’s a valid question, one that .",
+      "metadata": {
+        "startIndex": 5138,
+        "endIndex": 6103,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "group if it’s identical to the one in our regular input tokens?“. It’s a valid question, one that . How explicit do you make your tokens when they are overrides from another existing token group? There’s essentially a spectrum where on the one hand, you have minimal, and on the other hand, you have explicit. Minimal Explicit If you choose explicitly, you get the token snippet above. If you go with a minimal approach, you get this: The property I added here is just an idea and not part of the spec. Perhaps it helps tools understand that one token group is extending another. The pro of using the minimal approach is a lot less maintenance of duplicated tokens, a lot less repeating ourselves. The cons are that in terms of token consumption in CSS, it may require additional knowledge: It may be counter-intuitive to the developer implementing the coded component that they are required to use the tokens from the base component in some areas and the tokens from the extension component in",
+      "metadata": {
+        "startIndex": 6003,
+        "endIndex": 6998,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "use the tokens from the base component in some areas and the tokens from the extension component in others. Another con is that if the designer suddenly decides the is now different from the regular amount in terms of the label color, it requires a change in the CSS to activate that design change. In the example above, we use explicit tokens, which means we get a lot of duplicate parts in our JSON, but at least it makes the CSS more stable for future change. There’s a finite but large number of parameters that a designer can change in the future, requiring a CSS change. Are we going to parameterize every possible CSS property to be forward compatible with every potential change in the design? For me, the answer is no, because that would create a huge CSS bloat, exponentially increasing for each variation of the component: In this example, it’s just two variations, and we didn’t even cover nearly every relevant CSS property, so you can probably see how this would escalate quickly.",
+      "metadata": {
+        "startIndex": 6898,
+        "endIndex": 7893,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "cover nearly every relevant CSS property, so you can probably see how this would escalate quickly. Therefore, my personal preference is to use a minimal approach for tokenizing, only overriding a token where needed. With some metadata, it should help tools understand the inheritance. Here’s another example where this might be useful: Note: this property is just an idea. It’s not part of the spec at the time of writing this. There’s a big open question about dealing with themes inside design tokens. I will discuss some options I’ve seen thrown around. First of all, what is theming exactly? The first response to that may be dark/light theme. However, answers can take a broader scope. What about high-contrast mode for users with impaired vision? What about a solarized version of your brand? What about changing just the luminosity of your default theme? What about entirely custom themes with different color palettes? What about a theme that increases space or font-size on your page?",
+      "metadata": {
+        "startIndex": 7793,
+        "endIndex": 8788,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "s with different color palettes? What about a theme that increases space or font-size on your page? There are many things under the umbrella of a theme, far more than dark/light theme. It all depends on how much the author of an app wants to play into the customization desires of its users. One approach to separate themes is using the exact same token structures but dividing them into different folders. Then when running something like style-dictionary, you could run two instances, one for each theme. It’s a clear separation, but the downside is more duplicate token code, meaning if you restructure your tokens, you have to apply the same changes in all your themes. Instead of the approach above, let’s try combining the different themes into a single token structure by using groups to differentiate. The hierarchy is perhaps a bit complex, but essentially there’s a base variant of the button, which looks the same for light and dark theme. Therefore, the dark theme extends the light",
+      "metadata": {
+        "startIndex": 8688,
+        "endIndex": 9683,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "button, which looks the same for light and dark theme. Therefore, the dark theme extends the light theme. The outline button has a transparent background. Therefore, the text color depends on the theme. Thus, the outline light theme extends the base light theme except with an override for the background and the text color. The dark theme then extends the light theme of the outline button but changes the text color to light to contrast on dark theme. A big pro of this approach is that you’re combining into a single token structure rather than completely separating between themes which enables easier restructures/refactors because you essentially have less duplicate code going around. A downside is that hierarchies and grouping can get pretty complicated to reason about. Having metadata present describing the hierarchies can help if tooling like autocomplete can interpret the metadata and assist the user using the tokens.",
+      "metadata": {
+        "startIndex": 9583,
+        "endIndex": 10518,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "help if tooling like autocomplete can interpret the metadata and assist the user using the tokens. Instead of using groups to differentiate and deal with complicated references/hierarchies, let’s combine themes into a single token. In the above example, we make the $value of the token an object, which defines the different values for each theme. A big upside of this is that it reduces duplicate code to an absolute minimum. Complicated nestings/hierarchies/groupings aren’t a problem. You only create $value objects if theming differences apply. Otherwise, it’s the same value for all themes. Combining into a single token makes sense because . I don’t personally see a downside of this approach. It is my personal preference. It’s similar to an approach outlined by Daniel Banks, one of the maintainers of , he talks about it in . Two things will probably happen: • The Design Tokens specification will expand and improve and grow towards consensus, including the topics I discussed • Tools will",
+      "metadata": {
+        "startIndex": 10418,
+        "endIndex": 11419,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "n will expand and improve and grow towards consensus, including the topics I discussed • Tools will start to align and converge to the spec as the spec reaches maturity As this happens, the experience for developers and design tool users will improve as a consequence of tools and platforms starting to achieve seamless integration. In the end, this is why this standardization is important. For us, it means that developers and designers can be better integrated inside a single workflow, solving current problems with design diverging from code. ## Links [hello@divriots.com](mailto:hello@divriots.com) [Backlight](https://backlight.dev/) [W3C Draft Specification for Design Tokens](https://design-tokens.github.io/community-group/format/) [first public editor’s draft of the spec](https://design-tokens.github.io/community-group/format/) [join the conversation on",
+      "metadata": {
+        "startIndex": 11319,
+        "endIndex": 12186,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "aft of the spec](https://design-tokens.github.io/community-group/format/) [join the conversation on GitHub](https://github.com/design-tokens/community-group/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22Format+Issue%22) [Design Tokens Community Group](https://www.w3.org/groups/cg/design-tokens) [this is their homepage](https://www.w3.org/community/design-tokens/) [check out the spec](https://design-tokens.github.io/community-group/format/) [Style-Dictionary](https://amzn.github.io/style-dictionary/#/) [Figma Tokens Plugin](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens) [this article](https://backlight.dev/docs/design-tokens-using-sd-figma) [a transformer that essentially does the reverse operation](https://www.npmjs.com/package/token-transformer) [Naming Tokens in Design Systems](https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676) [I asked on Twitter a while",
+      "metadata": {
+        "startIndex": 12086,
+        "endIndex": 13026,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "edium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676) [I asked on Twitter a while ago](https://twitter.com/jorenbroekema/status/1481624006763728906) [a blogpost](https://dbanks.design/blog/dark-mode-with-style-dictionary/#Single-token-method) [Tweet](https://twitter.com/share?text=Design%20Tokens%20and%20how%20a%20W3C%20specification%20will%20help%20going%20forward&url=https%3A%2F%2Fbacklight.dev%2Fblog%2Fdesign-tokens%2F) [Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbacklight.dev%2Fblog%2Fdesign-tokens%2F&text=Design%20Tokens%20and%20how%20a%20W3C%20specification%20will%20help%20going%20forward)",
+      "metadata": {
+        "startIndex": 12926,
+        "endIndex": 13926,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens",
+      "implementation",
+      "best-practices"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:22.196Z",
+    "system": "Backlight",
+    "source_url": "https://backlight.dev/blog/design-tokens"
+  }
+}

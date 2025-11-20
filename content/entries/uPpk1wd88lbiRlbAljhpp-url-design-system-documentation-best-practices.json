@@ -1,0 +1,255 @@
+{
+  "id": "uPpk1wd88lbiRlbAljhpp",
+  "title": "Design System Documentation Best Practices",
+  "source": {
+    "type": "url",
+    "location": "https://backlight.dev/blog/design-system-documentation-best-practices",
+    "ingested_at": "2025-11-20T13:22:22.352Z"
+  },
+  "content": "## How about documenting those? ## Know your user ## Organise the information ## Set a single source of truth ## Write an introduction page ## Define layout guidelines ## Gather feedback ## Determine how others can contribute ## Maintain it with class ## Try pair programming or pair designing ## Final considerations Backlight.dev is shutting down June 1st 2025. For more information, please contact One of the pillars of any design system is undoubtedly its documentation, otherwise you would simply end up with a component library, and we all know a design system is much more than that. The design system’s documentation is key for its adoption. The product team will only be able to use it properly if it’s well understood, which defines its success and longevity. Furthermore, a good documentation can also facilitate scalability and improvements. In the process of documenting your design system you will need to write about the , the definitions of your brand as well as the themselves (both in code and in the UI Kits), along side the rules for how and when to use them. Here are a few good practices that any team can adopt that will make the process of documenting your design system much easier, resulting in a good read that your users will want to dive in: All good products start with understanding the users needs and wants. This is also true when we look at the documentation as a product to be consumed by others, like the colleagues outside of the design system team, for example. A crucial step for success is to have a clear picture of all the users of this documentation. You can draw inspiration from some cleaver graphic designers out there. In the light of recent events (the pandemic) we have witnessed many approaches to get the social distancing message across to a large user base - namely the world’s entire population. The people at Berlin’s public transport tried this: They could have just written 1.5 meters, instead they asked the question “What does 1.5 meters look like?” Resulting on a very relatable - and witty - explanation for the necessary distance: “1.5m is the same as three corgi”. The example above is a good real-life case of how Design System teams could define their documentation. Ultimately, the documentation of your principles and components is not just for your Design System teams, it’s for the Design System’s users, hence the importance of considering just the user: who is using this design system? It’s not just designers and UI engineers or front-end developers. What other disciplines are using your documentation site? Do they have enough information? Do you have the context from their perspective? At the start of a Design System, after building some components, the natural path is to think of the necessary documentation required to consume them, which information will help the users implement those components in the interface. This normally starts from the designer’s or developer’s perspective, but it shouldn’t stop there. Have you considered the other disciplines as well? Make sure your documentation doesn’t lack the perspective of all users who are going to be using your documentation. The other side of this coin, the one in which you don’t take everyone’s point of view in consideration, is an ugly truth: your documentation will be left unread, your design system will become inconsistent due to poor understanding/implementation and overall frustration with what could’ve been the solution to a scalable and cohesive product. As once mentioned by Sarah Drasner: ‘The folks that bounced due to bad docs, tutorials, and onboarding aren’t telling you. They’re just leaving.’ The folks that bounced due to bad docs, tutorials, and onboarding aren’t telling you. They’re just leaving. It’s very important to focus on documentation from your users’ perspective. Organising your design system’s documentation will require several parts coming together, shining a light on the need of proper information architecture to make it all understandable. A place to start architecting it can be by figuring out where the user is coming from. When the designer lands on your documentation, he might have come from a link embedded in his assets library. The developer that is going through the Design System’s information, might have come directly from a link saved in his browser. In both of these scenarios they are probably already familiar with the system and just need to find specific information. It could be worth outlining the types of information the users would normally be seeking and how you can organise it in the most optimal way for that path. It’s not just about making a list of components. The hierarchy needs to be considered. Identify the categories you have so that it is easier to navigate and easier to find out what the user is looking for. This is commonly achieved by a very clear navigation, often placed in a left panel, components in a clear section, as well as a “getting started page” for those arriving in it for the first time. It might be worth considering a different onboarding experience for the different types of disciplines, since the type of information they would be most interested in will most likely differ slightly. Let’s also not forget the power of a good search tool so the user can quickly find what they are looking for. This is usually well worth the investment. With different users in mind, and different people collaborating to an ever evolving design system, it’s easy to fall into the trap of misalignments and outdated information. To avoid that it’s wise to decide early on what will be the single source of truth. You can have it start from design, where components made in Figma hold the main definitions, or it can start from development where the React components and its inline documentation will define the origin. There are tools that teams can use to further specify all the details of the components in stories and you might be even already riding the latest trend and have all your design tokens already agreed and placed in one json source. Don’t forget to assign a person to keep this information up to date, wherever it originated. Small visual decisions can be made along the way when building the final product and the design system can assist in an impactful change if it has been set up correctly. However, when many disciplines are working on the same components but in completely separate softwares, like React and Figma, the design system team needs to make sure everything is in sync as well as where all the documentation is stored. Take into account that setting up your design system also means investing in a good documentation website/platform, and with it comes maintenance costs. Luckily for us the more the design tools and development environments come together, start speaking similar languages, the more integrations we start seeing. There are a few options when trying to transfer important information from one tool to the other as well as a better understanding and use of design tokens that all tools reference as the single source of truth. The content in the design system should span across all the different units or systems so that they are always in sync. You don’t necessarily have to define if design or code are the single source of truth as long as everyone is always interconnected and synchronising between definitions. Often overlooked but extremely necessary for a strong buy-in of your design system is the ‘getting started’ documentation. An engaging onboarding can make or break your design system adoption, and you might want to consider different onboarding experiences for different users. It can be done as a step-by-step example, or one which is catering for the advanced users. Will your design system be started by a UI designer or a UI developer or a product manager? How do you onboard them? How do you prepare a getting started guide for it? Some documentation websites already showcase a code sandbox on the getting started page. This can often mean Time for Value. As soon as you enter into the documentation site you see things in action and you don’t have to install anything on your computer. This practice can be seen in a lot of popular design systems which gives a taste of what it looks like. Anyone joining the team and getting to experience the design system for the first time is a great resource to understand what is missing in the . Present your design system to the new joiner, give them a task that involves using something from the design system and ask them to take notes of all the problems they had when they get stuck. What problems did they face? What was their action to solve it? Ask them to log whatever complaints they have straight away, so you can be sure they will bring you any new perspectives and problems they face as it arises. Then it is much easier to fix. If they leave it until they get used to it and have been working on it for some time, they might have forgotten what the problems were when starting to use the design system. Layout can be often neglected in documentation from a design system since it’s not an easy thing to turn into a component. Usually not enough guidance is given on how to consume the layout. The result is you have a design system, but the users of it ended up building a bad interface. They don’t know how to use a proper layouting solution to what was provided in the design system. Consider having proper guidance and documentation for the possible layouts within your design system’s definitions. This can come as a flexbox solution, a grid solution, or a spacing solution. Having clarity on how to frame or to sketch out the layout for the interface is also important along with consumption of your design system components. Having better onboarding for layouting can really help to layout the interfaces in a better way. Take time to consider implementing some way to collect feedback from any of the design system’s users. It’s great to have a design system that works most of the time, but it’s also important to know when it doesn’t. In some companies it’s only possible to acquire feedback through opening GitHub issues. This is a real problem for designers and non-technical people who want to give feedback to the design system, as even though there are templates for GitHub issues to make it easy to reproduce the issue and provide some insights, there are also other ways to get feedback for your design system. A simple feedback box in the corner of the documentation website, where an email is provided and there’s space for the description of the issue, is one way to collect it quickly. Think about streamlining the process of giving feedback so that the user doesn’t (always) have to open a GitHub issue. Anyone who wants to provide positive or negative feedback can give it very quickly when it’s done through the documentation platform. Take Google Cloud Docs Feedback as another example, you can very quickly give your feedback once you’ve read the document, you can review it, decide if you have any more issues and you can add information. Connecting that feedback loop with the design system’s documentation platform is a great way to keep listening to the feedback from your users. The contribution to the documentation of your design system is tightly coupled with the contribution to the design system itself. It normally starts with colleagues who are creating and working on a new interface that might require a new component which does not exist in the current design system. How are the product designers and UI engineers encouraged to communicate about it? How do they think about its reusability? Even when there is an extensive design system available, it’s possible to come across a new problem which cannot be solved with existing components. The documentation platform should also provide answers to these questions with agreed processes for contribution on the addition/fixing of components. Moreover, it should also highlight that suggesting, designing and even implementing a new component is just one step of the process. Making sure its entire documentation is also published is the final, and arguably the most important step, before the new component is considered part of the design system. Consider also covering documentation around finding new components, reporting it to the design system team, what components could potentially be included and which one shouldn’t. This is one area where you can have a common shared understanding with your design and product teams which will enable them to provide better feedback and better contributions to your design system so that it grows and evolves. The reusability, the fundamental purpose of your design system can in this way be made better. Additionally you should celebrate the contribution! When someone makes even a minor contribution to the documentation, their names can be added to the , a hall of fame of sorts. This makes contributing feel nice. It’s good to have a means of incentivising the contribution, it makes the contributor feel recognised. There are other ways to achieve this, but it is important to recognise the contribution and to celebrate it, so that people are willing to contribute more and to provide more feedback. Encourage people to contribute to your design system, give them a cookie 🍪 (even if it’s a virtual one). Creating a design system is not a one time job, it has to be maintained. To keep it clean and relevant, you have to put in the effort, otherwise issues will arise. You need to identify the areas to be maintained, the areas you need to keep up-to-date and the areas that can be automated. Have you thought about the areas where problems usually arise? Can you reduce the dependencies? Can you reduce the number of systems you have? For example you may have a story for your React components or your design system components and also the code examples for your documentation site, is there a way you can have a single source of truth, so you don’t have to maintain multiple versions. A great example of a platform solving the documentation duplication issues is where the code, the stories, the design references, the component tests and their documentation all live in the same collaborative infrastructure. In terms of maintaining effort, how do you encourage people to create new reusable components? It’s not about just using the existing components. How do you help them to keep reusability in mind while you keep coming up with new components? In this way, your design system is continuously growing. Have you thought about deprecating your components? It is quite tempting to come up with lots of new components for your design system, thinking that this design system could be reused in the future, but it may not be reused as you thought. Have you considered removing them? Do you have enough tracking information? Consider whether these components are widely used in the product, if not what is your strategy on that? The reason this is important is if you want to migrate from one version of your design system to the next version, the effort it takes to migrate can be drastically reduced the fewer the number of components. Also consider removing less used components when you are migrating from one version to the next. This could save you a lot of effort in maintaining your design system. Here’s an example of : Finally, to know the issues and understand the user better there is the Pair Programming/Designing method. The traditional way of collecting feedback is to conduct user interviews, however they might not be telling you the real facts, what they are really trying to do. With the Pair Programming method, you can join them in trying to build a realistic interface and you will start to observe the patterns. What tricks do they employ? What alternatives are they using? This is how you understand the struggles they are having with your documentation and how they could be trying to solve the problems. It is hard to try to consume your own content, but with pair programming you can get a lot more insights. Pair design and pair programming together with your user gives you a lot more insights so you can fix those issues and will ultimately help you create a better design system for your user and for you. Documenting the design system is certainly not an easy task. We’re often posed with more questions than solutions on how to tackle each aspect of it, however it never loses its importance. Raising these topics within your design system team can also help you define targets in the roadmap and increase your chances of a very successful adoption. Don’t be afraid to look at what the big names in the industry do for their documentation and use as reference. Check out of the state of the art for Design Systems documentation sites. ## Links [hello@divriots.com](mailto:hello@divriots.com) [August 21, 2021](https://twitter.com/sarah_edo/status/1429097365563052034?ref_src=twsrc%5Etfw) [Backlight.dev](http://Backlight.dev) [IBM Deprecation notice](https://www.ibm.com/docs/en/imdm/12.0?topic=new-deprecated-removed-components) [this comprehensive list](https://backlight.dev/mastery/the-best-design-system-documentation-sites) [Tweet](https://twitter.com/share?text=Design%20System%20documentation%20best%20practices&url=https%3A%2F%2Fbacklight.dev%2Fblog%2Fdesign-system-documentation-best-practices%2F) [Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbacklight.dev%2Fblog%2Fdesign-system-documentation-best-practices%2F&text=Design%20System%20documentation%20best%20practices)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## How about documenting those? ## Know your user ## Organise the information ## Set a single source of truth ## Write an introduction page ## Define layout guidelines ## Gather feedback ## Determine how others can contribute ## Maintain it with class ## Try pair programming or pair designing ## Final considerations Backlight.dev is shutting down June 1st 2025. For more information, please contact One of the pillars of any design system is undoubtedly its documentation, otherwise you would simply end up with a component library, and we all know a design system is much more than that. The design system’s documentation is key for its adoption. The product team will only be able to use it properly if it’s well understood, which defines its success and longevity. Furthermore, a good documentation can also facilitate scalability and improvements. In the process of documenting your design system you will need to write about the , the definitions of your brand as well as the themselves (both",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "em you will need to write about the , the definitions of your brand as well as the themselves (both in code and in the UI Kits), along side the rules for how and when to use them. Here are a few good practices that any team can adopt that will make the process of documenting your design system much easier, resulting in a good read that your users will want to dive in: All good products start with understanding the users needs and wants. This is also true when we look at the documentation as a product to be consumed by others, like the colleagues outside of the design system team, for example. A crucial step for success is to have a clear picture of all the users of this documentation. You can draw inspiration from some cleaver graphic designers out there. In the light of recent events (the pandemic) we have witnessed many approaches to get the social distancing message across to a large user base - namely the world’s entire population.",
+      "metadata": {
+        "startIndex": 900,
+        "endIndex": 1850,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "t the social distancing message across to a large user base - namely the world’s entire population. The people at Berlin’s public transport tried this: They could have just written 1.5 meters, instead they asked the question “What does 1.5 meters look like?” Resulting on a very relatable - and witty - explanation for the necessary distance: “1.5m is the same as three corgi”. The example above is a good real-life case of how Design System teams could define their documentation. Ultimately, the documentation of your principles and components is not just for your Design System teams, it’s for the Design System’s users, hence the importance of considering just the user: who is using this design system? It’s not just designers and UI engineers or front-end developers. What other disciplines are using your documentation site? Do they have enough information? Do you have the context from their perspective?",
+      "metadata": {
+        "startIndex": 1750,
+        "endIndex": 2663,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ocumentation site? Do they have enough information? Do you have the context from their perspective? At the start of a Design System, after building some components, the natural path is to think of the necessary documentation required to consume them, which information will help the users implement those components in the interface. This normally starts from the designer’s or developer’s perspective, but it shouldn’t stop there. Have you considered the other disciplines as well? Make sure your documentation doesn’t lack the perspective of all users who are going to be using your documentation. The other side of this coin, the one in which you don’t take everyone’s point of view in consideration, is an ugly truth: your documentation will be left unread, your design system will become inconsistent due to poor understanding/implementation and overall frustration with what could’ve been the solution to a scalable and cohesive product.",
+      "metadata": {
+        "startIndex": 2563,
+        "endIndex": 3507,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "on and overall frustration with what could’ve been the solution to a scalable and cohesive product. As once mentioned by Sarah Drasner: ‘The folks that bounced due to bad docs, tutorials, and onboarding aren’t telling you. They’re just leaving.’ The folks that bounced due to bad docs, tutorials, and onboarding aren’t telling you. They’re just leaving. It’s very important to focus on documentation from your users’ perspective. Organising your design system’s documentation will require several parts coming together, shining a light on the need of proper information architecture to make it all understandable. A place to start architecting it can be by figuring out where the user is coming from. When the designer lands on your documentation, he might have come from a link embedded in his assets library. The developer that is going through the Design System’s information, might have come directly from a link saved in his browser.",
+      "metadata": {
+        "startIndex": 3407,
+        "endIndex": 4346,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "through the Design System’s information, might have come directly from a link saved in his browser. In both of these scenarios they are probably already familiar with the system and just need to find specific information. It could be worth outlining the types of information the users would normally be seeking and how you can organise it in the most optimal way for that path. It’s not just about making a list of components. The hierarchy needs to be considered. Identify the categories you have so that it is easier to navigate and easier to find out what the user is looking for. This is commonly achieved by a very clear navigation, often placed in a left panel, components in a clear section, as well as a “getting started page” for those arriving in it for the first time. It might be worth considering a different onboarding experience for the different types of disciplines, since the type of information they would be most interested in will most likely differ slightly.",
+      "metadata": {
+        "startIndex": 4246,
+        "endIndex": 5227,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "s, since the type of information they would be most interested in will most likely differ slightly. Let’s also not forget the power of a good search tool so the user can quickly find what they are looking for. This is usually well worth the investment. With different users in mind, and different people collaborating to an ever evolving design system, it’s easy to fall into the trap of misalignments and outdated information. To avoid that it’s wise to decide early on what will be the single source of truth. You can have it start from design, where components made in Figma hold the main definitions, or it can start from development where the React components and its inline documentation will define the origin. There are tools that teams can use to further specify all the details of the components in stories and you might be even already riding the latest trend and have all your design tokens already agreed and placed in one json source.",
+      "metadata": {
+        "startIndex": 5127,
+        "endIndex": 6076,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ding the latest trend and have all your design tokens already agreed and placed in one json source. Don’t forget to assign a person to keep this information up to date, wherever it originated. Small visual decisions can be made along the way when building the final product and the design system can assist in an impactful change if it has been set up correctly. However, when many disciplines are working on the same components but in completely separate softwares, like React and Figma, the design system team needs to make sure everything is in sync as well as where all the documentation is stored. Take into account that setting up your design system also means investing in a good documentation website/platform, and with it comes maintenance costs. Luckily for us the more the design tools and development environments come together, start speaking similar languages, the more integrations we start seeing.",
+      "metadata": {
+        "startIndex": 5976,
+        "endIndex": 6890,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "nvironments come together, start speaking similar languages, the more integrations we start seeing. There are a few options when trying to transfer important information from one tool to the other as well as a better understanding and use of design tokens that all tools reference as the single source of truth. The content in the design system should span across all the different units or systems so that they are always in sync. You don’t necessarily have to define if design or code are the single source of truth as long as everyone is always interconnected and synchronising between definitions. Often overlooked but extremely necessary for a strong buy-in of your design system is the ‘getting started’ documentation. An engaging onboarding can make or break your design system adoption, and you might want to consider different onboarding experiences for different users. It can be done as a step-by-step example, or one which is catering for the advanced users.",
+      "metadata": {
+        "startIndex": 6790,
+        "endIndex": 7761,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "t users. It can be done as a step-by-step example, or one which is catering for the advanced users. Will your design system be started by a UI designer or a UI developer or a product manager? How do you onboard them? How do you prepare a getting started guide for it? Some documentation websites already showcase a code sandbox on the getting started page. This can often mean Time for Value. As soon as you enter into the documentation site you see things in action and you don’t have to install anything on your computer. This practice can be seen in a lot of popular design systems which gives a taste of what it looks like. Anyone joining the team and getting to experience the design system for the first time is a great resource to understand what is missing in the . Present your design system to the new joiner, give them a task that involves using something from the design system and ask them to take notes of all the problems they had when they get stuck.",
+      "metadata": {
+        "startIndex": 7661,
+        "endIndex": 8628,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "from the design system and ask them to take notes of all the problems they had when they get stuck. What problems did they face? What was their action to solve it? Ask them to log whatever complaints they have straight away, so you can be sure they will bring you any new perspectives and problems they face as it arises. Then it is much easier to fix. If they leave it until they get used to it and have been working on it for some time, they might have forgotten what the problems were when starting to use the design system. Layout can be often neglected in documentation from a design system since it’s not an easy thing to turn into a component. Usually not enough guidance is given on how to consume the layout. The result is you have a design system, but the users of it ended up building a bad interface. They don’t know how to use a proper layouting solution to what was provided in the design system.",
+      "metadata": {
+        "startIndex": 8528,
+        "endIndex": 9439,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": ". They don’t know how to use a proper layouting solution to what was provided in the design system. Consider having proper guidance and documentation for the possible layouts within your design system’s definitions. This can come as a flexbox solution, a grid solution, or a spacing solution. Having clarity on how to frame or to sketch out the layout for the interface is also important along with consumption of your design system components. Having better onboarding for layouting can really help to layout the interfaces in a better way. Take time to consider implementing some way to collect feedback from any of the design system’s users. It’s great to have a design system that works most of the time, but it’s also important to know when it doesn’t. In some companies it’s only possible to acquire feedback through opening GitHub issues. This is a real problem for designers and non-technical people who want to give feedback to the design system, as even though there are templates for",
+      "metadata": {
+        "startIndex": 9339,
+        "endIndex": 10334,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "nical people who want to give feedback to the design system, as even though there are templates for GitHub issues to make it easy to reproduce the issue and provide some insights, there are also other ways to get feedback for your design system. A simple feedback box in the corner of the documentation website, where an email is provided and there’s space for the description of the issue, is one way to collect it quickly. Think about streamlining the process of giving feedback so that the user doesn’t (always) have to open a GitHub issue. Anyone who wants to provide positive or negative feedback can give it very quickly when it’s done through the documentation platform. Take Google Cloud Docs Feedback as another example, you can very quickly give your feedback once you’ve read the document, you can review it, decide if you have any more issues and you can add information. Connecting that feedback loop with the design system’s documentation platform is a great way to keep listening to",
+      "metadata": {
+        "startIndex": 10234,
+        "endIndex": 11232,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "t feedback loop with the design system’s documentation platform is a great way to keep listening to the feedback from your users. The contribution to the documentation of your design system is tightly coupled with the contribution to the design system itself. It normally starts with colleagues who are creating and working on a new interface that might require a new component which does not exist in the current design system. How are the product designers and UI engineers encouraged to communicate about it? How do they think about its reusability? Even when there is an extensive design system available, it’s possible to come across a new problem which cannot be solved with existing components. The documentation platform should also provide answers to these questions with agreed processes for contribution on the addition/fixing of components. Moreover, it should also highlight that suggesting, designing and even implementing a new component is just one step of the process.",
+      "metadata": {
+        "startIndex": 11132,
+        "endIndex": 12118,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "t that suggesting, designing and even implementing a new component is just one step of the process. Making sure its entire documentation is also published is the final, and arguably the most important step, before the new component is considered part of the design system. Consider also covering documentation around finding new components, reporting it to the design system team, what components could potentially be included and which one shouldn’t. This is one area where you can have a common shared understanding with your design and product teams which will enable them to provide better feedback and better contributions to your design system so that it grows and evolves. The reusability, the fundamental purpose of your design system can in this way be made better. Additionally you should celebrate the contribution! When someone makes even a minor contribution to the documentation, their names can be added to the , a hall of fame of sorts. This makes contributing feel nice.",
+      "metadata": {
+        "startIndex": 12018,
+        "endIndex": 13006,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "tion, their names can be added to the , a hall of fame of sorts. This makes contributing feel nice. It’s good to have a means of incentivising the contribution, it makes the contributor feel recognised. There are other ways to achieve this, but it is important to recognise the contribution and to celebrate it, so that people are willing to contribute more and to provide more feedback. Encourage people to contribute to your design system, give them a cookie 🍪 (even if it’s a virtual one). Creating a design system is not a one time job, it has to be maintained. To keep it clean and relevant, you have to put in the effort, otherwise issues will arise. You need to identify the areas to be maintained, the areas you need to keep up-to-date and the areas that can be automated. Have you thought about the areas where problems usually arise? Can you reduce the dependencies? Can you reduce the number of systems you have?",
+      "metadata": {
+        "startIndex": 12906,
+        "endIndex": 13831,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "lems usually arise? Can you reduce the dependencies? Can you reduce the number of systems you have? For example you may have a story for your React components or your design system components and also the code examples for your documentation site, is there a way you can have a single source of truth, so you don’t have to maintain multiple versions. A great example of a platform solving the documentation duplication issues is where the code, the stories, the design references, the component tests and their documentation all live in the same collaborative infrastructure. In terms of maintaining effort, how do you encourage people to create new reusable components? It’s not about just using the existing components. How do you help them to keep reusability in mind while you keep coming up with new components? In this way, your design system is continuously growing. Have you thought about deprecating your components?",
+      "metadata": {
+        "startIndex": 13731,
+        "endIndex": 14657,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "ay, your design system is continuously growing. Have you thought about deprecating your components? It is quite tempting to come up with lots of new components for your design system, thinking that this design system could be reused in the future, but it may not be reused as you thought. Have you considered removing them? Do you have enough tracking information? Consider whether these components are widely used in the product, if not what is your strategy on that? The reason this is important is if you want to migrate from one version of your design system to the next version, the effort it takes to migrate can be drastically reduced the fewer the number of components. Also consider removing less used components when you are migrating from one version to the next. This could save you a lot of effort in maintaining your design system. Here’s an example of : Finally, to know the issues and understand the user better there is the Pair Programming/Designing method.",
+      "metadata": {
+        "startIndex": 14557,
+        "endIndex": 15533,
+        "chunkIndex": 17,
+        "section": "Content",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": ", to know the issues and understand the user better there is the Pair Programming/Designing method. The traditional way of collecting feedback is to conduct user interviews, however they might not be telling you the real facts, what they are really trying to do. With the Pair Programming method, you can join them in trying to build a realistic interface and you will start to observe the patterns. What tricks do they employ? What alternatives are they using? This is how you understand the struggles they are having with your documentation and how they could be trying to solve the problems. It is hard to try to consume your own content, but with pair programming you can get a lot more insights. Pair design and pair programming together with your user gives you a lot more insights so you can fix those issues and will ultimately help you create a better design system for your user and for you. Documenting the design system is certainly not an easy task.",
+      "metadata": {
+        "startIndex": 15433,
+        "endIndex": 16396,
+        "chunkIndex": 18,
+        "section": "Content",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "sign system for your user and for you. Documenting the design system is certainly not an easy task. We’re often posed with more questions than solutions on how to tackle each aspect of it, however it never loses its importance. Raising these topics within your design system team can also help you define targets in the roadmap and increase your chances of a very successful adoption. Don’t be afraid to look at what the big names in the industry do for their documentation and use as reference. Check out of the state of the art for Design Systems documentation sites. ## Links [hello@divriots.com](mailto:hello@divriots.com) [August 21, 2021](https://twitter.com/sarah_edo/status/1429097365563052034?ref_src=twsrc%5Etfw) [Backlight.dev](http://Backlight.dev) [IBM Deprecation notice](https://www.ibm.com/docs/en/imdm/12.0?topic=new-deprecated-removed-components) [this comprehensive list](https://backlight.dev/mastery/the-best-design-system-documentation-sites)",
+      "metadata": {
+        "startIndex": 16296,
+        "endIndex": 17261,
+        "chunkIndex": 19,
+        "section": "Content",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "[this comprehensive list](https://backlight.dev/mastery/the-best-design-system-documentation-sites) [Tweet](https://twitter.com/share?text=Design%20System%20documentation%20best%20practices&url=https%3A%2F%2Fbacklight.dev%2Fblog%2Fdesign-system-documentation-best-practices%2F) [Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbacklight.dev%2Fblog%2Fdesign-system-documentation-best-practices%2F&text=Design%20System%20documentation%20best%20practices)",
+      "metadata": {
+        "startIndex": 17161,
+        "endIndex": 18161,
+        "chunkIndex": 20,
+        "section": "Content",
+        "globalChunkIndex": 20
+      }
+    }
+  ],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "documentation",
+      "best-practices",
+      "process"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:22.352Z",
+    "system": "Backlight",
+    "source_url": "https://backlight.dev/blog/design-system-documentation-best-practices"
+  }
+}

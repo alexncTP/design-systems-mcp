@@ -1,0 +1,46 @@
+{
+  "id": "5LGfp1YToBwzzCpfBG1-3",
+  "title": "Testing Library Principles",
+  "source": {
+    "type": "url",
+    "location": "https://testing-library.com/docs/guiding-principles/",
+    "ingested_at": "2025-11-20T13:23:05.425Z"
+  },
+  "content": "We try to only expose methods and utilities that encourage you to write tests that closely resemble how your web pages are used. Utilities are included in this project based on the following guiding principles: • If it relates to rendering components, then it should deal with DOM nodes rather than component instances, and it should not encourage dealing with component instances. • It should be generally useful for testing the application components in the way the user would use it. We making some trade-offs here because we're using a computer and often a simulated browser environment, but in general, utilities should encourage tests that use the components the way they're intended to be used. • Utility implementations and APIs should be simple and flexible. At the end of the day, what we want is for this library to be pretty light-weight, simple, and understandable. ## Links [The more your tests resemble the way your software is used, the more confidence they can give you.](https://twitter.com/kentcdodds/status/977018512689455106)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "We try to only expose methods and utilities that encourage you to write tests that closely resemble how your web pages are used. Utilities are included in this project based on the following guiding principles: • If it relates to rendering components, then it should deal with DOM nodes rather than component instances, and it should not encourage dealing with component instances. • It should be generally useful for testing the application components in the way the user would use it. We making some trade-offs here because we're using a computer and often a simulated browser environment, but in general, utilities should encourage tests that use the components the way they're intended to be used. • Utility implementations and APIs should be simple and flexible. At the end of the day, what we want is for this library to be pretty light-weight, simple, and understandable. ## Links [The more your tests resemble the way your software is used, the more confidence they can give",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 983,
+        "chunkIndex": 0,
+        "section": "Introduction",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "inks [The more your tests resemble the way your software is used, the more confidence they can give you.](https://twitter.com/kentcdodds/status/977018512689455106)",
+      "metadata": {
+        "startIndex": 883,
+        "endIndex": 1883,
+        "chunkIndex": 1,
+        "section": "Introduction",
+        "globalChunkIndex": 1
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "testing",
+      "accessibility",
+      "best-practices"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:23:05.425Z",
+    "system": "Testing Library",
+    "source_url": "https://testing-library.com/docs/guiding-principles/"
+  }
+}

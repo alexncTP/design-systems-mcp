@@ -1,0 +1,114 @@
+{
+  "id": "3fGu84kbn-pi9RY9eNHV0",
+  "title": "Figma Variables Guide",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma",
+    "ingested_at": "2025-11-20T13:22:23.631Z"
+  },
+  "content": "## Variables for designs and design systems ## Variables for advanced prototyping ## Variables using APIs Before you Start Who can use this feature Variables in prototypes and publishing variables to team libraries are available on the Anyone with access to a file can create and manage variables Anyone with access to a file can use variables from that file in their designs Variables in Figma Design store reusable values that can be applied to all kinds of design properties and prototyping actions. They help save time and effort when building designs, managing design systems, and creating complex prototyping flows. For example, you can: • Create design tokens for better efficiency when managing design systems • Switch a frame between different device sizes and have spacing immediately update, according to a defined spatial system • Preview how text flows in different languages by switching copy on a frame • Create a fully functional checkout cart design that calculates order total based on which items were added to the cart • Build a prototype of an interactive quiz that uses conditional logic to show whether a user answers a questions correctly or incorrectly There are three main ways to use variables in Figma: Use variables and modes to implement design tokens for your design system, switch designs between different contexts—such as light/dark themes. With variables, you can design more efficiently and build a more powerful design system. This video tutorial covers the foundations of variables, how to use them to represent design tokens, and how to use color and number variables to account for different modes and themes. In this video tutorial, learn how to use variables on font properties, adopt variables into an existing type system, and how to use them to power a responsive design. Start your variables journey here! Learn about the different types of variables and what variable collections and modes are. Learn how to create variables and collections, reference other variable definitions, and scope which variables can be used in designs. Learn how to apply existing variables to design properties. Learn how to create multiple definitions for a variable, each one associated with a mode. Also, learn how to use them to quickly switch the contexts of designs. As Figma extends its feature set with variables, you might be wondering: What is the difference between variables and styles? When should I choose one over the other? Learn more about accessing variables in Dev Mode while inspecting designs, including getting variable details and suggested variables, and viewing local collections using the variables table. Want to get hands-on experience with variables? Grab a copy of the variables playground file to practice while you learn. With variables, you can build high-fidelity prototypes using fewer frames. Use variables with other advanced features like expressions and conditionals to take your prototypes to the next level. In prototyping, variables are used to store object states or properties. Use prototype interactions to modify variable values, which can change the appearance, content, or visibility of objects in a design—all in a few simple frames. Watch and learn how to use variables in prototypes by following along with a realistic example. You’ll review how to modify variable values, how to build simple expressions, and how to use multiple actions and if/else logic to evaluate conditional checks. Learn the basics of how to prototype with variables in Figma—including how to configure your variables, use the action to change variable values, and use variables with component variants and interactive components. Learn how to use expressions and variables in prototypes to generate dynamic string values, perform basic math operations with number values, or even evaluate boolean expressions. Learn how to use multiple actions to stack an unlimited number of actions on the same trigger, or use conditionals to check if a condition is met before performing an action by using if/else logic. Learn how to use variable modes in your prototypes. You can set the values of specific modes based on context, or use specific mode values in your expressions. Make a copy of our advanced prototyping playground file to get some more hands-on practice with variables in prototyping. Variables are now supported in Figma’s Plugin API—for building plugins and widgets—and in the REST API. Support for variables in the REST API includes endpoints for querying, creating, updating, and deleting variables. Support for variables in the plugin API includes creating and reading variables, and binding variables to components. For example, a plugin can be built to or to . Widgets can access variables using the Plugin API. Widgets can create and read variables, but widget properties cannot be bound to variables. In this video tutorial, learn how to sync your variables with your codebase. We'll cover how to use our Variables GitHub Action example repo to sync your Figma variables and your codebase. Learn how you can use Figma's variables REST API ## Links [education plan and any paid plans](https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan) [Overview of variables, collections, and modes →](https://help.figma.com/hc/en-us/articles/14506821864087) [Create and manage variables and collections →](https://help.figma.com/hc/en-us/articles/15145852043927) [Apply variables to designs →](https://help.figma.com/hc/en-us/articles/15343107263511) [Modes for variables →](https://help.figma.com/hc/en-us/articles/15343816063383) [The difference between variables and styles →](https://help.figma.com/hc/en-us/articles/15871097384471) [Variables in Dev Mode →](https://help.figma.com/hc/en-us/articles/27882809912471) [Variables playground →](https://www.figma.com/community/file/1234936397107899445) [Use variables in prototypes →](https://help.figma.com/hc/en-us/articles/14506587589399) [Use expressions in prototypes →](https://help.figma.com/hc/en-us/articles/15253194385943) [Multiple actions and conditionals →](https://help.figma.com/hc/en-us/articles/15253220891799) [Variable modes in prototypes →](https://help.figma.com/hc/en-us/articles/15253268379799) [Advanced prototyping playground →](https://www.figma.com/community/file/1234939241273272375) [For the REST API →](https://www.figma.com/developers/api#variables) [For the plugin API →](https://www.figma.com/plugin-docs/working-with-variables) [import or export variables](https://github.com/figma/plugin-samples/tree/master/variables-import-export) [convert styles to variables](https://github.com/figma/plugin-samples/tree/master/styles-to-variables) [For the widget API →](https://www.figma.com/widget-docs/working-with-variables) [Syncing design systems using Variables REST API →](https://www.figma.com/community/file/1270821372236564565)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## Variables for designs and design systems ## Variables for advanced prototyping ## Variables using APIs Before you Start Who can use this feature Variables in prototypes and publishing variables to team libraries are available on the Anyone with access to a file can create and manage variables Anyone with access to a file can use variables from that file in their designs Variables in Figma Design store reusable values that can be applied to all kinds of design properties and prototyping actions. They help save time and effort when building designs, managing design systems, and creating complex prototyping flows. For example, you can: • Create design tokens for better efficiency when managing design systems • Switch a frame between different device sizes and have spacing immediately update, according to a defined spatial system • Preview how text flows in different languages by switching copy on a frame • Create a fully functional checkout cart design that calculates order total based",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1001,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "copy on a frame • Create a fully functional checkout cart design that calculates order total based on which items were added to the cart • Build a prototype of an interactive quiz that uses conditional logic to show whether a user answers a questions correctly or incorrectly There are three main ways to use variables in Figma: Use variables and modes to implement design tokens for your design system, switch designs between different contexts—such as light/dark themes. With variables, you can design more efficiently and build a more powerful design system. This video tutorial covers the foundations of variables, how to use them to represent design tokens, and how to use color and number variables to account for different modes and themes. In this video tutorial, learn how to use variables on font properties, adopt variables into an existing type system, and how to use them to power a responsive design.",
+      "metadata": {
+        "startIndex": 901,
+        "endIndex": 1817,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "es, adopt variables into an existing type system, and how to use them to power a responsive design. Start your variables journey here! Learn about the different types of variables and what variable collections and modes are. Learn how to create variables and collections, reference other variable definitions, and scope which variables can be used in designs. Learn how to apply existing variables to design properties. Learn how to create multiple definitions for a variable, each one associated with a mode. Also, learn how to use them to quickly switch the contexts of designs. As Figma extends its feature set with variables, you might be wondering: What is the difference between variables and styles? When should I choose one over the other? Learn more about accessing variables in Dev Mode while inspecting designs, including getting variable details and suggested variables, and viewing local collections using the variables table.",
+      "metadata": {
+        "startIndex": 1717,
+        "endIndex": 2657,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "variable details and suggested variables, and viewing local collections using the variables table. Want to get hands-on experience with variables? Grab a copy of the variables playground file to practice while you learn. With variables, you can build high-fidelity prototypes using fewer frames. Use variables with other advanced features like expressions and conditionals to take your prototypes to the next level. In prototyping, variables are used to store object states or properties. Use prototype interactions to modify variable values, which can change the appearance, content, or visibility of objects in a design—all in a few simple frames. Watch and learn how to use variables in prototypes by following along with a realistic example. You’ll review how to modify variable values, how to build simple expressions, and how to use multiple actions and if/else logic to evaluate conditional checks.",
+      "metadata": {
+        "startIndex": 2557,
+        "endIndex": 3464,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "mple expressions, and how to use multiple actions and if/else logic to evaluate conditional checks. Learn the basics of how to prototype with variables in Figma—including how to configure your variables, use the action to change variable values, and use variables with component variants and interactive components. Learn how to use expressions and variables in prototypes to generate dynamic string values, perform basic math operations with number values, or even evaluate boolean expressions. Learn how to use multiple actions to stack an unlimited number of actions on the same trigger, or use conditionals to check if a condition is met before performing an action by using if/else logic. Learn how to use variable modes in your prototypes. You can set the values of specific modes based on context, or use specific mode values in your expressions. Make a copy of our advanced prototyping playground file to get some more hands-on practice with variables in prototyping.",
+      "metadata": {
+        "startIndex": 3364,
+        "endIndex": 4340,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "anced prototyping playground file to get some more hands-on practice with variables in prototyping. Variables are now supported in Figma’s Plugin API—for building plugins and widgets—and in the REST API. Support for variables in the REST API includes endpoints for querying, creating, updating, and deleting variables. Support for variables in the plugin API includes creating and reading variables, and binding variables to components. For example, a plugin can be built to or to . Widgets can access variables using the Plugin API. Widgets can create and read variables, but widget properties cannot be bound to variables. In this video tutorial, learn how to sync your variables with your codebase. We'll cover how to use our Variables GitHub Action example repo to sync your Figma variables and your codebase. Learn how you can use Figma's variables REST API ## Links [education plan and any paid plans](https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan) [Overview of",
+      "metadata": {
+        "startIndex": 4240,
+        "endIndex": 5236,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "paid plans](https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan) [Overview of variables, collections, and modes →](https://help.figma.com/hc/en-us/articles/14506821864087) [Create and manage variables and collections →](https://help.figma.com/hc/en-us/articles/15145852043927) [Apply variables to designs →](https://help.figma.com/hc/en-us/articles/15343107263511) [Modes for variables →](https://help.figma.com/hc/en-us/articles/15343816063383) [The difference between variables and styles →](https://help.figma.com/hc/en-us/articles/15871097384471) [Variables in Dev Mode →](https://help.figma.com/hc/en-us/articles/27882809912471) [Variables playground →](https://www.figma.com/community/file/1234936397107899445) [Use variables in prototypes →](https://help.figma.com/hc/en-us/articles/14506587589399) [Use expressions in prototypes →](https://help.figma.com/hc/en-us/articles/15253194385943) [Multiple actions and conditionals",
+      "metadata": {
+        "startIndex": 5136,
+        "endIndex": 6090,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ypes →](https://help.figma.com/hc/en-us/articles/15253194385943) [Multiple actions and conditionals →](https://help.figma.com/hc/en-us/articles/15253220891799) [Variable modes in prototypes →](https://help.figma.com/hc/en-us/articles/15253268379799) [Advanced prototyping playground →](https://www.figma.com/community/file/1234939241273272375) [For the REST API →](https://www.figma.com/developers/api#variables) [For the plugin API →](https://www.figma.com/plugin-docs/working-with-variables) [import or export variables](https://github.com/figma/plugin-samples/tree/master/variables-import-export) [convert styles to variables](https://github.com/figma/plugin-samples/tree/master/styles-to-variables) [For the widget API →](https://www.figma.com/widget-docs/working-with-variables) [Syncing design systems using Variables REST API →](https://www.figma.com/community/file/1270821372236564565)",
+      "metadata": {
+        "startIndex": 5990,
+        "endIndex": 6990,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "figma",
+      "variables",
+      "design-tokens",
+      "design-tools"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:23.631Z",
+    "system": "Figma",
+    "author": "Figma",
+    "source_url": "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma"
+  }
+}

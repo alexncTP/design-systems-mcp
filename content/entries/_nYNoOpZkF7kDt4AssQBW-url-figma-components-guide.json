@@ -1,0 +1,58 @@
+{
+  "id": "_nYNoOpZkF7kDt4AssQBW",
+  "title": "Figma Components Guide",
+  "source": {
+    "type": "url",
+    "location": "https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma",
+    "ingested_at": "2025-11-20T13:22:23.638Z"
+  },
+  "content": "# Video tutorials # Overview # Related articles Before you start Who can use this feature Users on Users with to a file can create and edit components. Users with access to the original file can use components from that Library. Check out these video tutorials about components: Components are elements you can reuse across your designs. They help to create and manage consistent designs across projects. You can create components from any layers or objects you've designed. These could be a whole range of things like buttons, icons, layouts, and more. There are two aspects to a component: • A defines the properties of the component. • An is a copy of the component you can reuse in your designs. Instances are linked to the main component and receive any updates made to the component. You can create components to use within a single file. Or, you can use team l to share components and styles . Read these articles to learn more detailed and specific information about components. ## Links [plan](https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan) [Create a component](https://help.figma.com/hc/en-us/articles/360038663154) [Create and use variants](https://help.figma.com/hc/en-us/articles/360056440594) [Create and use component properties](https://help.figma.com/hc/en-us/articles/5579474826519) [Name and organize components](https://help.figma.com/hc/en-us/articles/360038663994) [Create an instance of a component](https://help.figma.com/hc/en-us/articles/360039150173) [Swap between component instances in a file](https://help.figma.com/hc/en-us/articles/360039150413) [Override properties of an instance](https://help.figma.com/hc/en-us/articles/360039150733) [Reset instances to remove overrides](https://help.figma.com/hc/en-us/articles/360038665494) [Detach instances from components](https://help.figma.com/hc/en-us/articles/360038665754) [Make changes to components and instances](https://help.figma.com/hc/en-us/articles/360038665934)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Video tutorials # Overview # Related articles Before you start Who can use this feature Users on Users with to a file can create and edit components. Users with access to the original file can use components from that Library. Check out these video tutorials about components: Components are elements you can reuse across your designs. They help to create and manage consistent designs across projects. You can create components from any layers or objects you've designed. These could be a whole range of things like buttons, icons, layouts, and more. There are two aspects to a component: • A defines the properties of the component. • An is a copy of the component you can reuse in your designs. Instances are linked to the main component and receive any updates made to the component. You can create components to use within a single file. Or, you can use team l to share components and styles . Read these articles to learn more detailed and specific information about components.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 987,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "and styles . Read these articles to learn more detailed and specific information about components. ## Links [plan](https://help.figma.com/hc/en-us/articles/360040328273-Choose-a-Figma-Plan) [Create a component](https://help.figma.com/hc/en-us/articles/360038663154) [Create and use variants](https://help.figma.com/hc/en-us/articles/360056440594) [Create and use component properties](https://help.figma.com/hc/en-us/articles/5579474826519) [Name and organize components](https://help.figma.com/hc/en-us/articles/360038663994) [Create an instance of a component](https://help.figma.com/hc/en-us/articles/360039150173) [Swap between component instances in a file](https://help.figma.com/hc/en-us/articles/360039150413) [Override properties of an instance](https://help.figma.com/hc/en-us/articles/360039150733) [Reset instances to remove overrides](https://help.figma.com/hc/en-us/articles/360038665494) [Detach instances from components](https://help.figma.com/hc/en-us/articles/360038665754) [Make",
+      "metadata": {
+        "startIndex": 887,
+        "endIndex": 1887,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "94) [Detach instances from components](https://help.figma.com/hc/en-us/articles/360038665754) [Make changes to components and instances](https://help.figma.com/hc/en-us/articles/360038665934)",
+      "metadata": {
+        "startIndex": 1787,
+        "endIndex": 2787,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "figma",
+      "components",
+      "design-tools"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:23.638Z",
+    "system": "Figma",
+    "author": "Figma",
+    "source_url": "https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "Ss6Hfy-FFVYU5mWDdROXx",
+  "title": "Inclusive Components",
+  "source": {
+    "type": "url",
+    "location": "https://inclusive-components.design/",
+    "ingested_at": "2025-11-20T13:22:11.985Z"
+  },
+  "content": "## Get the book! ## The components: The is now available, with content and demos. ## Links [Inclusive Components book](http://book.inclusive-components.design)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## Get the book! ## The components: The is now available, with content and demos. ## Links [Inclusive Components book](http://book.inclusive-components.design)",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "accessibility",
+      "components",
+      "patterns",
+      "inclusive"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:11.985Z",
+    "system": "Inclusive Components",
+    "author": "Heydon Pickering",
+    "source_url": "https://inclusive-components.design/"
+  }
+}

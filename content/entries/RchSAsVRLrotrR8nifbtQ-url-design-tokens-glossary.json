@@ -1,0 +1,92 @@
+{
+  "id": "RchSAsVRLrotrR8nifbtQ",
+  "title": "Design Tokens Glossary",
+  "source": {
+    "type": "url",
+    "location": "https://www.designtokens.org/glossary/",
+    "ingested_at": "2025-11-20T13:22:05.455Z"
+  },
+  "content": "# DTCG Glossary ## A ### Alias #### Example ## C ### Composite design tokens #### Examples ### Composition ### Context ## D ### Design token ### Design token file ### Design tool ### Documentation tool ## G ### Group ## I ### Input ## M ### Modifier ## N ### Name ## P ### Property ## R ### Reference ### Resolution ### Resolver ### Resolver file ## S ### Schema ### Set ## T ### Translation tool ### Type #### Usage ## V ### Value ### Variable ### Vendor #### Contents This glossary contains high-level definitions, leaving out technical details on purpose. Part of the DTCG’s mission is to write those technical definitions in the form of specifications. A token value that is a reference to another token. The value of is , because it references : A design token whose value is made up of multiple, named child values. Composite tokens are useful for closely related style properties that are always applied together. • font name, font size, line height, and color • color, width, and style • linear/radial, at least 2 colors, a direction • x-direction, y-direction, color, blur, spread An ordered array of sets and modifiers that determines how tokens are combined to produce the final result. The order is significant, with tokens later in the array overriding any tokens that came before them in case of conflict. A specific condition within a modifier that determines which tokens to apply. Each context maps to a set of token values. • In a theme modifier: “light”, “dark”, “lightHighContrast” • In a size modifier: “mobile”, “tablet”, “desktop” The single source of truth to name and store a design decision, distributed so teams can use it across design tools and coding languages. • text-color-primary • font-size-title A JSON file containing design tokens, typically using the or file extension. Design token files use the media type or . A tool for visual design creation and editing. • Photoshop • Illustrator • Inkscape • UXPin • Sketch • Figma • Marvel A tool for documenting design token usage and presenting tokens to teams. • Storybook • Zeroheight • Backlight • Supernova • Knapsack Author-defined categorizations applied to related sets of tokens. • A brand color palette • A list of viewport sizes • A component’s themeable style properties. A JSON-serializable object passed to a resolver that specifies which context values to use for each modifier, determining which resolution will be produced. A conditional set of design tokens that can be applied based on context. Modifiers allow for conditional inclusion of tokens via contexts (such as “light” or “dark” themes, “mobile” or “desktop” sizes). • light, dark, high contrast • mobile, tablet, desktop • enabled or disabled A label assigned to a design decision. Additional data describing the token’s value or the token as a whole. • Description • Extensions See . A single possible permutation of a resolver document. Each resolution maps to a specific input and produces a final set of tokens and token values. A resolver with a theme modifier (light/dark) and a size modifier (mobile/desktop) can produce 4 different resolutions: light-mobile, light-desktop, dark-mobile, and dark-desktop. A JSON document that extends the design tokens format to work with tokens in multiple contexts. A resolver combines multiple token sets and applies conditional logic through modifiers to produce different token outputs based on input parameters. A resolver can load different color tokens for “light” vs “dark” themes, different size tokens for “mobile” vs “desktop” devices, or enable debug tokens based on a flag. A JSON file with the extension that contains sets, modifiers, and composition rules for generating context-specific design tokens. Rules for writing tokens that are used to determine if the syntax is valid. A collection of design tokens in DTCG format. Sets can contain tokens declared directly inline, references to JSON files containing design tokens, or any combination of the two. A tool that translates token data from one format to another (such as converting design token files to CSS custom properties, Sass variables, Swift code, etc.). • Style Dictionary • Terrazzo A predefined classification applied to a token’s value. Token tools can use types to infer the purpose of a token and convert values into the correct platform-specific format. • Color • Dimension • Duration • Font family • A translation tool might use a token’s type to convert the value into the correct platform-specific format • A design tool might use type to present tokens in the appropriate part of their UI (color tokens in the color picker, font tokens in text styling, etc.) A context-specific value assigned to a design token name. • a hex or rgb color • a px, rem, or sp font size Generic term describing the most common way (but not the only way) a design token is formatted and used in code. • CSS custom property • Sass variable • JavaScript variable • Android resource Company shipping design tool(s), in a position to implement the design token specification, such as Adobe, Framer, UXPin, Figma, Sketch, and many others.",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# DTCG Glossary ## A ### Alias #### Example ## C ### Composite design tokens #### Examples ### Composition ### Context ## D ### Design token ### Design token file ### Design tool ### Documentation tool ## G ### Group ## I ### Input ## M ### Modifier ## N ### Name ## P ### Property ## R ### Reference ### Resolution ### Resolver ### Resolver file ## S ### Schema ### Set ## T ### Translation tool ### Type #### Usage ## V ### Value ### Variable ### Vendor #### Contents This glossary contains high-level definitions, leaving out technical details on purpose. Part of the DTCG’s mission is to write those technical definitions in the form of specifications. A token value that is a reference to another token. The value of is , because it references : A design token whose value is made up of multiple, named child values. Composite tokens are useful for closely related style properties that are always applied together.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 921,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Composite tokens are useful for closely related style properties that are always applied together. • font name, font size, line height, and color • color, width, and style • linear/radial, at least 2 colors, a direction • x-direction, y-direction, color, blur, spread An ordered array of sets and modifiers that determines how tokens are combined to produce the final result. The order is significant, with tokens later in the array overriding any tokens that came before them in case of conflict. A specific condition within a modifier that determines which tokens to apply. Each context maps to a set of token values. • In a theme modifier: “light”, “dark”, “lightHighContrast” • In a size modifier: “mobile”, “tablet”, “desktop” The single source of truth to name and store a design decision, distributed so teams can use it across design tools and coding languages. • text-color-primary • font-size-title A JSON file containing design tokens, typically using the or file extension.",
+      "metadata": {
+        "startIndex": 821,
+        "endIndex": 1808,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "mary • font-size-title A JSON file containing design tokens, typically using the or file extension. Design token files use the media type or . A tool for visual design creation and editing. • Photoshop • Illustrator • Inkscape • UXPin • Sketch • Figma • Marvel A tool for documenting design token usage and presenting tokens to teams. • Storybook • Zeroheight • Backlight • Supernova • Knapsack Author-defined categorizations applied to related sets of tokens. • A brand color palette • A list of viewport sizes • A component’s themeable style properties. A JSON-serializable object passed to a resolver that specifies which context values to use for each modifier, determining which resolution will be produced. A conditional set of design tokens that can be applied based on context. Modifiers allow for conditional inclusion of tokens via contexts (such as “light” or “dark” themes, “mobile” or “desktop” sizes).",
+      "metadata": {
+        "startIndex": 1708,
+        "endIndex": 2624,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "l inclusion of tokens via contexts (such as “light” or “dark” themes, “mobile” or “desktop” sizes). • light, dark, high contrast • mobile, tablet, desktop • enabled or disabled A label assigned to a design decision. Additional data describing the token’s value or the token as a whole. • Description • Extensions See . A single possible permutation of a resolver document. Each resolution maps to a specific input and produces a final set of tokens and token values. A resolver with a theme modifier (light/dark) and a size modifier (mobile/desktop) can produce 4 different resolutions: light-mobile, light-desktop, dark-mobile, and dark-desktop. A JSON document that extends the design tokens format to work with tokens in multiple contexts. A resolver combines multiple token sets and applies conditional logic through modifiers to produce different token outputs based on input parameters. A resolver can load different color tokens for “light” vs “dark” themes, different size tokens for “mobile”",
+      "metadata": {
+        "startIndex": 2524,
+        "endIndex": 3525,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "er can load different color tokens for “light” vs “dark” themes, different size tokens for “mobile” vs “desktop” devices, or enable debug tokens based on a flag. A JSON file with the extension that contains sets, modifiers, and composition rules for generating context-specific design tokens. Rules for writing tokens that are used to determine if the syntax is valid. A collection of design tokens in DTCG format. Sets can contain tokens declared directly inline, references to JSON files containing design tokens, or any combination of the two. A tool that translates token data from one format to another (such as converting design token files to CSS custom properties, Sass variables, Swift code, etc.). • Style Dictionary • Terrazzo A predefined classification applied to a token’s value. Token tools can use types to infer the purpose of a token and convert values into the correct platform-specific format.",
+      "metadata": {
+        "startIndex": 3425,
+        "endIndex": 4339,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "types to infer the purpose of a token and convert values into the correct platform-specific format. • Color • Dimension • Duration • Font family • A translation tool might use a token’s type to convert the value into the correct platform-specific format • A design tool might use type to present tokens in the appropriate part of their UI (color tokens in the color picker, font tokens in text styling, etc.) A context-specific value assigned to a design token name. • a hex or rgb color • a px, rem, or sp font size Generic term describing the most common way (but not the only way) a design token is formatted and used in code. • CSS custom property • Sass variable • JavaScript variable • Android resource Company shipping design tool(s), in a position to implement the design token specification, such as Adobe, Framer, UXPin, Figma, Sketch, and many others.",
+      "metadata": {
+        "startIndex": 4239,
+        "endIndex": 5239,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens",
+      "glossary",
+      "terminology",
+      "dtcg"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:05.455Z",
+    "system": "DTCG",
+    "author": "W3C",
+    "source_url": "https://www.designtokens.org/glossary/"
+  }
+}

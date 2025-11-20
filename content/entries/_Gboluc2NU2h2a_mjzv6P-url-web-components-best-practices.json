@@ -1,0 +1,147 @@
+{
+  "id": "_Gboluc2NU2h2a_mjzv6P",
+  "title": "Web Components Best Practices",
+  "source": {
+    "type": "url",
+    "location": "https://web.dev/articles/custom-elements-best-practices",
+    "ingested_at": "2025-11-20T13:22:20.849Z"
+  },
+  "content": "# Custom Element Best Practices Stay organized with collections Save and categorize content based on your preferences. ## Checklist ### Shadow DOM ### Create a shadow root to encapsulate styles. ### Create your shadow root in the constructor. ### Place any children the element creates into its shadow root. ### Use <slot> to project light DOM children into your shadow DOM ### Set a :host display style (e.g. block, inline-block, flex) unless you prefer the default of inline. ### Add a :host display style that respects the hidden attribute. ### Attributes and properties ### Do not override author-set, global attributes. ### Always accept primitive data (strings, numbers, booleans) as either attributes or properties. ### Aim to keep primitive data attributes and properties in sync, reflecting from property to attribute, and vice versa. ### Aim to only accept rich data (objects, arrays) as properties. ### Do not reflect rich data properties to attributes. ### Consider checking for properties that may have been set before the element upgraded. ### Do not self-apply classes. ### Events ### Dispatch events in response to internal component activity. ### Do not dispatch events in response to the host setting a property (downward data flow). ## Explainers ### Don't override the page author ### Make properties lazy ### Avoid reentrancy issues Custom elements let you construct your own HTML tags. This checklist covers best practices to help you build high quality elements. Custom elements allow you to extend HTML and define your own tags. They're an incredibly powerful feature, but they're also low-level, which means it's not always clear how best to implement your own element. To help you create the best possible experiences we've put together this checklist. It breaks down all the things we think it takes to be a well behaved custom element. Encapsulating styles in your element's shadow root ensures that it will work regardless of where it is used. This is especially important if a developer wishes to place your element inside of another element's shadow root. This applies to even simple elements like a checkbox or radio button. It might be the case that the only content inside of your shadow root will be the styles themselves. The element. The constructor is when you have of your element. It's a great time to setup implementation details that you don't want other elements messing around with. Doing this work in a later callback, like the , means you will need to guard against situations where your element is detached and then reattached to the document. Children created by your element are part of its implementation and should be private. Without the protection of a shadow root, outside JavaScript may inadvertently interfere with these children. Allow users of your component to specify content in your component as HTML children makes your component more composable. When a browser does not support custom elements, the nested content remains available, visible and accessible. Custom elements are by default, so setting their or will have no effect. This often comes as a surprise to developers and may cause issues related to laying out the page. Unless you prefer an display, you should always set a default value. A custom element with a default style, e.g. , will override the lower specificity built-in . This may surprise you if you expect setting the attribute on your element to render it . In addition to a default style, add support for with . Global attributes are those that are present on all HTML elements. Some examples include and . A custom element may wish to set its initial to 0 so it will be keyboard focusable. But you should always check first to see if the developer using your element has set this to another value. If, for example, they've set to -1, it's a signal that they don't wish for the element to be interactive. The element. This is further explained in Custom elements, like their built-in counterparts, should be configurable. Configuration can be passed in declaratively, via attributes, or imperatively via JavaScript properties. Ideally every attribute should also be linked to a corresponding property. You never know how a user will interact with your element. They might set a property in JavaScript, and then expect to read that value using an API like . If every attribute has a corresponding property, and both of them reflect, it will make it easier for users to work with your element. In other words, calling should also set a corresponding property and vice versa. There are, of course, exceptions to this rule. You shouldn't reflect high frequency properties, e.g. in a video player. Use your best judgment. If it seems like a user will interact with a property or attribute, and it's not burdensome to reflect it, then do so. The element. This is further explained in . Generally speaking, there are no examples of built-in HTML elements that accept rich data (plain JavaScript objects and arrays) through their attributes. Rich data is instead accepted either through method calls or properties. There are a couple obvious downsides to accepting rich data as attributes: it can be expensive to serialize a large object to a string, and any object references will be lost in this stringification process. For example, if you stringify an object which has a reference to another object, or perhaps a DOM node, those references will be lost. Reflecting rich data properties to attributes is needlessly expensive, requiring serializing and deserializing the same JavaScript objects. Unless you have a use case that can only be solved with this feature, it's probably best to avoid it. A developer using your element may attempt to set a property on the element before its definition has been loaded. This is especially true if the developer is using a framework which handles loading components, stamping them to the page, and binding their properties to a model. The element. Further explained in . Elements that need to express their state should do so using attributes. The attribute is generally considered to be owned by the developer using your element, and writing to it yourself may inadvertently stomp on developer classes. Your component may have properties that change in response to activity that only your component knows about, for example, if a timer or animation completes, or a resource finishes loading. It's helpful to dispatch events in response to these changes to notify the host that the component's state is different. Dispatching an event in response to a host setting a property is superfluous (the host knows the current state because it just set it). Dispatching events in response to a host setting a property may cause infinite loops with data binding systems. It's possible that a developer using your element might want to override some of its initial state. For example, changing its ARIA or focusability with . Check to see if these and any other global attributes have been set, before applying your own values. A developer might attempt to set a property on your element before its definition has been loaded. This is especially true if the developer is using a framework which handles loading components, inserting them into to the page, and binding their properties to a model. In the following example, Angular is declaratively binding its model's property to the checkbox's property. If the definition for howto-checkbox was lazy loaded it's possible that Angular might attempt to set the checked property before the element has upgraded. A custom element should handle this scenario by checking if any properties have already been set on its instance. The demonstrates this pattern using a method called . captures the value from the unupgraded instance and deletes the property so it does not shadow the custom element's own property setter. This way, when the element's definition does finally load, it can immediately reflect the correct state. It's tempting to use the to reflect state to an underlying property, for example: But this can create an infinite loop if the property setter also reflects to the attribute. An alternative is to allow the property setter to reflect to the attribute, and have the getter determine its value based on the attribute. In this example, adding or removing the attribute will also set the property. Finally, the can be used to handle side effects like applying ARIA states. Except as otherwise noted, the content of this page is licensed under the , and code samples are licensed under the . For details, see the . Java is a registered trademark of Oracle and/or its affiliates. Last updated 2017-08-14 UTC. ## Links [<howto-checkbox>](/articles/components-howto-checkbox) [<howto-tabs>](/articles/components-howto-tabs) [hidden attribute](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/hidden) [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/) [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0) [Google Developers Site Policies](https://developers.google.com/site-policies)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Custom Element Best Practices Stay organized with collections Save and categorize content based on your preferences. ## Checklist ### Shadow DOM ### Create a shadow root to encapsulate styles. ### Create your shadow root in the constructor. ### Place any children the element creates into its shadow root. ### Use <slot> to project light DOM children into your shadow DOM ### Set a :host display style (e.g. block, inline-block, flex) unless you prefer the default of inline. ### Add a :host display style that respects the hidden attribute. ### Attributes and properties ### Do not override author-set, global attributes. ### Always accept primitive data (strings, numbers, booleans) as either attributes or properties. ### Aim to keep primitive data attributes and properties in sync, reflecting from property to attribute, and vice versa. ### Aim to only accept rich data (objects, arrays) as properties. ### Do not reflect rich data properties to attributes.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 965,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "t rich data (objects, arrays) as properties. ### Do not reflect rich data properties to attributes. ### Consider checking for properties that may have been set before the element upgraded. ### Do not self-apply classes. ### Events ### Dispatch events in response to internal component activity. ### Do not dispatch events in response to the host setting a property (downward data flow). ## Explainers ### Don't override the page author ### Make properties lazy ### Avoid reentrancy issues Custom elements let you construct your own HTML tags. This checklist covers best practices to help you build high quality elements. Custom elements allow you to extend HTML and define your own tags. They're an incredibly powerful feature, but they're also low-level, which means it's not always clear how best to implement your own element. To help you create the best possible experiences we've put together this checklist. It breaks down all the things we think it takes to be a well behaved custom element.",
+      "metadata": {
+        "startIndex": 865,
+        "endIndex": 1864,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "his checklist. It breaks down all the things we think it takes to be a well behaved custom element. Encapsulating styles in your element's shadow root ensures that it will work regardless of where it is used. This is especially important if a developer wishes to place your element inside of another element's shadow root. This applies to even simple elements like a checkbox or radio button. It might be the case that the only content inside of your shadow root will be the styles themselves. The element. The constructor is when you have of your element. It's a great time to setup implementation details that you don't want other elements messing around with. Doing this work in a later callback, like the , means you will need to guard against situations where your element is detached and then reattached to the document. Children created by your element are part of its implementation and should be private.",
+      "metadata": {
+        "startIndex": 1764,
+        "endIndex": 2678,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "he document. Children created by your element are part of its implementation and should be private. Without the protection of a shadow root, outside JavaScript may inadvertently interfere with these children. Allow users of your component to specify content in your component as HTML children makes your component more composable. When a browser does not support custom elements, the nested content remains available, visible and accessible. Custom elements are by default, so setting their or will have no effect. This often comes as a surprise to developers and may cause issues related to laying out the page. Unless you prefer an display, you should always set a default value. A custom element with a default style, e.g. , will override the lower specificity built-in . This may surprise you if you expect setting the attribute on your element to render it . In addition to a default style, add support for with . Global attributes are those that are present on all HTML elements.",
+      "metadata": {
+        "startIndex": 2578,
+        "endIndex": 3564,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "lt style, add support for with . Global attributes are those that are present on all HTML elements. Some examples include and . A custom element may wish to set its initial to 0 so it will be keyboard focusable. But you should always check first to see if the developer using your element has set this to another value. If, for example, they've set to -1, it's a signal that they don't wish for the element to be interactive. The element. This is further explained in Custom elements, like their built-in counterparts, should be configurable. Configuration can be passed in declaratively, via attributes, or imperatively via JavaScript properties. Ideally every attribute should also be linked to a corresponding property. You never know how a user will interact with your element. They might set a property in JavaScript, and then expect to read that value using an API like . If every attribute has a corresponding property, and both of them reflect, it will make it easier for users to work with",
+      "metadata": {
+        "startIndex": 3464,
+        "endIndex": 4463,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "s a corresponding property, and both of them reflect, it will make it easier for users to work with your element. In other words, calling should also set a corresponding property and vice versa. There are, of course, exceptions to this rule. You shouldn't reflect high frequency properties, e.g. in a video player. Use your best judgment. If it seems like a user will interact with a property or attribute, and it's not burdensome to reflect it, then do so. The element. This is further explained in . Generally speaking, there are no examples of built-in HTML elements that accept rich data (plain JavaScript objects and arrays) through their attributes. Rich data is instead accepted either through method calls or properties. There are a couple obvious downsides to accepting rich data as attributes: it can be expensive to serialize a large object to a string, and any object references will be lost in this stringification process.",
+      "metadata": {
+        "startIndex": 4363,
+        "endIndex": 5300,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "a large object to a string, and any object references will be lost in this stringification process. For example, if you stringify an object which has a reference to another object, or perhaps a DOM node, those references will be lost. Reflecting rich data properties to attributes is needlessly expensive, requiring serializing and deserializing the same JavaScript objects. Unless you have a use case that can only be solved with this feature, it's probably best to avoid it. A developer using your element may attempt to set a property on the element before its definition has been loaded. This is especially true if the developer is using a framework which handles loading components, stamping them to the page, and binding their properties to a model. The element. Further explained in . Elements that need to express their state should do so using attributes. The attribute is generally considered to be owned by the developer using your element, and writing to it yourself may inadvertently",
+      "metadata": {
+        "startIndex": 5200,
+        "endIndex": 6197,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "dered to be owned by the developer using your element, and writing to it yourself may inadvertently stomp on developer classes. Your component may have properties that change in response to activity that only your component knows about, for example, if a timer or animation completes, or a resource finishes loading. It's helpful to dispatch events in response to these changes to notify the host that the component's state is different. Dispatching an event in response to a host setting a property is superfluous (the host knows the current state because it just set it). Dispatching events in response to a host setting a property may cause infinite loops with data binding systems. It's possible that a developer using your element might want to override some of its initial state. For example, changing its ARIA or focusability with . Check to see if these and any other global attributes have been set, before applying your own values.",
+      "metadata": {
+        "startIndex": 6097,
+        "endIndex": 7039,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "eck to see if these and any other global attributes have been set, before applying your own values. A developer might attempt to set a property on your element before its definition has been loaded. This is especially true if the developer is using a framework which handles loading components, inserting them into to the page, and binding their properties to a model. In the following example, Angular is declaratively binding its model's property to the checkbox's property. If the definition for howto-checkbox was lazy loaded it's possible that Angular might attempt to set the checked property before the element has upgraded. A custom element should handle this scenario by checking if any properties have already been set on its instance. The demonstrates this pattern using a method called . captures the value from the unupgraded instance and deletes the property so it does not shadow the custom element's own property setter.",
+      "metadata": {
+        "startIndex": 6939,
+        "endIndex": 7876,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "d instance and deletes the property so it does not shadow the custom element's own property setter. This way, when the element's definition does finally load, it can immediately reflect the correct state. It's tempting to use the to reflect state to an underlying property, for example: But this can create an infinite loop if the property setter also reflects to the attribute. An alternative is to allow the property setter to reflect to the attribute, and have the getter determine its value based on the attribute. In this example, adding or removing the attribute will also set the property. Finally, the can be used to handle side effects like applying ARIA states. Except as otherwise noted, the content of this page is licensed under the , and code samples are licensed under the . For details, see the . Java is a registered trademark of Oracle and/or its affiliates. Last updated 2017-08-14 UTC.",
+      "metadata": {
+        "startIndex": 7776,
+        "endIndex": 8682,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "the . Java is a registered trademark of Oracle and/or its affiliates. Last updated 2017-08-14 UTC. ## Links [<howto-checkbox>](/articles/components-howto-checkbox) [<howto-tabs>](/articles/components-howto-tabs) [hidden attribute](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/hidden) [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/) [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0) [Google Developers Site Policies](https://developers.google.com/site-policies)",
+      "metadata": {
+        "startIndex": 8582,
+        "endIndex": 9582,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "web-components",
+      "api-design",
+      "standards",
+      "google"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:20.849Z",
+    "system": "Web Components",
+    "author": "Google",
+    "source_url": "https://web.dev/articles/custom-elements-best-practices"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "iMxFUjyBAUpl0EyTHAliR",
+  "title": "Design Systems Repo",
+  "source": {
+    "type": "url",
+    "location": "https://designsystemsrepo.com/",
+    "ingested_at": "2025-11-20T13:22:13.207Z"
+  },
+  "content": "# Latest Design Systems ### Wonderflow ## Wanda Design System ### Finastra ## Finastra Design System ### REI ## Cedar # Latest Articles ### Gustavo Ribeiro ## The Complete Guide About Design Systems ### Raphael Fleckenstein ## Building a Design System for 500,000+ Users at Ryte ### Rahul Chakraborty ## Building a Color Palette Framework ## Tools → ## Books → ## Talks → View all A growing collection of design system tools, resources, and plugins. A list of recommended books on the subject of design systems from industry experts. Helpful talks and presentations on tools and process regarding design systems. ## Links [Latest Design SystemsView all](/design-systems-recent) [Wonderflow Wanda Design System](https://design.wonderflow.ai/) [FinastraFinastra Design System](https://design.fusionfabric.cloud/) [REICedar](https://rei.github.io/rei-cedar-docs/) [Latest ArticlesView all](/articles) [Gustavo RibeiroThe Complete Guide About Design SystemsAugust 23, 2020](https://medium.com/ci-t/the-complete-guide-about-design-systems-engineering-cd332cf520f2) [Raphael FleckensteinBuilding a Design System for 500,000+ Users at RyteMay 23, 2018](https://medium.com/ryte/building-a-design-system-for-500-000-users-at-ryte-1a5ca8bda992) [Rahul ChakrabortyBuilding a Color Palette FrameworkApril 19, 2018](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries) [Tools →A growing collection of design system tools, resources, and plugins.](/tools) [Books →A list of recommended books on the subject of design systems from industry experts.](/books) [Talks →Helpful talks and presentations on tools and process regarding design systems.](/talks)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Latest Design Systems ### Wonderflow ## Wanda Design System ### Finastra ## Finastra Design System ### REI ## Cedar # Latest Articles ### Gustavo Ribeiro ## The Complete Guide About Design Systems ### Raphael Fleckenstein ## Building a Design System for 500,000+ Users at Ryte ### Rahul Chakraborty ## Building a Color Palette Framework ## Tools → ## Books → ## Talks → View all A growing collection of design system tools, resources, and plugins. A list of recommended books on the subject of design systems from industry experts. Helpful talks and presentations on tools and process regarding design systems. ## Links [Latest Design SystemsView all](/design-systems-recent) [Wonderflow Wanda Design System](https://design.wonderflow.ai/) [FinastraFinastra Design System](https://design.fusionfabric.cloud/) [REICedar](https://rei.github.io/rei-cedar-docs/) [Latest ArticlesView all](/articles) [Gustavo RibeiroThe Complete Guide About Design SystemsAugust 23,",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 964,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "test ArticlesView all](/articles) [Gustavo RibeiroThe Complete Guide About Design SystemsAugust 23, 2020](https://medium.com/ci-t/the-complete-guide-about-design-systems-engineering-cd332cf520f2) [Raphael FleckensteinBuilding a Design System for 500,000+ Users at RyteMay 23, 2018](https://medium.com/ryte/building-a-design-system-for-500-000-users-at-ryte-1a5ca8bda992) [Rahul ChakrabortyBuilding a Color Palette FrameworkApril 19, 2018](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries) [Tools →A growing collection of design system tools, resources, and plugins.](/tools) [Books →A list of recommended books on the subject of design systems from industry experts.](/books) [Talks →Helpful talks and presentations on tools and process regarding design systems.](/talks)",
+      "metadata": {
+        "startIndex": 864,
+        "endIndex": 1864,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    }
+  ],
+  "metadata": {
+    "category": "general",
+    "tags": [
+      "design-systems",
+      "resources",
+      "collection"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:13.207Z",
+    "system": "Design Systems Repo",
+    "source_url": "https://designsystemsrepo.com/"
+  }
+}

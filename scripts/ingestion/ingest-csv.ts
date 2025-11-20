@@ -7,6 +7,8 @@
 import { processCSVURLs, createSampleCSV, CSVParseOptions } from './csv-url-parser';
 import * as path from 'path';
 import * as fs from 'fs';
+import { exec } from 'child_process';
+import { promisify } from 'util';
 
 interface CLIOptions extends CSVParseOptions {
   help?: boolean;
@@ -212,8 +214,6 @@ async function main() {
       // Automatically regenerate manifest
       console.log(`\n🔄 Regenerating content manifest...`);
       try {
-        const { exec } = require('child_process');
-        const { promisify } = require('util');
         const execAsync = promisify(exec);
 
         await execAsync('npx tsx scripts/build/generate-manifest.ts');
@@ -236,7 +236,9 @@ async function main() {
 }
 
 // Run the script
-if (require.main === module) {
+// Check if this file is being run directly (ES module compatible)
+const isMainModule = import.meta.url === `file://${process.argv[1]}`;
+if (isMainModule) {
   main().catch(error => {
     console.error(`❌ Unexpected error: ${error}`);
     process.exit(1);

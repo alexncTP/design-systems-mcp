@@ -1,0 +1,420 @@
+{
+  "id": "hR3wSHeCT5KTBpEDe687J",
+  "title": "Design Systems Repo Articles",
+  "source": {
+    "type": "url",
+    "location": "https://designsystemsrepo.com/articles/",
+    "ingested_at": "2025-11-20T13:22:13.336Z"
+  },
+  "content": "### Gustavo Ribeiro ## The Complete Guide About Design Systems ### Raphael Fleckenstein ## Building a Design System for 500,000+ Users at Ryte ### Rahul Chakraborty ## Building a Color Palette Framework ### Ted Goas ## Random Thoughts on Design Systems from Recent Experience ### Jon Rohan ## Using Figma Designs to Build the Octicons Icon library ### Julie Nergararian ## Distributing Scalable Sketch Libraries ### Sonja Sarah Porter ## Design Systems — In the Wild ### Robin Rendle ## Design Systems at Gusto ### Luke Wroblewski ## Scenario-Driven Design Systems ### Brad Frost ## Creating Themeable Design Systems ### Jack Davies ## Pattern Libraries ### Jeeyoung Jung ## Designing Systematic Colors ### Ryan Donahue ## Building a Successful Design System — 3 Lessons for Design Managers ### Nathan Curtis ## Component Examples ### Daniel Eden ## Design Systems Office Hours Playbook ### João Araújo ## Design System for Figma - The Power of Dynamic Elements ### Thomas Lowry ## Component Architecture in Figma ### Dominic Nguyen ## Why Design Systems are a Single Point of Failure ### Theresa Ma ## CSS in the Age of React - How We Traded the Cascade for Consistency ### Magera Moon ## The People Part of Design Systems ### Hamza Erbay ## Design Language Systems - Why Your Team Needs One and How to Build it ### Pratik Shah ## Build an Atomic Design System with Sketch Libraries ## How to Gain Widespread Adoption of Your Design System ## Your Sketch Library is Not a Design System ### Nayan Suthar ## Space, Size & Style ### Buzz Usborne ## (More) Tips for Building Your Sketch UI Library ### Louis Chenais ## Design Tokens for Dummies ### Grace Noh ## Drag and Drop for Design Systems ### Mariah Muscato ## How Building a Design System Empowers Your Team to Focus on People — Not Pixels ### Michael Fouquet ## Building Our Sketch Library ### Jeff Crossman ## What I Learned About Leading a Design System in 2017 ### Alan B Smith ## Component-Based Design ### Una Kravets ## Why Design Systems Fail ### Andrew Couldwell ## Laying the Foundations for System Design ### Stuart Robson ## Design Systems and CSS Grid ### Ether ## Generating Design System Spacing ### Taurie Davis ## Scaling Design - The Start of System Thinking ### Milan Tailor ## How to Build a Component Library / Style Guide with Figma ### Dominik Wilkowski ## Setting Up a Healthy, Thriving Open-Source Community Around a Design System ### Patrick N. Lewis ## Design Language System ## Advanced Tips with the Clarity UI Library ### Karri Saarinen ## Building a Visual Language ## Design System Structure ### Ste Grainer ## Design Systems, Style Guides, and Pattern Libraries - Oh My! ### Cathy Lo ## Designing a Visual System at Scale ### Natasha Hockey ## Pattern Library ### Josh Clark ## The Most Exciting Design Systems are Boring ### Emmet Connolly ## The Full Stack Design Sytem ## Creating and Documenting a Product Design System ### Sarah Drasner ## Animation in Design Systems ## Tokens in Design Systems ### Micah Daigle ## Circling Ourselves - The Story Behind Asana’s Rebrand My main learnings as a developer in design systems projects from engineering, design, and management aspects and build an entire design system from scratch. In this article we want to share the lessons we learned building our design system and how we dramatically increased the velocity of our design process with it by 8x. In this article, we will discuss techniques to define a set of rules to generate color variations, that can scale to a larger spectrum of usage and also could be applied across any brand palette. For the last 12 months, the product design team at Stack Overflow has been working on a design system. Here are some random thoughts about design systems. Recently our friends at Figma announced their new Figma platform, and we’ve been really excited about its potential. We’ve immediately put the platform to use with Octicons, our SVG icon library. How can we build complex symbols, distribute them and keep changes in sync with all of our users? If you have insight into better managing and distributing design systems, let us know. The most developed design systems are the ideal of what we want our products to be — holistic, systematic and well-documented wonders. But the truth is, many of these well-intentioned design systems fail in the end. At Gusto we’ve been building our design system for the past two years and thinking about how to scale our product and design process across multiple complex projects and teams. In her presentation at An Event Apart in Seattle, Yesenia Perez-Cruz shared lessons learned building design systems for multiple brands/Web sites and how specific user-scenarios are key to making flexible solutions. Is it possible to create a single design system that powers wildly different-looking brands and experiences? The answer is yes! But why would you want to? Style Guides, Pattern Libraries, Design Systems, what are they? Where do the lines blur? And how can both designers and developers of interfaces benefit from them? Color is a core building block of any design system. This article focuses on how to make themable, flexible, WCAG 2.0 compliant color ramps for a design system. There’s been a lot of great writing about the craft of design systems. Much less has been written about what it’s like to support and invest in a design system from the perspective of design management. Visual examples are the most essential element of effective component doc. How do you best render, arrange, label, and order each one to with effective content (but not embedded guidelines!) to enable quick use and experimentation? As our company and system scales, it’s important that Design System team members have a common approach to attending and operating office hours. Office hours are our most direct channel of input from the product teams we serve, making it an important part of our work. The power of tools such as Figma Components reaches its peak of performance if as a designer, one can dominate its flexibility within a process one feels confident in following. One of the best things about Figma’s component system is that you can access the layer stack of every instance of a component. This helps keep components contained and reduces the number of components required. As designers and frontend developers, we can be so caught up in evangelizing UI consistency that we become blind to the single point of failure in front of us. This article talks about why design systems collapse and how maintenance stops that from happening. With hundreds of engineers, developers and designers, ensuring visual consistency across Yelp is a challenging task. We’ve been migrating our web components from Yelp Cheetah to React to increase designer and developer productivity while ensuring visual consistency. We realized that ultimately for our systems to succeed long-term, they needed to be thought of as everyone’s responsibility. It became clear our role as a team should also be to help everyone contribute to our evolving system with the big picture in mind. As projects and teams grow, management becomes increasingly difficult. Let’s examine how design language systems make life easier in such situations. How we built an Atomic design system with Sketch libraries at Capital Float. Also, some lessons we learned while building an atomic design system. Redesigns only work when co-owned by designers and developers. We cultivated this co-ownership, in large part, by building good tools and documentation. You can’t build working software out of screenshots and Sketch files. At the heart of any great design system is a reusable set of UI components that product teams can reach for to build actual software. Designing components, maintaining consistency and building a harmonious system is a challenge. This is where the understanding of basic elements – space, size and style can help us. For those of you deep in the trenches, I wanted to share a couple of things that have made my life immeasurably easier when creating and maintaining our shared components with Sketch. Design tokens allow product teams to better collaborate and ensure brand consistency across any platform. Design tokens are central and tiny pieces of UI information such as colors, fonts, spacing, etc. Drag and drop interactions are often overlooked or go unnoticed. Sometimes they happen so naturally that you don’t even realize it. But if you look closely, there are many different UX standards around drag and drop. We learned that the best way to create consistent, functional, and delightful product experiences is to make the lives of those who build those experiences much easier. Here are some of the decisions we arrived at and lessons we learned as we put our design system into a Library. Since launch, we’ve received a lot of feedback on how much time has been saved by using the library. I wanted to take the time to document what I have learned about leading a design system and design systems in general over the past year so that I can be intentional about my efforts to improve in 2018. We have an incredible design team. One of the best things we’ve done in collaborating with them was shifting from page-based to component-based design. I’d like to share a bit about how we came to that decision. Design systems are standalone products, and have proven to be very effective means of design-driven development. However, in order for a design system to succeed, everyone needs to get on board. Building on-brand, quality and consistent digital products at scale is hard. You need a source of truth. You need to lay strong foundations — then use them to sustainably build (or repair existing) products and design systems. If you find yourself tasked with creating some new components for your design system try out CSS Grid. It really feels like the possibilities are endless in terms of layout for the web. Your spacing system should be easily defined and applied to designs. Understood by designers and developers alike. And be able to change without breaking. We took the initial step towards establishing our own system by creating a pattern library of reusable components that can be shared and reused across the application. This is a set of guidelines, based on our implementation of a style guide / component library. This 05 not translate directly for you, and is only one possible solution. The success of a design system built for collaboration and in the open source space asks people to donate their time and effort to the project. We must ensure that effort and time is not wasted because of lacking communication. We were all trying to do our best but it had become unnecessarily hard to create great products. So Button’s design team set out to solve these issues by creating a design language system. We have incorporated several different advanced override methods you can use to speed the process of building prototypes. These advanced tips should dramatically increase the speed of prototyping. A unified design system is essential to building better and faster; better because a cohesive experience is more easily understood by our users, and faster because it gives us a common language to work with. You can think of our system so far as a tree, with its most primitive elements at the bottom, comprising our atomic elements. These atoms are composed into components, and further composed to create patterns, which are common solutions to common problems. Many people, though, use the terms interchangeably when they are, in fact, different concepts. Let’s take a few minutes to explore their differences. Not every experience across every Facebook business and consumer product strikes a perfect balance between distinctiveness and unity with the overall Facebook experience. But the visual system has helped us make a big leap toward that goal. Whilst the initial period of designing and developing a pattern library take a while, the benefits that follow will save time and improve the code base. Design-system builders should resist the lure of the new. Don’t confuse design-system work with a rebrand or a tech-stack overhaul. The system’s design patterns should be familiar, even boring. UI methodologies like Atomic Design bring logic and structure to individual screens. Now it’s time to extend that thinking to every aspect of your product. An article about how we created a design system at WeWork. I’ll share insight into our process, product design, the tools we used to create and implement the system, and also how we document and share the system with our team. Our modern workflow has matured over time to include design systems that help us stay organized and consistent. But why are we still treating animation like a second-class citizen? Probably because we don’t really consider its power. Nathan Curtis give us 10 practical and insightful tips regarding design tokens to architect and implement design decisions for your team. On the surface, this is the story of how Asana went from a logo with three circles to a logo… with three circles. It's also a story of how they established a new brand design system at Asana. ## Links [Gustavo RibeiroThe Complete Guide About Design SystemsMy main learnings as a developer in design systems projects from engineering, design, and management aspects and build an entire design system from scratch.August 23, 2020](https://medium.com/ci-t/the-complete-guide-about-design-systems-engineering-cd332cf520f2) [Raphael FleckensteinBuilding a Design System for 500,000+ Users at RyteIn this article we want to share the lessons we learned building our design system and how we dramatically increased the velocity of our design process with it by 8x.May 23, 2018](https://medium.com/ryte/building-a-design-system-for-500-000-users-at-ryte-1a5ca8bda992) [Rahul ChakrabortyBuilding a Color Palette FrameworkIn this article, we will discuss techniques to define a set of rules to generate color variations, that can scale to a larger spectrum of usage and also could be applied across any brand palette.April 19, 2018](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries) [Ted GoasRandom Thoughts on Design Systems from Recent ExperienceFor the last 12 months, the product design team at Stack Overflow has been working on a design system. Here are some random thoughts about design systems.April 18, 2018](https://medium.com/@tedgoas/random-thoughts-on-design-systems-from-recent-experience-d96ae4203aa9) [Jon RohanUsing Figma Designs to Build the Octicons Icon libraryRecently our friends at Figma announced their new Figma platform, and we’ve been really excited about its potential. We’ve immediately put the platform to use with Octicons, our SVG icon library.April 12, 2018](https://blog.github.com/2018-04-12/driving-changes-from-designs/) [Julie NergararianDistributing Scalable Sketch LibrariesHow can we build complex symbols, distribute them and keep changes in sync with all of our users? If you have insight into better managing and distributing design systems, let us know.April 11, 2018](https://uxplanet.org/distributing-scalable-sketch-libraries-ed642f9d3d0a) [Sonja Sarah PorterDesign Systems — In the WildThe most developed design systems are the ideal of what we want our products to be — holistic, systematic and well-documented wonders. But the truth is, many of these well-intentioned design systems fail in the end.April 10, 2018](https://blogg.bekk.no/design-systems-in-the-wild-7b7ce817c6d4) [Robin RendleDesign Systems at GustoAt Gusto we’ve been building our design system for the past two years and thinking about how to scale our product and design process across multiple complex projects and teams.April 10, 2018](https://medium.com/gusto-design/design-systems-at-gusto-a710543b2c93) [Luke WroblewskiScenario-Driven Design SystemsIn her presentation at An Event Apart in Seattle, Yesenia Perez-Cruz shared lessons learned building design systems for multiple brands/Web sites and how specific user-scenarios are key to making flexible solutions.April 2, 2018](https://www.lukew.com/ff/entry.asp?1989) [Brad FrostCreating Themeable Design SystemsIs it possible to create a single design system that powers wildly different-looking brands and experiences? The answer is yes! But why would you want to?April 2, 2018](http://bradfrost.com/blog/post/creating-themeable-design-systems/) [Jack DaviesPattern LibrariesStyle Guides, Pattern Libraries, Design Systems, what are they? Where do the lines blur? And how can both designers and developers of interfaces benefit from them?April 2, 2018](https://medium.com/@whatjackhasmade/pattern-libraries-abcc45c6144c) [Jeeyoung JungDesigning Systematic ColorsColor is a core building block of any design system. This article focuses on how to make themable, flexible, WCAG 2.0 compliant color ramps for a design system.March 27, 2018](https://uxplanet.org/designing-systematic-colors-b5d2605b15c) [Ryan DonahueBuilding a Successful Design System — 3 Lessons for Design ManagersThere’s been a lot of great writing about the craft of design systems. Much less has been written about what it’s like to support and invest in a design system from the perspective of design management.March 26, 2018](https://medium.com/zendesk-creative-blog/building-a-successful-design-system-3-lessons-for-design-managers-926a87cbbe74) [Nathan CurtisComponent ExamplesVisual examples are the most essential element of effective component doc. How do you best render, arrange, label, and order each one to with effective content (but not embedded guidelines!) to enable quick use and experimentation?March 24, 2018](https://medium.com/eightshapes-llc/component-examples-9c4b3bb3b308) [Daniel EdenDesign Systems Office Hours PlaybookAs our company and system scales, it’s important that Design System team members have a common approach to attending and operating office hours. Office hours are our most direct channel of input from the product teams we serve, making it an important part of our work.March 22, 2018](https://github.com/daneden/design-systems-office-hours-playbook) [João AraújoDesign System for Figma - The Power of Dynamic ElementsThe power of tools such as Figma Components reaches its peak of performance if as a designer, one can dominate its flexibility within a process one feels confident in following.March 17, 2018](https://medium.com/@juauz/design-system-for-figma-the-power-of-dynamic-elements-4ca4dc3e4524) [Thomas LowryComponent Architecture in FigmaOne of the best things about Figma’s component system is that you can access the layer stack of every instance of a component. This helps keep components contained and reduces the number of components required.March 14, 2018](https://blog.figma.com/component-architecture-in-figma-f16ae9cc4481) [Dominic NguyenWhy Design Systems are a Single Point of FailureAs designers and frontend developers, we can be so caught up in evangelizing UI consistency that we become blind to the single point of failure in front of us. This article talks about why design systems collapse and how maintenance stops that from happening.March 13, 2018](https://blog.hichroma.com/why-design-systems-are-a-single-point-of-failure-ec9d30c107c2?token=WLU_YEWyJY6PUVxc) [Theresa MaCSS in the Age of React - How We Traded the Cascade for ConsistencyWith hundreds of engineers, developers and designers, ensuring visual consistency across Yelp is a challenging task. We’ve been migrating our web components from Yelp Cheetah to React to increase designer and developer productivity while ensuring visual consistency.March 5, 2018](https://engineeringblog.yelp.com/2018/03/css-in-the-age-of-react.html) [Magera MoonThe People Part of Design SystemsWe realized that ultimately for our systems to succeed long-term, they needed to be thought of as everyone’s responsibility. It became clear our role as a team should also be to help everyone contribute to our evolving system with the big picture in mind.February 28, 2018](https://medium.com/related-works-inc/the-people-part-of-design-systems-a5b54eea24f4) [Hamza ErbayDesign Language Systems - Why Your Team Needs One and How to Build itAs projects and teams grow, management becomes increasingly difficult. Let’s examine how design language systems make life easier in such situations.February 9, 2018](https://medium.freecodecamp.org/design-language-system-why-your-team-needs-one-and-how-to-built-it-d996ba8c3889) [Pratik ShahBuild an Atomic Design System with Sketch LibrariesHow we built an Atomic design system with Sketch libraries at Capital Float. Also, some lessons we learned while building an atomic design system.February 6, 2018](https://medium.com/sketch-app-sources/atomic-design-system-with-sketch-libraries-e06e3b1f8302) [Julie NergararianHow to Gain Widespread Adoption of Your Design SystemRedesigns only work when co-owned by designers and developers. We cultivated this co-ownership, in large part, by building good tools and documentation.February 5, 2018](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries) [Brad FrostYour Sketch Library is Not a Design SystemYou can’t build working software out of screenshots and Sketch files. At the heart of any great design system is a reusable set of UI components that product teams can reach for to build actual software.February 2, 2018](http://bradfrost.com/blog/post/your-sketch-library-is-not-a-design-system/) [Nayan SutharSpace, Size & StyleDesigning components, maintaining consistency and building a harmonious system is a challenge. This is where the understanding of basic elements – space, size and style can help us.January 30, 2018](https://medium.com/@nynsuthar/space-size-style-aba80f820716) [Buzz Usborne(More) Tips for Building Your Sketch UI LibraryFor those of you deep in the trenches, I wanted to share a couple of things that have made my life immeasurably easier when creating and maintaining our shared components with Sketch.January 18, 2018](https://medium.com/help-scout/more-tips-for-building-your-sketch-ui-library-975a44416f59) [Louis ChenaisDesign Tokens for DummiesDesign tokens allow product teams to better collaborate and ensure brand consistency across any platform. Design tokens are central and tiny pieces of UI information such as colors, fonts, spacing, etc.January 17, 2018](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71) [Grace NohDrag and Drop for Design SystemsDrag and drop interactions are often overlooked or go unnoticed. Sometimes they happen so naturally that you don’t even realize it. But if you look closely, there are many different UX standards around drag and drop.January 12, 2018](https://uxdesign.cc/drag-and-drop-for-design-systems-8d40502eb26d) [Mariah MuscatoHow Building a Design System Empowers Your Team to Focus on People — Not PixelsWe learned that the best way to create consistent, functional, and delightful product experiences is to make the lives of those who build those experiences much easier.January 9, 2018](https://medium.com/hubspot-product/people-over-pixels-b962c359a14d) [Michael FouquetBuilding Our Sketch LibraryHere are some of the decisions we arrived at and lessons we learned as we put our design system into a Library. Since launch, we’ve received a lot of feedback on how much time has been saved by using the library.January 3, 2018](https://medium.com/in-the-hudl/building-our-sketch-library-cd8c925e566) [Jeff CrossmanWhat I Learned About Leading a Design System in 2017I wanted to take the time to document what I have learned about leading a design system and design systems in general over the past year so that I can be intentional about my efforts to improve in 2018.January 2, 2018](https://publication.design.systems/what-i-learned-about-leading-a-design-system-in-2017-46b85e9d7eab) [Alan B SmithComponent-Based DesignWe have an incredible design team. One of the best things we’ve done in collaborating with them was shifting from page-based to component-based design. I’d like to share a bit about how we came to that decision.December 26, 2017](https://medium.com/@_alanbsmith/component-based-design-168811e0c4ab) [Una KravetsWhy Design Systems FailDesign systems are standalone products, and have proven to be very effective means of design-driven development. However, in order for a design system to succeed, everyone needs to get on board.December 14, 2017](https://24ways.org/2017/why-design-systems-fail/) [Andrew CouldwellLaying the Foundations for System DesignBuilding on-brand, quality and consistent digital products at scale is hard. You need a source of truth. You need to lay strong foundations — then use them to sustainably build (or repair existing) products and design systems.December 12, 2017](https://medium.com/owl-studios/laying-the-foundations-7e503ef2120f) [Stuart RobsonDesign Systems and CSS GridIf you find yourself tasked with creating some new components for your design system try out CSS Grid. It really feels like the possibilities are endless in terms of layout for the web.December 12, 2017](https://24ways.org/2017/design-systems-and-css-grid/) [EtherGenerating Design System SpacingYour spacing system should be easily defined and applied to designs. Understood by designers and developers alike. And be able to change without breaking.December 8, 2017](https://medium.com/@ethersystem/generating-design-system-spacing-aa69714160bc) [Taurie DavisScaling Design - The Start of System ThinkingWe took the initial step towards establishing our own system by creating a pattern library of reusable components that can be shared and reused across the application.December 7, 2017](https://about.gitlab.com/2017/12/12/gitlab-design-library/) [Milan TailorHow to Build a Component Library / Style Guide with FigmaThis is a set of guidelines, based on our implementation of a style guide / component library. This 05 not translate directly for you, and is only one possible solution.December 5, 2017](https://blog.prototypr.io/how-to-build-a-component-library-style-guide-with-figma-9064b6c7fe4) [Dominik WilkowskiSetting Up a Healthy, Thriving Open-Source Community Around a Design SystemThe success of a design system built for collaboration and in the open source space asks people to donate their time and effort to the project. We must ensure that effort and time is not wasted because of lacking communication.November 29, 2017](https://medium.com/@wilkowskidom/setting-up-a-healthy-thriving-open-source-community-around-a-design-system-d96e86fb6da4) [Patrick N. LewisDesign Language SystemWe were all trying to do our best but it had become unnecessarily hard to create great products. So Button’s design team set out to solve these issues by creating a design language system.October 15, 2017](https://medium.com/patricknlewis/design-language-system-23223dd86b54) [Rahul ChakrabortyAdvanced Tips with the Clarity UI LibraryWe have incorporated several different advanced override methods you can use to speed the process of building prototypes. These advanced tips should dramatically increase the speed of prototyping.September 11, 2017](https://medium.com/claritydesignsystem/advanced-tips-with-the-clarity-ui-template-da7e594581ef) [Karri SaarinenBuilding a Visual LanguageA unified design system is essential to building better and faster; better because a cohesive experience is more easily understood by our users, and faster because it gives us a common language to work with.September 7, 2017](https://airbnb.design/building-a-visual-language/) [Daniel EdenDesign System StructureYou can think of our system so far as a tree, with its most primitive elements at the bottom, comprising our atomic elements. These atoms are composed into components, and further composed to create patterns, which are common solutions to common problems.July 17, 2017](https://daneden.me/2017/07/17/design-system-structure/) [Ste GrainerDesign Systems, Style Guides, and Pattern Libraries - Oh My!Many people, though, use the terms interchangeably when they are, in fact, different concepts. Let’s take a few minutes to explore their differences.July 17, 2017](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries) [Cathy LoDesigning a Visual System at ScaleNot every experience across every Facebook business and consumer product strikes a perfect balance between distinctiveness and unity with the overall Facebook experience. But the visual system has helped us make a big leap toward that goal.June 7, 2017](https://medium.com/elegant-tools/designing-a-visual-system-at-scale-d275259e17d) [Natasha HockeyPattern LibraryWhilst the initial period of designing and developing a pattern library take a while, the benefits that follow will save time and improve the code base.May 31, 2017](https://blog.prototypr.io/pattern-libraries-5d627c5c65b4) [Josh ClarkThe Most Exciting Design Systems are BoringDesign-system builders should resist the lure of the new. Don’t confuse design-system work with a rebrand or a tech-stack overhaul. The system’s design patterns should be familiar, even boring.April 3, 2017](https://bigmedium.com/ideas/boring-design-systems.html) [Emmet ConnollyThe Full Stack Design SytemUI methodologies like Atomic Design bring logic and structure to individual screens. Now it’s time to extend that thinking to every aspect of your product.April 3, 2017](https://blog.intercom.com/the-full-stack-design-system/) [Andrew CouldwellCreating and Documenting a Product Design SystemAn article about how we created a design system at WeWork. I’ll share insight into our process, product design, the tools we used to create and implement the system, and also how we document and share the system with our team.January 25, 2017](https://medium.com/owl-studios/plasma-design-system-4d63fb6c1afc) [Sarah DrasnerAnimation in Design SystemsOur modern workflow has matured over time to include design systems that help us stay organized and consistent. But why are we still treating animation like a second-class citizen? Probably because we don’t really consider its power.December 16, 2016](https://24ways.org/2016/animation-in-design-systems/) [Nathan CurtisTokens in Design SystemsNathan Curtis give us 10 practical and insightful tips regarding design tokens to architect and implement design decisions for your team.June 24, 2016](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421) [Micah DaigleCircling Ourselves - The Story Behind Asana’s RebrandOn the surface, this is the story of how Asana went from a logo with three circles to a logo… with three circles. It's also a story of how they established a new brand design system at Asana.October 1, 2015](https://medium.com/building-asana/circling-ourselves-the-story-behind-asana-s-rebrand-e8247516705a)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "### Gustavo Ribeiro ## The Complete Guide About Design Systems ### Raphael Fleckenstein ## Building a Design System for 500,000+ Users at Ryte ### Rahul Chakraborty ## Building a Color Palette Framework ### Ted Goas ## Random Thoughts on Design Systems from Recent Experience ### Jon Rohan ## Using Figma Designs to Build the Octicons Icon library ### Julie Nergararian ## Distributing Scalable Sketch Libraries ### Sonja Sarah Porter ## Design Systems — In the Wild ### Robin Rendle ## Design Systems at Gusto ### Luke Wroblewski ## Scenario-Driven Design Systems ### Brad Frost ## Creating Themeable Design Systems ### Jack Davies ## Pattern Libraries ### Jeeyoung Jung ## Designing Systematic Colors ### Ryan Donahue ## Building a Successful Design System — 3 Lessons for Design Managers ### Nathan Curtis ## Component Examples ### Daniel Eden ## Design Systems Office Hours Playbook ### João Araújo ## Design System for Figma - The Power of Dynamic Elements ### Thomas Lowry ## Component",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 992,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "oão Araújo ## Design System for Figma - The Power of Dynamic Elements ### Thomas Lowry ## Component Architecture in Figma ### Dominic Nguyen ## Why Design Systems are a Single Point of Failure ### Theresa Ma ## CSS in the Age of React - How We Traded the Cascade for Consistency ### Magera Moon ## The People Part of Design Systems ### Hamza Erbay ## Design Language Systems - Why Your Team Needs One and How to Build it ### Pratik Shah ## Build an Atomic Design System with Sketch Libraries ## How to Gain Widespread Adoption of Your Design System ## Your Sketch Library is Not a Design System ### Nayan Suthar ## Space, Size & Style ### Buzz Usborne ## (More) Tips for Building Your Sketch UI Library ### Louis Chenais ## Design Tokens for Dummies ### Grace Noh ## Drag and Drop for Design Systems ### Mariah Muscato ## How Building a Design System Empowers Your Team to Focus on People — Not Pixels ### Michael Fouquet ## Building Our Sketch Library ### Jeff Crossman ## What I Learned About",
+      "metadata": {
+        "startIndex": 892,
+        "endIndex": 1887,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "Pixels ### Michael Fouquet ## Building Our Sketch Library ### Jeff Crossman ## What I Learned About Leading a Design System in 2017 ### Alan B Smith ## Component-Based Design ### Una Kravets ## Why Design Systems Fail ### Andrew Couldwell ## Laying the Foundations for System Design ### Stuart Robson ## Design Systems and CSS Grid ### Ether ## Generating Design System Spacing ### Taurie Davis ## Scaling Design - The Start of System Thinking ### Milan Tailor ## How to Build a Component Library / Style Guide with Figma ### Dominik Wilkowski ## Setting Up a Healthy, Thriving Open-Source Community Around a Design System ### Patrick N. Lewis ## Design Language System ## Advanced Tips with the Clarity UI Library ### Karri Saarinen ## Building a Visual Language ## Design System Structure ### Ste Grainer ## Design Systems, Style Guides, and Pattern Libraries - Oh My! ### Cathy Lo ## Designing a Visual System at Scale ### Natasha Hockey ## Pattern Library ### Josh Clark ## The Most Exciting",
+      "metadata": {
+        "startIndex": 1787,
+        "endIndex": 2783,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "a Visual System at Scale ### Natasha Hockey ## Pattern Library ### Josh Clark ## The Most Exciting Design Systems are Boring ### Emmet Connolly ## The Full Stack Design Sytem ## Creating and Documenting a Product Design System ### Sarah Drasner ## Animation in Design Systems ## Tokens in Design Systems ### Micah Daigle ## Circling Ourselves - The Story Behind Asana’s Rebrand My main learnings as a developer in design systems projects from engineering, design, and management aspects and build an entire design system from scratch. In this article we want to share the lessons we learned building our design system and how we dramatically increased the velocity of our design process with it by 8x. In this article, we will discuss techniques to define a set of rules to generate color variations, that can scale to a larger spectrum of usage and also could be applied across any brand palette. For the last 12 months, the product design team at Stack Overflow has been working on a design",
+      "metadata": {
+        "startIndex": 2683,
+        "endIndex": 3677,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "tte. For the last 12 months, the product design team at Stack Overflow has been working on a design system. Here are some random thoughts about design systems. Recently our friends at Figma announced their new Figma platform, and we’ve been really excited about its potential. We’ve immediately put the platform to use with Octicons, our SVG icon library. How can we build complex symbols, distribute them and keep changes in sync with all of our users? If you have insight into better managing and distributing design systems, let us know. The most developed design systems are the ideal of what we want our products to be — holistic, systematic and well-documented wonders. But the truth is, many of these well-intentioned design systems fail in the end. At Gusto we’ve been building our design system for the past two years and thinking about how to scale our product and design process across multiple complex projects and teams.",
+      "metadata": {
+        "startIndex": 3577,
+        "endIndex": 4511,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "nking about how to scale our product and design process across multiple complex projects and teams. In her presentation at An Event Apart in Seattle, Yesenia Perez-Cruz shared lessons learned building design systems for multiple brands/Web sites and how specific user-scenarios are key to making flexible solutions. Is it possible to create a single design system that powers wildly different-looking brands and experiences? The answer is yes! But why would you want to? Style Guides, Pattern Libraries, Design Systems, what are they? Where do the lines blur? And how can both designers and developers of interfaces benefit from them? Color is a core building block of any design system. This article focuses on how to make themable, flexible, WCAG 2.0 compliant color ramps for a design system. There’s been a lot of great writing about the craft of design systems. Much less has been written about what it’s like to support and invest in a design system from the perspective of design management.",
+      "metadata": {
+        "startIndex": 4411,
+        "endIndex": 5410,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "what it’s like to support and invest in a design system from the perspective of design management. Visual examples are the most essential element of effective component doc. How do you best render, arrange, label, and order each one to with effective content (but not embedded guidelines!) to enable quick use and experimentation? As our company and system scales, it’s important that Design System team members have a common approach to attending and operating office hours. Office hours are our most direct channel of input from the product teams we serve, making it an important part of our work. The power of tools such as Figma Components reaches its peak of performance if as a designer, one can dominate its flexibility within a process one feels confident in following. One of the best things about Figma’s component system is that you can access the layer stack of every instance of a component. This helps keep components contained and reduces the number of components required.",
+      "metadata": {
+        "startIndex": 5310,
+        "endIndex": 6300,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "of a component. This helps keep components contained and reduces the number of components required. As designers and frontend developers, we can be so caught up in evangelizing UI consistency that we become blind to the single point of failure in front of us. This article talks about why design systems collapse and how maintenance stops that from happening. With hundreds of engineers, developers and designers, ensuring visual consistency across Yelp is a challenging task. We’ve been migrating our web components from Yelp Cheetah to React to increase designer and developer productivity while ensuring visual consistency. We realized that ultimately for our systems to succeed long-term, they needed to be thought of as everyone’s responsibility. It became clear our role as a team should also be to help everyone contribute to our evolving system with the big picture in mind. As projects and teams grow, management becomes increasingly difficult.",
+      "metadata": {
+        "startIndex": 6200,
+        "endIndex": 7154,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ith the big picture in mind. As projects and teams grow, management becomes increasingly difficult. Let’s examine how design language systems make life easier in such situations. How we built an Atomic design system with Sketch libraries at Capital Float. Also, some lessons we learned while building an atomic design system. Redesigns only work when co-owned by designers and developers. We cultivated this co-ownership, in large part, by building good tools and documentation. You can’t build working software out of screenshots and Sketch files. At the heart of any great design system is a reusable set of UI components that product teams can reach for to build actual software. Designing components, maintaining consistency and building a harmonious system is a challenge. This is where the understanding of basic elements – space, size and style can help us. For those of you deep in the trenches, I wanted to share a couple of things that have made my life immeasurably easier when creating",
+      "metadata": {
+        "startIndex": 7054,
+        "endIndex": 8052,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "ches, I wanted to share a couple of things that have made my life immeasurably easier when creating and maintaining our shared components with Sketch. Design tokens allow product teams to better collaborate and ensure brand consistency across any platform. Design tokens are central and tiny pieces of UI information such as colors, fonts, spacing, etc. Drag and drop interactions are often overlooked or go unnoticed. Sometimes they happen so naturally that you don’t even realize it. But if you look closely, there are many different UX standards around drag and drop. We learned that the best way to create consistent, functional, and delightful product experiences is to make the lives of those who build those experiences much easier. Here are some of the decisions we arrived at and lessons we learned as we put our design system into a Library. Since launch, we’ve received a lot of feedback on how much time has been saved by using the library.",
+      "metadata": {
+        "startIndex": 7952,
+        "endIndex": 8905,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ince launch, we’ve received a lot of feedback on how much time has been saved by using the library. I wanted to take the time to document what I have learned about leading a design system and design systems in general over the past year so that I can be intentional about my efforts to improve in 2018. We have an incredible design team. One of the best things we’ve done in collaborating with them was shifting from page-based to component-based design. I’d like to share a bit about how we came to that decision. Design systems are standalone products, and have proven to be very effective means of design-driven development. However, in order for a design system to succeed, everyone needs to get on board. Building on-brand, quality and consistent digital products at scale is hard. You need a source of truth. You need to lay strong foundations — then use them to sustainably build (or repair existing) products and design systems.",
+      "metadata": {
+        "startIndex": 8805,
+        "endIndex": 9742,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "foundations — then use them to sustainably build (or repair existing) products and design systems. If you find yourself tasked with creating some new components for your design system try out CSS Grid. It really feels like the possibilities are endless in terms of layout for the web. Your spacing system should be easily defined and applied to designs. Understood by designers and developers alike. And be able to change without breaking. We took the initial step towards establishing our own system by creating a pattern library of reusable components that can be shared and reused across the application. This is a set of guidelines, based on our implementation of a style guide / component library. This 05 not translate directly for you, and is only one possible solution. The success of a design system built for collaboration and in the open source space asks people to donate their time and effort to the project.",
+      "metadata": {
+        "startIndex": 9642,
+        "endIndex": 10565,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "laboration and in the open source space asks people to donate their time and effort to the project. We must ensure that effort and time is not wasted because of lacking communication. We were all trying to do our best but it had become unnecessarily hard to create great products. So Button’s design team set out to solve these issues by creating a design language system. We have incorporated several different advanced override methods you can use to speed the process of building prototypes. These advanced tips should dramatically increase the speed of prototyping. A unified design system is essential to building better and faster; better because a cohesive experience is more easily understood by our users, and faster because it gives us a common language to work with. You can think of our system so far as a tree, with its most primitive elements at the bottom, comprising our atomic elements.",
+      "metadata": {
+        "startIndex": 10465,
+        "endIndex": 11369,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "m so far as a tree, with its most primitive elements at the bottom, comprising our atomic elements. These atoms are composed into components, and further composed to create patterns, which are common solutions to common problems. Many people, though, use the terms interchangeably when they are, in fact, different concepts. Let’s take a few minutes to explore their differences. Not every experience across every Facebook business and consumer product strikes a perfect balance between distinctiveness and unity with the overall Facebook experience. But the visual system has helped us make a big leap toward that goal. Whilst the initial period of designing and developing a pattern library take a while, the benefits that follow will save time and improve the code base. Design-system builders should resist the lure of the new. Don’t confuse design-system work with a rebrand or a tech-stack overhaul. The system’s design patterns should be familiar, even boring.",
+      "metadata": {
+        "startIndex": 11269,
+        "endIndex": 12237,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "h a rebrand or a tech-stack overhaul. The system’s design patterns should be familiar, even boring. UI methodologies like Atomic Design bring logic and structure to individual screens. Now it’s time to extend that thinking to every aspect of your product. An article about how we created a design system at WeWork. I’ll share insight into our process, product design, the tools we used to create and implement the system, and also how we document and share the system with our team. Our modern workflow has matured over time to include design systems that help us stay organized and consistent. But why are we still treating animation like a second-class citizen? Probably because we don’t really consider its power. Nathan Curtis give us 10 practical and insightful tips regarding design tokens to architect and implement design decisions for your team. On the surface, this is the story of how Asana went from a logo with three circles to a logo… with three circles.",
+      "metadata": {
+        "startIndex": 12137,
+        "endIndex": 13106,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": ", this is the story of how Asana went from a logo with three circles to a logo… with three circles. It's also a story of how they established a new brand design system at Asana. ## Links [Gustavo RibeiroThe Complete Guide About Design SystemsMy main learnings as a developer in design systems projects from engineering, design, and management aspects and build an entire design system from scratch.August 23, 2020](https://medium.com/ci-t/the-complete-guide-about-design-systems-engineering-cd332cf520f2) [Raphael FleckensteinBuilding a Design System for 500,000+ Users at RyteIn this article we want to share the lessons we learned building our design system and how we dramatically increased the velocity of our design process with it by 8x.May 23, 2018](https://medium.com/ryte/building-a-design-system-for-500-000-users-at-ryte-1a5ca8bda992) [Rahul ChakrabortyBuilding a Color Palette FrameworkIn this article, we will discuss techniques to define a set of rules to generate color variations,",
+      "metadata": {
+        "startIndex": 13006,
+        "endIndex": 14003,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "kIn this article, we will discuss techniques to define a set of rules to generate color variations, that can scale to a larger spectrum of usage and also could be applied across any brand palette.April 19, 2018](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries) [Ted GoasRandom Thoughts on Design Systems from Recent ExperienceFor the last 12 months, the product design team at Stack Overflow has been working on a design system. Here are some random thoughts about design systems.April 18, 2018](https://medium.com/@tedgoas/random-thoughts-on-design-systems-from-recent-experience-d96ae4203aa9) [Jon RohanUsing Figma Designs to Build the Octicons Icon libraryRecently our friends at Figma announced their new Figma platform, and we’ve been really excited about its potential. We’ve immediately put the platform to use with Octicons, our SVG icon library.April 12, 2018](https://blog.github.com/2018-04-12/driving-changes-from-designs/) [Julie NergararianDistributing",
+      "metadata": {
+        "startIndex": 13903,
+        "endIndex": 14896,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "8](https://blog.github.com/2018-04-12/driving-changes-from-designs/) [Julie NergararianDistributing Scalable Sketch LibrariesHow can we build complex symbols, distribute them and keep changes in sync with all of our users? If you have insight into better managing and distributing design systems, let us know.April 11, 2018](https://uxplanet.org/distributing-scalable-sketch-libraries-ed642f9d3d0a) [Sonja Sarah PorterDesign Systems — In the WildThe most developed design systems are the ideal of what we want our products to be — holistic, systematic and well-documented wonders. But the truth is, many of these well-intentioned design systems fail in the end.April 10, 2018](https://blogg.bekk.no/design-systems-in-the-wild-7b7ce817c6d4) [Robin RendleDesign Systems at GustoAt Gusto we’ve been building our design system for the past two years and thinking about how to scale our product and design process across multiple complex projects and teams.April 10,",
+      "metadata": {
+        "startIndex": 14796,
+        "endIndex": 15758,
+        "chunkIndex": 17,
+        "section": "Content",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "ut how to scale our product and design process across multiple complex projects and teams.April 10, 2018](https://medium.com/gusto-design/design-systems-at-gusto-a710543b2c93) [Luke WroblewskiScenario-Driven Design SystemsIn her presentation at An Event Apart in Seattle, Yesenia Perez-Cruz shared lessons learned building design systems for multiple brands/Web sites and how specific user-scenarios are key to making flexible solutions.April 2, 2018](https://www.lukew.com/ff/entry.asp?1989) [Brad FrostCreating Themeable Design SystemsIs it possible to create a single design system that powers wildly different-looking brands and experiences? The answer is yes! But why would you want to?April 2, 2018](http://bradfrost.com/blog/post/creating-themeable-design-systems/) [Jack DaviesPattern LibrariesStyle Guides, Pattern Libraries, Design Systems, what are they? Where do the lines blur? And how can both designers and developers of interfaces benefit from them?April 2,",
+      "metadata": {
+        "startIndex": 15658,
+        "endIndex": 16632,
+        "chunkIndex": 18,
+        "section": "Content",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "the lines blur? And how can both designers and developers of interfaces benefit from them?April 2, 2018](https://medium.com/@whatjackhasmade/pattern-libraries-abcc45c6144c) [Jeeyoung JungDesigning Systematic ColorsColor is a core building block of any design system. This article focuses on how to make themable, flexible, WCAG 2.0 compliant color ramps for a design system.March 27, 2018](https://uxplanet.org/designing-systematic-colors-b5d2605b15c) [Ryan DonahueBuilding a Successful Design System — 3 Lessons for Design ManagersThere’s been a lot of great writing about the craft of design systems. Much less has been written about what it’s like to support and invest in a design system from the perspective of design management.March 26, 2018](https://medium.com/zendesk-creative-blog/building-a-successful-design-system-3-lessons-for-design-managers-926a87cbbe74) [Nathan CurtisComponent ExamplesVisual examples are the most essential element of effective component doc.",
+      "metadata": {
+        "startIndex": 16532,
+        "endIndex": 17511,
+        "chunkIndex": 19,
+        "section": "Content",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "CurtisComponent ExamplesVisual examples are the most essential element of effective component doc. How do you best render, arrange, label, and order each one to with effective content (but not embedded guidelines!) to enable quick use and experimentation?March 24, 2018](https://medium.com/eightshapes-llc/component-examples-9c4b3bb3b308) [Daniel EdenDesign Systems Office Hours PlaybookAs our company and system scales, it’s important that Design System team members have a common approach to attending and operating office hours. Office hours are our most direct channel of input from the product teams we serve, making it an important part of our work.March 22, 2018](https://github.com/daneden/design-systems-office-hours-playbook) [João AraújoDesign System for Figma - The Power of Dynamic ElementsThe power of tools such as Figma Components reaches its peak of performance if as a designer, one can dominate its flexibility within a process one feels confident in following.March 17,",
+      "metadata": {
+        "startIndex": 17411,
+        "endIndex": 18402,
+        "chunkIndex": 20,
+        "section": "Content",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "igner, one can dominate its flexibility within a process one feels confident in following.March 17, 2018](https://medium.com/@juauz/design-system-for-figma-the-power-of-dynamic-elements-4ca4dc3e4524) [Thomas LowryComponent Architecture in FigmaOne of the best things about Figma’s component system is that you can access the layer stack of every instance of a component. This helps keep components contained and reduces the number of components required.March 14, 2018](https://blog.figma.com/component-architecture-in-figma-f16ae9cc4481) [Dominic NguyenWhy Design Systems are a Single Point of FailureAs designers and frontend developers, we can be so caught up in evangelizing UI consistency that we become blind to the single point of failure in front of us. This article talks about why design systems collapse and how maintenance stops that from happening.March 13, 2018](https://blog.hichroma.com/why-design-systems-are-a-single-point-of-failure-ec9d30c107c2?token=WLU_YEWyJY6PUVxc) [Theresa",
+      "metadata": {
+        "startIndex": 18302,
+        "endIndex": 19300,
+        "chunkIndex": 21,
+        "section": "Content",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": ".com/why-design-systems-are-a-single-point-of-failure-ec9d30c107c2?token=WLU_YEWyJY6PUVxc) [Theresa MaCSS in the Age of React - How We Traded the Cascade for ConsistencyWith hundreds of engineers, developers and designers, ensuring visual consistency across Yelp is a challenging task. We’ve been migrating our web components from Yelp Cheetah to React to increase designer and developer productivity while ensuring visual consistency.March 5, 2018](https://engineeringblog.yelp.com/2018/03/css-in-the-age-of-react.html) [Magera MoonThe People Part of Design SystemsWe realized that ultimately for our systems to succeed long-term, they needed to be thought of as everyone’s responsibility. It became clear our role as a team should also be to help everyone contribute to our evolving system with the big picture in mind.February 28, 2018](https://medium.com/related-works-inc/the-people-part-of-design-systems-a5b54eea24f4) [Hamza ErbayDesign Language Systems - Why Your Team Needs One and How to",
+      "metadata": {
+        "startIndex": 19200,
+        "endIndex": 20198,
+        "chunkIndex": 22,
+        "section": "Content",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "sign-systems-a5b54eea24f4) [Hamza ErbayDesign Language Systems - Why Your Team Needs One and How to Build itAs projects and teams grow, management becomes increasingly difficult. Let’s examine how design language systems make life easier in such situations.February 9, 2018](https://medium.freecodecamp.org/design-language-system-why-your-team-needs-one-and-how-to-built-it-d996ba8c3889) [Pratik ShahBuild an Atomic Design System with Sketch LibrariesHow we built an Atomic design system with Sketch libraries at Capital Float. Also, some lessons we learned while building an atomic design system.February 6, 2018](https://medium.com/sketch-app-sources/atomic-design-system-with-sketch-libraries-e06e3b1f8302) [Julie NergararianHow to Gain Widespread Adoption of Your Design SystemRedesigns only work when co-owned by designers and developers. We cultivated this co-ownership, in large part, by building good tools and documentation.February 5,",
+      "metadata": {
+        "startIndex": 20098,
+        "endIndex": 21043,
+        "chunkIndex": 23,
+        "section": "Content",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "e cultivated this co-ownership, in large part, by building good tools and documentation.February 5, 2018](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries) [Brad FrostYour Sketch Library is Not a Design SystemYou can’t build working software out of screenshots and Sketch files. At the heart of any great design system is a reusable set of UI components that product teams can reach for to build actual software.February 2, 2018](http://bradfrost.com/blog/post/your-sketch-library-is-not-a-design-system/) [Nayan SutharSpace, Size & StyleDesigning components, maintaining consistency and building a harmonious system is a challenge. This is where the understanding of basic elements – space, size and style can help us.January 30, 2018](https://medium.com/@nynsuthar/space-size-style-aba80f820716) [Buzz Usborne(More) Tips for Building Your Sketch UI LibraryFor those of you deep in the trenches, I wanted to share a couple of things that have made my life immeasurably",
+      "metadata": {
+        "startIndex": 20943,
+        "endIndex": 21938,
+        "chunkIndex": 24,
+        "section": "Content",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "you deep in the trenches, I wanted to share a couple of things that have made my life immeasurably easier when creating and maintaining our shared components with Sketch.January 18, 2018](https://medium.com/help-scout/more-tips-for-building-your-sketch-ui-library-975a44416f59) [Louis ChenaisDesign Tokens for DummiesDesign tokens allow product teams to better collaborate and ensure brand consistency across any platform. Design tokens are central and tiny pieces of UI information such as colors, fonts, spacing, etc.January 17, 2018](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71) [Grace NohDrag and Drop for Design SystemsDrag and drop interactions are often overlooked or go unnoticed. Sometimes they happen so naturally that you don’t even realize it. But if you look closely, there are many different UX standards around drag and drop.January 12, 2018](https://uxdesign.cc/drag-and-drop-for-design-systems-8d40502eb26d) [Mariah MuscatoHow Building a Design System Empowers Your",
+      "metadata": {
+        "startIndex": 21838,
+        "endIndex": 22837,
+        "chunkIndex": 25,
+        "section": "Content",
+        "globalChunkIndex": 25
+      }
+    },
+    {
+      "id": "chunk-26",
+      "text": "and-drop-for-design-systems-8d40502eb26d) [Mariah MuscatoHow Building a Design System Empowers Your Team to Focus on People — Not PixelsWe learned that the best way to create consistent, functional, and delightful product experiences is to make the lives of those who build those experiences much easier.January 9, 2018](https://medium.com/hubspot-product/people-over-pixels-b962c359a14d) [Michael FouquetBuilding Our Sketch LibraryHere are some of the decisions we arrived at and lessons we learned as we put our design system into a Library. Since launch, we’ve received a lot of feedback on how much time has been saved by using the library.January 3, 2018](https://medium.com/in-the-hudl/building-our-sketch-library-cd8c925e566) [Jeff CrossmanWhat I Learned About Leading a Design System in 2017I wanted to take the time to document what I have learned about leading a design system and design systems in general over the past year so that I can be intentional about my efforts to improve in",
+      "metadata": {
+        "startIndex": 22737,
+        "endIndex": 23733,
+        "chunkIndex": 26,
+        "section": "Content",
+        "globalChunkIndex": 26
+      }
+    },
+    {
+      "id": "chunk-27",
+      "text": "n systems in general over the past year so that I can be intentional about my efforts to improve in 2018.January 2, 2018](https://publication.design.systems/what-i-learned-about-leading-a-design-system-in-2017-46b85e9d7eab) [Alan B SmithComponent-Based DesignWe have an incredible design team. One of the best things we’ve done in collaborating with them was shifting from page-based to component-based design. I’d like to share a bit about how we came to that decision.December 26, 2017](https://medium.com/@_alanbsmith/component-based-design-168811e0c4ab) [Una KravetsWhy Design Systems FailDesign systems are standalone products, and have proven to be very effective means of design-driven development. However, in order for a design system to succeed, everyone needs to get on board.December 14, 2017](https://24ways.org/2017/why-design-systems-fail/) [Andrew CouldwellLaying the Foundations for System DesignBuilding on-brand, quality and consistent digital products at scale is hard.",
+      "metadata": {
+        "startIndex": 23633,
+        "endIndex": 24623,
+        "chunkIndex": 27,
+        "section": "Content",
+        "globalChunkIndex": 27
+      }
+    },
+    {
+      "id": "chunk-28",
+      "text": "tions for System DesignBuilding on-brand, quality and consistent digital products at scale is hard. You need a source of truth. You need to lay strong foundations — then use them to sustainably build (or repair existing) products and design systems.December 12, 2017](https://medium.com/owl-studios/laying-the-foundations-7e503ef2120f) [Stuart RobsonDesign Systems and CSS GridIf you find yourself tasked with creating some new components for your design system try out CSS Grid. It really feels like the possibilities are endless in terms of layout for the web.December 12, 2017](https://24ways.org/2017/design-systems-and-css-grid/) [EtherGenerating Design System SpacingYour spacing system should be easily defined and applied to designs. Understood by designers and developers alike. And be able to change without breaking.December 8, 2017](https://medium.com/@ethersystem/generating-design-system-spacing-aa69714160bc) [Taurie DavisScaling Design - The Start of System ThinkingWe took the",
+      "metadata": {
+        "startIndex": 24523,
+        "endIndex": 25517,
+        "chunkIndex": 28,
+        "section": "Content",
+        "globalChunkIndex": 28
+      }
+    },
+    {
+      "id": "chunk-29",
+      "text": "-system-spacing-aa69714160bc) [Taurie DavisScaling Design - The Start of System ThinkingWe took the initial step towards establishing our own system by creating a pattern library of reusable components that can be shared and reused across the application.December 7, 2017](https://about.gitlab.com/2017/12/12/gitlab-design-library/) [Milan TailorHow to Build a Component Library / Style Guide with FigmaThis is a set of guidelines, based on our implementation of a style guide / component library. This 05 not translate directly for you, and is only one possible solution.December 5, 2017](https://blog.prototypr.io/how-to-build-a-component-library-style-guide-with-figma-9064b6c7fe4) [Dominik WilkowskiSetting Up a Healthy, Thriving Open-Source Community Around a Design SystemThe success of a design system built for collaboration and in the open source space asks people to donate their time and effort to the project.",
+      "metadata": {
+        "startIndex": 25417,
+        "endIndex": 26339,
+        "chunkIndex": 29,
+        "section": "Content",
+        "globalChunkIndex": 29
+      }
+    },
+    {
+      "id": "chunk-30",
+      "text": "laboration and in the open source space asks people to donate their time and effort to the project. We must ensure that effort and time is not wasted because of lacking communication.November 29, 2017](https://medium.com/@wilkowskidom/setting-up-a-healthy-thriving-open-source-community-around-a-design-system-d96e86fb6da4) [Patrick N. LewisDesign Language SystemWe were all trying to do our best but it had become unnecessarily hard to create great products. So Button’s design team set out to solve these issues by creating a design language system.October 15, 2017](https://medium.com/patricknlewis/design-language-system-23223dd86b54) [Rahul ChakrabortyAdvanced Tips with the Clarity UI LibraryWe have incorporated several different advanced override methods you can use to speed the process of building prototypes. These advanced tips should dramatically increase the speed of prototyping.September 11,",
+      "metadata": {
+        "startIndex": 26239,
+        "endIndex": 27147,
+        "chunkIndex": 30,
+        "section": "Content",
+        "globalChunkIndex": 30
+      }
+    },
+    {
+      "id": "chunk-31",
+      "text": "prototypes. These advanced tips should dramatically increase the speed of prototyping.September 11, 2017](https://medium.com/claritydesignsystem/advanced-tips-with-the-clarity-ui-template-da7e594581ef) [Karri SaarinenBuilding a Visual LanguageA unified design system is essential to building better and faster; better because a cohesive experience is more easily understood by our users, and faster because it gives us a common language to work with.September 7, 2017](https://airbnb.design/building-a-visual-language/) [Daniel EdenDesign System StructureYou can think of our system so far as a tree, with its most primitive elements at the bottom, comprising our atomic elements. These atoms are composed into components, and further composed to create patterns, which are common solutions to common problems.July 17, 2017](https://daneden.me/2017/07/17/design-system-structure/) [Ste GrainerDesign Systems, Style Guides, and Pattern Libraries - Oh My!Many people, though, use the terms",
+      "metadata": {
+        "startIndex": 27047,
+        "endIndex": 28035,
+        "chunkIndex": 31,
+        "section": "Content",
+        "globalChunkIndex": 31
+      }
+    },
+    {
+      "id": "chunk-32",
+      "text": "ainerDesign Systems, Style Guides, and Pattern Libraries - Oh My!Many people, though, use the terms interchangeably when they are, in fact, different concepts. Let’s take a few minutes to explore their differences.July 17, 2017](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries) [Cathy LoDesigning a Visual System at ScaleNot every experience across every Facebook business and consumer product strikes a perfect balance between distinctiveness and unity with the overall Facebook experience. But the visual system has helped us make a big leap toward that goal.June 7, 2017](https://medium.com/elegant-tools/designing-a-visual-system-at-scale-d275259e17d) [Natasha HockeyPattern LibraryWhilst the initial period of designing and developing a pattern library take a while, the benefits that follow will save time and improve the code base.May 31, 2017](https://blog.prototypr.io/pattern-libraries-5d627c5c65b4) [Josh ClarkThe Most Exciting Design Systems are",
+      "metadata": {
+        "startIndex": 27935,
+        "endIndex": 28919,
+        "chunkIndex": 32,
+        "section": "Content",
+        "globalChunkIndex": 32
+      }
+    },
+    {
+      "id": "chunk-33",
+      "text": "//blog.prototypr.io/pattern-libraries-5d627c5c65b4) [Josh ClarkThe Most Exciting Design Systems are BoringDesign-system builders should resist the lure of the new. Don’t confuse design-system work with a rebrand or a tech-stack overhaul. The system’s design patterns should be familiar, even boring.April 3, 2017](https://bigmedium.com/ideas/boring-design-systems.html) [Emmet ConnollyThe Full Stack Design SytemUI methodologies like Atomic Design bring logic and structure to individual screens. Now it’s time to extend that thinking to every aspect of your product.April 3, 2017](https://blog.intercom.com/the-full-stack-design-system/) [Andrew CouldwellCreating and Documenting a Product Design SystemAn article about how we created a design system at WeWork. I’ll share insight into our process, product design, the tools we used to create and implement the system, and also how we document and share the system with our team.January 25,",
+      "metadata": {
+        "startIndex": 28819,
+        "endIndex": 29761,
+        "chunkIndex": 33,
+        "section": "Content",
+        "globalChunkIndex": 33
+      }
+    },
+    {
+      "id": "chunk-34",
+      "text": "e and implement the system, and also how we document and share the system with our team.January 25, 2017](https://medium.com/owl-studios/plasma-design-system-4d63fb6c1afc) [Sarah DrasnerAnimation in Design SystemsOur modern workflow has matured over time to include design systems that help us stay organized and consistent. But why are we still treating animation like a second-class citizen? Probably because we don’t really consider its power.December 16, 2016](https://24ways.org/2016/animation-in-design-systems/) [Nathan CurtisTokens in Design SystemsNathan Curtis give us 10 practical and insightful tips regarding design tokens to architect and implement design decisions for your team.June 24, 2016](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421) [Micah DaigleCircling Ourselves - The Story Behind Asana’s RebrandOn the surface, this is the story of how Asana went from a logo with three circles to a logo… with three circles.",
+      "metadata": {
+        "startIndex": 29661,
+        "endIndex": 30624,
+        "chunkIndex": 34,
+        "section": "Content",
+        "globalChunkIndex": 34
+      }
+    },
+    {
+      "id": "chunk-35",
+      "text": ", this is the story of how Asana went from a logo with three circles to a logo… with three circles. It's also a story of how they established a new brand design system at Asana.October 1, 2015](https://medium.com/building-asana/circling-ourselves-the-story-behind-asana-s-rebrand-e8247516705a)",
+      "metadata": {
+        "startIndex": 30524,
+        "endIndex": 31524,
+        "chunkIndex": 35,
+        "section": "Content",
+        "globalChunkIndex": 35
+      }
+    }
+  ],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "design-systems",
+      "articles",
+      "best-practices"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T13:22:13.336Z",
+    "system": "Design Systems Repo",
+    "source_url": "https://designsystemsrepo.com/articles/"
+  }
+}
