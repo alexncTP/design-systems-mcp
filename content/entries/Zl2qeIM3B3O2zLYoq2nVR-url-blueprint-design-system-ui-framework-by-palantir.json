@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/palantir",
     "ingested_at": "2025-08-30T13:09:54.145Z"
   },
-  "content": "# Palantir Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Blueprint from Directories: Components: Blueprint Design System is a specialized toolkit by Palantir Technologies, optimized for building complex data-dense interfaces for desktop applications. Design System includes a wide component library and documetation. While lacking comprehensive color, font, and accessibility details, Blueprint provides valuable class and variable guidance and guidlines for select elements, tables, and date pickers. Advertisement Accessibility View source Color System Repository Icons Tokens Typography Alert banner App bar Autocomplete Breadcrumb Button Button group Cards Checkbox Data table Date picker Dialog Divider Drawer Empty state Form Icon Label Menus Popover Progress bar Progress indicator Radio button Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view",
+  "content": "Blueprint from Directories: Components: Blueprint Design System is a specialized toolkit by Palantir Technologies, optimized for building complex data-dense interfaces for desktop applications. Design System includes a wide component library and documetation. While lacking comprehensive color, font, and accessibility details, Blueprint provides valuable class and variable guidance and guidlines for select elements, tables, and date pickers. Accessibility Color System Repository Icons Tokens Typography Alert banner App bar Autocomplete Breadcrumb Button Button group Cards Checkbox Data table Date picker Dialog Divider Drawer Empty state Form Icon Label Menus Popover Progress bar Progress indicator Radio button Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Palantir Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Blueprint from Directories: Components: Blueprint Design System is a specialized toolkit by Palantir Technologies, optimized for building complex data-dense interfaces for desktop applications.",
+      "text": "Blueprint from Directories: Components: Blueprint Design System is a specialized toolkit by Palantir Technologies, optimized for building complex data-dense interfaces for desktop applications. Design System includes a wide component library and documetation. While lacking comprehensive color, font, and accessibility details, Blueprint provides valuable class and variable guidance and guidlines for select elements, tables, and date pickers. Accessibility Color System Repository Icons Tokens Typography Alert banner App bar Autocomplete Breadcrumb Button Button group Cards Checkbox Data table Date picker Dialog Divider Drawer Empty state Form Icon Label Menus Popover Progress bar Progress indicator Radio button Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 968,
+        "endIndex": 796,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,112 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "cribe Blueprint from Directories: Components: Blueprint Design System is a specialized toolkit by Palantir Technologies, optimized for building complex data-dense interfaces for desktop applications. Design System includes a wide component library and documetation. While lacking comprehensive color, font, and accessibility details, Blueprint provides valuable class and variable guidance and guidlines for select elements, tables, and date pickers. Advertisement Accessibility View source Color System Repository Icons Tokens Typography Alert banner App bar Autocomplete Breadcrumb Button Button group Cards Checkbox Data table Date picker Dialog Divider Drawer Empty state Form Icon Label Menus Popover Progress bar Progress indicator Radio button Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view",
+      "text": "te picker Dialog Divider Drawer Empty state Form Icon Label Menus Popover Progress bar Progress indicator Radio button Select Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view",
       "metadata": {
-        "startIndex": 768,
-        "endIndex": 1769,
+        "startIndex": 600,
+        "endIndex": 796,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "ext field Tooltip Tree view",
-      "metadata": {
-        "startIndex": 1569,
-        "endIndex": 2568,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "electric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
-      "metadata": {
-        "startIndex": 2368,
-        "endIndex": 3324,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [BlueprintfromPalantir](./palantir#up-pixel) [Source](https://blueprintjs.com/docs/) [Repository](https://github.com/palantir/blueprint) [Accessibility](../directories/accessibility) [View source](https://blueprintjs.com/docs/#core/accessibility) [Color System](../directories/color-system) [View source](https://blueprintjs.com/docs/#core/colors) [Repository](../directories/repository) [View",
-      "metadata": {
-        "startIndex": 3124,
-        "endIndex": 4083,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "e](https://blueprintjs.com/docs/#core/accessibility) [Color System](../directories/color-system) [View source](https://blueprintjs.com/docs/#core/colors) [Repository](../directories/repository) [View source](https://github.com/palantir/blueprint) [Icons](../directories/icons) [View source](https://blueprintjs.com/docs/#icons/icons-list) [Tokens](../directories/tokens) [View source](https://blueprintjs.com/docs/#core/variables) [Typography](../directories/typography) [View source](https://blueprintjs.com/docs/#core/typography) [Alert banner](../components/alert-banner) [View source](https://blueprintjs.com/docs/#core/components/alert) [App bar](../components/app-bar) [View source](https://blueprintjs.com/docs/#core/components/navbar) [Autocomplete](../components/autocomplete) [View source](https://blueprintjs.com/docs/#select/suggest) [Breadcrumb](../components/breadcrumbs) [View source](https://blueprintjs.com/docs/#core/components/breadcrumbs) [Button](../components/button) [View",
-      "metadata": {
-        "startIndex": 3883,
-        "endIndex": 4879,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "ce](https://blueprintjs.com/docs/#select/suggest) [Breadcrumb](../components/breadcrumbs) [View source](https://blueprintjs.com/docs/#core/components/breadcrumbs) [Button](../components/button) [View source](https://blueprintjs.com/docs/#core/components/buttons) [Button group](../components/button-group) [View source](https://blueprintjs.com/docs/#core/components/button-group) [Cards](../components/cards) [View source](https://blueprintjs.com/docs/#core/components/card) [Checkbox](../components/checkbox) [View source](https://blueprintjs.com/docs/#core/components/checkbox) [Data table](../components/data-table) [View source](https://blueprintjs.com/docs/#table) [Date picker](../components/date-picker) [View source](https://blueprintjs.com/docs/#datetime/datepicker) [Dialog](../components/dialog) [View source](https://blueprintjs.com/docs/#core/components/dialog) [Divider](../components/divider) [View source](https://blueprintjs.com/docs/#core/components/divider)",
-      "metadata": {
-        "startIndex": 4679,
-        "endIndex": 5656,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "Dialog](../components/dialog) [View source](https://blueprintjs.com/docs/#core/components/dialog) [Divider](../components/divider) [View source](https://blueprintjs.com/docs/#core/components/divider) [Drawer](../components/drawer) [View source](https://blueprintjs.com/docs/#core/components/drawer) [Empty state](../components/empty-state) [View source](https://blueprintjs.com/docs/#core/components/non-ideal-state) [Form](../components/form) [View source](https://blueprintjs.com/docs/#core/components/form-group) [Icon](../directories/icons) [View source](https://blueprintjs.com/docs/#core/components/icon) [Label](../components/label) [View source](https://blueprintjs.com/docs/#core/components/label) [Menus](../components/menus) [View source](https://blueprintjs.com/docs/#core/components/menu) [Popover](../components/popover) [View source](https://blueprintjs.com/docs/#core/components/popover) [Progress bar](../components/progress-bar) [View",
-      "metadata": {
-        "startIndex": 5456,
-        "endIndex": 6409,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "ps://blueprintjs.com/docs/#core/components/menu) [Popover](../components/popover) [View source](https://blueprintjs.com/docs/#core/components/popover) [Progress bar](../components/progress-bar) [View source](https://blueprintjs.com/docs/#core/components/progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://blueprintjs.com/docs/#core/components/spinner) [Radio button](../components/radio-button) [View source](https://blueprintjs.com/docs/#core/components/radio) [Select](../components/select) [View source](https://blueprintjs.com/docs/#select/select-component) [Slider](../components/slider) [View source](https://blueprintjs.com/docs/#core/components/sliders) [Snackbar](../components/snackbar) [View source](https://blueprintjs.com/docs/#core/components/toast) [Switch](../components/switch) [View source](https://blueprintjs.com/docs/#core/components/switch) [Tabs](../components/tabs) [View source](https://blueprintjs.com/docs/#core/components/tabs)",
-      "metadata": {
-        "startIndex": 6209,
-        "endIndex": 7205,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "/toast) [Switch](../components/switch) [View source](https://blueprintjs.com/docs/#core/components/switch) [Tabs](../components/tabs) [View source](https://blueprintjs.com/docs/#core/components/tabs) [Tag](../components/tag) [View source](https://blueprintjs.com/docs/#core/components/tag) [Text area](../components/text-area) [View source](https://blueprintjs.com/docs/#core/components/text-area) [Text field](../components/text-field) [View source](https://blueprintjs.com/docs/#core/components/input-group) [Tooltip](../components/tooltip) [View source](https://blueprintjs.com/docs/#core/components/tooltip) [Tree view](../components/tree-view) [View source](https://blueprintjs.com/docs/#core/components/tree) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X",
-      "metadata": {
-        "startIndex": 7005,
-        "endIndex": 7990,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "ial Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 7790,
-        "endIndex": 8790,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
       }
     }
   ],

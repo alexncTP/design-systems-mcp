@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/components/button",
     "ingested_at": "2025-08-30T13:09:29.200Z"
   },
-  "content": "# Button Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Accordion Action bar Action button Action list Alert banner App bar Autocomplete Avatar Badges Bottom sheet Breadcrumbs Button group Cards Checkbox Chip Code snippet Combobox Data table Date picker Dialog Divider Drawer Dropdown Empty state Filter input Form Help text Icon Inline message Label Link List Menus Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view Keep up with the latest in Design Systems Subscribe Button is a reusable, interactive UI element that triggers a specific action when clicked. As a fundamental element of user interaction, it serves as an imperative tool for navigation, form submission, and functionality initiation. Consistent design and implementation of buttons ensure intuitive user experience, reducing cognitive load. Teams employ them in different states and styles to denote importance and purpose. These pre-defined styles are applied across different parts of a software application or website, ensuring efficient, harmonious design throughout. Advertisement in Design Systems Adobe Spectrum View source Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Brainly Pencil Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Samsung One UI Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Teamleader Ahoy Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas Zendesk Garden",
+  "content": "Button is a reusable, interactive UI element that triggers a specific action when clicked. As a fundamental element of user interaction, it serves as an imperative tool for navigation, form submission, and functionality initiation. Consistent design and implementation of buttons ensure intuitive user experience, reducing cognitive load. Teams employ them in different states and styles to denote importance and purpose. These pre-defined styles are applied across different parts of a software application or website, ensuring efficient, harmonious design throughout. in Design Systems Adobe Spectrum Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Brainly Pencil Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Samsung One UI Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Teamleader Ahoy Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas Zendesk Garden",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Button Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Accordion Action bar Action button Action list Alert banner App bar Autocomplete Avatar Badges Bottom sheet Breadcrumbs Button group Cards Checkbox Chip Code snippet Combobox Data table Date picker Dialog Divider Drawer Dropdown Empty state Filter input Form Help text Icon Inline message Label Link List Menus Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view Keep up with the latest in Design Systems Subscribe Button is a reusable, interactive UI element that triggers a specific action when clicked. As a fundamental element of user interaction, it serves as an imperative tool for navigation, form submission, and functionality initiation.",
+      "text": "Button is a reusable, interactive UI element that triggers a specific action when clicked. As a fundamental element of user interaction, it serves as an imperative tool for navigation, form submission, and functionality initiation. Consistent design and implementation of buttons ensure intuitive user experience, reducing cognitive load. Teams employ them in different states and styles to denote importance and purpose. These pre-defined styles are applied across different parts of a software application or website, ensuring efficient, harmonious design throughout. in Design Systems Adobe Spectrum Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Brainly Pencil Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic E",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 906,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,10 +21,10 @@
     },
     {
       "id": "chunk-1",
-      "text": "e UI element that triggers a specific action when clicked. As a fundamental element of user interaction, it serves as an imperative tool for navigation, form submission, and functionality initiation. Consistent design and implementation of buttons ensure intuitive user experience, reducing cognitive load. Teams employ them in different states and styles to denote importance and purpose. These pre-defined styles are applied across different parts of a software application or website, ensuring efficient, harmonious design throughout. Advertisement in Design Systems Adobe Spectrum View source Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Brainly Pencil Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges",
+      "text": "um Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Brainly Pencil Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Samsung One UI Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds Sum",
       "metadata": {
-        "startIndex": 706,
-        "endIndex": 1707,
+        "startIndex": 600,
+        "endIndex": 1400,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
@@ -32,222 +32,13 @@
     },
     {
       "id": "chunk-2",
-      "text": "cite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Samsung One UI Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Teamleader Ahoy Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas Zendesk Garden",
+      "text": "t Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Samsung One UI Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Teamleader Ahoy Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas Zendesk Garden",
       "metadata": {
-        "startIndex": 1507,
-        "endIndex": 2501,
+        "startIndex": 1200,
+        "endIndex": 1599,
         "chunkIndex": 2,
         "section": "Content",
         "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "esign .surf © Dzeya OÜ. All rights reserved",
-      "metadata": {
-        "startIndex": 2301,
-        "endIndex": 3279,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "sheetBottom sheet](./bottom-sheet) (./breadcrumbs) (./button) (./button-group) (./cards) (./checkbox) (./chip) (./code-snippet) (./combobox) (./data-table) (./date-picker) (./dialog) (./divider) (./drawer) (./dropdown) (./empty-state) (./filter-input) (./form) (./help-text) (./icon) (./inline-message) (./label) (./link) (./list) (./menus) (./modal) [Navigation barNavigation",
-      "metadata": {
-        "startIndex": 3079,
-        "endIndex": 4080,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "nline messageInline message](./inline-message) (./label) (./link) (./list) (./menus) (./modal) (./navigation-bar) [Page header Page header Page header](./page-header) (./pagination) (./popover) (./progress-bar) (./progress-indicator) (./radio-button) (./search) (./segmented-control) (./select) (./sidebar) (./slider) (./snackbar) (./switch) (./tabs) (./tag) (./text-area) (./text-field) (./tooltip)",
-      "metadata": {
-        "startIndex": 3880,
-        "endIndex": 4881,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": ") (./switch) (./tabs) (./tag) (./text-area) (./text-field) (./tooltip) (./tree-view) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Button69](./button#up-pixel) [AdobeSpectrum](../design-systems/adobe) [View source](https://spectrum.adobe.com/page/button) [Alaska AirlinesAuro](../design-systems/alaskaairlines) [View source](https://auro.alaskaair.com/components/auro/button) [AmazonCloudscape](../design-systems/amazon) [View source](https://cloudscape.design/components/button/?tabId=playground) [AppleHIG](../design-systems/apple) [View source](https://developer.apple.com/design/human-interface-guidelines/buttons) [AtlassianDesign System](../design-systems/atlassian) [View source](https://atlassian.design/components/button) [AudiDesign",
-      "metadata": {
-        "startIndex": 4681,
-        "endIndex": 5662,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "rce](https://developer.apple.com/design/human-interface-guidelines/buttons) [AtlassianDesign System](../design-systems/atlassian) [View source](https://atlassian.design/components/button) [AudiDesign System](../design-systems/audi) [View source](https://styleguide.audi.com/document/2442#/-/buttons) [BasisDesign System](../design-systems/basis) [View source](https://design.basis.com/components/buttons) [BiingsDesign System](../design-systems/biings) [View source](https://biings.design/#/button) [BrainlyPencil](../design-systems/brainly) [View source](https://design.brainly.com/8adfd5f36/p/10c2a5-button) [CarrefourMarcel](../design-systems/carrefour) [View source](https://carrefour.design/328eff0d7/p/46fd9d-button) [CBRE BuildBlocks](../design-systems/cbrebuild) [View source](https://blocks.cbrebuild.com/components/buttons) [DatadogDruids](../design-systems/datadog) [View source](https://druids.datadoghq.com/components/form/Button) [DellDesign System](../design-systems/dell) [View",
-      "metadata": {
-        "startIndex": 5462,
-        "endIndex": 6456,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "locks.cbrebuild.com/components/buttons) [DatadogDruids](../design-systems/datadog) [View source](https://druids.datadoghq.com/components/form/Button) [DellDesign System](../design-systems/dell) [View source](https://www.delldesignsystem.com/components/button/) [DocplannerWatson](../design-systems/docplanner) [View source](https://watson.docplanner.design/components/button) [eBayEvo](../design-systems/ebay) [View source](https://playbook.ebay.com/design-system/components/button) [ElasticDesign System](../design-systems/elastic) [View source](https://elastic.github.io/eui/#/navigation/button) [EsriCalcite](../design-systems/esri) [View source](https://developers.arcgis.com/calcite-design-system/components/button/) [General ElectricEdison](../design-systems/generalelectric) [View source](https://eds.gehealthcare.com/action-button?tab=0) [GithubPrimer](../design-systems/github) [View source](https://primer.style/design/components/button) [GitLabPajamas](../design-systems/gitlab) [View",
-      "metadata": {
-        "startIndex": 6256,
-        "endIndex": 7252,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "https://eds.gehealthcare.com/action-button?tab=0) [GithubPrimer](../design-systems/github) [View source](https://primer.style/design/components/button) [GitLabPajamas](../design-systems/gitlab) [View source](https://design.gitlab.com/components/button) [GoogleMaterial Design](../design-systems/google) [View source](https://m3.material.io/components/all-buttons) [GOV.UKDesign System](../design-systems/govuk) [View source](https://design-system.service.gov.uk/components/button/) [GustoWorkbench](../design-systems/gusto) [View source](https://workbench.gusto.com/components/button/) [Helly HansenDesign System](../design-systems/hellyhansen) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/87d730-buttons-20/b/48de8d) [IBMCarbon](../design-systems/ibm) [View source](https://carbondesignsystem.com/components/button/usage/) [IdeagenHelix](../design-systems/ideagen) [View source](https://www.helixui.com/9904796d6/p/25ea10-button---contained/b/90c25c) [INPSSirio](../design-systems/inps)",
-      "metadata": {
-        "startIndex": 7052,
-        "endIndex": 8052,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "ystem.com/components/button/usage/) [IdeagenHelix](../design-systems/ideagen) [View source](https://www.helixui.com/9904796d6/p/25ea10-button---contained/b/90c25c) [INPSSirio](../design-systems/inps) [View source](https://www.inps.design/3e7e2b0f5/p/7263cb-bottoni/b/32e1a2) [KajabiSage](../design-systems/kajabi) [View source](https://sage.kajabi.com/pages/component/button?tab=preview) [KiwicomOrbit](../design-systems/kiwicom) [View source](https://orbit.kiwi/components/action/button/) [Lemon SqueezyWedges](../design-systems/lemon-squeezy) [View source](https://www.lemonsqueezy.com/wedges/docs/components/button) [LineDesign System](../design-systems/line) [View source](https://designsystem.line.me/LDSG/components/buttons/action-button-en/) [LocalTapiolaDuet](../design-systems/localtapiola) [View source](https://www.duetds.com/components/button/) [MichelinMotion](../design-systems/michelin) [View source](https://designsystem.michelin.com/components/button) [MicrosoftFluent",
-      "metadata": {
-        "startIndex": 7852,
-        "endIndex": 8838,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
-      }
-    },
-    {
-      "id": "chunk-11",
-      "text": "localtapiola) [View source](https://www.duetds.com/components/button/) [MichelinMotion](../design-systems/michelin) [View source](https://designsystem.michelin.com/components/button) [MicrosoftFluent 2](../design-systems/microsoft) [View source](https://fluent2.microsoft.design/components/web/react/button/usage) [Monday.comVibe](../design-systems/mondaycom) [View source](https://style.monday.com/?path=/docs/buttons-button--docs) [MongoDBLeafyGreen](../design-systems/mongodb) [View source](https://www.mongodb.design/component/button/live-example) [MotorwayHighway Code](../design-systems/motorway) [View source](https://thc.motorway.co.uk/0566ad526/p/25cef8-button/b/7257c8) [MozillaProtocol](../design-systems/mozilla) [View source](https://protocol.mozilla.org/components/detail/button--primary) [NordhealthDesign System](../design-systems/nordhealth) [View source](https://nordhealth.design/components/button/) [OntarioDesign System](../design-systems/ontario) [View",
-      "metadata": {
-        "startIndex": 8638,
-        "endIndex": 9613,
-        "chunkIndex": 11,
-        "section": "Content",
-        "globalChunkIndex": 11
-      }
-    },
-    {
-      "id": "chunk-12",
-      "text": "nts/detail/button--primary) [NordhealthDesign System](../design-systems/nordhealth) [View source](https://nordhealth.design/components/button/) [OntarioDesign System](../design-systems/ontario) [View source](https://designsystem.ontario.ca/components/detail/buttons.html) [OrangeDesign System](../design-systems/orange) [View source](https://system.design.orange.com/0c1af118d/p/278ebc-buttons-standard) [PalantirBlueprint](../design-systems/palantir) [View source](https://blueprintjs.com/docs/#core/components/buttons) [PinterestGestalt](../design-systems/pinterest) [View source](https://gestalt.pinterest.systems/web/button) [PluralsightDesign System](../design-systems/pluralsight) [View source](https://design-system.pluralsight.com/components/button) [PorscheDesign System](../design-systems/porsche) [View source](https://designsystem.porsche.com/v3/components/button/examples) [RazorpayBlade](../design-systems/razorpay) [View",
-      "metadata": {
-        "startIndex": 9413,
-        "endIndex": 10349,
-        "chunkIndex": 12,
-        "section": "Content",
-        "globalChunkIndex": 12
-      }
-    },
-    {
-      "id": "chunk-13",
-      "text": "om/components/button) [PorscheDesign System](../design-systems/porsche) [View source](https://designsystem.porsche.com/v3/components/button/examples) [RazorpayBlade](../design-systems/razorpay) [View source](https://blade.razorpay.com/?path=/docs/components-button--docs) [Red HatPatternFly](../design-systems/redhat) [View source](https://www.patternfly.org/components/button) [ReiCedar](../design-systems/rei) [View source](https://cedar.rei.com/components/button) [SalesforceLightning](../design-systems/salesforce) [View source](https://www.lightningdesignsystem.com/components/buttons/) [SamsungOne UI](../design-systems/samsung) [View source](https://developer.samsung.com/one-ui/comp/button.html) [SeekBraid](../design-systems/seek) [View source](https://seek-oss.github.io/braid-design-system/components/Button) [SegmentEvergreen](../design-systems/segment) [View source](https://evergreen.segment.com/components/buttons) [ServiceNowHorizon](../design-systems/servicenow) [View",
-      "metadata": {
-        "startIndex": 10149,
-        "endIndex": 11135,
-        "chunkIndex": 13,
-        "section": "Content",
-        "globalChunkIndex": 13
-      }
-    },
-    {
-      "id": "chunk-14",
-      "text": "-design-system/components/Button) [SegmentEvergreen](../design-systems/segment) [View source](https://evergreen.segment.com/components/buttons) [ServiceNowHorizon](../design-systems/servicenow) [View source](https://horizon.servicenow.com/components/now-button) [ShopifyPolaris](../design-systems/shopify) [View source](https://polaris.shopify.com/components/actions/button) [SkodaFlow](../design-systems/skoda) [View source](https://flow.skoda-brand.com/d/6aQMrmD6PhWL/web#/components/buttons) [Sprout SocialSeeds](../design-systems/sproutsocial) [View source](https://seeds.sproutsocial.com/components/button) [SumUpCircuit](../design-systems/sumup) [View source](https://circuit.sumup.com/?path=/docs/components-button--docs) [SunriseSolar](../design-systems/sunrise) [View source](https://solar.sunrise.net/99a108c57/p/38de82-button) [TeamleaderAhoy](../design-systems/teamleader) [View source](https://ahoy.teamleader.design/3547946e7/p/27a895-button/b/963db5)",
-      "metadata": {
-        "startIndex": 10935,
-        "endIndex": 11901,
-        "chunkIndex": 14,
-        "section": "Content",
-        "globalChunkIndex": 14
-      }
-    },
-    {
-      "id": "chunk-15",
-      "text": "ise) [View source](https://solar.sunrise.net/99a108c57/p/38de82-button) [TeamleaderAhoy](../design-systems/teamleader) [View source](https://ahoy.teamleader.design/3547946e7/p/27a895-button/b/963db5) [ThumbtackThumbprint](../design-systems/thumbtack) [View source](https://thumbprint.design/components/button/usage/) [TwilioPaste](../design-systems/twilio) [View source](https://paste.twilio.design/components/button) [U.S. WebDesign System](../design-systems/uswds) [View source](https://designsystem.digital.gov/components/button/) [UAEDesign System](../design-systems/uae) [View source](https://designsystem.gov.ae/docs/components/button) [UberBase](../design-systems/uber) [View source](https://base.uber.com/6d2425e9f/p/756216-button/b/336373) [VercelGeist](../design-systems/vercel) [View source](https://vercel.com/design/button) [VisaDesign System](../design-systems/visa) [View source](https://design.visa.com/components/button/?code_library=css&version=1.6.2) [Washington PostDesign",
-      "metadata": {
-        "startIndex": 11701,
-        "endIndex": 12694,
-        "chunkIndex": 15,
-        "section": "Content",
-        "globalChunkIndex": 15
-      }
-    },
-    {
-      "id": "chunk-16",
-      "text": "w source](https://vercel.com/design/button) [VisaDesign System](../design-systems/visa) [View source](https://design.visa.com/components/button/?code_library=css&version=1.6.2) [Washington PostDesign System](../design-systems/washingtonpost) [View source](https://build.washingtonpost.com/components/button) [WikimediaCodex](../design-systems/wikimedia) [View source](https://doc.wikimedia.org/codex/latest/components/demos/button.html) [WiseDesign System](../design-systems/wise) [View source](https://wise.design/components/button) [WonderflowWanda](../design-systems/wonderflow) [View source](https://design.wonderflow.ai/get-started/components/actions/button) [WorkdayCanvas](../design-systems/workday) [View source](https://canvas.workday.com/components/buttons/button) [ZendeskGarden](../design-systems/zendesk) [View source](https://garden.zendesk.com/components/button) [Adobe](../design-systems/adobe) [Alaska Airlines](../design-systems/alaskaairlines) [Amazon](../design-systems/amazon)",
-      "metadata": {
-        "startIndex": 12494,
-        "endIndex": 13492,
-        "chunkIndex": 16,
-        "section": "Content",
-        "globalChunkIndex": 16
-      }
-    },
-    {
-      "id": "chunk-17",
-      "text": "gn-systems/zendesk) [View source](https://garden.zendesk.com/components/button) [Adobe](../design-systems/adobe) [Alaska Airlines](../design-systems/alaskaairlines) [Amazon](../design-systems/amazon) [Apple](../design-systems/apple) [Atlassian](../design-systems/atlassian) [Audi](../design-systems/audi) [Basis](../design-systems/basis) [Biings](../design-systems/biings) [Brainly](../design-systems/brainly) [Carrefour](../design-systems/carrefour) [CBRE Build](../design-systems/cbrebuild) [Datadog](../design-systems/datadog) [Dell](../design-systems/dell) [Docplanner](../design-systems/docplanner) [eBay](../design-systems/ebay) [Elastic](../design-systems/elastic) [Esri](../design-systems/esri) [General Electric](../design-systems/generalelectric) [Github](../design-systems/github) [GitLab](../design-systems/gitlab) [Google](../design-systems/google) [GOV.UK](../design-systems/govuk) [Gusto](../design-systems/gusto) [Helly Hansen](../design-systems/hellyhansen)",
-      "metadata": {
-        "startIndex": 13292,
-        "endIndex": 14267,
-        "chunkIndex": 17,
-        "section": "Content",
-        "globalChunkIndex": 17
-      }
-    },
-    {
-      "id": "chunk-18",
-      "text": "-systems/github) [GitLab](../design-systems/gitlab) [Google](../design-systems/google) [GOV.UK](../design-systems/govuk) [Gusto](../design-systems/gusto) [Helly Hansen](../design-systems/hellyhansen) [IBM](../design-systems/ibm) [Ideagen](../design-systems/ideagen) [INPS](../design-systems/inps) [Kajabi](../design-systems/kajabi) [Kiwicom](../design-systems/kiwicom) [Lemon Squeezy](../design-systems/lemon-squeezy) [Line](../design-systems/line) [LocalTapiola](../design-systems/localtapiola) [Michelin](../design-systems/michelin) [Microsoft](../design-systems/microsoft) [Monday.com](../design-systems/mondaycom) [MongoDB](../design-systems/mongodb) [Motorway](../design-systems/motorway) [Mozilla](../design-systems/mozilla) [Nordhealth](../design-systems/nordhealth) [Ontario](../design-systems/ontario) [Orange](../design-systems/orange) [Palantir](../design-systems/palantir) [Pinterest](../design-systems/pinterest) [Pluralsight](../design-systems/pluralsight)",
-      "metadata": {
-        "startIndex": 14067,
-        "endIndex": 15038,
-        "chunkIndex": 18,
-        "section": "Content",
-        "globalChunkIndex": 18
-      }
-    },
-    {
-      "id": "chunk-19",
-      "text": "h) [Ontario](../design-systems/ontario) [Orange](../design-systems/orange) [Palantir](../design-systems/palantir) [Pinterest](../design-systems/pinterest) [Pluralsight](../design-systems/pluralsight) [Porsche](../design-systems/porsche) [Razorpay](../design-systems/razorpay) [Red Hat](../design-systems/redhat) [Rei](../design-systems/rei) [Salesforce](../design-systems/salesforce) [Samsung](../design-systems/samsung) [Seek](../design-systems/seek) [Segment](../design-systems/segment) [ServiceNow](../design-systems/servicenow) [Shopify](../design-systems/shopify) [Skoda](../design-systems/skoda) [Sprout Social](../design-systems/sproutsocial) [SumUp](../design-systems/sumup) [Sunrise](../design-systems/sunrise) [Teamleader](../design-systems/teamleader) [Thumbtack](../design-systems/thumbtack) [Twilio](../design-systems/twilio) [U.S. Web](../design-systems/uswds) [UAE](../design-systems/uae) [Uber](../design-systems/uber) [Vercel](../design-systems/vercel) [Visa](../design-systems/visa)",
-      "metadata": {
-        "startIndex": 14838,
-        "endIndex": 15839,
-        "chunkIndex": 19,
-        "section": "Content",
-        "globalChunkIndex": 19
-      }
-    },
-    {
-      "id": "chunk-20",
-      "text": "k) [Twilio](../design-systems/twilio) [U.S. Web](../design-systems/uswds) [UAE](../design-systems/uae) [Uber](../design-systems/uber) [Vercel](../design-systems/vercel) [Visa](../design-systems/visa) [Washington Post](../design-systems/washingtonpost) [Wikimedia](../design-systems/wikimedia) [Wise](../design-systems/wise) [Wonderflow](../design-systems/wonderflow) [Workday](../design-systems/workday) [Zendesk](../design-systems/zendesk) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Figma](../directories/figma) [Typography](../directories/typography) [Components](../components) [Button](./button) [Checkbox](./checkbox) [Radio button](./radio-button) [Text field](./text-field)",
-      "metadata": {
-        "startIndex": 15639,
-        "endIndex": 16615,
-        "chunkIndex": 20,
-        "section": "Content",
-        "globalChunkIndex": 20
-      }
-    },
-    {
-      "id": "chunk-21",
-      "text": ") [Figma](../directories/figma) [Typography](../directories/typography) [Components](../components) [Button](./button) [Checkbox](./checkbox) [Radio button](./radio-button) [Text field](./text-field) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 16415,
-        "endIndex": 17415,
-        "chunkIndex": 21,
-        "section": "Content",
-        "globalChunkIndex": 21
       }
     }
   ],

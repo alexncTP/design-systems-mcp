@@ -8,6 +8,34 @@ import OpenAI from 'openai';
 import { ContentEntry, ContentChunk } from '../../types/content';
 
 // Types
+// Database row types for Supabase queries
+interface ContentEntryRow {
+  id: string;
+  title: string;
+  content: string;
+  embedding?: number[];
+  source_type?: string;
+  source_location?: string;
+  source_url?: string;
+  metadata: any;
+  created_at?: string;
+  updated_at?: string;
+  ingested_at?: string;
+}
+
+interface ContentChunkRow {
+  id: string;
+  entry_id: string;
+  text: string;
+  chunk_text?: string;  // Alias for text
+  embedding?: number[];
+  chunk_index: number;
+  start_index?: number;
+  end_index?: number;
+  metadata?: any;
+  similarity?: number;
+}
+
 export interface VectorSearchOptions {
   query: string;
   mode?: 'vector' | 'text' | 'hybrid';
@@ -36,7 +64,7 @@ const embeddingCache = new Map<string, number[]>();
 // Initialize clients
 function initializeClients() {
   const supabaseUrl = process.env.SUPABASE_URL;
-  const supabaseKey = process.env.SUPABASE_ANON_KEY;
+  const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY;
   const openaiKey = process.env.OPENAI_API_KEY;
 
   if (!supabaseUrl || !supabaseKey) {
@@ -223,7 +251,7 @@ export async function searchChunksVector(
     }
 
     // Map chunks to results
-    const entryMap = new Map((entries || []).map(e => [e.id, e]));
+    const entryMap = new Map((entries || []).map((e: ContentEntryRow) => [e.id, e]));
     
     return (chunks || []).map((chunk: any) => {
       const entry = entryMap.get(chunk.entry_id);

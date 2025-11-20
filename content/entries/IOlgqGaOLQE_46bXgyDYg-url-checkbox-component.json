@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/components/checkbox",
     "ingested_at": "2025-08-30T13:09:30.103Z"
   },
-  "content": "# Checkbox Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Accordion Action bar Action button Action list Alert banner App bar Autocomplete Avatar Badges Bottom sheet Breadcrumbs Button Button group Cards Chip Code snippet Combobox Data table Date picker Dialog Divider Drawer Dropdown Empty state Filter input Form Help text Icon Inline message Label Link List Menus Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view Keep up with the latest in Design Systems Subscribe Checkbox provides a visual representation of a binary choice, allowing users to choose between multiple options or toggle a single option on or off. Each Checkbox operates independently, meaning a user can toggle each option on or off without affecting the state of others. Checkboxes are essential for creating interactive forms, surveys, or any scenario that requires users to make multiple selections from a list. By facilitating multi-selection, the Checkbox component enhances usability and provides a straightforward, intuitive means of user input. Advertisement in Design Systems Adobe Spectrum View source Alaska Airlines Auro Amazon Cloudscape Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Cisco Momentum Design Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas WorkOS Radix Zendesk Garden",
+  "content": "Checkbox provides a visual representation of a binary choice, allowing users to choose between multiple options or toggle a single option on or off. Each Checkbox operates independently, meaning a user can toggle each option on or off without affecting the state of others. Checkboxes are essential for creating interactive forms, surveys, or any scenario that requires users to make multiple selections from a list. By facilitating multi-selection, the Checkbox component enhances usability and provides a straightforward, intuitive means of user input. in Design Systems Adobe Spectrum Alaska Airlines Auro Amazon Cloudscape Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Cisco Momentum Design Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas WorkOS Radix Zendesk Garden",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Checkbox Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Accordion Action bar Action button Action list Alert banner App bar Autocomplete Avatar Badges Bottom sheet Breadcrumbs Button Button group Cards Chip Code snippet Combobox Data table Date picker Dialog Divider Drawer Dropdown Empty state Filter input Form Help text Icon Inline message Label Link List Menus Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Slider Snackbar Switch Tabs Tag Text area Text field Tooltip Tree view Keep up with the latest in Design Systems Subscribe Checkbox provides a visual representation of a binary choice, allowing users to choose between multiple options or toggle a single option on or off. Each Checkbox operates independently, meaning a user can toggle each option on or off without affecting the state of others.",
+      "text": "Checkbox provides a visual representation of a binary choice, allowing users to choose between multiple options or toggle a single option on or off. Each Checkbox operates independently, meaning a user can toggle each option on or off without affecting the state of others. Checkboxes are essential for creating interactive forms, surveys, or any scenario that requires users to make multiple selections from a list. By facilitating multi-selection, the Checkbox component enhances usability and provides a straightforward, intuitive means of user input. in Design Systems Adobe Spectrum Alaska Airlines Auro Amazon Cloudscape Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Cisco Momentum Design Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite Genera",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 948,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,10 +21,10 @@
     },
     {
       "id": "chunk-1",
-      "text": "rs to choose between multiple options or toggle a single option on or off. Each Checkbox operates independently, meaning a user can toggle each option on or off without affecting the state of others. Checkboxes are essential for creating interactive forms, surveys, or any scenario that requires users to make multiple selections from a list. By facilitating multi-selection, the Checkbox component enhances usability and provides a straightforward, intuitive means of user input. Advertisement in Design Systems Adobe Spectrum View source Alaska Airlines Auro Amazon Cloudscape Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Cisco Momentum Design Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2",
+      "text": "nes Auro Amazon Cloudscape Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Cisco Momentum Design Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Thumbtac",
       "metadata": {
-        "startIndex": 748,
-        "endIndex": 1747,
+        "startIndex": 600,
+        "endIndex": 1400,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
@@ -32,222 +32,13 @@
     },
     {
       "id": "chunk-2",
-      "text": "Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas WorkOS Radix Zendesk Garden",
+      "text": "che Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas WorkOS Radix Zendesk Garden",
       "metadata": {
-        "startIndex": 1547,
-        "endIndex": 2548,
+        "startIndex": 1200,
+        "endIndex": 1563,
         "chunkIndex": 2,
         "section": "Content",
         "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "[Directories24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) (./accordion) (./action-bar) (./action-button) (./action-list) (./alert-banner) (./app-bar) (./autocomplete) (./avatar) (./badges) (./bottom-sheet) (./breadcrumbs) (./button) (./button-group) (./cards) (./checkbox) (./chip) [Code snippetCode snippetCode",
-      "metadata": {
-        "startIndex": 2348,
-        "endIndex": 3335,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "onButtonButton](./button) (./button-group) (./cards) (./checkbox) (./chip) (./code-snippet) (./combobox) (./data-table) (./date-picker) (./dialog) (./divider) (./drawer) (./dropdown) (./empty-state) (./filter-input) (./form) (./help-text) (./icon) (./inline-message) (./label) (./link) (./list) (./menus) (./modal) (./navigation-bar) [Page header Page header Page header](./page-header)",
-      "metadata": {
-        "startIndex": 3135,
-        "endIndex": 4134,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "/link) (./list) (./menus) (./modal) (./navigation-bar) [Page header Page header Page header](./page-header) (./pagination) (./popover) (./progress-bar) (./progress-indicator) (./radio-button) (./search) (./segmented-control) (./select) (./sidebar) (./slider) (./snackbar) (./switch) (./tabs) (./tag) (./text-area) (./text-field) (./tooltip) (./tree-view) [012Biweekly DigestKeep up with the latest in",
-      "metadata": {
-        "startIndex": 3934,
-        "endIndex": 4934,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "areaText area](./text-area) (./text-field) (./tooltip) (./tree-view) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Checkbox67](./checkbox#up-pixel) [AdobeSpectrum](../design-systems/adobe) [View source](https://spectrum.adobe.com/page/checkbox) [Alaska AirlinesAuro](../design-systems/alaskaairlines) [View source](https://auro.alaskaair.com/components/auro/checkbox) [AmazonCloudscape](../design-systems/amazon) [View source](https://cloudscape.design/components/checkbox/?tabId=playground) [AtlassianDesign System](../design-systems/atlassian) [View source](https://atlassian.design/components/checkbox) [AudiDesign System](../design-systems/audi) [View source](https://styleguide.audi.com/document/2442#/-/selection-controls) [BasisDesign System](../design-systems/basis) [View source](https://design.basis.com/components/checkbox)",
-      "metadata": {
-        "startIndex": 4734,
-        "endIndex": 5734,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "-systems/audi) [View source](https://styleguide.audi.com/document/2442#/-/selection-controls) [BasisDesign System](../design-systems/basis) [View source](https://design.basis.com/components/checkbox) [BiingsDesign System](../design-systems/biings) [View source](https://biings.design/#/checkbox) [CarrefourMarcel](../design-systems/carrefour) [View source](https://carrefour.design/328eff0d7/p/03b7d7-checkbox) [CBRE BuildBlocks](../design-systems/cbrebuild) [View source](https://blocks.cbrebuild.com/components/checkboxes) [CiscoMomentum Design](../design-systems/cisco) [View source](https://momentum.design/components/checkbox) [DatadogDruids](../design-systems/datadog) [View source](https://druids.datadoghq.com/components/form/Checkbox) [DellDesign System](../design-systems/dell) [View source](https://www.delldesignsystem.com/components/checkbox/) [DocplannerWatson](../design-systems/docplanner) [View source](https://watson.docplanner.design/components/checkbox)",
-      "metadata": {
-        "startIndex": 5534,
-        "endIndex": 6508,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "systems/dell) [View source](https://www.delldesignsystem.com/components/checkbox/) [DocplannerWatson](../design-systems/docplanner) [View source](https://watson.docplanner.design/components/checkbox) [eBayEvo](../design-systems/ebay) [View source](https://playbook.ebay.com/design-system/components/checkbox) [ElasticDesign System](../design-systems/elastic) [View source](https://elastic.github.io/eui/#/forms/selection-controls) [EsriCalcite](../design-systems/esri) [View source](https://developers.arcgis.com/calcite-design-system/components/checkbox/) [General ElectricEdison](../design-systems/generalelectric) [View source](https://eds.gehealthcare.com/checkbox?tab=0) [GithubPrimer](../design-systems/github) [View source](https://primer.style/design/components/checkbox) [GitLabPajamas](../design-systems/gitlab) [View source](https://design.gitlab.com/components/checkbox) [GoogleMaterial Design](../design-systems/google) [View source](https://m3.material.io/components/checkbox)",
-      "metadata": {
-        "startIndex": 6308,
-        "endIndex": 7299,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "mas](../design-systems/gitlab) [View source](https://design.gitlab.com/components/checkbox) [GoogleMaterial Design](../design-systems/google) [View source](https://m3.material.io/components/checkbox) [GOV.UKDesign System](../design-systems/govuk) [View source](https://design-system.service.gov.uk/components/checkboxes/) [GustoWorkbench](../design-systems/gusto) [View source](https://workbench.gusto.com/components/checkbox/) [Helly HansenDesign System](../design-systems/hellyhansen) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/90436c-checkboxes-20/b/156217) [IBMCarbon](../design-systems/ibm) [View source](https://carbondesignsystem.com/components/checkbox/usage/) [IdeagenHelix](../design-systems/ideagen) [View source](https://www.helixui.com/9904796d6/p/770750-checkbox/b/90c25c) [INPSSirio](../design-systems/inps) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/2896ce) [KajabiSage](../design-systems/kajabi) [View",
-      "metadata": {
-        "startIndex": 7099,
-        "endIndex": 8059,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "om/9904796d6/p/770750-checkbox/b/90c25c) [INPSSirio](../design-systems/inps) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/t/2896ce) [KajabiSage](../design-systems/kajabi) [View source](https://sage.kajabi.com/pages/component/checkbox?tab=preview) [KiwicomOrbit](../design-systems/kiwicom) [View source](https://orbit.kiwi/components/input/checkbox/) [Lemon SqueezyWedges](../design-systems/lemon-squeezy) [View source](https://www.lemonsqueezy.com/wedges/docs/components/checkbox) [LineDesign System](../design-systems/line) [View source](https://designsystem.line.me/LDSG/components/inputs/checkbox-en/) [LocalTapiolaDuet](../design-systems/localtapiola) [View source](https://www.duetds.com/components/checkbox/) [MichelinMotion](../design-systems/michelin) [View source](https://designsystem.michelin.com/components/checkbox) [MicrosoftFluent 2](../design-systems/microsoft) [View source](https://fluent2.microsoft.design/components/web/react/checkbox/usage)",
-      "metadata": {
-        "startIndex": 7859,
-        "endIndex": 8844,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
-      }
-    },
-    {
-      "id": "chunk-11",
-      "text": "iew source](https://designsystem.michelin.com/components/checkbox) [MicrosoftFluent 2](../design-systems/microsoft) [View source](https://fluent2.microsoft.design/components/web/react/checkbox/usage) [Monday.comVibe](../design-systems/mondaycom) [View source](https://style.monday.com/?path=/docs/inputs-checkbox--docs) [MongoDBLeafyGreen](../design-systems/mongodb) [View source](https://www.mongodb.design/component/checkbox/live-example/) [MotorwayHighway Code](../design-systems/motorway) [View source](https://thc.motorway.co.uk/0566ad526/p/547f70-checkbox/b/88c271) [MozillaProtocol](../design-systems/mozilla) [View source](https://protocol.mozilla.org/components/detail/checkboxes) [NordhealthDesign System](../design-systems/nordhealth) [View source](https://nordhealth.design/components/checkbox/) [OntarioDesign System](../design-systems/ontario) [View source](https://designsystem.ontario.ca/components/detail/checkboxes.html) [OrangeDesign System](../design-systems/orange) [View",
-      "metadata": {
-        "startIndex": 8644,
-        "endIndex": 9637,
-        "chunkIndex": 11,
-        "section": "Content",
-        "globalChunkIndex": 11
-      }
-    },
-    {
-      "id": "chunk-12",
-      "text": "nts/checkbox/) [OntarioDesign System](../design-systems/ontario) [View source](https://designsystem.ontario.ca/components/detail/checkboxes.html) [OrangeDesign System](../design-systems/orange) [View source](https://system.design.orange.com/0c1af118d/p/093b4e-checkbox) [PalantirBlueprint](../design-systems/palantir) [View source](https://blueprintjs.com/docs/#core/components/checkbox) [PinterestGestalt](../design-systems/pinterest) [View source](https://gestalt.pinterest.systems/web/checkbox) [PluralsightDesign System](../design-systems/pluralsight) [View source](https://design-system.pluralsight.com/components/checkbox) [PorscheDesign System](../design-systems/porsche) [View source](https://designsystem.porsche.com/v3/components/checkbox-wrapper/examples) [RazorpayBlade](../design-systems/razorpay) [View source](https://blade.razorpay.com/?path=/docs/components-checkbox-checkbox--docs) [Red HatPatternFly](../design-systems/redhat) [View",
-      "metadata": {
-        "startIndex": 9437,
-        "endIndex": 10389,
-        "chunkIndex": 12,
-        "section": "Content",
-        "globalChunkIndex": 12
-      }
-    },
-    {
-      "id": "chunk-13",
-      "text": "pper/examples) [RazorpayBlade](../design-systems/razorpay) [View source](https://blade.razorpay.com/?path=/docs/components-checkbox-checkbox--docs) [Red HatPatternFly](../design-systems/redhat) [View source](https://www.patternfly.org/components/forms/checkbox) [ReiCedar](../design-systems/rei) [View source](https://cedar.rei.com/components/checkbox) [SalesforceLightning](../design-systems/salesforce) [View source](https://www.lightningdesignsystem.com/components/checkbox/) [SeekBraid](../design-systems/seek) [View source](https://seek-oss.github.io/braid-design-system/components/Checkbox) [SegmentEvergreen](../design-systems/segment) [View source](https://evergreen.segment.com/components/checkbox) [ServiceNowHorizon](../design-systems/servicenow) [View source](https://horizon.servicenow.com/components/now-checkbox) [ShopifyPolaris](../design-systems/shopify) [View source](https://polaris.shopify.com/components/selection-and-input/checkbox) [SkodaFlow](../design-systems/skoda) [View",
-      "metadata": {
-        "startIndex": 10189,
-        "endIndex": 11187,
-        "chunkIndex": 13,
-        "section": "Content",
-        "globalChunkIndex": 13
-      }
-    },
-    {
-      "id": "chunk-14",
-      "text": ".com/components/now-checkbox) [ShopifyPolaris](../design-systems/shopify) [View source](https://polaris.shopify.com/components/selection-and-input/checkbox) [SkodaFlow](../design-systems/skoda) [View source](https://flow.skoda-brand.com/d/6aQMrmD6PhWL/web#/components/checkboxes) [Sprout SocialSeeds](../design-systems/sproutsocial) [View source](https://seeds.sproutsocial.com/components/checkbox) [SumUpCircuit](../design-systems/sumup) [View source](https://circuit.sumup.com/?path=/docs/forms-checkbox--docs) [SunriseSolar](../design-systems/sunrise) [View source](https://solar.sunrise.net/99a108c57/p/737238-checkbox) [ThumbtackThumbprint](../design-systems/thumbtack) [View source](https://thumbprint.design/components/checkbox/react/) [TwilioPaste](../design-systems/twilio) [View source](https://paste.twilio.design/components/checkbox) [U.S. WebDesign System](../design-systems/uswds) [View source](https://designsystem.digital.gov/components/checkbox/) [UAEDesign",
-      "metadata": {
-        "startIndex": 10987,
-        "endIndex": 11962,
-        "chunkIndex": 14,
-        "section": "Content",
-        "globalChunkIndex": 14
-      }
-    },
-    {
-      "id": "chunk-15",
-      "text": "twilio) [View source](https://paste.twilio.design/components/checkbox) [U.S. WebDesign System](../design-systems/uswds) [View source](https://designsystem.digital.gov/components/checkbox/) [UAEDesign System](../design-systems/uae) [View source](https://designsystem.gov.ae/docs/components/checkbox) [UberBase](../design-systems/uber) [View source](https://base.uber.com/6d2425e9f/p/83ffb9-check/b/63f898) [VercelGeist](../design-systems/vercel) [View source](https://vercel.com/design/checkbox) [VisaDesign System](../design-systems/visa) [View source](https://design.visa.com/components/checkbox/?code_library=css&version=1.6.2) [Washington PostDesign System](../design-systems/washingtonpost) [View source](https://build.washingtonpost.com/components/checkbox) [WikimediaCodex](../design-systems/wikimedia) [View source](https://doc.wikimedia.org/codex/latest/components/demos/checkbox.html) [WiseDesign System](../design-systems/wise) [View source](https://wise.design/components/checkbox)",
-      "metadata": {
-        "startIndex": 11762,
-        "endIndex": 12755,
-        "chunkIndex": 15,
-        "section": "Content",
-        "globalChunkIndex": 15
-      }
-    },
-    {
-      "id": "chunk-16",
-      "text": "tems/wikimedia) [View source](https://doc.wikimedia.org/codex/latest/components/demos/checkbox.html) [WiseDesign System](../design-systems/wise) [View source](https://wise.design/components/checkbox) [WonderflowWanda](../design-systems/wonderflow) [View source](https://design.wonderflow.ai/get-started/components/inputs/selection-controls) [WorkdayCanvas](../design-systems/workday) [View source](https://canvas.workday.com/components/inputs/checkbox) [WorkOSRadix](../design-systems/workos) [View source](https://www.radix-ui.com/primitives/docs/components/checkbox) [ZendeskGarden](../design-systems/zendesk) [View source](https://garden.zendesk.com/components/checkbox) [Adobe](../design-systems/adobe) [Alaska Airlines](../design-systems/alaskaairlines) [Amazon](../design-systems/amazon) [Atlassian](../design-systems/atlassian) [Audi](../design-systems/audi) [Basis](../design-systems/basis) [Biings](../design-systems/biings) [Carrefour](../design-systems/carrefour) [CBRE",
-      "metadata": {
-        "startIndex": 12555,
-        "endIndex": 13536,
-        "chunkIndex": 16,
-        "section": "Content",
-        "globalChunkIndex": 16
-      }
-    },
-    {
-      "id": "chunk-17",
-      "text": "tems/amazon) [Atlassian](../design-systems/atlassian) [Audi](../design-systems/audi) [Basis](../design-systems/basis) [Biings](../design-systems/biings) [Carrefour](../design-systems/carrefour) [CBRE Build](../design-systems/cbrebuild) [Cisco](../design-systems/cisco) [Datadog](../design-systems/datadog) [Dell](../design-systems/dell) [Docplanner](../design-systems/docplanner) [eBay](../design-systems/ebay) [Elastic](../design-systems/elastic) [Esri](../design-systems/esri) [General Electric](../design-systems/generalelectric) [Github](../design-systems/github) [GitLab](../design-systems/gitlab) [Google](../design-systems/google) [GOV.UK](../design-systems/govuk) [Gusto](../design-systems/gusto) [Helly Hansen](../design-systems/hellyhansen) [IBM](../design-systems/ibm) [Ideagen](../design-systems/ideagen) [INPS](../design-systems/inps) [Kajabi](../design-systems/kajabi) [Kiwicom](../design-systems/kiwicom) [Lemon Squeezy](../design-systems/lemon-squeezy) [Line](../design-systems/line)",
-      "metadata": {
-        "startIndex": 13336,
-        "endIndex": 14336,
-        "chunkIndex": 17,
-        "section": "Content",
-        "globalChunkIndex": 17
-      }
-    },
-    {
-      "id": "chunk-18",
-      "text": "systems/ideagen) [INPS](../design-systems/inps) [Kajabi](../design-systems/kajabi) [Kiwicom](../design-systems/kiwicom) [Lemon Squeezy](../design-systems/lemon-squeezy) [Line](../design-systems/line) [LocalTapiola](../design-systems/localtapiola) [Michelin](../design-systems/michelin) [Microsoft](../design-systems/microsoft) [Monday.com](../design-systems/mondaycom) [MongoDB](../design-systems/mongodb) [Motorway](../design-systems/motorway) [Mozilla](../design-systems/mozilla) [Nordhealth](../design-systems/nordhealth) [Ontario](../design-systems/ontario) [Orange](../design-systems/orange) [Palantir](../design-systems/palantir) [Pinterest](../design-systems/pinterest) [Pluralsight](../design-systems/pluralsight) [Porsche](../design-systems/porsche) [Razorpay](../design-systems/razorpay) [Red Hat](../design-systems/redhat) [Rei](../design-systems/rei) [Salesforce](../design-systems/salesforce) [Seek](../design-systems/seek) [Segment](../design-systems/segment)",
-      "metadata": {
-        "startIndex": 14136,
-        "endIndex": 15110,
-        "chunkIndex": 18,
-        "section": "Content",
-        "globalChunkIndex": 18
-      }
-    },
-    {
-      "id": "chunk-19",
-      "text": "esign-systems/razorpay) [Red Hat](../design-systems/redhat) [Rei](../design-systems/rei) [Salesforce](../design-systems/salesforce) [Seek](../design-systems/seek) [Segment](../design-systems/segment) [ServiceNow](../design-systems/servicenow) [Shopify](../design-systems/shopify) [Skoda](../design-systems/skoda) [Sprout Social](../design-systems/sproutsocial) [SumUp](../design-systems/sumup) [Sunrise](../design-systems/sunrise) [Thumbtack](../design-systems/thumbtack) [Twilio](../design-systems/twilio) [U.S. Web](../design-systems/uswds) [UAE](../design-systems/uae) [Uber](../design-systems/uber) [Vercel](../design-systems/vercel) [Visa](../design-systems/visa) [Washington Post](../design-systems/washingtonpost) [Wikimedia](../design-systems/wikimedia) [Wise](../design-systems/wise) [Wonderflow](../design-systems/wonderflow) [Workday](../design-systems/workday) [WorkOS](../design-systems/workos) [Zendesk](../design-systems/zendesk) [Design Systems](../design-systems) [Apple",
-      "metadata": {
-        "startIndex": 14910,
-        "endIndex": 15898,
-        "chunkIndex": 19,
-        "section": "Content",
-        "globalChunkIndex": 19
-      }
-    },
-    {
-      "id": "chunk-20",
-      "text": "ise) [Wonderflow](../design-systems/wonderflow) [Workday](../design-systems/workday) [WorkOS](../design-systems/workos) [Zendesk](../design-systems/zendesk) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Figma](../directories/figma) [Typography](../directories/typography) [Components](../components) [Button](./button) [Checkbox](./checkbox) [Radio button](./radio-button) [Text field](./text-field) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 15698,
-        "endIndex": 16698,
-        "chunkIndex": 20,
-        "section": "Content",
-        "globalChunkIndex": 20
-      }
-    },
-    {
-      "id": "chunk-21",
-      "text": "/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 16498,
-        "endIndex": 17498,
-        "chunkIndex": 21,
-        "section": "Content",
-        "globalChunkIndex": 21
       }
     }
   ],

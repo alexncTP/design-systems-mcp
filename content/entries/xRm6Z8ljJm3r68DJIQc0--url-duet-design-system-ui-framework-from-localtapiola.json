@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/localtapiola",
     "ingested_at": "2025-08-30T13:09:48.697Z"
   },
-  "content": "# LocalTapiola Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Duet from Directories: Components: Duet Design System serves as the foundational framework for LocalTapiola and Turva's digital products, including organized tools, patterns, and practices. Design System provides wide library of reusable components, clear design standards, and strong theming guidelines across products. Duet establishes a shared vocabulary, ensuring a unified user experience and clear standards in the design language. Advertisement Accessibility View source Color System Component overview Component status Repository Icons Illustrations Patterns Spacing Styles Tokens Typography Accordion Action bar Action button Alert banner Badges Breadcrumb Button Cards Checkbox Chip Combobox Data table Date picker Divider Empty state Icon Label Link List Modal Navigation bar Page header Pagination Progress bar Progress indicator Radio button Select Slider Switch Tabs Text area Text field Tooltip",
+  "content": "Duet from Directories: Components: Duet Design System serves as the foundational framework for LocalTapiola and Turva's digital products, including organized tools, patterns, and practices. Design System provides wide library of reusable components, clear design standards, and strong theming guidelines across products. Duet establishes a shared vocabulary, ensuring a unified user experience and clear standards in the design language. Accessibility Color System Component overview Component status Repository Icons Illustrations Patterns Spacing Styles Tokens Typography Accordion Action bar Action button Alert banner Badges Breadcrumb Button Cards Checkbox Chip Combobox Data table Date picker Divider Empty state Icon Label Link List Modal Navigation bar Page header Pagination Progress bar Progress indicator Radio button Select Slider Switch Tabs Text area Text field Tooltip",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# LocalTapiola Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Duet from Directories: Components: Duet Design System serves as the foundational framework for LocalTapiola and Turva's digital products, including organized tools, patterns, and practices.",
+      "text": "Duet from Directories: Components: Duet Design System serves as the foundational framework for LocalTapiola and Turva's digital products, including organized tools, patterns, and practices. Design System provides wide library of reusable components, clear design standards, and strong theming guidelines across products. Duet establishes a shared vocabulary, ensuring a unified user experience and clear standards in the design language. Accessibility Color System Component overview Component status Repository Icons Illustrations Patterns Spacing Styles Tokens Typography Accordion Action bar Action button Alert banner Badges Breadcrumb Button Cards Checkbox Chip Combobox Data table Date picker Divider Empty state Icon Label Link List Modal Navigation bar Page header Pagination Progress bar Pro",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 964,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,112 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "Subscribe Duet from Directories: Components: Duet Design System serves as the foundational framework for LocalTapiola and Turva's digital products, including organized tools, patterns, and practices. Design System provides wide library of reusable components, clear design standards, and strong theming guidelines across products. Duet establishes a shared vocabulary, ensuring a unified user experience and clear standards in the design language. Advertisement Accessibility View source Color System Component overview Component status Repository Icons Illustrations Patterns Spacing Styles Tokens Typography Accordion Action bar Action button Alert banner Badges Breadcrumb Button Cards Checkbox Chip Combobox Data table Date picker Divider Empty state Icon Label Link List Modal Navigation bar Page header Pagination Progress bar Progress indicator Radio button Select Slider Switch Tabs Text area Text field Tooltip Design .surf © Dzeya OÜ.",
+      "text": "n button Alert banner Badges Breadcrumb Button Cards Checkbox Chip Combobox Data table Date picker Divider Empty state Icon Label Link List Modal Navigation bar Page header Pagination Progress bar Progress indicator Radio button Select Slider Switch Tabs Text area Text field Tooltip",
       "metadata": {
-        "startIndex": 764,
-        "endIndex": 1709,
+        "startIndex": 600,
+        "endIndex": 883,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "pty state Icon Label Link List Modal Navigation bar Page header Pagination Progress bar Progress indicator Radio button Select Slider Switch Tabs Text area Text field Tooltip",
-      "metadata": {
-        "startIndex": 1509,
-        "endIndex": 2503,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
-      "metadata": {
-        "startIndex": 2303,
-        "endIndex": 3296,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [DuetfromLocalTapiola](./localtapiola#up-pixel) [Source](https://www.duetds.com/) [Repository](https://github.com/duetds) [Accessibility](../directories/accessibility) [View source](https://www.duetds.com/accessibility/) [Color System](../directories/color-system) [View source](https://www.duetds.com/tokens/#color)",
-      "metadata": {
-        "startIndex": 3096,
-        "endIndex": 4093,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "tds) [Accessibility](../directories/accessibility) [View source](https://www.duetds.com/accessibility/) [Color System](../directories/color-system) [View source](https://www.duetds.com/tokens/#color) [Component overview](../directories/component-overview) [View source](https://www.duetds.com/components/) [Component status](../directories/component-status) [Repository](../directories/repository) [View source](https://github.com/duetds) [Icons](../directories/icons) [View source](https://www.duetds.com/iconography/) [Illustrations](../directories/illustrations) [View source](https://www.duetds.com/illustrations/) [Patterns](../directories/patterns) [View source](https://www.duetds.com/templates/) [Spacing](../directories/spacing) [View source](https://www.duetds.com/spacing/) [Styles](../directories/styles) [View source](https://www.duetds.com/tokens/#border-radius) [Tokens](../directories/tokens) [View source](https://www.duetds.com/tokens/) [Typography](../directories/typography) [View",
-      "metadata": {
-        "startIndex": 3893,
-        "endIndex": 4894,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "ctories/styles) [View source](https://www.duetds.com/tokens/#border-radius) [Tokens](../directories/tokens) [View source](https://www.duetds.com/tokens/) [Typography](../directories/typography) [View source](https://www.duetds.com/typography/) [Accordion](../components/accordion) [View source](https://www.duetds.com/components/collapsible/) [Action bar](../components/action-bar) [View source](https://www.duetds.com/components/toolbar/) [Action button](../components/action-button) [View source](https://www.duetds.com/components/action-button/) [Alert banner](../components/alert-banner) [View source](https://www.duetds.com/components/alert/) [Badges](../components/badges) [View source](https://www.duetds.com/components/badge/) [Breadcrumb](../components/breadcrumbs) [View source](https://www.duetds.com/components/breadcrumbs/) [Button](../components/button) [View source](https://www.duetds.com/components/button/) [Cards](../components/cards) [View",
-      "metadata": {
-        "startIndex": 4694,
-        "endIndex": 5654,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "s/breadcrumbs) [View source](https://www.duetds.com/components/breadcrumbs/) [Button](../components/button) [View source](https://www.duetds.com/components/button/) [Cards](../components/cards) [View source](https://www.duetds.com/components/card/) [Checkbox](../components/checkbox) [View source](https://www.duetds.com/components/checkbox/) [Chip](../components/chip) [View source](https://www.duetds.com/components/chip/) [Combobox](../components/combobox) [View source](https://www.duetds.com/components/combobox/) [Data table](../components/data-table) [View source](https://www.duetds.com/components/table/) [Date picker](../components/date-picker) [View source](https://www.duetds.com/components/date-picker/) [Divider](../components/divider) [View source](https://www.duetds.com/components/divider/) [Empty state](../components/empty-state) [View source](https://www.duetds.com/components/empty-state/) [Icon](../directories/icons) [View source](https://www.duetds.com/components/icon/)",
-      "metadata": {
-        "startIndex": 5454,
-        "endIndex": 6449,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "ts/divider/) [Empty state](../components/empty-state) [View source](https://www.duetds.com/components/empty-state/) [Icon](../directories/icons) [View source](https://www.duetds.com/components/icon/) [Label](../components/label) [View source](https://www.duetds.com/components/label/) [Link](../components/link) [View source](https://www.duetds.com/components/link/) [List](../components/list) [View source](https://www.duetds.com/components/list/) [Modal](../components/modal) [View source](https://www.duetds.com/components/modal/) [Navigation bar](../components/navigation-bar) [View source](https://www.duetds.com/components/nav/) [Page header](../components/page-header) [View source](https://www.duetds.com/components/header/) [Pagination](../components/pagination) [View source](https://www.duetds.com/components/pagination/) [Progress bar](../components/progress-bar) [View source](https://www.duetds.com/components/progress/) [Progress indicator](../components/progress-indicator) [View",
-      "metadata": {
-        "startIndex": 6249,
-        "endIndex": 7245,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "w.duetds.com/components/pagination/) [Progress bar](../components/progress-bar) [View source](https://www.duetds.com/components/progress/) [Progress indicator](../components/progress-indicator) [View source](https://www.duetds.com/components/spinner/) [Radio button](../components/radio-button) [View source](https://www.duetds.com/components/radio/) [Select](../components/select) [View source](https://www.duetds.com/components/select/) [Slider](../components/slider) [View source](https://www.duetds.com/components/range-slider/) [Switch](../components/switch) [View source](https://www.duetds.com/components/toggle/) [Tabs](../components/tabs) [View source](https://www.duetds.com/components/tab-group/) [Text area](../components/text-area) [View source](https://www.duetds.com/components/textarea/) [Text field](../components/text-field) [View source](https://www.duetds.com/components/input/) [Tooltip](../components/tooltip) [View source](https://www.duetds.com/components/tooltip/) [Design",
-      "metadata": {
-        "startIndex": 7045,
-        "endIndex": 8043,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "rea/) [Text field](../components/text-field) [View source](https://www.duetds.com/components/input/) [Tooltip](../components/tooltip) [View source](https://www.duetds.com/components/tooltip/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 7843,
-        "endIndex": 8843,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
       }
     }
   ],

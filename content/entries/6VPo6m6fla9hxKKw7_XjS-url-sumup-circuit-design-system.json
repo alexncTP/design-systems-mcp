@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/sumup",
     "ingested_at": "2025-08-30T13:10:04.244Z"
   },
-  "content": "# SumUp Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Circuit from Directories: Components: Circuit UI is the web implementation of SumUp’s Circuit Design System, built to power consistent, accessible, and performant experiences across the company’s web applications. Rooted in a well-structured design token library, Circuit UI provides developers with reusable components, clear guidelines, and built-in accessibility best practices. Circuit UI is a practical toolkit for teams who want to move fast without compromising on quality or brand consistency. Advertisement Elevation View source Repository Icons Spacing Storybook Tokens Alert banner Avatar Badges Button Cards Checkbox Chip Date picker Dialog Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Select Snackbar Switch Tabs Tag Text area Text field Tooltip",
+  "content": "Circuit from Directories: Components: Circuit UI is the web implementation of SumUp’s Circuit Design System, built to power consistent, accessible, and performant experiences across the company’s web applications. Rooted in a well-structured design token library, Circuit UI provides developers with reusable components, clear guidelines, and built-in accessibility best practices. Circuit UI is a practical toolkit for teams who want to move fast without compromising on quality or brand consistency. Elevation Repository Icons Spacing Storybook Tokens Alert banner Avatar Badges Button Cards Checkbox Chip Date picker Dialog Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Select Snackbar Switch Tabs Tag Text area Text field Tooltip",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# SumUp Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Circuit from Directories: Components: Circuit UI is the web implementation of SumUp’s Circuit Design System, built to power consistent, accessible, and performant experiences across the company’s web applications.",
+      "text": "Circuit from Directories: Components: Circuit UI is the web implementation of SumUp’s Circuit Design System, built to power consistent, accessible, and performant experiences across the company’s web applications. Rooted in a well-structured design token library, Circuit UI provides developers with reusable components, clear guidelines, and built-in accessibility best practices. Circuit UI is a practical toolkit for teams who want to move fast without compromising on quality or brand consistency. Elevation Repository Icons Spacing Storybook Tokens Alert banner Avatar Badges Button Cards Checkbox Chip Date picker Dialog Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Select Snackbar Switch Tabs Tag Text area Text field Tooltip",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 988,
+        "endIndex": 770,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,112 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "irectories: Components: Circuit UI is the web implementation of SumUp’s Circuit Design System, built to power consistent, accessible, and performant experiences across the company’s web applications. Rooted in a well-structured design token library, Circuit UI provides developers with reusable components, clear guidelines, and built-in accessibility best practices. Circuit UI is a practical toolkit for teams who want to move fast without compromising on quality or brand consistency. Advertisement Elevation View source Repository Icons Spacing Storybook Tokens Alert banner Avatar Badges Button Cards Checkbox Chip Date picker Dialog Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Select Snackbar Switch Tabs Tag Text area Text field Tooltip",
+      "text": "ox Chip Date picker Dialog Menus Modal Pagination Popover Progress bar Progress indicator Radio button Search Select Snackbar Switch Tabs Tag Text area Text field Tooltip",
       "metadata": {
-        "startIndex": 788,
-        "endIndex": 1772,
+        "startIndex": 600,
+        "endIndex": 770,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "esign .surf © Dzeya OÜ. All rights reserved",
-      "metadata": {
-        "startIndex": 1572,
-        "endIndex": 2570,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "[GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
-      "metadata": {
-        "startIndex": 2370,
-        "endIndex": 3298,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [CircuitfromSumUp](./sumup#up-pixel) [Source](https://circuit.sumup.com/?path=/docs/introduction-welcome--docs) [Repository](https://github.com/sumup-oss/circuit-ui) [Storybook](https://storybook.js.org/showcase/sumup-circuit-ui) [Elevation](../directories/elevation) [View source](https://circuit.sumup.com/?path=/story/features-style-mixins--shadow) [Repository](../directories/repository) [View",
-      "metadata": {
-        "startIndex": 3098,
-        "endIndex": 4061,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": ".org/showcase/sumup-circuit-ui) [Elevation](../directories/elevation) [View source](https://circuit.sumup.com/?path=/story/features-style-mixins--shadow) [Repository](../directories/repository) [View source](https://github.com/sumup-oss/circuit-ui) [Icons](../directories/icons) [View source](https://circuit.sumup.com/?path=/docs/features-icons--docs) [Spacing](../directories/spacing) [View source](https://circuit.sumup.com/?path=/story/features-style-mixins--spacing&args=all:bit) [Storybook](../directories/storybook) [View source](https://storybook.js.org/showcase/sumup-circuit-ui) [Tokens](../directories/tokens) [View source](https://circuit.sumup.com/?path=/docs/features-theme--docs) [Alert banner](../components/alert-banner) [View source](https://circuit.sumup.com/?path=/docs/notification-notificationbanner--docs) [Avatar](../components/avatar) [View source](https://circuit.sumup.com/?path=/docs/components-avatar--docs) [Badges](../components/badges) [View",
-      "metadata": {
-        "startIndex": 3861,
-        "endIndex": 4835,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "com/?path=/docs/notification-notificationbanner--docs) [Avatar](../components/avatar) [View source](https://circuit.sumup.com/?path=/docs/components-avatar--docs) [Badges](../components/badges) [View source](https://circuit.sumup.com/?path=/docs/components-badge--docs) [Button](../components/button) [View source](https://circuit.sumup.com/?path=/docs/components-button--docs) [Cards](../components/cards) [View source](https://circuit.sumup.com/?path=/docs/components-card--docs) [Checkbox](../components/checkbox) [View source](https://circuit.sumup.com/?path=/docs/forms-checkbox--docs) [Chip](../components/chip) [View source](https://circuit.sumup.com/?path=/docs/forms-selectorgroup--docs) [Date picker](../components/date-picker) [View source](https://circuit.sumup.com/?path=/docs/components-calendar--docs) [Dialog](../components/dialog) [View source](https://circuit.sumup.com/?path=/docs/components-modal-dialog--docs) [Menus](../components/menus) [View",
-      "metadata": {
-        "startIndex": 4635,
-        "endIndex": 5601,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "t.sumup.com/?path=/docs/components-calendar--docs) [Dialog](../components/dialog) [View source](https://circuit.sumup.com/?path=/docs/components-modal-dialog--docs) [Menus](../components/menus) [View source](https://circuit.sumup.com/?path=/docs/components-actionmenu--docs&args=all:bit) [Modal](../components/modal) [View source](https://circuit.sumup.com/?path=/docs/components-modal--docs) [Pagination](../components/pagination) [View source](https://circuit.sumup.com/?path=/docs/navigation-pagination--docs) [Popover](../components/popover) [View source](https://circuit.sumup.com/?path=/docs/components-popover--docs) [Progress bar](../components/progress-bar) [View source](https://circuit.sumup.com/?path=/docs/components-progressbar--docs) [Progress indicator](../components/progress-indicator) [View source](https://circuit.sumup.com/?path=/docs/components-spinner--docs) [Radio button](../components/radio-button) [View",
-      "metadata": {
-        "startIndex": 5401,
-        "endIndex": 6332,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "rogressbar--docs) [Progress indicator](../components/progress-indicator) [View source](https://circuit.sumup.com/?path=/docs/components-spinner--docs) [Radio button](../components/radio-button) [View source](https://circuit.sumup.com/?path=/docs/forms-radiobuttongroup--docs) [Search](../components/search) [View source](https://circuit.sumup.com/?path=/docs/forms-searchinput--docs) [Select](../components/select) [View source](https://circuit.sumup.com/?path=/docs/forms-select--docs) [Snackbar](../components/snackbar) [View source](https://circuit.sumup.com/?path=/docs/notification-notificationtoast--docs) [Switch](../components/switch) [View source](https://circuit.sumup.com/?path=/docs/forms-toggle--docs) [Tabs](../components/tabs) [View source](https://circuit.sumup.com/?path=/docs/navigation-tabs--docs) [Tag](../components/tag) [View source](https://circuit.sumup.com/?path=/docs/components-tag--docs) [Text area](../components/text-area) [View",
-      "metadata": {
-        "startIndex": 6132,
-        "endIndex": 7091,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "ps://circuit.sumup.com/?path=/docs/navigation-tabs--docs) [Tag](../components/tag) [View source](https://circuit.sumup.com/?path=/docs/components-tag--docs) [Text area](../components/text-area) [View source](https://circuit.sumup.com/?path=/docs/forms-textarea--docs) [Text field](../components/text-field) [View source](https://circuit.sumup.com/?path=/docs/forms-input--docs) [Tooltip](../components/tooltip) [View source](https://circuit.sumup.com/?path=/docs/components-tooltip--docs) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Figma](../directories/figma) [Typography](../directories/typography) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf)",
-      "metadata": {
-        "startIndex": 6891,
-        "endIndex": 7880,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "a) [Typography](../directories/typography) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 7680,
-        "endIndex": 8680,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
       }
     }
   ],

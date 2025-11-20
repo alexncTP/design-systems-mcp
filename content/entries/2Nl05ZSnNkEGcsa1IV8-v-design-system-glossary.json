@@ -10,156 +10,200 @@
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "Design System Glossary Home Courses Articles Books Templates Glossary About Menu Menu # Glossary Design systems can be tricky if you don’t know what certain words mean! Here’s a quick primer to help you get acclimated. # Glossary Design systems can be tricky if you don’t know what certain words mean! Here’s a quick primer to help you get acclimated. # Glossary Design systems can be tricky if you don’t know what certain words mean! Here’s a quick primer to help you get acclimated. Component Component Component A reusable snippet of code. Sometimes used interchangeably with pattern [./glossary#pattern], but we think of them as different things. A reusable snippet of code. Sometimes used interchangeably with pattern [./glossary#pattern], but we think of them as different things. Component Library Component Library Component Library One of two main ingredients of any design system—the other being guidelines [./glossary#guidelines]—a component library—also referred to as a pattern",
+      "text": "Design System Glossary Home Courses Articles Books Templates Glossary About Menu Menu # Glossary Design systems can be tricky if you don’t know what certain words mean! Here’s a quick primer to help you get acclimated. # Glossary Design systems can be tricky if you don’t know what certain words mean! Here’s a quick primer to help you get acclimated. # Glossary Design systems can be tricky if you don’t know what certain words mean! Here’s a quick primer to help you get acclimated. Component Component Component A reusable snippet of code. Sometimes used interchangeably with pattern [./glossary#pattern], but we think of them as different things. A reusable snippet of code. Sometimes used interchangeably with pattern [./glossary#pattern], but we think of them as different things. Component Lib",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 991,
+        "endIndex": 800,
         "chunkIndex": 0,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 0
       }
     },
     {
       "id": "chunk-1",
-      "text": "onent Library Component Library Component Library One of two main ingredients of any design system—the other being guidelines [./glossary#guidelines]—a component library—also referred to as a pattern library—is a collection of components [./glossary#component] or patterns [./glossary#pattern] where you can browse examples of components and find code references for how to implement the components into a codebase. Examples of component libraries include Storybook [https://storybook.js.org/], Pattern Lab [https://patternlab.io/], and Fractal [https://fractal.build/]. Further Reading: Pattern Library First: An Approach For Managing CSS [https://www.smashingmagazine.com/2018/07/pattern-library-first-css/] by Rachel Andrew One of two main ingredients of any design system—the other being guidelines [./glossary#guidelines]—a component library—also referred to as a pattern library—is a collection of components [./glossary#component] or patterns [./glossary#pattern] where you can browse examples",
+      "text": "attern], but we think of them as different things. A reusable snippet of code. Sometimes used interchangeably with pattern [./glossary#pattern], but we think of them as different things. Component Library Component Library Component Library One of two main ingredients of any design system—the other being guidelines [./glossary#guidelines]—a component library—also referred to as a pattern library—is a collection of components [./glossary#component] or patterns [./glossary#pattern] where you can browse examples of components and find code references for how to implement the components into a codebase. Examples of component libraries include Storybook [https://storybook.js.org/], Pattern Lab [https://patternlab.io/], and Fractal [https://fractal.build/]. Further Reading: Pattern Library First",
       "metadata": {
-        "startIndex": 791,
-        "endIndex": 1792,
+        "startIndex": 600,
+        "endIndex": 1400,
         "chunkIndex": 1,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 1
       }
     },
     {
       "id": "chunk-2",
-      "text": "s [./glossary#guidelines]—a component library—also referred to as a pattern library—is a collection of components [./glossary#component] or patterns [./glossary#pattern] where you can browse examples of components and find code references for how to implement the components into a codebase. Examples of component libraries include Storybook [https://storybook.js.org/], Pattern Lab [https://patternlab.io/], and Fractal [https://fractal.build/]. Further Reading: Pattern Library First: An Approach For Managing CSS [https://www.smashingmagazine.com/2018/07/pattern-library-first-css/] by Rachel Andrew Design System Design System Design System The smallest set of components [./glossary#component] and guidelines [./glossary#guidelines] your organization needs to make your digital products consistently, efficiently, and quickly. Many people have different and useful definitions for design systems: Designer Alla Kholmatova [https://www.smashingmagazine.com/design-systems-book/] calls design",
+      "text": "ebase. Examples of component libraries include Storybook [https://storybook.js.org/], Pattern Lab [https://patternlab.io/], and Fractal [https://fractal.build/]. Further Reading: Pattern Library First: An Approach For Managing CSS [https://www.smashingmagazine.com/2018/07/pattern-library-first-css/] by Rachel Andrew One of two main ingredients of any design system—the other being guidelines [./glossary#guidelines]—a component library—also referred to as a pattern library—is a collection of components [./glossary#component] or patterns [./glossary#pattern] where you can browse examples of components and find code references for how to implement the components into a codebase. Examples of component libraries include Storybook [https://storybook.js.org/], Pattern Lab [https://patternlab.io/],",
       "metadata": {
-        "startIndex": 1592,
-        "endIndex": 2588,
+        "startIndex": 1200,
+        "endIndex": 2000,
         "chunkIndex": 2,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 2
       }
     },
     {
       "id": "chunk-3",
-      "text": "istently, efficiently, and quickly. Many people have different and useful definitions for design systems: Designer Alla Kholmatova [https://www.smashingmagazine.com/design-systems-book/] calls design systems “a set of connected patterns and shared practices, coherently organized to serve the purposes of a digital product.” Designer/developer Sylvee L. says design systems are [https://medium.muz.li/what-is-a-design-system-1e43d19e7696] “collections of rules, constraints, and principles, implemented in design and code.” Designer Nathan Curtis says [https://medium.com/eightshapes-llc/defining-design-systems-6dd4b03e0ff6], “A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting products can be more efficient and cohesive,” among other things. Developer Jeremy Keith says [https://adactio.com/journal/13844], “I think we lose sight of the real value of a design",
+      "text": "nents and find code references for how to implement the components into a codebase. Examples of component libraries include Storybook [https://storybook.js.org/], Pattern Lab [https://patternlab.io/], and Fractal [https://fractal.build/]. Further Reading: Pattern Library First: An Approach For Managing CSS [https://www.smashingmagazine.com/2018/07/pattern-library-first-css/] by Rachel Andrew Design System Design System Design System The smallest set of components [./glossary#component] and guidelines [./glossary#guidelines] your organization needs to make your digital products consistently, efficiently, and quickly. Many people have different and useful definitions for design systems: Designer Alla Kholmatova [https://www.smashingmagazine.com/design-systems-book/] calls design systems “a s",
       "metadata": {
-        "startIndex": 2388,
-        "endIndex": 3383,
+        "startIndex": 1800,
+        "endIndex": 2600,
         "chunkIndex": 3,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 3
       }
     },
     {
       "id": "chunk-4",
-      "text": "o that adopting products can be more efficient and cohesive,” among other things. Developer Jeremy Keith says [https://adactio.com/journal/13844], “I think we lose sight of the real value of a design system when we focus too much on the components. The components are the trees. The design system is the forest.” Front-end designer Brad Frost says [http://bradfrost.com/blog/link/design-systems/], “A design system [is] the official story of how your organization designs and builds digital products.” The smallest set of components [./glossary#component] and guidelines [./glossary#guidelines] your organization needs to make your digital products consistently, efficiently, and quickly. Many people have different and useful definitions for design systems: Designer Alla Kholmatova [https://www.smashingmagazine.com/design-systems-book/] calls design systems “a set of connected patterns and shared practices, coherently organized to serve the purposes of a digital product.” Designer/developer",
+      "text": "ficiently, and quickly. Many people have different and useful definitions for design systems: Designer Alla Kholmatova [https://www.smashingmagazine.com/design-systems-book/] calls design systems “a set of connected patterns and shared practices, coherently organized to serve the purposes of a digital product.” Designer/developer Sylvee L. says design systems are [https://medium.muz.li/what-is-a-design-system-1e43d19e7696] “collections of rules, constraints, and principles, implemented in design and code.” Designer Nathan Curtis says [https://medium.com/eightshapes-llc/defining-design-systems-6dd4b03e0ff6], “A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting p",
       "metadata": {
-        "startIndex": 3183,
-        "endIndex": 4180,
+        "startIndex": 2400,
+        "endIndex": 3200,
         "chunkIndex": 4,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 4
       }
     },
     {
       "id": "chunk-5",
-      "text": "smashingmagazine.com/design-systems-book/] calls design systems “a set of connected patterns and shared practices, coherently organized to serve the purposes of a digital product.” Designer/developer Sylvee L. says design systems are [https://medium.muz.li/what-is-a-design-system-1e43d19e7696] “collections of rules, constraints, and principles, implemented in design and code.” Designer Nathan Curtis says [https://medium.com/eightshapes-llc/defining-design-systems-6dd4b03e0ff6], “A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting products can be more efficient and cohesive,” among other things. Developer Jeremy Keith says [https://adactio.com/journal/13844], “I think we lose sight of the real value of a design system when we focus too much on the components. The components are the trees.",
+      "text": "6dd4b03e0ff6], “A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting products can be more efficient and cohesive,” among other things. Developer Jeremy Keith says [https://adactio.com/journal/13844], “I think we lose sight of the real value of a design system when we focus too much on the components. The components are the trees. The design system is the forest.” Front-end designer Brad Frost says [http://bradfrost.com/blog/link/design-systems/], “A design system [is] the official story of how your organization designs and builds digital products.” The smallest set of components [./glossary#component] and guidelines [./glossary#guidelines] your organization need",
       "metadata": {
-        "startIndex": 3980,
-        "endIndex": 4910,
+        "startIndex": 3000,
+        "endIndex": 3800,
         "chunkIndex": 5,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 5
       }
     },
     {
       "id": "chunk-6",
-      "text": "s. Developer Jeremy Keith says [https://adactio.com/journal/13844], “I think we lose sight of the real value of a design system when we focus too much on the components. The components are the trees. The design system is the forest.” Front-end designer Brad Frost says [http://bradfrost.com/blog/link/design-systems/], “A design system [is] the official story of how your organization designs and builds digital products.” Governance Governance Governance The particular approach your organization uses to keep its design system up-to-date. Further Reading: Team Models for Scaling a Design System [https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0] by Nathan Curtis The Salesforce Team Model for Scaling a Design System [https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne Episode 6 – Maintaining and Evolving Your Design System [https://www.youtube.com/watch?v=ejhk8tDO5fU] by InVision The",
+      "text": "s] the official story of how your organization designs and builds digital products.” The smallest set of components [./glossary#component] and guidelines [./glossary#guidelines] your organization needs to make your digital products consistently, efficiently, and quickly. Many people have different and useful definitions for design systems: Designer Alla Kholmatova [https://www.smashingmagazine.com/design-systems-book/] calls design systems “a set of connected patterns and shared practices, coherently organized to serve the purposes of a digital product.” Designer/developer Sylvee L. says design systems are [https://medium.muz.li/what-is-a-design-system-1e43d19e7696] “collections of rules, constraints, and principles, implemented in design and code.” Designer Nathan Curtis says [https://med",
       "metadata": {
-        "startIndex": 4710,
-        "endIndex": 5702,
+        "startIndex": 3600,
+        "endIndex": 4400,
         "chunkIndex": 6,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 6
       }
     },
     {
       "id": "chunk-7",
-      "text": "/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne Episode 6 – Maintaining and Evolving Your Design System [https://www.youtube.com/watch?v=ejhk8tDO5fU] by InVision The particular approach your organization uses to keep its design system up-to-date. Further Reading: Team Models for Scaling a Design System [https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0] by Nathan Curtis The Salesforce Team Model for Scaling a Design System [https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne Episode 6 – Maintaining and Evolving Your Design System [https://www.youtube.com/watch?v=ejhk8tDO5fU] by InVision Guidelines Guidelines Guidelines The other big ingredient of design systems (along with a component library [./glossary#component-library]), guidelines are suggestions or rules to follow for how to best use any given design system.",
+      "text": "n systems are [https://medium.muz.li/what-is-a-design-system-1e43d19e7696] “collections of rules, constraints, and principles, implemented in design and code.” Designer Nathan Curtis says [https://medium.com/eightshapes-llc/defining-design-systems-6dd4b03e0ff6], “A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting products can be more efficient and cohesive,” among other things. Developer Jeremy Keith says [https://adactio.com/journal/13844], “I think we lose sight of the real value of a design system when we focus too much on the components. The components are the trees. The design system is the forest.” Front-end designer Brad Frost says [http://bradfrost.com",
       "metadata": {
-        "startIndex": 5502,
-        "endIndex": 6462,
+        "startIndex": 4200,
+        "endIndex": 5000,
         "chunkIndex": 7,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 7
       }
     },
     {
       "id": "chunk-8",
-      "text": "The other big ingredient of design systems (along with a component library [./glossary#component-library]), guidelines are suggestions or rules to follow for how to best use any given design system. The other big ingredient of design systems (along with a component library [./glossary#component-library]), guidelines are suggestions or rules to follow for how to best use any given design system. Pattern Pattern Pattern A reusable flow, like signing in or checking out. Sometimes used interchangeably with component [./glossary#component], but we think of them as different things. A reusable flow, like signing in or checking out. Sometimes used interchangeably with component [./glossary#component], but we think of them as different things. Pilot Pilot Pilot A product designed to be a proof-of-concept for the efficacy of a design system. Further Reading: Design Systems: Pilots & Scorecards [https://danmall.com/posts/design-systems-pilots-scorecards/] by Dan Mall A product designed to be a",
+      "text": " of the real value of a design system when we focus too much on the components. The components are the trees. The design system is the forest.” Front-end designer Brad Frost says [http://bradfrost.com/blog/link/design-systems/], “A design system [is] the official story of how your organization designs and builds digital products.” Governance Governance Governance The particular approach your organization uses to keep its design system up-to-date. Further Reading: Team Models for Scaling a Design System [https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0] by Nathan Curtis The Salesforce Team Model for Scaling a Design System [https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne Episode 6 – Main",
       "metadata": {
-        "startIndex": 6262,
-        "endIndex": 7262,
+        "startIndex": 4800,
+        "endIndex": 5600,
         "chunkIndex": 8,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 8
       }
     },
     {
       "id": "chunk-9",
-      "text": "-concept for the efficacy of a design system. Further Reading: Design Systems: Pilots & Scorecards [https://danmall.com/posts/design-systems-pilots-scorecards/] by Dan Mall A product designed to be a proof-of-concept for the efficacy of a design system. Further Reading: Design Systems: Pilots & Scorecards [https://danmall.com/posts/design-systems-pilots-scorecards/] by Dan Mall Reference Site Reference Site Reference Site A visible manifestation of a design system, typically a URL that displays both the full component library [./glossary#component-library] and a set of guidelines [./glossary#guidelines]. A visible manifestation of a design system, typically a URL that displays both the full component library [./glossary#component-library] and a set of guidelines [./glossary#guidelines]. Token Token Token A platform- and technology-agnostic way to store a value to be ingested by specific applications.",
+      "text": " Nathan Curtis The Salesforce Team Model for Scaling a Design System [https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne Episode 6 – Maintaining and Evolving Your Design System [https://www.youtube.com/watch?v=ejhk8tDO5fU] by InVision The particular approach your organization uses to keep its design system up-to-date. Further Reading: Team Models for Scaling a Design System [https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0] by Nathan Curtis The Salesforce Team Model for Scaling a Design System [https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne Episode 6 – Maintaining and Evolving Your Design System [https://www.youtube.com/wat",
       "metadata": {
-        "startIndex": 7062,
-        "endIndex": 7976,
+        "startIndex": 5400,
+        "endIndex": 6200,
         "chunkIndex": 9,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 9
       }
     },
     {
       "id": "chunk-10",
-      "text": "ary [./glossary#component-library] and a set of guidelines [./glossary#guidelines]. Token Token Token A platform- and technology-agnostic way to store a value to be ingested by specific applications. Examples of useful properties to store as tokens: color palette, typographic families, spacing units. Further Reading: What are Design Tokens? [https://css-tricks.com/what-are-design-tokens/] by Robin Rendle Tokens in Design Systems [https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421] by Nathan Curtis A platform- and technology-agnostic way to store a value to be ingested by specific applications. Examples of useful properties to store as tokens: color palette, typographic families, spacing units. Further Reading: What are Design Tokens? [https://css-tricks.com/what-are-design-tokens/] by Robin Rendle Tokens in Design Systems [https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421] by Nathan Curtis UI Kit UI Kit UI Kit As it relates to a design",
+      "text": " [https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b] by Jina Anne Episode 6 – Maintaining and Evolving Your Design System [https://www.youtube.com/watch?v=ejhk8tDO5fU] by InVision Guidelines Guidelines Guidelines The other big ingredient of design systems (along with a component library [./glossary#component-library]), guidelines are suggestions or rules to follow for how to best use any given design system. The other big ingredient of design systems (along with a component library [./glossary#component-library]), guidelines are suggestions or rules to follow for how to best use any given design system. Pattern Pattern Pattern A reusable flow, like signing in or checking out. Sometimes used interchangeably with component [./glossary#compone",
       "metadata": {
-        "startIndex": 7776,
-        "endIndex": 8771,
+        "startIndex": 6000,
+        "endIndex": 6800,
         "chunkIndex": 10,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 10
       }
     },
     {
       "id": "chunk-11",
-      "text": "are-design-tokens/] by Robin Rendle Tokens in Design Systems [https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421] by Nathan Curtis UI Kit UI Kit UI Kit As it relates to a design system, a UI Kit is a representation of coded components [./glossary#component] created in a way that designers who don’t know code can create interface mockups. Sketch libraries and Figma design systems [https://www.figma.com/blog/how-to-build-your-design-system-in-figma/] are examples of UI kits. As it relates to a design system, a UI Kit is a representation of coded components [./glossary#component] created in a way that designers who don’t know code can create interface mockups. Sketch libraries and Figma design systems [https://www.figma.com/blog/how-to-build-your-design-system-in-figma/] are examples of UI kits. Design System University is content & curriculum to help you design at scale.",
+      "text": "rules to follow for how to best use any given design system. Pattern Pattern Pattern A reusable flow, like signing in or checking out. Sometimes used interchangeably with component [./glossary#component], but we think of them as different things. A reusable flow, like signing in or checking out. Sometimes used interchangeably with component [./glossary#component], but we think of them as different things. Pilot Pilot Pilot A product designed to be a proof-of-concept for the efficacy of a design system. Further Reading: Design Systems: Pilots & Scorecards [https://danmall.com/posts/design-systems-pilots-scorecards/] by Dan Mall A product designed to be a proof-of-concept for the efficacy of a design system. Further Reading: Design Systems: Pilots & Scorecards [https://danmall.com/posts/desi",
       "metadata": {
-        "startIndex": 8571,
-        "endIndex": 9475,
+        "startIndex": 6600,
+        "endIndex": 7400,
         "chunkIndex": 11,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 11
       }
     },
     {
       "id": "chunk-12",
-      "text": "and Figma design systems [https://www.figma.com/blog/how-to-build-your-design-system-in-figma/] are examples of UI kits. Design System University is content & curriculum to help you design at scale. Home [./] Courses [./courses] Books [./books/design-that-scales] Templates [./templates] Glossary [./glossary] About [./about] Subscribe for the latest content about design systems: © 2023–2024 Design System University. All rights reserved. Design System University is content & curriculum to help you design at scale. Home [./] Courses [./courses] Books [./books/design-that-scales] Templates [./templates] Glossary [./glossary] About [./about] Subscribe for the latest content about design systems: © 2023–2024 Design System University. All rights reserved. Design System University is content & curriculum to help you design at scale. Home [./] Courses [./courses] Books [./books/design-that-scales] Templates [./templates] Glossary [./glossary] About [./about] Subscribe for the latest content",
+      "text": "ms-pilots-scorecards/] by Dan Mall A product designed to be a proof-of-concept for the efficacy of a design system. Further Reading: Design Systems: Pilots & Scorecards [https://danmall.com/posts/design-systems-pilots-scorecards/] by Dan Mall Reference Site Reference Site Reference Site A visible manifestation of a design system, typically a URL that displays both the full component library [./glossary#component-library] and a set of guidelines [./glossary#guidelines]. A visible manifestation of a design system, typically a URL that displays both the full component library [./glossary#component-library] and a set of guidelines [./glossary#guidelines]. Token Token Token A platform- and technology-agnostic way to store a value to be ingested by specific applications. Examples of useful prope",
       "metadata": {
-        "startIndex": 9275,
-        "endIndex": 10273,
+        "startIndex": 7200,
+        "endIndex": 8000,
         "chunkIndex": 12,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 12
       }
     },
     {
       "id": "chunk-13",
-      "text": "curriculum to help you design at scale. Home [./] Courses [./courses] Books [./books/design-that-scales] Templates [./templates] Glossary [./glossary] About [./about] Subscribe for the latest content about design systems: © 2023–2024 Design System University. All rights reserved.",
+      "text": "t-library] and a set of guidelines [./glossary#guidelines]. Token Token Token A platform- and technology-agnostic way to store a value to be ingested by specific applications. Examples of useful properties to store as tokens: color palette, typographic families, spacing units. Further Reading: What are Design Tokens? [https://css-tricks.com/what-are-design-tokens/] by Robin Rendle Tokens in Design Systems [https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421] by Nathan Curtis A platform- and technology-agnostic way to store a value to be ingested by specific applications. Examples of useful properties to store as tokens: color palette, typographic families, spacing units. Further Reading: What are Design Tokens? [https://css-tricks.com/what-are-design-tokens/] by Robin ",
       "metadata": {
-        "startIndex": 10073,
-        "endIndex": 11073,
+        "startIndex": 7800,
+        "endIndex": 8600,
         "chunkIndex": 13,
-        "section": "Introduction",
+        "section": "Content",
         "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "xamples of useful properties to store as tokens: color palette, typographic families, spacing units. Further Reading: What are Design Tokens? [https://css-tricks.com/what-are-design-tokens/] by Robin Rendle Tokens in Design Systems [https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421] by Nathan Curtis UI Kit UI Kit UI Kit As it relates to a design system, a UI Kit is a representation of coded components [./glossary#component] created in a way that designers who don’t know code can create interface mockups. Sketch libraries and Figma design systems [https://www.figma.com/blog/how-to-build-your-design-system-in-figma/] are examples of UI kits. As it relates to a design system, a UI Kit is a representation of coded components [./glossary#component] created in a way that d",
+      "metadata": {
+        "startIndex": 8400,
+        "endIndex": 9200,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "og/how-to-build-your-design-system-in-figma/] are examples of UI kits. As it relates to a design system, a UI Kit is a representation of coded components [./glossary#component] created in a way that designers who don’t know code can create interface mockups. Sketch libraries and Figma design systems [https://www.figma.com/blog/how-to-build-your-design-system-in-figma/] are examples of UI kits. Design System University is content & curriculum to help you design at scale. Home [./] Courses [./courses] Books [./books/design-that-scales] Templates [./templates] Glossary [./glossary] About [./about] Subscribe for the latest content about design systems: © 2023–2024 Design System University. All rights reserved. Design System University is content & curriculum to help you design at scale. Home [",
+      "metadata": {
+        "startIndex": 9000,
+        "endIndex": 9800,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "] Subscribe for the latest content about design systems: © 2023–2024 Design System University. All rights reserved. Design System University is content & curriculum to help you design at scale. Home [./] Courses [./courses] Books [./books/design-that-scales] Templates [./templates] Glossary [./glossary] About [./about] Subscribe for the latest content about design systems: © 2023–2024 Design System University. All rights reserved. Design System University is content & curriculum to help you design at scale. Home [./] Courses [./courses] Books [./books/design-that-scales] Templates [./templates] Glossary [./glossary] About [./about] Subscribe for the latest content about design systems: © 2023–2024 Design System University. All rights reserved.",
+      "metadata": {
+        "startIndex": 9600,
+        "endIndex": 10353,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "] Glossary [./glossary] About [./about] Subscribe for the latest content about design systems: © 2023–2024 Design System University. All rights reserved.",
+      "metadata": {
+        "startIndex": 10200,
+        "endIndex": 10353,
+        "chunkIndex": 17,
+        "section": "Content",
+        "globalChunkIndex": 17
       }
     }
   ],

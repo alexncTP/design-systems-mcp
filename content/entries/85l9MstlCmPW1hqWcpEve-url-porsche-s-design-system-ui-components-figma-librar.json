@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/porsche",
     "ingested_at": "2025-08-30T13:09:16.763Z"
   },
-  "content": "# Porsche Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Porsche's Design System is tailored for easy creation of attractive and high-quality web applications. It offers a range of components, extensive design guidelines, and thorough documentation. This system provides in-depth information on basic principles and and offer comprehensive instructions for using various components. Design System is seamlessly integrated with , ensuring a consistent and cohesive design language that resonates throughout all user interactions. Advertisement Accessibility View source Elevation Figma Repository Layout Motion Patterns Spacing States Styles Theming Typography Accordion Alert banner Button Button group Checkbox Data table Divider Drawer Icon Inline message Link List Modal Pagination Popover Progress indicator Radio button Segmented control Select Snackbar Switch Tabs Tag Text area Text field",
+  "content": "Design System from Directories: Components: Porsche's Design System is tailored for easy creation of attractive and high-quality web applications. It offers a range of components, extensive design guidelines, and thorough documentation. This system provides in-depth information on basic principles and and offer comprehensive instructions for using various components. Design System is seamlessly integrated with, ensuring a consistent and cohesive design language that resonates throughout all user interactions. Accessibility Elevation Figma Repository Layout Motion Patterns Spacing States Styles Theming Typography Accordion Alert banner Button Button group Checkbox Data table Divider Drawer Icon Inline message Link List Modal Pagination Popover Progress indicator Radio button Segmented control Select Snackbar Switch Tabs Tag Text area Text field",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Porsche Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Porsche's Design System is tailored for easy creation of attractive and high-quality web applications.",
+      "text": "Design System from Directories: Components: Porsche's Design System is tailored for easy creation of attractive and high-quality web applications. It offers a range of components, extensive design guidelines, and thorough documentation. This system provides in-depth information on basic principles and and offer comprehensive instructions for using various components. Design System is seamlessly integrated with, ensuring a consistent and cohesive design language that resonates throughout all user interactions. Accessibility Elevation Figma Repository Layout Motion Patterns Spacing States Styles Theming Typography Accordion Alert banner Button Button group Checkbox Data table Divider Drawer Icon Inline message Link List Modal Pagination Popover Progress indicator Radio button Segmented contr",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 921,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,123 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Porsche's Design System is tailored for easy creation of attractive and high-quality web applications. It offers a range of components, extensive design guidelines, and thorough documentation. This system provides in-depth information on basic principles and and offer comprehensive instructions for using various components. Design System is seamlessly integrated with , ensuring a consistent and cohesive design language that resonates throughout all user interactions. Advertisement Accessibility View source Elevation Figma Repository Layout Motion Patterns Spacing States Styles Theming Typography Accordion Alert banner Button Button group Checkbox Data table Divider Drawer Icon Inline message Link List Modal Pagination Popover Progress indicator Radio button Segmented control Select Snackbar Switch Tabs Tag Text area Text field Design .surf © Dzeya OÜ.",
+      "text": " Theming Typography Accordion Alert banner Button Button group Checkbox Data table Divider Drawer Icon Inline message Link List Modal Pagination Popover Progress indicator Radio button Segmented control Select Snackbar Switch Tabs Tag Text area Text field",
       "metadata": {
-        "startIndex": 721,
-        "endIndex": 1682,
+        "startIndex": 600,
+        "endIndex": 855,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "e Divider Drawer Icon Inline message Link List Modal Pagination Popover Progress indicator Radio button Segmented control Select Snackbar Switch Tabs Tag Text area Text field",
-      "metadata": {
-        "startIndex": 1482,
-        "endIndex": 2476,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
-      "metadata": {
-        "startIndex": 2276,
-        "endIndex": 3269,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromPorsche](./porsche#up-pixel) [Porsche's brand guidelines](https://brand.porsche.com/) [Source](https://designsystem.porsche.com/v3/) [Figma](https://www.figma.com/@porsche) [Repository](https://github.com/porsche-design-system) [Accessibility](../directories/accessibility) [View",
-      "metadata": {
-        "startIndex": 3069,
-        "endIndex": 4047,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "com/) [Source](https://designsystem.porsche.com/v3/) [Figma](https://www.figma.com/@porsche) [Repository](https://github.com/porsche-design-system) [Accessibility](../directories/accessibility) [View source](https://designsystem.porsche.com/v3/must-know/accessibility/introduction) [Elevation](../directories/elevation) [View source](https://designsystem.porsche.com/v3/styles/drop-shadow) [Figma](../directories/figma) [View source](https://www.figma.com/@porsche) [Repository](../directories/repository) [View source](https://github.com/porsche-design-system) [Layout](../directories/layout) [View source](https://designsystem.porsche.com/v3/styles/grid) [Motion](../directories/motion) [View source](https://designsystem.porsche.com/v3/styles/motion) [Patterns](../directories/patterns) [View source](https://designsystem.porsche.com/v3/patterns/forms/guidelines) [Spacing](../directories/spacing) [View source](https://designsystem.porsche.com/v3/styles/spacing) [States](../directories/states)",
-      "metadata": {
-        "startIndex": 3847,
-        "endIndex": 4846,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "rce](https://designsystem.porsche.com/v3/patterns/forms/guidelines) [Spacing](../directories/spacing) [View source](https://designsystem.porsche.com/v3/styles/spacing) [States](../directories/states) [View source](https://designsystem.porsche.com/v3/styles/hover) [Styles](../directories/styles) [View source](https://designsystem.porsche.com/v3/styles/border) [Theming](../directories/theming) [View source](https://designsystem.porsche.com/v3/styles/theme) [Typography](../directories/typography) [View source](https://designsystem.porsche.com/v3/styles/typography) [Accordion](../components/accordion) [View source](https://designsystem.porsche.com/v3/components/accordion/examples) [Alert banner](../components/alert-banner) [View source](https://designsystem.porsche.com/v3/components/banner/examples) [Button](../components/button) [View source](https://designsystem.porsche.com/v3/components/button/examples) [Button group](../components/button-group) [View",
-      "metadata": {
-        "startIndex": 4646,
-        "endIndex": 5611,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "orsche.com/v3/components/banner/examples) [Button](../components/button) [View source](https://designsystem.porsche.com/v3/components/button/examples) [Button group](../components/button-group) [View source](https://designsystem.porsche.com/v3/components/button-group/examples) [Checkbox](../components/checkbox) [View source](https://designsystem.porsche.com/v3/components/checkbox-wrapper/examples) [Data table](../components/data-table) [View source](https://designsystem.porsche.com/v3/components/table/examples) [Divider](../components/divider) [View source](https://designsystem.porsche.com/v3/components/divider/examples) [Drawer](../components/drawer) [View source](https://designsystem.porsche.com/v3/components/flyout/examples) [Icon](../directories/icons) [View source](https://designsystem.porsche.com/v3/components/icon/examples) [Inline message](../components/inline-message) [View source](https://designsystem.porsche.com/v3/components/inline-notification/examples)",
-      "metadata": {
-        "startIndex": 5411,
-        "endIndex": 6392,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "https://designsystem.porsche.com/v3/components/icon/examples) [Inline message](../components/inline-message) [View source](https://designsystem.porsche.com/v3/components/inline-notification/examples) [Link](../components/link) [View source](https://designsystem.porsche.com/v3/components/link/examples) [List](../components/list) [View source](https://designsystem.porsche.com/v3/components/text-list/configurator/) [Modal](../components/modal) [View source](https://designsystem.porsche.com/v3/components/modal/examples) [Pagination](../components/pagination) [View source](https://designsystem.porsche.com/v3/components/pagination/configurator/) [Popover](../components/popover) [View source](https://designsystem.porsche.com/v3/components/popover/configurator/) [Progress indicator](../components/progress-indicator) [View source](https://designsystem.porsche.com/v3/components/spinner/examples) [Radio button](../components/radio-button) [View",
-      "metadata": {
-        "startIndex": 6192,
-        "endIndex": 7140,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "r/configurator/) [Progress indicator](../components/progress-indicator) [View source](https://designsystem.porsche.com/v3/components/spinner/examples) [Radio button](../components/radio-button) [View source](https://designsystem.porsche.com/v3/components/radio-button-wrapper/examples) [Segmented control](../components/segmented-control) [View source](https://designsystem.porsche.com/v3/components/segmented-control/examples) [Select](../components/select) [View source](https://designsystem.porsche.com/v3/components/select-wrapper/examples) [Snackbar](../components/snackbar) [View source](https://designsystem.porsche.com/v3/components/toast/configurator/) [Switch](../components/switch) [View source](https://designsystem.porsche.com/v3/components/switch/configurator/) [Tabs](../components/tabs) [View source](https://designsystem.porsche.com/v3/components/tabs/examples) [Tag](../components/tag) [View source](https://designsystem.porsche.com/v3/components/tag/examples) [Text",
-      "metadata": {
-        "startIndex": 6940,
-        "endIndex": 7925,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "/components/tabs) [View source](https://designsystem.porsche.com/v3/components/tabs/examples) [Tag](../components/tag) [View source](https://designsystem.porsche.com/v3/components/tag/examples) [Text area](../components/text-area) [View source](https://designsystem.porsche.com/v3/components/textarea-wrapper/examples) [Text field](../components/text-field) [View source](https://designsystem.porsche.com/v3/components/text-field-wrapper/examples) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Color System](../directories/color-system) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 7725,
-        "endIndex": 8725,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
-      }
-    },
-    {
-      "id": "chunk-11",
-      "text": "stagram.com/designsystems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 8525,
-        "endIndex": 9525,
-        "chunkIndex": 11,
-        "section": "Content",
-        "globalChunkIndex": 11
       }
     }
   ],

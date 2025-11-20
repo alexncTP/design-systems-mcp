@@ -7,6 +7,7 @@ import { createClient } from '@supabase/supabase-js';
 import OpenAI from 'openai';
 import { ContentEntry } from '../../types/content';
 import { loadAllContentEntries } from './content-loader';
+import { chunkText as createChunks } from './chunker';
 
 // Types
 interface IngestionOptions {
@@ -40,6 +41,10 @@ function initializeClients() {
     throw new Error('Missing OpenAI API key. Please set OPENAI_API_KEY');
   }
 
+  // Debug logging
+  console.log(`🔑 Using OpenAI key: ${openaiKey.substring(0, 20)}...${openaiKey.substring(openaiKey.length - 10)}`);
+  console.log(`📏 Key length: ${openaiKey.length} characters`);
+
   const supabase = createClient(supabaseUrl, supabaseKey);
   const openai = new OpenAI({ apiKey: openaiKey });
 
@@ -61,38 +66,24 @@ async function generateEmbedding(
     });
 
     return response.data[0].embedding;
-  } catch (error) {
-    console.error('Error generating embedding:', error);
+  } catch (error: any) {
+    console.error('❌ OpenAI API Error Details:');
+    console.error('   Message:', error.message);
+    console.error('   Status:', error.status);
+    console.error('   Type:', error.type);
+    console.error('   Full error:', JSON.stringify(error, null, 2));
     throw error;
   }
 }
 
 /**
- * Chunk text for granular search
+ * NOTE: Chunking functionality now imported from chunker.ts
+ * This provides proper position tracking, metadata, and semantic preservation
  */
-function chunkText(text: string, chunkSize: number = 1000): string[] {
-  const chunks: string[] = [];
-  const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
-  
-  let currentChunk = '';
-  for (const sentence of sentences) {
-    if ((currentChunk + sentence).length > chunkSize && currentChunk.length > 0) {
-      chunks.push(currentChunk.trim());
-      currentChunk = sentence;
-    } else {
-      currentChunk += ' ' + sentence;
-    }
-  }
-  
-  if (currentChunk.trim()) {
-    chunks.push(currentChunk.trim());
-  }
-  
-  return chunks;
-}
 
 /**
  * Upload content entry to Supabase
+ * Matches schema.sql structure with proper metadata preservation
  */
 async function uploadEntry(
   supabase: any,
@@ -105,14 +96,11 @@ async function uploadEntry(
       id: entry.id,
       title: entry.title,
       content: entry.content,
+      embedding,
       source_type: entry.source?.type,
       source_location: entry.source?.location,
-      category: entry.metadata?.category,
-      system_name: entry.metadata?.system_name,
-      tags: entry.metadata?.tags || [],
-      confidence: entry.metadata?.confidence,
-      embedding,
-      metadata: entry.metadata,
+      // Note: source_url is stored in metadata.source_url, not as separate column
+      metadata: entry.metadata,  // Store all metadata in JSONB
       ingested_at: entry.source?.ingested_at || new Date().toISOString(),
     });
 
@@ -123,23 +111,37 @@ async function uploadEntry(
 
 /**
  * Upload content chunks to Supabase
+ * PRODUCTION SCHEMA (discovered 2025-11-18):
+ * - id: INTEGER (auto-increment) - do NOT specify
+ * - entry_id: TEXT (foreign key)
+ * - chunk_text: TEXT NOT NULL (not 'text')
+ * - embedding: vector(1536)
+ * - chunk_index: INTEGER NOT NULL
+ * - metadata: JSONB
+ * - created_at: TIMESTAMPTZ (auto)
  */
 async function uploadChunks(
   supabase: any,
   entryId: string,
-  chunks: Array<{ text: string; embedding: number[]; index: number }>
+  chunks: Array<{ text: string; embedding: number[]; index: number; startIndex: number; endIndex: number }>
 ): Promise<void> {
   const chunksToInsert = chunks.map(chunk => ({
+    // No id - production uses auto-increment INTEGER
     entry_id: entryId,
-    chunk_index: chunk.index,
-    chunk_text: chunk.text,
+    chunk_text: chunk.text,  // CRITICAL: Column is 'chunk_text' not 'text'
     embedding: chunk.embedding,
-    metadata: { chunk_size: chunk.text.length },
+    chunk_index: chunk.index,
+    metadata: {
+      chunk_size: chunk.text.length,
+      section: 'Content',
+      start_index: chunk.startIndex,
+      end_index: chunk.endIndex,
+    },
   }));
 
   const { error } = await supabase
     .from('content_chunks')
-    .upsert(chunksToInsert);
+    .insert(chunksToInsert);  // Use insert not upsert (no id to match on)
 
   if (error) {
     throw new Error(`Failed to upload chunks for ${entryId}: ${error.message}`);
@@ -169,14 +171,21 @@ async function processEntry(
       await uploadEntry(supabase, entry, embedding);
     }
 
-    // Process chunks if content is long
-    const chunks = chunkText(entry.content, options.chunkSize);
-    if (chunks.length > 1) {
+    // Process chunks using proper chunker with position tracking
+    const contentChunks = createChunks(entry.content, {
+      chunkSize: options.chunkSize || 1000,
+      overlapSize: 100,
+      preserveSentences: true,
+    });
+
+    if (contentChunks.length > 1) {
       const chunkEmbeddings = await Promise.all(
-        chunks.map(async (text, index) => ({
-          text,
-          index,
-          embedding: await generateEmbedding(openai, text),
+        contentChunks.map(async (chunk) => ({
+          text: chunk.text,
+          index: chunk.metadata!.chunkIndex,
+          startIndex: chunk.metadata!.startIndex,
+          endIndex: chunk.metadata!.endIndex,
+          embedding: await generateEmbedding(openai, chunk.text),
         }))
       );
 
@@ -186,11 +195,12 @@ async function processEntry(
     }
 
     // Estimate cost (text-embedding-3-small: $0.00002 per 1K tokens)
-    const totalTokens = Math.ceil((fullText.length + chunks.join('').length) / 4);
+    const totalChunkText = contentChunks.map(c => c.text).join('');
+    const totalTokens = Math.ceil((fullText.length + totalChunkText.length) / 4);
     const cost = (totalTokens / 1000) * 0.00002;
 
     if (options.verbose) {
-      console.log(`✅ Processed: ${entry.title} (${chunks.length} chunks, $${cost.toFixed(4)})`);
+      console.log(`✅ Processed: ${entry.title} (${contentChunks.length} chunks, $${cost.toFixed(4)})`);
     }
 
     return { success: true, cost };

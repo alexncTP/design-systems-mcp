@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/apple",
     "ingested_at": "2025-08-30T13:09:20.389Z"
   },
-  "content": "# Apple Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe HIG from Directories: Components: Apple Human Interface Guidelines is a set of design principles, guidelines, and recommendations provided by Apple to help developers create consistent and user-friendly software apps and user interfaces for Apple's various platforms, including iOS, macOS, watchOS, tvOS, and visionOs. Apple's design team has developed unique guides and documentation that helps designers and developers make apps that match Apple's design and give users a smooth and easy experience. Guidelines include all the necessary information about platforms, foundations, patterns, components, inputs, and technologies. Advertisement Accessibility View source Color System Component overview Data visualization Figma Icons International Design Layout Motion Patterns Theming Typography Voice and Tone Action bar Action list Alert banner App bar Bottom sheet Breadcrumb Button Combobox Date picker Label Menus Navigation bar Popover Progress indicator Search Segmented control Sidebar Slider Switch Text area Text field",
+  "content": "HIG from Directories: Components: Apple Human Interface Guidelines is a set of design principles, guidelines, and recommendations provided by Apple to help developers create consistent and user-friendly software apps and user interfaces for Apple's various platforms, including iOS, macOS, watchOS, tvOS, and visionOs. Apple's design team has developed unique guides and documentation that helps designers and developers make apps that match Apple's design and give users a smooth and easy experience. Guidelines include all the necessary information about platforms, foundations, patterns, components, inputs, and technologies. Accessibility Color System Component overview Data visualization Figma Icons International Design Layout Motion Patterns Theming Typography Voice and Tone Action bar Action list Alert banner App bar Bottom sheet Breadcrumb Button Combobox Date picker Label Menus Navigation bar Popover Progress indicator Search Segmented control Sidebar Slider Switch Text area Text field",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Apple Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe HIG from Directories: Components: Apple Human Interface Guidelines is a set of design principles, guidelines, and recommendations provided by Apple to help developers create consistent and user-friendly software apps and user",
+      "text": "HIG from Directories: Components: Apple Human Interface Guidelines is a set of design principles, guidelines, and recommendations provided by Apple to help developers create consistent and user-friendly software apps and user interfaces for Apple's various platforms, including iOS, macOS, watchOS, tvOS, and visionOs. Apple's design team has developed unique guides and documentation that helps designers and developers make apps that match Apple's design and give users a smooth and easy experience. Guidelines include all the necessary information about platforms, foundations, patterns, components, inputs, and technologies. Accessibility Color System Component overview Data visualization Figma Icons International Design Layout Motion Patterns Theming Typography Voice and Tone Action bar Actio",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 1000,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,123 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "onents: Apple Human Interface Guidelines is a set of design principles, guidelines, and recommendations provided by Apple to help developers create consistent and user-friendly software apps and user interfaces for Apple's various platforms, including iOS, macOS, watchOS, tvOS, and visionOs. Apple's design team has developed unique guides and documentation that helps designers and developers make apps that match Apple's design and give users a smooth and easy experience. Guidelines include all the necessary information about platforms, foundations, patterns, components, inputs, and technologies. Advertisement Accessibility View source Color System Component overview Data visualization Figma Icons International Design Layout Motion Patterns Theming Typography Voice and Tone Action bar Action list Alert banner App bar Bottom sheet Breadcrumb Button Combobox Date picker Label Menus Navigation bar Popover Progress indicator Search Segmented control Sidebar Slider Switch Text area Text",
+      "text": "s, inputs, and technologies. Accessibility Color System Component overview Data visualization Figma Icons International Design Layout Motion Patterns Theming Typography Voice and Tone Action bar Action list Alert banner App bar Bottom sheet Breadcrumb Button Combobox Date picker Label Menus Navigation bar Popover Progress indicator Search Segmented control Sidebar Slider Switch Text area Text field",
       "metadata": {
-        "startIndex": 800,
-        "endIndex": 1796,
+        "startIndex": 600,
+        "endIndex": 1001,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "ction list Alert banner App bar Bottom sheet Breadcrumb Button Combobox Date picker Label Menus Navigation bar Popover Progress indicator Search Segmented control Sidebar Slider Switch Text area Text field",
-      "metadata": {
-        "startIndex": 1596,
-        "endIndex": 2583,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "app) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda)",
-      "metadata": {
-        "startIndex": 2383,
-        "endIndex": 3382,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "rpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [HIGfromApple](./apple#up-pixel) [Source](https://developer.apple.com/design/) [Figma](https://www.figma.com/@apple) [Accessibility](../directories/accessibility) [View source](https://developer.apple.com/design/human-interface-guidelines/accessibility) [Color",
-      "metadata": {
-        "startIndex": 3182,
-        "endIndex": 4155,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "pple.com/design/) [Figma](https://www.figma.com/@apple) [Accessibility](../directories/accessibility) [View source](https://developer.apple.com/design/human-interface-guidelines/accessibility) [Color System](../directories/color-system) [View source](https://developer.apple.com/design/human-interface-guidelines/color) [Component overview](../directories/component-overview) [View source](https://developer.apple.com/design/human-interface-guidelines/components) [Data visualization](../directories/data-visualization) [View source](https://developer.apple.com/design/human-interface-guidelines/charting-data) [Figma](../directories/figma) [View source](https://www.figma.com/@apple) [Icons](../directories/icons) [View source](https://developer.apple.com/design/human-interface-guidelines/icons) [International Design](../directories/international-design) [View source](https://developer.apple.com/design/human-interface-guidelines/right-to-left) [Layout](../directories/layout) [View",
-      "metadata": {
-        "startIndex": 3955,
-        "endIndex": 4942,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "nes/icons) [International Design](../directories/international-design) [View source](https://developer.apple.com/design/human-interface-guidelines/right-to-left) [Layout](../directories/layout) [View source](https://developer.apple.com/design/human-interface-guidelines/layout) [Motion](../directories/motion) [View source](https://developer.apple.com/design/human-interface-guidelines/motion) [Patterns](../directories/patterns) [View source](https://developer.apple.com/design/human-interface-guidelines/patterns) [Theming](../directories/theming) [View source](https://developer.apple.com/design/human-interface-guidelines/dark-mode) [Typography](../directories/typography) [View source](https://developer.apple.com/design/human-interface-guidelines/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://developer.apple.com/design/human-interface-guidelines/writing) [Action bar](../components/action-bar) [View",
-      "metadata": {
-        "startIndex": 4742,
-        "endIndex": 5685,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "uidelines/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://developer.apple.com/design/human-interface-guidelines/writing) [Action bar](../components/action-bar) [View source](https://developer.apple.com/design/human-interface-guidelines/toolbars) [Action list](../components/action-list) [View source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables) [Alert banner](../components/alert-banner) [View source](https://developer.apple.com/design/human-interface-guidelines/alerts) [App bar](../components/app-bar) [View source](https://developer.apple.com/design/human-interface-guidelines/navigation-bars) [Bottom sheet](../components/bottom-sheet) [View source](https://developer.apple.com/design/human-interface-guidelines/sheets) [Breadcrumb](../components/breadcrumbs) [View source](https://developer.apple.com/design/human-interface-guidelines/path-controls) [Button](../components/button) [View",
-      "metadata": {
-        "startIndex": 5485,
-        "endIndex": 6448,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "an-interface-guidelines/sheets) [Breadcrumb](../components/breadcrumbs) [View source](https://developer.apple.com/design/human-interface-guidelines/path-controls) [Button](../components/button) [View source](https://developer.apple.com/design/human-interface-guidelines/buttons) [Combobox](../components/combobox) [View source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes) [Date picker](../components/date-picker) [View source](https://developer.apple.com/design/human-interface-guidelines/pickers) [Label](../components/label) [View source](https://developer.apple.com/design/human-interface-guidelines/labels) [Menus](../components/menus) [View source](https://developer.apple.com/design/human-interface-guidelines/menus) [Navigation bar](../components/navigation-bar) [View source](https://developer.apple.com/design/human-interface-guidelines/tab-bars) [Popover](../components/popover) [View",
-      "metadata": {
-        "startIndex": 6248,
-        "endIndex": 7174,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "interface-guidelines/menus) [Navigation bar](../components/navigation-bar) [View source](https://developer.apple.com/design/human-interface-guidelines/tab-bars) [Popover](../components/popover) [View source](https://developer.apple.com/design/human-interface-guidelines/popovers) [Progress indicator](../components/progress-indicator) [View source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators) [Search](../components/search) [View source](https://developer.apple.com/design/human-interface-guidelines/search-fields) [Segmented control](../components/segmented-control) [View source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls) [Sidebar](../components/sidebar) [View source](https://developer.apple.com/design/human-interface-guidelines/sidebars) [Slider](../components/slider) [View source](https://developer.apple.com/design/human-interface-guidelines/sliders) [Switch](../components/switch) [View",
-      "metadata": {
-        "startIndex": 6974,
-        "endIndex": 7949,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "om/design/human-interface-guidelines/sidebars) [Slider](../components/slider) [View source](https://developer.apple.com/design/human-interface-guidelines/sliders) [Switch](../components/switch) [View source](https://developer.apple.com/design/human-interface-guidelines/toggles) [Text area](../components/text-area) [View source](https://developer.apple.com/design/human-interface-guidelines/text-views) [Text field](../components/text-field) [View source](https://developer.apple.com/design/human-interface-guidelines/text-fields) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Components](../components) [Checkbox](../components/checkbox) [Radio button](../components/radio-button) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf)",
-      "metadata": {
-        "startIndex": 7749,
-        "endIndex": 8699,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
-      }
-    },
-    {
-      "id": "chunk-11",
-      "text": "ox](../components/checkbox) [Radio button](../components/radio-button) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 8499,
-        "endIndex": 9499,
-        "chunkIndex": 11,
-        "section": "Content",
-        "globalChunkIndex": 11
       }
     }
   ],

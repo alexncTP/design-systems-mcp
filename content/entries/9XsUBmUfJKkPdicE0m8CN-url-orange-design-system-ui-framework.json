@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/orange",
     "ingested_at": "2025-08-30T13:09:53.409Z"
   },
-  "content": "# Orange Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Orange Design System is a framework crafted to elevate digital experiences across their products and services. Rooted in user-centric design principles, it encompasses a wealth of design guidelines, components, and resources. With a focus on accessibility and inclusivity, it empowers designers and developers to build engaging experiences that reflect Orange's brand identity while catering to diverse user needs. Advertisement Accessibility View source Color System Component overview Component status Data visualization Repository Icons Illustrations Responsive Spacing Tokens Typography Accordion Alert banner Breadcrumb Button Cards Checkbox Data table Dropdown Form Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Sidebar Slider Switch Tabs Tag Text field Tooltip",
+  "content": "Design System from Directories: Components: Orange Design System is a framework crafted to elevate digital experiences across their products and services. Rooted in user-centric design principles, it encompasses a wealth of design guidelines, components, and resources. With a focus on accessibility and inclusivity, it empowers designers and developers to build engaging experiences that reflect Orange's brand identity while catering to diverse user needs. Accessibility Color System Component overview Component status Data visualization Repository Icons Illustrations Responsive Spacing Tokens Typography Accordion Alert banner Breadcrumb Button Cards Checkbox Data table Dropdown Form Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Sidebar Slider Switch Tabs Tag Text field Tooltip",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Orange Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Orange Design System is a framework crafted to elevate digital experiences across their products and services.",
+      "text": "Design System from Directories: Components: Orange Design System is a framework crafted to elevate digital experiences across their products and services. Rooted in user-centric design principles, it encompasses a wealth of design guidelines, components, and resources. With a focus on accessibility and inclusivity, it empowers designers and developers to build engaging experiences that reflect Orange's brand identity while catering to diverse user needs. Accessibility Color System Component overview Component status Data visualization Repository Icons Illustrations Responsive Spacing Tokens Typography Accordion Alert banner Breadcrumb Button Cards Checkbox Data table Dropdown Form Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmen",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 929,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,123 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "with the latest in Design Systems Subscribe Design System from Directories: Components: Orange Design System is a framework crafted to elevate digital experiences across their products and services. Rooted in user-centric design principles, it encompasses a wealth of design guidelines, components, and resources. With a focus on accessibility and inclusivity, it empowers designers and developers to build engaging experiences that reflect Orange's brand identity while catering to diverse user needs. Advertisement Accessibility View source Color System Component overview Component status Data visualization Repository Icons Illustrations Responsive Spacing Tokens Typography Accordion Alert banner Breadcrumb Button Cards Checkbox Data table Dropdown Form Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Sidebar Slider Switch Tabs Tag Text field Tooltip Design .surf © Dzeya OÜ.",
+      "text": "pography Accordion Alert banner Breadcrumb Button Cards Checkbox Data table Dropdown Form Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Sidebar Slider Switch Tabs Tag Text field Tooltip",
       "metadata": {
-        "startIndex": 729,
-        "endIndex": 1687,
+        "startIndex": 600,
+        "endIndex": 861,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "rm Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Sidebar Slider Switch Tabs Tag Text field Tooltip",
-      "metadata": {
-        "startIndex": 1487,
-        "endIndex": 2481,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
-      "metadata": {
-        "startIndex": 2281,
-        "endIndex": 3274,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromOrange](./orange#up-pixel) [Source](https://system.design.orange.com/0c1af118d/p/0127c5-the-orange-design-system) [Repository](https://github.com/Orange-OpenSource) [Accessibility](../directories/accessibility) [View source](https://system.design.orange.com/0c1af118d/p/75891b-accessibility) [Color",
-      "metadata": {
-        "startIndex": 3074,
-        "endIndex": 4071,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "design-system) [Repository](https://github.com/Orange-OpenSource) [Accessibility](../directories/accessibility) [View source](https://system.design.orange.com/0c1af118d/p/75891b-accessibility) [Color System](../directories/color-system) [View source](https://system.design.orange.com/0c1af118d/p/7059a5-colour) [Component overview](../directories/component-overview) [View source](https://system.design.orange.com/0c1af118d/p/409822-components) [Component status](../directories/component-status) [View source](https://system.design.orange.com/0c1af118d/p/65825e-component-matrix) [Data visualization](../directories/data-visualization) [View source](https://system.design.orange.com/0c1af118d/p/37a8d3-data-display) [Repository](../directories/repository) [View source](https://github.com/Orange-OpenSource) [Icons](../directories/icons) [View source](https://system.design.orange.com/0c1af118d/p/23d499-solaris-icons) [Illustrations](../directories/illustrations) [View",
-      "metadata": {
-        "startIndex": 3871,
-        "endIndex": 4843,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "ttps://github.com/Orange-OpenSource) [Icons](../directories/icons) [View source](https://system.design.orange.com/0c1af118d/p/23d499-solaris-icons) [Illustrations](../directories/illustrations) [View source](https://system.design.orange.com/0c1af118d/p/4246db-illustration) [Responsive](../directories/responsive) [View source](https://system.design.orange.com/0c1af118d/p/43fadd-responsive-grids) [Spacing](../directories/spacing) [View source](https://system.design.orange.com/0c1af118d/p/743ca2-spacing) [Tokens](../directories/tokens) [View source](https://system.design.orange.com/0c1af118d/p/712b56-design-tokens) [Typography](../directories/typography) [View source](https://system.design.orange.com/0c1af118d/p/38f221-typography) [Accordion](../components/accordion) [View source](https://system.design.orange.com/0c1af118d/p/9586a0-accordion) [Alert banner](../components/alert-banner) [View source](https://system.design.orange.com/0c1af118d/p/104317-alerts)",
-      "metadata": {
-        "startIndex": 4643,
-        "endIndex": 5612,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "dion) [View source](https://system.design.orange.com/0c1af118d/p/9586a0-accordion) [Alert banner](../components/alert-banner) [View source](https://system.design.orange.com/0c1af118d/p/104317-alerts) [Breadcrumb](../components/breadcrumbs) [View source](https://system.design.orange.com/0c1af118d/p/2312c7-breadcrumb) [Button](../components/button) [View source](https://system.design.orange.com/0c1af118d/p/278ebc-buttons-standard) [Cards](../components/cards) [View source](https://system.design.orange.com/0c1af118d/p/82eaf1-cards) [Checkbox](../components/checkbox) [View source](https://system.design.orange.com/0c1af118d/p/093b4e-checkbox) [Data table](../components/data-table) [View source](https://system.design.orange.com/0c1af118d/p/21b04a-data-tables) [Dropdown](../components/dropdown) [View source](https://system.design.orange.com/0c1af118d/p/910b9b-dropdown) [Form](../components/form) [View source](https://system.design.orange.com/0c1af118d/p/88ab5b-forms)",
-      "metadata": {
-        "startIndex": 5412,
-        "endIndex": 6387,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "../components/dropdown) [View source](https://system.design.orange.com/0c1af118d/p/910b9b-dropdown) [Form](../components/form) [View source](https://system.design.orange.com/0c1af118d/p/88ab5b-forms) [Modal](../components/modal) [View source](https://system.design.orange.com/0c1af118d/p/16d9f3-modals) [Navigation bar](../components/navigation-bar) [View source](https://system.design.orange.com/0c1af118d/p/84c686-global-menu) [Page header](../components/page-header) [View source](https://system.design.orange.com/0c1af118d/p/37609b-global-headers) [Pagination](../components/pagination) [View source](https://system.design.orange.com/0c1af118d/p/01f271-pagination) [Popover](../components/popover) [View source](https://system.design.orange.com/0c1af118d/p/644ffa-popovers) [Progress bar](../components/progress-bar) [View source](https://system.design.orange.com/0c1af118d/p/080a7d-progress-bar) [Progress indicator](../components/progress-indicator) [View",
-      "metadata": {
-        "startIndex": 6187,
-        "endIndex": 7149,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "44ffa-popovers) [Progress bar](../components/progress-bar) [View source](https://system.design.orange.com/0c1af118d/p/080a7d-progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://system.design.orange.com/0c1af118d/p/20207d-spinner) [Radio button](../components/radio-button) [View source](https://system.design.orange.com/0c1af118d/p/2300db-radio-button) [Search](../components/search) [View source](https://system.design.orange.com/0c1af118d/p/42765f-global-search) [Segmented control](../components/segmented-control) [View source](https://system.design.orange.com/0c1af118d/p/59c349-toggle-buttons) [Sidebar](../components/sidebar) [View source](https://system.design.orange.com/0c1af118d/p/43dd8c-side-navigation) [Slider](../components/slider) [View source](https://system.design.orange.com/0c1af118d/p/18fe7f-slider) [Switch](../components/switch) [View source](https://system.design.orange.com/0c1af118d/p/414ada-toggle-switch) [Tabs](../components/tabs)",
-      "metadata": {
-        "startIndex": 6949,
-        "endIndex": 7948,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "(https://system.design.orange.com/0c1af118d/p/18fe7f-slider) [Switch](../components/switch) [View source](https://system.design.orange.com/0c1af118d/p/414ada-toggle-switch) [Tabs](../components/tabs) [View source](https://system.design.orange.com/0c1af118d/p/8630dc-tabs) [Tag](../components/tag) [View source](https://system.design.orange.com/0c1af118d/p/975c09-tags) [Text field](../components/text-field) [View source](https://system.design.orange.com/0c1af118d/p/22dc66-text-field) [Tooltip](../components/tooltip) [View source](https://system.design.orange.com/0c1af118d/p/932946-tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf) [Instagram](https://www.instagram.com/designsystems.surf)",
-      "metadata": {
-        "startIndex": 7748,
-        "endIndex": 8712,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
-      }
-    },
-    {
-      "id": "chunk-11",
-      "text": "directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 8512,
-        "endIndex": 9512,
-        "chunkIndex": 11,
-        "section": "Content",
-        "globalChunkIndex": 11
       }
     }
   ],

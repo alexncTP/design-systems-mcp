@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/ontario",
     "ingested_at": "2025-08-30T13:09:52.588Z"
   },
-  "content": "# Ontario Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Ontario Design System is a comprehensive toolkit developed to facilitate the creation of consistent and user-friendly digital experiences across Ontario's government services. Design System encompasses a range of design principles, guidelines, and reusable components tailored to meet the needs of various government agencies and departments. Advertisement Color System View source Repository Layout Spacing Typography Accordion Alert banner Badges Button Cards Checkbox Data table Date picker Dropdown Icon Label Page header Progress bar Progress indicator Radio button Search Text area Text field",
+  "content": "Design System from Directories: Components: Ontario Design System is a comprehensive toolkit developed to facilitate the creation of consistent and user-friendly digital experiences across Ontario's government services. Design System encompasses a range of design principles, guidelines, and reusable components tailored to meet the needs of various government agencies and departments. Color System Repository Layout Spacing Typography Accordion Alert banner Badges Button Cards Checkbox Data table Date picker Dropdown Icon Label Page header Progress bar Progress indicator Radio button Search Text area Text field",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Ontario Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Ontario Design System is a comprehensive toolkit developed to facilitate the creation of consistent and user-friendly digital experiences across Ontario's government services.",
+      "text": "Design System from Directories: Components: Ontario Design System is a comprehensive toolkit developed to facilitate the creation of consistent and user-friendly digital experiences across Ontario's government services. Design System encompasses a range of design principles, guidelines, and reusable components tailored to meet the needs of various government agencies and departments. Color System Repository Layout Spacing Typography Accordion Alert banner Badges Button Cards Checkbox Data table Date picker Dropdown Icon Label Page header Progress bar Progress indicator Radio button Search Text area Text field",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 994,
+        "endIndex": 616,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,90 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "irectories: Components: Ontario Design System is a comprehensive toolkit developed to facilitate the creation of consistent and user-friendly digital experiences across Ontario's government services. Design System encompasses a range of design principles, guidelines, and reusable components tailored to meet the needs of various government agencies and departments. Advertisement Color System View source Repository Layout Spacing Typography Accordion Alert banner Badges Button Cards Checkbox Data table Date picker Dropdown Icon Label Page header Progress bar Progress indicator Radio button Search Text area Text field",
+      "text": " area Text field",
       "metadata": {
-        "startIndex": 794,
-        "endIndex": 1795,
+        "startIndex": 600,
+        "endIndex": 616,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "rints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) [Adobe](./adobe) [Alaska Airlines](./alaskaairlines) [Amazon](./amazon) [Apple](./apple) [Atlassian](./atlassian) [Audi](./audi) [Basis](./basis) [Biings](./biings) [Brainly](./brainly) [Carrefour](./carrefour) [Cash App](./cashapp) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb)",
-      "metadata": {
-        "startIndex": 1595,
-        "endIndex": 2583,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "abi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk)",
-      "metadata": {
-        "startIndex": 2383,
-        "endIndex": 3384,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": ") [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromOntario](./ontario#up-pixel) [Source](https://designsystem.ontario.ca/) [Repository](https://github.com/ontario-lrc/ontario-design-system-component-library) [Color System](../directories/color-system) [View source](https://designsystem.ontario.ca/docs/basics/colours.html) [Repository](../directories/repository) [View source](https://github.com/ontario-lrc/ontario-design-system-component-library) [Layout](../directories/layout) [View source](https://designsystem.ontario.ca/docs/basics/grid.html) [Spacing](../directories/spacing) [View source](https://designsystem.ontario.ca/docs/basics/spacing.html) [Typography](../directories/typography) [View",
-      "metadata": {
-        "startIndex": 3184,
-        "endIndex": 4179,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "/designsystem.ontario.ca/docs/basics/grid.html) [Spacing](../directories/spacing) [View source](https://designsystem.ontario.ca/docs/basics/spacing.html) [Typography](../directories/typography) [View source](https://designsystem.ontario.ca/docs/basics/fonts.html) [Accordion](../components/accordion) [View source](https://designsystem.ontario.ca/components/detail/accordions.html) [Alert banner](../components/alert-banner) [View source](https://designsystem.ontario.ca/components/detail/critical-alerts.html) [Badges](../components/badges) [View source](https://designsystem.ontario.ca/components/detail/badges.html) [Button](../components/button) [View source](https://designsystem.ontario.ca/components/detail/buttons.html) [Cards](../components/cards) [View source](https://designsystem.ontario.ca/components/detail/cards.html) [Checkbox](../components/checkbox) [View source](https://designsystem.ontario.ca/components/detail/checkboxes.html) [Data table](../components/data-table) [View",
-      "metadata": {
-        "startIndex": 3979,
-        "endIndex": 4973,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "tario.ca/components/detail/cards.html) [Checkbox](../components/checkbox) [View source](https://designsystem.ontario.ca/components/detail/checkboxes.html) [Data table](../components/data-table) [View source](https://designsystem.ontario.ca/components/detail/tables.html) [Date picker](../components/date-picker) [View source](https://designsystem.ontario.ca/components/detail/dates.html) [Dropdown](../components/dropdown) [View source](https://designsystem.ontario.ca/components/detail/dropdown-lists.html) [Icon](../directories/icons) [View source](https://designsystem.ontario.ca/components/detail/icons-primary.html) [Label](../components/label) [View source](https://designsystem.ontario.ca/components/detail/labels.html) [Page header](../components/page-header) [View source](https://designsystem.ontario.ca/components/detail/application-header.html) [Progress bar](../components/progress-bar) [View source](https://designsystem.ontario.ca/components/detail/step-indicator.html) [Progress",
-      "metadata": {
-        "startIndex": 4773,
-        "endIndex": 5768,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "nsystem.ontario.ca/components/detail/application-header.html) [Progress bar](../components/progress-bar) [View source](https://designsystem.ontario.ca/components/detail/step-indicator.html) [Progress indicator](../components/progress-indicator) [View source](https://designsystem.ontario.ca/components/detail/loading-indicator.html) [Radio button](../components/radio-button) [View source](https://designsystem.ontario.ca/components/detail/radio-buttons.html) [Search](../components/search) [View source](https://designsystem.ontario.ca/components/detail/search-box.html) [Text area](../components/text-area) [View source](https://designsystem.ontario.ca/components/detail/text-areas.html) [Text field](../components/text-field) [View source](https://designsystem.ontario.ca/components/detail/text-inputs.html) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories)",
-      "metadata": {
-        "startIndex": 5568,
-        "endIndex": 6562,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "ext-inputs.html) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 6362,
-        "endIndex": 7362,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
       }
     }
   ],

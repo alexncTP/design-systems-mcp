@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/basis",
     "ingested_at": "2025-08-30T13:09:06.310Z"
   },
-  "content": "# Basis Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Basis Technologies, known for its SAP automation tools, uses this Design System to deliver consistent and scalable UI experiences across its digital products. Structured around tokens, components, and visual standards, the system provides clear documentation for color, layout, motion, spacing, and theming. With a live Storybook and a focus on cross-team efficiency, it helps product and engineering teams build consistent, scalable UIs with confidence. Advertisement Color System View source Component overview Data visualization Elevation Icons Layout Motion Patterns Responsive Spacing Storybook Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Badges Button Cards Checkbox Chip Data table Date picker Drawer Dropdown Empty state Filter input Link Menus Modal Page header Pagination Progress bar Progress indicator Radio button Search Segmented control Select Snackbar Switch Tabs Text field Tooltip Tree view",
+  "content": "Design System from Directories: Components: Basis Technologies, known for its SAP automation tools, uses this Design System to deliver consistent and scalable UI experiences across its digital products. Structured around tokens, components, and visual standards, the system provides clear documentation for color, layout, motion, spacing, and theming. With a live Storybook and a focus on cross-team efficiency, it helps product and engineering teams build consistent, scalable UIs with confidence. Color System Component overview Data visualization Elevation Icons Layout Motion Patterns Responsive Spacing Storybook Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Badges Button Cards Checkbox Chip Data table Date picker Drawer Dropdown Empty state Filter input Link Menus Modal Page header Pagination Progress bar Progress indicator Radio button Search Segmented control Select Snackbar Switch Tabs Text field Tooltip Tree view",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Basis Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Basis Technologies, known for its SAP automation tools, uses this Design System to deliver consistent and scalable UI experiences across its digital products.",
+      "text": "Design System from Directories: Components: Basis Technologies, known for its SAP automation tools, uses this Design System to deliver consistent and scalable UI experiences across its digital products. Structured around tokens, components, and visual standards, the system provides clear documentation for color, layout, motion, spacing, and theming. With a live Storybook and a focus on cross-team efficiency, it helps product and engineering teams build consistent, scalable UIs with confidence. Color System Component overview Data visualization Elevation Icons Layout Motion Patterns Responsive Spacing Storybook Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Badges Button Cards Checkbox Chip Data table Date picker Drawer Dropdown Empty state Filter input Link Menus Mo",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 977,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,123 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "ign System from Directories: Components: Basis Technologies, known for its SAP automation tools, uses this Design System to deliver consistent and scalable UI experiences across its digital products. Structured around tokens, components, and visual standards, the system provides clear documentation for color, layout, motion, spacing, and theming. With a live Storybook and a focus on cross-team efficiency, it helps product and engineering teams build consistent, scalable UIs with confidence. Advertisement Color System View source Component overview Data visualization Elevation Icons Layout Motion Patterns Responsive Spacing Storybook Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Badges Button Cards Checkbox Chip Data table Date picker Drawer Dropdown Empty state Filter input Link Menus Modal Page header Pagination Progress bar Progress indicator Radio button Search Segmented control Select Snackbar Switch Tabs Text field Tooltip Tree view Design .surf © Dzeya",
+      "text": "Spacing Storybook Styles Theming Tokens Typography Voice and Tone Accordion Alert banner Badges Button Cards Checkbox Chip Data table Date picker Drawer Dropdown Empty state Filter input Link Menus Modal Page header Pagination Progress bar Progress indicator Radio button Search Segmented control Select Snackbar Switch Tabs Text field Tooltip Tree view",
       "metadata": {
-        "startIndex": 777,
-        "endIndex": 1775,
+        "startIndex": 600,
+        "endIndex": 953,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "ilter input Link Menus Modal Page header Pagination Progress bar Progress indicator Radio button Search Segmented control Select Snackbar Switch Tabs Text field Tooltip Tree view",
-      "metadata": {
-        "startIndex": 1575,
-        "endIndex": 2573,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
-      "metadata": {
-        "startIndex": 2373,
-        "endIndex": 3366,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromBasis](./basis#up-pixel) [Source](https://design.basis.com/) [Storybook](https://storybook.basis.net/?path=/story/overview-about--page) [Color System](../directories/color-system) [View source](https://design.basis.com/foundations/colors) [Component overview](../directories/component-overview) [View",
-      "metadata": {
-        "startIndex": 3166,
-        "endIndex": 4165,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "?path=/story/overview-about--page) [Color System](../directories/color-system) [View source](https://design.basis.com/foundations/colors) [Component overview](../directories/component-overview) [View source](https://design.basis.com/components) [Data visualization](../directories/data-visualization) [View source](https://design.basis.com/patterns/data-visualization) [Elevation](../directories/elevation) [View source](https://design.basis.com/foundations/shadows) [Icons](../directories/icons) [View source](https://design.basis.com/foundations/icons) [Layout](../directories/layout) [View source](https://design.basis.com/foundations/layout) [Motion](../directories/motion) [View source](https://design.basis.com/foundations/animation) [Patterns](../directories/patterns) [View source](https://design.basis.com/patterns) [Responsive](../directories/responsive) [View source](https://design.basis.com/foundations/responsive) [Spacing](../directories/spacing) [View",
-      "metadata": {
-        "startIndex": 3965,
-        "endIndex": 4933,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "tterns) [View source](https://design.basis.com/patterns) [Responsive](../directories/responsive) [View source](https://design.basis.com/foundations/responsive) [Spacing](../directories/spacing) [View source](https://design.basis.com/foundations/spacing) [Storybook](../directories/storybook) [View source](https://storybook.basis.net/?path=/story/overview-about--page) [Styles](../directories/styles) [View source](https://design.basis.com/foundations/borders) [Theming](../directories/theming) [View source](https://design.basis.com/foundations/dark-theme) [Tokens](../directories/tokens) [View source](https://design.basis.com/get-started/tokens) [Typography](../directories/typography) [View source](https://design.basis.com/foundations/typography) [Voice and Tone](../directories/voice-and-tone) [View source](https://design.basis.com/voice-and-tone) [Accordion](../components/accordion) [View source](https://design.basis.com/components/accordion) [Alert banner](../components/alert-banner)",
-      "metadata": {
-        "startIndex": 4733,
-        "endIndex": 5729,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "ne) [View source](https://design.basis.com/voice-and-tone) [Accordion](../components/accordion) [View source](https://design.basis.com/components/accordion) [Alert banner](../components/alert-banner) [View source](https://design.basis.com/components/message-card) [Badges](../components/badges) [View source](https://design.basis.com/foundations/badge) [Button](../components/button) [View source](https://design.basis.com/components/buttons) [Cards](../components/cards) [View source](https://design.basis.com/components/interactive-card) [Checkbox](../components/checkbox) [View source](https://design.basis.com/components/checkbox) [Chip](../components/chip) [View source](https://design.basis.com/components/pill) [Data table](../components/data-table) [View source](https://design.basis.com/components/data-table) [Date picker](../components/date-picker) [View source](https://design.basis.com/components/date-picker) [Drawer](../components/drawer) [View",
-      "metadata": {
-        "startIndex": 5529,
-        "endIndex": 6489,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "ew source](https://design.basis.com/components/data-table) [Date picker](../components/date-picker) [View source](https://design.basis.com/components/date-picker) [Drawer](../components/drawer) [View source](https://design.basis.com/components/panel) [Dropdown](../components/dropdown) [View source](https://design.basis.com/components/dropdown-button) [Empty state](../components/empty-state) [View source](https://design.basis.com/components/empty-state) [Filter input](../components/filter-input) [View source](https://design.basis.com/components/filter-bar) [Link](../components/link) [View source](https://design.basis.com/foundations/link) [Menus](../components/menus) [View source](https://design.basis.com/components/contextual-menu) [Modal](../components/modal) [View source](https://design.basis.com/components/modal) [Page header](../components/page-header) [View source](https://design.basis.com/components/title-bar) [Pagination](../components/pagination) [View",
-      "metadata": {
-        "startIndex": 6289,
-        "endIndex": 7264,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "w source](https://design.basis.com/components/modal) [Page header](../components/page-header) [View source](https://design.basis.com/components/title-bar) [Pagination](../components/pagination) [View source](https://design.basis.com/components/pagination) [Progress bar](../components/progress-bar) [View source](https://design.basis.com/components/progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://design.basis.com/components/loader) [Radio button](../components/radio-button) [View source](https://design.basis.com/components/radios) [Search](../components/search) [View source](https://design.basis.com/components/dynamic-search) [Segmented control](../components/segmented-control) [View source](https://design.basis.com/components/segment-control) [Select](../components/select) [View source](https://design.basis.com/components/dropdown-select) [Snackbar](../components/snackbar) [View source](https://design.basis.com/components/flash)",
-      "metadata": {
-        "startIndex": 7064,
-        "endIndex": 8048,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "-control) [Select](../components/select) [View source](https://design.basis.com/components/dropdown-select) [Snackbar](../components/snackbar) [View source](https://design.basis.com/components/flash) [Switch](../components/switch) [View source](https://design.basis.com/components/toggle-switch) [Tabs](../components/tabs) [View source](https://design.basis.com/components/tabs) [Text field](../components/text-field) [View source](https://design.basis.com/components/inputs) [Tooltip](../components/tooltip) [View source](https://design.basis.com/components/tooltip) [Tree view](../components/tree-view) [View source](https://design.basis.com/components/tree-selector) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X",
-      "metadata": {
-        "startIndex": 7848,
-        "endIndex": 8834,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
-      }
-    },
-    {
-      "id": "chunk-11",
-      "text": "m) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 8634,
-        "endIndex": 9634,
-        "chunkIndex": 11,
-        "section": "Content",
-        "globalChunkIndex": 11
       }
     }
   ],

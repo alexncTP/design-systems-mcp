@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/docplanner",
     "ingested_at": "2025-08-30T13:09:38.515Z"
   },
-  "content": "# Docplanner Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Watson from Directories: Components: Watson Design System enhances user experiences across Docplanner platform. Built on the Docplanner Design Language, Watson includes working code, design tools, resources, and human interface guidelines. Prioritizing accessibility and usability, Docplanner Design System ensures seamless interactions for all users. This centralized repository of design assets and documentation fosters collaboration and consistency across projects. Watson is supported by a vibrant community of contributors, ensuring consistent and high-quality user experiences across all Docplanner platforms. Advertisement Color System View source Component overview Repository Icons Layout Patterns Responsive Spacing Tokens Typography Accordion Alert banner Avatar Badges Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Divider Empty state Icon Link Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
+  "content": "Watson from Directories: Components: Watson Design System enhances user experiences across Docplanner platform. Built on the Docplanner Design Language, Watson includes working code, design tools, resources, and human interface guidelines. Prioritizing accessibility and usability, Docplanner Design System ensures seamless interactions for all users. This centralized repository of design assets and documentation fosters collaboration and consistency across projects. Watson is supported by a vibrant community of contributors, ensuring consistent and high-quality user experiences across all Docplanner platforms. Color System Component overview Repository Icons Layout Patterns Responsive Spacing Tokens Typography Accordion Alert banner Avatar Badges Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Divider Empty state Icon Link Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Docplanner Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Watson from Directories: Components: Watson Design System enhances user experiences across Docplanner platform. Built on the Docplanner Design Language, Watson includes working code, design tools, resources, and human",
+      "text": "Watson from Directories: Components: Watson Design System enhances user experiences across Docplanner platform. Built on the Docplanner Design Language, Watson includes working code, design tools, resources, and human interface guidelines. Prioritizing accessibility and usability, Docplanner Design System ensures seamless interactions for all users. This centralized repository of design assets and documentation fosters collaboration and consistency across projects. Watson is supported by a vibrant community of contributors, ensuring consistent and high-quality user experiences across all Docplanner platforms. Color System Component overview Repository Icons Layout Patterns Responsive Spacing Tokens Typography Accordion Alert banner Avatar Badges Breadcrumb Button Button group Cards Checkbo",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 992,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,123 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "ories: Components: Watson Design System enhances user experiences across Docplanner platform. Built on the Docplanner Design Language, Watson includes working code, design tools, resources, and human interface guidelines. Prioritizing accessibility and usability, Docplanner Design System ensures seamless interactions for all users. This centralized repository of design assets and documentation fosters collaboration and consistency across projects. Watson is supported by a vibrant community of contributors, ensuring consistent and high-quality user experiences across all Docplanner platforms. Advertisement Color System View source Component overview Repository Icons Layout Patterns Responsive Spacing Tokens Typography Accordion Alert banner Avatar Badges Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Divider Empty state Icon Link Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Snackbar Switch Tabs Text area Text",
+      "text": "anner platforms. Color System Component overview Repository Icons Layout Patterns Responsive Spacing Tokens Typography Accordion Alert banner Avatar Badges Breadcrumb Button Button group Cards Checkbox Combobox Data table Date picker Divider Empty state Icon Link Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
       "metadata": {
-        "startIndex": 792,
-        "endIndex": 1791,
+        "startIndex": 600,
+        "endIndex": 1004,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "s Checkbox Combobox Data table Date picker Divider Empty state Icon Link Menus Modal Pagination Popover Progress bar Progress indicator Radio button Select Sidebar Snackbar Switch Tabs Text area Text field Tooltip",
-      "metadata": {
-        "startIndex": 1591,
-        "endIndex": 2586,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "app) [CBRE Build](./cbrebuild) [Cisco](./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda)",
-      "metadata": {
-        "startIndex": 2386,
-        "endIndex": 3385,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "rpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [WatsonfromDocplanner](./docplanner#up-pixel) [Source](https://watson.docplanner.design/) [Repository](https://github.com/DocPlanner/) [Color System](../directories/color-system) [View source](https://watson.docplanner.design/foundations/color) [Component",
-      "metadata": {
-        "startIndex": 3185,
-        "endIndex": 4153,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "ttps://watson.docplanner.design/) [Repository](https://github.com/DocPlanner/) [Color System](../directories/color-system) [View source](https://watson.docplanner.design/foundations/color) [Component overview](../directories/component-overview) [View source](https://watson.docplanner.design/components) [Repository](../directories/repository) [View source](https://github.com/DocPlanner/) [Icons](../directories/icons) [View source](https://watson.docplanner.design/iconography) [Layout](../directories/layout) [View source](https://watson.docplanner.design/components/layout) [Patterns](../directories/patterns) [View source](https://watson.docplanner.design/templates) [Responsive](../directories/responsive) [View source](https://watson.docplanner.design/components/grid) [Spacing](../directories/spacing) [View source](https://watson.docplanner.design/foundations/spacing) [Tokens](../directories/tokens) [View source](https://watson.docplanner.design/tokens)",
-      "metadata": {
-        "startIndex": 3953,
-        "endIndex": 4918,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "ents/grid) [Spacing](../directories/spacing) [View source](https://watson.docplanner.design/foundations/spacing) [Tokens](../directories/tokens) [View source](https://watson.docplanner.design/tokens) [Typography](../directories/typography) [View source](https://watson.docplanner.design/foundations/typography) [Accordion](../components/accordion) [View source](https://watson.docplanner.design/components/collapse) [Alert banner](../components/alert-banner) [View source](https://watson.docplanner.design/components/banner) [Avatar](../components/avatar) [View source](https://watson.docplanner.design/components/avatar) [Badges](../components/badges) [View source](https://watson.docplanner.design/components/badge) [Breadcrumb](../components/breadcrumbs) [View source](https://watson.docplanner.design/components/breadcrumbs) [Button](../components/button) [View source](https://watson.docplanner.design/components/button) [Button group](../components/button-group) [View",
-      "metadata": {
-        "startIndex": 4718,
-        "endIndex": 5693,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "ps://watson.docplanner.design/components/breadcrumbs) [Button](../components/button) [View source](https://watson.docplanner.design/components/button) [Button group](../components/button-group) [View source](https://watson.docplanner.design/components/button-group) [Cards](../components/cards) [View source](https://watson.docplanner.design/components/card) [Checkbox](../components/checkbox) [View source](https://watson.docplanner.design/components/checkbox) [Combobox](../components/combobox) [View source](https://watson.docplanner.design/components/combobox) [Data table](../components/data-table) [View source](https://watson.docplanner.design/components/table) [Date picker](../components/date-picker) [View source](https://watson.docplanner.design/components/date-picker) [Divider](../components/divider) [View source](https://watson.docplanner.design/components/divider) [Empty state](../components/empty-state) [View source](https://watson.docplanner.design/components/empty-state)",
-      "metadata": {
-        "startIndex": 5493,
-        "endIndex": 6486,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "/components/divider) [View source](https://watson.docplanner.design/components/divider) [Empty state](../components/empty-state) [View source](https://watson.docplanner.design/components/empty-state) [Icon](../directories/icons) [View source](https://watson.docplanner.design/components/icon) [Link](../components/link) [View source](https://watson.docplanner.design/components/link) [Menus](../components/menus) [View source](https://watson.docplanner.design/components/dropdown-menu) [Modal](../components/modal) [View source](https://watson.docplanner.design/components/modal) [Pagination](../components/pagination) [View source](https://watson.docplanner.design/components/pagination) [Popover](../components/popover) [View source](https://watson.docplanner.design/components/popover) [Progress bar](../components/progress-bar) [View source](https://watson.docplanner.design/components/progress-bar) [Progress indicator](../components/progress-indicator) [View",
-      "metadata": {
-        "startIndex": 6286,
-        "endIndex": 7251,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "ign/components/popover) [Progress bar](../components/progress-bar) [View source](https://watson.docplanner.design/components/progress-bar) [Progress indicator](../components/progress-indicator) [View source](https://watson.docplanner.design/components/spinner) [Radio button](../components/radio-button) [View source](https://watson.docplanner.design/components/radio) [Select](../components/select) [View source](https://watson.docplanner.design/components/select) [Sidebar](../components/sidebar) [View source](https://watson.docplanner.design/components/navigation-list) [Snackbar](../components/snackbar) [View source](https://watson.docplanner.design/components/toast) [Switch](../components/switch) [View source](https://watson.docplanner.design/components/toggle) [Tabs](../components/tabs) [View source](https://watson.docplanner.design/components/tabs) [Text area](../components/text-area) [View source](https://watson.docplanner.design/components/textarea) [Text",
-      "metadata": {
-        "startIndex": 7051,
-        "endIndex": 8024,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "abs](../components/tabs) [View source](https://watson.docplanner.design/components/tabs) [Text area](../components/text-area) [View source](https://watson.docplanner.design/components/textarea) [Text field](../components/text-field) [View source](https://watson.docplanner.design/components/input) [Tooltip](../components/tooltip) [View source](https://watson.docplanner.design/components/tooltip) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 7824,
-        "endIndex": 8824,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
-      }
-    },
-    {
-      "id": "chunk-11",
-      "text": "systems.surf) [Threads](https://www.threads.net/@designsystems.surf) [Share feedback](https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 8624,
-        "endIndex": 9624,
-        "chunkIndex": 11,
-        "section": "Content",
-        "globalChunkIndex": 11
       }
     }
   ],

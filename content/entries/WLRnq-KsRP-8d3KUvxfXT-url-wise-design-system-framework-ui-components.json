@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/wise",
     "ingested_at": "2025-08-30T13:10:11.296Z"
   },
-  "content": "# Wise Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Wise Design System was developed for the fintech application Wise. System covers branding, tone of voice, vocabulary, and design guidelines for the product interface. Wise guidelines contain best practices for providing information about money, different currencies, and transfers. Wise Design System closely connects the product interface with the principles of the brand language. This is a good example of strong product solutions combined with a bright and memorable brand. However, it is not an open design system, and Wise does not provide access to the Figma UI Kit or Github repositories. Advertisement Accessibility View source Color System Icons Patterns Responsive Spacing Styles Typography Alert banner Avatar Bottom sheet Button Checkbox Chip Date picker Dropdown Modal Popover Radio button Search Snackbar Switch Tabs Text area Text field",
+  "content": "Design System from Directories: Components: Wise Design System was developed for the fintech application Wise. System covers branding, tone of voice, vocabulary, and design guidelines for the product interface. Wise guidelines contain best practices for providing information about money, different currencies, and transfers. Wise Design System closely connects the product interface with the principles of the brand language. This is a good example of strong product solutions combined with a bright and memorable brand. However, it is not an open design system, and Wise does not provide access to the Figma UI Kit or Github repositories. Accessibility Color System Icons Patterns Responsive Spacing Styles Typography Alert banner Avatar Bottom sheet Button Checkbox Chip Date picker Dropdown Modal Popover Radio button Search Snackbar Switch Tabs Text area Text field",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Wise Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Wise Design System was developed for the fintech application Wise. System covers branding, tone of voice, vocabulary, and design guidelines for the product interface.",
+      "text": "Design System from Directories: Components: Wise Design System was developed for the fintech application Wise. System covers branding, tone of voice, vocabulary, and design guidelines for the product interface. Wise guidelines contain best practices for providing information about money, different currencies, and transfers. Wise Design System closely connects the product interface with the principles of the brand language. This is a good example of strong product solutions combined with a bright and memorable brand. However, it is not an open design system, and Wise does not provide access to the Figma UI Kit or Github repositories. Accessibility Color System Icons Patterns Responsive Spacing Styles Typography Alert banner Avatar Bottom sheet Button Checkbox Chip Date picker Dropdown Modal",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 985,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,90 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "em from Directories: Components: Wise Design System was developed for the fintech application Wise. System covers branding, tone of voice, vocabulary, and design guidelines for the product interface. Wise guidelines contain best practices for providing information about money, different currencies, and transfers. Wise Design System closely connects the product interface with the principles of the brand language. This is a good example of strong product solutions combined with a bright and memorable brand. However, it is not an open design system, and Wise does not provide access to the Figma UI Kit or Github repositories. Advertisement Accessibility View source Color System Icons Patterns Responsive Spacing Styles Typography Alert banner Avatar Bottom sheet Button Checkbox Chip Date picker Dropdown Modal Popover Radio button Search Snackbar Switch Tabs Text area Text field Design .surf © Dzeya OÜ.",
+      "text": "the Figma UI Kit or Github repositories. Accessibility Color System Icons Patterns Responsive Spacing Styles Typography Alert banner Avatar Bottom sheet Button Checkbox Chip Date picker Dropdown Modal Popover Radio button Search Snackbar Switch Tabs Text area Text field",
       "metadata": {
-        "startIndex": 785,
-        "endIndex": 1696,
+        "startIndex": 600,
+        "endIndex": 870,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "acing Styles Typography Alert banner Avatar Bottom sheet Button Checkbox Chip Date picker Dropdown Modal Popover Radio button Search Snackbar Switch Tabs Text area Text field",
-      "metadata": {
-        "startIndex": 1496,
-        "endIndex": 2490,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "(./cisco) [Datadog](./datadog) [Dell](./dell) [Docplanner](./docplanner) [eBay](./ebay) [Elastic](./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial)",
-      "metadata": {
-        "startIndex": 2290,
-        "endIndex": 3283,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "dhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromWise](./wise#up-pixel) [Source](https://wise.design/) [Accessibility](../directories/accessibility) [View source](https://wise.design/foundations/colour#colour-accessibility) [Color System](../directories/color-system) [View source](https://wise.design/foundations/colour) [Icons](../directories/icons)",
-      "metadata": {
-        "startIndex": 3083,
-        "endIndex": 4084,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "ew source](https://wise.design/foundations/colour#colour-accessibility) [Color System](../directories/color-system) [View source](https://wise.design/foundations/colour) [Icons](../directories/icons) [View source](https://wise.design/foundations/icons) [Patterns](../directories/patterns) [View source](https://wise.design/patterns) [Responsive](../directories/responsive) [View source](https://wise.design/foundations/size) [Spacing](../directories/spacing) [View source](https://wise.design/foundations/spacing) [Styles](../directories/styles) [View source](https://wise.design/foundations/radius) [Typography](../directories/typography) [View source](https://wise.design/foundations/typography) [Alert banner](../components/alert-banner) [View source](https://wise.design/components/alert) [Avatar](../components/avatar) [View source](https://wise.design/components/avatar) [Bottom sheet](../components/bottom-sheet) [View source](https://wise.design/components/bottom-sheet)",
-      "metadata": {
-        "startIndex": 3884,
-        "endIndex": 4863,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "onents/alert) [Avatar](../components/avatar) [View source](https://wise.design/components/avatar) [Bottom sheet](../components/bottom-sheet) [View source](https://wise.design/components/bottom-sheet) [Button](../components/button) [View source](https://wise.design/components/button) [Checkbox](../components/checkbox) [View source](https://wise.design/components/checkbox) [Chip](../components/chip) [View source](https://wise.design/components/chip) [Date picker](../components/date-picker) [View source](https://wise.design/components/date-input) [Dropdown](../components/dropdown) [View source](https://wise.design/components/dropdown) [Modal](../components/modal) [View source](https://wise.design/components/modal) [Popover](../components/popover) [View source](https://wise.design/components/popover) [Radio button](../components/radio-button) [View source](https://wise.design/components/radio) [Search](../components/search) [View source](https://wise.design/components/search-input)",
-      "metadata": {
-        "startIndex": 4663,
-        "endIndex": 5656,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "nents/popover) [Radio button](../components/radio-button) [View source](https://wise.design/components/radio) [Search](../components/search) [View source](https://wise.design/components/search-input) [Snackbar](../components/snackbar) [View source](https://wise.design/components/snackbar) [Switch](../components/switch) [View source](https://wise.design/components/switch) [Tabs](../components/tabs) [View source](https://wise.design/components/tabs) [Text area](../components/text-area) [View source](https://wise.design/components/text-area) [Text field](../components/text-field) [View source](https://wise.design/components/text-input) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf)",
-      "metadata": {
-        "startIndex": 5456,
-        "endIndex": 6409,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 6209,
-        "endIndex": 7209,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
       }
     }
   ],

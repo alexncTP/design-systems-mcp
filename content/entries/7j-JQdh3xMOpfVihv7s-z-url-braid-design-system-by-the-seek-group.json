@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/seek",
     "ingested_at": "2025-08-30T13:09:59.598Z"
   },
-  "content": "# Seek Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Braid from Directories: Components: Braid Design System is developed by the SEEK Group for the development and support of their online employment marketplace product. It offers detailed guidelines and a wide library of components, including Playroom for component experimentation without the need for a development setup. Design System includes well-thought-out themes, and the color palette in the system is designed to have a strong correlation with the tone of voice being used. Advertisement Color System View source Repository Icons Layout Responsive Accordion Alert banner Badges Button Button group Cards Checkbox Dialog Divider Drawer Dropdown Label List Menus Pagination Progress indicator Radio button Snackbar Switch Tabs Tag Text area Text field Tooltip",
+  "content": "Braid from Directories: Components: Braid Design System is developed by the SEEK Group for the development and support of their online employment marketplace product. It offers detailed guidelines and a wide library of components, including Playroom for component experimentation without the need for a development setup. Design System includes well-thought-out themes, and the color palette in the system is designed to have a strong correlation with the tone of voice being used. Color System Repository Icons Layout Responsive Accordion Alert banner Badges Button Button group Cards Checkbox Dialog Divider Drawer Dropdown Label List Menus Pagination Progress indicator Radio button Snackbar Switch Tabs Tag Text area Text field Tooltip",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Seek Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Braid from Directories: Components: Braid Design System is developed by the SEEK Group for the development and support of their online employment marketplace product.",
+      "text": "Braid from Directories: Components: Braid Design System is developed by the SEEK Group for the development and support of their online employment marketplace product. It offers detailed guidelines and a wide library of components, including Playroom for component experimentation without the need for a development setup. Design System includes well-thought-out themes, and the color palette in the system is designed to have a strong correlation with the tone of voice being used. Color System Repository Icons Layout Responsive Accordion Alert banner Badges Button Button group Cards Checkbox Dialog Divider Drawer Dropdown Label List Menus Pagination Progress indicator Radio button Snackbar Switch Tabs Tag Text area Text field Tooltip",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 941,
+        "endIndex": 739,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,101 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "test in Design Systems Subscribe Braid from Directories: Components: Braid Design System is developed by the SEEK Group for the development and support of their online employment marketplace product. It offers detailed guidelines and a wide library of components, including Playroom for component experimentation without the need for a development setup. Design System includes well-thought-out themes, and the color palette in the system is designed to have a strong correlation with the tone of voice being used. Advertisement Color System View source Repository Icons Layout Responsive Accordion Alert banner Badges Button Button group Cards Checkbox Dialog Divider Drawer Dropdown Label List Menus Pagination Progress indicator Radio button Snackbar Switch Tabs Tag Text area Text field Tooltip",
+      "text": "g Divider Drawer Dropdown Label List Menus Pagination Progress indicator Radio button Snackbar Switch Tabs Tag Text area Text field Tooltip",
       "metadata": {
-        "startIndex": 741,
-        "endIndex": 1741,
+        "startIndex": 600,
+        "endIndex": 739,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "esign .surf © Dzeya OÜ. All rights reserved",
-      "metadata": {
-        "startIndex": 1541,
-        "endIndex": 2539,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "[GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
-      "metadata": {
-        "startIndex": 2339,
-        "endIndex": 3267,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [BraidfromSeek](./seek#up-pixel) [Source](https://seek-oss.github.io/braid-design-system) [Repository](https://github.com/seek-oss/braid-design-system) [Color System](../directories/color-system) [View source](https://seek-oss.github.io/braid-design-system/foundations/tones) [Repository](../directories/repository) [View source](https://github.com/seek-oss/braid-design-system) [Icons](../directories/icons) [View",
-      "metadata": {
-        "startIndex": 3067,
-        "endIndex": 4047,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "://seek-oss.github.io/braid-design-system/foundations/tones) [Repository](../directories/repository) [View source](https://github.com/seek-oss/braid-design-system) [Icons](../directories/icons) [View source](https://seek-oss.github.io/braid-design-system/foundations/iconography) [Layout](../directories/layout) [View source](https://seek-oss.github.io/braid-design-system/foundations/layout) [Responsive](../directories/responsive) [View source](https://seek-oss.github.io/braid-design-system/css/breakpoints) [Accordion](../components/accordion) [View source](https://seek-oss.github.io/braid-design-system/components/Accordion) [Alert banner](../components/alert-banner) [View source](https://seek-oss.github.io/braid-design-system/components/Alert) [Badges](../components/badges) [View source](https://seek-oss.github.io/braid-design-system/components/Badge) [Button](../components/button) [View source](https://seek-oss.github.io/braid-design-system/components/Button) [Button",
-      "metadata": {
-        "startIndex": 3847,
-        "endIndex": 4829,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": ") [View source](https://seek-oss.github.io/braid-design-system/components/Badge) [Button](../components/button) [View source](https://seek-oss.github.io/braid-design-system/components/Button) [Button group](../components/button-group) [View source](https://seek-oss.github.io/braid-design-system/components/Actions) [Cards](../components/cards) [View source](https://seek-oss.github.io/braid-design-system/components/Card) [Checkbox](../components/checkbox) [View source](https://seek-oss.github.io/braid-design-system/components/Checkbox) [Dialog](../components/dialog) [View source](https://seek-oss.github.io/braid-design-system/components/Dialog) [Divider](../components/divider) [View source](https://seek-oss.github.io/braid-design-system/components/Divider) [Drawer](../components/drawer) [View source](https://seek-oss.github.io/braid-design-system/components/Drawer) [Dropdown](../components/dropdown) [View source](https://seek-oss.github.io/braid-design-system/components/Dropdown)",
-      "metadata": {
-        "startIndex": 4629,
-        "endIndex": 5622,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "r) [View source](https://seek-oss.github.io/braid-design-system/components/Drawer) [Dropdown](../components/dropdown) [View source](https://seek-oss.github.io/braid-design-system/components/Dropdown) [Label](../components/label) [View source](https://seek-oss.github.io/braid-design-system/components/FieldLabel) [List](../components/list) [View source](https://seek-oss.github.io/braid-design-system/components/List) [Menus](../components/menus) [View source](https://seek-oss.github.io/braid-design-system/components/MenuItem) [Pagination](../components/pagination) [View source](https://seek-oss.github.io/braid-design-system/components/Pagination) [Progress indicator](../components/progress-indicator) [View source](https://seek-oss.github.io/braid-design-system/components/Loader) [Radio button](../components/radio-button) [View source](https://seek-oss.github.io/braid-design-system/components/RadioGroup) [Snackbar](../components/snackbar) [View",
-      "metadata": {
-        "startIndex": 5422,
-        "endIndex": 6377,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "esign-system/components/Loader) [Radio button](../components/radio-button) [View source](https://seek-oss.github.io/braid-design-system/components/RadioGroup) [Snackbar](../components/snackbar) [View source](https://seek-oss.github.io/braid-design-system/components/useToast) [Switch](../components/switch) [View source](https://seek-oss.github.io/braid-design-system/components/Toggle) [Tabs](../components/tabs) [View source](https://seek-oss.github.io/braid-design-system/components/Tabs) [Tag](../components/tag) [View source](https://seek-oss.github.io/braid-design-system/components/Tag) [Text area](../components/text-area) [View source](https://seek-oss.github.io/braid-design-system/components/Textarea) [Text field](../components/text-field) [View source](https://seek-oss.github.io/braid-design-system/components/TextField) [Tooltip](../components/tooltip) [View source](https://seek-oss.github.io/braid-design-system/components/TooltipRenderer) [Design Systems](../design-systems) [Apple",
-      "metadata": {
-        "startIndex": 6177,
-        "endIndex": 7177,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "esign-system/components/TextField) [Tooltip](../components/tooltip) [View source](https://seek-oss.github.io/braid-design-system/components/TooltipRenderer) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Typography](../directories/typography) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 6977,
-        "endIndex": 7977,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
       }
     }
   ],

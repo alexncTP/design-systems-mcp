@@ -3,7 +3,7 @@
  */
 
 export type SourceType = 'pdf' | 'html' | 'url';
-export type Category = 'components' | 'tokens' | 'patterns' | 'workflows' | 'guidelines' | 'general';
+export type Category = 'components' | 'tokens' | 'patterns' | 'workflows' | 'guidelines' | 'general' | 'glossary';
 export type Confidence = 'high' | 'medium' | 'low';
 
 export interface ContentSource {

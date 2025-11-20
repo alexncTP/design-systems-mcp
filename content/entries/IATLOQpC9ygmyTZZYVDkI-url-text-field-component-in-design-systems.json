@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/components/text-field",
     "ingested_at": "2025-08-30T13:09:31.737Z"
   },
-  "content": "# Text field Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Accordion Action bar Action button Action list Alert banner App bar Autocomplete Avatar Badges Bottom sheet Breadcrumbs Button Button group Cards Checkbox Chip Code snippet Combobox Data table Date picker Dialog Divider Drawer Dropdown Empty state Filter input Form Help text Icon Inline message Label Link List Menus Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Slider Snackbar Switch Tabs Tag Text area Tooltip Tree view Keep up with the latest in Design Systems Subscribe Text field allows users to input and edit a single line of plain text. It's an essential element in forms, enabling users to provide information like their name, email, password, and more. Text fields typically come with a label to indicate what information should be entered, and may also include placeholder text, validation messages, or helper text. Text field be configured to hide input for sensitive data entry, like passwords. By providing a designated area for user input, Text field components are essential for data collection, enhancing interaction efficiency, and overall user experience. Advertisement in Design Systems Adobe Spectrum View source Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Teamleader Ahoy Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas Zendesk Garden",
+  "content": "# Text field Systems Directories Components Articles Blueprints Guides Glossary Accordion Action bar Action button Action list Alert banner App bar Autocomplete Avatar Badges Bottom sheet Breadcrumbs Button Button group Cards Checkbox Chip Code snippet Combobox Data table Date picker Dialog Divider Drawer Dropdown Empty state Filter input Form Help text Icon Inline message Label Link List Menus Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Slider Snackbar Switch Tabs Tag Text area Tooltip Tree view Subscribe Text field allows users to input and edit a single line of plain text. It's an essential element in forms, enabling users to provide information like their name, email, password, and more. Text fields typically come with a label to indicate what information should be entered, and may also include placeholder text, validation messages, or helper text. Text field be configured to hide input for sensitive data entry, like passwords. By providing a designated area for user input, Text field components are essential for data collection, enhancing interaction efficiency, and overall user experience. in Design Systems Adobe Spectrum Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Teamleader Ahoy Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas Zendesk Garden",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Text field Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Accordion Action bar Action button Action list Alert banner App bar Autocomplete Avatar Badges Bottom sheet Breadcrumbs Button Button group Cards Checkbox Chip Code snippet Combobox Data table Date picker Dialog Divider Drawer Dropdown Empty state Filter input Form Help text Icon Inline message Label Link List Menus Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Slider Snackbar Switch Tabs Tag Text area Tooltip Tree view Keep up with the latest in Design Systems Subscribe Text field allows users to input and edit a single line of plain text. It's an essential element in forms, enabling users to provide information like their name, email, password, and more. Text fields typically come with a label to indicate what information should be entered, and may also include placeholder text, validation",
+      "text": "# Text field Systems Directories Components Articles Blueprints Guides Glossary Accordion Action bar Action button Action list Alert banner App bar Autocomplete Avatar Badges Bottom sheet Breadcrumbs Button Button group Cards Checkbox Chip Code snippet Combobox Data table Date picker Dialog Divider Drawer Dropdown Empty state Filter input Form Help text Icon Inline message Label Link List Menus Modal Navigation bar Page header Pagination Popover Progress bar Progress indicator Radio button Search Segmented control Select Sidebar Slider Snackbar Switch Tabs Tag Text area Tooltip Tree view Subscribe Text field allows users to input and edit a single line of plain text. It's an essential element in forms, enabling users to provide information like their name, email, password, and more. Text f",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 1001,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,10 +21,10 @@
     },
     {
       "id": "chunk-1",
-      "text": "ovide information like their name, email, password, and more. Text fields typically come with a label to indicate what information should be entered, and may also include placeholder text, validation messages, or helper text. Text field be configured to hide input for sensitive data entry, like passwords. By providing a designated area for user input, Text field components are essential for data collection, enhancing interaction efficiency, and overall user experience. Advertisement in Design Systems Adobe Spectrum View source Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe",
+      "text": "ribe Text field allows users to input and edit a single line of plain text. It's an essential element in forms, enabling users to provide information like their name, email, password, and more. Text fields typically come with a label to indicate what information should be entered, and may also include placeholder text, validation messages, or helper text. Text field be configured to hide input for sensitive data entry, like passwords. By providing a designated area for user input, Text field components are essential for data collection, enhancing interaction efficiency, and overall user experience. in Design Systems Adobe Spectrum Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Wats",
       "metadata": {
-        "startIndex": 801,
-        "endIndex": 1797,
+        "startIndex": 600,
+        "endIndex": 1400,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
@@ -32,10 +32,10 @@
     },
     {
       "id": "chunk-2",
-      "text": "Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Teamleader Ahoy Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas Zendesk Garden",
+      "text": "ence. in Design Systems Adobe Spectrum Alaska Airlines Auro Amazon Cloudscape Apple HIG Atlassian Design System Audi Basis Biings Carrefour Marcel CBRE Build Blocks Datadog Druids Dell Docplanner Watson eBay Evo Elastic Esri Calcite General Electric Edison Github Primer GitLab Pajamas Google Material Design GOV.UK Gusto Workbench Helly Hansen IBM Carbon Ideagen Helix INPS Sirio Kajabi Sage Kiwicom Orbit Lemon Squeezy Wedges Line LocalTapiola Duet Michelin Motion Microsoft Fluent 2 Monday.com Vibe MongoDB LeafyGreen Motorway Highway Code Mozilla Protocol Nordhealth Ontario Orange Palantir Blueprint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social See",
       "metadata": {
-        "startIndex": 1597,
-        "endIndex": 2594,
+        "startIndex": 1200,
+        "endIndex": 2000,
         "chunkIndex": 2,
         "section": "Content",
         "globalChunkIndex": 2
@@ -43,211 +43,13 @@
     },
     {
       "id": "chunk-3",
-      "text": "ries24](../directories) [Components55](../components) [Articles5](../articles) [Blueprints7](../blueprints) [Guides18](../guides) [Glossary46](../glossary) [012Biweekly Digest](../subscribe) [Request Ad](../advertisement) [Ilya Greben](https://ilyagreben.com) (./accordion) (./action-bar) (./action-button) (./action-list) (./alert-banner) (./app-bar) (./autocomplete) (./avatar) (./badges) (./bottom-sheet) (./breadcrumbs) (./button) (./button-group) (./cards) (./checkbox) (./chip) [Code snippetCode snippetCode",
+      "text": "rint Pinterest Gestalt Pluralsight Porsche Razorpay Blade Red Hat PatternFly Rei Cedar Salesforce Lightning Seek Braid Segment Evergreen ServiceNow Horizon Shopify Polaris Skoda Flow Sprout Social Seeds SumUp Circuit Sunrise Solar Teamleader Ahoy Thumbtack Thumbprint Twilio Paste U.S. Web UAE Uber Base Vercel Geist Visa Washington Post Wikimedia Codex Wise Wonderflow Wanda Workday Canvas Zendesk Garden",
       "metadata": {
-        "startIndex": 2394,
-        "endIndex": 3372,
+        "startIndex": 1800,
+        "endIndex": 2205,
         "chunkIndex": 3,
         "section": "Content",
         "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "onButtonButton](./button) (./button-group) (./cards) (./checkbox) (./chip) (./code-snippet) (./combobox) (./data-table) (./date-picker) (./dialog) (./divider) (./drawer) (./dropdown) (./empty-state) (./filter-input) (./form) (./help-text) (./icon) (./inline-message) (./label) (./link) (./list) (./menus) (./modal) (./navigation-bar) [Page header Page header Page header](./page-header)",
-      "metadata": {
-        "startIndex": 3172,
-        "endIndex": 4171,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "/link) (./list) (./menus) (./modal) (./navigation-bar) [Page header Page header Page header](./page-header) (./pagination) (./popover) (./progress-bar) (./progress-indicator) (./radio-button) (./search) (./segmented-control) (./select) (./sidebar) (./slider) (./snackbar) (./switch) (./tabs) (./tag) (./text-area) (./text-field) (./tooltip) (./tree-view) [012Biweekly DigestKeep up with the latest in",
-      "metadata": {
-        "startIndex": 3971,
-        "endIndex": 4971,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "areaText area](./text-area) (./text-field) (./tooltip) (./tree-view) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Text field68](./text-field#up-pixel) [AdobeSpectrum](../design-systems/adobe) [View source](https://spectrum.adobe.com/page/text-field) [Alaska AirlinesAuro](../design-systems/alaskaairlines) [View source](https://auro.alaskaair.com/components/auro/input) [AmazonCloudscape](../design-systems/amazon) [View source](https://cloudscape.design/components/input/?tabId=playground) [AppleHIG](../design-systems/apple) [View source](https://developer.apple.com/design/human-interface-guidelines/text-fields) [AtlassianDesign System](../design-systems/atlassian) [View source](https://atlassian.design/components/textfield) [AudiDesign System](../design-systems/audi) [View",
-      "metadata": {
-        "startIndex": 4771,
-        "endIndex": 5718,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "-interface-guidelines/text-fields) [AtlassianDesign System](../design-systems/atlassian) [View source](https://atlassian.design/components/textfield) [AudiDesign System](../design-systems/audi) [View source](https://styleguide.audi.com/document/2442#/-/input-fields) [BasisDesign System](../design-systems/basis) [View source](https://design.basis.com/components/inputs) [BiingsDesign System](../design-systems/biings) [View source](https://biings.design/#/input) [CarrefourMarcel](../design-systems/carrefour) [View source](https://carrefour.design/328eff0d7/p/270b0d-input-text) [CBRE BuildBlocks](../design-systems/cbrebuild) [View source](https://blocks.cbrebuild.com/components/textfields) [DatadogDruids](../design-systems/datadog) [View source](https://druids.datadoghq.com/components/form/Field) [DellDesign System](../design-systems/dell) [View source](https://www.delldesignsystem.com/components/text-input/) [DocplannerWatson](../design-systems/docplanner) [View",
-      "metadata": {
-        "startIndex": 5518,
-        "endIndex": 6492,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "hq.com/components/form/Field) [DellDesign System](../design-systems/dell) [View source](https://www.delldesignsystem.com/components/text-input/) [DocplannerWatson](../design-systems/docplanner) [View source](https://watson.docplanner.design/components/input) [eBayEvo](../design-systems/ebay) [View source](https://playbook.ebay.com/design-system/components/text-field) [ElasticDesign System](../design-systems/elastic) [View source](https://elastic.github.io/eui/#/forms/form-controls) [EsriCalcite](../design-systems/esri) [View source](https://developers.arcgis.com/calcite-design-system/components/input/) [General ElectricEdison](../design-systems/generalelectric) [View source](https://eds.gehealthcare.com/textbox?tab=0) [GithubPrimer](../design-systems/github) [View source](https://primer.style/design/components/text-input) [GitLabPajamas](../design-systems/gitlab) [View source](https://design.gitlab.com/components/text-input) [GoogleMaterial Design](../design-systems/google) [View",
-      "metadata": {
-        "startIndex": 6292,
-        "endIndex": 7287,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "er.style/design/components/text-input) [GitLabPajamas](../design-systems/gitlab) [View source](https://design.gitlab.com/components/text-input) [GoogleMaterial Design](../design-systems/google) [View source](https://m3.material.io/components/text-fields) [GOV.UKDesign System](../design-systems/govuk) [View source](https://design-system.service.gov.uk/components/text-input/) [GustoWorkbench](../design-systems/gusto) [View source](https://workbench.gusto.com/components/textfield/) [Helly HansenDesign System](../design-systems/hellyhansen) [View source](https://design.hellyhansen.com/1b4c2ca6d/p/10e358-inputs-20/b/65d820) [IBMCarbon](../design-systems/ibm) [View source](https://carbondesignsystem.com/components/text-input/usage/) [IdeagenHelix](../design-systems/ideagen) [View source](https://www.helixui.com/9904796d6/p/561add-text-field/b/90c25c) [INPSSirio](../design-systems/inps) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/34d612)",
-      "metadata": {
-        "startIndex": 7087,
-        "endIndex": 8058,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "deagen) [View source](https://www.helixui.com/9904796d6/p/561add-text-field/b/90c25c) [INPSSirio](../design-systems/inps) [View source](https://www.inps.design/3e7e2b0f5/p/477c8c-data-entry/b/34d612) [KajabiSage](../design-systems/kajabi) [View source](https://sage.kajabi.com/pages/component/form_input?tab=preview) [KiwicomOrbit](../design-systems/kiwicom) [View source](https://orbit.kiwi/components/input/inputfield/) [Lemon SqueezyWedges](../design-systems/lemon-squeezy) [View source](https://www.lemonsqueezy.com/wedges/docs/components/input) [LineDesign System](../design-systems/line) [View source](https://designsystem.line.me/LDSG/components/inputs/text-input-en/) [LocalTapiolaDuet](../design-systems/localtapiola) [View source](https://www.duetds.com/components/input/) [MichelinMotion](../design-systems/michelin) [View source](https://designsystem.michelin.com/components/text-field) [MicrosoftFluent 2](../design-systems/microsoft) [View",
-      "metadata": {
-        "startIndex": 7858,
-        "endIndex": 8812,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
-      }
-    },
-    {
-      "id": "chunk-11",
-      "text": "uetds.com/components/input/) [MichelinMotion](../design-systems/michelin) [View source](https://designsystem.michelin.com/components/text-field) [MicrosoftFluent 2](../design-systems/microsoft) [View source](https://fluent2.microsoft.design/components/web/react/field/usage) [Monday.comVibe](../design-systems/mondaycom) [View source](https://style.monday.com/?path=/docs/inputs-textfield--docs) [MongoDBLeafyGreen](../design-systems/mongodb) [View source](https://www.mongodb.design/component/text-input/live-example) [MotorwayHighway Code](../design-systems/motorway) [View source](https://thc.motorway.co.uk/0566ad526/p/669ccd-input/b/3867f1) [MozillaProtocol](../design-systems/mozilla) [View source](https://protocol.mozilla.org/components/detail/input--text) [NordhealthDesign System](../design-systems/nordhealth) [View source](https://nordhealth.design/components/input/) [OntarioDesign System](../design-systems/ontario) [View",
-      "metadata": {
-        "startIndex": 8612,
-        "endIndex": 9548,
-        "chunkIndex": 11,
-        "section": "Content",
-        "globalChunkIndex": 11
-      }
-    },
-    {
-      "id": "chunk-12",
-      "text": "mponents/detail/input--text) [NordhealthDesign System](../design-systems/nordhealth) [View source](https://nordhealth.design/components/input/) [OntarioDesign System](../design-systems/ontario) [View source](https://designsystem.ontario.ca/components/detail/text-inputs.html) [OrangeDesign System](../design-systems/orange) [View source](https://system.design.orange.com/0c1af118d/p/22dc66-text-field) [PalantirBlueprint](../design-systems/palantir) [View source](https://blueprintjs.com/docs/#core/components/input-group) [PinterestGestalt](../design-systems/pinterest) [View source](https://gestalt.pinterest.systems/web/textfield) [PluralsightDesign System](../design-systems/pluralsight) [View source](https://design-system.pluralsight.com/components/textinput) [PorscheDesign System](../design-systems/porsche) [View source](https://designsystem.porsche.com/v3/components/text-field-wrapper/examples) [RazorpayBlade](../design-systems/razorpay) [View",
-      "metadata": {
-        "startIndex": 9348,
-        "endIndex": 10304,
-        "chunkIndex": 12,
-        "section": "Content",
-        "globalChunkIndex": 12
-      }
-    },
-    {
-      "id": "chunk-13",
-      "text": "extinput) [PorscheDesign System](../design-systems/porsche) [View source](https://designsystem.porsche.com/v3/components/text-field-wrapper/examples) [RazorpayBlade](../design-systems/razorpay) [View source](https://blade.razorpay.com/?path=/docs/components-input-textinput--docs) [Red HatPatternFly](../design-systems/redhat) [View source](https://www.patternfly.org/components/forms/text-input) [ReiCedar](../design-systems/rei) [View source](https://cedar.rei.com/components/input) [SalesforceLightning](../design-systems/salesforce) [View source](https://www.lightningdesignsystem.com/components/input/#site-main-content) [SeekBraid](../design-systems/seek) [View source](https://seek-oss.github.io/braid-design-system/components/TextField) [SegmentEvergreen](../design-systems/segment) [View source](https://evergreen.segment.com/components/text-input) [ServiceNowHorizon](../design-systems/servicenow) [View source](https://horizon.servicenow.com/components/now-input)",
-      "metadata": {
-        "startIndex": 10104,
-        "endIndex": 11079,
-        "chunkIndex": 13,
-        "section": "Content",
-        "globalChunkIndex": 13
-      }
-    },
-    {
-      "id": "chunk-14",
-      "text": "ystems/segment) [View source](https://evergreen.segment.com/components/text-input) [ServiceNowHorizon](../design-systems/servicenow) [View source](https://horizon.servicenow.com/components/now-input) [ShopifyPolaris](../design-systems/shopify) [View source](https://polaris.shopify.com/components/selection-and-input/text-field) [SkodaFlow](../design-systems/skoda) [View source](https://flow.skoda-brand.com/d/6aQMrmD6PhWL/web#/components/text-input-fields-1) [Sprout SocialSeeds](../design-systems/sproutsocial) [View source](https://seeds.sproutsocial.com/components/input) [SumUpCircuit](../design-systems/sumup) [View source](https://circuit.sumup.com/?path=/docs/forms-input--docs) [SunriseSolar](../design-systems/sunrise) [View source](https://solar.sunrise.net/99a108c57/p/4211e4-text-input) [TeamleaderAhoy](../design-systems/teamleader) [View source](https://ahoy.teamleader.design/3547946e7/p/812011-form-elements/b/40b1cb) [ThumbtackThumbprint](../design-systems/thumbtack) [View",
-      "metadata": {
-        "startIndex": 10879,
-        "endIndex": 11872,
-        "chunkIndex": 14,
-        "section": "Content",
-        "globalChunkIndex": 14
-      }
-    },
-    {
-      "id": "chunk-15",
-      "text": "-input) [TeamleaderAhoy](../design-systems/teamleader) [View source](https://ahoy.teamleader.design/3547946e7/p/812011-form-elements/b/40b1cb) [ThumbtackThumbprint](../design-systems/thumbtack) [View source](https://thumbprint.design/components/text-input/react/) [TwilioPaste](../design-systems/twilio) [View source](https://paste.twilio.design/components/input) [U.S. WebDesign System](../design-systems/uswds) [View source](https://designsystem.digital.gov/components/text-input/) [UAEDesign System](../design-systems/uae) [View source](https://designsystem.gov.ae/docs/components/input) [UberBase](../design-systems/uber) [View source](https://base.uber.com/6d2425e9f/p/51073e-text-field/b/46994b) [VercelGeist](../design-systems/vercel) [View source](https://vercel.com/design/input) [VisaDesign System](../design-systems/visa) [View source](https://design.visa.com/components/input/?code_library=css&version=1.6.2) [Washington PostDesign System](../design-systems/washingtonpost) [View",
-      "metadata": {
-        "startIndex": 11672,
-        "endIndex": 12664,
-        "chunkIndex": 15,
-        "section": "Content",
-        "globalChunkIndex": 15
-      }
-    },
-    {
-      "id": "chunk-16",
-      "text": "saDesign System](../design-systems/visa) [View source](https://design.visa.com/components/input/?code_library=css&version=1.6.2) [Washington PostDesign System](../design-systems/washingtonpost) [View source](https://build.washingtonpost.com/components/input-text) [WikimediaCodex](../design-systems/wikimedia) [View source](https://doc.wikimedia.org/codex/latest/components/demos/field.html) [WiseDesign System](../design-systems/wise) [View source](https://wise.design/components/text-input) [WonderflowWanda](../design-systems/wonderflow) [View source](https://design.wonderflow.ai/get-started/components/inputs/textfield) [WorkdayCanvas](../design-systems/workday) [View source](https://canvas.workday.com/components/inputs/text-input) [ZendeskGarden](../design-systems/zendesk) [View source](https://garden.zendesk.com/components/input) [Adobe](../design-systems/adobe) [Alaska Airlines](../design-systems/alaskaairlines) [Amazon](../design-systems/amazon) [Apple](../design-systems/apple)",
-      "metadata": {
-        "startIndex": 12464,
-        "endIndex": 13458,
-        "chunkIndex": 16,
-        "section": "Content",
-        "globalChunkIndex": 16
-      }
-    },
-    {
-      "id": "chunk-17",
-      "text": "](https://garden.zendesk.com/components/input) [Adobe](../design-systems/adobe) [Alaska Airlines](../design-systems/alaskaairlines) [Amazon](../design-systems/amazon) [Apple](../design-systems/apple) [Atlassian](../design-systems/atlassian) [Audi](../design-systems/audi) [Basis](../design-systems/basis) [Biings](../design-systems/biings) [Carrefour](../design-systems/carrefour) [CBRE Build](../design-systems/cbrebuild) [Datadog](../design-systems/datadog) [Dell](../design-systems/dell) [Docplanner](../design-systems/docplanner) [eBay](../design-systems/ebay) [Elastic](../design-systems/elastic) [Esri](../design-systems/esri) [General Electric](../design-systems/generalelectric) [Github](../design-systems/github) [GitLab](../design-systems/gitlab) [Google](../design-systems/google) [GOV.UK](../design-systems/govuk) [Gusto](../design-systems/gusto) [Helly Hansen](../design-systems/hellyhansen) [IBM](../design-systems/ibm) [Ideagen](../design-systems/ideagen)",
-      "metadata": {
-        "startIndex": 13258,
-        "endIndex": 14229,
-        "chunkIndex": 17,
-        "section": "Content",
-        "globalChunkIndex": 17
-      }
-    },
-    {
-      "id": "chunk-18",
-      "text": "sign-systems/google) [GOV.UK](../design-systems/govuk) [Gusto](../design-systems/gusto) [Helly Hansen](../design-systems/hellyhansen) [IBM](../design-systems/ibm) [Ideagen](../design-systems/ideagen) [INPS](../design-systems/inps) [Kajabi](../design-systems/kajabi) [Kiwicom](../design-systems/kiwicom) [Lemon Squeezy](../design-systems/lemon-squeezy) [Line](../design-systems/line) [LocalTapiola](../design-systems/localtapiola) [Michelin](../design-systems/michelin) [Microsoft](../design-systems/microsoft) [Monday.com](../design-systems/mondaycom) [MongoDB](../design-systems/mongodb) [Motorway](../design-systems/motorway) [Mozilla](../design-systems/mozilla) [Nordhealth](../design-systems/nordhealth) [Ontario](../design-systems/ontario) [Orange](../design-systems/orange) [Palantir](../design-systems/palantir) [Pinterest](../design-systems/pinterest) [Pluralsight](../design-systems/pluralsight) [Porsche](../design-systems/porsche) [Razorpay](../design-systems/razorpay) [Red",
-      "metadata": {
-        "startIndex": 14029,
-        "endIndex": 15015,
-        "chunkIndex": 18,
-        "section": "Content",
-        "globalChunkIndex": 18
-      }
-    },
-    {
-      "id": "chunk-19",
-      "text": "tir](../design-systems/palantir) [Pinterest](../design-systems/pinterest) [Pluralsight](../design-systems/pluralsight) [Porsche](../design-systems/porsche) [Razorpay](../design-systems/razorpay) [Red Hat](../design-systems/redhat) [Rei](../design-systems/rei) [Salesforce](../design-systems/salesforce) [Seek](../design-systems/seek) [Segment](../design-systems/segment) [ServiceNow](../design-systems/servicenow) [Shopify](../design-systems/shopify) [Skoda](../design-systems/skoda) [Sprout Social](../design-systems/sproutsocial) [SumUp](../design-systems/sumup) [Sunrise](../design-systems/sunrise) [Teamleader](../design-systems/teamleader) [Thumbtack](../design-systems/thumbtack) [Twilio](../design-systems/twilio) [U.S. Web](../design-systems/uswds) [UAE](../design-systems/uae) [Uber](../design-systems/uber) [Vercel](../design-systems/vercel) [Visa](../design-systems/visa) [Washington Post](../design-systems/washingtonpost) [Wikimedia](../design-systems/wikimedia)",
-      "metadata": {
-        "startIndex": 14815,
-        "endIndex": 15791,
-        "chunkIndex": 19,
-        "section": "Content",
-        "globalChunkIndex": 19
-      }
-    },
-    {
-      "id": "chunk-20",
-      "text": "tems/uae) [Uber](../design-systems/uber) [Vercel](../design-systems/vercel) [Visa](../design-systems/visa) [Washington Post](../design-systems/washingtonpost) [Wikimedia](../design-systems/wikimedia) [Wise](../design-systems/wise) [Wonderflow](../design-systems/wonderflow) [Workday](../design-systems/workday) [Zendesk](../design-systems/zendesk) [Design Systems](../design-systems) [Apple HIG](../design-systems/apple) [Google Material Design](../design-systems/google) [IBM Design System](../design-systems/ibm) [Microsoft Fluent 2](../design-systems/microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Color System](../directories/color-system) [Figma](../directories/figma) [Typography](../directories/typography) [Components](../components) [Button](./button) [Checkbox](./checkbox) [Radio button](./radio-button) [Text field](./text-field) [DesignSystems.surf](../) [X (Twitter)](https://x.com/dsgnsystemssurf)",
-      "metadata": {
-        "startIndex": 15591,
-        "endIndex": 16545,
-        "chunkIndex": 20,
-        "section": "Content",
-        "globalChunkIndex": 20
-      }
-    },
-    {
-      "id": "chunk-21",
-      "text": "[Components](../components) [Button](./button) [Checkbox](./checkbox) [Radio button](./radio-button) [Text field](./text-field) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 16345,
-        "endIndex": 17345,
-        "chunkIndex": 21,
-        "section": "Content",
-        "globalChunkIndex": 21
       }
     }
   ],

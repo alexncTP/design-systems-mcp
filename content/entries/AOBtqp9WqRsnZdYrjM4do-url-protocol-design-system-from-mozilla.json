@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/mozilla",
     "ingested_at": "2025-08-30T13:09:51.029Z"
   },
-  "content": "# Mozilla Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Protocol from Directories: Components: Protocol Design System is a design framework created by Mozilla for building internal products. Protocol includes components, and tools for consistent, accessible, and responsive web design, emphasizing inclusivity and open-source collaboration. Design System not included wide guidelines for UI components and only contains live examples of reusable coded components. Protocol is still an evolving project. Currently it’s used primarily by the Mozilla Marketing Websites team as the front-end for Advertisement Color System View source Repository Spacing Styles Tokens Typography Accordion Breadcrumb Button Cards Checkbox Data table Date picker Form Link List Menus Modal Radio button Search Select Sidebar Text area Text field",
+  "content": "Protocol from Directories: Components: Protocol Design System is a design framework Mozilla for building internal products. Protocol includes components, and tools for consistent, accessible, and responsive web design, emphasizing inclusivity and open-source collaboration. Design System not included wide guidelines for UI components and only contains live examples of reusable coded components. Protocol is still an evolving project. Currently it’s used primarily by the Mozilla Marketing Websites team as the front-end for Color System Repository Spacing Styles Tokens Typography Accordion Breadcrumb Button Cards Checkbox Data table Date picker Form Link List Menus Modal Radio button Search Select Sidebar Text area Text field",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Mozilla Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Nordhealth Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Protocol from Directories: Components: Protocol Design System is a design framework created by Mozilla for building internal products.",
+      "text": "Protocol from Directories: Components: Protocol Design System is a design framework Mozilla for building internal products. Protocol includes components, and tools for consistent, accessible, and responsive web design, emphasizing inclusivity and open-source collaboration. Design System not included wide guidelines for UI components and only contains live examples of reusable coded components. Protocol is still an evolving project. Currently it’s used primarily by the Mozilla Marketing Websites team as the front-end for Color System Repository Spacing Styles Tokens Typography Accordion Breadcrumb Button Cards Checkbox Data table Date picker Form Link List Menus Modal Radio button Search Select Sidebar Text area Text field",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 909,
+        "endIndex": 731,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,90 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "rkOS Zendesk Keep up with the latest in Design Systems Subscribe Protocol from Directories: Components: Protocol Design System is a design framework created by Mozilla for building internal products. Protocol includes components, and tools for consistent, accessible, and responsive web design, emphasizing inclusivity and open-source collaboration. Design System not included wide guidelines for UI components and only contains live examples of reusable coded components. Protocol is still an evolving project. Currently it’s used primarily by the Mozilla Marketing Websites team as the front-end for Advertisement Color System View source Repository Spacing Styles Tokens Typography Accordion Breadcrumb Button Cards Checkbox Data table Date picker Form Link List Menus Modal Radio button Search Select Sidebar Text area Text field",
+      "text": "umb Button Cards Checkbox Data table Date picker Form Link List Menus Modal Radio button Search Select Sidebar Text area Text field",
       "metadata": {
-        "startIndex": 709,
-        "endIndex": 1690,
+        "startIndex": 600,
+        "endIndex": 731,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "io button Search Select Sidebar Text area Text field",
-      "metadata": {
-        "startIndex": 1490,
-        "endIndex": 2480,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S.",
-      "metadata": {
-        "startIndex": 2280,
-        "endIndex": 3270,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "(./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [ProtocolfromMozilla](./mozilla#up-pixel) [www.mozilla.org](http://www.mozilla.org/) [Source](https://protocol.mozilla.org/) [Repository](https://github.com/mozilla/protocol) [Color System](../directories/color-system) [View source](https://protocol.mozilla.org/docs/fundamentals/color) [Repository](../directories/repository) [View source](https://github.com/mozilla/protocol) [Spacing](../directories/spacing) [View",
-      "metadata": {
-        "startIndex": 3070,
-        "endIndex": 4053,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "[View source](https://protocol.mozilla.org/docs/fundamentals/color) [Repository](../directories/repository) [View source](https://github.com/mozilla/protocol) [Spacing](../directories/spacing) [View source](https://protocol.mozilla.org/docs/fundamentals/design-tokens) [Styles](../directories/styles) [Tokens](../directories/tokens) [Typography](../directories/typography) [View source](https://protocol.mozilla.org/docs/fundamentals/typography) [Accordion](../components/accordion) [View source](https://protocol.mozilla.org/components/detail/details-component--default) [Breadcrumb](../components/breadcrumbs) [View source](https://protocol.mozilla.org/components/detail/breadcrumb) [Button](../components/button) [View source](https://protocol.mozilla.org/components/detail/button--primary) [Cards](../components/cards) [View source](https://protocol.mozilla.org/components/detail/card--overview) [Checkbox](../components/checkbox) [View",
-      "metadata": {
-        "startIndex": 3853,
-        "endIndex": 4795,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "tocol.mozilla.org/components/detail/button--primary) [Cards](../components/cards) [View source](https://protocol.mozilla.org/components/detail/card--overview) [Checkbox](../components/checkbox) [View source](https://protocol.mozilla.org/components/detail/checkboxes) [Data table](../components/data-table) [View source](https://protocol.mozilla.org/components/detail/tables) [Date picker](../components/date-picker) [View source](https://protocol.mozilla.org/components/detail/input--date) [Form](../components/form) [View source](https://protocol.mozilla.org/components/detail/example-form) [Link](../components/link) [View source](https://protocol.mozilla.org/components/detail/links--default) [List](../components/list) [View source](https://protocol.mozilla.org/components/detail/lists--default) [Menus](../components/menus) [View source](https://protocol.mozilla.org/components/detail/menu-list--default) [Modal](../components/modal) [View",
-      "metadata": {
-        "startIndex": 4595,
-        "endIndex": 5540,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "protocol.mozilla.org/components/detail/lists--default) [Menus](../components/menus) [View source](https://protocol.mozilla.org/components/detail/menu-list--default) [Modal](../components/modal) [View source](https://protocol.mozilla.org/components/detail/modal) [Radio button](../components/radio-button) [View source](https://protocol.mozilla.org/components/detail/radio-buttons) [Search](../components/search) [View source](https://protocol.mozilla.org/components/detail/input--search) [Select](../components/select) [View source](https://protocol.mozilla.org/components/detail/select--default) [Sidebar](../components/sidebar) [View source](https://protocol.mozilla.org/components/detail/sidebar-menu) [Text area](../components/text-area) [View source](https://protocol.mozilla.org/components/detail/textarea) [Text field](../components/text-field) [View source](https://protocol.mozilla.org/components/detail/input--text) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material",
-      "metadata": {
-        "startIndex": 5340,
-        "endIndex": 6340,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "il/textarea) [Text field](../components/text-field) [View source](https://protocol.mozilla.org/components/detail/input--text) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Accessibility](../directories/accessibility) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 6140,
-        "endIndex": 7140,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
       }
     }
   ],

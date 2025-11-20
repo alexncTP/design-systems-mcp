@@ -6,14 +6,14 @@
     "location": "https://designsystems.surf/design-systems/nordhealth",
     "ingested_at": "2025-08-30T13:09:51.815Z"
   },
-  "content": "# Nordhealth Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Nordhealth Design System is a comprehensive design framework that covers internal healthcare products and includes everything from product design to digital interactions and brand identity. System includes a comprehensive library of components, design tokens, a color system, typography, and a flexible theming system, all tightly integrated with the brand identity, resulting in a cohesive and harmonious design ecosystem. Advertisement Accessibility View source Color System Component overview Repository Icons International Design Layout Theming Tokens Typography Alert banner App bar Avatar Badges Button Button group Cards Checkbox Data table Date picker Divider Drawer Dropdown Empty state Icon Menus Modal Page header Popover Progress bar Progress indicator Radio button Select Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip",
+  "content": "Design System from Directories: Components: Nordhealth Design System is a comprehensive design framework that covers internal healthcare products and includes everything from product design to digital interactions and brand identity. System includes a comprehensive library of components, design tokens, a color system, typography, and a flexible theming system, all tightly integrated with the brand identity, resulting in a cohesive and harmonious design ecosystem. Accessibility Color System Component overview Repository Icons International Design Layout Theming Tokens Typography Alert banner App bar Avatar Badges Button Button group Cards Checkbox Data table Date picker Divider Drawer Dropdown Empty state Icon Menus Modal Page header Popover Progress bar Progress indicator Radio button Select Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Nordhealth Systems Directories Components Articles Blueprints Guides Glossary Biweekly Digest Created by Adobe Alaska Airlines Amazon Apple Atlassian Audi Basis Biings Brainly Carrefour Cash App CBRE Build Cisco Datadog Dell Docplanner eBay Elastic Esri General Electric Github GitLab Google GOV.UK Gusto Helly Hansen IBM Ideagen INPS Kajabi Kiwicom Lemon Squeezy Line LocalTapiola Michelin Microsoft Monday.com MongoDB Motorway Mozilla Ontario Orange Palantir Pinterest Pluralsight Porsche Razorpay Red Hat Rei Salesforce Samsung Seek Segment ServiceNow Shopify Skoda Sprout Social SumUp Sunrise Teamleader Thumbtack Twilio U.S. Web UAE Uber Vercel Visa Washington Post Wikimedia Wise Wonderflow Workday WorkOS Zendesk Keep up with the latest in Design Systems Subscribe Design System from Directories: Components: Nordhealth Design System is a comprehensive design framework that covers internal healthcare products and includes everything from product design to digital interactions and brand",
+      "text": "Design System from Directories: Components: Nordhealth Design System is a comprehensive design framework that covers internal healthcare products and includes everything from product design to digital interactions and brand identity. System includes a comprehensive library of components, design tokens, a color system, typography, and a flexible theming system, all tightly integrated with the brand identity, resulting in a cohesive and harmonious design ecosystem. Accessibility Color System Component overview Repository Icons International Design Layout Theming Tokens Typography Alert banner App bar Avatar Badges Button Button group Cards Checkbox Data table Date picker Divider Drawer Dropdown Empty state Icon Menus Modal Page header Popover Progress bar Progress indicator Radio button Sele",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 998,
+        "endIndex": 800,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
@@ -21,112 +21,13 @@
     },
     {
       "id": "chunk-1",
-      "text": "tories: Components: Nordhealth Design System is a comprehensive design framework that covers internal healthcare products and includes everything from product design to digital interactions and brand identity. System includes a comprehensive library of components, design tokens, a color system, typography, and a flexible theming system, all tightly integrated with the brand identity, resulting in a cohesive and harmonious design ecosystem. Advertisement Accessibility View source Color System Component overview Repository Icons International Design Layout Theming Tokens Typography Alert banner App bar Avatar Badges Button Button group Cards Checkbox Data table Date picker Divider Drawer Dropdown Empty state Icon Menus Modal Page header Popover Progress bar Progress indicator Radio button Select Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip",
+      "text": "p bar Avatar Badges Button Button group Cards Checkbox Data table Date picker Divider Drawer Dropdown Empty state Icon Menus Modal Page header Popover Progress bar Progress indicator Radio button Select Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip",
       "metadata": {
-        "startIndex": 798,
-        "endIndex": 1785,
+        "startIndex": 600,
+        "endIndex": 867,
         "chunkIndex": 1,
         "section": "Content",
         "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "dio button Select Sidebar Slider Snackbar Switch Tabs Text area Text field Tooltip",
-      "metadata": {
-        "startIndex": 1585,
-        "endIndex": 2584,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
-      }
-    },
-    {
-      "id": "chunk-3",
-      "text": "(./elastic) [Esri](./esri) [General Electric](./generalelectric) [Github](./github) [GitLab](./gitlab) [Google](./google) [GOV.UK](./govuk) [Gusto](./gusto) [Helly Hansen](./hellyhansen) [IBM](./ibm) [Ideagen](./ideagen) [INPS](./inps) [Kajabi](./kajabi) [Kiwicom](./kiwicom) [Lemon Squeezy](./lemon-squeezy) [Line](./line) [LocalTapiola](./localtapiola) [Michelin](./michelin) [Microsoft](./microsoft) [Monday.com](./mondaycom) [MongoDB](./mongodb) [Motorway](./motorway) [Mozilla](./mozilla) [Nordhealth](./nordhealth) [Ontario](./ontario) [Orange](./orange) [Palantir](./palantir) [Pinterest](./pinterest) [Pluralsight](./pluralsight) [Porsche](./porsche) [Razorpay](./razorpay) [Red Hat](./redhat) [Rei](./rei) [Salesforce](./salesforce) [Samsung](./samsung) [Seek](./seek) [Segment](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack)",
-      "metadata": {
-        "startIndex": 2384,
-        "endIndex": 3370,
-        "chunkIndex": 3,
-        "section": "Content",
-        "globalChunkIndex": 3
-      }
-    },
-    {
-      "id": "chunk-4",
-      "text": "](./segment) [ServiceNow](./servicenow) [Shopify](./shopify) [Skoda](./skoda) [Sprout Social](./sproutsocial) [SumUp](./sumup) [Sunrise](./sunrise) [Teamleader](./teamleader) [Thumbtack](./thumbtack) [Twilio](./twilio) [U.S. Web](./uswds) [UAE](./uae) [Uber](./uber) [Vercel](./vercel) [Visa](./visa) [Washington Post](./washingtonpost) [Wikimedia](./wikimedia) [Wise](./wise) [Wonderflow](./wonderflow) [Workday](./workday) [WorkOS](./workos) [Zendesk](./zendesk) [012Biweekly DigestKeep up with the latest in Design Systems](../subscribe) [Subscribe](../subscribe) [Ad](../advertisement) [Design SystemfromNordhealth](./nordhealth#up-pixel) [Source](https://nordhealth.design/) [Repository](https://github.com/nordhealth/react-example-project) [Accessibility](../directories/accessibility) [View source](https://nordhealth.design/accessibility-checklist/) [Color System](../directories/color-system) [View source](https://nordhealth.design/colors/) [Component",
-      "metadata": {
-        "startIndex": 3170,
-        "endIndex": 4132,
-        "chunkIndex": 4,
-        "section": "Content",
-        "globalChunkIndex": 4
-      }
-    },
-    {
-      "id": "chunk-5",
-      "text": "../directories/accessibility) [View source](https://nordhealth.design/accessibility-checklist/) [Color System](../directories/color-system) [View source](https://nordhealth.design/colors/) [Component overview](../directories/component-overview) [View source](https://nordhealth.design/components/) [Repository](../directories/repository) [View source](https://github.com/nordhealth/react-example-project) [Icons](../directories/icons) [View source](https://nordhealth.design/iconography/) [International Design](../directories/international-design) [View source](https://nordhealth.design/localization/) [Layout](../directories/layout) [View source](https://nordhealth.design/grid/) [Theming](../directories/theming) [View source](https://nordhealth.design/themes/#top) [Tokens](../directories/tokens) [View source](https://nordhealth.design/tokens/) [Typography](../directories/typography) [View source](https://nordhealth.design/typography/) [Alert banner](../components/alert-banner) [View",
-      "metadata": {
-        "startIndex": 3932,
-        "endIndex": 4925,
-        "chunkIndex": 5,
-        "section": "Content",
-        "globalChunkIndex": 5
-      }
-    },
-    {
-      "id": "chunk-6",
-      "text": "/tokens) [View source](https://nordhealth.design/tokens/) [Typography](../directories/typography) [View source](https://nordhealth.design/typography/) [Alert banner](../components/alert-banner) [View source](https://nordhealth.design/components/banner/) [App bar](../components/app-bar) [View source](https://nordhealth.design/components/top-bar/) [Avatar](../components/avatar) [View source](https://nordhealth.design/components/avatar/) [Badges](../components/badges) [View source](https://nordhealth.design/components/badge/) [Button](../components/button) [View source](https://nordhealth.design/components/button/) [Button group](../components/button-group) [View source](https://nordhealth.design/components/button-group/) [Cards](../components/cards) [View source](https://nordhealth.design/components/card/) [Checkbox](../components/checkbox) [View source](https://nordhealth.design/components/checkbox/) [Data table](../components/data-table) [View",
-      "metadata": {
-        "startIndex": 4725,
-        "endIndex": 5683,
-        "chunkIndex": 6,
-        "section": "Content",
-        "globalChunkIndex": 6
-      }
-    },
-    {
-      "id": "chunk-7",
-      "text": "[View source](https://nordhealth.design/components/card/) [Checkbox](../components/checkbox) [View source](https://nordhealth.design/components/checkbox/) [Data table](../components/data-table) [View source](https://nordhealth.design/components/table/) [Date picker](../components/date-picker) [View source](https://nordhealth.design/components/date-picker/) [Divider](../components/divider) [View source](https://nordhealth.design/components/divider/) [Drawer](../components/drawer) [View source](https://nordhealth.design/components/drawer/) [Dropdown](../components/dropdown) [View source](https://nordhealth.design/components/dropdown/) [Empty state](../components/empty-state) [View source](https://nordhealth.design/components/empty-state/) [Icon](../directories/icons) [View source](https://nordhealth.design/components/icon/) [Menus](../components/menus) [View source](https://nordhealth.design/components/command-menu/) [Modal](../components/modal) [View",
-      "metadata": {
-        "startIndex": 5483,
-        "endIndex": 6447,
-        "chunkIndex": 7,
-        "section": "Content",
-        "globalChunkIndex": 7
-      }
-    },
-    {
-      "id": "chunk-8",
-      "text": "ries/icons) [View source](https://nordhealth.design/components/icon/) [Menus](../components/menus) [View source](https://nordhealth.design/components/command-menu/) [Modal](../components/modal) [View source](https://nordhealth.design/components/modal/) [Page header](../components/page-header) [View source](https://nordhealth.design/components/header/) [Popover](../components/popover) [View source](https://nordhealth.design/components/popout/) [Progress bar](../components/progress-bar) [View source](https://nordhealth.design/components/progress-bar/) [Progress indicator](../components/progress-indicator) [View source](https://nordhealth.design/components/spinner/) [Radio button](../components/radio-button) [View source](https://nordhealth.design/components/radio/) [Select](../components/select) [View source](https://nordhealth.design/components/select/) [Sidebar](../components/sidebar) [View",
-      "metadata": {
-        "startIndex": 6247,
-        "endIndex": 7151,
-        "chunkIndex": 8,
-        "section": "Content",
-        "globalChunkIndex": 8
-      }
-    },
-    {
-      "id": "chunk-9",
-      "text": "io-button) [View source](https://nordhealth.design/components/radio/) [Select](../components/select) [View source](https://nordhealth.design/components/select/) [Sidebar](../components/sidebar) [View source](https://nordhealth.design/components/navigation/?example=complex&theme=nord-high-contrast#usage) [Slider](../components/slider) [View source](https://nordhealth.design/components/range/) [Snackbar](../components/snackbar) [View source](https://nordhealth.design/components/toast/) [Switch](../components/switch) [View source](https://nordhealth.design/components/toggle/) [Tabs](../components/tabs) [View source](https://nordhealth.design/components/tab/) [Text area](../components/text-area) [View source](https://nordhealth.design/components/textarea/) [Text field](../components/text-field) [View source](https://nordhealth.design/components/input/) [Tooltip](../components/tooltip) [View source](https://nordhealth.design/components/tooltip/) [Design Systems](../design-systems) [Apple",
-      "metadata": {
-        "startIndex": 6951,
-        "endIndex": 7949,
-        "chunkIndex": 9,
-        "section": "Content",
-        "globalChunkIndex": 9
-      }
-    },
-    {
-      "id": "chunk-10",
-      "text": "ld) [View source](https://nordhealth.design/components/input/) [Tooltip](../components/tooltip) [View source](https://nordhealth.design/components/tooltip/) [Design Systems](../design-systems) [Apple HIG](./apple) [Google Material Design](./google) [IBM Design System](./ibm) [Microsoft Fluent 2](./microsoft) [Directories](../directories) [Figma](../directories/figma) [Components](../components) [DesignSystems.surf](../) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 7749,
-        "endIndex": 8749,
-        "chunkIndex": 10,
-        "section": "Content",
-        "globalChunkIndex": 10
       }
     }
   ],

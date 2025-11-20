@@ -1,12 +1,12 @@
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import {
-	loadEntries,
-	searchEntries as searchEntriesLocal,
-	getEntriesByCategory,
-	getAllTags,
-	getEntryById,
-	SAMPLE_ENTRIES
+  loadEntries,
+  searchEntries as searchEntriesLocal,
+  getEntriesByCategory,
+  getAllTags,
+  getEntryById,
+  SAMPLE_ENTRIES
 } from "./lib/content-manager.js";
 import { searchChunksEnhanced as searchChunks } from "./lib/content-manager-enhanced.js";
 import { searchWithSupabase as searchEntries } from "./lib/search-handler.js";
@@ -16,87 +16,62 @@ import { Category, ContentEntry } from "../types/content";
 // OpenAI integration
 import { OpenAI } from "openai";
 
-// Load content from actual JSON files (same approach for local and production)
-console.log('🔄 Loading content from JSON files...');
+// Supabase Vector Search Mode - No file loading needed
+console.log('🚀 MCP Server with Supabase Vector Search');
+console.log('✅ Vector search enabled - using production database');
+console.log('📊 Database: 104 entries + 761 chunks with embeddings');
 
 async function loadActualContent() {
-	try {
-		// Load content dynamically using manifest file
-		const { loadAllContentEntries } = require('./lib/content-loader');
-		const actualEntries = await loadAllContentEntries();
-
-		if (actualEntries.length > 0) {
-			loadEntries(actualEntries);
-
-			console.log(`✅ Loaded ${actualEntries.length} content entries dynamically`);
-			console.log(`📚 Entries: ${actualEntries.map((e: ContentEntry) => e.title).join(', ')}`);
-
-			// Log some chunks to verify content is loaded
-			const totalChunks = actualEntries.reduce((sum: number, entry: ContentEntry) => sum + (entry.chunks?.length || 0), 0);
-			console.log(`📄 Total chunks loaded: ${totalChunks}`);
-
-			// Log tags for verification
-			const { getAllTags } = require('./lib/content-manager');
-			const tags = getAllTags();
-			console.log(`🏷️  Available tags: ${tags.length} total`);
-
-			return true;
-		} else {
-			throw new Error('No content entries loaded from manifest');
-		}
-	} catch (error) {
-		console.error('❌ Failed to load content dynamically:', error);
-		console.error('Error details:', error instanceof Error ? error.message : String(error));
-
-		// Fallback to sample entries
-		console.log('🔄 Loading fallback sample content...');
-		const { SAMPLE_ENTRIES } = require('./lib/content-manager');
-		loadEntries(SAMPLE_ENTRIES);
-		console.warn('⚠️  Using fallback sample content');
-		return false;
-	}
+  // Vector search mode - data is in Supabase
+  // Load sample entries for fallback tools that still need file-based data
+  try {
+    loadEntries(SAMPLE_ENTRIES);
+    console.log('✅ Loaded sample entries for fallback compatibility');
+    return true;
+  } catch (error) {
+    console.error('❌ Failed to load sample entries:', error);
+    return false;
+  }
 }
 
 // Content will be loaded lazily when first tool is called
 let contentLoaded = false;
 
 async function ensureContentLoaded() {
-	if (!contentLoaded) {
-		console.log('🔄 Loading content lazily...');
-		await loadActualContent();
-		contentLoaded = true;
-		console.log('✅ Content loaded successfully');
-	}
+  if (!contentLoaded) {
+    await loadActualContent();
+    contentLoaded = true;
+  }
 }
 
 // Utility function to detect resource limit errors
 function isResourceLimitError(error: any): boolean {
-	const errorMessage = error?.message?.toLowerCase() || '';
-	const errorStack = error?.stack?.toLowerCase() || '';
+  const errorMessage = error?.message?.toLowerCase() || '';
+  const errorStack = error?.stack?.toLowerCase() || '';
 
-	// Common patterns indicating resource limits
-	const resourceLimitPatterns = [
-		'exceeded',
-		'resource limit',
-		'cpu time limit',
-		'memory limit',
-		'execution time',
-		'timeout',
-		'worker exceeded',
-		'script execution time',
-		'memory usage',
-		'out of memory',
-		'maximum execution time'
-	];
+  // Common patterns indicating resource limits
+  const resourceLimitPatterns = [
+    'exceeded',
+    'resource limit',
+    'cpu time limit',
+    'memory limit',
+    'execution time',
+    'timeout',
+    'worker exceeded',
+    'script execution time',
+    'memory usage',
+    'out of memory',
+    'maximum execution time'
+  ];
 
-	return resourceLimitPatterns.some(pattern =>
-		errorMessage.includes(pattern) || errorStack.includes(pattern)
-	);
+  return resourceLimitPatterns.some(pattern =>
+    errorMessage.includes(pattern) || errorStack.includes(pattern)
+  );
 }
 
 // Utility function to create a helpful resource limit error message
 function createResourceLimitErrorMessage(): string {
-	return `🚫 **Cloudflare Worker Resource Limit Exceeded**
+  return `🚫 **Cloudflare Worker Resource Limit Exceeded**
 
 The MCP server has hit Cloudflare Workers resource limits (CPU time, memory, or execution time). This is unusual on the paid plan but can happen with:
 
@@ -157,22 +132,76 @@ RESPONSE STRUCTURE (REQUIRED):
 Always structure your response with these two sections in this exact order:
 
 ## 📚 From the Knowledge Base
-[CRITICAL: This section MUST contain ONLY the results from your MCP tool searches (search_chunks and search_design_knowledge). Include ALL relevant information found from your searches with proper citations and source links. This is where the curated design systems content goes. If searches return results, provide COMPREHENSIVE summaries with their sources. This section should be RICH and DETAILED - more so than general knowledge because it contains specialized, curated content.
+[CRITICAL: This section MUST contain ONLY the results from your MCP tool searches (search_chunks and search_design_knowledge). Include ALL relevant information found from your searches with proper citations and source links. This is where the curated design systems content goes.
 
 ⚠️ NEVER PUT GENERAL AI KNOWLEDGE HERE - ONLY MCP SEARCH RESULTS
-✅ This section should be the PRIMARY source of information, with more detail than General Knowledge]
+
+✅ COMPREHENSIVE RESPONSE REQUIREMENTS:
+• Extract and present EVERY relevant detail from search results
+• Include specific examples, code snippets, and practical guidance when available
+• Explain concepts thoroughly with context and real-world applications
+• **CITE ALL SOURCES INLINE** - This is MANDATORY for every piece of information from search results
+• Aim for 800-2000 words in this section for typical queries
+• This is specialized, curated content - make it COUNT
+• The design systems community expects professional-grade depth
+• Don't summarize - EXPAND on the knowledge base content with full detail
+
+📝 CITATION FORMAT (REQUIRED FOR EVERY SOURCE):
+• Use inline citations in markdown link format: [Source Name](url)
+• Example: "According to [Material Design System](https://material.io), components should..."
+• Example: "As explained in [Laying the Foundations](https://designsystem.digital.gov/), design tokens..."
+• Place citations naturally within sentences, not just at the end of paragraphs
+• EVERY fact, example, or guidance from search results MUST have a citation
+• If you mention a design system or source, link to it IMMEDIATELY
+
+🚨🚨🚨 CRITICAL: URL EXTRACTION FROM SEARCH RESULTS 🚨🚨🚨
+
+Search results contain HTML links in this format:
+<a href="https://real-url.com/page" target="_blank">Source Name</a>
+
+YOU MUST:
+1. **EXTRACT THE REAL URL** from the href attribute in the search result HTML
+2. **USE THAT EXACT URL** in your markdown citation: [Source Name](https://real-url.com/page)
+3. **NEVER INVENT URLs** - If you see a link in search results, extract its href value
+4. **PARSE THE HTML** - Look for <a href="..."> patterns and extract the URL between quotes
+
+🚨 ABSOLUTELY FORBIDDEN:
+• ❌ NEVER use example.com URLs
+• ❌ NEVER use placeholder.com URLs
+• ❌ NEVER make up or guess URLs
+• ❌ NEVER use https://example.com/anything
+
+✅ CORRECT APPROACH:
+Search result shows: <a href="https://carbondesignsystem.com" target="_blank">Carbon Design System</a>
+Your citation: [Carbon Design System](https://carbondesignsystem.com)
+
+✅ IF NO URL IN SEARCH RESULT:
+If search result shows just plain text "Source Name" without a link, cite WITHOUT a link:
+"According to Source Name" (not "According to [Source Name](fake-url)")
+
+THIS IS CRITICAL - FAKE URLs BREAK THE ENTIRE SYSTEM]
 
 ## 🧠 From General Knowledge
-[CRITICAL: This section MUST contain ONLY your built-in training knowledge - NOT MCP search results. Add brief, complementary context that supplements the rich Knowledge Base content above. This section should be SHORTER than Knowledge Base since the MCP has specialized content.
+[CRITICAL: This section MUST contain ONLY your built-in training knowledge - NOT MCP search results. Add complementary context that supplements the rich Knowledge Base content above. This section should provide general industry best practices and contextual information.
 
 ⚠️ NEVER PUT MCP SEARCH RESULTS, CITATIONS, OR SOURCE LINKS HERE - ONLY YOUR TRAINING DATA
-✅ Keep this section concise - the Knowledge Base above has the detailed, authoritative content]
+✅ Target 300-500 words for this section - substantive but still secondary to Knowledge Base
+✅ Focus on general principles, industry context, and complementary insights
+✅ This adds value but doesn't overshadow the specialized Knowledge Base content above]
 
 SEARCH STRATEGY:
-1. ALWAYS search using search_chunks for detailed information
-2. ALSO use search_design_knowledge for broader context
-3. If the first search seems incomplete, try variations of the query
-4. The knowledge base includes extensive glossaries with definitions - check these
+1. 🚨 PRIMARY TOOL: ALWAYS use search_design_knowledge FIRST - this searches the full production database with 104 design systems entries (default limit: 20)
+2. OPTIONAL: Use search_chunks for additional detailed snippets if needed (default limit: 12)
+3. **USE MULTIPLE SEARCH QUERIES** for comprehensive coverage:
+   - Search for the main concept (e.g., "design systems fundamentals")
+   - Search for related terms (e.g., "design system getting started", "design language basics")
+   - Search for specific aspects (e.g., "design tokens", "component library")
+4. **VARY YOUR SEARCH TERMS** - Don't rely on a single search:
+   - If user asks "how to get started", search: "getting started", "introduction", "fundamentals", "basics", "guide"
+   - If results seem narrow, broaden or narrow your search terms
+5. The knowledge base includes extensive glossaries with definitions - check these
+6. **INCREASE LIMITS for broad queries**: Use limit: 20 for search_chunks when topic is general
+7. Search diversity is enabled - you'll get results from multiple sources automatically
 
 SECTION ASSIGNMENT RULES (ABSOLUTELY CRITICAL - NEVER VIOLATE):
 • MCP tool results (search_chunks, search_design_knowledge) → "📚 From the Knowledge Base" section ONLY
@@ -186,403 +215,427 @@ SECTION ASSIGNMENT RULES (ABSOLUTELY CRITICAL - NEVER VIOLATE):
 
 FORMATTING GUIDELINES:
 • Use natural paragraphs for explanations
-• Bullet points are fine for lists of items or features (but don't overuse)
-• For step-by-step instructions, numbered lists work well
-• Cite sources inline naturally: [Source Name](url)
+• **PREFER BULLET LISTS** over numbered lists unless order/sequence truly matters
+• Only use numbered lists (1, 2, 3) for: sequential steps, rankings, or ordered instructions
+• Use bullet lists (•) for: features, benefits, characteristics, examples, or unordered items
+• **AVOID NESTED NUMBERED LISTS** - if nesting is needed, use bullets for nested items
+• **CITE SOURCES INLINE** - MANDATORY: [Source Name](url) format
+• Citations must appear throughout the text, not just at the end
+• Every search result mentioned must have an inline citation with working link
+• Example: "The [Carbon Design System](https://carbondesignsystem.com) recommends..."
+
+LIST FORMATTING RULES:
+✅ CORRECT - Bullet list for features:
+• Design tokens provide consistency
+• Components are reusable
+• Guidelines ensure accessibility
+
+❌ INCORRECT - Don't use numbered list unless order matters:
+1. Design tokens provide consistency
+2. Components are reusable
+3. Guidelines ensure accessibility
 
 IMPORTANT: The knowledge base contains multiple glossaries with extensive definitions of design system terms. Always search thoroughly before claiming information doesn't exist.`;
 
 // Available MCP tools for the AI
 const MCP_TOOLS = [
-	{
-		type: "function" as const,
-		function: {
-			name: "search_design_knowledge",
-			description: "Search the design systems knowledge base for general information",
-			parameters: {
-				type: "object",
-				properties: {
-					query: {
-						type: "string",
-						description: "Search query for design system knowledge"
-					},
-					category: {
-						type: "string",
-						enum: ["components", "tokens", "patterns", "workflows", "guidelines", "general"],
-						description: "Filter by category (optional)"
-					},
-					limit: {
-						type: "number",
-						description: "Maximum number of results (default: 20, paid plan optimized)"
-					}
-				},
-				required: ["query"]
-			}
-		}
-	},
-	{
-		type: "function" as const,
-		function: {
-			name: "search_chunks",
-			description: "Search for specific detailed information in content chunks",
-			parameters: {
-				type: "object",
-				properties: {
-					query: {
-						type: "string",
-						description: "Search query for specific information"
-					},
-					limit: {
-						type: "number",
-						description: "Maximum number of chunks (default: 12, paid plan optimized)"
-					}
-				},
-				required: ["query"]
-			}
-		}
-	},
-	{
-		type: "function" as const,
-		function: {
-			name: "browse_by_category",
-			description: "Browse content by category",
-			parameters: {
-				type: "object",
-				properties: {
-					category: {
-						type: "string",
-						enum: ["components", "tokens", "patterns", "workflows", "guidelines", "general"],
-						description: "Category to browse"
-					}
-				},
-				required: ["category"]
-			}
-		}
-	},
-	{
-		type: "function" as const,
-		function: {
-			name: "get_all_tags",
-			description: "Get all available tags in the knowledge base",
-			parameters: {
-				type: "object" as const,
-				properties: {},
-				required: []
-			}
-		}
-	},
+  {
+    type: "function" as const,
+    function: {
+      name: "search_design_knowledge",
+      description: "Search the design systems knowledge base for general information",
+      parameters: {
+        type: "object",
+        properties: {
+          query: {
+            type: "string",
+            description: "Search query for design system knowledge"
+          },
+          category: {
+            type: "string",
+            enum: ["components", "tokens", "patterns", "workflows", "guidelines", "general"],
+            description: "Filter by category (optional)"
+          },
+          limit: {
+            type: "number",
+            description: "Maximum number of results (default: 20, paid plan optimized)"
+          }
+        },
+        required: ["query"]
+      }
+    }
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "search_chunks",
+      description: "Search for specific detailed information in content chunks",
+      parameters: {
+        type: "object",
+        properties: {
+          query: {
+            type: "string",
+            description: "Search query for specific information"
+          },
+          limit: {
+            type: "number",
+            description: "Maximum number of chunks (default: 12, paid plan optimized)"
+          }
+        },
+        required: ["query"]
+      }
+    }
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "browse_by_category",
+      description: "Browse content by category",
+      parameters: {
+        type: "object",
+        properties: {
+          category: {
+            type: "string",
+            enum: ["components", "tokens", "patterns", "workflows", "guidelines", "general"],
+            description: "Category to browse"
+          }
+        },
+        required: ["category"]
+      }
+    }
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "get_all_tags",
+      description: "Get all available tags in the knowledge base",
+      parameters: {
+        type: "object" as const,
+        properties: {},
+        required: []
+      }
+    }
+  },
 
 ];
 
 // Function to call MCP tools
 async function callMcpTool(toolName: string, args: any, env?: any): Promise<string> {
-	// Ensure content is loaded before any tool call
-	await ensureContentLoaded();
+  // Ensure content is loaded before any tool call
+  await ensureContentLoaded();
 
-	switch (toolName) {
-		case "search_design_knowledge":
-			const searchResults = await searchEntries({
-				query: args.query,
-				category: args.category as Category | undefined,
-				limit: args.limit || 20,
-			}, env);
+  // Log which tool is being called to diagnose search issues
+  console.log(`[Tool Call] ${toolName} with args:`, JSON.stringify(args).substring(0, 100));
 
-			if (searchResults.length === 0) {
-				return "No design system knowledge found matching your search criteria.";
-			}
+  switch (toolName) {
+    case "search_design_knowledge":
+      const searchResults = await searchEntries({
+        query: args.query,
+        category: args.category as Category | undefined,
+        limit: args.limit || 20,
+      }, env);
 
-			const formattedResults = searchResults.map((entry, index) =>
-				`<strong>🔍 ${index + 1}. ${entry.title}</strong>
+      if (searchResults.length === 0) {
+        return "No design system knowledge found matching your search criteria.";
+      }
+
+      const formattedResults = searchResults.map((entry, index) => {
+        const { displayName, url } = formatSourceReference(entry);
+        const sourceLink = url
+          ? `<a href="${url}" target="_blank">${displayName}</a>`
+          : displayName;
+
+        return `<strong>🔍 ${index + 1}. ${entry.title}</strong>
 
 <em>📂 Category:</em> ${entry.metadata.category}
 <em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
 <em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
 <em>⭐ Confidence:</em> ${entry.metadata.confidence}
-<em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
+<em>🔗 Source:</em> ${sourceLink}
 
 ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
-<hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`
-			).join("\n\n");
+<hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`;
+      }).join("\n\n");
 
-			return `FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}:
+      return `FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}:
 
 ${formattedResults}`;
 
-		case "search_chunks":
-			const chunkResults = searchChunks(args.query, args.limit || 12, {
-				enableDiversity: true,
-				maxPerSource: 2,
-				preferUrls: true,
-				logDiversity: false
-			});
+    case "search_chunks":
+      const chunkResults = searchChunks(args.query, args.limit || 12, {
+        enableDiversity: true,
+        maxPerSource: 2,
+        preferUrls: true,
+        logDiversity: false
+      });
 
-			if (chunkResults.length === 0) {
-				return "No specific information found matching your query.";
-			}
+      if (chunkResults.length === 0) {
+        return "No specific information found matching your query.";
+      }
 
-			const formattedChunks = chunkResults.map((result, index) => {
-				const { displayName, url } = formatSourceReference(result.entry);
-				const sourceLink = url
-					? `<a href="${url}" target="_blank">${displayName}</a>`
-					: displayName;
+      const formattedChunks = chunkResults.map((result, index) => {
+        const { displayName, url } = formatSourceReference(result.entry);
+        const sourceLink = url
+          ? `<a href="${url}" target="_blank">${displayName}</a>`
+          : displayName;
 
-				// Clean up the chunk text to avoid nested bullets
-				const cleanText = result.chunk.text
-					.replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
-					.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
-					.trim();
+        // Clean up the chunk text to avoid nested bullets
+        const cleanText = result.chunk.text
+          .replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
+          .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+          .trim();
 
-				return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
+        return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
 <strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
 
 <div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
 </div>`;
-			}).join("\n");
+      }).join("\n");
 
-			return `FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}:
+      return `FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}:
 
 ${formattedChunks}`;
 
-		case "browse_by_category":
-			const categoryEntries = getEntriesByCategory(args.category as Category);
+    case "browse_by_category":
+      const categoryEntries = getEntriesByCategory(args.category as Category);
 
-			if (categoryEntries.length === 0) {
-				return `No entries found in category: ${args.category}`;
-			}
+      if (categoryEntries.length === 0) {
+        return `No entries found in category: ${args.category}`;
+      }
 
-			const formattedEntries = categoryEntries.map(entry =>
-				`**${entry.title}**
+      const formattedEntries = categoryEntries.map(entry =>
+        `**${entry.title}**
 Tags: ${entry.metadata.tags.join(", ")}
 System: ${entry.metadata.system || "N/A"}`
-			).join("\n\n");
+      ).join("\n\n");
 
-			return `${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}":
+      return `${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}":
 
 ${formattedEntries}`;
 
-		case "get_all_tags":
-			const tags = getAllTags();
-			return `AVAILABLE TAGS (${tags.length}): ${tags.join(", ")}`;
+    case "get_all_tags":
+      const tags = getAllTags();
+      return `AVAILABLE TAGS (${tags.length}): ${tags.join(", ")}`;
 
 
 
-		default:
-			throw new Error(`Unknown tool: ${toolName}`);
-	}
+    default:
+      throw new Error(`Unknown tool: ${toolName}`);
+  }
 }
 
 // AI Chat Handler
 async function handleAiChat(request: Request, env: any): Promise<Response> {
-	try {
-		const corsHeaders = {
-			"Access-Control-Allow-Origin": "*",
-			"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-			"Access-Control-Allow-Headers": "Content-Type",
-		};
+  try {
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    };
 
-		if (request.method === "OPTIONS") {
-			return new Response(null, { headers: corsHeaders });
-		}
+    if (request.method === "OPTIONS") {
+      return new Response(null, { headers: corsHeaders });
+    }
 
-		if (request.method !== "POST") {
-			return new Response("Method not allowed", { status: 405 });
-		}
+    if (request.method !== "POST") {
+      return new Response("Method not allowed", { status: 405 });
+    }
 
-		const { message } = await request.json() as any;
+    const { message } = await request.json() as any;
 
-		// Get OpenAI config from environment variables
-		const apiKey = env?.OPENAI_API_KEY;
-		let model = env?.OPENAI_MODEL || "gpt-4o";
-		
-		// Validate model name (include GPT-5 models)
-		const validModels = ['gpt-5-nano', 'gpt-5', 'gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-4', 'gpt-3.5-turbo'];
-		// Only warn if model doesn't match any known pattern
-		if (!validModels.some(m => model.includes(m)) && !model.includes('gpt')) {
-			console.warn(`[AI Chat] Unknown model "${model}" specified, proceeding anyway`);
-		}
-		
-		// Log the model being used (only in development)
-		if (env?.LOG_SEARCH_PERFORMANCE === 'true') {
-			console.log(`[AI Chat] Using OpenAI model: ${model}`);
-		}
+    // Get OpenAI config from environment variables
+    const apiKey = env?.OPENAI_API_KEY;
+    let model = env?.OPENAI_MODEL || "gpt-4o";
 
-		if (!apiKey) {
-			return new Response(JSON.stringify({
-				error: "OpenAI API key not configured. Please set OPENAI_API_KEY environment variable."
-			}), {
-				status: 400,
-				headers: { ...corsHeaders, "Content-Type": "application/json" }
-			});
-		}
+    // Validate model name (include GPT-5 models)
+    const validModels = ['gpt-5-nano', 'gpt-5', 'gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-4', 'gpt-3.5-turbo'];
+    // Only warn if model doesn't match any known pattern
+    if (!validModels.some(m => model.includes(m)) && !model.includes('gpt')) {
+      console.warn(`[AI Chat] Unknown model "${model}" specified, proceeding anyway`);
+    }
 
-		// Initialize OpenAI
-		const openai = new OpenAI({
-			apiKey: apiKey,
-		});
+    // Log the model being used (only in development)
+    if (env?.LOG_SEARCH_PERFORMANCE === 'true') {
+      console.log(`[AI Chat] Using OpenAI model: ${model}`);
+    }
 
-		// Create the chat completion with tool calling
-		const completion = await openai.chat.completions.create({
-			model: model,
-			messages: [
-				{
-					role: "system",
-					content: AI_SYSTEM_PROMPT
-				},
-				{
-					role: "user",
-					content: message
-				}
-			],
-			tools: MCP_TOOLS,
-			tool_choice: "auto",
-			max_tokens: 4000,  // Ensure we get full responses
-		});
+    if (!apiKey) {
+      return new Response(JSON.stringify({
+        error: "OpenAI API key not configured. Please set OPENAI_API_KEY environment variable."
+      }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
 
-		let response = completion.choices[0].message;
+    // Initialize OpenAI
+    const openai = new OpenAI({
+      apiKey: apiKey,
+    });
 
-		// Handle tool calls
-		if (response.tool_calls && response.tool_calls.length > 0) {
-			const messages: any[] = [
-				{
-					role: "system",
-					content: AI_SYSTEM_PROMPT
-				},
-				{
-					role: "user",
-					content: message
-				},
-				response
-			];
+    // Create the chat completion with tool calling
+    const completion = await openai.chat.completions.create({
+      model: model,
+      messages: [
+        {
+          role: "system",
+          content: AI_SYSTEM_PROMPT
+        },
+        {
+          role: "user",
+          content: message
+        }
+      ],
+      tools: MCP_TOOLS,
+      tool_choice: "auto",
+      max_completion_tokens: 16000,  // Increased for comprehensive, detailed responses (gpt-4o supports up to 16384)
+    });
 
-			// Execute each tool call
-			for (const toolCall of response.tool_calls) {
-				try {
-					const toolResult = await callMcpTool(
-						toolCall.function.name,
-						JSON.parse(toolCall.function.arguments),
-						env
-					);
+    let response = completion.choices[0].message;
 
-					messages.push({
-						role: "tool",
-						tool_call_id: toolCall.id,
-						content: toolResult // Now it's a string, not JSON
-					});
-				} catch (error: any) {
-					messages.push({
-						role: "tool",
-						tool_call_id: toolCall.id,
-						content: `Error: ${error.message}`
-					});
-				}
-			}
+    // Handle tool calls
+    if (response.tool_calls && response.tool_calls.length > 0) {
+      const messages: any[] = [
+        {
+          role: "system",
+          content: AI_SYSTEM_PROMPT
+        },
+        {
+          role: "user",
+          content: message
+        },
+        response
+      ];
 
-			// Get final response with tool results
-			const finalCompletion = await openai.chat.completions.create({
-				model: model,
-				messages: messages,
-				max_tokens: 4000,  // Ensure we get full responses
-			});
+      // Execute each tool call
+      for (const toolCall of response.tool_calls) {
+        try {
+          const toolResult = await callMcpTool(
+            toolCall.function.name,
+            JSON.parse(toolCall.function.arguments),
+            env
+          );
 
-			response = finalCompletion.choices[0].message;
-		}
-		
-		// Validate response for section violations
-		const responseText = response.content || '';
-		const knowledgeBaseMatch = responseText.match(/## 📚 From the Knowledge Base[\s\S]*?(?=## 🧠|$)/);
-		const generalKnowledgeMatch = responseText.match(/## 🧠 From General Knowledge[\s\S]*$/);
-		
-		// Check for violations
-		let validationWarning = '';
-		if (generalKnowledgeMatch && generalKnowledgeMatch[0]) {
-			// Check if General Knowledge section contains citations (violation)
-			const citationPattern = /\[([^\]]+)\]/g;
-			const citations = generalKnowledgeMatch[0].match(citationPattern);
-			if (citations && citations.length > 0) {
-				validationWarning = '\n\n⚠️ WARNING: Section violation detected - citations found in General Knowledge section. The AI model may not be following instructions correctly.';
-				console.error('[Validation] VIOLATION: Citations in General Knowledge section:', citations);
-			}
-		}
-		
-		if (knowledgeBaseMatch && knowledgeBaseMatch[0]) {
-			// Check if Knowledge Base section is suspiciously empty or generic
-			const kbContent = knowledgeBaseMatch[0].replace(/## 📚 From the Knowledge Base/, '').trim();
-			if (kbContent.length < 100 && !kbContent.includes('no content found')) {
-				validationWarning += '\n\n⚠️ WARNING: Knowledge Base section appears incomplete. MCP search results may not be properly included.';
-				console.error('[Validation] WARNING: Knowledge Base section too short');
-			}
-		}
+          messages.push({
+            role: "tool",
+            tool_call_id: toolCall.id,
+            content: toolResult // Now it's a string, not JSON
+          });
+        } catch (error: any) {
+          messages.push({
+            role: "tool",
+            tool_call_id: toolCall.id,
+            content: `Error: ${error.message}`
+          });
+        }
+      }
 
-		return new Response(JSON.stringify({
-			response: response.content + validationWarning
-		}), {
-			headers: { ...corsHeaders, "Content-Type": "application/json" }
-		});
+      // Get final response with tool results
+      const finalCompletion = await openai.chat.completions.create({
+        model: model,
+        messages: messages,
+        max_completion_tokens: 16000,  // Increased for comprehensive, detailed responses (gpt-4o supports up to 16384)
+      });
 
-	} catch (error: any) {
-		console.error("AI Chat Error:", error);
+      response = finalCompletion.choices[0].message;
+    }
 
-		const corsHeaders = {
-			"Access-Control-Allow-Origin": "*",
-			"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-			"Access-Control-Allow-Headers": "Content-Type",
-		};
+    // Validate response for section violations
+    const responseText = response.content || '';
+    const knowledgeBaseMatch = responseText.match(/## 📚 From the Knowledge Base[\s\S]*?(?=## 🧠|$)/);
+    const generalKnowledgeMatch = responseText.match(/## 🧠 From General Knowledge[\s\S]*$/);
 
-		if (isResourceLimitError(error)) {
-			return new Response(JSON.stringify({
-				error: createResourceLimitErrorMessage()
-			}), {
-				status: 503,
-				headers: { ...corsHeaders, "Content-Type": "application/json" }
-			});
-		}
+    // Check for violations
+    let validationWarning = '';
+    if (generalKnowledgeMatch && generalKnowledgeMatch[0]) {
+      // Check if General Knowledge section contains citations (violation)
+      const citationPattern = /\[([^\]]+)\]/g;
+      const citations = generalKnowledgeMatch[0].match(citationPattern);
+      if (citations && citations.length > 0) {
+        validationWarning = '\n\n⚠️ WARNING: Section violation detected - citations found in General Knowledge section. The AI model may not be following instructions correctly.';
+        console.error('[Validation] VIOLATION: Citations in General Knowledge section:', citations);
+      }
+    }
 
-		return new Response(JSON.stringify({
-			error: error.message || "An error occurred while processing your request"
-		}), {
-			status: 500,
-			headers: { ...corsHeaders, "Content-Type": "application/json" }
-		});
-	}
+    if (knowledgeBaseMatch && knowledgeBaseMatch[0]) {
+      // Check if Knowledge Base section is suspiciously empty or generic
+      const kbContent = knowledgeBaseMatch[0].replace(/## 📚 From the Knowledge Base/, '').trim();
+      if (kbContent.length < 100 && !kbContent.includes('no content found')) {
+        validationWarning += '\n\n⚠️ WARNING: Knowledge Base section appears incomplete. MCP search results may not be properly included.';
+        console.error('[Validation] WARNING: Knowledge Base section too short');
+      }
+    }
+
+    return new Response(JSON.stringify({
+      response: response.content + validationWarning
+    }), {
+      headers: { ...corsHeaders, "Content-Type": "application/json" }
+    });
+
+  } catch (error: any) {
+    console.error("AI Chat Error:", error);
+
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    };
+
+    if (isResourceLimitError(error)) {
+      return new Response(JSON.stringify({
+        error: createResourceLimitErrorMessage()
+      }), {
+        status: 503,
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
+
+    return new Response(JSON.stringify({
+      error: error.message || "An error occurred while processing your request"
+    }), {
+      status: 500,
+      headers: { ...corsHeaders, "Content-Type": "application/json" }
+    });
+  }
 }
 
 // Create MCP server instance
 const server = new McpServer({
-	name: "Design Systems Knowledge Base",
-	version: "1.0.0",
+  name: "Design Systems Knowledge Base",
+  version: "1.0.0",
 });
 
 // Initialize MCP tools
 server.tool(
-	"search_design_knowledge",
-	{
-		query: z.string().describe("Search query for design system knowledge"),
-		category: z.enum(["components", "tokens", "patterns", "workflows", "guidelines", "general"])
-			.optional()
-			.describe("Filter by category"),
-		tags: z.array(z.string()).optional().describe("Filter by tags"),
-		limit: z.number().min(1).max(50).default(15).describe("Maximum number of results"),
-	},
-	async ({ query, category, tags, limit }) => {
-		const results = await searchEntries({
-			query,
-			category: category as Category | undefined,
-			tags,
-			limit,
-		});
+  "search_design_knowledge",
+  {
+    query: z.string().describe("Search query for design system knowledge"),
+    category: z.enum(["components", "tokens", "patterns", "workflows", "guidelines", "general"])
+      .optional()
+      .describe("Filter by category"),
+    tags: z.array(z.string()).optional().describe("Filter by tags"),
+    limit: z.number().min(1).max(50).default(15).describe("Maximum number of results"),
+  },
+  async ({ query, category, tags, limit }) => {
+    const results = await searchEntries({
+      query,
+      category: category as Category | undefined,
+      tags,
+      limit,
+    });
 
-		if (results.length === 0) {
-			return {
-				content: [{
-					type: "text",
-					text: "No design system knowledge found matching your search criteria."
-				}],
-			};
-		}
+    if (results.length === 0) {
+      return {
+        content: [{
+          type: "text",
+          text: "No design system knowledge found matching your search criteria."
+        }],
+      };
+    }
 
-		const formattedResults = results.map((entry, index) =>
-			`<strong>🔍 ${index + 1}. ${entry.title}</strong>
+    const formattedResults = results.map((entry, index) =>
+      `<strong>🔍 ${index + 1}. ${entry.title}</strong>
 
 <em>📂 Category:</em> ${entry.metadata.category}
 <em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
@@ -593,303 +646,303 @@ server.tool(
 ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
 <hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`
-		).join("\n\n");
+    ).join("\n\n");
 
-		return {
-			content: [{
-				type: "text",
-				text: `<strong>🔍 FOUND ${results.length} RESULT${results.length === 1 ? "" : "S"}</strong>
+    return {
+      content: [{
+        type: "text",
+        text: `<strong>🔍 FOUND ${results.length} RESULT${results.length === 1 ? "" : "S"}</strong>
 
 ${formattedResults}`
-			}],
-		};
-	}
+      }],
+    };
+  }
 );
 
 // Tool: Search chunks for specific information
 server.tool(
-	"search_chunks",
-	{
-		query: z.string().describe("Search query for specific information"),
-		limit: z.number().min(1).max(20).default(8).describe("Maximum number of chunks"),
-	},
-	async ({ query, limit }) => {
-		const results = await searchChunks(query, limit, {
-			enableDiversity: true,
-			maxPerSource: 2,
-			preferUrls: true,
-			logDiversity: false
-		});
+  "search_chunks",
+  {
+    query: z.string().describe("Search query for specific information"),
+    limit: z.number().min(1).max(20).default(8).describe("Maximum number of chunks"),
+  },
+  async ({ query, limit }) => {
+    const results = await searchChunks(query, limit, {
+      enableDiversity: true,
+      maxPerSource: 2,
+      preferUrls: true,
+      logDiversity: false
+    });
 
-		if (results.length === 0) {
-			return {
-				content: [{
-					type: "text",
-					text: "No specific information found matching your query."
-				}],
-			};
-		}
+    if (results.length === 0) {
+      return {
+        content: [{
+          type: "text",
+          text: "No specific information found matching your query."
+        }],
+      };
+    }
 
-		const formattedChunks = results.map((result, index) => {
-			const { displayName, url } = formatSourceReference(result.entry);
-			const sourceLink = url
-				? `<a href="${url}" target="_blank">${displayName}</a>`
-				: displayName;
+    const formattedChunks = results.map((result, index) => {
+      const { displayName, url } = formatSourceReference(result.entry);
+      const sourceLink = url
+        ? `<a href="${url}" target="_blank">${displayName}</a>`
+        : displayName;
 
-			// Clean up the chunk text to avoid nested bullets
-			const cleanText = result.chunk.text
-				.replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
-				.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
-				.replace(/^\s+|\s+$/gm, '') // Trim each line
-				.trim();
+      // Clean up the chunk text to avoid nested bullets
+      const cleanText = result.chunk.text
+        .replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
+        .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+        .replace(/^\s+|\s+$/gm, '') // Trim each line
+        .trim();
 
-			return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
+      return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
 <strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
 
 <div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
 </div>`;
-		}).join("\n");
+    }).join("\n");
 
-		return {
-			content: [{
-				type: "text",
-				text: `<strong>🎯 FOUND ${results.length} RELEVANT CHUNK${results.length === 1 ? "" : "S"}</strong>
+    return {
+      content: [{
+        type: "text",
+        text: `<strong>🎯 FOUND ${results.length} RELEVANT CHUNK${results.length === 1 ? "" : "S"}</strong>
 
 ${formattedChunks}`
-			}],
-		};
-	}
+      }],
+    };
+  }
 );
 
 // Tool: Browse by category
 server.tool(
-	"browse_by_category",
-	{
-		category: z.enum(["components", "tokens", "patterns", "workflows", "guidelines", "general"])
-			.describe("Category to browse"),
-	},
-	async ({ category }) => {
-		const entries = getEntriesByCategory(category as Category);
+  "browse_by_category",
+  {
+    category: z.enum(["components", "tokens", "patterns", "workflows", "guidelines", "general"])
+      .describe("Category to browse"),
+  },
+  async ({ category }) => {
+    const entries = getEntriesByCategory(category as Category);
 
-		if (entries.length === 0) {
-			return {
-				content: [{
-					type: "text",
-					text: `No entries found in category: ${category}`
-				}],
-			};
-		}
+    if (entries.length === 0) {
+      return {
+        content: [{
+          type: "text",
+          text: `No entries found in category: ${category}`
+        }],
+      };
+    }
 
-		const formattedEntries = entries.map(entry =>
-			`**${entry.title}**
+    const formattedEntries = entries.map(entry =>
+      `**${entry.title}**
 Tags: ${entry.metadata.tags.join(", ")}
 System: ${entry.metadata.system || "N/A"}`
-		).join("\n\n");
+    ).join("\n\n");
 
-		return {
-			content: [{
-				type: "text",
-				text: `<strong>📁 ${entries.length} ENTR${entries.length === 1 ? "Y" : "IES"} IN "${category.toUpperCase()}"</strong>
+    return {
+      content: [{
+        type: "text",
+        text: `<strong>📁 ${entries.length} ENTR${entries.length === 1 ? "Y" : "IES"} IN "${category.toUpperCase()}"</strong>
 
 ${formattedEntries}`
-			}],
-		};
-	}
+      }],
+    };
+  }
 );
 
 // Tool: Get all tags
 server.tool(
-	"get_all_tags",
-	{},
-	async () => {
-		const tags = getAllTags();
+  "get_all_tags",
+  {},
+  async () => {
+    const tags = getAllTags();
 
-		return {
-			content: [{
-				type: "text",
-				text: `<strong>🏷️ AVAILABLE TAGS (${tags.length})</strong>
+    return {
+      content: [{
+        type: "text",
+        text: `<strong>🏷️ AVAILABLE TAGS (${tags.length})</strong>
 
 ${tags.map(tag => `<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; margin: 2px;">🔖 ${tag}</span>`).join(" ")}`
-			}],
-		};
-	}
+      }],
+    };
+  }
 );
 
 // Simple request handler
 async function handleMcpRequest(request: Request, env?: Env): Promise<Response> {
-	try {
-		// Add CORS headers
-		const corsHeaders = {
-			"Access-Control-Allow-Origin": "*",
-			"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-			"Access-Control-Allow-Headers": "Content-Type",
-		};
+  try {
+    // Add CORS headers
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    };
 
-		// Handle OPTIONS request
-		if (request.method === "OPTIONS") {
-			return new Response(null, { headers: corsHeaders });
-		}
+    // Handle OPTIONS request
+    if (request.method === "OPTIONS") {
+      return new Response(null, { headers: corsHeaders });
+    }
 
-		// Only handle POST requests for MCP
-		if (request.method !== "POST") {
-			return new Response("Method not allowed", { status: 405 });
-		}
+    // Only handle POST requests for MCP
+    if (request.method !== "POST") {
+      return new Response("Method not allowed", { status: 405 });
+    }
 
-				const body = await request.json() as any;
+    const body = await request.json() as any;
 
-		// Handle MCP JSON-RPC request
-		if (body.method === "initialize") {
-			// Handle MCP initialization
-			return new Response(JSON.stringify({
-				jsonrpc: "2.0",
-				id: body.id,
-				result: {
-					protocolVersion: "2024-11-05",
-					capabilities: {
-						tools: {},
-						resources: {},
-						prompts: {}
-					},
-					serverInfo: {
-						name: "Design Systems Knowledge Base",
-						version: "1.0.0"
-					}
-				}
-			}), {
-				headers: { ...corsHeaders, "Content-Type": "application/json" }
-			});
-		}
+    // Handle MCP JSON-RPC request
+    if (body.method === "initialize") {
+      // Handle MCP initialization
+      return new Response(JSON.stringify({
+        jsonrpc: "2.0",
+        id: body.id,
+        result: {
+          protocolVersion: "2024-11-05",
+          capabilities: {
+            tools: {},
+            resources: {},
+            prompts: {}
+          },
+          serverInfo: {
+            name: "Design Systems Knowledge Base",
+            version: "1.0.0"
+          }
+        }
+      }), {
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
 
-		if (body.method === "notifications/initialized") {
-			// Handle MCP initialized notification (doesn't need a response)
-			return new Response(null, { status: 204, headers: corsHeaders });
-		}
+    if (body.method === "notifications/initialized") {
+      // Handle MCP initialized notification (doesn't need a response)
+      return new Response(null, { status: 204, headers: corsHeaders });
+    }
 
-		if (body.method === "ping") {
-			// Handle ping requests
-			return new Response(JSON.stringify({
-				jsonrpc: "2.0",
-				id: body.id,
-				result: {}
-			}), {
-				headers: { ...corsHeaders, "Content-Type": "application/json" }
-			});
-		}
+    if (body.method === "ping") {
+      // Handle ping requests
+      return new Response(JSON.stringify({
+        jsonrpc: "2.0",
+        id: body.id,
+        result: {}
+      }), {
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
 
-		if (body.method === "tools/list") {
-			// Return list of available tools
-			const tools = [
-				{
-					name: "search_design_knowledge",
-					description: "Search through design system knowledge base entries by query, category, or tags",
-					inputSchema: {
-						type: "object",
-						properties: {
-							query: {
-								type: "string",
-								description: "Search query for finding relevant design system knowledge"
-							},
-							category: {
-								type: "string",
-								description: "Filter by category (e.g., 'figma', 'tokens', 'components')",
-								enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
-							},
-							tags: {
-								type: "array",
-								items: { type: "string" },
-								description: "Filter by specific tags"
-							},
-							limit: {
-								type: "number",
-								description: "Maximum number of results to return (default: 15)",
-								default: 15
-							}
-						},
-						required: ["query"]
-					}
-				},
-				{
-					name: "search_chunks",
-					description: "Search through specific content chunks for detailed information",
-					inputSchema: {
-						type: "object",
-						properties: {
-							query: {
-								type: "string",
-								description: "Search query for finding specific content chunks"
-							},
-							limit: {
-								type: "number",
-								description: "Maximum number of chunks to return (default: 8)",
-								default: 8
-							}
-						},
-						required: ["query"]
-					}
-				},
-				{
-					name: "browse_by_category",
-					description: "Browse all entries in a specific category",
-					inputSchema: {
-						type: "object",
-						properties: {
-							category: {
-								type: "string",
-								description: "Category to browse",
-								enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
-							}
-						},
-						required: ["category"]
-					}
-				},
-				{
-					name: "get_all_tags",
-					description: "Get a list of all available tags in the knowledge base",
-					inputSchema: {
-						type: "object",
-						properties: {},
-						additionalProperties: false
-					}
-				}
-			];
+    if (body.method === "tools/list") {
+      // Return list of available tools
+      const tools = [
+        {
+          name: "search_design_knowledge",
+          description: "Search through design system knowledge base entries by query, category, or tags",
+          inputSchema: {
+            type: "object",
+            properties: {
+              query: {
+                type: "string",
+                description: "Search query for finding relevant design system knowledge"
+              },
+              category: {
+                type: "string",
+                description: "Filter by category (e.g., 'figma', 'tokens', 'components')",
+                enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
+              },
+              tags: {
+                type: "array",
+                items: { type: "string" },
+                description: "Filter by specific tags"
+              },
+              limit: {
+                type: "number",
+                description: "Maximum number of results to return (default: 15)",
+                default: 15
+              }
+            },
+            required: ["query"]
+          }
+        },
+        {
+          name: "search_chunks",
+          description: "Search through specific content chunks for detailed information",
+          inputSchema: {
+            type: "object",
+            properties: {
+              query: {
+                type: "string",
+                description: "Search query for finding specific content chunks"
+              },
+              limit: {
+                type: "number",
+                description: "Maximum number of chunks to return (default: 8)",
+                default: 8
+              }
+            },
+            required: ["query"]
+          }
+        },
+        {
+          name: "browse_by_category",
+          description: "Browse all entries in a specific category",
+          inputSchema: {
+            type: "object",
+            properties: {
+              category: {
+                type: "string",
+                description: "Category to browse",
+                enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
+              }
+            },
+            required: ["category"]
+          }
+        },
+        {
+          name: "get_all_tags",
+          description: "Get a list of all available tags in the knowledge base",
+          inputSchema: {
+            type: "object",
+            properties: {},
+            additionalProperties: false
+          }
+        }
+      ];
 
-			return new Response(JSON.stringify({
-				jsonrpc: "2.0",
-				id: body.id,
-				result: { tools }
-			}), {
-				headers: { ...corsHeaders, "Content-Type": "application/json" }
-			});
-		}
+      return new Response(JSON.stringify({
+        jsonrpc: "2.0",
+        id: body.id,
+        result: { tools }
+      }), {
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
 
-		if (body.method === "tools/call") {
-			// Ensure content is loaded before any tool call
-			await ensureContentLoaded();
+    if (body.method === "tools/call") {
+      // Ensure content is loaded before any tool call
+      await ensureContentLoaded();
 
-			const toolName = body.params?.name;
-			const args = body.params?.arguments || {};
+      const toolName = body.params?.name;
+      const args = body.params?.arguments || {};
 
-			let result;
+      let result;
 
-			switch (toolName) {
-				case "search_design_knowledge":
-					const searchResults = await searchEntries({
-						query: args.query,
-						category: args.category,
-						tags: args.tags,
-						limit: args.limit || 15,
-					}, env);
+      switch (toolName) {
+        case "search_design_knowledge":
+          const searchResults = await searchEntries({
+            query: args.query,
+            category: args.category,
+            tags: args.tags,
+            limit: args.limit || 15,
+          }, env);
 
-					if (searchResults.length === 0) {
-						result = {
-							content: [{
-								type: "text",
-								text: "No design system knowledge found matching your search criteria."
-							}],
-						};
-					} else {
-						const formattedResults = searchResults.map((entry, index) =>
-							`<strong>🔍 ${index + 1}. ${entry.title}</strong>
+          if (searchResults.length === 0) {
+            result = {
+              content: [{
+                type: "text",
+                text: "No design system knowledge found matching your search criteria."
+              }],
+            };
+          } else {
+            const formattedResults = searchResults.map((entry, index) =>
+              `<strong>🔍 ${index + 1}. ${entry.title}</strong>
 
 <em>📂 Category:</em> ${entry.metadata.category}
 <em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
@@ -900,194 +953,194 @@ async function handleMcpRequest(request: Request, env?: Env): Promise<Response> 
 ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
 <hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`
-						).join("\n\n");
+            ).join("\n\n");
 
-						result = {
-							content: [{
-								type: "text",
-								text: `<strong>🔍 FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}</strong>
+            result = {
+              content: [{
+                type: "text",
+                text: `<strong>🔍 FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}</strong>
 
 ${formattedResults}`
-							}],
-						};
-					}
-					break;
+              }],
+            };
+          }
+          break;
 
-				case "search_chunks":
-					const chunkResults = searchChunks(args.query, args.limit || 8, {
-						enableDiversity: true,
-						maxPerSource: 2,
-						preferUrls: true,
-						logDiversity: false
-					});
+        case "search_chunks":
+          const chunkResults = searchChunks(args.query, args.limit || 8, {
+            enableDiversity: true,
+            maxPerSource: 2,
+            preferUrls: true,
+            logDiversity: false
+          });
 
-					if (chunkResults.length === 0) {
-						result = {
-							content: [{
-								type: "text",
-								text: "No specific information found matching your query."
-							}],
-						};
-					} else {
-						const formattedChunks = chunkResults.map((result, index) => {
-							const { displayName, url } = formatSourceReference(result.entry);
-							const sourceLink = url
-								? `<a href="${url}" target="_blank">${displayName}</a>`
-								: displayName;
+          if (chunkResults.length === 0) {
+            result = {
+              content: [{
+                type: "text",
+                text: "No specific information found matching your query."
+              }],
+            };
+          } else {
+            const formattedChunks = chunkResults.map((result, index) => {
+              const { displayName, url } = formatSourceReference(result.entry);
+              const sourceLink = url
+                ? `<a href="${url}" target="_blank">${displayName}</a>`
+                : displayName;
 
-							// Clean up the chunk text to avoid nested bullets
-							const cleanText = result.chunk.text
-								.replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
-								.replace(/\n{3,}/g, '\n\n') // Normalize line breaks
-								.trim();
+              // Clean up the chunk text to avoid nested bullets
+              const cleanText = result.chunk.text
+                .replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
+                .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
+                .trim();
 
-							return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
+              return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
 <strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
 
 <div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
 </div>`;
-						}).join("\n");
+            }).join("\n");
 
-						result = {
-							content: [{
-								type: "text",
-								text: `<strong>🎯 FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}</strong>
+            result = {
+              content: [{
+                type: "text",
+                text: `<strong>🎯 FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}</strong>
 
 ${formattedChunks}`
-							}],
-						};
-					}
-					break;
+              }],
+            };
+          }
+          break;
 
-				case "browse_by_category":
-					const categoryEntries = getEntriesByCategory(args.category as Category);
+        case "browse_by_category":
+          const categoryEntries = getEntriesByCategory(args.category as Category);
 
-					if (categoryEntries.length === 0) {
-						result = {
-							content: [{
-								type: "text",
-								text: `No entries found in category: ${args.category}`
-							}],
-						};
-					} else {
-						const formattedEntries = categoryEntries.map((entry, index) =>
-							`<strong>📋 ${index + 1}. ${entry.title}</strong>
+          if (categoryEntries.length === 0) {
+            result = {
+              content: [{
+                type: "text",
+                text: `No entries found in category: ${args.category}`
+              }],
+            };
+          } else {
+            const formattedEntries = categoryEntries.map((entry, index) =>
+              `<strong>📋 ${index + 1}. ${entry.title}</strong>
 <em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
 <em>🏷️ System:</em> ${entry.metadata.system || "N/A"}`
-						).join("\n\n");
+            ).join("\n\n");
 
-						result = {
-							content: [{
-								type: "text",
-								text: `<strong>📁 ${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}"</strong>
+            result = {
+              content: [{
+                type: "text",
+                text: `<strong>📁 ${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}"</strong>
 
 ${formattedEntries}`
-							}],
-						};
-					}
-					break;
+              }],
+            };
+          }
+          break;
 
-				case "get_all_tags":
-					const tags = getAllTags();
-					const tagList = tags.map(tag => `<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; margin: 2px;">🔖 ${tag}</span>`).join(" ");
-					result = {
-						content: [{
-							type: "text",
-							text: `<strong>🏷️ AVAILABLE TAGS (${tags.length})</strong>
+        case "get_all_tags":
+          const tags = getAllTags();
+          const tagList = tags.map(tag => `<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; margin: 2px;">🔖 ${tag}</span>`).join(" ");
+          result = {
+            content: [{
+              type: "text",
+              text: `<strong>🏷️ AVAILABLE TAGS (${tags.length})</strong>
 
 ${tagList}`
-						}],
-					};
-					break;
+            }],
+          };
+          break;
 
-				default:
-					return new Response(JSON.stringify({
-						jsonrpc: "2.0",
-						id: body.id,
-						error: {
-							code: -32601,
-							message: `Method not found: ${toolName}`
-						}
-					}), {
-						status: 400,
-						headers: { ...corsHeaders, "Content-Type": "application/json" }
-					});
-			}
+        default:
+          return new Response(JSON.stringify({
+            jsonrpc: "2.0",
+            id: body.id,
+            error: {
+              code: -32601,
+              message: `Method not found: ${toolName}`
+            }
+          }), {
+            status: 400,
+            headers: { ...corsHeaders, "Content-Type": "application/json" }
+          });
+      }
 
-			return new Response(JSON.stringify({
-				jsonrpc: "2.0",
-				id: body.id,
-				result
-			}), {
-				headers: { ...corsHeaders, "Content-Type": "application/json" }
-			});
-		}
+      return new Response(JSON.stringify({
+        jsonrpc: "2.0",
+        id: body.id,
+        result
+      }), {
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
 
-		return new Response(JSON.stringify({
-			jsonrpc: "2.0",
-			id: body.id,
-			error: {
-				code: -32600,
-				message: "Invalid Request"
-			}
-		}), {
-			status: 400,
-			headers: { ...corsHeaders, "Content-Type": "application/json" }
-		});
+    return new Response(JSON.stringify({
+      jsonrpc: "2.0",
+      id: body.id,
+      error: {
+        code: -32600,
+        message: "Invalid Request"
+      }
+    }), {
+      status: 400,
+      headers: { ...corsHeaders, "Content-Type": "application/json" }
+    });
 
-	} catch (error: any) {
-		console.error("MCP Request Error:", error);
+  } catch (error: any) {
+    console.error("MCP Request Error:", error);
 
-		const corsHeaders = {
-			"Access-Control-Allow-Origin": "*",
-			"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-			"Access-Control-Allow-Headers": "Content-Type",
-		};
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    };
 
-		// Check if this is a resource limit error
-		if (isResourceLimitError(error)) {
-			return new Response(JSON.stringify({
-				jsonrpc: "2.0",
-				id: null,
-				error: {
-					code: -32603,
-					message: "Resource limit exceeded: " + createResourceLimitErrorMessage()
-				}
-			}), {
-				status: 503,
-				headers: { ...corsHeaders, "Content-Type": "application/json" }
-			});
-		}
+    // Check if this is a resource limit error
+    if (isResourceLimitError(error)) {
+      return new Response(JSON.stringify({
+        jsonrpc: "2.0",
+        id: null,
+        error: {
+          code: -32603,
+          message: "Resource limit exceeded: " + createResourceLimitErrorMessage()
+        }
+      }), {
+        status: 503,
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
 
-		return new Response(JSON.stringify({
-			jsonrpc: "2.0",
-			id: null,
-			error: {
-				code: -32603,
-				message: "Internal error"
-			}
-		}), {
-			status: 500,
-			headers: { ...corsHeaders, "Content-Type": "application/json" }
-		});
-	}
+    return new Response(JSON.stringify({
+      jsonrpc: "2.0",
+      id: null,
+      error: {
+        code: -32603,
+        message: "Internal error"
+      }
+    }), {
+      status: 500,
+      headers: { ...corsHeaders, "Content-Type": "application/json" }
+    });
+  }
 }
 
 export default {
-	fetch(request: Request, env: Env, ctx: ExecutionContext) {
-		const url = new URL(request.url);
+  fetch(request: Request, env: Env, ctx: ExecutionContext) {
+    const url = new URL(request.url);
 
-		if (url.pathname === "/mcp") {
-			return handleMcpRequest(request, env);
-		}
+    if (url.pathname === "/mcp") {
+      return handleMcpRequest(request, env);
+    }
 
-		if (url.pathname === "/ai-chat") {
-			return handleAiChat(request, env);
-		}
+    if (url.pathname === "/ai-chat") {
+      return handleAiChat(request, env);
+    }
 
-		// Serve the AI chat interface
-		if (url.pathname === "/" || url.pathname === "/chat") {
-			return new Response(`
+    // Serve the AI chat interface
+    if (url.pathname === "/" || url.pathname === "/chat") {
+      return new Response(`
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1124,9 +1177,14 @@ export default {
         body {
             margin: 0;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #1a1b1e;
+            color: #c1c2c5;
         }
         #root {
             min-height: 100vh;
+            background: #1a1b1e;
+            display: flex;
+            flex-direction: column;
         }
         .loader-container {
             position: fixed;
@@ -1168,6 +1226,9 @@ export default {
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!-- Babel Standalone for JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
@@ -1183,7 +1244,7 @@ export default {
             headerIds: false,
             mangle: false
         });
-        
+
         const { useState, useEffect, useRef } = React;
         const { createRoot } = ReactDOM;
 
@@ -1306,7 +1367,17 @@ export default {
                     onClick={disabled || loading ? undefined : onClick}
                     disabled={disabled || loading}
                 >
-                    {loading && <div className="loader" style={{width: '16px', height: '16px'}}></div>}
+                    {loading && (
+                        <div style={{
+                            width: '16px',
+                            height: '16px',
+                            border: '2px solid rgba(255, 255, 255, 0.3)',
+                            borderTop: '2px solid rgba(255, 255, 255, 0.9)',
+                            borderRadius: '50%',
+                            animation: 'spin 1s linear infinite',
+                            marginRight: children ? '8px' : '0'
+                        }} />
+                    )}
                     {leftSection}
                     {children}
                     {rightSection}
@@ -1356,33 +1427,57 @@ export default {
             </span>
         );
 
-        const ScrollArea = ({ children, style = {} }) => (
-            <div style={{
-                overflow: 'auto',
-                ...style
-            }}>
-                {children}
-            </div>
-        );
+        // Icon Component using Lucide
+        function Icon({ name, size = 16, color = 'currentColor', style = {} }) {
+            const iconRef = useRef(null);
+
+            useEffect(() => {
+                if (iconRef.current && window.lucide) {
+                    // Use Lucide's createIcons function to replace the i element
+                    window.lucide.createIcons({
+                        icons: window.lucide.icons,
+                        attrs: {
+                            'stroke-width': 2,
+                            width: size,
+                            height: size
+                        }
+                    });
+                }
+            }, [name, size]);
+
+            return (
+                <i
+                    ref={iconRef}
+                    data-lucide={name}
+                    style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color,
+                        ...style
+                    }}
+                />
+            );
+        }
 
         // Example questions data
         const EXAMPLE_QUESTIONS = [
-            { icon: '❓', text: 'Overview' },
-            { icon: '🚀', text: 'Getting Started' },
-            { icon: '🎨', text: 'Theming' },
-            { icon: '🧩', text: 'Tokens' },
-            { icon: '📏', text: 'Consistency' },
-            { icon: '🤝', text: 'Adoption' }
+            { icon: 'help-circle', text: 'Overview' },
+            { icon: 'rocket', text: 'Getting Started' },
+            { icon: 'palette', text: 'Theming' },
+            { icon: 'coins', text: 'Tokens' },
+            { icon: 'handshake', text: 'Adoption' }
         ];
 
         // Chat App Component
         function ChatApp() {
             const [messages, setMessages] = useState([{
                 type: 'system',
-                content: '🎯 Welcome! I\\'m your AI design systems assistant. I can search through your design systems knowledge base and provide expert answers.\\n\\n💡 Ask me anything about design systems, components, tokens, or best practices!'
+                content: 'Welcome! I\\'m your AI design systems assistant. I can search through your design systems knowledge base and provide expert answers.\\n\\nAsk me anything about design systems, components, tokens, or best practices!'
             }]);
             const [inputValue, setInputValue] = useState('');
             const [isLoading, setIsLoading] = useState(false);
+            const [isOnline, setIsOnline] = useState(true);
             const messagesEndRef = useRef(null);
             const textareaRef = useRef(null);
             const textareaRef2 = useRef(null);
@@ -1459,12 +1554,15 @@ export default {
 
                     if (data.error) {
                         addMessage('error', \`❌ \${data.error}\`);
+                        setIsOnline(false);
                     } else {
                         addMessage('assistant', data.response);
+                        setIsOnline(true);
                     }
                 } catch (error) {
                     setMessages(prev => prev.filter(msg => msg.type !== 'thinking'));
                     addMessage('error', \`❌ Error: \${error.message}. Make sure the MCP server is running and OpenAI API key is configured.\`);
+                    setIsOnline(false);
                 } finally {
                     setIsLoading(false);
                 }
@@ -1537,7 +1635,21 @@ export default {
 
                 const renderContent = (content, type) => {
                     if (type === 'assistant') {
-                        return { __html: marked.parse(content) };
+                        let html = marked.parse(content);
+                        // Replace book emoji with Lucide icon
+                        html = html.replace(/📚/g, '<i data-lucide="book-open" style="display: inline-flex; width: 20px; height: 20px; vertical-align: text-bottom; margin-right: 4px;"></i>');
+                        // Replace brain emoji with Lucide icon
+                        html = html.replace(/🧠/g, '<i data-lucide="brain" style="display: inline-flex; width: 20px; height: 20px; vertical-align: text-bottom; margin-right: 4px;"></i>');
+                        // Initialize Lucide icons for the newly added icons
+                        setTimeout(() => {
+                            if (window.lucide) {
+                                window.lucide.createIcons({
+                                    icons: window.lucide.icons,
+                                    attrs: { 'stroke-width': 2 }
+                                });
+                            }
+                        }, 0);
+                        return { __html: html };
                     }
                     if (type === 'thinking') {
                         return (
@@ -1589,8 +1701,6 @@ export default {
             return (
                 <div style={{
                     minHeight: '100vh',
-                    background: '#1a1b1e',
-                    color: '#c1c2c5',
                     display: 'flex',
                     flexDirection: 'column'
                 }}>
@@ -1616,8 +1726,8 @@ export default {
                                         MCP Server for Design Systems
                                     </Text>
                                 </div>
-                                <Badge variant="light" color="green" size="sm">
-                                    Online
+                                <Badge variant="light" color={isOnline ? 'green' : 'red'} size="sm">
+                                    {isOnline ? 'Online' : 'Offline'}
                                 </Badge>
                             </Group>
                         </div>
@@ -1629,7 +1739,6 @@ export default {
                             flexDirection: 'column',
                             padding: '0 24px'
                         }}>
-                            <ScrollArea style={{ flex: 1 }}>
                                 {messages.filter(msg => msg.type !== 'system').length === 0 ? (
                                     // Welcome screen when no messages - centered like ChatGPT
                                     <div style={{
@@ -1765,7 +1874,6 @@ export default {
                                         {/* Topic suggestions below input */}
                                         <div style={{
                                             display: 'flex',
-                                            flexWrap: 'wrap',
                                             gap: '8px',
                                             justifyContent: 'center',
                                             maxWidth: '768px',
@@ -1802,13 +1910,12 @@ export default {
                                                             'Getting Started': 'How do I get started with design systems?',
                                                             'Theming': 'Tell me about theming',
                                                             'Tokens': 'What are design tokens?',
-                                                            'Consistency': 'How do I create consistency across products?',
                                                             'Adoption': 'How do I get stakeholder buy-in for design systems?'
                                                         };
                                                         askQuestion(queries[item.text] || item.text);
                                                     }}
                                                 >
-                                                    <span>{item.icon}</span>
+                                                    <Icon name={item.icon} size={16} />
                                                     <span>{item.text}</span>
                                                 </button>
                                             ))}
@@ -1827,14 +1934,13 @@ export default {
                                     </div>
                                 ) : (
                                     // Regular chat messages
-                                    <div style={{ padding: '24px 0' }}>
+                                    <div style={{ padding: '24px 0 100px 0' }}>
                                         {messages.filter(msg => msg.type !== 'system').map((message) => (
                                             <MessageComponent key={message.id || Math.random()} message={message} />
                                         ))}
                                         <div ref={messagesEndRef} />
                                     </div>
                                 )}
-                            </ScrollArea>
                         </div>
 
                         {/* Input Area for active conversations */}
@@ -1855,7 +1961,8 @@ export default {
                                         borderRadius: '12px',
                                         display: 'flex',
                                         alignItems: 'center',
-                                        transition: 'border-color 0.2s ease'
+                                        transition: 'border-color 0.2s ease',
+                                        padding: '12px 16px'
                                     }}>
                                         <textarea
                                             ref={textareaRef2}
@@ -1873,10 +1980,11 @@ export default {
                                                 fontFamily: 'inherit',
                                                 resize: 'none',
                                                 outline: 'none',
-                                                padding: '12px 16px',
-                                                lineHeight: '1.5',
+                                                padding: '0',
+                                                lineHeight: '24px',
                                                 maxHeight: '200px',
-                                                overflowY: 'auto'
+                                                overflowY: 'auto',
+                                                marginRight: '12px'
                                             }}
                                             disabled={isLoading}
                                             onFocus={(e) => {
@@ -1894,27 +2002,23 @@ export default {
                                                     ? '#339af0'
                                                     : '#373a40',
                                                 border: 'none',
-                                                borderRadius: '8px',
-                                                padding: '8px',
-                                                margin: '8px',
+                                                borderRadius: '6px',
+                                                padding: '6px',
                                                 cursor: inputValue.trim() && !isLoading ? 'pointer' : 'not-allowed',
                                                 display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
                                                 transition: 'all 0.2s ease',
-                                                minWidth: '32px',
-                                                height: '32px'
+                                                width: '28px',
+                                                height: '28px',
+                                                flexShrink: 0
                                             }}
                                         >
                                             {isLoading ? (
-                                                <div style={{
-                                                    width: '16px',
-                                                    height: '16px',
-                                                    border: '2px solid #ffffff40',
-                                                    borderTop: '2px solid #ffffff',
-                                                    borderRadius: '50%',
-                                                    animation: 'spin 1s linear infinite'
-                                                }} />
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ display: 'block' }}>
+                                                    <circle cx="8" cy="8" r="6" stroke="rgba(255,255,255,0.25)" strokeWidth="2" fill="none" />
+                                                    <path d="M 8 2 A 6 6 0 0 1 14 8" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none" style={{ animation: 'spin 0.8s linear infinite', transformOrigin: 'center' }} />
+                                                </svg>
                                             ) : (
                                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{
                                                     color: inputValue.trim() ? 'white' : '#909296'
@@ -1941,14 +2045,13 @@ export default {
                         background: '#25262b',
                         borderTop: '1px solid #373a40',
                         padding: '16px 24px',
-                        textAlign: 'center',
-                        marginTop: 'auto'
+                        textAlign: 'center'
                     }}>
                         <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px', marginBottom: '8px' }}>
-                            🤖 MCP Server for Design Systems • Powered by curated knowledge base
+                            MCP Server for Design Systems • Powered by curated knowledge base
                         </Text>
-                        <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px' }}>
-                            Made with ❤️ by{' '}
+                        <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
+                            Made by{' '}
                             <a
                                 href="https://southleft.com"
                                 target="_blank"
@@ -1962,6 +2065,25 @@ export default {
                                 onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
                             >
                                 Southleft
+                            </a>
+                            {' • '}
+                            <a
+                                href="https://github.com/southleft/design-systems-mcp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    color: '#339af0',
+                                    textDecoration: 'none',
+                                    fontWeight: '500',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '4px'
+                                }}
+                                onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
+                                onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
+                            >
+                                <Icon name="github" size={14} />
+                                View on GitHub
                             </a>
                         </Text>
                     </footer>
@@ -2016,58 +2138,67 @@ export default {
             line-height: 1.6;
             color: #c1c2c5;
         }
-        
+
+        /* Section headers (h1, h2) stay blue - these are "From the Knowledge Base" etc. */
         .message-content h1,
-        .message-content h2,
+        .message-content h2 {
+            color: #fff;
+            margin: 24px 0 16px 0;
+            font-weight: 600;
+        }
+
+        /* Content headers (h3, h4, h5, h6) are white and larger - these are internal headers */
         .message-content h3,
         .message-content h4,
         .message-content h5,
         .message-content h6 {
-            color: #339af0;
+            color: #c1c2c5;
             margin: 24px 0 16px 0;
             font-weight: 600;
         }
-        
+
         .message-content h1 { font-size: 24px; }
         .message-content h2 { font-size: 20px; }
-        .message-content h3 { font-size: 18px; }
-        .message-content h4 { font-size: 16px; }
-        
+        .message-content h3 { font-size: 22px; }  /* Increased from 18px */
+        .message-content h4 { font-size: 20px; }  /* Increased from 16px */
+        .message-content h5 { font-size: 18px; }
+        .message-content h6 { font-size: 16px; }
+
         .message-content p {
             margin: 12px 0;
             line-height: 1.6;
         }
-        
+
         .message-content ul,
         .message-content ol {
             margin: 8px 0;
             padding-left: 20px;
         }
-        
+
         .message-content li {
             margin: 4px 0;
             line-height: 1.4;
         }
-        
+
         .message-content ul li {
             list-style-type: disc;
         }
-        
+
         .message-content ol li {
             list-style-type: decimal;
         }
-        
+
         .message-content a {
             color: #339af0;
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: border-color 0.2s ease;
         }
-        
+
         .message-content a:hover {
             border-bottom-color: #339af0;
         }
-        
+
         .message-content code {
             background: #2c2e33;
             color: #ff7979;
@@ -2076,7 +2207,7 @@ export default {
             font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
             font-size: 14px;
         }
-        
+
         .message-content pre {
             background: #2c2e33;
             color: #c1c2c5;
@@ -2085,13 +2216,13 @@ export default {
             overflow-x: auto;
             margin: 16px 0;
         }
-        
+
         .message-content pre code {
             background: none;
             padding: 0;
             color: inherit;
         }
-        
+
         .message-content blockquote {
             border-left: 3px solid #339af0;
             background: #2c2e33;
@@ -2100,18 +2231,18 @@ export default {
             color: #909296;
             font-style: italic;
         }
-        
+
         .message-content hr {
             border: none;
             border-top: 1px solid #373a40;
             margin: 20px 0;
         }
-        
+
         .message-content strong {
             color: #fff;
             font-weight: 600;
         }
-        
+
         .message-content em {
             color: #b3b6ba;
             font-style: italic;
@@ -2120,33 +2251,33 @@ export default {
 </body>
 </html>
 			`, {
-				headers: {
-					"Content-Type": "text/html",
-					"Access-Control-Allow-Origin": "*"
-				}
-			});
-		}
+        headers: {
+          "Content-Type": "text/html",
+          "Access-Control-Allow-Origin": "*"
+        }
+      });
+    }
 
-		// Health check endpoint
-		if (url.pathname === "/health") {
-			return new Response(JSON.stringify({
-				status: "ok",
-				service: "Design Systems MCP",
-				version: "1.0.0"
-			}), {
-				headers: {
-					"Content-Type": "application/json",
-					"Access-Control-Allow-Origin": "*"
-				}
-			});
-		}
+    // Health check endpoint
+    if (url.pathname === "/health") {
+      return new Response(JSON.stringify({
+        status: "ok",
+        service: "Design Systems MCP",
+        version: "1.0.0"
+      }), {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+        }
+      });
+    }
 
-		return new Response("Design Systems MCP Server - Use /mcp or /ai-chat endpoints", {
-			status: 200,
-			headers: {
-				"Content-Type": "text/plain",
-				"Access-Control-Allow-Origin": "*"
-			}
-		});
-	},
+    return new Response("Design Systems MCP Server - Use /mcp or /ai-chat endpoints", {
+      status: 200,
+      headers: {
+        "Content-Type": "text/plain",
+        "Access-Control-Allow-Origin": "*"
+      }
+    });
+  },
 };

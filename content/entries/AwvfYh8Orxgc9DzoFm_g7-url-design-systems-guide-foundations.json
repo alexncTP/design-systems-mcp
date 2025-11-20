@@ -6,39 +6,17 @@
     "location": "https://designsystems.surf/guides",
     "ingested_at": "2025-08-30T13:09:00.494Z"
   },
-  "content": "# Guides Systems Directories Components Articles Blueprints Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe Accessibility Atomic Design Color Component Design System Design Token Elevation Foundations Icons Layout Pattern Single Source of Truth Spacing Typography UI Kit Usability User Experience (UX) User Interface (UI) Advertisement",
+  "content": "# Guides Systems Directories Components Articles Blueprints Glossary Subscribe Accessibility Atomic Design Color Component Design System Design Token Elevation Foundations Icons Layout Pattern Single Source of Truth Spacing Typography UI Kit Usability User Experience (UX) User Interface (UI)",
   "chunks": [
     {
       "id": "chunk-0",
-      "text": "# Guides Systems Directories Components Articles Blueprints Glossary Biweekly Digest Created by Keep up with the latest in Design Systems Subscribe Accessibility Atomic Design Color Component Design System Design Token Elevation Foundations Icons Layout Pattern Single Source of Truth Spacing Typography UI Kit Usability User Experience (UX) User Interface (UI) Advertisement",
+      "text": "# Guides Systems Directories Components Articles Blueprints Glossary Subscribe Accessibility Atomic Design Color Component Design System Design Token Elevation Foundations Icons Layout Pattern Single Source of Truth Spacing Typography UI Kit Usability User Experience (UX) User Interface (UI)",
       "metadata": {
         "startIndex": 0,
-        "endIndex": 974,
+        "endIndex": 292,
         "chunkIndex": 0,
         "section": "Content",
         "globalChunkIndex": 0
-      }
-    },
-    {
-      "id": "chunk-1",
-      "text": "ystems](./subscribe) [Subscribe](./subscribe) [Ad](./advertisement) [Guides](./guides#up-pixel) [Accessibility](./guides/accessibility) [Atomic Design](./guides/atomic-design) [Color](./guides/color) [Component](./guides/component) [Design System](./guides/design-system) [Design Token](./guides/design-token) [Elevation](./guides/elevation) [Foundations](./guides/foundations) [Icons](./guides/icons) [Layout](./guides/layout) [Pattern](./guides/pattern) [Single Source of Truth](./guides/single-source-of-truth) [Spacing](./guides/spacing) [Typography](./guides/typography) [UI Kit](./guides/ui-kit) [Usability](./guides/usability) [User Experience (UX)](./guides/user-experience) [User Interface (UI)](./guides/user-interface) [Design Systems](./design-systems) [Apple HIG](./design-systems/apple) [Google Material Design](./design-systems/google) [IBM Design System](./design-systems/ibm) [Microsoft Fluent 2](./design-systems/microsoft) [Directories](./directories)",
-      "metadata": {
-        "startIndex": 774,
-        "endIndex": 1745,
-        "chunkIndex": 1,
-        "section": "Content",
-        "globalChunkIndex": 1
-      }
-    },
-    {
-      "id": "chunk-2",
-      "text": "HIG](./design-systems/apple) [Google Material Design](./design-systems/google) [IBM Design System](./design-systems/ibm) [Microsoft Fluent 2](./design-systems/microsoft) [Directories](./directories) [Accessibility](./directories/accessibility) [Color System](./directories/color-system) [Figma](./directories/figma) [Typography](./directories/typography) [Components](./components) [Button](./components/button) [Checkbox](./components/checkbox) [Radio button](./components/radio-button) [Text field](./components/text-field) [DesignSystems.surf](./) (https://forms.gle/ADApdgVpd6XBcCYM8)",
-      "metadata": {
-        "startIndex": 1545,
-        "endIndex": 2545,
-        "chunkIndex": 2,
-        "section": "Content",
-        "globalChunkIndex": 2
       }
     }
   ],
