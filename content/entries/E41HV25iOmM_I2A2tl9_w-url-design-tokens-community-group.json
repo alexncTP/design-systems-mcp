@@ -1,0 +1,70 @@
+{
+  "id": "E41HV25iOmM_I2A2tl9_w",
+  "title": "Design Tokens Community Group",
+  "source": {
+    "type": "url",
+    "location": "https://www.designtokens.org/",
+    "ingested_at": "2025-11-20T14:02:28.290Z"
+  },
+  "content": "# Scale design decisions across teams and products. ## Trusted by leading design tools ## What we do ## Who builds the specification The DTCG JSON format unlocks interoperability and theming between your tools. The Design Tokens W3C Community Group (DTCG) is a community of designers, developers, and tooling vendors standardizing how design tokens are defined and exchanged. We steward the Design Tokens specification so teams can share visual language reliably across design tools, codebases, and platforms. By collaborating in the open, we collect real-world use cases, document best practices, and publish technical reports that help an ecosystem of tools stay interoperable. Organizations building design tools and open-source projects are already shipping DTCG-compatible tokens. Here are some of the adopters and participants helping prove out the spec: The DTCG focuses on the foundational pieces teams need to scale design tokens: • Publish and maintain vendor-agnostic specification modules, including the living draft available on . • Facilitate workstreams, community calls, and issue so implementers can shape the spec with evidence from production use. • Provide guidance: glossary, examples, and technical reports—that helps teams adopt the specification confidently. The specification is developed by volunteer chairs, editors, and contributors representing design system teams, tooling vendors, and independent experts. Together they triage issues, draft proposals, and align on changes that keep the standard focused and practical. ## Links [First stable version 2025.10 now available](https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/) [View the specification](/technical-reports/) [Join the community](https://github.com/design-tokens/community-group) [Abstract](https://www.goabstract.com) [Adobe](https://adobe.com) [Project Wallace](https://github.com/projectwallace/css-design-tokens/) [Design Token Validator (Anima)](https://animaapp.github.io/design-token-validator-site/) [Design Tokens Language Server](https://github.com/bennypowers/design-tokens-language-server) [Figma](https://www.figma.com) [Framer](https://www.framer.com) [Knapsack](https://www.knapsack.cloud) [Marvel](https://marvelapp.com) [Penpot](https://penpot.app) [Pinwheel](https://bjango.com/mac/pinwheel/) [Sketch](https://www.sketch.com) [Style Dictionary](https://styledictionary.com) [Superposition](https://superposition.design) [Supernova](https://www.supernova.io) [Terrazzo](https://terrazzo.app) [Toolabs](https://www.toolabs.com) [TokensBrücke](https://www.figma.com/community/plugin/1254538877056388290/tokensbrucke) [Tokens Studio](https://tokens.studio) [Universal Design Tokens](https://github.com/universal-design-tokens/udt) [Zeplin](https://zeplin.io) [zeroheight](https://zeroheight.com) [designtokens.org/TR/drafts](https://www.designtokens.org/TR/drafts/) [discussions on GitHub](https://github.com/design-tokens/community-group/issues) [View full list of participants](https://www.w3.org/community/design-tokens/participants)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Scale design decisions across teams and products. ## Trusted by leading design tools ## What we do ## Who builds the specification The DTCG JSON format unlocks interoperability and theming between your tools. The Design Tokens W3C Community Group (DTCG) is a community of designers, developers, and tooling vendors standardizing how design tokens are defined and exchanged. We steward the Design Tokens specification so teams can share visual language reliably across design tools, codebases, and platforms. By collaborating in the open, we collect real-world use cases, document best practices, and publish technical reports that help an ecosystem of tools stay interoperable. Organizations building design tools and open-source projects are already shipping DTCG-compatible tokens. Here are some of the adopters and participants helping prove out the spec: The DTCG focuses on the foundational pieces teams need to scale design tokens: • Publish and maintain vendor-agnostic specification",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 993,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "onal pieces teams need to scale design tokens: • Publish and maintain vendor-agnostic specification modules, including the living draft available on . • Facilitate workstreams, community calls, and issue so implementers can shape the spec with evidence from production use. • Provide guidance: glossary, examples, and technical reports—that helps teams adopt the specification confidently. The specification is developed by volunteer chairs, editors, and contributors representing design system teams, tooling vendors, and independent experts. Together they triage issues, draft proposals, and align on changes that keep the standard focused and practical. ## Links [First stable version 2025.10 now available](https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/) [View the specification](/technical-reports/) [Join the community](https://github.com/design-tokens/community-group) [Abstract](https://www.goabstract.com)",
+      "metadata": {
+        "startIndex": 893,
+        "endIndex": 1873,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "community](https://github.com/design-tokens/community-group) [Abstract](https://www.goabstract.com) [Adobe](https://adobe.com) [Project Wallace](https://github.com/projectwallace/css-design-tokens/) [Design Token Validator (Anima)](https://animaapp.github.io/design-token-validator-site/) [Design Tokens Language Server](https://github.com/bennypowers/design-tokens-language-server) [Figma](https://www.figma.com) [Framer](https://www.framer.com) [Knapsack](https://www.knapsack.cloud) [Marvel](https://marvelapp.com) [Penpot](https://penpot.app) [Pinwheel](https://bjango.com/mac/pinwheel/) [Sketch](https://www.sketch.com) [Style Dictionary](https://styledictionary.com) [Superposition](https://superposition.design) [Supernova](https://www.supernova.io) [Terrazzo](https://terrazzo.app) [Toolabs](https://www.toolabs.com) [TokensBrücke](https://www.figma.com/community/plugin/1254538877056388290/tokensbrucke) [Tokens Studio](https://tokens.studio) [Universal Design",
+      "metadata": {
+        "startIndex": 1773,
+        "endIndex": 2743,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "y/plugin/1254538877056388290/tokensbrucke) [Tokens Studio](https://tokens.studio) [Universal Design Tokens](https://github.com/universal-design-tokens/udt) [Zeplin](https://zeplin.io) [zeroheight](https://zeroheight.com) [designtokens.org/TR/drafts](https://www.designtokens.org/TR/drafts/) [discussions on GitHub](https://github.com/design-tokens/community-group/issues) [View full list of participants](https://www.w3.org/community/design-tokens/participants)",
+      "metadata": {
+        "startIndex": 2643,
+        "endIndex": 3643,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens",
+      "dtcg",
+      "w3c",
+      "community"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:02:28.290Z",
+    "system": "DTCG",
+    "author": "W3C",
+    "source_url": "https://www.designtokens.org/"
+  }
+}

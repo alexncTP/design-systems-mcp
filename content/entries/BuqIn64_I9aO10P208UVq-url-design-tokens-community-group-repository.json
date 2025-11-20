@@ -1,0 +1,147 @@
+{
+  "id": "BuqIn64_I9aO10P208UVq",
+  "title": "Design Tokens Community Group Repository",
+  "source": {
+    "type": "url",
+    "location": "https://github.com/design-tokens/community-group",
+    "ingested_at": "2025-11-20T14:02:30.123Z"
+  },
+  "content": "### License # design-tokens/community-group ## Folders and files ## Latest commit ## History ## Repository files navigation # Design Tokens Community Group ## Design tokens ## Goal of the DTCG ## Principles ### 1. Inclusive ### 2. Focused, yet extensible ### 3. Stable ## Who sits on the DTCG ### Companies and open-source projects represented on the DTCG ## Versions ## Contributing ## About ### Topics ### Resources ### Code of conduct ### Uh oh! ### Stars ### Watchers ### Forks ## Contributors 62 ## Languages {{ message }} This is the official DTCG repository for the design tokens site and specification. This is the official DTCG repository for the design tokens specification (). Design tokens are indivisible pieces of a design system such as colors, spacing, typography scale. Design tokens were created by the Salesforce design system team, and the name comes from them ( & ). Sharing design properties such as a color palette across many tools and platforms should be simple. The DTCG's goal is to provide standards upon which products and design tools can rely for sharing stylistic pieces of a design system at scale. We believe that a common way to share design tokens will unlock efficiency opportunities for plugins, design system teams, product teams, and end-users of design tools. Allow anyone to become familiar with design tokens. Empower people, no matter what their skills and tool choices are, as they develop new mental models, acquire skills, and implement tools to scale design in their projects. Everyone is welcome to join the conversation and share use-cases with the community. Stay focused on the smallest surface area necessary to cover the most commonly referenced use-cases. Be a platform that opens the door to a wide range of possibilities. This small footprint helps maintain simplicity with zero dependencies. Extensibility allows the community to incubate new ideas that will define the future of design tokens. Provide a stable foundation that users and tool makers can put in place and depend on in the long term. For example, by using existing and trusted standards (unless conflicting with the two first principles). The community group is composed of UX professionals, developers, and representatives of design tooling vendors. To achieve a v1 of the specification rapidly, its structure is restricted to a small, focused amount of people, organized in task forces. As vendors adopt the specification and new requirements appear, the community group will consist of additional task forces. • ex-contributors to (by Salesforce) Here's an overview of all of the published versions of this draft specification: name url date editors-draft/1 editors-draft/2 living-draft Note: tools can use the date as a version number to signify compliance. For example: . See . We acknowledge that the format specification is only part of an ecosystem, supporting methods and practices that relate to scaling design tokens: Design Tokens are a methodology. IMHO, saying \"design tokens are just variables\" is like saying \"responsive design is just media queries\". It's a technology-agnostic architecture and process for scaling design across multiple platforms and devices, including native, and more. — There was an error while loading. . You can’t perform that action at this time. ## Links [design-tokens](/design-tokens) [community-group](/design-tokens/community-group) [Notifications](/login?return_to=%2Fdesign-tokens%2Fcommunity-group) [Fork 75](/login?return_to=%2Fdesign-tokens%2Fcommunity-group) [Star 1.8k](/login?return_to=%2Fdesign-tokens%2Fcommunity-group) [www.designtokens.org/TR/drafts/](https://www.designtokens.org/TR/drafts/) [View license](/design-tokens/community-group/blob/main/LICENSE.md) [1.8k stars](/design-tokens/community-group/stargazers) [75 forks](/design-tokens/community-group/forks) [Branches](/design-tokens/community-group/branches) [Tags](/design-tokens/community-group/tags) [Activity](/design-tokens/community-group/activity) [Star](/login?return_to=%2Fdesign-tokens%2Fcommunity-group) [305 Commits](/design-tokens/community-group/commits/main/) [.devcontainer](/design-tokens/community-group/tree/main/.devcontainer) [.github](/design-tokens/community-group/tree/main/.github) [.husky](/design-tokens/community-group/tree/main/.husky) [.vscode](/design-tokens/community-group/tree/main/.vscode) [cspell](/design-tokens/community-group/tree/main/cspell) [meeting-notes](/design-tokens/community-group/tree/main/meeting-notes) [technical-reports](/design-tokens/community-group/tree/main/technical-reports) [www](/design-tokens/community-group/tree/main/www) [.editorconfig](/design-tokens/community-group/blob/main/.editorconfig) [.gitignore](/design-tokens/community-group/blob/main/.gitignore) [.gitpod.yml](/design-tokens/community-group/blob/main/.gitpod.yml) [.nvmrc](/design-tokens/community-group/blob/main/.nvmrc) [.prettierignore](/design-tokens/community-group/blob/main/.prettierignore) [.prettierrc](/design-tokens/community-group/blob/main/.prettierrc) [CHARTER.md](/design-tokens/community-group/blob/main/CHARTER.md) [CODE_OF_CONDUCT.md](/design-tokens/community-group/blob/main/CODE_OF_CONDUCT.md) [CONTRIBUTING.md](/design-tokens/community-group/blob/main/CONTRIBUTING.md) [LICENSE.md](/design-tokens/community-group/blob/main/LICENSE.md) [README.md](/design-tokens/community-group/blob/main/README.md) [cspell.config.yaml](/design-tokens/community-group/blob/main/cspell.config.yaml) [netlify.toml](/design-tokens/community-group/blob/main/netlify.toml) [package.json](/design-tokens/community-group/blob/main/package.json) [pnpm-lock.yaml](/design-tokens/community-group/blob/main/pnpm-lock.yaml) [pnpm-workspace.yaml](/design-tokens/community-group/blob/main/pnpm-workspace.yaml) [W3C community group page](https://www.w3.org/community/design-tokens/) [Jon](https://x.com/jonnyl) [Jina](https://x.com/jina) [Full charter](https://github.com/design-tokens/community-group/blob/main/CHARTER.md) [Living technical reports drafts](https://www.designtokens.org/TR/drafts/) [Instructions for editing technical reports](/design-tokens/community-group/blob/main/technical-reports/README.md) [Format Module meeting notes](https://docs.google.com/document/d/1sfiVmnIxgeiA20JJ4IOkm8da_CM9hTnsL2gpzO8vEOM/edit?usp=sharing) [Abstract](https://www.abstract.com) [Adobe](https://www.adobe.com) [Alaska Airlines](https://www.alaskaair.com) [Amazon](https://www.amazon.com) [Atlassian](https://www.atlassian.com) [Chroma](https://hichroma.com) [Divriots](https://divriots.com/) [Dynatrace](https://www.dynatrace.com) [Figma](https://figma.com) [Framer](https://www.framer.com) [Google](https://www.google.com) [Herman + Accoutrement](https://oddbird.net/herman/) [Interplay](https://interplayapp.com) [InVision](https://www.invisionapp.com) [Kaspersky](https://kaspersky.com) [Knapsack](https://www.knapsack.cloud) [Liferay](https://liferay.com) [Lona](https://github.com/airbnb/Lona) [Marvel](https://marvelapp.com) [Microsoft](https://www.microsoft.com/) [Open edX](https://openedx.org/) [Penpot](https://penpot.app/) [Philips Design](https://www.philips.com/a-w/about/philips-design.html) [Salesforce](https://www.salesforce.com) [Sass](https://www.sass-lang.com) [Shopify](https://www.shopify.com) [Sketch](https://www.sketch.com/) [Specify](https://specifyapp.com/) [Sprout Social](https://sproutsocial.com/seeds) [Style Dictionary](https://github.com/style-dictionary/style-dictionary) [Superposition](https://superposition.design) [Supernova](https://supernova.io) [Synology](https://www.synology.com) [system-ui](https://github.com/system-ui) [Toolabs](https://www.toolabs.com) [Tokens Studio](https://www.tokens.studio) [Universal Design Tokens](https://github.com/universal-design-tokens/udt) [Zendesk](https://www.zendesk.com) [Zeplin](https://zeplin.io) [zeroheight](https://www.zeroheight.com) [Theo](https://github.com/salesforce-ux/theo) [www.designtokens.org/TR/first-editors-draft/](http://www.designtokens.org/TR/first-editors-draft/) [www.designtokens.org/TR/second-editors-draft/](http://www.designtokens.org/TR/second-editors-draft/) [www.designtokens.org/TR/drafts/](http://www.designtokens.org/TR/drafts/) [CONTRIBUTING.md](https://github.com/design-tokens/community-group/blob/main/CONTRIBUTING.md) [@jina on X](https://x.com/jina/status/1062808011301965825) [design-systems](/topics/design-systems) [design-tokens](/topics/design-tokens) [design-system](/topics/design-system) [Custom properties](/design-tokens/community-group/custom-properties) [1.8k stars](/design-tokens/community-group/stargazers) [217 watching](/design-tokens/community-group/watchers) [75 forks](/design-tokens/community-group/forks) [Report repository](/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fdesign-tokens%2Fcommunity-group&report=design-tokens+%28user%29) [Contributors 62](/design-tokens/community-group/graphs/contributors) [+ 48 contributors](/design-tokens/community-group/graphs/contributors) [HTML 94.0%](/design-tokens/community-group/search?l=html) [Astro 3.1%](/design-tokens/community-group/search?l=astro) [SCSS 2.0%](/design-tokens/community-group/search?l=scss)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "### License # design-tokens/community-group ## Folders and files ## Latest commit ## History ## Repository files navigation # Design Tokens Community Group ## Design tokens ## Goal of the DTCG ## Principles ### 1. Inclusive ### 2. Focused, yet extensible ### 3. Stable ## Who sits on the DTCG ### Companies and open-source projects represented on the DTCG ## Versions ## Contributing ## About ### Topics ### Resources ### Code of conduct ### Uh oh! ### Stars ### Watchers ### Forks ## Contributors 62 ## Languages {{ message }} This is the official DTCG repository for the design tokens site and specification. This is the official DTCG repository for the design tokens specification (). Design tokens are indivisible pieces of a design system such as colors, spacing, typography scale. Design tokens were created by the Salesforce design system team, and the name comes from them ( & ). Sharing design properties such as a color palette across many tools and platforms should be simple.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 988,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "Sharing design properties such as a color palette across many tools and platforms should be simple. The DTCG's goal is to provide standards upon which products and design tools can rely for sharing stylistic pieces of a design system at scale. We believe that a common way to share design tokens will unlock efficiency opportunities for plugins, design system teams, product teams, and end-users of design tools. Allow anyone to become familiar with design tokens. Empower people, no matter what their skills and tool choices are, as they develop new mental models, acquire skills, and implement tools to scale design in their projects. Everyone is welcome to join the conversation and share use-cases with the community. Stay focused on the smallest surface area necessary to cover the most commonly referenced use-cases. Be a platform that opens the door to a wide range of possibilities. This small footprint helps maintain simplicity with zero dependencies.",
+      "metadata": {
+        "startIndex": 888,
+        "endIndex": 1850,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "wide range of possibilities. This small footprint helps maintain simplicity with zero dependencies. Extensibility allows the community to incubate new ideas that will define the future of design tokens. Provide a stable foundation that users and tool makers can put in place and depend on in the long term. For example, by using existing and trusted standards (unless conflicting with the two first principles). The community group is composed of UX professionals, developers, and representatives of design tooling vendors. To achieve a v1 of the specification rapidly, its structure is restricted to a small, focused amount of people, organized in task forces. As vendors adopt the specification and new requirements appear, the community group will consist of additional task forces. • ex-contributors to (by Salesforce) Here's an overview of all of the published versions of this draft specification: name url date editors-draft/1 editors-draft/2 living-draft Note: tools can use the date as a",
+      "metadata": {
+        "startIndex": 1750,
+        "endIndex": 2747,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "ation: name url date editors-draft/1 editors-draft/2 living-draft Note: tools can use the date as a version number to signify compliance. For example: . See . We acknowledge that the format specification is only part of an ecosystem, supporting methods and practices that relate to scaling design tokens: Design Tokens are a methodology. IMHO, saying \"design tokens are just variables\" is like saying \"responsive design is just media queries\". It's a technology-agnostic architecture and process for scaling design across multiple platforms and devices, including native, and more. — There was an error while loading. . You can’t perform that action at this time. ## Links [design-tokens](/design-tokens) [community-group](/design-tokens/community-group) [Notifications](/login?return_to=%2Fdesign-tokens%2Fcommunity-group) [Fork 75](/login?return_to=%2Fdesign-tokens%2Fcommunity-group) [Star 1.8k](/login?return_to=%2Fdesign-tokens%2Fcommunity-group)",
+      "metadata": {
+        "startIndex": 2647,
+        "endIndex": 3599,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "2Fdesign-tokens%2Fcommunity-group) [Star 1.8k](/login?return_to=%2Fdesign-tokens%2Fcommunity-group) [www.designtokens.org/TR/drafts/](https://www.designtokens.org/TR/drafts/) [View license](/design-tokens/community-group/blob/main/LICENSE.md) [1.8k stars](/design-tokens/community-group/stargazers) [75 forks](/design-tokens/community-group/forks) [Branches](/design-tokens/community-group/branches) [Tags](/design-tokens/community-group/tags) [Activity](/design-tokens/community-group/activity) [Star](/login?return_to=%2Fdesign-tokens%2Fcommunity-group) [305 Commits](/design-tokens/community-group/commits/main/) [.devcontainer](/design-tokens/community-group/tree/main/.devcontainer) [.github](/design-tokens/community-group/tree/main/.github) [.husky](/design-tokens/community-group/tree/main/.husky) [.vscode](/design-tokens/community-group/tree/main/.vscode) [cspell](/design-tokens/community-group/tree/main/cspell) [meeting-notes](/design-tokens/community-group/tree/main/meeting-notes)",
+      "metadata": {
+        "startIndex": 3499,
+        "endIndex": 4495,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ity-group/tree/main/cspell) [meeting-notes](/design-tokens/community-group/tree/main/meeting-notes) [technical-reports](/design-tokens/community-group/tree/main/technical-reports) [www](/design-tokens/community-group/tree/main/www) [.editorconfig](/design-tokens/community-group/blob/main/.editorconfig) [.gitignore](/design-tokens/community-group/blob/main/.gitignore) [.gitpod.yml](/design-tokens/community-group/blob/main/.gitpod.yml) [.nvmrc](/design-tokens/community-group/blob/main/.nvmrc) [.prettierignore](/design-tokens/community-group/blob/main/.prettierignore) [.prettierrc](/design-tokens/community-group/blob/main/.prettierrc) [CHARTER.md](/design-tokens/community-group/blob/main/CHARTER.md) [CODE_OF_CONDUCT.md](/design-tokens/community-group/blob/main/CODE_OF_CONDUCT.md) [CONTRIBUTING.md](/design-tokens/community-group/blob/main/CONTRIBUTING.md) [LICENSE.md](/design-tokens/community-group/blob/main/LICENSE.md) [README.md](/design-tokens/community-group/blob/main/README.md)",
+      "metadata": {
+        "startIndex": 4395,
+        "endIndex": 5389,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "mmunity-group/blob/main/LICENSE.md) [README.md](/design-tokens/community-group/blob/main/README.md) [cspell.config.yaml](/design-tokens/community-group/blob/main/cspell.config.yaml) [netlify.toml](/design-tokens/community-group/blob/main/netlify.toml) [package.json](/design-tokens/community-group/blob/main/package.json) [pnpm-lock.yaml](/design-tokens/community-group/blob/main/pnpm-lock.yaml) [pnpm-workspace.yaml](/design-tokens/community-group/blob/main/pnpm-workspace.yaml) [W3C community group page](https://www.w3.org/community/design-tokens/) [Jon](https://x.com/jonnyl) [Jina](https://x.com/jina) [Full charter](https://github.com/design-tokens/community-group/blob/main/CHARTER.md) [Living technical reports drafts](https://www.designtokens.org/TR/drafts/) [Instructions for editing technical reports](/design-tokens/community-group/blob/main/technical-reports/README.md) [Format Module meeting",
+      "metadata": {
+        "startIndex": 5289,
+        "endIndex": 6195,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "ports](/design-tokens/community-group/blob/main/technical-reports/README.md) [Format Module meeting notes](https://docs.google.com/document/d/1sfiVmnIxgeiA20JJ4IOkm8da_CM9hTnsL2gpzO8vEOM/edit?usp=sharing) [Abstract](https://www.abstract.com) [Adobe](https://www.adobe.com) [Alaska Airlines](https://www.alaskaair.com) [Amazon](https://www.amazon.com) [Atlassian](https://www.atlassian.com) [Chroma](https://hichroma.com) [Divriots](https://divriots.com/) [Dynatrace](https://www.dynatrace.com) [Figma](https://figma.com) [Framer](https://www.framer.com) [Google](https://www.google.com) [Herman + Accoutrement](https://oddbird.net/herman/) [Interplay](https://interplayapp.com) [InVision](https://www.invisionapp.com) [Kaspersky](https://kaspersky.com) [Knapsack](https://www.knapsack.cloud) [Liferay](https://liferay.com) [Lona](https://github.com/airbnb/Lona) [Marvel](https://marvelapp.com) [Microsoft](https://www.microsoft.com/) [Open edX](https://openedx.org/) [Penpot](https://penpot.app/)",
+      "metadata": {
+        "startIndex": 6095,
+        "endIndex": 7092,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "crosoft](https://www.microsoft.com/) [Open edX](https://openedx.org/) [Penpot](https://penpot.app/) [Philips Design](https://www.philips.com/a-w/about/philips-design.html) [Salesforce](https://www.salesforce.com) [Sass](https://www.sass-lang.com) [Shopify](https://www.shopify.com) [Sketch](https://www.sketch.com/) [Specify](https://specifyapp.com/) [Sprout Social](https://sproutsocial.com/seeds) [Style Dictionary](https://github.com/style-dictionary/style-dictionary) [Superposition](https://superposition.design) [Supernova](https://supernova.io) [Synology](https://www.synology.com) [system-ui](https://github.com/system-ui) [Toolabs](https://www.toolabs.com) [Tokens Studio](https://www.tokens.studio) [Universal Design Tokens](https://github.com/universal-design-tokens/udt) [Zendesk](https://www.zendesk.com) [Zeplin](https://zeplin.io) [zeroheight](https://www.zeroheight.com) [Theo](https://github.com/salesforce-ux/theo)",
+      "metadata": {
+        "startIndex": 6992,
+        "endIndex": 7925,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "//zeplin.io) [zeroheight](https://www.zeroheight.com) [Theo](https://github.com/salesforce-ux/theo) [www.designtokens.org/TR/first-editors-draft/](http://www.designtokens.org/TR/first-editors-draft/) [www.designtokens.org/TR/second-editors-draft/](http://www.designtokens.org/TR/second-editors-draft/) [www.designtokens.org/TR/drafts/](http://www.designtokens.org/TR/drafts/) [CONTRIBUTING.md](https://github.com/design-tokens/community-group/blob/main/CONTRIBUTING.md) [@jina on X](https://x.com/jina/status/1062808011301965825) [design-systems](/topics/design-systems) [design-tokens](/topics/design-tokens) [design-system](/topics/design-system) [Custom properties](/design-tokens/community-group/custom-properties) [1.8k stars](/design-tokens/community-group/stargazers) [217 watching](/design-tokens/community-group/watchers) [75 forks](/design-tokens/community-group/forks) [Report",
+      "metadata": {
+        "startIndex": 7825,
+        "endIndex": 8713,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "](/design-tokens/community-group/watchers) [75 forks](/design-tokens/community-group/forks) [Report repository](/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fdesign-tokens%2Fcommunity-group&report=design-tokens+%28user%29) [Contributors 62](/design-tokens/community-group/graphs/contributors) [+ 48 contributors](/design-tokens/community-group/graphs/contributors) [HTML 94.0%](/design-tokens/community-group/search?l=html) [Astro 3.1%](/design-tokens/community-group/search?l=astro) [SCSS 2.0%](/design-tokens/community-group/search?l=scss)",
+      "metadata": {
+        "startIndex": 8613,
+        "endIndex": 9613,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens",
+      "github",
+      "specification",
+      "dtcg"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:02:30.123Z",
+    "system": "DTCG",
+    "author": "W3C",
+    "source_url": "https://github.com/design-tokens/community-group"
+  }
+}

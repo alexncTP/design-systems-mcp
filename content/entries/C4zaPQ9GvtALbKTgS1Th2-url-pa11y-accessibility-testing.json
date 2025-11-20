@@ -1,0 +1,46 @@
+{
+  "id": "C4zaPQ9GvtALbKTgS1Th2",
+  "title": "Pa11y Accessibility Testing",
+  "source": {
+    "type": "url",
+    "location": "https://pa11y.org/",
+    "ingested_at": "2025-11-20T14:03:26.960Z"
+  },
+  "content": "# Pa11y ### Pa11y Dashboard ### Pa11y Webservice ### Pa11y CI ## Get involved Here at Pa11y, we think making the web more accessible improves it for everyone. So we publish a range of free and open source tools to help designers and developers make their web pages more accessible: A command-line interface which loads web pages and highlights any accessibility issues it finds. Useful for when you want to run a one-off test against a web page. A web dashboard which automatically tests web pages for accessibility issues daily. Graphs help you track improvements and regressions over time. Useful for non-developers to see how your sites perform. The JSON-based webservice that backs Pa11y Dashboard. Useful if you want to build your own dashboard-like front end, or repurpose the data. A command-line tool which iterates over a list of web pages and highlights accessibility issues. This is a CLI that’s more geared towards use in . If you’re interested in helping us out, we’d love to hear from you. Head on over to to get started! ## Links [Pa11y](https://github.com/pa11y/pa11y) [Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) [Pa11y Webservice](https://github.com/pa11y/pa11y-webservice) [Pa11y CI](https://github.com/pa11y/pa11y-ci) [View all of our open source projects](https://github.com/pa11y) [our contributors guide](/contributing/)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Pa11y ### Pa11y Dashboard ### Pa11y Webservice ### Pa11y CI ## Get involved Here at Pa11y, we think making the web more accessible improves it for everyone. So we publish a range of free and open source tools to help designers and developers make their web pages more accessible: A command-line interface which loads web pages and highlights any accessibility issues it finds. Useful for when you want to run a one-off test against a web page. A web dashboard which automatically tests web pages for accessibility issues daily. Graphs help you track improvements and regressions over time. Useful for non-developers to see how your sites perform. The JSON-based webservice that backs Pa11y Dashboard. Useful if you want to build your own dashboard-like front end, or repurpose the data. A command-line tool which iterates over a list of web pages and highlights accessibility issues. This is a CLI that’s more geared towards use in .",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 936,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "of web pages and highlights accessibility issues. This is a CLI that’s more geared towards use in . If you’re interested in helping us out, we’d love to hear from you. Head on over to to get started! ## Links [Pa11y](https://github.com/pa11y/pa11y) [Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) [Pa11y Webservice](https://github.com/pa11y/pa11y-webservice) [Pa11y CI](https://github.com/pa11y/pa11y-ci) [View all of our open source projects](https://github.com/pa11y) [our contributors guide](/contributing/)",
+      "metadata": {
+        "startIndex": 836,
+        "endIndex": 1836,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tools",
+    "tags": [
+      "accessibility",
+      "testing",
+      "automation"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:03:26.960Z",
+    "system": "Pa11y",
+    "source_url": "https://pa11y.org/"
+  }
+}

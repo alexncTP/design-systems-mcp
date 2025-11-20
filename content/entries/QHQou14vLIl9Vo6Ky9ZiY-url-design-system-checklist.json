@@ -1,0 +1,24 @@
+{
+  "id": "QHQou14vLIl9Vo6Ky9ZiY",
+  "title": "Design System Checklist",
+  "source": {
+    "type": "url",
+    "location": "https://www.designsystemchecklist.com/",
+    "ingested_at": "2025-11-20T14:02:42.625Z"
+  },
+  "content": "",
+  "chunks": [],
+  "metadata": {
+    "category": "guidelines",
+    "tags": [
+      "design-systems",
+      "checklist",
+      "process",
+      "governance"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:02:42.625Z",
+    "system": "Design System Checklist",
+    "source_url": "https://www.designsystemchecklist.com/"
+  }
+}

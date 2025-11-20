@@ -1,0 +1,35 @@
+{
+  "id": "uvzxIKt2n5gD0DPySo1my",
+  "title": "Type Scale",
+  "source": {
+    "type": "url",
+    "location": "https://typescale.com/",
+    "ingested_at": "2025-11-20T14:03:27.473Z"
+  },
+  "content": "## Responsive ## Body ## Headings Typescale © Typescale ## Links [Typescale](https://typescale.com) [Login](https://typescale.com/my-account/) [New Board](https://typescale.com) [My Boards](/sign-up) [Bookmarks](/sign-up) [Likes](/sign-up) [Explore](/sign-up) [Support](/contact) [Terms](/terms-of-service) [Privacy](/privacy-policy)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## Responsive ## Body ## Headings Typescale © Typescale ## Links [Typescale](https://typescale.com) [Login](https://typescale.com/my-account/) [New Board](https://typescale.com) [My Boards](/sign-up) [Bookmarks](/sign-up) [Likes](/sign-up) [Explore](/sign-up) [Support](/contact) [Terms](/terms-of-service) [Privacy](/privacy-policy)",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    }
+  ],
+  "metadata": {
+    "category": "general",
+    "tags": [
+      "typography",
+      "scale",
+      "tools"
+    ],
+    "confidence": "medium",
+    "last_updated": "2025-11-20T14:03:27.473Z",
+    "system": "Type Scale",
+    "source_url": "https://typescale.com/"
+  }
+}

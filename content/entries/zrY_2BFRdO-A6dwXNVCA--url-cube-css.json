@@ -1,0 +1,58 @@
+{
+  "id": "zrY_2BFRdO-A6dwXNVCA-",
+  "title": "CUBE CSS",
+  "source": {
+    "type": "url",
+    "location": "https://cube.fyi/",
+    "ingested_at": "2025-11-20T14:03:28.717Z"
+  },
+  "content": "## # What does CUBE CSS stand for? ## # How does CUBE CSS compare to other methodologies? ## # Does CUBE CSS scale? ## # A high-level overview CUBE CSS is a CSS methodology that’s orientated towards simplicity, pragmatism and consistency. It’s designed to work the medium that you’re working in—often the browser—rather than it. This project is very much a work in progress so this documentation will continue to evolve. CUBE stands for . CSS stands for . The CSS part comes straight from the language: . The name of this methodology gives the game away straight away; it’s an rather than a reinvention of CSS. The CUBE part extends what we already get for free with CSS to give us a little bit of control, where we need it. This differs somewhat to other popular methodologies like , which are very good in their own right, but also . If you were to compare methodologies: it would be safe to say that CUBE CSS takes most of its inspiration from . A good way to think of it is a step back from BEM’s principles. This is because the core of BEM is , whereas with CUBE CSS, the core is CSS. The cascade and inheritance are , not avoided, so by the time you get down to in CUBE, they become much more insignificant. Just like CSS: CUBE CSS scales perfectly well and has been used to power massive websites, tiny blogs, mobile apps and even intranet software. This methodology has roots in both huge projects that service millions of people all the way down to small websites and , thanks to its flexibility. This flexibility has also enabled CUBE CSS to work in both very old and very new codebases. It’s recommended that you on this blog. It’s an introductory post which gives a high-level overview of what CUBE CSS is and how it works with some simplified examples. ## Links [CSS (opens new window)](https://developer.mozilla.org/en-US/docs/Web/CSS) [BEM (opens new window)](http://getbem.com/) [starter kits (opens new window)](https://hylia.website/) [read “CUBE CSS” (opens new window)](https://piccalil.li/blog/cube-css) [Read the post (opens new window)](https://piccalil.li/blog/cube-css) [Principles](/principles)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## # What does CUBE CSS stand for? ## # How does CUBE CSS compare to other methodologies? ## # Does CUBE CSS scale? ## # A high-level overview CUBE CSS is a CSS methodology that’s orientated towards simplicity, pragmatism and consistency. It’s designed to work the medium that you’re working in—often the browser—rather than it. This project is very much a work in progress so this documentation will continue to evolve. CUBE stands for . CSS stands for . The CSS part comes straight from the language: . The name of this methodology gives the game away straight away; it’s an rather than a reinvention of CSS. The CUBE part extends what we already get for free with CSS to give us a little bit of control, where we need it. This differs somewhat to other popular methodologies like , which are very good in their own right, but also . If you were to compare methodologies: it would be safe to say that CUBE CSS takes most of its inspiration from .",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 949,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "o compare methodologies: it would be safe to say that CUBE CSS takes most of its inspiration from . A good way to think of it is a step back from BEM’s principles. This is because the core of BEM is , whereas with CUBE CSS, the core is CSS. The cascade and inheritance are , not avoided, so by the time you get down to in CUBE, they become much more insignificant. Just like CSS: CUBE CSS scales perfectly well and has been used to power massive websites, tiny blogs, mobile apps and even intranet software. This methodology has roots in both huge projects that service millions of people all the way down to small websites and , thanks to its flexibility. This flexibility has also enabled CUBE CSS to work in both very old and very new codebases. It’s recommended that you on this blog. It’s an introductory post which gives a high-level overview of what CUBE CSS is and how it works with some simplified examples.",
+      "metadata": {
+        "startIndex": 849,
+        "endIndex": 1766,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ich gives a high-level overview of what CUBE CSS is and how it works with some simplified examples. ## Links [CSS (opens new window)](https://developer.mozilla.org/en-US/docs/Web/CSS) [BEM (opens new window)](http://getbem.com/) [starter kits (opens new window)](https://hylia.website/) [read “CUBE CSS” (opens new window)](https://piccalil.li/blog/cube-css) [Read the post (opens new window)](https://piccalil.li/blog/cube-css) [Principles](/principles)",
+      "metadata": {
+        "startIndex": 1666,
+        "endIndex": 2666,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    }
+  ],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "css",
+      "architecture",
+      "methodology"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:03:28.717Z",
+    "system": "CUBE CSS",
+    "author": "Andy Bell",
+    "source_url": "https://cube.fyi/"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "jhAx8GbXbXzJnV7_fE-GT",
+  "title": "Style Dictionary Documentation",
+  "source": {
+    "type": "url",
+    "location": "https://styledictionary.com/",
+    "ingested_at": "2025-11-20T14:02:29.666Z"
+  },
+  "content": "# Style Dictionary ## Live Demo Export your Design Tokens to any platform - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. Forward-compatible with . Below is a showcase of how a set of DTCG tokens would be exported to CSS: Upload your JSON or ZIP of tokens and convert them to DTCG format: ## Links [Design Tokens Community Group spec](https://tr.designtokens.org/format/) [Documentation](/getting-started/installation) [Migration to Version 4](/versions/v4/migration/) [GitHub](https://github.com/style-dictionary/style-dictionary) [v3 docs](https://v3.styledictionary.com) [Read more about DTCG](/info/dtcg/)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Style Dictionary ## Live Demo Export your Design Tokens to any platform - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. Forward-compatible with . Below is a showcase of how a set of DTCG tokens would be exported to CSS: Upload your JSON or ZIP of tokens and convert them to DTCG format: ## Links [Design Tokens Community Group spec](https://tr.designtokens.org/format/) [Documentation](/getting-started/installation) [Migration to Version 4](/versions/v4/migration/) [GitHub](https://github.com/style-dictionary/style-dictionary) [v3 docs](https://v3.styledictionary.com) [Read more about DTCG](/info/dtcg/)",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens",
+      "implementation",
+      "build-tools",
+      "style-dictionary"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:02:29.666Z",
+    "system": "Style Dictionary",
+    "author": "Amazon",
+    "source_url": "https://styledictionary.com/"
+  }
+}

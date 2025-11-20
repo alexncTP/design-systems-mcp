@@ -1,0 +1,48 @@
+{
+  "id": "V9pOh_nzXfN3AOCdAB_3F",
+  "title": "Style Dictionary DTCG Guide",
+  "source": {
+    "type": "url",
+    "location": "https://styledictionary.com/info/dtcg/",
+    "ingested_at": "2025-11-20T14:02:29.673Z"
+  },
+  "content": "# Design Tokens Community Group ## Convert your tokens to the DTCG format ## Live demo The ’s (DTCG) goal is to “provide standards upon which products and design tools can rely for sharing stylistic pieces of a design system at scale”. The Community Group publishes a for cross-tool and cross-platform interoperability. , Style Dictionary has first-class support for the DTCG format. We provide a tool that converts design tokens from the Style Dictionary v3 JSON format to the DTCG format: What it does: • ✅ Converts , and design token property keys into , and respectively. • ✅ Moves properties from the uppermost common ancestor token group to individual design tokens What it does not do (at the moment, ): • ⛔ It does not refactor type values commonly used to the DTCG types (for example: -> ). ## Links [Design Tokens W3C Community Group](https://www.w3.org/community/design-tokens/) [specification defining how Design Tokens ought to be formatted](https://tr.designtokens.org/format/) [suggestions welcome](https://github.com/style-dictionary/style-dictionary/issues/new?title=Conversion%20tool%20suggestion:%20%3Cyour-suggestion-here%3E)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Design Tokens Community Group ## Convert your tokens to the DTCG format ## Live demo The ’s (DTCG) goal is to “provide standards upon which products and design tools can rely for sharing stylistic pieces of a design system at scale”. The Community Group publishes a for cross-tool and cross-platform interoperability. , Style Dictionary has first-class support for the DTCG format. We provide a tool that converts design tokens from the Style Dictionary v3 JSON format to the DTCG format: What it does: • ✅ Converts , and design token property keys into , and respectively. • ✅ Moves properties from the uppermost common ancestor token group to individual design tokens What it does not do (at the moment, ): • ⛔ It does not refactor type values commonly used to the DTCG types (for example: -> ). ## Links [Design Tokens W3C Community Group](https://www.w3.org/community/design-tokens/) [specification defining how Design Tokens ought to be formatted](https://tr.designtokens.org/format/)",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 992,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "pecification defining how Design Tokens ought to be formatted](https://tr.designtokens.org/format/) [suggestions welcome](https://github.com/style-dictionary/style-dictionary/issues/new?title=Conversion%20tool%20suggestion:%20%3Cyour-suggestion-here%3E)",
+      "metadata": {
+        "startIndex": 892,
+        "endIndex": 1892,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens",
+      "dtcg",
+      "implementation",
+      "style-dictionary"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:02:29.673Z",
+    "system": "Style Dictionary",
+    "author": "Amazon",
+    "source_url": "https://styledictionary.com/info/dtcg/"
+  }
+}

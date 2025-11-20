@@ -1,0 +1,688 @@
+{
+  "id": "xIJbGn5ztgup2RCt949bk",
+  "title": "Design Tokens Format Module Specification",
+  "source": {
+    "type": "url",
+    "location": "https://tr.designtokens.org/format/",
+    "ingested_at": "2025-11-20T14:02:28.484Z"
+  },
+  "content": "# Design Tokens Format Module 2025.10 ## Abstract ## Status of This Document ## 1. Conformance ## 2. Introduction ## 3. Terminology ### 3.1 (Design) Token ### 3.2 (Design) Token Properties ### 3.3 Design tool ### 3.4 Translation tool ### 3.5 Documentation tool ### 3.6 Type ### 3.7 Group ### 3.8 Alias (Reference) ### 3.9 Composite (Design) Token ## 4. File format ### 4.1 Media type (MIME type) ### 4.2 File extensions ## 5. Design token ### 5.1 Name and value #### 5.1.1 Character restrictions ### 5.2 Additional properties #### 5.2.1 Description #### 5.2.2 Type #### 5.2.3 Extensions #### 5.2.4 Deprecated ## 6. Groups ### 6.1 Group Structure ### 6.2 Root Tokens in Groups ### 6.3 Group Properties #### 6.3.1 $deprecated #### 6.3.2 $extensions ### 6.4 Extending Groups #### 6.4.1 Equivalence to JSON Schema $ref #### 6.4.2 Reference Resolution and Evaluation #### 6.4.3 Inheritance Semantics #### 6.4.4 Circular Reference Prevention #### 6.4.5 Supported Reference Formats #### 6.4.6 Error Conditions #### 6.4.7 Implementation Guidance #### 6.4.8 Relationship to JSON Schema Specifications ### 6.5 Empty Groups ### 6.6 References and JSON Pointer Integration #### 6.6.1 Current Reference Syntax (Recommended) #### 6.6.2 JSON Pointer Support ### 6.7 Processing Rules #### 6.7.1 Token Resolution Order #### 6.7.2 Path Construction #### 6.7.3 Type Inheritance #### 6.7.4 Circular Reference Detection ### 6.8 Migration and Compatibility ### 6.9 Examples #### 6.9.1 Basic Group with Root Token #### 6.9.2 Group Extension with Override Example #### 6.9.3 Complex Hierarchical Structure ### 6.10 Use-cases #### 6.10.1 File authoring & organization #### 6.10.2 GUI tools #### 6.10.3 Translation tools ## 7. Aliases / References ### 7.1 Reference Syntax #### 7.1.1 Curly Brace Syntax (Token References) #### 7.1.2 JSON Pointer Syntax (Required Support) ### 7.2 Reference Resolution #### 7.2.1 Resolution Algorithms #### 7.2.2 Chained References #### 7.2.3 Circular References ### 7.3 Property-Level References #### 7.3.1 Color Component References #### 7.3.2 Dimension Component References #### 7.3.3 Typography Component References ### 7.4 JSON Pointer Path Construction and Resolution #### 7.4.1 Path Construction Rules #### 7.4.2 Token Value Access Patterns #### 7.4.3 Resolution Algorithm for JSON Pointer #### 7.4.4 Curly Brace Resolution Algorithm #### 7.4.5 Error Conditions #### 7.4.6 Path Examples ### 7.5 Implementation Guidance #### 7.5.1 For Tool Authors #### 7.5.2 Disambiguation Examples #### 7.5.3 Error Conditions ### 7.6 Relationship to JSON Schema ## 8. Types ### 8.1 Color ### 8.2 Dimension #### 8.2.1 Validation ### 8.3 Font family ### 8.4 Font weight ### 8.5 Duration #### 8.5.1 Validation ### 8.6 Cubic Bézier ### 8.7 Number ### 8.8 Additional types ## 9. Composite types ### 9.1 Array aliasing in composite types ### 9.2 Groups versus composite tokens ### 9.3 Stroke style #### 9.3.1 String value #### 9.3.2 Object value #### 9.3.3 Fallbacks ### 9.4 Border ### 9.5 Transition ### 9.6 Shadow ### 9.7 Gradient ### 9.8 Typography ## A. Issue summary ## B. References ### B.1 Normative references This document describes the technical specification for a file format to exchange design tokens between different tools. Do not attempt to implement this version of the specification. Do not reference this version as authoritative in any way. This specification was published by the . It is not a W3C Standard nor is it on the W3C Standards Track. Please note that under the there is a limited opt-out and other conditions apply. Learn more about . This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C Community Group reports and the latest revision of this report can be found in the W3C Community Group reports index at . ⚠️ This is a of in progress changes. Do not refer to this document directly, and do not implement anything in this document. are preferred for discussion of this specification. As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative. The key words , , , , and in this document are to be interpreted as described in [] [] when, and only when, they appear in all capitals, as shown here. Design tokens are a methodology for expressing design decisions in a platform-agnostic way so that they can be shared across different disciplines, tools, and technologies. They help establish a common vocabulary across organizations. There is a growing ecosystem of tools for design system maintainers and consumers that incorporate design token functionality, or would benefit from doing so: • have begun allowing designers to label and reference shared values for design properties like colors and sizes. • exist that can convert source design token data into platform-specific source code that can directly be used by developers. • can display design token names rather than the raw values in design specs and style guides. It is often desirable for design system teams to integrate such tools together, so that design token data can flow between design and development tools. For example: • Extracting design tokens from design files and feeding them into to then be converted into platform-specific code • Maintaining a \"single source of truth\" for design tokens and automatically keeping design and development tools in sync with it While many tools now offer APIs to access design tokens or the ability to export design tokens as a file, these are all tool-specific. The burden is therefore on design system teams to create and maintain their own, bespoke \"glue\" code or workflows. Furthermore, if teams want to migrate to different tools, they will need to update those integrations. This specification aims to facilitate better interoperability between tools and thus lower the work design system teams need to do to integrate them by defining a standard file format for expressing design token data. These definitions are focused on the technical aspects of the specification, aimed at implementers such as vendors. Definitions for designers and developers are available at . A (Design) Token is information associated with a human readable name, at minimum a name/value pair. The name may be associated with additional . Information associated with a token name. • Value • Type • Description Additional metadata may be added by tools and design systems to extend the format as needed. A design tool is a tool for visual design creation and editing. • Bitmap image manipulation programs: • Vector graphics tools: • UI design, wireframing and prototyping tools: Design token translation tools translate token data from one format to another. A documentation tool is a tool for documenting design tokens usage. A token's type is a predefined categorization applied to the token's value. • Color • Size • Duration Token tools can use Types to infer the purpose of a token. • A might reference a token's type to convert the source value into the correct platform-specific format. • A visual might reference type to present tokens in the appropriate part of their UI - as in, color tokens are listed in the color picker, font tokens in the text styling UI's fonts list, and so on. A group is a set of tokens belonging to a specific category. • Brand • Alert • Layout Groups are arbitrary and tools use them to infer the type or purpose of design tokens. A design token's value can be a reference to another token. The same value can have multiple names or . The following Sass example illustrates this concept: The value of is , because . We can also say is an for A design token whose value is made up of multiple, named child values. Composite tokens are useful for closely related style properties that are always applied together. For example, a typography style might be made up of a font name, font size, line height, and color. Here's : Design token files are JSON () files that adhere to the structure described in this specification. JSON was chosen as an interchange format on the basis of: • Broad support in many programming languages' standard libraries. This is expected to lower barriers to entry for developers writing software that supports design token files. • Current popularity and widespread use. This is expected to lower the learning curve as many people will already be familiar with JSON. • Being text-based (rather than binary) allows hand-editing design token files without needing specialized software other than a basic text editor. It also means the files are somewhat human-readable. When serving design token files via HTTP / HTTPS or in any other scenario where a media type (formerly known as MIME type) needs to be specified, the following MIME type be used for design token files: However, since every design token file is a valid JSON file, they be served using the JSON media type: . The above, more specific media type is preferred and be used wherever possible. Tools that can open design token files support both media types. When saving design token files on a local file system, it can be useful to have a distinct file extension as this makes them easier to spot in file browsers. It may also help to associate a file icon and a preferred application for opening those files. The following file extensions are recommended by this spec: The former is more succinct. However, until this format is widely adopted and supported, the latter might be useful to make design token files open in users' preferred JSON editors. Tools that can open design token files filter available files (e.g. in an open file dialog) to only show ones using those extensions. It is recommended to also provide users with a way of opening files that do not use those extensions (e.g. a \"show all files\" option or similar). Tools that can save design token files append one of the recommended file extensions to the filename when saving. The group is currently exploring the addition of a JSON Schema to support the spec. A concern about file size limitations of JSON files was raised by one of the vendors. The working group continues to gather feedback about any limitations the JSON format imposes. An object with a property is a token. Thus, is a reserved word in our spec, meaning you can't have a token whose name is \"$value\". The parent object's key is the token name. A token's name be a valid JSON string as defined in []. The example above therefore defines 1 design token with the following properties: • Name: \"token name\" • Type: \"color\" • Value: • Color Space: \"srgb\" • Components: [1, 0, 0] Name and value are both . Token names are case-sensitive, so the following example with 2 tokens in the same group whose names only differ in case is valid: However, some tools need to transform names when exporting to other languages or displaying names to the user, so having token names that differ only in case is likely to cause identical and undesirable duplicates in the output. For example, a translation tool that converts these tokens to Sass code would generate problematic output like this: Tools display a warning when token names differ only by case. All properties defined by this format are prefixed with the dollar sign (). This convention will also be used for any new properties introduced by future versions of this spec. Therefore, token and names begin with the character. Furthermore, due to the syntax used for the following characters be used anywhere in a token or group name: • (left curly bracket) • (right curly bracket) • (period) While is the only required property for a token, a number of additional properties be added: A plain text description explaining the token's purpose can be provided via the optional property. Tools use the description in various ways. • Style guide generators display the description text alongside a visual preview of the token • IDEs display the description as a tooltip for auto-completion (similar to how API docs are displayed) • display the description as a tooltip or alongside tokens wherever they can be selected • Translation tools render the description to a source code comment alongside the variable or constant they export. The value of the property be a plain JSON string, for example: Design tokens always have an unambiguous type, so that tools can reliably interpret their value. A token's type can be specified by the optional property. If the property is not set on a token, then the token's type be determined as follows: • If the token's value is a reference, then its type is the resolved type of the token being referenced. • Otherwise, if any of the token's parent groups have a property, then the token's type is inherited from the closest parent group with a property. • Otherwise, if none of the parent groups have a property, the token's type cannot be determined and the token be considered invalid. Tools attempt to guess the type of a token by inspecting the contents of its value. The property can be set on different levels: • at the group level • at the token level The property be a plain JSON string, whose value is one of the values specified in this specification's respective type definitions. The value of is case-sensitive. The optional property is an object where tools add proprietary, user-, team- or vendor-specific data to a design token. When doing so, each tool use a vendor-specific key whose value be any valid JSON data. • The keys be chosen such that they avoid the likelihood of a naming clash with another vendor's data. The is recommended for this purpose. • Tools that process design token files preserve any extension data they do not themselves understand. For example, if a design token contains extension data from tool A and the file containing that data is opened by tool B, then tool B include the original tool A extension data whenever it saves a new design token file containing that token. In order to maintain interoperability between tools that support this format, teams and tools restrict their usage of extension data to optional meta-data that is not crucial to understanding that token's value. Tool vendors are encouraged to publicly share specifications of their extension data wherever possible. That way other tools can add support for them without needing to reverse engineer the extension data. Popular extensions could also be incorporated as standardized features in future revisions of this specification. The extensions section is not limited to vendors. All token users can add additional data in this section for their own purposes. The property be used to mark a token as deprecated, and optionally explain the reason. Reasons to deprecate tokens include but are not limited to the following: • A future update to the design system will remove this token • Removing the token now may break existing support • This token is discouraged from future use Explanation This token is deprecated (no explanation provided). This token is deprecated AND this is an explanation. This token is NOT deprecated (may override group defaults). Tool makers augment the string when it contains aliases such as the one given as an example. A tool could potentially resolve the token, and link to docs, code, or render a visual representation of it and link to the new token inside a UI. For example, “Please use {button.activeBorder} instead“ could be output in JS as: Groups organize design tokens into logical collections and provide a hierarchical structure for token files. Groups are arbitrary and tools use them to infer the type or purpose of design tokens. A group is identified as a JSON object that does NOT contain a property. Groups contain: • - Objects with a property • - Objects without a property • - Properties prefixed with (e.g., , ) The presence of a property definitively identifies an object as a token. If an object contains both and child tokens/groups, this creates an invalid structure where the object cannot be both a token and a group simultaneously. Tools report this as an error. Groups contain a alongside child tokens and nested groups. A root token provides a base value for the group while allowing for variants or extensions. Groups support root tokens using the reserved name as the token name: Using as a reserved token name eliminates ambiguity between group references and token references while maintaining clear, explicit syntax. The prefix prevents naming conflicts with user-defined tokens and aligns with other reserved properties in the specification. Groups include the following properties: Property Required A plain JSON string describing the group's purpose Acts as a default type for tokens within the group that do not explicitly declare their own type. Type inheritance applies to nested groups and their tokens unless overridden Inherits tokens and properties from another group. See for details Marks the group as deprecated. Value can be , , or a string explanation Vendor-specific extensions where tools add proprietary data Groups include an optional property to mark the entire group as deprecated. This extends to all child tokens within the group unless explicitly overridden. This group is deprecated (no explanation provided) This group is deprecated AND this is an explanation This group is NOT deprecated (may override parent group defaults) Groups include an optional property where tools add proprietary, user-, team- or vendor-specific data. Each tool use a vendor-specific key whose value be any valid JSON data. Groups include an optional property to inherit tokens and properties from another group. reference a token. The property is syntactic sugar for JSON Schema's keyword and follows the same semantic behavior as defined in []. The property is semantically equivalent to JSON Schema's keyword as specified in [] and later versions. The following two group definitions are functionally identical: Extension resolution follows a straightforward process: • Resolve the reference to locate the target group • Start with all tokens and properties from the target group • Replace any inherited tokens/properties where local ones exist at the same path • Include any local tokens/properties that don't exist in the inherited group This creates a new resolved group that combines inherited and local content according to the override rules above. Group extension follows behavior where local properties override inherited properties at the same path: • All tokens and properties from the referenced group are inherited (circular references are not allowed) • Local tokens and properties replace inherited ones with the same path • Local tokens and properties with new paths are added alongside inherited ones • If both the inherited group and local group define a token at the same path, the local definition wins • Tokens at different paths coexist in the final result • When overriding, the entire token definition is replaced (not merged property-by-property) Token Final Value (local override wins) (inherited, no local override) Source overridden inherited added Groups create circular inheritance chains. The following patterns are : supports the same reference formats as . error handling follows JSON Schema error patterns: • When the target group cannot be found • When the reference points to a non-group (e.g., a token) • When extension chains create cycles • When local properties violate inherited constraints Tools implement the same error detection and reporting patterns used by JSON Schema validators for resolution. Tools implementing design token parsing choose to: • Convert to standard JSON Schema syntax and use existing JSON Schema libraries for validation • Implement directly using the same algorithms as JSON Schema processing • Use JSON Schema libraries for validation while maintaining design token-specific reference syntax Regardless of implementation approach, the semantic behavior be equivalent to JSON Schema as specified in JSON Schema 2020-12 or later. This specification defines as syntactic sugar for JSON Schema's keyword, providing design token-specific reference syntax while maintaining equivalent behavior. The deep merge semantics described above align with how JSON Schema 2020-12 handles with sibling properties. For implementers familiar with JSON Schema, the behavior is equivalent to: • Converting to • Applying JSON Schema 2020-12 resolution with sibling property evaluation Tools implementing this specification choose to: • Convert to and use JSON Schema libraries • Implement the deep merge behavior described above • Use JSON Schema for validation while maintaining design token syntax Regardless of implementation approach, the user-visible behavior match the deep merge semantics described in this specification. Groups be empty (contain no tokens or nested groups). While they may appear to serve no immediate purpose, they: • Cause no harm to processing or validation • Support work-in-progress organization during token development • May contain metadata via group properties (, ) • Provide placeholder structure for future token development The current using curly braces () is maintained for backward compatibility and developer ergonomics. However, tools also support JSON Pointer notation for advanced use cases. Tools support JSON Pointer references as defined by [], using the property: When processing groups, tools follow this resolution order: • - Direct children with properties • - Tokens with names • - Tokens inherited via (if not overridden) • - Process recursively Token paths are constructed by concatenating group names and token names with periods (). The reserved token name is included in the path to maintain explicit, unambiguous references. Examples: Location Path Notes Token path Invalid for token resolution, valid for groups Type resolution follows these rules in order of precedence: • (highest precedence) • (after extension resolution) • (walking up the hierarchy) • if no type can be determined Since follows JSON Schema semantics, type inheritance behavior is determined by constraint validation rather than explicit merge rules. Local type constraints are evaluated alongside inherited constraints according to JSON Schema validation patterns. In this example, the group must satisfy both its local constraint and any applicable constraints from the referenced group, following JSON Schema constraint resolution rules. Tools detect and throw an error on circular references in: • Token ( references) • Group extensions ( references) • JSON Pointer references ( properties, if supported) Circular reference detection for follows the same requirements as JSON Schema circular reference detection. Tools implement the same algorithms used by JSON Schema validators for cycle detection. Tools report this as an error affecting groups , , and . This specification is designed to be backward compatible with existing design token files. Tools implementing this specification: • continue to support existing group syntax • provide warnings for deprecated patterns • implement new features incrementally • validate that token names do not conflict with reserved properties • → (overridden) • → (inherited from input) This demonstrates the key use case where a component extends a base component but overrides specific tokens while inheriting others. This structure creates tokens accessible as: Token Reference Resolved Value Groups let token file authors better organize their token files. Related tokens can be nested into groups to align with the team's naming conventions and/or mental model. When manually authoring files, using groups is also less verbose than a flat list of tokens with repeating prefixes. ...is likely to be more convenient to type and, arguably, easier to read, than: Tools that let users pick or edit tokens via a GUI use the grouping structure to display a suitable form of progressive disclosure, such as a collapsible tree view. Token names are not guaranteed to be unique within the same file. The same name can be used in different groups. Also, translation tools need to export design tokens in a uniquely identifiable way, such as variables in code. Translation tools therefore use design tokens' paths as these unique within a file. For example, a like might use the following design token file: ...and output it as Sass variables like so by concatenating the path to create variable names: Instead of having explicit values, tokens can reference the value of another token. To put it another way, a token can be an alias for another token. This spec considers the terms \"alias\" and \"reference\" to be synonyms and uses them interchangeably. Aliases are useful for: • Expressing design choices • Eliminating repetition of values in token files (DRYing up the code) • Creating semantic relationships between tokens • Maintaining consistency across related values Design tokens support two distinct syntaxes for referencing content within token files: The curly brace syntax is specifically designed for referencing and always resolves to the property of the target token. In this example, resolves to the entire color object . Curly brace references can ONLY target complete tokens (objects with properties), not individual properties within token values or arbitrary document locations. For advanced use cases requiring access to specific properties within token values or other parts of the document structure, tokens support JSON Pointer notation as defined by [], using the property. Tools implementing this specification support JSON Pointer syntax. In this example: • is equivalent to • accesses just the red component (0) of the blue color Aspect Curly Brace JSON Pointer Complete tokens only Any document location Always appends Explicit full path required Token-to-token references Property-level references When a tool needs the actual value of a token it resolve the reference - i.e. lookup the token being referenced and fetch its value. Tools preserve references and therefore only resolve them whenever the actual value needs to be retrieved. For instance, in a , changes to the value of a token being referenced by aliases be reflected wherever those aliases are being used. • Extract token path from • Convert to segments • Find the target token object • Ensure target has property • Extract and return the content • Maintain stack of resolving references • Extract path segments from • Navigate through each path segment • Numeric segments in array contexts become array indices • All segments in object contexts become property names • Handle escaped characters (, ) • Ensure the final target exists and is accessible • Extract and return the resolved value Aliases reference other aliases. In this case, tools follow each reference until they find a token with an explicit value. In this example, resolves to the same color value as by following the chain: → → . References be circular. If a design token file contains circular references, then the value of all tokens in that chain is unknown and an appropriate error or warning message be displayed to the user. Tools detect and report this as an error affecting all tokens in the circular chain. JSON Pointer syntax enables references to specific properties within composite tokens, not just entire token values. This enables fine-grained reuse of token components while maintaining semantic relationships. Property-level references require JSON Pointer syntax () and cannot be expressed using curly brace syntax. • uses the same numeric value as (16) but with a different unit () • uses the same unit as () but with a different numeric value (32) • Both headings inherit the and from • Each heading defines its own and • Changes to the base font family or line height automatically affect all headings JSON Pointer syntax provides direct access to any location within the design token document structure, following standard JSON Pointer rules as defined by []. • (refers to the document root) • separates each level (e.g., ) • Numeric indices for array elements (e.g., ) • Must be escaped according to JSON Pointer rules: • becomes Since design tokens store their values in properties, JSON Pointer paths to token values follow a predictable pattern: Equivalent Curly Brace Reference Complete token value N/A Hex property of color First component of color Token type metadata Tools report errors for: • Malformed curly braces or JSON Pointer syntax • Target path does not exist in document • Curly brace syntax targeting non-tokens • Reference chains that loop back to themselves • Referenced value incompatible with expected type Token Path Curly Brace Syntax Root token \"primary\" Nested token Array element not supported Property with space Property with slash Tools implementing design token parsing : • as the primary reference mechanism for token-to-token references • for document-level references and property access • to ensure they point to valid tokens (for curly brace) or valid document locations (for JSON Pointer) • according to the resolution algorithms defined in this specification () • before attempting resolution • in memory/storage and resolve only when values are needed • from referenced tokens to all aliases Reference Result JSON Pointer array index curly brace object property Error curly braces cannot access array indices property \"2\" doesn't exist • Target path does not exist • Referenced property type incompatible with token type • Attempting to reference non-existent properties The reference syntax defined in this specification provides compatibility with JSON Schema patterns while serving the specific needs of design token authoring: • Direct support for RFC 6901 JSON Pointer notation enables integration with JSON Schema tooling • Curly brace references provide token-specific syntax optimized for common token-to-token relationships • Both syntaxes serve different use cases within the design token ecosystem While JSON Pointer references () in design tokens follow the same syntax as JSON Schema , curly brace references () are design token-specific and provide different semantics (automatic resolution and token-only targeting) compared to standard JSON Schema references. Many tools need to know what kind of value a given token represents to process it sensibly. Translation tools need to convert or format tokens differently depending on their type. present the user with different kinds of input when editing tokens of a certain type (such as color picker, slider, text input, etc.). Style guide generators use different kinds of previews for different types of tokens. This spec defines a number of design-focused types and every design token use one of these types. Furthermore, that token's value then follow rules and syntax for the chosen type as defined by this spec. A token's type can be set directly by giving it a property specifying the chosen type. Alternatively, it can inherit a type from one of its parent groups, or be an alias of a token that has the desired type. If no explicit type has been set for a token, tools consider the token invalid and not attempt to infer any other type from the value. If an explicit type is set, but the value does not match the expected syntax then that token is invalid and an appropriate error be displayed to the user. To put it another way, the property is a declaration of what kind of values are permissible for the token. (This is similar to typing in programming languages like Java or TypeScript, where a value not compatible with the declared type causes a compilation error). Represents a color in the UI. For details on how to represent colors, see the module. Represents an amount of distance in a single dimension in the UI, such as a position, width, height, radius, or thickness. The property be set to the string . The value be an object containing a numeric (integer or floating-point) and of measurement ( or ). Key An integer or floating-point value representing the numeric value. Unit of distance. Supported values: , . • may only be or . • : Represents an idealized pixel on the viewport. The equivalent in Android is and iOS is . Translation tools therefore convert to these or other equivalent units as needed. • : Represents a multiple of the system's default font size (which be configurable by the user). 1rem is 100% of the default font size. The equivalent of 1rem on Android is 16sp. Not all platforms have an equivalent to rem, so translation tools need to do a lossy conversion to a fixed px size by assuming a default font size (usually 16px) for such platforms. • is still required even if is . A naive approach like the one below may be appropriate for the first stage of the specification, but this could be more complicated than it seems due to platform/OS/browser restrictions. Represents a font name or an array of font names (ordered from most to least preferred). The property be set to the string . The value either be a string value containing a single font name or an array of strings, each being a single font name. Represents a font weight. The property be set to the string . The value must either be a number value in the range [1, 1000] or one of the pre-defined string values defined in the table below. Lower numbers represent lighter weights, and higher numbers represent thicker weights, as per the . The pre-defined string values are aliases for specific numeric values. For example , and are all the exact same value. numeric value string value aliases Number values outside of the [1, 1000] range and any other string values, including ones that differ only in case, are invalid and be rejected by tools. Example: Represents the length of time in milliseconds an animation or animation cycle takes to complete, such as 200 milliseconds. The property be set to the string . The value be an object containing a numeric (either integer or floating-point) and a of milliseconds () or seconds (). A millisecond is a unit of time equal to one thousandth of a second. Unit of time. Supported values: (millisecond), (second). • may only be or Represents how the value of an animated property progresses towards completion over the duration of an animation, effectively creating visual effects such as acceleration, deceleration, and bounce. The property be set to the string . The value be an array containing four numbers. These numbers represent two points (P1, P2) with one x coordinate and one y coordinate each [P1x, P1y, P2x, P2y]. The y coordinates of P1 and P2 can be any real number in the range [-∞, ∞], but the x coordinates are restricted to the range [0, 1]. Represents a number. Numbers can be positive, negative and have fractions. Example uses for number tokens are or unitless line heights. The property be set to the string . The value be a JSON number value. Types still to be documented here are likely to include: • might be an enum of allowed values like (\"normal\", \"italic\"...) • e.g. for opacity values, relative dimensions, aspect ratios, etc. • Not 100% sure about this since these are really \"just\" numbers. An alternative might be that we expand the permitted syntax for the \"number\" type, so for example \"1:2\", \"50%\" and 0.5 are all equivalent. People can then use whichever syntax they like best for a given token. • for assets - might just be a relative file path / URL (or should we let people also express the mime-type?) The types defined in the previous chapters such as color and dimension all have singular values. For example, the value of a color token is color. However, there are other aspects of UI designs that are a combination of multiple values. For instance, a shadow style is a combination of a color, X & Y offsets, a blur radius and a spread radius. Every shadow style has the exact same parts (color, X & Y offsets, etc.), but their respective values will differ. Furthermore, each part's value (which is also known as a \"sub-value\") is always of the same type. A shadow's color must always be a value, its X offset must always be a value, and so on. Shadow styles are therefore combinations of values . In other words, shadow styles are themselves a type. Types like this are called . Specifically, a composite type has the following characteristics: • Its value is an object or array, potentially containing nested objects or arrays, following a pre-defined structure where the properties of the (nested) object(s) or the elements of the (nested) arrays are sub-values. • Sub-values may be explicit values (e.g. values) or references to other design tokens that have the sub-value's type (e.g. ). When a composite type contains array properties, each element in the array may be either an explicit value or a reference to a token of the appropriate type. References in arrays resolve to single values and do not cause array expansion or flattening. This allows for flexible composition where some array elements are references while others are explicit values. Array aliasing follows these principles: • : References in arrays always resolve to a single value of the appropriate type, never to arrays themselves. • : When referencing an array, the entire referenced array is treated as a single element in the referencing array. • : Each array element (explicit or referenced) must conform to the expected sub-value type for that composite type. • : Arrays may freely mix explicit values and references. For example, a shadow token with an array value can mix references to other shadow tokens with explicit shadow objects: A design token whose type happens to be a composite type is sometimes also called a composite (design) token. Besides their type, there is nothing special about composite tokens. They can have all the other additional properties like or . They can also be referenced by other design tokens. At first glance, groups and composite tokens might look very similar. However, they are intended to solve different problems and therefore have some important differences: • are for arbitrarily grouping tokens for the purposes of naming and/or organization. • They impose no rules or restrictions on how many tokens or nested groups you put within them, what they are called, or what the types of the tokens within should be. As such, tools try to infer any special meaning or typing of tokens based on a group they happen to be in. • Different design systems are likely to group their tokens differently. • You can think of groups as containers that exist \"outside\" of design tokens. • are individual design tokens whose values are made up of several sub-values. • Since they are design tokens, they can be referenced by other design tokens. This is not true for groups. • Their type must be one of the composite types defined in this specification. Therefore their names and types of their sub-values are pre-defined. Adding additional sub-values or setting values that don't have the correct type make the composite token invalid. • Tools provide specialized functionality for composite tokens. For example, a may let the user pick from a list of all available shadow tokens when applying a drop shadow effect to an element. Represents the style applied to lines or borders. The property be set to the string . The value be either: • a string value as defined in the corresponding section below, or • an object value as defined in the corresponding section below Is the current specification for stroke styles fit for purpose? Does it need more sub-values (e.g. equivalents to SVG's , and attributes)? String stroke style values be set to one of the following, pre-defined values: These values have the same meaning as the equivalent . As per the CSS spec, their exact rendering is therefore implementation specific. For example, the length of dashes and gaps in the style may vary between different tools. Object stroke style values have the following properties: • : An array of and/or references to dimension tokens, which specify the lengths of alternating dashes and gaps. Each element in the array must be either an explicit dimension value or a reference to a dimension token. If an odd number of values is provided, then the list of values is repeated to yield an even number of values. • : One of the following pre-defined string values: , or . These values have the same meaning as those of . The string and object values are mutually exclusive means of expressing stroke styles. For example, some of the string values like or cannot be expressed in terms of a and as they require some implementation-specific means of lightening or darkening the for portions of a border or outline. Conversely, a precisely defined combination of and sub-values is not guaranteed to produce the same visual result as the or keywords as they are implementation-specific. Furthermore, some tools and platforms may not support the full range of stroke styles that design tokens of this type can represent. When displaying or exporting a token whose value they don't natively support, they should therefore fallback to the closest approximation that they do support. The specifics of how a \"closest approximation\" is chosen are implementation-specific. However, the following examples illustrate what fallbacks tools use in some scenarios. Represents a border style. The property be set to the string . The value be an object with the following properties: • : The color of the border. The value of this property be a valid or a reference to a color token. • : The width or thickness of the border. The value of this property be a valid or a reference to a dimension token. • : The border's style. The value of this property be a valid or a reference to a stroke style token. Is the current specification for borders fit for purpose? Does it need more sub-values to account for features like outset, border images, multiple borders, etc. that some platforms and have? Represents a animated transition between two states. The property be set to the string . The value be an object with the following properties: • : The duration of the transition. The value of this property be a valid value or a reference to a duration token. • : The time to wait before the transition begins. The value of this property be a valid value or a reference to a duration token. • : The timing function of the transition. The value of this property be a valid value or a reference to a cubic Bézier curve token. Is the current specification for transitions fit for purpose? Are these transitions parameters by themselves useful considering that they don't let you specify what aspect of a UI is being transitioned and what the start and end states are? Represents a shadow style. The property be set to the string . The value be either: • a single shadow object with the properties defined below, or • an array of shadow objects and/or references to shadow tokens When the value is an array, each element must be either an explicit shadow object or a reference to another shadow token. References in the array resolve to single shadow objects and do not cause array flattening. Each shadow object (whether explicit or referenced) have the following properties: • : The color of the shadow. The value of this property be a valid or a reference to a color token. • : The horizontal offset that shadow has from the element it is applied to. The value of this property be a valid or a reference to a dimension token. • : The vertical offset that shadow has from the element it is applied to. The value of this property be a valid or a reference to a dimension token. • : The blur radius that is applied to the shadow. The value of this property be a valid or a reference to a dimension token. • : The amount by which to expand or contract the shadow. The value of this property be a valid or a reference to a dimension token. • : (optional) Whether this shadow is inside the containing shape (“inner shadow”), rather than a “drop shadow” or “box shadow” which is rendered outside the container (default, or ). Is the current specification for shadows fit for purpose? Does it need to support multiple shadows, as some tools and platforms do? Represents a color gradient. The property be set to the string . The value be an array of gradient stop objects and/or references to gradient tokens. Each element in the array must be either an explicit gradient stop object or a reference to a gradient token. References resolve to single gradient objects and do not cause array flattening. Each gradient stop object (whether explicit or referenced) have the following structure: • : The color value at the stop's position on the gradient. The value of this property be a valid or a reference to a color token. • : The position of the stop along the gradient's axis. The value of this property be a valid number value or reference to a number token. The number values must be in the range [0, 1], where 0 represents the start position of the gradient's axis and 1 the end position. If a number value outside of that range is given, it be considered as if it were clamped to the range [0, 1]. For example, a value of 42 should be treated as if it were 1, i.e. the end position of the gradient axis. Similarly, a value of -99 should be treated as if it were 0, i.e. the start position of the gradient axis. If there are no stops at the very beginning or end of the gradient axis (i.e. with 0 or 1, respectively), then the color from the stop closest to each end should be extended to that end of the axis. Is the current specification for gradients fit for purpose? Does it need to also specify the type of gradient (.e.g linear, radial, conical, etc.)? Represents a typographic style. The property be set to the string . The value be an object with the following properties: • : The typography's font. The value of this property be a valid or a reference to a font family token. • : The size of the typography. The value of this property be a valid or a reference to a dimension token. • : The weight of the typography. The value of this property be a valid or a reference to a font weight token. • : The horizontal spacing between characters. The value of this property be a valid or a reference to a dimension token. • : The vertical spacing between lines of typography. The value of this property be a valid or a reference to a number token. The number be interpreted as a multiplier of the . Is the current specification for typography styles fit for purpose? ? ## Links [Draft Community Group Report](https://www.w3.org/standards/types#reports) [https://www.designtokens.org/TR/2025.10/format/](https://www.designtokens.org/TR/2025.10/format/) [Louis Chenais](https://bsky.app/profile/lucho.cool) [Kathleen McMahon](https://kathleenmcmahon.dev) [Drew Powers](https://pow.rs) [Matthew Ström-Awn](https://matthewstrom.com) [Donna Vitan](https://www.donnavitan.com) [Daniel Banks](https://x.com/dbanksDesign) [Mike Kamminga](https://x.com/mikekamminga) [Ayesha Mazrana (Mazumdar)](https://x.com/AyeshaKMaz) [James Nash](https://cirrus.twiddles.com) [Adekunle Oduye](https://www.adekunleoduye.com) [Kevin Powell](https://x.com/kevinmpowell) [GitHub design-tokens/community-group](https://github.com/design-tokens/community-group/) [pull requests](https://github.com/design-tokens/community-group/pulls/) [new issue](https://github.com/design-tokens/community-group/issues/new/choose) [open issues](https://github.com/design-tokens/community-group/issues/) [Design Tokens Community Group](https://www.w3.org/groups/cg/design-tokens) [W3C Community Contributor License Agreement (CLA)](https://www.w3.org/community/about/agreements/cla/) [W3C Community and Business Groups](https://www.w3.org/community/) [https://www.w3.org/community/reports/](https://www.w3.org/community/reports/) [GitHub Issues](https://github.com/design-tokens/community-group/issues/) [BCP 14](https://www.rfc-editor.org/info/bcp14) [designtokens.org](https://www.designtokens.org/glossary/) [Photoshop](https://www.adobe.com/products/photoshop.html) [Affinity Photo](https://affinity.serif.com/photo) [Paint.net](https://www.getpaint.net/) [Illustrator](https://www.adobe.com/products/illustrator.html) [Inkscape](https://inkscape.org/) [Adobe XD](https://www.adobe.com/products/xd.html) [UXPin](https://www.uxpin.com/) [Sketch](https://www.sketch.com/) [Figma](https://www.figma.com/) [Style Dictionary](https://github.com/style-dictionary/style-dictionary) [Terrazzo](https://github.com/terrazzoapp/terrazzo) [Storybook](https://storybook.js.org/) [Zeroheight](https://zeroheight.com) [Backlight](https://backlight.dev/) [Supernova](https://www.supernova.io/) [Knapsack](https://www.knapsack.cloud/) [an example of a composite shadow token](https://design-tokens.github.io/community-group/format/#example-composite-token-example) [https://www.json.org/](https://www.json.org/) [group](groups) [token aliases](groups#references-and-json-pointer-integration) [reverse domain name notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) [$value](design-token#name-and-value) [$extensions](design-token#extensions) [$type](design-token#type) [Color](../color) [Issue 53](https://github.com/design-tokens/community-group/issues/53) [Typography Type Enhancements](https://github.com/design-tokens/community-group/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Typography+Type+Enhancements%22) [OpenType wght tag specification](https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxistag_wght) [gradient stop positions](composite-types#gradient) [dimension](types#dimension) [$description](design-token#description) [Groups](groups) [Issue 98](https://github.com/design-tokens/community-group/issues/98) [Composite Type Feedback](https://github.com/design-tokens/community-group/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Composite+Type+Feedback%22) [\"line style\" values in CSS](https://drafts.csswg.org/css-backgrounds/#typedef-line-style) [dimension values](types#dimension) [the stroke-linecap attribute in SVG](https://www.w3.org/TR/SVG11/painting.html#StrokeLinecapProperty) [color value](types#color) [dimension value](types#dimension) [Issue 99](https://github.com/design-tokens/community-group/issues/99) [duration](types#duration) [cubic Bézier curve](types#cubic-bezier) [Issue 103](https://github.com/design-tokens/community-group/issues/103) [Issue 100](https://github.com/design-tokens/community-group/issues/100) [Issue 101](https://github.com/design-tokens/community-group/issues/101) [Color Type Enhancements](https://github.com/design-tokens/community-group/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Color+Type+Enhancements%22) [font family value](types#font-family) [font weight](types#font-weight) [number value](types#number) [Issue 102](https://github.com/design-tokens/community-group/issues/102) [Should the lineHeight sub-value use a number value, dimension or a new lineHeight type](https://github.com/design-tokens/community-group/pull/86#discussion_r768137006) [JSON Schema: A Media Type for Describing JSON Documents. Draft 2020-12](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-01) [https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-01](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-01) [Key words for use in RFCs to Indicate Requirement Levels](https://www.rfc-editor.org/rfc/rfc2119) [https://www.rfc-editor.org/rfc/rfc2119](https://www.rfc-editor.org/rfc/rfc2119) [JavaScript Object Notation (JSON) Pointer](https://www.rfc-editor.org/rfc/rfc6901) [https://www.rfc-editor.org/rfc/rfc6901](https://www.rfc-editor.org/rfc/rfc6901) [Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words](https://www.rfc-editor.org/rfc/rfc8174) [https://www.rfc-editor.org/rfc/rfc8174](https://www.rfc-editor.org/rfc/rfc8174) [The JavaScript Object Notation (JSON) Data Interchange Format](https://www.rfc-editor.org/rfc/rfc8259) [https://www.rfc-editor.org/rfc/rfc8259](https://www.rfc-editor.org/rfc/rfc8259)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Design Tokens Format Module 2025.10 ## Abstract ## Status of This Document ## 1. Conformance ## 2. Introduction ## 3. Terminology ### 3.1 (Design) Token ### 3.2 (Design) Token Properties ### 3.3 Design tool ### 3.4 Translation tool ### 3.5 Documentation tool ### 3.6 Type ### 3.7 Group ### 3.8 Alias (Reference) ### 3.9 Composite (Design) Token ## 4. File format ### 4.1 Media type (MIME type) ### 4.2 File extensions ## 5. Design token ### 5.1 Name and value #### 5.1.1 Character restrictions ### 5.2 Additional properties #### 5.2.1 Description #### 5.2.2 Type #### 5.2.3 Extensions #### 5.2.4 Deprecated ## 6. Groups ### 6.1 Group Structure ### 6.2 Root Tokens in Groups ### 6.3 Group Properties #### 6.3.1 $deprecated #### 6.3.2 $extensions ### 6.4 Extending Groups #### 6.4.1 Equivalence to JSON Schema $ref #### 6.4.2 Reference Resolution and Evaluation #### 6.4.3 Inheritance Semantics #### 6.4.4 Circular Reference Prevention #### 6.4.5 Supported Reference Formats #### 6.4.6 Error",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 992,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "cs #### 6.4.4 Circular Reference Prevention #### 6.4.5 Supported Reference Formats #### 6.4.6 Error Conditions #### 6.4.7 Implementation Guidance #### 6.4.8 Relationship to JSON Schema Specifications ### 6.5 Empty Groups ### 6.6 References and JSON Pointer Integration #### 6.6.1 Current Reference Syntax (Recommended) #### 6.6.2 JSON Pointer Support ### 6.7 Processing Rules #### 6.7.1 Token Resolution Order #### 6.7.2 Path Construction #### 6.7.3 Type Inheritance #### 6.7.4 Circular Reference Detection ### 6.8 Migration and Compatibility ### 6.9 Examples #### 6.9.1 Basic Group with Root Token #### 6.9.2 Group Extension with Override Example #### 6.9.3 Complex Hierarchical Structure ### 6.10 Use-cases #### 6.10.1 File authoring & organization #### 6.10.2 GUI tools #### 6.10.3 Translation tools ## 7. Aliases / References ### 7.1 Reference Syntax #### 7.1.1 Curly Brace Syntax (Token References) #### 7.1.2 JSON Pointer Syntax (Required Support) ### 7.2 Reference Resolution #### 7.2.1",
+      "metadata": {
+        "startIndex": 892,
+        "endIndex": 1886,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "ferences) #### 7.1.2 JSON Pointer Syntax (Required Support) ### 7.2 Reference Resolution #### 7.2.1 Resolution Algorithms #### 7.2.2 Chained References #### 7.2.3 Circular References ### 7.3 Property-Level References #### 7.3.1 Color Component References #### 7.3.2 Dimension Component References #### 7.3.3 Typography Component References ### 7.4 JSON Pointer Path Construction and Resolution #### 7.4.1 Path Construction Rules #### 7.4.2 Token Value Access Patterns #### 7.4.3 Resolution Algorithm for JSON Pointer #### 7.4.4 Curly Brace Resolution Algorithm #### 7.4.5 Error Conditions #### 7.4.6 Path Examples ### 7.5 Implementation Guidance #### 7.5.1 For Tool Authors #### 7.5.2 Disambiguation Examples #### 7.5.3 Error Conditions ### 7.6 Relationship to JSON Schema ## 8. Types ### 8.1 Color ### 8.2 Dimension #### 8.2.1 Validation ### 8.3 Font family ### 8.4 Font weight ### 8.5 Duration #### 8.5.1 Validation ### 8.6 Cubic Bézier ### 8.7 Number ### 8.8 Additional types ## 9.",
+      "metadata": {
+        "startIndex": 1786,
+        "endIndex": 2771,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "5 Duration #### 8.5.1 Validation ### 8.6 Cubic Bézier ### 8.7 Number ### 8.8 Additional types ## 9. Composite types ### 9.1 Array aliasing in composite types ### 9.2 Groups versus composite tokens ### 9.3 Stroke style #### 9.3.1 String value #### 9.3.2 Object value #### 9.3.3 Fallbacks ### 9.4 Border ### 9.5 Transition ### 9.6 Shadow ### 9.7 Gradient ### 9.8 Typography ## A. Issue summary ## B. References ### B.1 Normative references This document describes the technical specification for a file format to exchange design tokens between different tools. Do not attempt to implement this version of the specification. Do not reference this version as authoritative in any way. This specification was published by the . It is not a W3C Standard nor is it on the W3C Standards Track. Please note that under the there is a limited opt-out and other conditions apply. Learn more about . This section describes the status of this document at the time of its publication.",
+      "metadata": {
+        "startIndex": 2671,
+        "endIndex": 3641,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "arn more about . This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C Community Group reports and the latest revision of this report can be found in the W3C Community Group reports index at . ⚠️ This is a of in progress changes. Do not refer to this document directly, and do not implement anything in this document. are preferred for discussion of this specification. As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative. The key words , , , , and in this document are to be interpreted as described in [] [] when, and only when, they appear in all capitals, as shown here. Design tokens are a methodology for expressing design decisions in a platform-agnostic way so that they can be shared across different disciplines, tools, and technologies.",
+      "metadata": {
+        "startIndex": 3541,
+        "endIndex": 4526,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "form-agnostic way so that they can be shared across different disciplines, tools, and technologies. They help establish a common vocabulary across organizations. There is a growing ecosystem of tools for design system maintainers and consumers that incorporate design token functionality, or would benefit from doing so: • have begun allowing designers to label and reference shared values for design properties like colors and sizes. • exist that can convert source design token data into platform-specific source code that can directly be used by developers. • can display design token names rather than the raw values in design specs and style guides. It is often desirable for design system teams to integrate such tools together, so that design token data can flow between design and development tools. For example: • Extracting design tokens from design files and feeding them into to then be converted into platform-specific code • Maintaining a \"single source of truth\" for design tokens and",
+      "metadata": {
+        "startIndex": 4426,
+        "endIndex": 5426,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "onverted into platform-specific code • Maintaining a \"single source of truth\" for design tokens and automatically keeping design and development tools in sync with it While many tools now offer APIs to access design tokens or the ability to export design tokens as a file, these are all tool-specific. The burden is therefore on design system teams to create and maintain their own, bespoke \"glue\" code or workflows. Furthermore, if teams want to migrate to different tools, they will need to update those integrations. This specification aims to facilitate better interoperability between tools and thus lower the work design system teams need to do to integrate them by defining a standard file format for expressing design token data. These definitions are focused on the technical aspects of the specification, aimed at implementers such as vendors. Definitions for designers and developers are available at .",
+      "metadata": {
+        "startIndex": 5326,
+        "endIndex": 6240,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "aimed at implementers such as vendors. Definitions for designers and developers are available at . A (Design) Token is information associated with a human readable name, at minimum a name/value pair. The name may be associated with additional . Information associated with a token name. • Value • Type • Description Additional metadata may be added by tools and design systems to extend the format as needed. A design tool is a tool for visual design creation and editing. • Bitmap image manipulation programs: • Vector graphics tools: • UI design, wireframing and prototyping tools: Design token translation tools translate token data from one format to another. A documentation tool is a tool for documenting design tokens usage. A token's type is a predefined categorization applied to the token's value. • Color • Size • Duration Token tools can use Types to infer the purpose of a token. • A might reference a token's type to convert the source value into the correct platform-specific format.",
+      "metadata": {
+        "startIndex": 6140,
+        "endIndex": 7140,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ght reference a token's type to convert the source value into the correct platform-specific format. • A visual might reference type to present tokens in the appropriate part of their UI - as in, color tokens are listed in the color picker, font tokens in the text styling UI's fonts list, and so on. A group is a set of tokens belonging to a specific category. • Brand • Alert • Layout Groups are arbitrary and tools use them to infer the type or purpose of design tokens. A design token's value can be a reference to another token. The same value can have multiple names or . The following Sass example illustrates this concept: The value of is , because . We can also say is an for A design token whose value is made up of multiple, named child values. Composite tokens are useful for closely related style properties that are always applied together. For example, a typography style might be made up of a font name, font size, line height, and color.",
+      "metadata": {
+        "startIndex": 7040,
+        "endIndex": 7994,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "For example, a typography style might be made up of a font name, font size, line height, and color. Here's : Design token files are JSON () files that adhere to the structure described in this specification. JSON was chosen as an interchange format on the basis of: • Broad support in many programming languages' standard libraries. This is expected to lower barriers to entry for developers writing software that supports design token files. • Current popularity and widespread use. This is expected to lower the learning curve as many people will already be familiar with JSON. • Being text-based (rather than binary) allows hand-editing design token files without needing specialized software other than a basic text editor. It also means the files are somewhat human-readable. When serving design token files via HTTP / HTTPS or in any other scenario where a media type (formerly known as MIME type) needs to be specified, the following MIME type be used for design token files: However, since",
+      "metadata": {
+        "startIndex": 7894,
+        "endIndex": 8892,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "type) needs to be specified, the following MIME type be used for design token files: However, since every design token file is a valid JSON file, they be served using the JSON media type: . The above, more specific media type is preferred and be used wherever possible. Tools that can open design token files support both media types. When saving design token files on a local file system, it can be useful to have a distinct file extension as this makes them easier to spot in file browsers. It may also help to associate a file icon and a preferred application for opening those files. The following file extensions are recommended by this spec: The former is more succinct. However, until this format is widely adopted and supported, the latter might be useful to make design token files open in users' preferred JSON editors. Tools that can open design token files filter available files (e.g. in an open file dialog) to only show ones using those extensions.",
+      "metadata": {
+        "startIndex": 8792,
+        "endIndex": 9756,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "iles filter available files (e.g. in an open file dialog) to only show ones using those extensions. It is recommended to also provide users with a way of opening files that do not use those extensions (e.g. a \"show all files\" option or similar). Tools that can save design token files append one of the recommended file extensions to the filename when saving. The group is currently exploring the addition of a JSON Schema to support the spec. A concern about file size limitations of JSON files was raised by one of the vendors. The working group continues to gather feedback about any limitations the JSON format imposes. An object with a property is a token. Thus, is a reserved word in our spec, meaning you can't have a token whose name is \"$value\". The parent object's key is the token name. A token's name be a valid JSON string as defined in []. The example above therefore defines 1 design token with the following properties: • Name: \"token name\" • Type: \"color\" • Value: • Color Space:",
+      "metadata": {
+        "startIndex": 9656,
+        "endIndex": 10653,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "n token with the following properties: • Name: \"token name\" • Type: \"color\" • Value: • Color Space: \"srgb\" • Components: [1, 0, 0] Name and value are both . Token names are case-sensitive, so the following example with 2 tokens in the same group whose names only differ in case is valid: However, some tools need to transform names when exporting to other languages or displaying names to the user, so having token names that differ only in case is likely to cause identical and undesirable duplicates in the output. For example, a translation tool that converts these tokens to Sass code would generate problematic output like this: Tools display a warning when token names differ only by case. All properties defined by this format are prefixed with the dollar sign (). This convention will also be used for any new properties introduced by future versions of this spec. Therefore, token and names begin with the character.",
+      "metadata": {
+        "startIndex": 10553,
+        "endIndex": 11479,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "es introduced by future versions of this spec. Therefore, token and names begin with the character. Furthermore, due to the syntax used for the following characters be used anywhere in a token or group name: • (left curly bracket) • (right curly bracket) • (period) While is the only required property for a token, a number of additional properties be added: A plain text description explaining the token's purpose can be provided via the optional property. Tools use the description in various ways. • Style guide generators display the description text alongside a visual preview of the token • IDEs display the description as a tooltip for auto-completion (similar to how API docs are displayed) • display the description as a tooltip or alongside tokens wherever they can be selected • Translation tools render the description to a source code comment alongside the variable or constant they export.",
+      "metadata": {
+        "startIndex": 11379,
+        "endIndex": 12283,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "ols render the description to a source code comment alongside the variable or constant they export. The value of the property be a plain JSON string, for example: Design tokens always have an unambiguous type, so that tools can reliably interpret their value. A token's type can be specified by the optional property. If the property is not set on a token, then the token's type be determined as follows: • If the token's value is a reference, then its type is the resolved type of the token being referenced. • Otherwise, if any of the token's parent groups have a property, then the token's type is inherited from the closest parent group with a property. • Otherwise, if none of the parent groups have a property, the token's type cannot be determined and the token be considered invalid. Tools attempt to guess the type of a token by inspecting the contents of its value. The property can be set on different levels: • at the group level • at the token level The property be a plain JSON string,",
+      "metadata": {
+        "startIndex": 12183,
+        "endIndex": 13183,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "on different levels: • at the group level • at the token level The property be a plain JSON string, whose value is one of the values specified in this specification's respective type definitions. The value of is case-sensitive. The optional property is an object where tools add proprietary, user-, team- or vendor-specific data to a design token. When doing so, each tool use a vendor-specific key whose value be any valid JSON data. • The keys be chosen such that they avoid the likelihood of a naming clash with another vendor's data. The is recommended for this purpose. • Tools that process design token files preserve any extension data they do not themselves understand. For example, if a design token contains extension data from tool A and the file containing that data is opened by tool B, then tool B include the original tool A extension data whenever it saves a new design token file containing that token.",
+      "metadata": {
+        "startIndex": 13083,
+        "endIndex": 14003,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "the original tool A extension data whenever it saves a new design token file containing that token. In order to maintain interoperability between tools that support this format, teams and tools restrict their usage of extension data to optional meta-data that is not crucial to understanding that token's value. Tool vendors are encouraged to publicly share specifications of their extension data wherever possible. That way other tools can add support for them without needing to reverse engineer the extension data. Popular extensions could also be incorporated as standardized features in future revisions of this specification. The extensions section is not limited to vendors. All token users can add additional data in this section for their own purposes. The property be used to mark a token as deprecated, and optionally explain the reason. Reasons to deprecate tokens include but are not limited to the following: • A future update to the design system will remove this token • Removing the",
+      "metadata": {
+        "startIndex": 13903,
+        "endIndex": 14903,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    },
+    {
+      "id": "chunk-17",
+      "text": "ited to the following: • A future update to the design system will remove this token • Removing the token now may break existing support • This token is discouraged from future use Explanation This token is deprecated (no explanation provided). This token is deprecated AND this is an explanation. This token is NOT deprecated (may override group defaults). Tool makers augment the string when it contains aliases such as the one given as an example. A tool could potentially resolve the token, and link to docs, code, or render a visual representation of it and link to the new token inside a UI. For example, “Please use {button.activeBorder} instead“ could be output in JS as: Groups organize design tokens into logical collections and provide a hierarchical structure for token files. Groups are arbitrary and tools use them to infer the type or purpose of design tokens. A group is identified as a JSON object that does NOT contain a property.",
+      "metadata": {
+        "startIndex": 14803,
+        "endIndex": 15752,
+        "chunkIndex": 17,
+        "section": "Content",
+        "globalChunkIndex": 17
+      }
+    },
+    {
+      "id": "chunk-18",
+      "text": "purpose of design tokens. A group is identified as a JSON object that does NOT contain a property. Groups contain: • - Objects with a property • - Objects without a property • - Properties prefixed with (e.g., , ) The presence of a property definitively identifies an object as a token. If an object contains both and child tokens/groups, this creates an invalid structure where the object cannot be both a token and a group simultaneously. Tools report this as an error. Groups contain a alongside child tokens and nested groups. A root token provides a base value for the group while allowing for variants or extensions. Groups support root tokens using the reserved name as the token name: Using as a reserved token name eliminates ambiguity between group references and token references while maintaining clear, explicit syntax. The prefix prevents naming conflicts with user-defined tokens and aligns with other reserved properties in the specification.",
+      "metadata": {
+        "startIndex": 15652,
+        "endIndex": 16612,
+        "chunkIndex": 18,
+        "section": "Content",
+        "globalChunkIndex": 18
+      }
+    },
+    {
+      "id": "chunk-19",
+      "text": "conflicts with user-defined tokens and aligns with other reserved properties in the specification. Groups include the following properties: Property Required A plain JSON string describing the group's purpose Acts as a default type for tokens within the group that do not explicitly declare their own type. Type inheritance applies to nested groups and their tokens unless overridden Inherits tokens and properties from another group. See for details Marks the group as deprecated. Value can be , , or a string explanation Vendor-specific extensions where tools add proprietary data Groups include an optional property to mark the entire group as deprecated. This extends to all child tokens within the group unless explicitly overridden. This group is deprecated (no explanation provided) This group is deprecated AND this is an explanation This group is NOT deprecated (may override parent group defaults) Groups include an optional property where tools add proprietary, user-, team- or",
+      "metadata": {
+        "startIndex": 16512,
+        "endIndex": 17502,
+        "chunkIndex": 19,
+        "section": "Content",
+        "globalChunkIndex": 19
+      }
+    },
+    {
+      "id": "chunk-20",
+      "text": "nt group defaults) Groups include an optional property where tools add proprietary, user-, team- or vendor-specific data. Each tool use a vendor-specific key whose value be any valid JSON data. Groups include an optional property to inherit tokens and properties from another group. reference a token. The property is syntactic sugar for JSON Schema's keyword and follows the same semantic behavior as defined in []. The property is semantically equivalent to JSON Schema's keyword as specified in [] and later versions. The following two group definitions are functionally identical: Extension resolution follows a straightforward process: • Resolve the reference to locate the target group • Start with all tokens and properties from the target group • Replace any inherited tokens/properties where local ones exist at the same path • Include any local tokens/properties that don't exist in the inherited group This creates a new resolved group that combines inherited and local content according",
+      "metadata": {
+        "startIndex": 17402,
+        "endIndex": 18401,
+        "chunkIndex": 20,
+        "section": "Content",
+        "globalChunkIndex": 20
+      }
+    },
+    {
+      "id": "chunk-21",
+      "text": "herited group This creates a new resolved group that combines inherited and local content according to the override rules above. Group extension follows behavior where local properties override inherited properties at the same path: • All tokens and properties from the referenced group are inherited (circular references are not allowed) • Local tokens and properties replace inherited ones with the same path • Local tokens and properties with new paths are added alongside inherited ones • If both the inherited group and local group define a token at the same path, the local definition wins • Tokens at different paths coexist in the final result • When overriding, the entire token definition is replaced (not merged property-by-property) Token Final Value (local override wins) (inherited, no local override) Source overridden inherited added Groups create circular inheritance chains. The following patterns are : supports the same reference formats as .",
+      "metadata": {
+        "startIndex": 18301,
+        "endIndex": 19264,
+        "chunkIndex": 21,
+        "section": "Content",
+        "globalChunkIndex": 21
+      }
+    },
+    {
+      "id": "chunk-22",
+      "text": "circular inheritance chains. The following patterns are : supports the same reference formats as . error handling follows JSON Schema error patterns: • When the target group cannot be found • When the reference points to a non-group (e.g., a token) • When extension chains create cycles • When local properties violate inherited constraints Tools implement the same error detection and reporting patterns used by JSON Schema validators for resolution. Tools implementing design token parsing choose to: • Convert to standard JSON Schema syntax and use existing JSON Schema libraries for validation • Implement directly using the same algorithms as JSON Schema processing • Use JSON Schema libraries for validation while maintaining design token-specific reference syntax Regardless of implementation approach, the semantic behavior be equivalent to JSON Schema as specified in JSON Schema 2020-12 or later.",
+      "metadata": {
+        "startIndex": 19164,
+        "endIndex": 20072,
+        "chunkIndex": 22,
+        "section": "Content",
+        "globalChunkIndex": 22
+      }
+    },
+    {
+      "id": "chunk-23",
+      "text": "h, the semantic behavior be equivalent to JSON Schema as specified in JSON Schema 2020-12 or later. This specification defines as syntactic sugar for JSON Schema's keyword, providing design token-specific reference syntax while maintaining equivalent behavior. The deep merge semantics described above align with how JSON Schema 2020-12 handles with sibling properties. For implementers familiar with JSON Schema, the behavior is equivalent to: • Converting to • Applying JSON Schema 2020-12 resolution with sibling property evaluation Tools implementing this specification choose to: • Convert to and use JSON Schema libraries • Implement the deep merge behavior described above • Use JSON Schema for validation while maintaining design token syntax Regardless of implementation approach, the user-visible behavior match the deep merge semantics described in this specification. Groups be empty (contain no tokens or nested groups).",
+      "metadata": {
+        "startIndex": 19972,
+        "endIndex": 20906,
+        "chunkIndex": 23,
+        "section": "Content",
+        "globalChunkIndex": 23
+      }
+    },
+    {
+      "id": "chunk-24",
+      "text": "ge semantics described in this specification. Groups be empty (contain no tokens or nested groups). While they may appear to serve no immediate purpose, they: • Cause no harm to processing or validation • Support work-in-progress organization during token development • May contain metadata via group properties (, ) • Provide placeholder structure for future token development The current using curly braces () is maintained for backward compatibility and developer ergonomics. However, tools also support JSON Pointer notation for advanced use cases. Tools support JSON Pointer references as defined by [], using the property: When processing groups, tools follow this resolution order: • - Direct children with properties • - Tokens with names • - Tokens inherited via (if not overridden) • - Process recursively Token paths are constructed by concatenating group names and token names with periods (). The reserved token name is included in the path to maintain explicit, unambiguous references.",
+      "metadata": {
+        "startIndex": 20806,
+        "endIndex": 21806,
+        "chunkIndex": 24,
+        "section": "Content",
+        "globalChunkIndex": 24
+      }
+    },
+    {
+      "id": "chunk-25",
+      "text": "s (). The reserved token name is included in the path to maintain explicit, unambiguous references. Examples: Location Path Notes Token path Invalid for token resolution, valid for groups Type resolution follows these rules in order of precedence: • (highest precedence) • (after extension resolution) • (walking up the hierarchy) • if no type can be determined Since follows JSON Schema semantics, type inheritance behavior is determined by constraint validation rather than explicit merge rules. Local type constraints are evaluated alongside inherited constraints according to JSON Schema validation patterns. In this example, the group must satisfy both its local constraint and any applicable constraints from the referenced group, following JSON Schema constraint resolution rules. Tools detect and throw an error on circular references in: • Token ( references) • Group extensions ( references) • JSON Pointer references ( properties, if supported) Circular reference detection for follows the",
+      "metadata": {
+        "startIndex": 21706,
+        "endIndex": 22707,
+        "chunkIndex": 25,
+        "section": "Content",
+        "globalChunkIndex": 25
+      }
+    },
+    {
+      "id": "chunk-26",
+      "text": "• JSON Pointer references ( properties, if supported) Circular reference detection for follows the same requirements as JSON Schema circular reference detection. Tools implement the same algorithms used by JSON Schema validators for cycle detection. Tools report this as an error affecting groups , , and . This specification is designed to be backward compatible with existing design token files. Tools implementing this specification: • continue to support existing group syntax • provide warnings for deprecated patterns • implement new features incrementally • validate that token names do not conflict with reserved properties • → (overridden) • → (inherited from input) This demonstrates the key use case where a component extends a base component but overrides specific tokens while inheriting others. This structure creates tokens accessible as: Token Reference Resolved Value Groups let token file authors better organize their token files.",
+      "metadata": {
+        "startIndex": 22607,
+        "endIndex": 23558,
+        "chunkIndex": 26,
+        "section": "Content",
+        "globalChunkIndex": 26
+      }
+    },
+    {
+      "id": "chunk-27",
+      "text": "as: Token Reference Resolved Value Groups let token file authors better organize their token files. Related tokens can be nested into groups to align with the team's naming conventions and/or mental model. When manually authoring files, using groups is also less verbose than a flat list of tokens with repeating prefixes. ...is likely to be more convenient to type and, arguably, easier to read, than: Tools that let users pick or edit tokens via a GUI use the grouping structure to display a suitable form of progressive disclosure, such as a collapsible tree view. Token names are not guaranteed to be unique within the same file. The same name can be used in different groups. Also, translation tools need to export design tokens in a uniquely identifiable way, such as variables in code. Translation tools therefore use design tokens' paths as these unique within a file. For example, a like might use the following design token file: ...and output it as Sass variables like so by concatenating",
+      "metadata": {
+        "startIndex": 23458,
+        "endIndex": 24458,
+        "chunkIndex": 27,
+        "section": "Content",
+        "globalChunkIndex": 27
+      }
+    },
+    {
+      "id": "chunk-28",
+      "text": "ht use the following design token file: ...and output it as Sass variables like so by concatenating the path to create variable names: Instead of having explicit values, tokens can reference the value of another token. To put it another way, a token can be an alias for another token. This spec considers the terms \"alias\" and \"reference\" to be synonyms and uses them interchangeably. Aliases are useful for: • Expressing design choices • Eliminating repetition of values in token files (DRYing up the code) • Creating semantic relationships between tokens • Maintaining consistency across related values Design tokens support two distinct syntaxes for referencing content within token files: The curly brace syntax is specifically designed for referencing and always resolves to the property of the target token. In this example, resolves to the entire color object . Curly brace references can ONLY target complete tokens (objects with properties), not individual properties within token values or",
+      "metadata": {
+        "startIndex": 24358,
+        "endIndex": 25358,
+        "chunkIndex": 28,
+        "section": "Content",
+        "globalChunkIndex": 28
+      }
+    },
+    {
+      "id": "chunk-29",
+      "text": "target complete tokens (objects with properties), not individual properties within token values or arbitrary document locations. For advanced use cases requiring access to specific properties within token values or other parts of the document structure, tokens support JSON Pointer notation as defined by [], using the property. Tools implementing this specification support JSON Pointer syntax. In this example: • is equivalent to • accesses just the red component (0) of the blue color Aspect Curly Brace JSON Pointer Complete tokens only Any document location Always appends Explicit full path required Token-to-token references Property-level references When a tool needs the actual value of a token it resolve the reference - i.e. lookup the token being referenced and fetch its value. Tools preserve references and therefore only resolve them whenever the actual value needs to be retrieved. For instance, in a , changes to the value of a token being referenced by aliases be reflected",
+      "metadata": {
+        "startIndex": 25258,
+        "endIndex": 26251,
+        "chunkIndex": 29,
+        "section": "Content",
+        "globalChunkIndex": 29
+      }
+    },
+    {
+      "id": "chunk-30",
+      "text": "eved. For instance, in a , changes to the value of a token being referenced by aliases be reflected wherever those aliases are being used. • Extract token path from • Convert to segments • Find the target token object • Ensure target has property • Extract and return the content • Maintain stack of resolving references • Extract path segments from • Navigate through each path segment • Numeric segments in array contexts become array indices • All segments in object contexts become property names • Handle escaped characters (, ) • Ensure the final target exists and is accessible • Extract and return the resolved value Aliases reference other aliases. In this case, tools follow each reference until they find a token with an explicit value. In this example, resolves to the same color value as by following the chain: → → . References be circular. If a design token file contains circular references, then the value of all tokens in that chain is unknown and an appropriate error or warning",
+      "metadata": {
+        "startIndex": 26151,
+        "endIndex": 27149,
+        "chunkIndex": 30,
+        "section": "Content",
+        "globalChunkIndex": 30
+      }
+    },
+    {
+      "id": "chunk-31",
+      "text": "ferences, then the value of all tokens in that chain is unknown and an appropriate error or warning message be displayed to the user. Tools detect and report this as an error affecting all tokens in the circular chain. JSON Pointer syntax enables references to specific properties within composite tokens, not just entire token values. This enables fine-grained reuse of token components while maintaining semantic relationships. Property-level references require JSON Pointer syntax () and cannot be expressed using curly brace syntax. • uses the same numeric value as (16) but with a different unit () • uses the same unit as () but with a different numeric value (32) • Both headings inherit the and from • Each heading defines its own and • Changes to the base font family or line height automatically affect all headings JSON Pointer syntax provides direct access to any location within the design token document structure, following standard JSON Pointer rules as defined by [].",
+      "metadata": {
+        "startIndex": 27049,
+        "endIndex": 28034,
+        "chunkIndex": 31,
+        "section": "Content",
+        "globalChunkIndex": 31
+      }
+    },
+    {
+      "id": "chunk-32",
+      "text": "within the design token document structure, following standard JSON Pointer rules as defined by []. • (refers to the document root) • separates each level (e.g., ) • Numeric indices for array elements (e.g., ) • Must be escaped according to JSON Pointer rules: • becomes Since design tokens store their values in properties, JSON Pointer paths to token values follow a predictable pattern: Equivalent Curly Brace Reference Complete token value N/A Hex property of color First component of color Token type metadata Tools report errors for: • Malformed curly braces or JSON Pointer syntax • Target path does not exist in document • Curly brace syntax targeting non-tokens • Reference chains that loop back to themselves • Referenced value incompatible with expected type Token Path Curly Brace Syntax Root token \"primary\" Nested token Array element not supported Property with space Property with slash Tools implementing design token parsing : • as the primary reference mechanism for token-to-token",
+      "metadata": {
+        "startIndex": 27934,
+        "endIndex": 28934,
+        "chunkIndex": 32,
+        "section": "Content",
+        "globalChunkIndex": 32
+      }
+    },
+    {
+      "id": "chunk-33",
+      "text": "h Tools implementing design token parsing : • as the primary reference mechanism for token-to-token references • for document-level references and property access • to ensure they point to valid tokens (for curly brace) or valid document locations (for JSON Pointer) • according to the resolution algorithms defined in this specification () • before attempting resolution • in memory/storage and resolve only when values are needed • from referenced tokens to all aliases Reference Result JSON Pointer array index curly brace object property Error curly braces cannot access array indices property \"2\" doesn't exist • Target path does not exist • Referenced property type incompatible with token type • Attempting to reference non-existent properties The reference syntax defined in this specification provides compatibility with JSON Schema patterns while serving the specific needs of design token authoring: • Direct support for RFC 6901 JSON Pointer notation enables integration with JSON Schema",
+      "metadata": {
+        "startIndex": 28834,
+        "endIndex": 29834,
+        "chunkIndex": 33,
+        "section": "Content",
+        "globalChunkIndex": 33
+      }
+    },
+    {
+      "id": "chunk-34",
+      "text": "authoring: • Direct support for RFC 6901 JSON Pointer notation enables integration with JSON Schema tooling • Curly brace references provide token-specific syntax optimized for common token-to-token relationships • Both syntaxes serve different use cases within the design token ecosystem While JSON Pointer references () in design tokens follow the same syntax as JSON Schema , curly brace references () are design token-specific and provide different semantics (automatic resolution and token-only targeting) compared to standard JSON Schema references. Many tools need to know what kind of value a given token represents to process it sensibly. Translation tools need to convert or format tokens differently depending on their type. present the user with different kinds of input when editing tokens of a certain type (such as color picker, slider, text input, etc.). Style guide generators use different kinds of previews for different types of tokens.",
+      "metadata": {
+        "startIndex": 29734,
+        "endIndex": 30691,
+        "chunkIndex": 34,
+        "section": "Content",
+        "globalChunkIndex": 34
+      }
+    },
+    {
+      "id": "chunk-35",
+      "text": "input, etc.). Style guide generators use different kinds of previews for different types of tokens. This spec defines a number of design-focused types and every design token use one of these types. Furthermore, that token's value then follow rules and syntax for the chosen type as defined by this spec. A token's type can be set directly by giving it a property specifying the chosen type. Alternatively, it can inherit a type from one of its parent groups, or be an alias of a token that has the desired type. If no explicit type has been set for a token, tools consider the token invalid and not attempt to infer any other type from the value. If an explicit type is set, but the value does not match the expected syntax then that token is invalid and an appropriate error be displayed to the user. To put it another way, the property is a declaration of what kind of values are permissible for the token.",
+      "metadata": {
+        "startIndex": 30591,
+        "endIndex": 31500,
+        "chunkIndex": 35,
+        "section": "Content",
+        "globalChunkIndex": 35
+      }
+    },
+    {
+      "id": "chunk-36",
+      "text": "it another way, the property is a declaration of what kind of values are permissible for the token. (This is similar to typing in programming languages like Java or TypeScript, where a value not compatible with the declared type causes a compilation error). Represents a color in the UI. For details on how to represent colors, see the module. Represents an amount of distance in a single dimension in the UI, such as a position, width, height, radius, or thickness. The property be set to the string . The value be an object containing a numeric (integer or floating-point) and of measurement ( or ). Key An integer or floating-point value representing the numeric value. Unit of distance. Supported values: , . • may only be or . • : Represents an idealized pixel on the viewport. The equivalent in Android is and iOS is . Translation tools therefore convert to these or other equivalent units as needed.",
+      "metadata": {
+        "startIndex": 31400,
+        "endIndex": 32307,
+        "chunkIndex": 36,
+        "section": "Content",
+        "globalChunkIndex": 36
+      }
+    },
+    {
+      "id": "chunk-37",
+      "text": "d is and iOS is . Translation tools therefore convert to these or other equivalent units as needed. • : Represents a multiple of the system's default font size (which be configurable by the user). 1rem is 100% of the default font size. The equivalent of 1rem on Android is 16sp. Not all platforms have an equivalent to rem, so translation tools need to do a lossy conversion to a fixed px size by assuming a default font size (usually 16px) for such platforms. • is still required even if is . A naive approach like the one below may be appropriate for the first stage of the specification, but this could be more complicated than it seems due to platform/OS/browser restrictions. Represents a font name or an array of font names (ordered from most to least preferred). The property be set to the string . The value either be a string value containing a single font name or an array of strings, each being a single font name. Represents a font weight. The property be set to the string .",
+      "metadata": {
+        "startIndex": 32207,
+        "endIndex": 33195,
+        "chunkIndex": 37,
+        "section": "Content",
+        "globalChunkIndex": 37
+      }
+    },
+    {
+      "id": "chunk-38",
+      "text": "rings, each being a single font name. Represents a font weight. The property be set to the string . The value must either be a number value in the range [1, 1000] or one of the pre-defined string values defined in the table below. Lower numbers represent lighter weights, and higher numbers represent thicker weights, as per the . The pre-defined string values are aliases for specific numeric values. For example , and are all the exact same value. numeric value string value aliases Number values outside of the [1, 1000] range and any other string values, including ones that differ only in case, are invalid and be rejected by tools. Example: Represents the length of time in milliseconds an animation or animation cycle takes to complete, such as 200 milliseconds. The property be set to the string . The value be an object containing a numeric (either integer or floating-point) and a of milliseconds () or seconds (). A millisecond is a unit of time equal to one thousandth of a second.",
+      "metadata": {
+        "startIndex": 33095,
+        "endIndex": 34089,
+        "chunkIndex": 38,
+        "section": "Content",
+        "globalChunkIndex": 38
+      }
+    },
+    {
+      "id": "chunk-39",
+      "text": "milliseconds () or seconds (). A millisecond is a unit of time equal to one thousandth of a second. Unit of time. Supported values: (millisecond), (second). • may only be or Represents how the value of an animated property progresses towards completion over the duration of an animation, effectively creating visual effects such as acceleration, deceleration, and bounce. The property be set to the string . The value be an array containing four numbers. These numbers represent two points (P1, P2) with one x coordinate and one y coordinate each [P1x, P1y, P2x, P2y]. The y coordinates of P1 and P2 can be any real number in the range [-∞, ∞], but the x coordinates are restricted to the range [0, 1]. Represents a number. Numbers can be positive, negative and have fractions. Example uses for number tokens are or unitless line heights. The property be set to the string . The value be a JSON number value.",
+      "metadata": {
+        "startIndex": 33989,
+        "endIndex": 34898,
+        "chunkIndex": 39,
+        "section": "Content",
+        "globalChunkIndex": 39
+      }
+    },
+    {
+      "id": "chunk-40",
+      "text": "are or unitless line heights. The property be set to the string . The value be a JSON number value. Types still to be documented here are likely to include: • might be an enum of allowed values like (\"normal\", \"italic\"...) • e.g. for opacity values, relative dimensions, aspect ratios, etc. • Not 100% sure about this since these are really \"just\" numbers. An alternative might be that we expand the permitted syntax for the \"number\" type, so for example \"1:2\", \"50%\" and 0.5 are all equivalent. People can then use whichever syntax they like best for a given token. • for assets - might just be a relative file path / URL (or should we let people also express the mime-type?) The types defined in the previous chapters such as color and dimension all have singular values. For example, the value of a color token is color. However, there are other aspects of UI designs that are a combination of multiple values.",
+      "metadata": {
+        "startIndex": 34798,
+        "endIndex": 35712,
+        "chunkIndex": 40,
+        "section": "Content",
+        "globalChunkIndex": 40
+      }
+    },
+    {
+      "id": "chunk-41",
+      "text": "is color. However, there are other aspects of UI designs that are a combination of multiple values. For instance, a shadow style is a combination of a color, X & Y offsets, a blur radius and a spread radius. Every shadow style has the exact same parts (color, X & Y offsets, etc.), but their respective values will differ. Furthermore, each part's value (which is also known as a \"sub-value\") is always of the same type. A shadow's color must always be a value, its X offset must always be a value, and so on. Shadow styles are therefore combinations of values . In other words, shadow styles are themselves a type. Types like this are called . Specifically, a composite type has the following characteristics: • Its value is an object or array, potentially containing nested objects or arrays, following a pre-defined structure where the properties of the (nested) object(s) or the elements of the (nested) arrays are sub-values. • Sub-values may be explicit values (e.g.",
+      "metadata": {
+        "startIndex": 35612,
+        "endIndex": 36585,
+        "chunkIndex": 41,
+        "section": "Content",
+        "globalChunkIndex": 41
+      }
+    },
+    {
+      "id": "chunk-42",
+      "text": "s) or the elements of the (nested) arrays are sub-values. • Sub-values may be explicit values (e.g. values) or references to other design tokens that have the sub-value's type (e.g. ). When a composite type contains array properties, each element in the array may be either an explicit value or a reference to a token of the appropriate type. References in arrays resolve to single values and do not cause array expansion or flattening. This allows for flexible composition where some array elements are references while others are explicit values. Array aliasing follows these principles: • : References in arrays always resolve to a single value of the appropriate type, never to arrays themselves. • : When referencing an array, the entire referenced array is treated as a single element in the referencing array. • : Each array element (explicit or referenced) must conform to the expected sub-value type for that composite type. • : Arrays may freely mix explicit values and references.",
+      "metadata": {
+        "startIndex": 36485,
+        "endIndex": 37477,
+        "chunkIndex": 42,
+        "section": "Content",
+        "globalChunkIndex": 42
+      }
+    },
+    {
+      "id": "chunk-43",
+      "text": "d sub-value type for that composite type. • : Arrays may freely mix explicit values and references. For example, a shadow token with an array value can mix references to other shadow tokens with explicit shadow objects: A design token whose type happens to be a composite type is sometimes also called a composite (design) token. Besides their type, there is nothing special about composite tokens. They can have all the other additional properties like or . They can also be referenced by other design tokens. At first glance, groups and composite tokens might look very similar. However, they are intended to solve different problems and therefore have some important differences: • are for arbitrarily grouping tokens for the purposes of naming and/or organization. • They impose no rules or restrictions on how many tokens or nested groups you put within them, what they are called, or what the types of the tokens within should be.",
+      "metadata": {
+        "startIndex": 37377,
+        "endIndex": 38314,
+        "chunkIndex": 43,
+        "section": "Content",
+        "globalChunkIndex": 43
+      }
+    },
+    {
+      "id": "chunk-44",
+      "text": "groups you put within them, what they are called, or what the types of the tokens within should be. As such, tools try to infer any special meaning or typing of tokens based on a group they happen to be in. • Different design systems are likely to group their tokens differently. • You can think of groups as containers that exist \"outside\" of design tokens. • are individual design tokens whose values are made up of several sub-values. • Since they are design tokens, they can be referenced by other design tokens. This is not true for groups. • Their type must be one of the composite types defined in this specification. Therefore their names and types of their sub-values are pre-defined. Adding additional sub-values or setting values that don't have the correct type make the composite token invalid. • Tools provide specialized functionality for composite tokens. For example, a may let the user pick from a list of all available shadow tokens when applying a drop shadow effect to an",
+      "metadata": {
+        "startIndex": 38214,
+        "endIndex": 39207,
+        "chunkIndex": 44,
+        "section": "Content",
+        "globalChunkIndex": 44
+      }
+    },
+    {
+      "id": "chunk-45",
+      "text": "t the user pick from a list of all available shadow tokens when applying a drop shadow effect to an element. Represents the style applied to lines or borders. The property be set to the string . The value be either: • a string value as defined in the corresponding section below, or • an object value as defined in the corresponding section below Is the current specification for stroke styles fit for purpose? Does it need more sub-values (e.g. equivalents to SVG's , and attributes)? String stroke style values be set to one of the following, pre-defined values: These values have the same meaning as the equivalent . As per the CSS spec, their exact rendering is therefore implementation specific. For example, the length of dashes and gaps in the style may vary between different tools. Object stroke style values have the following properties: • : An array of and/or references to dimension tokens, which specify the lengths of alternating dashes and gaps.",
+      "metadata": {
+        "startIndex": 39107,
+        "endIndex": 40069,
+        "chunkIndex": 45,
+        "section": "Content",
+        "globalChunkIndex": 45
+      }
+    },
+    {
+      "id": "chunk-46",
+      "text": "of and/or references to dimension tokens, which specify the lengths of alternating dashes and gaps. Each element in the array must be either an explicit dimension value or a reference to a dimension token. If an odd number of values is provided, then the list of values is repeated to yield an even number of values. • : One of the following pre-defined string values: , or . These values have the same meaning as those of . The string and object values are mutually exclusive means of expressing stroke styles. For example, some of the string values like or cannot be expressed in terms of a and as they require some implementation-specific means of lightening or darkening the for portions of a border or outline. Conversely, a precisely defined combination of and sub-values is not guaranteed to produce the same visual result as the or keywords as they are implementation-specific. Furthermore, some tools and platforms may not support the full range of stroke styles that design tokens of this",
+      "metadata": {
+        "startIndex": 39969,
+        "endIndex": 40968,
+        "chunkIndex": 46,
+        "section": "Content",
+        "globalChunkIndex": 46
+      }
+    },
+    {
+      "id": "chunk-47",
+      "text": "some tools and platforms may not support the full range of stroke styles that design tokens of this type can represent. When displaying or exporting a token whose value they don't natively support, they should therefore fallback to the closest approximation that they do support. The specifics of how a \"closest approximation\" is chosen are implementation-specific. However, the following examples illustrate what fallbacks tools use in some scenarios. Represents a border style. The property be set to the string . The value be an object with the following properties: • : The color of the border. The value of this property be a valid or a reference to a color token. • : The width or thickness of the border. The value of this property be a valid or a reference to a dimension token. • : The border's style. The value of this property be a valid or a reference to a stroke style token. Is the current specification for borders fit for purpose?",
+      "metadata": {
+        "startIndex": 40868,
+        "endIndex": 41815,
+        "chunkIndex": 47,
+        "section": "Content",
+        "globalChunkIndex": 47
+      }
+    },
+    {
+      "id": "chunk-48",
+      "text": "d or a reference to a stroke style token. Is the current specification for borders fit for purpose? Does it need more sub-values to account for features like outset, border images, multiple borders, etc. that some platforms and have? Represents a animated transition between two states. The property be set to the string . The value be an object with the following properties: • : The duration of the transition. The value of this property be a valid value or a reference to a duration token. • : The time to wait before the transition begins. The value of this property be a valid value or a reference to a duration token. • : The timing function of the transition. The value of this property be a valid value or a reference to a cubic Bézier curve token. Is the current specification for transitions fit for purpose? Are these transitions parameters by themselves useful considering that they don't let you specify what aspect of a UI is being transitioned and what the start and end states are?",
+      "metadata": {
+        "startIndex": 41715,
+        "endIndex": 42713,
+        "chunkIndex": 48,
+        "section": "Content",
+        "globalChunkIndex": 48
+      }
+    },
+    {
+      "id": "chunk-49",
+      "text": "'t let you specify what aspect of a UI is being transitioned and what the start and end states are? Represents a shadow style. The property be set to the string . The value be either: • a single shadow object with the properties defined below, or • an array of shadow objects and/or references to shadow tokens When the value is an array, each element must be either an explicit shadow object or a reference to another shadow token. References in the array resolve to single shadow objects and do not cause array flattening. Each shadow object (whether explicit or referenced) have the following properties: • : The color of the shadow. The value of this property be a valid or a reference to a color token. • : The horizontal offset that shadow has from the element it is applied to. The value of this property be a valid or a reference to a dimension token. • : The vertical offset that shadow has from the element it is applied to.",
+      "metadata": {
+        "startIndex": 42613,
+        "endIndex": 43548,
+        "chunkIndex": 49,
+        "section": "Content",
+        "globalChunkIndex": 49
+      }
+    },
+    {
+      "id": "chunk-50",
+      "text": "ce to a dimension token. • : The vertical offset that shadow has from the element it is applied to. The value of this property be a valid or a reference to a dimension token. • : The blur radius that is applied to the shadow. The value of this property be a valid or a reference to a dimension token. • : The amount by which to expand or contract the shadow. The value of this property be a valid or a reference to a dimension token. • : (optional) Whether this shadow is inside the containing shape (“inner shadow”), rather than a “drop shadow” or “box shadow” which is rendered outside the container (default, or ). Is the current specification for shadows fit for purpose? Does it need to support multiple shadows, as some tools and platforms do? Represents a color gradient. The property be set to the string . The value be an array of gradient stop objects and/or references to gradient tokens. Each element in the array must be either an explicit gradient stop object or a reference to a",
+      "metadata": {
+        "startIndex": 43448,
+        "endIndex": 44442,
+        "chunkIndex": 50,
+        "section": "Content",
+        "globalChunkIndex": 50
+      }
+    },
+    {
+      "id": "chunk-51",
+      "text": "kens. Each element in the array must be either an explicit gradient stop object or a reference to a gradient token. References resolve to single gradient objects and do not cause array flattening. Each gradient stop object (whether explicit or referenced) have the following structure: • : The color value at the stop's position on the gradient. The value of this property be a valid or a reference to a color token. • : The position of the stop along the gradient's axis. The value of this property be a valid number value or reference to a number token. The number values must be in the range [0, 1], where 0 represents the start position of the gradient's axis and 1 the end position. If a number value outside of that range is given, it be considered as if it were clamped to the range [0, 1]. For example, a value of 42 should be treated as if it were 1, i.e. the end position of the gradient axis. Similarly, a value of -99 should be treated as if it were 0, i.e.",
+      "metadata": {
+        "startIndex": 44342,
+        "endIndex": 45312,
+        "chunkIndex": 51,
+        "section": "Content",
+        "globalChunkIndex": 51
+      }
+    },
+    {
+      "id": "chunk-52",
+      "text": "nd position of the gradient axis. Similarly, a value of -99 should be treated as if it were 0, i.e. the start position of the gradient axis. If there are no stops at the very beginning or end of the gradient axis (i.e. with 0 or 1, respectively), then the color from the stop closest to each end should be extended to that end of the axis. Is the current specification for gradients fit for purpose? Does it need to also specify the type of gradient (.e.g linear, radial, conical, etc.)? Represents a typographic style. The property be set to the string . The value be an object with the following properties: • : The typography's font. The value of this property be a valid or a reference to a font family token. • : The size of the typography. The value of this property be a valid or a reference to a dimension token. • : The weight of the typography. The value of this property be a valid or a reference to a font weight token. • : The horizontal spacing between characters.",
+      "metadata": {
+        "startIndex": 45212,
+        "endIndex": 46191,
+        "chunkIndex": 52,
+        "section": "Content",
+        "globalChunkIndex": 52
+      }
+    },
+    {
+      "id": "chunk-53",
+      "text": "ty be a valid or a reference to a font weight token. • : The horizontal spacing between characters. The value of this property be a valid or a reference to a dimension token. • : The vertical spacing between lines of typography. The value of this property be a valid or a reference to a number token. The number be interpreted as a multiplier of the . Is the current specification for typography styles fit for purpose? ? ## Links [Draft Community Group Report](https://www.w3.org/standards/types#reports) [https://www.designtokens.org/TR/2025.10/format/](https://www.designtokens.org/TR/2025.10/format/) [Louis Chenais](https://bsky.app/profile/lucho.cool) [Kathleen McMahon](https://kathleenmcmahon.dev) [Drew Powers](https://pow.rs) [Matthew Ström-Awn](https://matthewstrom.com) [Donna Vitan](https://www.donnavitan.com) [Daniel Banks](https://x.com/dbanksDesign) [Mike Kamminga](https://x.com/mikekamminga) [Ayesha Mazrana (Mazumdar)](https://x.com/AyeshaKMaz) [James",
+      "metadata": {
+        "startIndex": 46091,
+        "endIndex": 47063,
+        "chunkIndex": 53,
+        "section": "Content",
+        "globalChunkIndex": 53
+      }
+    },
+    {
+      "id": "chunk-54",
+      "text": "Kamminga](https://x.com/mikekamminga) [Ayesha Mazrana (Mazumdar)](https://x.com/AyeshaKMaz) [James Nash](https://cirrus.twiddles.com) [Adekunle Oduye](https://www.adekunleoduye.com) [Kevin Powell](https://x.com/kevinmpowell) [GitHub design-tokens/community-group](https://github.com/design-tokens/community-group/) [pull requests](https://github.com/design-tokens/community-group/pulls/) [new issue](https://github.com/design-tokens/community-group/issues/new/choose) [open issues](https://github.com/design-tokens/community-group/issues/) [Design Tokens Community Group](https://www.w3.org/groups/cg/design-tokens) [W3C Community Contributor License Agreement (CLA)](https://www.w3.org/community/about/agreements/cla/) [W3C Community and Business Groups](https://www.w3.org/community/) [https://www.w3.org/community/reports/](https://www.w3.org/community/reports/) [GitHub Issues](https://github.com/design-tokens/community-group/issues/) [BCP 14](https://www.rfc-editor.org/info/bcp14)",
+      "metadata": {
+        "startIndex": 46963,
+        "endIndex": 47952,
+        "chunkIndex": 54,
+        "section": "Content",
+        "globalChunkIndex": 54
+      }
+    },
+    {
+      "id": "chunk-55",
+      "text": "//github.com/design-tokens/community-group/issues/) [BCP 14](https://www.rfc-editor.org/info/bcp14) [designtokens.org](https://www.designtokens.org/glossary/) [Photoshop](https://www.adobe.com/products/photoshop.html) [Affinity Photo](https://affinity.serif.com/photo) [Paint.net](https://www.getpaint.net/) [Illustrator](https://www.adobe.com/products/illustrator.html) [Inkscape](https://inkscape.org/) [Adobe XD](https://www.adobe.com/products/xd.html) [UXPin](https://www.uxpin.com/) [Sketch](https://www.sketch.com/) [Figma](https://www.figma.com/) [Style Dictionary](https://github.com/style-dictionary/style-dictionary) [Terrazzo](https://github.com/terrazzoapp/terrazzo) [Storybook](https://storybook.js.org/) [Zeroheight](https://zeroheight.com) [Backlight](https://backlight.dev/) [Supernova](https://www.supernova.io/) [Knapsack](https://www.knapsack.cloud/) [an example of a composite shadow token](https://design-tokens.github.io/community-group/format/#example-composite-token-example)",
+      "metadata": {
+        "startIndex": 47852,
+        "endIndex": 48852,
+        "chunkIndex": 55,
+        "section": "Content",
+        "globalChunkIndex": 55
+      }
+    },
+    {
+      "id": "chunk-56",
+      "text": "dow token](https://design-tokens.github.io/community-group/format/#example-composite-token-example) [https://www.json.org/](https://www.json.org/) [group](groups) [token aliases](groups#references-and-json-pointer-integration) [reverse domain name notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) [$value](design-token#name-and-value) [$extensions](design-token#extensions) [$type](design-token#type) [Color](../color) [Issue 53](https://github.com/design-tokens/community-group/issues/53) [Typography Type Enhancements](https://github.com/design-tokens/community-group/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Typography+Type+Enhancements%22) [OpenType wght tag specification](https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxistag_wght) [gradient stop positions](composite-types#gradient) [dimension](types#dimension) [$description](design-token#description) [Groups](groups) [Issue 98](https://github.com/design-tokens/community-group/issues/98) [Composite",
+      "metadata": {
+        "startIndex": 48752,
+        "endIndex": 49749,
+        "chunkIndex": 56,
+        "section": "Content",
+        "globalChunkIndex": 56
+      }
+    },
+    {
+      "id": "chunk-57",
+      "text": "[Groups](groups) [Issue 98](https://github.com/design-tokens/community-group/issues/98) [Composite Type Feedback](https://github.com/design-tokens/community-group/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Composite+Type+Feedback%22) [\"line style\" values in CSS](https://drafts.csswg.org/css-backgrounds/#typedef-line-style) [dimension values](types#dimension) [the stroke-linecap attribute in SVG](https://www.w3.org/TR/SVG11/painting.html#StrokeLinecapProperty) [color value](types#color) [dimension value](types#dimension) [Issue 99](https://github.com/design-tokens/community-group/issues/99) [duration](types#duration) [cubic Bézier curve](types#cubic-bezier) [Issue 103](https://github.com/design-tokens/community-group/issues/103) [Issue 100](https://github.com/design-tokens/community-group/issues/100) [Issue 101](https://github.com/design-tokens/community-group/issues/101) [Color Type",
+      "metadata": {
+        "startIndex": 49649,
+        "endIndex": 50545,
+        "chunkIndex": 57,
+        "section": "Content",
+        "globalChunkIndex": 57
+      }
+    },
+    {
+      "id": "chunk-58",
+      "text": "up/issues/100) [Issue 101](https://github.com/design-tokens/community-group/issues/101) [Color Type Enhancements](https://github.com/design-tokens/community-group/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Color+Type+Enhancements%22) [font family value](types#font-family) [font weight](types#font-weight) [number value](types#number) [Issue 102](https://github.com/design-tokens/community-group/issues/102) [Should the lineHeight sub-value use a number value, dimension or a new lineHeight type](https://github.com/design-tokens/community-group/pull/86#discussion_r768137006) [JSON Schema: A Media Type for Describing JSON Documents. Draft 2020-12](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-01) [https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-01](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-01) [Key words for use in RFCs to Indicate Requirement Levels](https://www.rfc-editor.org/rfc/rfc2119)",
+      "metadata": {
+        "startIndex": 50445,
+        "endIndex": 51398,
+        "chunkIndex": 58,
+        "section": "Content",
+        "globalChunkIndex": 58
+      }
+    },
+    {
+      "id": "chunk-59",
+      "text": "[Key words for use in RFCs to Indicate Requirement Levels](https://www.rfc-editor.org/rfc/rfc2119) [https://www.rfc-editor.org/rfc/rfc2119](https://www.rfc-editor.org/rfc/rfc2119) [JavaScript Object Notation (JSON) Pointer](https://www.rfc-editor.org/rfc/rfc6901) [https://www.rfc-editor.org/rfc/rfc6901](https://www.rfc-editor.org/rfc/rfc6901) [Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words](https://www.rfc-editor.org/rfc/rfc8174) [https://www.rfc-editor.org/rfc/rfc8174](https://www.rfc-editor.org/rfc/rfc8174) [The JavaScript Object Notation (JSON) Data Interchange Format](https://www.rfc-editor.org/rfc/rfc8259) [https://www.rfc-editor.org/rfc/rfc8259](https://www.rfc-editor.org/rfc/rfc8259)",
+      "metadata": {
+        "startIndex": 51298,
+        "endIndex": 52298,
+        "chunkIndex": 59,
+        "section": "Content",
+        "globalChunkIndex": 59
+      }
+    }
+  ],
+  "metadata": {
+    "category": "tokens",
+    "tags": [
+      "design-tokens",
+      "specification",
+      "dtcg",
+      "w3c",
+      "standards"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:02:28.484Z",
+    "system": "DTCG",
+    "author": "W3C",
+    "version": "2025.10",
+    "source_url": "https://tr.designtokens.org/format/"
+  }
+}

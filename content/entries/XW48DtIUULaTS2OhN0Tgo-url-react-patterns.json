@@ -1,0 +1,213 @@
+{
+  "id": "XW48DtIUULaTS2OhN0Tgo",
+  "title": "React Patterns",
+  "source": {
+    "type": "url",
+    "location": "https://www.patterns.dev/react/",
+    "ingested_at": "2025-11-20T14:02:45.315Z"
+  },
+  "content": "## Terminology we will use ## Rendering with JSX ## Components, Props, and State ### 1. Components ### Extracting components ### 2. Props ### 3. State #### How to add State in React ### Props vs State ## Other Concepts in React ### 1. Lifecycle ### 2. Higher-order component(HOC) ### 3. Context ## React Hooks ## Thinking in React ## Getting Started ## Conclusion Interested in our next book? Learn more about Over the years, there has been an increased demand for straight-forward ways to user-interfaces using JavaScript. , also referred to as React.js, is an open-source JavaScript library designed by Facebook, used for building user interfaces or UI components. React is of course not the only UI library out there. , , , , and many others are also great for composing interfaces from reusable elements. Given React’s popularity, it’s worth walking through how it works given we will be using it to walk through some of the design, rendering and performance patterns in this guide. When front-end developers talk about code, it’s most often in the context of designing interfaces for the web. And the way we think of interface composition is in elements, like buttons, lists, navigation, and the likes. React provides an optimized and simplified way of expressing interfaces in these elements. It also helps build complex and tricky interfaces by organizing your interface into three key concepts— and Because React is composition-focused, it can, perfectly map to the elements of your design system. So, in essence, designing for React actually rewards you for thinking in a modular way. It allows you to design individual components before putting together a page or view, so you fully understand each component’s scope and purpose—a process referred to as . • - React library, created by Facebook in 2013 • - The package for DOM and server rendering • - Syntax extension to JavaScript • - Centralized state container • - A new way to use state and other React features without writing a class • - The library to develop cross-platform native apps with Javascript • - JavaScript module bundler, popular in React community. • - A CLI tool to create a scaffolding React app for bootstrapping a project. • - A React framework with many best-in-class features including SSR, Code-splitting, optimized for performance, etc. We will be using JSX in a number of our examples. JSX is an extension to JavaScript which embeds template HTML in JS using XML-like syntax. It is meant to be transformed into valid JavaScript, though the semantics of that transformation are implementation-specific. JSX rose to popularity with the React library, but has since seen other implementations as well. Components, props, and state are the three key concepts in React. Virtually everything you’re going to see or do in React can be classified into at least one of these key concepts, and here’s a quick look at these key concepts: Components are the building blocks of any React app. They are like JavaScript functions that accept arbitrary input () and return React elements describing what should be displayed on the screen. The first thing to understand is that everything on screen in a React app is part of a component. Essentially, a React app is just components within components within components. So developers don’t build pages in React; they build components. Components let you split your UI into independent, reusable pieces. If you’re used to designing pages, thinking in this modular way might seem like a big change. But if you use a design system or style guide? Then this might not be as big of a paradigm shift as it seems. The most direct way to define a component is to write a JavaScript function. This function is a valid React component because it accepts a single prop () object argument with data and returns a React element. Such components are called ”” because they are literally JavaScript functions. Aside from function components, another type of component are ”.” A class component is different from a function component in that it is defined by an ES6 class, as shown below: To illustrate the facts that components can be split into smaller components, consider the following component: Which can be implemented as follows: This component can be a bit difficult to manipulate because of how clustered it is, and reusing individual parts of it would also prove difficult. But, we can still extract a few components from it. The first thing we will do is extract* Avatar*: doesn’t need to know that it is being rendered inside a . This is why we have given its prop a more generic name: rather than . Now we will simplify the comment a little: The next thing we will do is to a component that renders an_ Avatar _next to the user’s name: Now we will simplify further: Extracting components seems like a tedious job, but having reusable components makes things easier when coding for larger apps. A good criterion to consider when simplifying components is this: if a part of your UI is used several times (), or is complex enough on its own (), it is a good candidate to be extracted to a separate component. Props are a short form for properties, and they simply refer to the internal data of a component in React. They are written inside component calls and are passed into components. They also use the same syntax as HTML attributes, e.g._ prop=“value”. Two things that are worth remembering about props; Firstly, we determine the value of a prop and use it as part of the blueprint before the component is built. Secondly, the value of a prop will never change, i.e. props are read-only once they are passed into components. The way you access a prop is by referencing it via the “this.props” property that every component has access to. State is an object that holds some information that may change over the lifetime of the component. Meaning it is just the current snapshot of data stored in a component’s Props. The data can change over time, so techniques to manage the way that data changes become necessary to ensure the component looks the way engineers want it to, at just the right time — this is called It’s almost impossible to read one paragraph about React without coming across the idea of state-management. Developers love expounding upon this topic, but at its core, state management isn’t really as complex as it sounds. In React, state can also be tracked globally, and data can be shared between components as needed. Essentially, this means that in React apps, loading data in new places is not as expensive as it is with other technologies. React apps are smarter about which data they save and load, and when. This opens up opportunities to make interfaces that use data in new ways. Think of React components like micro-applications with their own data, logic, and presentation. Each component should have a single purpose. As an engineer, you get to decide that purpose and have complete control over how each component behaves and what data is used. You’re no longer limited by the data on the rest of the page. In your design, you can take advantage of this in all kinds of ways. There are opportunities to present additional data that can improve the user experience or make areas within the design more contextual. When designing, Including state is a task that you should save for last. It is much better to design everything as stateless as possible, using props and events. This makes components easier to maintain, test, and understand. Adding states should be done through either state containers such as and , or a container/wrapper component. Redux is a popular state management system for other reactive frameworks. It implements a centralized state machine driven by actions. In the example below, the place for the state could be itself. Let’s use React Hooks (this will be discussed in the next section) for this: For further examples such as the above, see . Props and state can sometimes be confused with each other because of how similar they are. Here are some key differences between them: The data remains unchanged from component to component. Data is the current snapshot of data stored in a component’s Props. It changes over the lifecycle of the component. The data is read-only The data can be asynchronous The data in props cannot be modified The data in state can be modified using Props are what is passed on to the component State is managed within the component Components, props, and state are the three key concepts for everything you’ll be doing in react. But there are also other concepts to learn about: Every react component goes through three stages; mounting, rendering, and dismounting. The series of events that occur during these three stages can be referred to as the component’s lifecycle. While these events are partially related to the component’s state (its internal data), the lifecycle is a bit different. React has internal code that loads and unloads components as needed, and a component can exist in several stages of use within that internal code. There are a lot of lifecycle methods, but the most common ones are: - This method is the only required method within a class component in React and is the most used. As the name suggests, it handles the rendering of your component to the UI, and it happens during the mounting and rendering of your component. When the component is created or removed: • runs after the component output has been rendered to the DOM. • is invoked immediately before a component is unmounted and destroyed When the props or states get updated: • is invoked before rendering when new props or state are being received. • is invoked immediately after updating occurs. This method is not called for the initial render. (HOC) are an advanced technique in React for reusing component logic. Meaning a higher-order component is a function that takes a component and returns a new component. They are patterns that emerge from React’s compositional nature. While a component transforms props into UI, a higher-order component transforms a component into another component, and they tend to be popular in third-party libraries. In a typical React app, data is passed down via props, but this can be cumbersome for some types of props that are required by many components within an application. Context provides a way to share these types of data between components without having to explicitly pass a prop through every level of hierarchy. Meaning with context, we can avoid passing props through intermediate elements. Hooks are functions that let you “hook into” React state and lifecycle features from functional components. They let you use state and other React features without writing a class. You can learn more about Hooks in our guide. One thing that is really amazing about React is how it makes you think about apps as you build them. In this section, we’ll walk you through the thought process of building a using React Hooks. Imagine that we already have a JSON API and a mock of our interface: Our JSON API returns some data that looks like this: Tip: You may find free tools like useful for drawing out a high-level mock of your UI and components. When you have your mock, the next thing to do is to draw boxes around every component (and subcomponent) in the mock and name all of them, as shown below. Use the single responsibility principle: a component should ideally have a single function. If it ends up growing, it should be broken down into smaller subcomponents. Use this same technique for deciding if you should create a new function or object. You’ll see in the image above that we have five components in our app. We’ve listed the data each component represents. • container for the full component • user input for what to search for • displays and filters tweets based on user input • displays a heading for each category • displays a row for each tweet Now that the components in the mock have been identified, the next thing to do would be to sort them into a hierarchy. Components that are found within another component in the mock should appear as a child in the hierarchy. Like this: The next step after completing the component hierarchy is to implement your app. Before last year, the quickest way was to build a version that takes your data model and renders the UI but has zero interactivity, but since the introduction of React Hooks, an easier way to implement your app is to use the Hooks as seen below: The final implementation would be all the code written together in the previously stated hierarchy : There are various ways to start using React. This is the simplest way to set up React. Add the React JavaScript to your page, either as an dependency or via a CDN. create-react-app is a project aimed at getting you to use React as soon as possible, and any React app that needs to outgrow a single page will find that create-react-app meets that need quite easily. More serious production applications should consider using as it has stronger defaults (like code-splitting) baked in. An easy way to have the create-react-app structure, without installing it, is to go to and choose “React.” If you are prototyping a React component and enjoy using Codepen, a of React are also available for use. The React.js library was designed to make the process of building modular, reusable user interface components simple and intuitive. As you read through some of our other guides, we hope you found this brief introduction a helpful high-level overview. If you’re interested in further reading on the React fundamentals, see: ## Links [Building Large-scale JavaScript Web Apps with React](http://largeapps.dev/) [React](https://reactjs.org) [Preact](https://preactjs.com) [Vue](https://vuejs.org) [Angular](https://angular.io) [Svelte](https://svelte.dev) [Lit](https://lit.dev) [Redux](https://redux.js.org/) [MobX](https://mobx.js.org/README.html) [Thinking in React 2020](https://dev.to/lukeshiru/thinking-in-react-the-2020-version-4c18) [Higher-order components](/posts/hoc-pattern) [Hooks](/posts/hooks-pattern) [Excalidraw](https://excalidraw.com) [Next.js](/posts/nextjs) [https://codesandbox.io/s](https://codesandbox.io/s) [number](https://codepen.io/topic/react/templates) [starting points](https://codepen.io/flaviocopes/pen/VqeaxB) [Official docs](https://reactjs.org/docs/getting-started.html#learn-react) [React for designers](https://reactfordesigners.com/) [official React components and props](https://reactjs.org/docs/components-and-props.html) [thinking in React](https://dev.to/lukeshiru/thinking-in-react-the-2020-version-4c18) [thinking in React Hooks](https://davidpfahler.com/thinking-in-react-hooks) [scriptverse](https://scriptverse.academy/tutorials/reactjs-pass-props-to-functional-component.html)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "## Terminology we will use ## Rendering with JSX ## Components, Props, and State ### 1. Components ### Extracting components ### 2. Props ### 3. State #### How to add State in React ### Props vs State ## Other Concepts in React ### 1. Lifecycle ### 2. Higher-order component(HOC) ### 3. Context ## React Hooks ## Thinking in React ## Getting Started ## Conclusion Interested in our next book? Learn more about Over the years, there has been an increased demand for straight-forward ways to user-interfaces using JavaScript. , also referred to as React.js, is an open-source JavaScript library designed by Facebook, used for building user interfaces or UI components. React is of course not the only UI library out there. , , , , and many others are also great for composing interfaces from reusable elements. Given React’s popularity, it’s worth walking through how it works given we will be using it to walk through some of the design, rendering and performance patterns in this guide.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 987,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "l be using it to walk through some of the design, rendering and performance patterns in this guide. When front-end developers talk about code, it’s most often in the context of designing interfaces for the web. And the way we think of interface composition is in elements, like buttons, lists, navigation, and the likes. React provides an optimized and simplified way of expressing interfaces in these elements. It also helps build complex and tricky interfaces by organizing your interface into three key concepts— and Because React is composition-focused, it can, perfectly map to the elements of your design system. So, in essence, designing for React actually rewards you for thinking in a modular way. It allows you to design individual components before putting together a page or view, so you fully understand each component’s scope and purpose—a process referred to as . • - React library, created by Facebook in 2013 • - The package for DOM and server rendering • - Syntax extension to",
+      "metadata": {
+        "startIndex": 887,
+        "endIndex": 1882,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "y, created by Facebook in 2013 • - The package for DOM and server rendering • - Syntax extension to JavaScript • - Centralized state container • - A new way to use state and other React features without writing a class • - The library to develop cross-platform native apps with Javascript • - JavaScript module bundler, popular in React community. • - A CLI tool to create a scaffolding React app for bootstrapping a project. • - A React framework with many best-in-class features including SSR, Code-splitting, optimized for performance, etc. We will be using JSX in a number of our examples. JSX is an extension to JavaScript which embeds template HTML in JS using XML-like syntax. It is meant to be transformed into valid JavaScript, though the semantics of that transformation are implementation-specific. JSX rose to popularity with the React library, but has since seen other implementations as well. Components, props, and state are the three key concepts in React.",
+      "metadata": {
+        "startIndex": 1782,
+        "endIndex": 2755,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "en other implementations as well. Components, props, and state are the three key concepts in React. Virtually everything you’re going to see or do in React can be classified into at least one of these key concepts, and here’s a quick look at these key concepts: Components are the building blocks of any React app. They are like JavaScript functions that accept arbitrary input () and return React elements describing what should be displayed on the screen. The first thing to understand is that everything on screen in a React app is part of a component. Essentially, a React app is just components within components within components. So developers don’t build pages in React; they build components. Components let you split your UI into independent, reusable pieces. If you’re used to designing pages, thinking in this modular way might seem like a big change. But if you use a design system or style guide? Then this might not be as big of a paradigm shift as it seems.",
+      "metadata": {
+        "startIndex": 2655,
+        "endIndex": 3629,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "use a design system or style guide? Then this might not be as big of a paradigm shift as it seems. The most direct way to define a component is to write a JavaScript function. This function is a valid React component because it accepts a single prop () object argument with data and returns a React element. Such components are called ”” because they are literally JavaScript functions. Aside from function components, another type of component are ”.” A class component is different from a function component in that it is defined by an ES6 class, as shown below: To illustrate the facts that components can be split into smaller components, consider the following component: Which can be implemented as follows: This component can be a bit difficult to manipulate because of how clustered it is, and reusing individual parts of it would also prove difficult. But, we can still extract a few components from it.",
+      "metadata": {
+        "startIndex": 3529,
+        "endIndex": 4443,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "ividual parts of it would also prove difficult. But, we can still extract a few components from it. The first thing we will do is extract* Avatar*: doesn’t need to know that it is being rendered inside a . This is why we have given its prop a more generic name: rather than . Now we will simplify the comment a little: The next thing we will do is to a component that renders an_ Avatar _next to the user’s name: Now we will simplify further: Extracting components seems like a tedious job, but having reusable components makes things easier when coding for larger apps. A good criterion to consider when simplifying components is this: if a part of your UI is used several times (), or is complex enough on its own (), it is a good candidate to be extracted to a separate component. Props are a short form for properties, and they simply refer to the internal data of a component in React. They are written inside component calls and are passed into components.",
+      "metadata": {
+        "startIndex": 4343,
+        "endIndex": 5306,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "ta of a component in React. They are written inside component calls and are passed into components. They also use the same syntax as HTML attributes, e.g._ prop=“value”. Two things that are worth remembering about props; Firstly, we determine the value of a prop and use it as part of the blueprint before the component is built. Secondly, the value of a prop will never change, i.e. props are read-only once they are passed into components. The way you access a prop is by referencing it via the “this.props” property that every component has access to. State is an object that holds some information that may change over the lifetime of the component. Meaning it is just the current snapshot of data stored in a component’s Props. The data can change over time, so techniques to manage the way that data changes become necessary to ensure the component looks the way engineers want it to, at just the right time — this is called It’s almost impossible to read one paragraph about React without",
+      "metadata": {
+        "startIndex": 5206,
+        "endIndex": 6202,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "st the right time — this is called It’s almost impossible to read one paragraph about React without coming across the idea of state-management. Developers love expounding upon this topic, but at its core, state management isn’t really as complex as it sounds. In React, state can also be tracked globally, and data can be shared between components as needed. Essentially, this means that in React apps, loading data in new places is not as expensive as it is with other technologies. React apps are smarter about which data they save and load, and when. This opens up opportunities to make interfaces that use data in new ways. Think of React components like micro-applications with their own data, logic, and presentation. Each component should have a single purpose. As an engineer, you get to decide that purpose and have complete control over how each component behaves and what data is used. You’re no longer limited by the data on the rest of the page.",
+      "metadata": {
+        "startIndex": 6102,
+        "endIndex": 7061,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "ponent behaves and what data is used. You’re no longer limited by the data on the rest of the page. In your design, you can take advantage of this in all kinds of ways. There are opportunities to present additional data that can improve the user experience or make areas within the design more contextual. When designing, Including state is a task that you should save for last. It is much better to design everything as stateless as possible, using props and events. This makes components easier to maintain, test, and understand. Adding states should be done through either state containers such as and , or a container/wrapper component. Redux is a popular state management system for other reactive frameworks. It implements a centralized state machine driven by actions. In the example below, the place for the state could be itself. Let’s use React Hooks (this will be discussed in the next section) for this: For further examples such as the above, see .",
+      "metadata": {
+        "startIndex": 6961,
+        "endIndex": 7923,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "this will be discussed in the next section) for this: For further examples such as the above, see . Props and state can sometimes be confused with each other because of how similar they are. Here are some key differences between them: The data remains unchanged from component to component. Data is the current snapshot of data stored in a component’s Props. It changes over the lifecycle of the component. The data is read-only The data can be asynchronous The data in props cannot be modified The data in state can be modified using Props are what is passed on to the component State is managed within the component Components, props, and state are the three key concepts for everything you’ll be doing in react. But there are also other concepts to learn about: Every react component goes through three stages; mounting, rendering, and dismounting. The series of events that occur during these three stages can be referred to as the component’s lifecycle.",
+      "metadata": {
+        "startIndex": 7823,
+        "endIndex": 8782,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "ies of events that occur during these three stages can be referred to as the component’s lifecycle. While these events are partially related to the component’s state (its internal data), the lifecycle is a bit different. React has internal code that loads and unloads components as needed, and a component can exist in several stages of use within that internal code. There are a lot of lifecycle methods, but the most common ones are: - This method is the only required method within a class component in React and is the most used. As the name suggests, it handles the rendering of your component to the UI, and it happens during the mounting and rendering of your component. When the component is created or removed: • runs after the component output has been rendered to the DOM. • is invoked immediately before a component is unmounted and destroyed When the props or states get updated: • is invoked before rendering when new props or state are being received.",
+      "metadata": {
+        "startIndex": 8682,
+        "endIndex": 9649,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "ps or states get updated: • is invoked before rendering when new props or state are being received. • is invoked immediately after updating occurs. This method is not called for the initial render. (HOC) are an advanced technique in React for reusing component logic. Meaning a higher-order component is a function that takes a component and returns a new component. They are patterns that emerge from React’s compositional nature. While a component transforms props into UI, a higher-order component transforms a component into another component, and they tend to be popular in third-party libraries. In a typical React app, data is passed down via props, but this can be cumbersome for some types of props that are required by many components within an application. Context provides a way to share these types of data between components without having to explicitly pass a prop through every level of hierarchy. Meaning with context, we can avoid passing props through intermediate elements.",
+      "metadata": {
+        "startIndex": 9549,
+        "endIndex": 10543,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    },
+    {
+      "id": "chunk-12",
+      "text": "level of hierarchy. Meaning with context, we can avoid passing props through intermediate elements. Hooks are functions that let you “hook into” React state and lifecycle features from functional components. They let you use state and other React features without writing a class. You can learn more about Hooks in our guide. One thing that is really amazing about React is how it makes you think about apps as you build them. In this section, we’ll walk you through the thought process of building a using React Hooks. Imagine that we already have a JSON API and a mock of our interface: Our JSON API returns some data that looks like this: Tip: You may find free tools like useful for drawing out a high-level mock of your UI and components. When you have your mock, the next thing to do is to draw boxes around every component (and subcomponent) in the mock and name all of them, as shown below. Use the single responsibility principle: a component should ideally have a single function.",
+      "metadata": {
+        "startIndex": 10443,
+        "endIndex": 11434,
+        "chunkIndex": 12,
+        "section": "Content",
+        "globalChunkIndex": 12
+      }
+    },
+    {
+      "id": "chunk-13",
+      "text": "below. Use the single responsibility principle: a component should ideally have a single function. If it ends up growing, it should be broken down into smaller subcomponents. Use this same technique for deciding if you should create a new function or object. You’ll see in the image above that we have five components in our app. We’ve listed the data each component represents. • container for the full component • user input for what to search for • displays and filters tweets based on user input • displays a heading for each category • displays a row for each tweet Now that the components in the mock have been identified, the next thing to do would be to sort them into a hierarchy. Components that are found within another component in the mock should appear as a child in the hierarchy. Like this: The next step after completing the component hierarchy is to implement your app. Before last year, the quickest way was to build a version that takes your data model and renders the UI but has",
+      "metadata": {
+        "startIndex": 11334,
+        "endIndex": 12335,
+        "chunkIndex": 13,
+        "section": "Content",
+        "globalChunkIndex": 13
+      }
+    },
+    {
+      "id": "chunk-14",
+      "text": "year, the quickest way was to build a version that takes your data model and renders the UI but has zero interactivity, but since the introduction of React Hooks, an easier way to implement your app is to use the Hooks as seen below: The final implementation would be all the code written together in the previously stated hierarchy : There are various ways to start using React. This is the simplest way to set up React. Add the React JavaScript to your page, either as an dependency or via a CDN. create-react-app is a project aimed at getting you to use React as soon as possible, and any React app that needs to outgrow a single page will find that create-react-app meets that need quite easily. More serious production applications should consider using as it has stronger defaults (like code-splitting) baked in. An easy way to have the create-react-app structure, without installing it, is to go to and choose “React.” If you are prototyping a React component and enjoy using Codepen, a of",
+      "metadata": {
+        "startIndex": 12235,
+        "endIndex": 13232,
+        "chunkIndex": 14,
+        "section": "Content",
+        "globalChunkIndex": 14
+      }
+    },
+    {
+      "id": "chunk-15",
+      "text": "to go to and choose “React.” If you are prototyping a React component and enjoy using Codepen, a of React are also available for use. The React.js library was designed to make the process of building modular, reusable user interface components simple and intuitive. As you read through some of our other guides, we hope you found this brief introduction a helpful high-level overview. If you’re interested in further reading on the React fundamentals, see: ## Links [Building Large-scale JavaScript Web Apps with React](http://largeapps.dev/) [React](https://reactjs.org) [Preact](https://preactjs.com) [Vue](https://vuejs.org) [Angular](https://angular.io) [Svelte](https://svelte.dev) [Lit](https://lit.dev) [Redux](https://redux.js.org/) [MobX](https://mobx.js.org/README.html) [Thinking in React 2020](https://dev.to/lukeshiru/thinking-in-react-the-2020-version-4c18) [Higher-order components](/posts/hoc-pattern) [Hooks](/posts/hooks-pattern) [Excalidraw](https://excalidraw.com)",
+      "metadata": {
+        "startIndex": 13132,
+        "endIndex": 14117,
+        "chunkIndex": 15,
+        "section": "Content",
+        "globalChunkIndex": 15
+      }
+    },
+    {
+      "id": "chunk-16",
+      "text": "components](/posts/hoc-pattern) [Hooks](/posts/hooks-pattern) [Excalidraw](https://excalidraw.com) [Next.js](/posts/nextjs) [https://codesandbox.io/s](https://codesandbox.io/s) [number](https://codepen.io/topic/react/templates) [starting points](https://codepen.io/flaviocopes/pen/VqeaxB) [Official docs](https://reactjs.org/docs/getting-started.html#learn-react) [React for designers](https://reactfordesigners.com/) [official React components and props](https://reactjs.org/docs/components-and-props.html) [thinking in React](https://dev.to/lukeshiru/thinking-in-react-the-2020-version-4c18) [thinking in React Hooks](https://davidpfahler.com/thinking-in-react-hooks) [scriptverse](https://scriptverse.academy/tutorials/reactjs-pass-props-to-functional-component.html)",
+      "metadata": {
+        "startIndex": 14017,
+        "endIndex": 15017,
+        "chunkIndex": 16,
+        "section": "Content",
+        "globalChunkIndex": 16
+      }
+    }
+  ],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "react",
+      "patterns",
+      "components",
+      "architecture"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:02:45.315Z",
+    "system": "Patterns.dev",
+    "author": "Google Chrome Team",
+    "source_url": "https://www.patterns.dev/react/"
+  }
+}

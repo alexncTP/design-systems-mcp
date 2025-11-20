@@ -8,7 +8,6 @@ import {
   getEntryById,
   SAMPLE_ENTRIES
 } from "./lib/content-manager.js";
-import { searchChunksEnhanced as searchChunks } from "./lib/content-manager-enhanced.js";
 import { searchWithSupabase as searchEntries } from "./lib/search-handler.js";
 import { formatSourceReference, formatInlineCitation } from "./lib/source-formatter.js";
 import { Category, ContentEntry } from "../types/content";
@@ -42,6 +41,13 @@ async function ensureContentLoaded() {
     await loadActualContent();
     contentLoaded = true;
   }
+}
+
+// Store env for tool handlers to access
+let requestEnv: any = null;
+
+function setEnv(env: any) {
+  requestEnv = env;
 }
 
 // Utility function to detect resource limit errors
@@ -362,41 +368,6 @@ ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
 ${formattedResults}`;
 
-    case "search_chunks":
-      const chunkResults = searchChunks(args.query, args.limit || 12, {
-        enableDiversity: true,
-        maxPerSource: 2,
-        preferUrls: true,
-        logDiversity: false
-      });
-
-      if (chunkResults.length === 0) {
-        return "No specific information found matching your query.";
-      }
-
-      const formattedChunks = chunkResults.map((result, index) => {
-        const { displayName, url } = formatSourceReference(result.entry);
-        const sourceLink = url
-          ? `<a href="${url}" target="_blank">${displayName}</a>`
-          : displayName;
-
-        // Clean up the chunk text to avoid nested bullets
-        const cleanText = result.chunk.text
-          .replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
-          .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
-          .trim();
-
-        return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
-<strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
-
-<div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
-</div>`;
-      }).join("\n");
-
-      return `FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}:
-
-${formattedChunks}`;
-
     case "browse_by_category":
       const categoryEntries = getEntriesByCategory(args.category as Category);
 
@@ -667,12 +638,32 @@ server.tool(
     limit: z.number().min(1).max(20).default(8).describe("Maximum number of chunks"),
   },
   async ({ query, limit }) => {
-    const results = await searchChunks(query, limit, {
-      enableDiversity: true,
-      maxPerSource: 2,
-      preferUrls: true,
-      logDiversity: false
-    });
+    // Use Supabase vector search via search-handler
+    const entries = await searchEntries({ query, limit }, requestEnv);
+
+    // Extract chunks from entries for display
+    const results: Array<{ entry: any; chunk: any; score: number }> = [];
+    for (const entry of entries) {
+      if (entry.chunks && entry.chunks.length > 0) {
+        // Add the first chunk from each entry
+        results.push({
+          entry,
+          chunk: entry.chunks[0],
+          score: 1.0
+        });
+      } else if (entry.content) {
+        // If no chunks, create a single chunk from content
+        results.push({
+          entry,
+          chunk: {
+            id: 'content-0',
+            text: entry.content.substring(0, 1000),
+            metadata: { section: 'Content', chunkIndex: 0 }
+          },
+          score: 1.0
+        });
+      }
+    }
 
     if (results.length === 0) {
       return {
@@ -771,6 +762,11 @@ ${tags.map(tag => `<span style="background: #f0f0f0; padding: 2px 6px; border-ra
 // Simple request handler
 async function handleMcpRequest(request: Request, env?: Env): Promise<Response> {
   try {
+    // Store env for tool handlers to access
+    if (env) {
+      setEnv(env);
+    }
+
     // Add CORS headers
     const corsHeaders = {
       "Access-Control-Allow-Origin": "*",
@@ -967,14 +963,37 @@ ${formattedResults}`
           break;
 
         case "search_chunks":
-          const chunkResults = searchChunks(args.query, args.limit || 8, {
-            enableDiversity: true,
-            maxPerSource: 2,
-            preferUrls: true,
-            logDiversity: false
-          });
+          // Use Supabase vector search via search-handler
+          const entries = await searchEntries({
+            query: args.query,
+            limit: args.limit || 8
+          }, env);
 
-          if (chunkResults.length === 0) {
+          // Extract chunks from entries for display
+          const chunkResultsList: Array<{ entry: any; chunk: any; score: number }> = [];
+          for (const entry of entries) {
+            if (entry.chunks && entry.chunks.length > 0) {
+              // Add the first chunk from each entry
+              chunkResultsList.push({
+                entry,
+                chunk: entry.chunks[0],
+                score: 1.0
+              });
+            } else if (entry.content) {
+              // If no chunks, create a single chunk from content
+              chunkResultsList.push({
+                entry,
+                chunk: {
+                  id: 'content-0',
+                  text: entry.content.substring(0, 1000),
+                  metadata: { section: 'Content', chunkIndex: 0 }
+                },
+                score: 1.0
+              });
+            }
+          }
+
+          if (chunkResultsList.length === 0) {
             result = {
               content: [{
                 type: "text",
@@ -982,20 +1001,20 @@ ${formattedResults}`
               }],
             };
           } else {
-            const formattedChunks = chunkResults.map((result, index) => {
-              const { displayName, url } = formatSourceReference(result.entry);
+            const formattedChunkResults = chunkResultsList.map((chunkResult, index) => {
+              const { displayName, url } = formatSourceReference(chunkResult.entry);
               const sourceLink = url
                 ? `<a href="${url}" target="_blank">${displayName}</a>`
                 : displayName;
 
               // Clean up the chunk text to avoid nested bullets
-              const cleanText = result.chunk.text
+              const cleanText = chunkResult.chunk.text
                 .replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
                 .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
                 .trim();
 
               return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
-<strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
+<strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${chunkResult.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
 
 <div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
 </div>`;
@@ -1004,9 +1023,9 @@ ${formattedResults}`
             result = {
               content: [{
                 type: "text",
-                text: `<strong>🎯 FOUND ${chunkResults.length} RELEVANT CHUNK${chunkResults.length === 1 ? "" : "S"}</strong>
+                text: `<strong>🎯 FOUND ${chunkResultsList.length} RELEVANT CHUNK${chunkResultsList.length === 1 ? "" : "S"}</strong>
 
-${formattedChunks}`
+${formattedChunkResults}`
               }],
             };
           }

@@ -1,0 +1,158 @@
+{
+  "id": "bD-PaoIfimzUuGlooi1Bx",
+  "title": "Web Components Best Practices",
+  "source": {
+    "type": "url",
+    "location": "https://web.dev/articles/custom-elements-best-practices",
+    "ingested_at": "2025-11-20T14:02:44.025Z"
+  },
+  "content": "# Práticas recomendadas para elementos personalizados Mantenha tudo organizado com as coleções Salve e categorize o conteúdo com base nas suas preferências. ## Lista de verificação ### Shadow DOM ### Crie uma raiz paralela para encapsular estilos. ### Crie sua raiz paralela no construtor. ### Coloque os filhos que o elemento criar na raiz paralela. ### Usar <slot> para projetar filhos do light DOM no shadow DOM ### Defina um estilo de exibição para :host (por exemplo, block, inline-block, flex), a menos que você prefira o padrão de inline. ### Adicione um estilo de exibição :host que respeite o atributo oculto. ### Atributos e propriedades ### Não substitua os atributos globais definidos pelo autor. ### Sempre aceite dados primitivos (strings, números, booleanos) como atributos ou propriedades. ### Procure manter os atributos e as propriedades de dados primitivos em sincronia, refletindo a partir da para atribuir a propriedade e vice-versa. ### Procure aceitar apenas dados avançados (objetos, matrizes) como propriedades. ### Não refletem propriedades de dados avançados para atributos. ### Verifique se há propriedades definidas antes do elemento atualizado. ### Não aplique turmas automaticamente. ### Eventos ### Enviar eventos em resposta à atividade do componente interno. ### Não envie eventos em resposta à definição do host de uma propriedade (para baixo fluxo de dados). ## Vídeos de explicação ### Não substituir o autor da página ### Tornar as propriedades lentas ### Evitar problemas de reentrada Com os elementos personalizados, você pode criar suas próprias tags HTML. Esta lista de verificação abrange as práticas recomendadas para ajudar você a criar elementos de alta qualidade. Com os elementos personalizados, você pode estender o HTML e definir suas próprias tags. Eles são incrivelmente eficiente, mas também são de baixo nível, o que significa que não são sempre claro a melhor forma de implementar seu próprio elemento. Para ajudar você a criar as melhores experiências possíveis, reunimos esta lista de verificação. Ele detalha tudo que achamos que é preciso para ser um um elemento personalizado bem-comportado. O encapsulamento de estilos na raiz paralela do elemento garante que ele funcione independentemente de onde eles são usados. Isso é importante principalmente se um desenvolvedor quer colocar seu elemento dentro da raiz paralela de outro elemento. Isso se aplica até mesmo a elementos simples, como uma caixa de seleção ou um botão de opção. Pode ser caso o único conteúdo da sua raiz paralela serão os estilos por conta própria. O . O construtor é quando você tem do seu elemento. Este é um ótimo momento para configurar detalhes de implementação que você não quer que outras com os elementos. Fazer esse trabalho em um retorno de chamada posterior, como o , significa que você vai precisar se proteger contra situações em que o elemento é desconectado e reanexado ao documento. Os filhos criados pelo seu elemento fazem parte da implementação e devem ser privados. Sem a proteção de uma raiz paralela, o JavaScript externo pode interferir inadvertidamente nessas crianças. Permite que os usuários do componente especifiquem conteúdo nele, já que os filhos do HTML tornam o componente mais combinável. Quando um navegador não aceita elementos personalizados, o conteúdo aninhado permanece disponível, visível e acessível. Os elementos personalizados são por padrão. Portanto, definir os ou não terão efeito. Isso muitas vezes é uma surpresa para os desenvolvedores e pode causar problemas relacionados a o layout da página. A menos que você prefira uma tela , precisa sempre definir um valor padrão. Um elemento personalizado com um estilo padrão, por exemplo: , substituirá a menor especificidade integrado . Isso pode surpreender se você pretende definir o no seu elemento para renderizá-lo como . Além disso, para um estilo padrão, adicione suporte para com . Atributos globais são aqueles que estão presentes em todos os elementos HTML. Algumas como e . Um elemento personalizado pode definir o inicial como 0 para que seja teclado focalizável. Mas você deve sempre verificar primeiro se o desenvolvedor que usa o elemento definiu isso com outro valor. Se, por exemplo, ele tiver definido a -1, é um sinal de que a pessoa não quer elemento para ser interativo. O . Isso é explicado em mais detalhes Os elementos personalizados, assim como os integrados, precisam ser configuráveis. A configuração pode ser transmitida de maneira declarativa, por atributos ou usando propriedades JavaScript. O ideal é que todos os atributos também estejam vinculados uma propriedade correspondente. Nunca se sabe como um usuário vai interagir com seu elemento. Eles poderiam uma propriedade em JavaScript e vai ler esse valor usando uma API, como . Se cada atributo tiver um propriedade correspondente e ambas refletirem, facilitará para que que os usuários trabalhem com seu elemento. Em outras palavras, chamar também precisa definir e vice-versa. É claro que há exceções essa regra. Não inclua propriedades de alta frequência, por exemplo, em um player de vídeo. Use seu bom senso. Se parece que um usuário vai interagir com uma propriedade ou um atributo, e não é trabalhoso refletir isso, então faça isso. O . Isso é explicado em mais detalhes : De modo geral, não há exemplos de elementos HTML integrados que aceitam dados avançados (objetos e matrizes JavaScript simples) por meio de atributos. Os dados avançados são aceitos por chamadas de método ou propriedades. Há algumas desvantagens óbvias em aceitar dados avançados atributos: pode ser caro serializar um objeto grande em uma string e quaisquer referências de objetos serão perdidas nesse processo de string. Para exemplo, se você criar uma string para um objeto que tem uma referência a outro objeto, ou talvez um nó DOM, essas referências serão perdidas. Refletir propriedades de dados avançados em atributos é caro, exigindo a serialização e desserialização dos mesmos objetos JavaScript. A menos que você tem um caso de uso que só pode ser resolvido com esse recurso, provavelmente é melhor evitá-lo. Um desenvolvedor que usa seu elemento pode tentar definir uma propriedade no elemento. antes do carregamento da definição. Isso é especialmente verdadeiro se desenvolvedor está usando um framework que lida com o carregamento de componentes, carimbando-os à página e vincular as propriedades a um modelo. O . Mais explicados em . Elementos que precisam expressar o estado precisam usar atributos. A O atributo geralmente é considerado de propriedade do usando seu elemento. Além disso, gravar nele por conta própria pode participar de aulas para desenvolvedores. Seu componente pode ter propriedades que mudam em resposta à atividade que que somente seu componente conhece, por exemplo, se um cronômetro ou animação é concluída ou um recurso termina de carregar. É útil enviar eventos em resposta a essas alterações, para notificar o host de que o estado do componente foi diferente. Envio de um evento em resposta a uma configuração de host de uma propriedade é desnecessário (o host sabe o estado atual porque acabou de defini-lo). Eventos de envio em resposta à definição de um host, uma propriedade pode causar loops infinitos com sistemas de vinculação. É possível que um desenvolvedor que use seu elemento queira modificar algumas o estado inicial dela. Por exemplo, mudar a ARIA ou a capacidade de foco com . Verifique se esses e outros atributos globais foram definidos. antes de aplicar seus próprios valores. Um desenvolvedor pode tentar definir uma propriedade no seu elemento antes que o foi carregada. Isso é especialmente verdadeiro se o desenvolvedor estiver usando um que lida com o carregamento de componentes, inserindo-os na página e vinculando as propriedades a um modelo. No exemplo a seguir, o Angular vincula de forma declarativa o à propriedade da caixa de seleção. Se a definição de a caixa de seleção de instruções foi carregada lentamente. É possível que o Angular tente definir a propriedade marcada antes do upgrade do elemento. Um elemento personalizado deve lidar com esse cenário verificando se alguma propriedade tem já foi definido na instância. O demonstra esse padrão usando um método chamado . captura o valor da instância não atualizada e exclui a propriedade para que ela não sombre o configurador de propriedades do próprio elemento personalizado. Dessa forma, quando a definição do elemento for finalmente carregada, ela poderá refletem o estado correto. É tentador usar para refletir o estado de uma propriedade subjacente, por exemplo: Mas isso pode criar um loop infinito se o setter da propriedade também refletir o atributo. Uma alternativa é permitir que o setter da propriedade reflita o atributo, e faça com que o getter determine seu valor com base no atributo. Nesse exemplo, a adição ou remoção do atributo também definirá a propriedade. Por fim, o pode ser usado para processar efeitos colaterais como aplicar estados ARIA. Exceto em caso de indicação contrária, o conteúdo desta página é licenciado de acordo com a , e as amostras de código são licenciadas de acordo com a . Para mais detalhes, consulte as . Java é uma marca registrada da Oracle e/ou afiliadas. Última atualização 2017-08-14 UTC. ## Links [API Cloud Translation](//cloud.google.com/translate/?hl=pt-br) [<howto-checkbox>](https://web.dev/articles/components-howto-checkbox?hl=pt-br) [<howto-tabs>](https://web.dev/articles/components-howto-tabs?hl=pt-br) [hidden](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/hidden) [Licença de atribuição 4.0 do Creative Commons](https://creativecommons.org/licenses/by/4.0/) [Licença Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) [políticas do site do Google Developers](https://developers.google.com/site-policies?hl=pt-br)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# Práticas recomendadas para elementos personalizados Mantenha tudo organizado com as coleções Salve e categorize o conteúdo com base nas suas preferências. ## Lista de verificação ### Shadow DOM ### Crie uma raiz paralela para encapsular estilos. ### Crie sua raiz paralela no construtor. ### Coloque os filhos que o elemento criar na raiz paralela. ### Usar <slot> para projetar filhos do light DOM no shadow DOM ### Defina um estilo de exibição para :host (por exemplo, block, inline-block, flex), a menos que você prefira o padrão de inline. ### Adicione um estilo de exibição :host que respeite o atributo oculto. ### Atributos e propriedades ### Não substitua os atributos globais definidos pelo autor. ### Sempre aceite dados primitivos (strings, números, booleanos) como atributos ou propriedades. ### Procure manter os atributos e as propriedades de dados primitivos em sincronia, refletindo a partir da para atribuir a propriedade e vice-versa.",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 955,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    },
+    {
+      "id": "chunk-1",
+      "text": "de dados primitivos em sincronia, refletindo a partir da para atribuir a propriedade e vice-versa. ### Procure aceitar apenas dados avançados (objetos, matrizes) como propriedades. ### Não refletem propriedades de dados avançados para atributos. ### Verifique se há propriedades definidas antes do elemento atualizado. ### Não aplique turmas automaticamente. ### Eventos ### Enviar eventos em resposta à atividade do componente interno. ### Não envie eventos em resposta à definição do host de uma propriedade (para baixo fluxo de dados). ## Vídeos de explicação ### Não substituir o autor da página ### Tornar as propriedades lentas ### Evitar problemas de reentrada Com os elementos personalizados, você pode criar suas próprias tags HTML. Esta lista de verificação abrange as práticas recomendadas para ajudar você a criar elementos de alta qualidade. Com os elementos personalizados, você pode estender o HTML e definir suas próprias tags.",
+      "metadata": {
+        "startIndex": 855,
+        "endIndex": 1800,
+        "chunkIndex": 1,
+        "section": "Content",
+        "globalChunkIndex": 1
+      }
+    },
+    {
+      "id": "chunk-2",
+      "text": "qualidade. Com os elementos personalizados, você pode estender o HTML e definir suas próprias tags. Eles são incrivelmente eficiente, mas também são de baixo nível, o que significa que não são sempre claro a melhor forma de implementar seu próprio elemento. Para ajudar você a criar as melhores experiências possíveis, reunimos esta lista de verificação. Ele detalha tudo que achamos que é preciso para ser um um elemento personalizado bem-comportado. O encapsulamento de estilos na raiz paralela do elemento garante que ele funcione independentemente de onde eles são usados. Isso é importante principalmente se um desenvolvedor quer colocar seu elemento dentro da raiz paralela de outro elemento. Isso se aplica até mesmo a elementos simples, como uma caixa de seleção ou um botão de opção. Pode ser caso o único conteúdo da sua raiz paralela serão os estilos por conta própria. O . O construtor é quando você tem do seu elemento.",
+      "metadata": {
+        "startIndex": 1700,
+        "endIndex": 2633,
+        "chunkIndex": 2,
+        "section": "Content",
+        "globalChunkIndex": 2
+      }
+    },
+    {
+      "id": "chunk-3",
+      "text": "iz paralela serão os estilos por conta própria. O . O construtor é quando você tem do seu elemento. Este é um ótimo momento para configurar detalhes de implementação que você não quer que outras com os elementos. Fazer esse trabalho em um retorno de chamada posterior, como o , significa que você vai precisar se proteger contra situações em que o elemento é desconectado e reanexado ao documento. Os filhos criados pelo seu elemento fazem parte da implementação e devem ser privados. Sem a proteção de uma raiz paralela, o JavaScript externo pode interferir inadvertidamente nessas crianças. Permite que os usuários do componente especifiquem conteúdo nele, já que os filhos do HTML tornam o componente mais combinável. Quando um navegador não aceita elementos personalizados, o conteúdo aninhado permanece disponível, visível e acessível. Os elementos personalizados são por padrão. Portanto, definir os ou não terão efeito.",
+      "metadata": {
+        "startIndex": 2533,
+        "endIndex": 3460,
+        "chunkIndex": 3,
+        "section": "Content",
+        "globalChunkIndex": 3
+      }
+    },
+    {
+      "id": "chunk-4",
+      "text": "e acessível. Os elementos personalizados são por padrão. Portanto, definir os ou não terão efeito. Isso muitas vezes é uma surpresa para os desenvolvedores e pode causar problemas relacionados a o layout da página. A menos que você prefira uma tela , precisa sempre definir um valor padrão. Um elemento personalizado com um estilo padrão, por exemplo: , substituirá a menor especificidade integrado . Isso pode surpreender se você pretende definir o no seu elemento para renderizá-lo como . Além disso, para um estilo padrão, adicione suporte para com . Atributos globais são aqueles que estão presentes em todos os elementos HTML. Algumas como e . Um elemento personalizado pode definir o inicial como 0 para que seja teclado focalizável. Mas você deve sempre verificar primeiro se o desenvolvedor que usa o elemento definiu isso com outro valor. Se, por exemplo, ele tiver definido a -1, é um sinal de que a pessoa não quer elemento para ser interativo. O .",
+      "metadata": {
+        "startIndex": 3360,
+        "endIndex": 4321,
+        "chunkIndex": 4,
+        "section": "Content",
+        "globalChunkIndex": 4
+      }
+    },
+    {
+      "id": "chunk-5",
+      "text": "plo, ele tiver definido a -1, é um sinal de que a pessoa não quer elemento para ser interativo. O . Isso é explicado em mais detalhes Os elementos personalizados, assim como os integrados, precisam ser configuráveis. A configuração pode ser transmitida de maneira declarativa, por atributos ou usando propriedades JavaScript. O ideal é que todos os atributos também estejam vinculados uma propriedade correspondente. Nunca se sabe como um usuário vai interagir com seu elemento. Eles poderiam uma propriedade em JavaScript e vai ler esse valor usando uma API, como . Se cada atributo tiver um propriedade correspondente e ambas refletirem, facilitará para que que os usuários trabalhem com seu elemento. Em outras palavras, chamar também precisa definir e vice-versa. É claro que há exceções essa regra. Não inclua propriedades de alta frequência, por exemplo, em um player de vídeo. Use seu bom senso.",
+      "metadata": {
+        "startIndex": 4221,
+        "endIndex": 5124,
+        "chunkIndex": 5,
+        "section": "Content",
+        "globalChunkIndex": 5
+      }
+    },
+    {
+      "id": "chunk-6",
+      "text": "Não inclua propriedades de alta frequência, por exemplo, em um player de vídeo. Use seu bom senso. Se parece que um usuário vai interagir com uma propriedade ou um atributo, e não é trabalhoso refletir isso, então faça isso. O . Isso é explicado em mais detalhes : De modo geral, não há exemplos de elementos HTML integrados que aceitam dados avançados (objetos e matrizes JavaScript simples) por meio de atributos. Os dados avançados são aceitos por chamadas de método ou propriedades. Há algumas desvantagens óbvias em aceitar dados avançados atributos: pode ser caro serializar um objeto grande em uma string e quaisquer referências de objetos serão perdidas nesse processo de string. Para exemplo, se você criar uma string para um objeto que tem uma referência a outro objeto, ou talvez um nó DOM, essas referências serão perdidas. Refletir propriedades de dados avançados em atributos é caro, exigindo a serialização e desserialização dos mesmos objetos JavaScript.",
+      "metadata": {
+        "startIndex": 5024,
+        "endIndex": 5996,
+        "chunkIndex": 6,
+        "section": "Content",
+        "globalChunkIndex": 6
+      }
+    },
+    {
+      "id": "chunk-7",
+      "text": "çados em atributos é caro, exigindo a serialização e desserialização dos mesmos objetos JavaScript. A menos que você tem um caso de uso que só pode ser resolvido com esse recurso, provavelmente é melhor evitá-lo. Um desenvolvedor que usa seu elemento pode tentar definir uma propriedade no elemento. antes do carregamento da definição. Isso é especialmente verdadeiro se desenvolvedor está usando um framework que lida com o carregamento de componentes, carimbando-os à página e vincular as propriedades a um modelo. O . Mais explicados em . Elementos que precisam expressar o estado precisam usar atributos. A O atributo geralmente é considerado de propriedade do usando seu elemento. Além disso, gravar nele por conta própria pode participar de aulas para desenvolvedores. Seu componente pode ter propriedades que mudam em resposta à atividade que que somente seu componente conhece, por exemplo, se um cronômetro ou animação é concluída ou um recurso termina de carregar.",
+      "metadata": {
+        "startIndex": 5896,
+        "endIndex": 6871,
+        "chunkIndex": 7,
+        "section": "Content",
+        "globalChunkIndex": 7
+      }
+    },
+    {
+      "id": "chunk-8",
+      "text": "e conhece, por exemplo, se um cronômetro ou animação é concluída ou um recurso termina de carregar. É útil enviar eventos em resposta a essas alterações, para notificar o host de que o estado do componente foi diferente. Envio de um evento em resposta a uma configuração de host de uma propriedade é desnecessário (o host sabe o estado atual porque acabou de defini-lo). Eventos de envio em resposta à definição de um host, uma propriedade pode causar loops infinitos com sistemas de vinculação. É possível que um desenvolvedor que use seu elemento queira modificar algumas o estado inicial dela. Por exemplo, mudar a ARIA ou a capacidade de foco com . Verifique se esses e outros atributos globais foram definidos. antes de aplicar seus próprios valores. Um desenvolvedor pode tentar definir uma propriedade no seu elemento antes que o foi carregada. Isso é especialmente verdadeiro se o desenvolvedor estiver usando um que lida com o carregamento de componentes, inserindo-os na página e vinculando",
+      "metadata": {
+        "startIndex": 6771,
+        "endIndex": 7772,
+        "chunkIndex": 8,
+        "section": "Content",
+        "globalChunkIndex": 8
+      }
+    },
+    {
+      "id": "chunk-9",
+      "text": "r estiver usando um que lida com o carregamento de componentes, inserindo-os na página e vinculando as propriedades a um modelo. No exemplo a seguir, o Angular vincula de forma declarativa o à propriedade da caixa de seleção. Se a definição de a caixa de seleção de instruções foi carregada lentamente. É possível que o Angular tente definir a propriedade marcada antes do upgrade do elemento. Um elemento personalizado deve lidar com esse cenário verificando se alguma propriedade tem já foi definido na instância. O demonstra esse padrão usando um método chamado . captura o valor da instância não atualizada e exclui a propriedade para que ela não sombre o configurador de propriedades do próprio elemento personalizado. Dessa forma, quando a definição do elemento for finalmente carregada, ela poderá refletem o estado correto. É tentador usar para refletir o estado de uma propriedade subjacente, por exemplo: Mas isso pode criar um loop infinito se o setter da propriedade também refletir o",
+      "metadata": {
+        "startIndex": 7672,
+        "endIndex": 8669,
+        "chunkIndex": 9,
+        "section": "Content",
+        "globalChunkIndex": 9
+      }
+    },
+    {
+      "id": "chunk-10",
+      "text": "nte, por exemplo: Mas isso pode criar um loop infinito se o setter da propriedade também refletir o atributo. Uma alternativa é permitir que o setter da propriedade reflita o atributo, e faça com que o getter determine seu valor com base no atributo. Nesse exemplo, a adição ou remoção do atributo também definirá a propriedade. Por fim, o pode ser usado para processar efeitos colaterais como aplicar estados ARIA. Exceto em caso de indicação contrária, o conteúdo desta página é licenciado de acordo com a , e as amostras de código são licenciadas de acordo com a . Para mais detalhes, consulte as . Java é uma marca registrada da Oracle e/ou afiliadas. Última atualização 2017-08-14 UTC. ## Links [API Cloud Translation](//cloud.google.com/translate/?hl=pt-br) [<howto-checkbox>](https://web.dev/articles/components-howto-checkbox?hl=pt-br) [<howto-tabs>](https://web.dev/articles/components-howto-tabs?hl=pt-br) [hidden](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/hidden)",
+      "metadata": {
+        "startIndex": 8569,
+        "endIndex": 9564,
+        "chunkIndex": 10,
+        "section": "Content",
+        "globalChunkIndex": 10
+      }
+    },
+    {
+      "id": "chunk-11",
+      "text": "howto-tabs?hl=pt-br) [hidden](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/hidden) [Licença de atribuição 4.0 do Creative Commons](https://creativecommons.org/licenses/by/4.0/) [Licença Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) [políticas do site do Google Developers](https://developers.google.com/site-policies?hl=pt-br)",
+      "metadata": {
+        "startIndex": 9464,
+        "endIndex": 10464,
+        "chunkIndex": 11,
+        "section": "Content",
+        "globalChunkIndex": 11
+      }
+    }
+  ],
+  "metadata": {
+    "category": "components",
+    "tags": [
+      "web-components",
+      "api-design",
+      "standards",
+      "google"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:02:44.025Z",
+    "system": "Web Components",
+    "author": "Google",
+    "source_url": "https://web.dev/articles/custom-elements-best-practices"
+  }
+}

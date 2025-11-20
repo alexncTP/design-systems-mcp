@@ -1,48 +1,68 @@
 # Design Systems MCP Server
 
-An AI-powered Model Context Protocol (MCP) server that provides intelligent access to design systems knowledge. This server ingests design system documentation (PDFs, web content) and enables AI assistants to provide expert guidance on design systems, components, tokens, and best practices.
+An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. Powered by Supabase vector search with 188+ curated entries including W3C standards, WCAG guidelines, and design system best practices.
 
 🌐 **Live Demo:** [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
 
 ## Features
 
-- 🤖 **AI-Powered Chat Interface** - Natural language queries with OpenAI integration
-- 📚 **Content Ingestion** - Supports PDF parsing and web content extraction
-- 🔍 **Vector Search** - Semantic understanding using Supabase + OpenAI embeddings
-- 🎯 **Hybrid Search** - Combines semantic vectors with keyword matching
+- 🎯 **Semantic Vector Search** - Supabase + OpenAI embeddings with 188+ curated entries
+- 📚 **Authoritative Content** - W3C DTCG, WCAG 2.2, ARIA practices, and leading design systems
+- 🤖 **AI-Powered Chat** - Natural language queries with GPT-4 integration
+- 🔍 **Hybrid Search** - Combines vector similarity with keyword matching (0.15 threshold)
+- 🚀 **Cloudflare Workers** - Scalable serverless deployment with edge distribution
+- 🌐 **Universal MCP Support** - Works with Claude Desktop, Cursor, Cline, and any MCP client
 - 🎨 **Rich Formatting** - Markdown rendering with syntax highlighting
-- 🚀 **Cloudflare Workers** - Scalable serverless deployment
-- 🧪 **Local Testing** - Full local development environment
-- 🌐 **Public Access** - Live MCP server available for external integrations
+- 🧪 **Local Development** - Full local testing environment
 
-## Live MCP Server
+## Content Library
 
-### 🚀 Public Endpoints
+### 188+ Curated Entries Including:
 
-**Workers Domain:** `https://design-systems-mcp.southleft-llc.workers.dev`
+**Standards & Specifications**
+- W3C Design Tokens Community Group (DTCG) Specification
+- WCAG 2.2 Guidelines (A, AA, AAA levels)
+- WAI-ARIA Authoring Practices Guide (APG)
+- W3C Web Content Accessibility Guidelines
+- W3C Mobile Accessibility at W3C
 
-- **AI Chat Interface:** [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
-- **MCP Endpoint:** `https://design-systems-mcp.southleft-llc.workers.dev/mcp`
-- **Health Check:** `https://design-systems-mcp.southleft-llc.workers.dev/health`
+**Design System Resources**
+- Material Design 3 (Google)
+- Fluent Design System (Microsoft)
+- Ant Design (Alibaba)
+- Carbon Design System (IBM)
+- Polaris (Shopify)
+- Lightning Design System (Salesforce)
+- Atlassian Design System
+- Adobe Spectrum
+- GitHub Primer
+- Shopify Polaris
 
-### ✨ Try It Now
+**Tools & Frameworks**
+- Figma Design System Guides
+- Style Dictionary Documentation
+- Design Tokens Format Module
+- Storybook Best Practices
 
-Visit the live demo and ask questions like:
-- "What are design tokens and how should I use them?"
-- "How do I create accessible button components?"
-- "What are the best practices for organizing a design system?"
-- "How do components work in design systems?"
+**Methodologies & Best Practices**
+- Atomic Design principles
+- Design Systems Handbook
+- Component architecture patterns
+- Accessibility implementation guides
 
 ## Quick Start
 
-### Prerequisites
+### Using the Public MCP Server (Recommended)
 
-- Node.js (v20.17.0+ or v22.9.0+)
-- OpenAI API key (for embeddings and chat)
-- Supabase account (for vector search)
-- PostgreSQL with pgvector extension
+No installation needed! Connect any MCP client to our live server:
 
-### Local Development Setup
+```
+https://design-systems-mcp.southleft.com/mcp
+```
+
+See [Connect to MCP Clients](#connect-to-mcp-clients) section below for detailed setup instructions.
+
+### Local Development
 
 1. **Clone and Install**
    ```bash
@@ -53,120 +73,336 @@ Visit the live demo and ask questions like:
 
 2. **Configure Environment**
    ```bash
-   cp .env.example .env
-   # Edit .env and add your credentials:
-   # - Supabase URL and keys
-   # - OpenAI API key
-   # - Enable vector search
+   cp .dev.vars.example .dev.vars
+   # Edit .dev.vars and add your credentials
    ```
 
 3. **Start Development Server**
    ```bash
    npm run dev
    ```
+   Server available at: `http://localhost:8787`
 
-   Server will be available at: `http://localhost:8787`
+## Connect to MCP Clients
 
-4. **Test the AI Chat Interface**
-   - Open `http://localhost:8787` in your browser
-   - Try example queries like:
-     - "What are design tokens?"
-     - "Where in the design systems handbook is Alicia SEDLOCK mentioned?"
-     - "What does the Design Systems Handbook say about Wraith, Gemini, and BackstopJS?"
-     - "How do I implement a design system?"
+### Claude Desktop
 
-### Adding Content with Vector Search
+**Location:** macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
 
-1. **Setup Database** (first time only)
-   ```bash
-   # Create Supabase tables with pgvector
-   npm run setup:database
-   ```
-
-2. **Ingest Content with Embeddings**
-   ```bash
-   # Add PDFs to local-content-library/
-   npm run ingest:pdf path/to/your-design-guide.pdf
-
-   # Or ingest web content
-   npm run ingest:url https://example.com/design-system
-
-   # Or crawl entire website
-   npm run crawl:website https://example.com --depth 2
-
-   # Or bulk ingest from CSV file
-   npm run ingest:csv path/to/urls.csv
-   
-   # Generate embeddings for all content
-   npm run ingest:vectors
-   ```
-
-2. **Update Content Loading** in `src/index.ts`
-   ```typescript
-   // Add new content files using dynamic imports
-   const [handbookModule, buttonModule, newContentModule] = await Promise.all([
-     import('../content/entries/8zWJWrDK_bTOv3_KFo30V-pdf-designsystemshandbook-pdf.json'),
-     import('../content/entries/sample-button-guidelines.json'),
-     import('../content/entries/your-new-content.json')
-   ]);
-
-   const actualEntries = [
-     handbookModule.default as ContentEntry,
-     buttonModule.default as ContentEntry,
-     newContentModule.default as ContentEntry
-   ];
-   ```
-
-3. **Test Locally**
-   ```bash
-   npm run dev
-   # Test your new content in the chat interface
-   ```
-
-## Available Tools
-
-The MCP server provides these tools for AI assistants:
-
-- `search_design_knowledge` - Search design systems content
-- `search_chunks` - Find specific information in content chunks
-- `browse_by_category` - Browse content by category (components, tokens, etc.)
-- `get_all_tags` - Get available content tags
-
-## Local Testing Workflow
-
-### Testing New Content
-1. Add content files to `content/entries/`
-2. Update `src/index.ts` to load new content
-3. Restart dev server: `npm run dev`
-4. Test queries in chat interface at `http://localhost:8787`
-5. Verify AI responses are accurate and complete
-
-### Testing MCP Tools Directly
-
-**Local Testing:**
-```bash
-# Test MCP search directly
-curl -X POST http://localhost:8787/mcp \
-  -H "Content-Type: application/json" \
-  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search_chunks","arguments":{"query":"design tokens"}}}'
-
-# Test AI integration
-curl -X POST http://localhost:8787/ai-chat \
-  -H "Content-Type: application/json" \
-  -d '{"message":"What are design tokens?"}'
+```json
+{
+  "mcpServers": {
+    "design-systems": {
+      "command": "node",
+      "args": [
+        "-e",
+        "const https = require('https'); const options = { hostname: 'design-systems-mcp.southleft.com', path: '/mcp', method: 'POST', headers: { 'Content-Type': 'application/json' } }; process.stdin.on('data', data => { const req = https.request(options, res => { res.on('data', chunk => process.stdout.write(chunk)); }); req.write(data); req.end(); });"
+      ]
+    }
+  }
+}
 ```
 
-**Production Testing:**
-```bash
-# Test live MCP endpoint
-curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/mcp \
-  -H "Content-Type: application/json" \
-  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"search_chunks","arguments":{"query":"design tokens"}}}'
+Or use SSE transport:
 
-# Test live AI integration
-curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/ai-chat \
+```json
+{
+  "mcpServers": {
+    "design-systems": {
+      "url": "https://design-systems-mcp.southleft.com/mcp",
+      "transport": "sse"
+    }
+  }
+}
+```
+
+**Restart Claude Desktop** after updating the configuration.
+
+### Cursor IDE
+
+**Location:** `~/.cursor/mcp_config.json` or `~/.config/cursor/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "design-systems": {
+      "url": "https://design-systems-mcp.southleft.com/mcp"
+    }
+  }
+}
+```
+
+**Restart Cursor** after updating the configuration.
+
+### Cline (VSCode Extension)
+
+**Location:** VSCode Settings → Extensions → Cline → MCP Settings
+
+Add to MCP servers configuration:
+
+```json
+{
+  "design-systems": {
+    "url": "https://design-systems-mcp.southleft.com/mcp",
+    "description": "Design systems knowledge and best practices"
+  }
+}
+```
+
+Or add via Command Palette: `Cline: Add MCP Server`
+
+**Reload VSCode** after configuration.
+
+### Claude Code (CLI)
+
+Add to `~/.claude-code/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "design-systems": {
+      "url": "https://design-systems-mcp.southleft.com/mcp"
+    }
+  }
+}
+```
+
+Verify connection:
+```bash
+claude-code mcp list
+```
+
+### Continue (VSCode Extension)
+
+**Location:** VSCode Settings → Extensions → Continue → config.json
+
+```json
+{
+  "mcpServers": [
+    {
+      "name": "design-systems",
+      "url": "https://design-systems-mcp.southleft.com/mcp",
+      "description": "Design systems knowledge base"
+    }
+  ]
+}
+```
+
+### Zed Editor
+
+**Location:** `~/.config/zed/settings.json`
+
+```json
+{
+  "mcp": {
+    "servers": {
+      "design-systems": {
+        "url": "https://design-systems-mcp.southleft.com/mcp"
+      }
+    }
+  }
+}
+```
+
+### Generic MCP Client Configuration
+
+For any MCP client supporting remote servers:
+
+**Endpoint:** `https://design-systems-mcp.southleft.com/mcp`
+
+**Protocol:** JSON-RPC 2.0 over HTTP/HTTPS
+
+**Transport:** Standard MCP transport (stdio, SSE, or HTTP)
+
+### Local Development Setup
+
+To connect to your local development server instead:
+
+```json
+{
+  "mcpServers": {
+    "design-systems": {
+      "url": "http://localhost:8787/mcp"
+    }
+  }
+}
+```
+
+**Note:** Local server requires running `npm run dev` first.
+
+### Connection Troubleshooting
+
+**Server not responding?**
+- Verify the URL is correct: `https://design-systems-mcp.southleft.com/mcp`
+- Test with curl: `curl https://design-systems-mcp.southleft.com/health`
+- Check your client supports remote MCP servers
+
+**Tools not appearing?**
+- Restart your MCP client after configuration changes
+- Check client logs for connection errors
+- Verify JSON configuration syntax is correct
+
+**Need help?**
+- Open an issue: [GitHub Issues](../../issues)
+- Check documentation: [Connection Guide](docs/CONNECTION_GUIDE.md)
+
+## Available MCP Tools
+
+The server provides these tools for AI assistants:
+
+### search_design_knowledge
+Search the complete knowledge base with semantic understanding.
+
+**Parameters:**
+- `query` (string, required) - Search query
+- `category` (string, optional) - Filter by category
+- `tags` (array, optional) - Filter by tags
+- `limit` (number, optional) - Max results (default: 15)
+
+**Example:**
+```json
+{
+  "name": "search_design_knowledge",
+  "arguments": {
+    "query": "WCAG 2.2 color contrast requirements",
+    "category": "guidelines",
+    "limit": 5
+  }
+}
+```
+
+### search_chunks
+Find specific information within content chunks for detailed answers.
+
+**Parameters:**
+- `query` (string, required) - Search query
+- `limit` (number, optional) - Max chunks (default: 8)
+
+**Example:**
+```json
+{
+  "name": "search_chunks",
+  "arguments": {
+    "query": "W3C DTCG design tokens specification",
+    "limit": 3
+  }
+}
+```
+
+### browse_by_category
+Browse content organized by category.
+
+**Categories:** components, tokens, patterns, guidelines, tools, general
+
+**Parameters:**
+- `category` (string, required) - Category to browse
+
+### get_all_tags
+Get all available content tags for filtering and exploration.
+
+## API Examples
+
+### Direct API Testing
+
+**Health Check:**
+```bash
+curl https://design-systems-mcp.southleft.com/health
+```
+
+**MCP Tools List:**
+```bash
+curl -X POST https://design-systems-mcp.southleft.com/mcp \
   -H "Content-Type: application/json" \
-  -d '{"message":"What are design tokens?"}'
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+```
+
+**Search Query:**
+```bash
+curl -X POST https://design-systems-mcp.southleft.com/mcp \
+  -H "Content-Type: application/json" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "search_chunks",
+      "arguments": {"query": "design tokens", "limit": 3}
+    }
+  }'
+```
+
+**AI Chat Interface:**
+```bash
+curl -X POST https://design-systems-mcp.southleft.com/ai-chat \
+  -H "Content-Type: application/json" \
+  -d '{"message":"What are the WCAG 2.2 contrast requirements?"}'
+```
+
+## Adding Content
+
+### Ingest Web Content
+
+```bash
+# Single URL
+npm run ingest:url https://material.io/components/buttons
+
+# Bulk from CSV
+npm run ingest:csv urls.csv
+
+# Crawl entire website
+npm run crawl:website https://polaris.shopify.com --max-depth 3
+```
+
+### Ingest PDF Content
+
+```bash
+npm run ingest:pdf path/to/design-guide.pdf
+```
+
+### Generate Vector Embeddings
+
+```bash
+npm run ingest:vectors
+```
+
+See [Content Ingestion Guide](docs/CONTENT_INGESTION.md) for detailed instructions.
+
+## Development
+
+### Available Scripts
+
+- `npm run dev` - Start local development server
+- `npm run deploy` - Deploy to Cloudflare Workers
+- `npm run ingest:pdf <file>` - Ingest PDF content
+- `npm run ingest:url <url>` - Ingest web content
+- `npm run ingest:csv <file>` - Bulk ingest from CSV
+- `npm run crawl:website <url>` - Crawl entire websites
+- `npm run ingest:vectors` - Generate embeddings for all content
+- `npm run setup:database` - Initialize Supabase database
+- `npm run check:duplicates` - Check for duplicate content
+
+### Project Structure
+
+```
+design-systems-mcp/
+├── src/
+│   ├── index.ts              # Main MCP server
+│   ├── lib/
+│   │   ├── content-manager.ts     # Content management
+│   │   ├── search-handler.ts      # Vector search
+│   │   └── vector-search.ts       # Supabase integration
+│   └── tools/                # MCP tool definitions
+├── content/
+│   ├── entries/              # Ingested content (JSON)
+│   └── raw/                  # Raw source files
+├── scripts/
+│   ├── ingestion/            # Content ingestion tools
+│   └── setup/                # Database setup scripts
+├── types/
+│   └── content.ts           # TypeScript definitions
+├── docs/                    # Additional documentation
+├── wrangler.jsonc          # Cloudflare Workers config
+└── .dev.vars              # Local environment variables
 ```
 
 ## Deployment
@@ -178,14 +414,12 @@ curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/ai-chat \
    npx wrangler login
    ```
 
-2. **Set Environment Variables**
+2. **Set Secrets**
    ```bash
    npx wrangler secret put OPENAI_API_KEY
-   # Enter your OpenAI API key when prompted
-
-   # Optional: Set custom model (current default: gpt-4o)
-   npx wrangler secret put OPENAI_MODEL
-   # Enter model name (default: gpt-4o)
+   npx wrangler secret put SUPABASE_URL
+   npx wrangler secret put SUPABASE_SERVICE_KEY
+   npx wrangler secret put SUPABASE_ANON_KEY
    ```
 
 3. **Deploy**
@@ -193,424 +427,110 @@ curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/ai-chat \
    npm run deploy
    ```
 
-4. **Access Your Deployed Server**
-   - Your server will be available at: `design-systems-mcp.<your-account>.workers.dev`
-   - Chat interface: `https://design-systems-mcp.<your-account>.workers.dev`
-   - MCP endpoint: `https://design-systems-mcp.<your-account>.workers.dev/mcp`
+See [Deployment Guide](docs/DEPLOYMENT.md) for detailed instructions.
 
-### Custom Domain Setup
+## Vector Search Architecture
 
-To set up a custom domain like `design-systems-mcp.southleft.com`:
+This server uses Supabase for production-grade vector search:
 
-1. **Deploy your worker** (see steps above)
-2. **In Cloudflare Dashboard:**
-   - Go to **Workers & Pages** → **Custom Domains**
-   - Add your custom domain
-   - Point it to your deployed worker: `design-systems-mcp`
-3. **Configure DNS** in your domain settings
-4. **Test the endpoints** once propagated
+- **Database:** PostgreSQL with pgvector extension
+- **Embeddings:** OpenAI text-embedding-3-small (1536 dimensions)
+- **Threshold:** 0.15 for optimal recall
+- **Hybrid Search:** Combines semantic vectors with text matching
+- **Performance:** Sub-100ms queries with proper indexing
 
-### Environment Variables
+**Statistics:**
+- 188+ entries in production database
+- 761+ content chunks with embeddings
+- W3C standards, WCAG guidelines, design system documentation
+- Regular updates with new authoritative sources
 
-Required environment variables:
-
-- `OPENAI_API_KEY` - Your OpenAI API key
-- `OPENAI_MODEL` - Model to use (default: "gpt-4o")
-- `AI_SYSTEM_PROMPT` - Custom system prompt (optional)
-
-## Connect to MCP Clients
-
-### Claude Desktop / Cursor
-
-Add to your MCP configuration file (`~/.cursor/mcp.json` for Cursor, or `claude_desktop_config.json` for Claude):
-
-**Option 1: Use Public Remote Server (Recommended for most users)**
-```json
-{
-  "mcpServers": {
-    "design-systems": {
-      "url": "https://design-systems-mcp.southleft-llc.workers.dev/mcp"
-    }
-  }
-}
-```
-
-**Option 2: Use Local Development Server (For contributors/customization)**
-```json
-{
-  "mcpServers": {
-    "design-systems": {
-      "url": "http://localhost:8787/mcp"
-    }
-  }
-}
-```
-
-**Important Notes:**
-- ✅ Both local and remote servers are fully functional
-- 🌐 Remote server: Always available, no setup required
-- 🔧 Local server: Requires running `npm run dev` first
-- 📝 After updating configuration, restart your MCP client (Cursor/Claude)
-
-### Cloudflare AI Playground
-
-1. Go to https://playground.ai.cloudflare.com/
-2. Enter your MCP server URL: `design-systems-mcp.southleft-llc.workers.dev/mcp`
-3. Start using design systems tools in the playground!
-
-### External Applications
-
-Any application that supports MCP can connect to the live server:
-
-**Endpoint:** `https://design-systems-mcp.southleft-llc.workers.dev/mcp`
-
-**Example API Call:**
-```bash
-# Initialize connection
-curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/mcp \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "id": 1,
-    "method": "initialize",
-    "params": {
-      "protocolVersion": "2024-11-05",
-      "capabilities": {"roots": {"listChanged": true}},
-      "clientInfo": {"name": "test", "version": "1.0.0"}
-    }
-  }'
-
-# Search design systems knowledge
-curl -X POST https://design-systems-mcp.southleft-llc.workers.dev/mcp \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "id": 2,
-    "method": "tools/call",
-    "params": {
-      "name": "search_design_knowledge",
-      "arguments": {"query": "design tokens"}
-    }
-  }'
-```
-
-## Project Structure
-
-```
-design-systems-mcp/
-├── src/
-│   ├── index.ts              # Main server with AI integration
-│   ├── lib/
-│   │   └── content-manager.ts # Content management and search
-│   └── tools/                # MCP tool definitions
-├── content/
-│   ├── entries/              # Ingested content (JSON)
-│   └── raw/                  # Raw source files
-├── scripts/
-│   └── ingestion/            # Content ingestion scripts
-├── types/
-│   └── content.ts           # TypeScript definitions
-├── local-content-library/   # Source PDFs and files
-├── wrangler.jsonc          # Cloudflare Workers config
-└── .dev.vars              # Local environment variables
-```
-
-## Content Management
-
-### Supported Content Types
-
-- **PDFs** - Design system handbooks, guidelines
-- **Web Content** - Design system documentation sites
-- **CSV URLs** - Bulk ingestion from CSV files containing multiple URLs
-- **Website Crawling** - Recursive crawling of entire websites
-- **JSON** - Pre-processed design system data
-
-### CSV Bulk Ingestion
-
-For bulk content ingestion, you can use CSV files containing multiple URLs:
-
-#### 1. Create a CSV File
-
-```bash
-# Generate a sample CSV template
-npm run ingest:csv --sample
-```
-
-#### 2. CSV Format
-
-Your CSV file should include these columns (header row recommended):
-
-| Column | Required | Description |
-|--------|----------|-------------|
-| `url` | ✅ | The URL to fetch content from |
-| `title` | ⚪ | Custom title for the content |
-| `category` | ⚪ | Content category (general, components, tokens, patterns, guidelines, tools) |
-| `tags` | ⚪ | Comma-separated tags |
-| `description` | ⚪ | Description of the content |
-| `confidence` | ⚪ | Confidence level (low, medium, high) |
-| `system` | ⚪ | Design system name |
-| `author` | ⚪ | Author or organization |
-| `version` | ⚪ | Version information |
-
-#### 3. Example CSV
-
-```csv
-url,title,category,tags,description,confidence,system,author,version
-https://material.io/components/buttons,Material Design Buttons,components,"button,interaction,material",Material Design button guidelines,high,Material Design,Google,3.0
-https://polaris.shopify.com/components/button,Shopify Polaris Button,components,"button,shopify,polaris",Shopify's button component,high,Polaris,Shopify,
-https://primer.style/components/button,GitHub Primer Button,components,"button,github,primer",GitHub's button guidelines,high,Primer,GitHub,
-```
-
-#### 4. Ingest Content
-
-```bash
-# Basic ingestion
-npm run ingest:csv my-urls.csv
-
-# With custom options
-npm run ingest:csv my-urls.csv --max-concurrent 5 --timeout 60000
-
-# Dry run (validate without fetching)
-npm run ingest:csv my-urls.csv --dry-run
-
-# See all options
-npm run ingest:csv --help
-```
-
-#### 5. Advanced Options
-
-- `--max-concurrent <n>` - Process N URLs simultaneously (default: 3)
-- `--timeout <ms>` - Request timeout in milliseconds (default: 30000)
-- `--retry-attempts <n>` - Number of retry attempts for failed URLs (default: 2)
-- `--output-dir <dir>` - Custom output directory (default: content/entries)
-- `--delimiter <char>` - CSV delimiter (default: ',')
-- `--no-header` - CSV file doesn't have a header row
-
-### Website Crawling
-
-For comprehensive ingestion of entire websites, use the website crawler:
-
-#### Basic Usage
-
-```bash
-# Crawl a website starting from a URL
-npm run crawl:website -- https://material.io/design
-
-# With custom depth and page limit
-npm run crawl:website -- https://polaris.shopify.com --max-depth 5 --max-pages 200
-
-# Crawl only specific sections
-npm run crawl:website -- https://primer.style --include "/components/" --include "/foundations/"
-
-# Resume a previous crawl
-npm run crawl:website -- https://material.io/design --resume
-```
-
-#### Crawler Options
-
-- `--max-depth <n>` - Maximum crawl depth (default: 3)
-- `--max-pages <n>` - Maximum number of pages to crawl (default: 100)
-- `--delay <ms>` - Delay between requests in milliseconds (default: 1000)
-- `--follow-external` - Follow links to external domains
-- `--include <pattern>` - Include URLs matching regex pattern (can be used multiple times)
-- `--exclude <pattern>` - Exclude URLs matching regex pattern (can be used multiple times)
-- `--no-robots` - Ignore robots.txt
-- `--resume` - Resume a previous crawl from the same URL
-- `--clear` - Clear previous crawl progress before starting
-- `--report` - Generate a crawl report after completion
-
-#### Advanced Examples
-
-```bash
-# Exclude certain paths
-npm run crawl:website -- https://ant.design --exclude "/changelog" --exclude "/blog"
-
-# Fast crawl with no delay (be careful!)
-npm run crawl:website -- https://chakra-ui.com --delay 0 --max-pages 50
-
-# Deep crawl with high limits
-npm run crawl:website -- https://design-system.com --max-depth 10 --max-pages 1000 --delay 500
-
-# Generate a report
-npm run crawl:website -- https://carbon.ibm.com --report
-```
-
-#### Key Features
-
-- **Automatic Progress Saving**: The crawler saves progress every 10 pages and can resume if interrupted
-- **Respects robots.txt**: By default, the crawler respects robots.txt directives
-- **Smart Link Extraction**: Extracts links from HTML content and follows them recursively
-- **Duplicate Detection**: Automatically skips already-visited pages
-- **Error Handling**: Continues crawling even if some pages fail
-- **Crawl Reports**: Generate detailed reports of crawled content
-
-### Content Processing
-
-Content is automatically:
-- Chunked for optimal search performance
-- Tagged and categorized
-- Indexed for semantic search
-- Made available to AI for intelligent responses
-
-## Development
-
-### Available Scripts
-
-- `npm run dev` - Start local development server
-- `npm run deploy` - Deploy to Cloudflare Workers
-- `npm run ingest:pdf <file>` - Ingest PDF content
-- `npm run ingest:url <url>` - Ingest web content
-- `npm run ingest:csv <file>` - Bulk ingest from CSV file containing URLs
-- `npm run crawl:website <url>` - Crawl and ingest entire websites
-- `npm run check:duplicates` - Check for duplicate URLs in content entries
-
-### Content Quality Assurance
-
-**Check for Duplicate URLs:**
-```bash
-npm run check:duplicates
-```
-
-This command scans all content entries and identifies any duplicate URLs to maintain content quality. Run this:
-- Before deploying new content
-- After ingesting new articles
-- Periodically to ensure data integrity
-
-The checker will show:
-- Total entries scanned
-- Number of unique URLs found
-- Any duplicates with filenames and titles
-- Suggested cleanup commands
-
-### Adding New MCP Tools
-
-1. Define tools in `src/index.ts`:
-   ```typescript
-   server.tool("your_tool_name", schema, async (params) => {
-     // Tool implementation
-   });
-   ```
-
-2. Add to OpenAI function definitions:
-   ```typescript
-   const MCP_TOOLS = [
-     // ... existing tools
-     {
-       type: "function",
-       function: {
-         name: "your_tool_name",
-         description: "Tool description",
-         parameters: { /* JSON schema */ }
-       }
-     }
-   ];
-   ```
+See [Vector Search Setup](docs/VECTOR_SEARCH_SETUP.md) for architecture details.
 
 ## Troubleshooting
 
 ### Common Issues
 
-**Content not loading:**
-- Check that JSON files exist in `content/entries/`
-- Verify dynamic import paths in `src/index.ts`
-- Check server logs for loading errors
-- Ensure content files are valid JSON format
+**Vector search not working:**
+- Check Supabase credentials in environment variables
+- Verify database tables exist: `npm run setup:database`
+- Check logs: `npx wrangler tail`
 
-**Port issues:**
-- Ensure `wrangler.jsonc` has correct dev port (8787)
-- Kill existing processes: `pkill -f "wrangler dev"`
+**Content not found:**
+- Verify content exists: `npm run check:duplicates`
+- Check if embeddings generated: Look for `embedding` field in content entries
+- Test search locally: `npm run dev` and use curl commands
 
-**Environment variables:**
-- Local: Use `.dev.vars` file
-- Production: Set via `npx wrangler secret put`
+**MCP connection fails:**
+- Verify URL is correct and accessible
+- Check client supports remote MCP servers
+- Test with curl: `curl https://design-systems-mcp.southleft.com/health`
+- Restart MCP client after configuration changes
 
-### Logs and Debugging
+See [Troubleshooting Guide](docs/TROUBLESHOOTING.md) for detailed solutions.
 
-```bash
-# View server logs
-npx wrangler tail
+## Documentation
 
-# Local development logs
-npm run dev
-# Check console output for content loading status
-```
+- [Connection Guide](docs/CONNECTION_GUIDE.md) - Detailed MCP client setup
+- [Content Ingestion](docs/CONTENT_INGESTION.md) - Adding new content
+- [Vector Search Setup](docs/VECTOR_SEARCH_SETUP.md) - Database configuration
+- [Deployment Guide](docs/DEPLOYMENT.md) - Production deployment
+- [Contributing](docs/CONTRIBUTING.md) - How to contribute
+- [Security](docs/SECURITY.md) - Security best practices
 
-## 📄 **License & Usage**
+## License & Attribution
 
-This project is **free and open source** under the [MIT License](LICENSE). You are welcome to:
-- ✅ Use it for personal and commercial projects
-- ✅ Modify and distribute it
-- ✅ Build upon it for your own projects
-- ✅ Share it with your team and community
+**License:** MIT License - Free for personal and commercial use
 
-### **Content Attribution**
+**Content Attribution:** This project compiles design systems knowledge from many brilliant creators. All original content remains the intellectual property of their respective authors.
 
-This project compiles design system knowledge from many brilliant creators. **All original content remains the intellectual property of their respective authors.**
+- See [CREDITS.md](CREDITS.md) for complete attribution
+- Always link back to original sources when sharing insights
+- Support original creators by visiting their websites
 
-- 📚 See [CREDITS.md](CREDITS.md) for complete attribution
-- 🔗 Always link back to original sources when sharing insights
-- 🙏 Support the original creators by visiting their websites and platforms
+## Security & Privacy
 
-## 🔒 **Security & Privacy**
+- No sensitive data stored - Only public design system knowledge
+- Environment variables use Cloudflare secrets
+- Open source and auditable
+- Privacy-focused - No user data collection
+- Regular security updates
 
-- **No sensitive data is stored** - Only public design system knowledge
-- **Environment variables are secure** - API keys use Cloudflare secrets
-- **Open source and auditable** - All code is publicly available
-- **Privacy-focused** - No user data collection beyond basic usage analytics
+Report security issues to: [GitHub Security](../../security/advisories)
 
-See [SECURITY.md](SECURITY.md) for detailed security information and best practices.
-
-## 🤝 **Contributing**
+## Contributing
 
 We welcome contributions! Whether you want to:
-- 🐛 Report bugs or issues
-- 💡 Suggest new features or improvements
-- 📚 Add more design system content
-- 🔧 Improve the codebase
-- 📖 Enhance documentation
+- Report bugs or issues
+- Suggest new features
+- Add more design system content
+- Improve the codebase
+- Enhance documentation
 
 Please:
-1. Check existing [issues](../../issues) first
-2. Open a new issue to discuss your idea
-3. Submit a pull request with your changes
-4. Follow our [security guidelines](SECURITY.md)
+1. Check existing [issues](../../issues)
+2. Open a new issue to discuss
+3. Submit a pull request
+4. Follow [contribution guidelines](docs/CONTRIBUTING.md)
 
-### **Adding Content**
+## Support
 
-To contribute new design system content:
-1. Ensure you have permission to share the content
-2. Follow the ingestion process documented above
-3. Add proper attribution in [CREDITS.md](CREDITS.md)
-4. Submit a pull request with the new content
+- Issues: [GitHub Issues](../../issues)
+- Discussions: [GitHub Discussions](../../discussions)
+- Live Demo: [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
 
-## 🙏 **Acknowledgments**
+## Acknowledgments
 
-This project exists thanks to the generous sharing of knowledge from the design systems community. Special thanks to:
+Thanks to the design systems community for sharing knowledge:
 
-- **[Brad Frost](https://bradfrost.com/)** for the foundational Atomic Design methodology
-- **[The Design System Guide](https://thedesignsystem.guide/)** team for comprehensive practical resources
-- **[Figma](https://www.figma.com/)** for excellent official documentation
-- **All the design teams** who openly share their experiences and methodologies
-- **The entire design systems community** for fostering knowledge sharing
+- Brad Frost for Atomic Design methodology
+- W3C Design Tokens Community Group
+- Web Accessibility Initiative (WAI)
+- All design teams who openly share their work
+- The entire design systems community
 
-See [CREDITS.md](CREDITS.md) for the complete list of contributors and sources.
-
-## 📞 **Support & Community**
-
-- 🐛 **Issues:** [GitHub Issues](../../issues)
-- 📧 **Security:** Report security issues privately to the maintainers
-- 🌐 **Website:** [Live Demo](https://design-systems-mcp.southleft-llc.workers.dev)
+See [CREDITS.md](CREDITS.md) for the complete list.
 
 ---
 
-## Legacy Cloudflare Template Information
-
-This project was built from the Cloudflare remote MCP server template. For additional Cloudflare Workers information:
-
-### Original Template Deploy
-[![Deploy to Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/ai/tree/main/demos/remote-mcp-authless)
-
-### Command Line Template
-```bash
-npm create cloudflare@latest -- my-mcp-server --template=cloudflare/ai/demos/remote-mcp-authless
-```
+Built with ❤️ using Cloudflare Workers and the Model Context Protocol

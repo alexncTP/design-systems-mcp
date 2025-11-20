@@ -1,0 +1,36 @@
+{
+  "id": "XesXqWvWKc16Ay97390VT",
+  "title": "BEM Methodology",
+  "source": {
+    "type": "url",
+    "location": "https://getbem.com/",
+    "ingested_at": "2025-11-20T14:03:28.589Z"
+  },
+  "content": "# BEM — is a methodology that helps you to create reusable components and code sharing in front‑end development ## Easy ## Modular ## Flexible ## Companies using BEM To use BEM, you only need to employ BEM’s naming convention. Independent blocks and CSS selectors make your code reusable and modular. Using BEM, methodologies and tools can be recomposed and configured the way you like. ## Links [Learn why it's better](/introduction) [Are you using BEM?](https://github.com/getbem/getbem.github.io/discussions/282)",
+  "chunks": [
+    {
+      "id": "chunk-0",
+      "text": "# BEM — is a methodology that helps you to create reusable components and code sharing in front‑end development ## Easy ## Modular ## Flexible ## Companies using BEM To use BEM, you only need to employ BEM’s naming convention. Independent blocks and CSS selectors make your code reusable and modular. Using BEM, methodologies and tools can be recomposed and configured the way you like. ## Links [Learn why it's better](/introduction) [Are you using BEM?](https://github.com/getbem/getbem.github.io/discussions/282)",
+      "metadata": {
+        "startIndex": 0,
+        "endIndex": 1000,
+        "chunkIndex": 0,
+        "section": "Content",
+        "globalChunkIndex": 0
+      }
+    }
+  ],
+  "metadata": {
+    "category": "patterns",
+    "tags": [
+      "css",
+      "architecture",
+      "methodology",
+      "naming"
+    ],
+    "confidence": "high",
+    "last_updated": "2025-11-20T14:03:28.589Z",
+    "system": "BEM",
+    "source_url": "https://getbem.com/"
+  }
+}

@@ -201,9 +201,7 @@ content-quality-report.json
 local-content-library/
 content/entries/.crawl-progress.json
 
-# Migration and setup docs (move to wiki/docs if needed)
-migration-guide.md
-VECTOR_SEARCH_SETUP.md
+# Migration and setup docs are now in docs/ folder
 
 # Temporary and generated files
 *.tmp
@@ -226,4 +224,3 @@ content/entries.backup/
 # Temporary documentation and analysis
 CRITICAL_ANALYSIS.md
 SETUP_VECTOR_SEARCH.md
-docs/
