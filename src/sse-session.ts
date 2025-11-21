@@ -1,12 +1,16 @@
 /**
- * SSE Session Durable Object
+ * SSE Session Durable Object - v2 (MCP-Compliant)
  *
  * Handles Server-Sent Events (SSE) connections for MCP protocol.
  * Each Durable Object instance manages SSE sessions with persistent state.
  *
  * This enables Claude Desktop to connect via the "Add custom connector" UI
  * by simply providing the /sse endpoint URL.
+ *
+ * Version 2: Implements proper MCP SSE event format (event: endpoint/message)
  */
+
+const CODE_VERSION = 'v2-mcp-compliant';
 
 import {
   searchWithSupabase as searchEntries
@@ -32,7 +36,7 @@ interface Env {
   SUPABASE_ANON_KEY: string;
 }
 
-export class SSESession {
+export class SSESessionV2 {
   private state: DurableObjectState;
   private env: Env;
   private sessions: Map<string, SessionData> = new Map();
@@ -108,7 +112,7 @@ export class SSESession {
       lastActivity: Date.now()
     });
 
-    console.log(`[SSE] New session created: ${sessionId}`);
+    console.log(`[SSE] New session created: ${sessionId} (${CODE_VERSION})`);
 
     // Send SSE headers
     const headers = {
@@ -119,41 +123,16 @@ export class SSESession {
       'X-Session-ID': sessionId,
     };
 
-    // Initialize SSE connection in background
+    // Write initial comment synchronously to activate stream immediately
+    writer.write(encoder.encode(': connected\n\n')).catch(() => {});
+
+    // Send initial messages and setup heartbeat (non-blocking)
     (async () => {
       try {
-        // Send endpoint URL for message posting
-        await this.sendSSEMessage(sessionId, {
-          jsonrpc: '2.0',
-          method: 'endpoint',
-          params: {
-            endpoint: `${origin}/sse/message?sessionId=${sessionId}`
-          }
-        });
+        // Send endpoint URL for message posting (MCP spec format: event: endpoint)
+        await this.sendSSEEndpoint(sessionId, `${origin}/sse/message?sessionId=${sessionId}`);
 
-        // Send MCP initialization
-        await this.sendSSEMessage(sessionId, {
-          jsonrpc: '2.0',
-          method: 'initialize',
-          params: {
-            protocolVersion: '2024-11-05',
-            capabilities: {
-              tools: {},
-              resources: {},
-              prompts: {}
-            },
-            serverInfo: {
-              name: 'Design Systems Knowledge Base',
-              version: '1.0.0',
-              icons: [
-                {
-                  url: `${origin}/icon.png`,
-                  mimeType: 'image/png'
-                }
-              ]
-            }
-          }
-        });
+        console.log(`[SSE] ${CODE_VERSION} endpoint sent for ${sessionId}, waiting for initialize`);
 
         // Keep connection alive with periodic heartbeat
         const heartbeatInterval = setInterval(async () => {
@@ -184,7 +163,7 @@ export class SSESession {
         });
 
       } catch (error) {
-        console.error(`[SSE] Connection error for ${sessionId}:`, error);
+        console.error(`[SSE] Initialization error for ${sessionId}:`, error);
         this.sessions.delete(sessionId);
         writer.close().catch(() => {});
       }
@@ -271,10 +250,31 @@ export class SSESession {
     }
 
     try {
-      const data = `data: ${JSON.stringify(message)}\n\n`;
+      // MCP spec requires: event: message\ndata: {json}\n\n
+      const data = `event: message\ndata: ${JSON.stringify(message)}\n\n`;
       await session.writer.write(session.encoder.encode(data));
     } catch (error) {
       console.error(`[SSE] Failed to send message to ${sessionId}:`, error);
+      this.sessions.delete(sessionId);
+    }
+  }
+
+  /**
+   * Send SSE endpoint event (MCP spec format)
+   * Format: event: endpoint\ndata: "URL"\n\n
+   */
+  private async sendSSEEndpoint(sessionId: string, endpoint: string): Promise<void> {
+    const session = this.sessions.get(sessionId);
+    if (!session) {
+      console.warn(`[SSE] Attempted to send endpoint to closed session: ${sessionId}`);
+      return;
+    }
+
+    try {
+      const data = `event: endpoint\ndata: ${JSON.stringify(endpoint)}\n\n`;
+      await session.writer.write(session.encoder.encode(data));
+    } catch (error) {
+      console.error(`[SSE] Failed to send endpoint to ${sessionId}:`, error);
       this.sessions.delete(sessionId);
     }
   }

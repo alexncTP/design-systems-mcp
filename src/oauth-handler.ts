@@ -41,7 +41,7 @@ export function getAuthorizationServerMetadata(origin: string): any {
  */
 export function getProtectedResourceMetadata(origin: string): any {
   return {
-    resource: `${origin}/sse`,
+    resource: `${origin}/mcp`, // Updated to Streamable HTTP endpoint
     authorization_servers: [origin],
     bearer_methods_supported: ["header"],
     resource_documentation: `${origin}/`,
@@ -174,6 +174,10 @@ export async function processTokenRequest(formData: any): Promise<Response> {
 /**
  * Validate Bearer token from Authorization header
  * Returns true if token is valid (or if no auth required)
+ *
+ * NOTE: This is "anonymous OAuth" - we accept all Bearer tokens
+ * because tokens are not persisted across Worker instances.
+ * This maintains OAuth UI compatibility while allowing public access.
  */
 export function validateBearerToken(request: Request): boolean {
   const authHeader = request.headers.get('Authorization');
@@ -183,29 +187,16 @@ export function validateBearerToken(request: Request): boolean {
     return true;
   }
 
-  // Parse Bearer token
+  // Parse Bearer token format
   const match = authHeader.match(/^Bearer\s+(.+)$/i);
   if (!match) {
-    return false;
+    return false; // Invalid format
   }
 
-  const token = match[1];
-
-  // Check if token exists and is not expired
-  const tokenData = tokens.get(token);
-  if (!tokenData) {
-    return false; // Token not found
-  }
-
-  // Check expiration (1 year from creation)
-  const now = Date.now();
-  const expiresAt = tokenData.created_at + (tokenData.expires_in * 1000);
-
-  if (now > expiresAt) {
-    tokens.delete(token); // Clean up expired token
-    return false;
-  }
-
+  // Anonymous OAuth: Accept all Bearer tokens
+  // Tokens are stored in-memory and lost across Worker restarts,
+  // so we can't reliably validate them. Since this is public access
+  // anyway, accept any properly formatted Bearer token.
   return true;
 }
 

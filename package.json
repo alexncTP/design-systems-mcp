@@ -20,7 +20,6 @@
 		"build:manifest": "tsx scripts/build/generate-manifest.ts",
 		"check:duplicates": "tsx scripts/check-duplicates.ts",
 		"prebuild": "npm run build:manifest",
-		"mcp:standalone": "node standalone-mcp-server.js",
 		"ingest:vectors": "tsx scripts/ingest-vectors.ts --",
 		"compare:search": "tsx scripts/compare-search-quality.ts",
 		"test:vector": "tsx scripts/test-vector-search.ts",
@@ -38,7 +37,7 @@
 		"retry:chunks": "tsx scripts/retry-chunks-only.ts"
 	},
 	"dependencies": {
-		"@modelcontextprotocol/sdk": "^1.0.7",
+		"@modelcontextprotocol/sdk": "^1.22.0",
 		"@supabase/supabase-js": "^2.82.0",
 		"@types/cheerio": "^0.22.35",
 		"agents": "^0.0.95",

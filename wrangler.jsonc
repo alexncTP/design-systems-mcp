@@ -23,7 +23,7 @@
 		"bindings": [
 			{
 				"name": "SSE_SESSION",
-				"class_name": "SSESession",
+				"class_name": "SSESessionV2",
 				"script_name": "design-systems-mcp"
 			}
 		]
@@ -32,6 +32,23 @@
 		{
 			"tag": "v1",
 			"new_classes": ["SSESession"]
+		},
+		{
+			"tag": "v2-mcp-fix-rename",
+			"renamed_classes": [
+				{
+					"from": "SSESession",
+					"to": "SSESessionV2"
+				}
+			]
+		},
+		{
+			"tag": "v3-delete-all-instances",
+			"deleted_classes": ["SSESessionV2"]
+		},
+		{
+			"tag": "v4-recreate-fresh",
+			"new_classes": ["SSESessionV2"]
 		}
 	],
 	"vars": {

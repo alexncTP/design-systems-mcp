@@ -99,34 +99,27 @@ Choose your AI coding tool below for setup instructions:
 <details>
 <summary><b>Claude Desktop</b> - Click to expand configuration</summary>
 
-**Option 1: Add Custom Connector UI (Recommended - No JSON editing!)**
+**Add via Custom Connector UI (Recommended - No JSON editing!)**
 
-1. Open Claude Desktop
-2. Click Settings → MCP → "Add custom connector"
-3. Enter:
-   - **Name**: `Design Systems Assistant`
-   - **URL**: `https://design-systems-mcp.southleft.com/sse`
-4. Click **Connect**
-5. When prompted, click **Authorize** (auto-approves instantly)
+1. **Open Claude Desktop** and navigate to **Settings** → **Connectors**
 
-Done! The 4 MCP tools are now available in Claude Desktop.
+2. **Click "Add custom connector"** at the bottom of the connectors list
 
-**Option 2: Manual JSON Configuration**
+3. **Fill in the connector details:**
+   - **Name**: `Design Systems Assistant` (or any name you prefer)
+   - **URL**: `https://design-systems-mcp.southleft.com/mcp`
 
-**Location:** macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+4. **Click "Add"** to save the connector
 
-```json
-{
-  "mcpServers": {
-    "design-systems": {
-      "type": "sse",
-      "url": "https://design-systems-mcp.southleft.com/sse"
-    }
-  }
-}
-```
+5. **Start using it!** The connector will appear in your connectors list with 4 available tools:
+   - `search_design_knowledge`
+   - `search_chunks`
+   - `browse_by_category`
+   - `get_all_tags`
 
-**Restart Claude Desktop** after updating the configuration.
+**That's it!** You can now use the Design Systems Assistant in your Claude Desktop conversations.
+
+**Note:** Custom connectors are available for Claude Pro, Team, and Enterprise plans.
 
 </details>
 
