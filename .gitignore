@@ -201,6 +201,9 @@ content-quality-report.json
 local-content-library/
 content/entries/.crawl-progress.json
 
+# CSV data files (source data for ingestion)
+*.csv
+
 # Migration and setup docs are now in docs/ folder
 
 # Temporary and generated files
