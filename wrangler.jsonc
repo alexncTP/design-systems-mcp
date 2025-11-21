@@ -19,6 +19,21 @@
 		"directory": "./public",
 		"binding": "ASSETS"
 	},
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "SSE_SESSION",
+				"class_name": "SSESession",
+				"script_name": "design-systems-mcp"
+			}
+		]
+	},
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_classes": ["SSESession"]
+		}
+	],
 	"vars": {
 		"VECTOR_SEARCH_ENABLED": "true",
 		"VECTOR_SEARCH_MODE": "vector",

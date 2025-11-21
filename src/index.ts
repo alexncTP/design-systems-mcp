@@ -15,6 +15,17 @@ import { Category, ContentEntry } from "../types/content";
 // OpenAI integration
 import { OpenAI } from "openai";
 
+// Export SSE Session Durable Object
+export { SSESession } from "./sse-session.js";
+
+// OAuth handler imports
+import {
+  getAuthorizationServerMetadata,
+  getProtectedResourceMetadata,
+  handleAuthorizeRequest,
+  processTokenRequest
+} from "./oauth-handler.js";
+
 // Supabase Vector Search Mode - No file loading needed
 console.log('🚀 MCP Server with Supabase Vector Search');
 console.log('✅ Vector search enabled - using production database');
@@ -1153,8 +1164,53 @@ ${tagList}`
 }
 
 export default {
-  fetch(request: Request, env: Env, ctx: ExecutionContext) {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext) {
     const url = new URL(request.url);
+    const origin = url.origin;
+
+    // OAuth Discovery Endpoints for Claude Desktop
+    if (url.pathname === "/.well-known/oauth-authorization-server" ||
+        url.pathname === "/.well-known/oauth-authorization-server/sse") {
+      return new Response(JSON.stringify(getAuthorizationServerMetadata(origin)), {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Cache-Control': 'public, max-age=3600'
+        }
+      });
+    }
+
+    if (url.pathname === "/.well-known/oauth-protected-resource" ||
+        url.pathname === "/.well-known/oauth-protected-resource/sse") {
+      return new Response(JSON.stringify(getProtectedResourceMetadata(origin)), {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Cache-Control': 'public, max-age=3600'
+        }
+      });
+    }
+
+    // OAuth Authorization Endpoint
+    if (url.pathname === "/oauth/authorize") {
+      return handleAuthorizeRequest(url, origin);
+    }
+
+    // OAuth Token Endpoint
+    if (url.pathname === "/oauth/token") {
+      if (request.method === 'POST') {
+        const formData = await request.formData();
+        return await processTokenRequest(formData);
+      }
+      return new Response('Method not allowed', { status: 405 });
+    }
+
+    // SSE endpoint for Claude Desktop "Add custom connector" UI
+    if (url.pathname === "/sse" || url.pathname === "/sse/message") {
+      const id = env.SSE_SESSION.idFromName("mcp-session");
+      const stub = env.SSE_SESSION.get(id);
+      return stub.fetch(request);
+    }
 
     if (url.pathname === "/mcp") {
       return handleMcpRequest(request, env);

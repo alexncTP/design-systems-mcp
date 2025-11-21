@@ -6,6 +6,7 @@ declare namespace Cloudflare {
 		OPENAI_API_KEY: string;
 		OPENAI_MODEL: string;
 		AI_SYSTEM_PROMPT: string;
+		SSE_SESSION: DurableObjectNamespace;
 	}
 }
 interface Env extends Cloudflare.Env {}

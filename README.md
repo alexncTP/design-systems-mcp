@@ -99,30 +99,28 @@ Choose your AI coding tool below for setup instructions:
 <details>
 <summary><b>Claude Desktop</b> - Click to expand configuration</summary>
 
+**Option 1: Add Custom Connector UI (Recommended - No JSON editing!)**
+
+1. Open Claude Desktop
+2. Click Settings → MCP → "Add custom connector"
+3. Enter:
+   - **Name**: `Design Systems Assistant`
+   - **URL**: `https://design-systems-mcp.southleft.com/sse`
+4. Click **Connect**
+5. When prompted, click **Authorize** (auto-approves instantly)
+
+Done! The 4 MCP tools are now available in Claude Desktop.
+
+**Option 2: Manual JSON Configuration**
+
 **Location:** macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
 
-**Option 1: SSE Transport (Recommended)**
 ```json
 {
   "mcpServers": {
     "design-systems": {
-      "url": "https://design-systems-mcp.southleft.com/mcp",
-      "transport": "sse"
-    }
-  }
-}
-```
-
-**Option 2: Node Proxy**
-```json
-{
-  "mcpServers": {
-    "design-systems": {
-      "command": "node",
-      "args": [
-        "-e",
-        "const https = require('https'); const options = { hostname: 'design-systems-mcp.southleft.com', path: '/mcp', method: 'POST', headers: { 'Content-Type': 'application/json' } }; process.stdin.on('data', data => { const req = https.request(options, res => { res.on('data', chunk => process.stdout.write(chunk)); }); req.write(data); req.end(); });"
-      ]
+      "type": "sse",
+      "url": "https://design-systems-mcp.southleft.com/sse"
     }
   }
 }
