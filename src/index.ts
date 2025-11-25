@@ -1038,14 +1038,14 @@ ${formattedResults}`
 
         case "search_chunks": {
           // Use Supabase vector search via search-handler
-          const entries = await searchEntries({
+          const chunkEntries = await searchEntries({
             query: args.query,
             limit: args.limit || 8
           }, env);
 
           // Extract chunks from entries for display
           const chunkResultsList: Array<{ entry: any; chunk: any; score: number }> = [];
-          for (const entry of entries) {
+          for (const entry of chunkEntries) {
             if (entry.chunks && entry.chunks.length > 0) {
               // Add the first chunk from each entry
               chunkResultsList.push({
@@ -1075,11 +1075,25 @@ ${formattedResults}`
               }],
             };
           } else {
+            // Check if any chunk results contain APG content
+            const chunksHaveAPGContent = resultsContainAPGContent(chunkEntries);
+
             const formattedChunkResults = chunkResultsList.map((chunkResult, index) => {
               const { displayName, url } = formatSourceReference(chunkResult.entry);
               const sourceLink = url
                 ? `[${displayName}](${url})`
                 : displayName;
+
+              // Get reliability badge for this entry
+              const reliabilityBadge = chunkResult.entry.metadata?.reliabilityBadge ||
+                formatReliabilityBadge(chunkResult.entry.metadata?.reliability?.level || 'community');
+
+              // Check if this specific entry needs a caveat
+              const chunkSourceLocation = chunkResult.entry.source?.location || chunkResult.entry.metadata?.source_url || '';
+              const chunkNeedsCaveat = requiresAccessibilityCaveats(chunkSourceLocation);
+              const chunkCaveatNote = chunkNeedsCaveat
+                ? `\n\n> ⚠️ **Note:** ${chunkResult.entry.metadata?.importantNote || 'This is a reference implementation. Prefer semantic HTML and test with assistive technology.'}`
+                : '';
 
               // Clean up the chunk text to avoid nested bullets
               const cleanText = chunkResult.chunk.text
@@ -1089,18 +1103,24 @@ ${formattedResults}`
 
               return `### ${chunkResult.chunk.metadata?.section || "Insight"}
 *Source: ${sourceLink}*
+*Reliability: ${reliabilityBadge}*
 
-${cleanText}
+${cleanText}${chunkCaveatNote}
 
 ---`;
             }).join("\n\n");
+
+            // Add accessibility guidance disclaimer if APG content is present
+            const chunkAccessibilityDisclaimer = chunksHaveAPGContent
+              ? `\n\n---\n\n> ⚠️ **Accessibility Implementation Note**\n>\n> Some results reference ARIA Authoring Practices Guide (APG). Remember:\n> - **Prefer semantic HTML** - Native elements like \`<button>\`, \`<select>\`, \`<input>\` are already accessible\n> - **APG demonstrates ARIA usage**, not complete accessibility solutions\n> - **Test with assistive technology** (NVDA, JAWS, VoiceOver) before production\n>\n> *See also: [Inclusive Components](https://inclusive-components.design/), [GOV.UK Design System](https://design-system.service.gov.uk/)*`
+              : '';
 
             result = {
               content: [{
                 type: "text",
                 text: `**🎯 FOUND ${chunkResultsList.length} RELEVANT CHUNK${chunkResultsList.length === 1 ? "" : "S"}**
 
-${formattedChunkResults}`
+${formattedChunkResults}${chunkAccessibilityDisclaimer}`
               }],
             };
           }
