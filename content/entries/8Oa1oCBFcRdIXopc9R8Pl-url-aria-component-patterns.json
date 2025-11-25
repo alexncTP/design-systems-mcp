@@ -76,17 +76,35 @@
     }
   ],
   "metadata": {
-    "category": "components",
+    "category": "accessibility",
     "tags": [
       "aria",
       "accessibility",
       "patterns",
-      "components"
+      "reference-implementation"
     ],
-    "confidence": "high",
+    "confidence": "medium",
     "last_updated": "2025-11-20T14:02:32.679Z",
     "system": "ARIA",
     "author": "W3C",
-    "source_url": "https://www.w3.org/WAI/ARIA/apg/patterns/"
+    "source_url": "https://www.w3.org/WAI/ARIA/apg/patterns/",
+    "importantNote": "⚠️ These are ARIA reference patterns, NOT production-ready accessibility solutions. For components like Button, Checkbox, and others with native HTML equivalents, ALWAYS use semantic HTML first (<button>, <input type='checkbox'>, etc.).",
+    "reliability": {
+      "level": "reference",
+      "testingStatus": "reference_implementation",
+      "purpose": "learning",
+      "caveats": [
+        "These patterns demonstrate ARIA mechanics, NOT accessibility best practices",
+        "MANY of these components have native HTML equivalents that should be preferred",
+        "Native <button> is better than <div role='button'>",
+        "Native <input type='checkbox'> is better than <div role='checkbox'>",
+        "Test with assistive technology before using any pattern in production"
+      ],
+      "preferredAlternatives": [
+        "Native HTML form controls (<button>, <input>, <select>)",
+        "Inclusive Components by Heydon Pickering",
+        "GOV.UK Design System component patterns"
+      ]
+    }
   }
 }

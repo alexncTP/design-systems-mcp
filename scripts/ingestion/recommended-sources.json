@@ -1,0 +1,99 @@
+{
+  "description": "Recommended authoritative sources for accessibility and design system content. Sources are prioritized by reliability level.",
+  "sources": {
+    "gold_standard": [
+      {
+        "url": "https://www.w3.org/WAI/WCAG21/quickref/",
+        "title": "WCAG 2.1 Quick Reference",
+        "category": "accessibility",
+        "tags": ["wcag", "accessibility", "guidelines", "compliance"],
+        "priority": "high",
+        "notes": "The definitive accessibility guidelines - should always be referenced for compliance questions"
+      },
+      {
+        "url": "https://html.spec.whatwg.org/multipage/",
+        "title": "HTML Living Standard",
+        "category": "foundations",
+        "tags": ["html", "semantics", "accessibility", "standards"],
+        "priority": "medium",
+        "notes": "Defines native element semantics - critical for understanding why semantic HTML is preferred"
+      }
+    ],
+    "authoritative": [
+      {
+        "url": "https://inclusive-components.design/",
+        "title": "Inclusive Components",
+        "category": "components",
+        "tags": ["accessibility", "components", "patterns", "semantic-html"],
+        "priority": "high",
+        "notes": "Heydon Pickering's extensively tested accessible component patterns. Prioritizes semantic HTML over ARIA. HIGHLY RECOMMENDED as APG alternative."
+      },
+      {
+        "url": "https://design-system.service.gov.uk/",
+        "title": "GOV.UK Design System",
+        "category": "patterns",
+        "tags": ["accessibility", "design-system", "government", "tested"],
+        "priority": "high",
+        "notes": "UK Government Design System - extensively tested with real users including those using assistive technology. Gold standard for tested patterns."
+      },
+      {
+        "url": "https://www.deque.com/resources/",
+        "title": "Deque University Resources",
+        "category": "accessibility",
+        "tags": ["accessibility", "training", "axe-core", "testing"],
+        "priority": "high",
+        "notes": "Industry-leading accessibility training and patterns from the creators of axe-core."
+      },
+      {
+        "url": "https://www.a11yproject.com/",
+        "title": "The A11Y Project",
+        "category": "accessibility",
+        "tags": ["accessibility", "community", "checklist", "resources"],
+        "priority": "medium",
+        "notes": "Community-driven accessibility resource with practical, vetted guidance."
+      },
+      {
+        "url": "https://adrianroselli.com/",
+        "title": "Adrian Roselli's Blog",
+        "category": "accessibility",
+        "tags": ["accessibility", "aria", "testing", "best-practices"],
+        "priority": "medium",
+        "notes": "Adrian Roselli's accessibility expertise - often critiques APG examples and provides better alternatives."
+      },
+      {
+        "url": "https://www.scottohara.me/",
+        "title": "Scott O'Hara's Blog",
+        "category": "accessibility",
+        "tags": ["accessibility", "aria", "components", "research"],
+        "priority": "medium",
+        "notes": "Scott O'Hara's accessibility research - provides deep dives into accessible component implementations."
+      }
+    ],
+    "reference": [
+      {
+        "url": "https://www.w3.org/WAI/ARIA/apg/",
+        "title": "ARIA Authoring Practices Guide",
+        "category": "accessibility",
+        "tags": ["aria", "patterns", "reference"],
+        "priority": "low",
+        "notes": "IMPORTANT CAVEATS: This is a reference for ARIA mechanics, NOT a gold standard for accessibility. Always prefer semantic HTML. Test with assistive technology before using these patterns.",
+        "reliability_override": {
+          "level": "reference",
+          "testingStatus": "reference_implementation",
+          "purpose": "learning",
+          "caveats": [
+            "APG demonstrates ARIA usage patterns, NOT complete accessibility solutions",
+            "Native HTML elements should ALWAYS be preferred over ARIA implementations",
+            "Some APG examples have known issues with certain assistive technologies",
+            "Always test with actual screen readers (NVDA, JAWS, VoiceOver) before production use"
+          ]
+        }
+      }
+    ]
+  },
+  "ingestion_notes": {
+    "priority_order": "Ingest gold_standard and authoritative sources first. Reference sources should be marked with appropriate caveats.",
+    "content_enrichment": "When ingesting, ensure source reliability metadata is properly set based on the reliability_override if provided.",
+    "update_frequency": "Gold standard sources should be checked for updates quarterly. Authoritative sources monthly. Community sources as needed."
+  }
+}

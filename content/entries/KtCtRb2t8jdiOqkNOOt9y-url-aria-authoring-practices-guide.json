@@ -54,17 +54,36 @@
     }
   ],
   "metadata": {
-    "category": "components",
+    "category": "accessibility",
     "tags": [
       "aria",
       "accessibility",
       "patterns",
-      "wcag"
+      "reference-implementation"
     ],
-    "confidence": "high",
+    "confidence": "medium",
     "last_updated": "2025-11-20T13:22:10.250Z",
     "system": "ARIA",
     "author": "W3C",
-    "source_url": "https://www.w3.org/WAI/ARIA/apg/"
+    "source_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "importantNote": "⚠️ APG demonstrates ARIA usage patterns, NOT complete accessibility solutions. Always prefer semantic HTML. Test with assistive technology before production use.",
+    "reliability": {
+      "level": "reference",
+      "testingStatus": "reference_implementation",
+      "purpose": "learning",
+      "caveats": [
+        "APG demonstrates ARIA usage patterns, NOT complete accessibility solutions",
+        "Native HTML elements should ALWAYS be preferred over ARIA implementations",
+        "Some APG examples have known issues with certain assistive technologies",
+        "Always test with actual screen readers (NVDA, JAWS, VoiceOver) before production use",
+        "APG patterns show HOW to use ARIA correctly, not WHEN to use it"
+      ],
+      "preferredAlternatives": [
+        "Semantic HTML elements (button, select, input, etc.)",
+        "Inclusive Components by Heydon Pickering",
+        "GOV.UK Design System patterns",
+        "Deque University component patterns"
+      ]
+    }
   }
 }

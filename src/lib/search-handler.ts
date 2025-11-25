@@ -1,9 +1,59 @@
 /**
  * Unified search handler that checks Supabase first, falls back to local
+ * Includes source reliability enrichment for content quality transparency
  */
 
-import { ContentEntry, SearchOptions, Category } from '../../types/content';
+import { type ContentEntry, type SearchOptions, Category } from '../../types/content';
 import { searchEntries as searchEntriesLocal } from './content-manager';
+import {
+  getSourceReliability,
+  requiresAccessibilityCaveats,
+  getAccessibilityGuidanceDisclaimer,
+  formatReliabilityBadge
+} from './source-authority';
+
+/**
+ * Enrich a content entry with source reliability information
+ */
+function enrichWithReliability(entry: ContentEntry): ContentEntry {
+  const sourceLocation = entry.source?.location || entry.metadata?.source_url || '';
+  const reliability = getSourceReliability(sourceLocation);
+
+  // Create enriched metadata
+  const enrichedMetadata = {
+    ...entry.metadata,
+    reliability,
+    reliabilityBadge: formatReliabilityBadge(reliability.level)
+  };
+
+  // Add important note if source requires caveats (like APG)
+  if (reliability.importantNote) {
+    enrichedMetadata.importantNote = reliability.importantNote;
+  }
+
+  // Adjust confidence based on reliability level
+  // APG and reference implementations should not be marked as "high" confidence for accessibility
+  if (reliability.level === 'reference' && entry.metadata.confidence === 'high') {
+    if (requiresAccessibilityCaveats(sourceLocation)) {
+      enrichedMetadata.confidence = 'medium';
+    }
+  }
+
+  return {
+    ...entry,
+    metadata: enrichedMetadata
+  };
+}
+
+/**
+ * Check if any results contain APG/ARIA content that needs disclaimers
+ */
+function resultsContainAPGContent(results: ContentEntry[]): boolean {
+  return results.some(entry => {
+    const sourceLocation = entry.source?.location || entry.metadata?.source_url || '';
+    return requiresAccessibilityCaveats(sourceLocation);
+  });
+}
 
 export async function searchWithSupabase(options: SearchOptions = {}, env?: any): Promise<ContentEntry[]> {
   const { query, category, tags: filterTags, confidence, limit = 50 } = options;
@@ -66,26 +116,32 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
             console.log(`[Vector Search] Found ${data.length} results`);
           }
 
-          // Convert Supabase results to ContentEntry format
-          return data.map((row: any) => ({
-            id: row.id,
-            title: row.title,
-            content: row.content || '',
-            source: {
-              type: row.source_type || 'database',
-              location: row.source_location || 'supabase',
-              ingested_at: row.ingested_at || new Date().toISOString()
-            },
-            chunks: [],
-            metadata: {
-              category: row.category || 'general',
-              tags: row.tags || [],
-              confidence: row.confidence || confidence || 'medium',
-              system: row.system_name || '',
-              last_updated: row.updated_at || new Date().toISOString(),
-              source_url: row.source_location || ''
-            }
-          }));
+          // Convert Supabase results to ContentEntry format and enrich with reliability
+          const results = data.map((row: any) => {
+            const entry: ContentEntry = {
+              id: row.id,
+              title: row.title,
+              content: row.content || '',
+              source: {
+                type: row.source_type || 'database',
+                location: row.source_location || 'supabase',
+                ingested_at: row.ingested_at || new Date().toISOString()
+              },
+              chunks: [],
+              metadata: {
+                category: row.category || 'general',
+                tags: row.tags || [],
+                confidence: row.confidence || confidence || 'medium',
+                system: row.system_name || '',
+                last_updated: row.updated_at || new Date().toISOString(),
+                source_url: row.source_location || ''
+              }
+            };
+            // Enrich with source reliability information
+            return enrichWithReliability(entry);
+          });
+
+          return results;
         }
 
         if (error && logPerformance) {
@@ -109,5 +165,13 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
   if (logPerformance) {
     console.log('[Search] Using local keyword search');
   }
-  return searchEntriesLocal(options);
+  const localResults = searchEntriesLocal(options);
+
+  // Enrich local results with reliability information
+  return localResults.map(entry => enrichWithReliability(entry));
 }
+
+/**
+ * Export helper functions for use in tool formatting
+ */
+export { resultsContainAPGContent, getAccessibilityGuidanceDisclaimer };

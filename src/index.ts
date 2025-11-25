@@ -8,9 +8,14 @@ import {
   getEntryById,
   SAMPLE_ENTRIES
 } from "./lib/content-manager.js";
-import { searchWithSupabase as searchEntries } from "./lib/search-handler.js";
+import {
+  searchWithSupabase as searchEntries,
+  resultsContainAPGContent,
+  getAccessibilityGuidanceDisclaimer
+} from "./lib/search-handler.js";
 import { formatSourceReference, formatInlineCitation } from "./lib/source-formatter.js";
-import { Category, ContentEntry } from "../types/content";
+import { formatReliabilityBadge, requiresAccessibilityCaveats } from "./lib/source-authority.js";
+import { type Category, ContentEntry } from "../types/content";
 
 // OpenAI integration
 import { OpenAI } from "openai";
@@ -255,7 +260,23 @@ LIST FORMATTING RULES:
 2. Components are reusable
 3. Guidelines ensure accessibility
 
-IMPORTANT: The knowledge base contains multiple glossaries with extensive definitions of design system terms. Always search thoroughly before claiming information doesn't exist.`;
+IMPORTANT: The knowledge base contains multiple glossaries with extensive definitions of design system terms. Always search thoroughly before claiming information doesn't exist.
+
+SOURCE RELIABILITY AWARENESS:
+Search results include source reliability indicators. When presenting information, be aware of these levels:
+• 🥇 Gold Standard (WCAG, HTML Living Standard) - Definitive specifications, highly reliable
+• ✅ Authoritative (Inclusive Components, GOV.UK Design System, Deque) - Extensively tested, production-ready
+• 📚 Reference (APG/ARIA Patterns) - Educational reference, NOT production-ready accessibility solutions
+• 💡 Example (Material Design, Carbon, etc.) - Organization-specific implementations
+• 👥 Community - Blog posts, tutorials - verify before implementing
+
+⚠️ CRITICAL ACCESSIBILITY GUIDANCE:
+When results include ARIA Authoring Practices Guide (APG) content:
+1. ALWAYS note that APG demonstrates ARIA usage, NOT complete accessibility solutions
+2. ALWAYS recommend semantic HTML first (button, select, input) over ARIA implementations
+3. ALWAYS recommend testing with real assistive technology (NVDA, JAWS, VoiceOver)
+4. Reference authoritative alternatives: Inclusive Components, GOV.UK Design System, Deque University
+5. The first rule of ARIA is: "Don't use ARIA" - prefer native HTML semantics`;
 
 // Available MCP tools for the AI
 const MCP_TOOLS = [
@@ -263,7 +284,7 @@ const MCP_TOOLS = [
     type: "function" as const,
     function: {
       name: "search_design_knowledge",
-      description: "Search the design systems knowledge base for general information",
+      description: "Search the design systems knowledge base for general information. Results include source reliability indicators (Gold Standard, Authoritative, Reference, Example, Community).",
       parameters: {
         type: "object",
         properties: {
@@ -348,7 +369,7 @@ async function callMcpTool(toolName: string, args: any, env?: any): Promise<stri
   console.log(`[Tool Call] ${toolName} with args:`, JSON.stringify(args).substring(0, 100));
 
   switch (toolName) {
-    case "search_design_knowledge":
+    case "search_design_knowledge": {
       const searchResults = await searchEntries({
         query: args.query,
         category: args.category as Category | undefined,
@@ -359,11 +380,25 @@ async function callMcpTool(toolName: string, args: any, env?: any): Promise<stri
         return "No design system knowledge found matching your search criteria.";
       }
 
+      // Check if results contain APG content that needs disclaimers
+      const hasAPGContent = resultsContainAPGContent(searchResults);
+
       const formattedResults = searchResults.map((entry, index) => {
         const { displayName, url } = formatSourceReference(entry);
         const sourceLink = url
           ? `<a href="${url}" target="_blank">${displayName}</a>`
           : displayName;
+
+        // Get reliability badge
+        const reliabilityBadge = entry.metadata.reliabilityBadge ||
+          formatReliabilityBadge(entry.metadata.reliability?.level || 'community');
+
+        // Check if this specific entry needs a caveat
+        const sourceLocation = entry.source?.location || entry.metadata?.source_url || '';
+        const needsCaveat = requiresAccessibilityCaveats(sourceLocation);
+        const caveatNote = needsCaveat
+          ? `\n<em style="color: #f59f00;">⚠️ Note: ${entry.metadata.importantNote || 'This is a reference implementation. Prefer semantic HTML and test with assistive technology.'}</em>`
+          : '';
 
         return `<strong>🔍 ${index + 1}. ${entry.title}</strong>
 
@@ -371,18 +406,34 @@ async function callMcpTool(toolName: string, args: any, env?: any): Promise<stri
 <em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
 <em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
 <em>⭐ Confidence:</em> ${entry.metadata.confidence}
-<em>🔗 Source:</em> ${sourceLink}
+<em>📊 Source Type:</em> ${reliabilityBadge}
+<em>🔗 Source:</em> ${sourceLink}${caveatNote}
 
 ${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
 
 <hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`;
       }).join("\n\n");
 
+      // Add accessibility guidance disclaimer if APG content is present
+      const accessibilityDisclaimer = hasAPGContent
+        ? `\n\n<div style="background: #2d2000; border: 1px solid #f59f00; border-radius: 8px; padding: 16px; margin-top: 16px;">
+<strong style="color: #f59f00;">⚠️ Accessibility Implementation Note</strong>
+<p style="margin: 8px 0; color: #c1c2c5;">Some results reference ARIA Authoring Practices Guide (APG). Remember:</p>
+<ul style="margin: 8px 0; color: #c1c2c5;">
+<li><strong>Prefer semantic HTML</strong> - Native elements like &lt;button&gt;, &lt;select&gt;, &lt;input&gt; are already accessible</li>
+<li><strong>APG demonstrates ARIA usage</strong>, not complete accessibility solutions</li>
+<li><strong>Test with assistive technology</strong> (NVDA, JAWS, VoiceOver) before production</li>
+</ul>
+<p style="margin: 8px 0; color: #909296;"><em>See also: <a href="https://inclusive-components.design/" target="_blank">Inclusive Components</a>, <a href="https://design-system.service.gov.uk/" target="_blank">GOV.UK Design System</a></em></p>
+</div>`
+        : '';
+
       return `FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}:
 
-${formattedResults}`;
+${formattedResults}${accessibilityDisclaimer}`;
+    }
 
-    case "browse_by_category":
+    case "browse_by_category": {
       const categoryEntries = getEntriesByCategory(args.category as Category);
 
       if (categoryEntries.length === 0) {
@@ -398,10 +449,12 @@ System: ${entry.metadata.system || "N/A"}`
       return `${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}":
 
 ${formattedEntries}`;
+    }
 
-    case "get_all_tags":
+    case "get_all_tags": {
       const tags = getAllTags();
       return `AVAILABLE TAGS (${tags.length}): ${tags.join(", ")}`;
+    }
 
 
 
@@ -431,7 +484,7 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 
     // Get OpenAI config from environment variables
     const apiKey = env?.OPENAI_API_KEY;
-    let model = env?.OPENAI_MODEL || "gpt-4o";
+    const model = env?.OPENAI_MODEL || "gpt-4o";
 
     // Validate model name (include GPT-5 models)
     const validModels = ['gpt-5-nano', 'gpt-5', 'gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-4', 'gpt-3.5-turbo'];
@@ -595,7 +648,7 @@ const server = new McpServer({
 server.tool(
   "search_design_knowledge",
   {
-    query: z.string().describe("Search query for design system knowledge"),
+    query: z.string().describe("Search query for design system knowledge. Results include source reliability indicators (Gold Standard, Authoritative, Reference, Example, Community) to help assess content quality."),
     category: z.enum(["components", "tokens", "patterns", "workflows", "guidelines", "general"])
       .optional()
       .describe("Filter by category"),
@@ -696,7 +749,7 @@ server.tool(
 
       // Clean up the chunk text to avoid nested bullets
       const cleanText = result.chunk.text
-        .replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
+        .replace(/^[-*•]\s*/gm, '') // Remove bullet points
         .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
         .replace(/^\s+|\s+$/gm, '') // Trim each line
         .trim();
@@ -850,13 +903,13 @@ async function handleMcpRequest(request: Request, env?: Env): Promise<Response> 
       const tools = [
         {
           name: "search_design_knowledge",
-          description: "Search through design system knowledge base entries by query, category, or tags",
+          description: "Search through design system knowledge base entries by query, category, or tags. Results include source reliability indicators to help assess content quality. Note: For accessibility content, prefer semantic HTML over ARIA implementations, and always test with assistive technology.",
           inputSchema: {
             type: "object",
             properties: {
               query: {
                 type: "string",
-                description: "Search query for finding relevant design system knowledge"
+                description: "Search query for finding relevant design system knowledge. Results are tagged with reliability levels (Gold Standard, Authoritative, Reference, Example, Community)."
               },
               category: {
                 type: "string",
@@ -941,7 +994,7 @@ async function handleMcpRequest(request: Request, env?: Env): Promise<Response> 
       let result;
 
       switch (toolName) {
-        case "search_design_knowledge":
+        case "search_design_knowledge": {
           const searchResults = await searchEntries({
             query: args.query,
             category: args.category,
@@ -981,8 +1034,9 @@ ${formattedResults}`
             };
           }
           break;
+        }
 
-        case "search_chunks":
+        case "search_chunks": {
           // Use Supabase vector search via search-handler
           const entries = await searchEntries({
             query: args.query,
@@ -1029,7 +1083,7 @@ ${formattedResults}`
 
               // Clean up the chunk text to avoid nested bullets
               const cleanText = chunkResult.chunk.text
-                .replace(/^[\-\*•]\s*/gm, '') // Remove bullet points
+                .replace(/^[-*•]\s*/gm, '') // Remove bullet points
                 .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
                 .trim();
 
@@ -1051,8 +1105,9 @@ ${formattedChunkResults}`
             };
           }
           break;
+        }
 
-        case "browse_by_category":
+        case "browse_by_category": {
           const categoryEntries = getEntriesByCategory(args.category as Category);
 
           if (categoryEntries.length === 0) {
@@ -1079,8 +1134,9 @@ ${formattedEntries}`
             };
           }
           break;
+        }
 
-        case "get_all_tags":
+        case "get_all_tags": {
           const tags = getAllTags();
           const tagList = tags.map(tag => `<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; margin: 2px;">🔖 ${tag}</span>`).join(" ");
           result = {
@@ -1092,6 +1148,7 @@ ${tagList}`
             }],
           };
           break;
+        }
 
         default:
           return new Response(JSON.stringify({

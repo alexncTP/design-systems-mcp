@@ -3,8 +3,27 @@
  */
 
 export type SourceType = 'pdf' | 'html' | 'url';
-export type Category = 'components' | 'tokens' | 'patterns' | 'workflows' | 'guidelines' | 'general' | 'glossary';
+export type Category = 'components' | 'tokens' | 'patterns' | 'workflows' | 'guidelines' | 'general' | 'glossary' | 'accessibility' | 'figma' | 'documentation' | 'workflow' | 'governance' | 'tools' | 'case-studies' | 'foundations';
 export type Confidence = 'high' | 'medium' | 'low';
+
+/**
+ * Source reliability levels for content authority hierarchy
+ */
+export type SourceReliabilityLevel = 'gold_standard' | 'authoritative' | 'reference' | 'example' | 'community';
+export type TestingStatus = 'production_tested' | 'community_validated' | 'reference_implementation' | 'not_verified';
+export type ContentPurpose = 'specification' | 'guidance' | 'learning' | 'example' | 'discussion';
+
+/**
+ * Source reliability information for content quality indicators
+ */
+export interface SourceReliabilityInfo {
+  level: SourceReliabilityLevel;
+  testingStatus: TestingStatus;
+  purpose: ContentPurpose;
+  caveats?: string[];
+  preferredAlternatives?: string[];
+  importantNote?: string;
+}
 
 export interface ContentSource {
   type: SourceType;
@@ -33,6 +52,10 @@ export interface ContentMetadata {
   last_updated: string;
   author?: string;
   system?: string; // e.g., "Material Design", "Carbon", etc.
+  /** Source reliability information - added dynamically based on source URL */
+  reliability?: SourceReliabilityInfo;
+  /** Important contextual note about this content */
+  importantNote?: string;
   [key: string]: any; // Allow for additional metadata
 }
 
