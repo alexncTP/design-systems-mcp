@@ -3,7 +3,7 @@
  * Automatically discovers and loads all JSON files from content/entries/
  */
 
-import { ContentEntry } from '../../types/content';
+import type { ContentEntry } from '../../types/content';
 
 /**
  * Dynamically load all content entries from the entries directory

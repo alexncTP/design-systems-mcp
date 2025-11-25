@@ -2,7 +2,7 @@
  * Format and clean up source references for display
  */
 
-import { ContentEntry } from '../../types/content';
+import type { ContentEntry } from '../../types/content';
 
 // Map of known books/PDFs to their actual sources
 const KNOWN_SOURCES: Record<string, { name: string; url: string }> = {

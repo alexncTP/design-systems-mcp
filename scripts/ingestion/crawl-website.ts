@@ -4,7 +4,7 @@
  * CLI script for crawling and ingesting entire websites
  */
 
-import { crawlWebsite, createCrawlReport, CrawlOptions } from './website-crawler';
+import { crawlWebsite, createCrawlReport, type CrawlOptions } from './website-crawler';
 import * as path from 'path';
 import * as fs from 'fs';
 

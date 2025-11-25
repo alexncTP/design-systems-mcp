@@ -2,8 +2,8 @@
  * Website crawler for recursive ingestion of all pages within a domain
  */
 
-import { ContentEntry, ContentMetadata } from "../../types/content";
-import { fetchURL, URLFetchOptions } from "./url-fetcher";
+import { type ContentEntry, ContentMetadata } from "../../types/content";
+import { fetchURL, type URLFetchOptions } from "./url-fetcher";
 import { generateId } from "../../src/lib/id-generator";
 import * as fs from 'fs';
 import * as path from 'path';
@@ -214,7 +214,7 @@ function extractLinks(content: string, baseUrl: string): string[] {
   }
 
   // Extract URLs that appear standalone
-  const urlRegex = /https?:\/\/[^\s<>"\[\]]+/g;
+  const urlRegex = /https?:\/\/[^\s<>"[\]]+/g;
   while ((match = urlRegex.exec(content)) !== null) {
     try {
       const absoluteUrl = new URL(match[0], baseUrl).href;

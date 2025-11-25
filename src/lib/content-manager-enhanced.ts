@@ -4,7 +4,7 @@
 
 import { searchChunks as searchChunksOriginal } from './content-manager';
 import { diversifySearchResults, getSourceDiversity } from './search-diversity';
-import { ContentEntry, ContentChunk } from '../../types/content';
+import type { ContentEntry, ContentChunk } from '../../types/content';
 
 /**
  * Enhanced chunk search with diversity improvements

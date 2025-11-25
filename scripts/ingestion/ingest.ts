@@ -3,7 +3,7 @@
  * Handles ingesting content from various sources and saving as JSON entries
  */
 
-import { ContentEntry, IngestionOptions, ContentMetadata } from "../../types/content";
+import type { ContentEntry, IngestionOptions, ContentMetadata } from "../../types/content";
 import { parseHTML } from "./html-parser";
 import { fetchURL } from "./url-fetcher";
 import * as fs from 'node:fs/promises';
@@ -33,7 +33,7 @@ export async function ingestContent(
       });
       break;
 
-    case 'html':
+    case 'html': {
       const htmlContent = await fs.readFile(source, 'utf-8');
       entry = await parseHTML(htmlContent, source, {
         metadata,
@@ -41,8 +41,9 @@ export async function ingestContent(
         overlapSize,
       });
       break;
+    }
 
-    case 'pdf':
+    case 'pdf': {
       const { parsePDF } = await import("./pdf-parser");
       const pdfBuffer = await fs.readFile(source);
       entry = await parsePDF(pdfBuffer.buffer.slice(0), source, {
@@ -51,6 +52,7 @@ export async function ingestContent(
         overlapSize,
       });
       break;
+    }
 
     default:
       throw new Error(`Unsupported source type: ${type}`);

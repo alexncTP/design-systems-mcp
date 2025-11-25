@@ -338,7 +338,6 @@ export async function handleStreamableHttp(
         else if (message.method === "notifications/initialized") {
           // No response needed for notifications
           console.log("[MCP] Client initialized notification received");
-          continue;
         }
         else if (message.method === "ping") {
           results.push({

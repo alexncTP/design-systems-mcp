@@ -20,7 +20,7 @@ import {
   getAllTags
 } from "./lib/content-manager.js";
 import { formatSourceReference } from "./lib/source-formatter.js";
-import { Category } from "../types/content";
+import type { Category } from "../types/content";
 import { validateBearerToken } from "./oauth-handler.js";
 
 interface SessionData {
@@ -434,7 +434,7 @@ export class SSESessionV2 {
       let result;
 
       switch (name) {
-        case 'search_design_knowledge':
+        case 'search_design_knowledge': {
           const searchResults = await searchEntries({
             query: args.query,
             category: args.category as Category | undefined,
@@ -477,8 +477,9 @@ ${formattedResults}`
             };
           }
           break;
+        }
 
-        case 'search_chunks':
+        case 'search_chunks': {
           const entries = await searchEntries({
             query: args.query,
             limit: args.limit || 8
@@ -516,7 +517,7 @@ ${formattedResults}`
               const sourceLink = url ? `[${displayName}](${url})` : displayName;
 
               const cleanText = item.chunk.text
-                .replace(/^[\-\*•]\s*/gm, '')
+                .replace(/^[-*•]\s*/gm, '')
                 .replace(/\n{3,}/g, '\n\n')
                 .trim();
 
@@ -538,8 +539,9 @@ ${formattedChunks}`
             };
           }
           break;
+        }
 
-        case 'browse_by_category':
+        case 'browse_by_category': {
           const categoryEntries = getEntriesByCategory(args.category as Category);
 
           if (categoryEntries.length === 0) {
@@ -566,8 +568,9 @@ ${formattedEntries}`
             };
           }
           break;
+        }
 
-        case 'get_all_tags':
+        case 'get_all_tags': {
           const tags = getAllTags();
           result = {
             content: [{
@@ -578,6 +581,7 @@ ${tags.join(', ')}`
             }]
           };
           break;
+        }
 
         default:
           return {

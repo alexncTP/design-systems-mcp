@@ -246,7 +246,7 @@ async function cleanAllContent() {
   const files = fs.readdirSync(contentDir).filter(f => f.endsWith('.json'));
   console.log(`📊 Found ${files.length} files to clean\n`);
 
-  let totalStats: CleaningStats = {
+  const totalStats: CleaningStats = {
     originalLength: 0,
     cleanedLength: 0,
     reductionPercent: 0,

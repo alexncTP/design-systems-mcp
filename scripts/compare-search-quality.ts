@@ -7,7 +7,7 @@
 
 import { VectorSearchProvider, createVectorSearchProvider } from '../src/lib/vector-search.js';
 import { searchEntries as fallbackSearch } from '../src/lib/content-manager.js';
-import { ContentEntry } from '../types/content';
+import type { ContentEntry } from '../types/content';
 
 // Test queries with expected characteristics
 const TEST_QUERIES = [

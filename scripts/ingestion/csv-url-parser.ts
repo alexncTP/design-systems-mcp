@@ -4,8 +4,8 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { ContentEntry, ContentMetadata, Category } from "../../types/content";
-import { fetchURL, URLFetchOptions } from "./url-fetcher";
+import type { ContentEntry, ContentMetadata, Category } from "../../types/content";
+import { fetchURL, type URLFetchOptions } from "./url-fetcher";
 import { generateId } from "../../src/lib/id-generator";
 
 export interface CSVURLRow {
@@ -206,7 +206,7 @@ async function processURLWithRetry(
       if (attempt > 0) {
         console.log(`🔄 Retry ${attempt}/${maxRetries}: ${row.url}`);
         // Exponential backoff
-        await new Promise(resolve => setTimeout(resolve, Math.pow(2, attempt) * 1000));
+        await new Promise(resolve => setTimeout(resolve, 2 ** attempt * 1000));
       }
 
       const entry = await fetchURL(row.url, options);

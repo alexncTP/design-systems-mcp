@@ -5,7 +5,7 @@
 
 import { createClient } from '@supabase/supabase-js';
 import OpenAI from 'openai';
-import { ContentEntry, ContentChunk } from '../../types/content';
+import type { ContentEntry, ContentChunk } from '../../types/content';
 
 // Types
 // Database row types for Supabase queries

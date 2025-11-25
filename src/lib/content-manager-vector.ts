@@ -3,7 +3,7 @@
  * Provides backwards-compatible search with automatic fallback
  */
 
-import { ContentEntry, SearchOptions } from '../../types/content';
+import type { ContentEntry, SearchOptions } from '../../types/content';
 import { 
   searchEntries as searchEntriesOriginal, 
   searchChunks as searchChunksOriginal,
@@ -13,7 +13,7 @@ import {
   searchEntriesVector, 
   searchChunksVector, 
   isVectorSearchAvailable,
-  VectorSearchOptions 
+  type VectorSearchOptions 
 } from './vector-search';
 
 // Performance monitoring

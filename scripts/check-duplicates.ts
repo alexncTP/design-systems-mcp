@@ -6,7 +6,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { ContentEntry } from '../types/content';
+import type { ContentEntry } from '../types/content';
 
 interface DuplicateInfo {
   url: string;

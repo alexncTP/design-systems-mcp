@@ -2,7 +2,7 @@
  * URL content fetcher for extracting design system knowledge from web pages
  */
 
-import { ContentEntry, ContentMetadata } from "../../types/content";
+import type { ContentEntry, ContentMetadata } from "../../types/content";
 import { parseHTML } from "./html-parser";
 
 export interface URLFetchOptions {

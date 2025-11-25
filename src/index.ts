@@ -1138,18 +1138,37 @@ ${formattedChunkResults}${chunkAccessibilityDisclaimer}`
               }],
             };
           } else {
-            const formattedEntries = categoryEntries.map((entry, index) =>
-              `<strong>📋 ${index + 1}. ${entry.title}</strong>
+            // Check if any entries contain APG content that needs disclaimers
+            const categoryHasAPGContent = resultsContainAPGContent(categoryEntries);
+
+            const formattedEntries = categoryEntries.map((entry, index) => {
+              // Get reliability badge for this entry
+              const reliabilityBadge = entry.metadata?.reliabilityBadge ||
+                formatReliabilityBadge(entry.metadata?.reliability?.level || 'community');
+
+              // Check if this specific entry needs a caveat
+              const sourceLocation = entry.source?.location || entry.metadata?.source_url || '';
+              const needsCaveat = requiresAccessibilityCaveats(sourceLocation);
+              const caveatNote = needsCaveat
+                ? `\n⚠️ *Reference only - prefer semantic HTML*`
+                : '';
+
+              return `<strong>📋 ${index + 1}. ${entry.title}</strong> ${reliabilityBadge}
 <em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
-<em>🏷️ System:</em> ${entry.metadata.system || "N/A"}`
-            ).join("\n\n");
+<em>🏷️ System:</em> ${entry.metadata.system || "N/A"}${caveatNote}`;
+            }).join("\n\n");
+
+            // Add accessibility disclaimer if APG content present
+            const categoryAccessibilityDisclaimer = categoryHasAPGContent
+              ? getAccessibilityGuidanceDisclaimer()
+              : '';
 
             result = {
               content: [{
                 type: "text",
                 text: `<strong>📁 ${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}"</strong>
 
-${formattedEntries}`
+${formattedEntries}${categoryAccessibilityDisclaimer}`
               }],
             };
           }

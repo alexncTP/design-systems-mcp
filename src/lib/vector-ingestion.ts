@@ -5,7 +5,7 @@
 
 import { createClient } from '@supabase/supabase-js';
 import OpenAI from 'openai';
-import { ContentEntry } from '../../types/content';
+import type { ContentEntry } from '../../types/content';
 import { loadAllContentEntries } from './content-loader';
 import { chunkText as createChunks } from './chunker';
 

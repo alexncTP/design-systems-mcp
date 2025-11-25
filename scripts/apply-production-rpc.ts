@@ -43,7 +43,7 @@ async function applyProductionRpc() {
 
     // Execute each statement
     let successCount = 0;
-    let failCount = 0;
+    const failCount = 0;
 
     for (let i = 0; i < statements.length; i++) {
       const stmt = statements[i].trim();

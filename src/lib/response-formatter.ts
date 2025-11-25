@@ -2,7 +2,7 @@
  * Natural language response formatting for search results
  */
 
-import { ContentEntry, ContentChunk } from '../../types/content';
+import type { ContentEntry, ContentChunk } from '../../types/content';
 import { formatSourceReference } from './source-formatter';
 
 interface SearchResult {
@@ -299,9 +299,9 @@ function extractImplementationSteps(results: SearchResult[]): Array<{text: strin
     // Look for numbered steps or clear procedures
     const lines = result.chunk.text.split('\n');
     lines.forEach(line => {
-      if (/^\d+\./.test(line.trim()) || /^[•\-\*]/.test(line.trim())) {
+      if (/^\d+\./.test(line.trim()) || /^[•\-*]/.test(line.trim())) {
         steps.push({
-          text: line.replace(/^[\d\.\-\*•]\s*/, '').trim(),
+          text: line.replace(/^[\d.\-*•]\s*/, '').trim(),
           source
         });
       }

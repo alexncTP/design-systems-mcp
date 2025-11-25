@@ -4,7 +4,7 @@
  * CLI script for ingesting design system content from CSV files containing URLs
  */
 
-import { processCSVURLs, createSampleCSV, CSVParseOptions } from './csv-url-parser';
+import { processCSVURLs, createSampleCSV, type CSVParseOptions } from './csv-url-parser';
 import * as path from 'path';
 import * as fs from 'fs';
 import { exec } from 'child_process';

@@ -2,7 +2,7 @@
  * Text chunking utilities for breaking content into manageable pieces
  */
 
-import { ContentChunk } from "../../types/content";
+import type { ContentChunk } from "../../types/content";
 
 export interface ChunkOptions {
   chunkSize?: number;

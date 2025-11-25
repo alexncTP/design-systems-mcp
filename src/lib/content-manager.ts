@@ -3,11 +3,11 @@
  * Handles loading, searching, and managing content entries
  */
 
-import { ContentEntry, Category, SearchOptions, ContentChunk } from "../../types/content";
+import type { ContentEntry, Category, SearchOptions, ContentChunk } from "../../types/content";
 
 // In-memory storage for entries
 let entries: ContentEntry[] = [];
-let tags: Set<string> = new Set();
+const tags: Set<string> = new Set();
 
 // Sample entries for demo purposes
 export const SAMPLE_ENTRIES: ContentEntry[] = [
@@ -107,7 +107,7 @@ export function normalizeSearchTerms(query: string): string[] {
   const queryLower = query.toLowerCase();
 
   // Handle chapter number variants
-  let normalizedQuery = queryLower
+  const normalizedQuery = queryLower
     .replace(/\bchapter\s+two\b/g, 'chapter 2')
     .replace(/\bchapter\s+three\b/g, 'chapter 3')
     .replace(/\bchapter\s+four\b/g, 'chapter 4')

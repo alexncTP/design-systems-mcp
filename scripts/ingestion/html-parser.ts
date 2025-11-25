@@ -2,7 +2,7 @@
  * HTML content parser for extracting design system knowledge
  */
 
-import { ContentEntry, ContentMetadata, SourceType } from "../../types/content";
+import type { ContentEntry, ContentMetadata, SourceType } from "../../types/content";
 import { chunkBySection } from "../../src/lib/chunker";
 import { generateId } from "../../src/lib/id-generator";
 import * as cheerio from 'cheerio';
@@ -123,7 +123,7 @@ export async function parseHTML(
     
     // Skip empty, very short, already seen, or numeric-only content
     if (!directText || directText.length < 3 || seenTexts.has(directText)) return;
-    if (directText.match(/^[0-9.:,\s\/\-]+$/)) return;
+    if (directText.match(/^[0-9.:,\s/-]+$/)) return;
     
     seenTexts.add(directText);
     

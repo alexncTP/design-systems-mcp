@@ -110,9 +110,9 @@ class ContentCleaner {
   private htmlArtifacts = [
     /class="[^"]+"/g,
     /aria-hidden="[^"]+"/g,
-    /\s*\)\"\s*/g,
+    /\s*\)"\s*/g,
     /\s*>\s*>\s*/g,
-    /\s*\"\s*>\s*\"\s*>/g
+    /\s*"\s*>\s*"\s*>/g
   ];
 
   async run(dryRun = false): Promise<void> {
