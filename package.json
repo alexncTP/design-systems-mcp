@@ -22,7 +22,6 @@
 		"prebuild": "npm run build:manifest",
 		"ingest:vectors": "tsx scripts/ingest-vectors.ts --",
 		"compare:search": "tsx scripts/compare-search-quality.ts",
-		"test:vector": "tsx scripts/test-vector-search.ts",
 		"validate:ingestion": "tsx scripts/validate-ingestion.ts",
 		"setup:supabase": "tsx scripts/setup-supabase.ts",
 		"test:prod": "tsx scripts/test-prod-connection.ts",
@@ -37,7 +36,7 @@
 		"retry:chunks": "tsx scripts/retry-chunks-only.ts"
 	},
 	"dependencies": {
-		"@modelcontextprotocol/sdk": "^1.22.0",
+		"@modelcontextprotocol/sdk": "^1.29.0",
 		"@supabase/supabase-js": "^2.82.0",
 		"@types/cheerio": "^0.22.35",
 		"agents": "^0.0.95",

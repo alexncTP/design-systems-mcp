@@ -546,69 +546,100 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
         response
       ];
 
-      // Execute each tool call
-      for (const toolCall of response.tool_calls) {
-        try {
-          const toolResult = await callMcpTool(
-            toolCall.function.name,
-            JSON.parse(toolCall.function.arguments),
-            env
-          );
+      // Execute all tool calls in parallel (preserves input order in results)
+      const toolResults = await Promise.all(
+        response.tool_calls.map(async (toolCall) => {
+          try {
+            const content = await callMcpTool(
+              toolCall.function.name,
+              JSON.parse(toolCall.function.arguments),
+              env
+            );
+            return { role: "tool" as const, tool_call_id: toolCall.id, content };
+          } catch (error: any) {
+            return { role: "tool" as const, tool_call_id: toolCall.id, content: `Error: ${error.message}` };
+          }
+        })
+      );
+      for (const r of toolResults) messages.push(r);
 
-          messages.push({
-            role: "tool",
-            tool_call_id: toolCall.id,
-            content: toolResult // Now it's a string, not JSON
-          });
-        } catch (error: any) {
-          messages.push({
-            role: "tool",
-            tool_call_id: toolCall.id,
-            content: `Error: ${error.message}`
-          });
-        }
-      }
-
-      // Get final response with tool results
-      const finalCompletion = await openai.chat.completions.create({
+      // Stream the final synthesis response
+      const stream = await openai.chat.completions.create({
         model: model,
         messages: messages,
-        max_completion_tokens: 16000,  // Increased for comprehensive, detailed responses (gpt-4o supports up to 16384)
+        max_completion_tokens: 16000,
+        stream: true,
       });
 
-      response = finalCompletion.choices[0].message;
+      const encoder = new TextEncoder();
+      let fullText = '';
+      const streamStart = Date.now();
+      let serverChunkCount = 0;
+      const body = new ReadableStream({
+        async start(controller) {
+          try {
+            for await (const chunk of stream) {
+              const piece = chunk.choices[0]?.delta?.content || '';
+              if (piece) {
+                fullText += piece;
+                serverChunkCount++;
+                // SSE format: data: <json>\n\n  (proxies don't buffer SSE)
+                controller.enqueue(encoder.encode(`data: ${JSON.stringify({ t: piece })}\n\n`));
+              }
+            }
+            controller.enqueue(encoder.encode(`event: done\ndata: {}\n\n`));
+            if (env?.LOG_SEARCH_PERFORMANCE === 'true') {
+              console.log(`[stream] ${serverChunkCount} chunks, ${fullText.length} chars in ${Date.now() - streamStart}ms`);
+            }
+            // Post-stream validation (console-only)
+            const gk = fullText.match(/## 🧠 From General Knowledge[\s\S]*$/);
+            if (gk && /\[[^\]]+\]/.test(gk[0])) {
+              console.error('[Validation] VIOLATION: Citations in General Knowledge section');
+            }
+            const kb = fullText.match(/## 📚 From the Knowledge Base[\s\S]*?(?=## 🧠|$)/);
+            if (kb && kb[0].replace(/## 📚 From the Knowledge Base/, '').trim().length < 100 && !kb[0].includes('no content found')) {
+              console.error('[Validation] WARNING: Knowledge Base section too short');
+            }
+            controller.close();
+          } catch (err: any) {
+            console.error('[AI Chat] Stream error:', err);
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ t: `\n\n❌ ${err?.message || 'Stream error'}` })}\n\n`));
+            controller.enqueue(encoder.encode(`event: done\ndata: {}\n\n`));
+            controller.close();
+          }
+        }
+      });
+
+      return new Response(body, {
+        headers: {
+          ...corsHeaders,
+          "Content-Type": "text/event-stream; charset=utf-8",
+          "Cache-Control": "no-cache, no-store, no-transform",
+          "X-Accel-Buffering": "no",
+          "X-Content-Type-Options": "nosniff",
+          "Connection": "keep-alive",
+        }
+      });
     }
 
-    // Validate response for section violations
-    const responseText = response.content || '';
-    const knowledgeBaseMatch = responseText.match(/## 📚 From the Knowledge Base[\s\S]*?(?=## 🧠|$)/);
-    const generalKnowledgeMatch = responseText.match(/## 🧠 From General Knowledge[\s\S]*$/);
-
-    // Check for violations
-    let validationWarning = '';
-    if (generalKnowledgeMatch && generalKnowledgeMatch[0]) {
-      // Check if General Knowledge section contains citations (violation)
-      const citationPattern = /\[([^\]]+)\]/g;
-      const citations = generalKnowledgeMatch[0].match(citationPattern);
-      if (citations && citations.length > 0) {
-        validationWarning = '\n\n⚠️ WARNING: Section violation detected - citations found in General Knowledge section. The AI model may not be following instructions correctly.';
-        console.error('[Validation] VIOLATION: Citations in General Knowledge section:', citations);
+    // No tool calls — emit the direct answer as a single SSE message
+    const directEncoder = new TextEncoder();
+    const directBody = new ReadableStream({
+      start(controller) {
+        controller.enqueue(directEncoder.encode(`data: ${JSON.stringify({ t: response.content || '' })}\n\n`));
+        controller.enqueue(directEncoder.encode(`event: done\ndata: {}\n\n`));
+        controller.close();
       }
-    }
-
-    if (knowledgeBaseMatch && knowledgeBaseMatch[0]) {
-      // Check if Knowledge Base section is suspiciously empty or generic
-      const kbContent = knowledgeBaseMatch[0].replace(/## 📚 From the Knowledge Base/, '').trim();
-      if (kbContent.length < 100 && !kbContent.includes('no content found')) {
-        validationWarning += '\n\n⚠️ WARNING: Knowledge Base section appears incomplete. MCP search results may not be properly included.';
-        console.error('[Validation] WARNING: Knowledge Base section too short');
+    });
+    return new Response(directBody, {
+      headers: {
+        ...corsHeaders,
+        "Content-Type": "text/event-stream; charset=utf-8",
+        "Cache-Control": "no-cache, no-store, no-transform",
+        "X-Accel-Buffering": "no",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "keep-alive",
       }
-    }
-
-    return new Response(JSON.stringify({
-      response: response.content + validationWarning
-    }), {
-      headers: { ...corsHeaders, "Content-Type": "application/json" }
     });
 
   } catch (error: any) {
@@ -1432,7 +1463,7 @@ export default {
         });
 
         const { useState, useEffect, useRef } = React;
-        const { createRoot } = ReactDOM;
+        const { createRoot, flushSync } = ReactDOM;
 
         // Set dark theme on document immediately (not in useEffect)
         document.documentElement.setAttribute('data-color-scheme', 'dark');
@@ -1655,6 +1686,33 @@ export default {
             { icon: 'handshake', text: 'Adoption' }
         ];
 
+        // MCP endpoint
+        const MCP_URL = 'https://design-systems-mcp.southleft.com/mcp';
+
+        // "What's inside" feature tiles
+        const FEATURES = [
+            {
+                icon: 'book-open',
+                title: 'W3C, WCAG & ARIA APG',
+                body: 'WCAG 2.2 (A/AA/AAA), ARIA Authoring Practices, Design Tokens Community Group spec, and Mobile Accessibility.'
+            },
+            {
+                icon: 'layers',
+                title: '10+ Design Systems',
+                body: 'Material, Carbon, Polaris, Spectrum, Primer, Fluent, Ant, Lightning, Atlassian, and more.'
+            },
+            {
+                icon: 'shield-check',
+                title: 'Source reliability badges',
+                body: 'Every answer flags primary, official, community, or unverified sources so you can trust the citation.'
+            },
+            {
+                icon: 'search',
+                title: 'Hybrid vector + keyword',
+                body: 'Supabase pgvector with OpenAI embeddings, falls back to keyword search if vector is unavailable.'
+            }
+        ];
+
         // Chat App Component
         function ChatApp() {
             const [messages, setMessages] = useState([{
@@ -1663,7 +1721,7 @@ export default {
             }]);
             const [inputValue, setInputValue] = useState('');
             const [isLoading, setIsLoading] = useState(false);
-            const [isOnline, setIsOnline] = useState(true);
+            const [copiedFlash, setCopiedFlash] = useState(false);
             const messagesEndRef = useRef(null);
             const textareaRef = useRef(null);
             const textareaRef2 = useRef(null);
@@ -1729,26 +1787,83 @@ export default {
                         body: JSON.stringify({ message })
                     });
 
-                    // Remove thinking message
-                    setMessages(prev => prev.filter(msg => msg.type !== 'thinking'));
+                    const contentType = response.headers.get('content-type') || '';
 
-                    if (!response.ok) {
-                        throw new Error(\`HTTP \${response.status}: \${response.statusText}\`);
+                    // Error path: JSON body (or no body)
+                    if (!response.ok || contentType.includes('application/json')) {
+                        setMessages(prev => prev.filter(msg => msg.type !== 'thinking'));
+                        let errMsg = \`HTTP \${response.status}: \${response.statusText}\`;
+                        try {
+                            const data = await response.json();
+                            if (data.error) errMsg = data.error;
+                        } catch (_) { /* ignore parse failure */ }
+                        addMessage('error', \`❌ \${errMsg}\`);
+                        return;
                     }
 
-                    const data = await response.json();
+                    // Streaming SSE path
+                    const reader = response.body.getReader();
+                    const decoder = new TextDecoder();
+                    const assistantId = Date.now();
+                    const streamStart = performance.now();
+                    let buffer = '';
+                    let accumulated = '';
+                    let firstChunk = true;
+                    let eventCount = 0;
+                    let networkChunks = 0;
 
-                    if (data.error) {
-                        addMessage('error', \`❌ \${data.error}\`);
-                        setIsOnline(false);
-                    } else {
-                        addMessage('assistant', data.response);
-                        setIsOnline(true);
+                    while (true) {
+                        const { done, value } = await reader.read();
+                        if (done) break;
+                        networkChunks++;
+                        buffer += decoder.decode(value, { stream: true });
+
+                        // SSE messages are separated by \\n\\n
+                        let sepIdx;
+                        while ((sepIdx = buffer.indexOf('\\n\\n')) !== -1) {
+                            const raw = buffer.slice(0, sepIdx);
+                            buffer = buffer.slice(sepIdx + 2);
+                            if (!raw.trim()) continue;
+                            // Skip the terminal 'event: done' marker
+                            if (raw.startsWith('event: done')) continue;
+                            const dataLine = raw.split('\\n').find(l => l.startsWith('data: '));
+                            if (!dataLine) continue;
+                            try {
+                                const payload = JSON.parse(dataLine.slice(6));
+                                if (payload.t) {
+                                    accumulated += payload.t;
+                                    eventCount++;
+                                    if (firstChunk) {
+                                        firstChunk = false;
+                                        flushSync(() => {
+                                            setMessages(prev => [
+                                                ...prev.filter(m => m.type !== 'thinking'),
+                                                { type: 'assistant', content: accumulated, id: assistantId }
+                                            ]);
+                                        });
+                                    } else {
+                                        flushSync(() => {
+                                            setMessages(prev => prev.map(m =>
+                                                m.id === assistantId ? { ...m, content: accumulated } : m
+                                            ));
+                                        });
+                                    }
+                                }
+                            } catch (parseErr) {
+                                console.warn('[chat-stream] failed to parse SSE event:', raw, parseErr);
+                            }
+                        }
+                    }
+                    console.log(\`[chat-stream] done: \${networkChunks} net chunks, \${eventCount} SSE events, \${accumulated.length} chars in \${((performance.now() - streamStart)/1000).toFixed(1)}s\`);
+
+                    // If the stream produced no content at all
+                    if (firstChunk) {
+                        setMessages(prev => prev.filter(msg => msg.type !== 'thinking'));
+                        addMessage('error', '❌ Empty response from server.');
                     }
                 } catch (error) {
                     setMessages(prev => prev.filter(msg => msg.type !== 'thinking'));
                     addMessage('error', \`❌ Error: \${error.message}. Make sure the MCP server is running and OpenAI API key is configured.\`);
-                    setIsOnline(false);
                 } finally {
                     setIsLoading(false);
                 }
@@ -1903,19 +2018,14 @@ export default {
                             margin: '0 16px',
                             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
                         }}>
-                            <Group justify="space-between" align="center">
-                                <div>
-                                    <Title order={3} style={{ color: '#c1c2c5', marginBottom: '2px', fontWeight: '600' }}>
-                                        Design Systems Assistant
-                                    </Title>
-                                    <Text size="sm" style={{ color: '#909296' }}>
-                                        MCP Server for Design Systems
-                                    </Text>
-                                </div>
-                                <Badge variant="light" color={isOnline ? 'green' : 'red'} size="sm">
-                                    {isOnline ? 'Online' : 'Offline'}
-                                </Badge>
-                            </Group>
+                            <div>
+                                <Title order={3} style={{ color: '#c1c2c5', marginBottom: '2px', fontWeight: '600' }}>
+                                    Design Systems Assistant
+                                </Title>
+                                <Text size="sm" style={{ color: '#909296' }}>
+                                    MCP Server for Design Systems
+                                </Text>
+                            </div>
                         </div>
 
                         {/* Messages Area */}
@@ -1959,7 +2069,7 @@ export default {
                                                     lineHeight: '1.5'
                                                 }}
                                             >
-                                                I'm your specialized design systems assistant. Ask me about components, tokens, patterns, and best practices.
+                                                AI-powered design systems knowledge for your AI coding assistant. Search W3C, WCAG, ARIA APG, and 10+ major design systems — or connect this MCP server to any AI client that supports MCP below.
                                             </Text>
                                         </div>
 
@@ -2117,6 +2227,114 @@ export default {
                                         >
                                             Press Enter to send, Shift+Enter for new line
                                         </Text>
+
+                                        {/* MCP endpoint */}
+                                        <div style={{ width: '100%', maxWidth: '720px', marginTop: '80px' }}>
+                                            <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+                                                <Title order={2} style={{ fontSize: '24px', fontWeight: '600', color: '#c1c2c5', marginBottom: '8px' }}>
+                                                    Connect from your AI client
+                                                </Title>
+                                                <Text style={{ color: '#909296', fontSize: '15px', lineHeight: '1.5' }}>
+                                                    Add this URL to any AI client that supports MCP connections.
+                                                </Text>
+                                            </div>
+                                            <div style={{
+                                                background: '#25262b',
+                                                border: '1px solid #373a40',
+                                                borderRadius: '12px',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                padding: '6px 6px 6px 16px',
+                                                gap: '12px'
+                                            }}>
+                                                <code style={{
+                                                    flex: 1,
+                                                    color: '#c1c2c5',
+                                                    fontSize: '14px',
+                                                    fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
+                                                    overflow: 'auto',
+                                                    whiteSpace: 'nowrap',
+                                                    textAlign: 'left'
+                                                }}>{MCP_URL}</code>
+                                                <button
+                                                    onClick={() => {
+                                                        navigator.clipboard.writeText(MCP_URL);
+                                                        setCopiedFlash(true);
+                                                        setTimeout(() => setCopiedFlash(false), 1500);
+                                                    }}
+                                                    style={{
+                                                        background: copiedFlash ? '#2b8a3e' : '#339af0',
+                                                        border: 'none',
+                                                        color: '#fff',
+                                                        padding: '8px 14px',
+                                                        borderRadius: '8px',
+                                                        cursor: 'pointer',
+                                                        fontSize: '13px',
+                                                        fontWeight: '500',
+                                                        fontFamily: 'inherit',
+                                                        display: 'inline-flex',
+                                                        alignItems: 'center',
+                                                        gap: '6px',
+                                                        transition: 'background 0.2s ease',
+                                                        flexShrink: 0
+                                                    }}
+                                                >
+                                                    <Icon name={copiedFlash ? 'check' : 'copy'} size={14} />
+                                                    {copiedFlash ? 'Copied' : 'Copy URL'}
+                                                </button>
+                                            </div>
+                                            <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px', marginTop: '12px', textAlign: 'center' }}>
+                                                Most clients now have a UI for adding custom MCP servers — see <a href="https://github.com/southleft/design-systems-mcp#connect-to-mcp-clients" target="_blank" rel="noopener noreferrer" style={{ color: '#339af0', textDecoration: 'none' }}>setup notes</a> if you need them.
+                                            </Text>
+                                        </div>
+
+                                        {/* What's inside */}
+                                        <div style={{ width: '100%', maxWidth: '900px', marginTop: '64px', textAlign: 'left' }}>
+                                            <div style={{ textAlign: 'center', marginBottom: '24px' }}>
+                                                <Title order={2} style={{ fontSize: '24px', fontWeight: '600', color: '#c1c2c5', marginBottom: '8px' }}>
+                                                    What's inside
+                                                </Title>
+                                                <Text style={{ color: '#909296', fontSize: '15px' }}>
+                                                    188+ curated entries, hand-verified against authoritative sources.
+                                                </Text>
+                                            </div>
+                                            <div style={{
+                                                display: 'grid',
+                                                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
+                                                gap: '12px',
+                                                maxWidth: '720px',
+                                                margin: '0 auto'
+                                            }}>
+                                                {FEATURES.map((f, i) => (
+                                                    <Card key={i} padding="md" radius="md" withBorder style={{ background: '#25262b' }}>
+                                                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                                                            <div style={{
+                                                                background: '#1c3447',
+                                                                color: '#339af0',
+                                                                borderRadius: '6px',
+                                                                width: '28px',
+                                                                height: '28px',
+                                                                display: 'flex',
+                                                                alignItems: 'center',
+                                                                justifyContent: 'center',
+                                                                flexShrink: 0
+                                                            }}>
+                                                                <Icon name={f.icon} size={16} />
+                                                            </div>
+                                                            <Text style={{ color: '#c1c2c5', fontSize: '14px', fontWeight: '600' }}>{f.title}</Text>
+                                                        </div>
+                                                        <Text size="sm" style={{ color: '#909296', fontSize: '13px', lineHeight: '1.5' }}>{f.body}</Text>
+                                                    </Card>
+                                                ))}
+                                            </div>
+                                        </div>
+
+                                        {/* Bottom open-source note */}
+                                        <div style={{ marginTop: '56px', marginBottom: '24px', textAlign: 'center' }}>
+                                            <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px' }}>
+                                                Open source · MIT · <a href="https://github.com/southleft/design-systems-mcp" target="_blank" rel="noopener noreferrer" style={{ color: '#339af0', textDecoration: 'none' }}>View on GitHub</a>
+                                            </Text>
+                                        </div>
                                     </div>
                                 ) : (
                                     // Regular chat messages

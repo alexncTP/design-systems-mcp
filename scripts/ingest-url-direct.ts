@@ -6,7 +6,6 @@
 
 import { createClient } from '@supabase/supabase-js';
 import OpenAI from 'openai';
-import { v4 as uuidv4 } from 'uuid';
 import { fetchURL } from './ingestion/url-fetcher';
 import 'dotenv/config';
 
@@ -115,10 +114,10 @@ async function ingestUrlDirect(url: string, metadata?: any) {
         const chunkEmbedding = await generateEmbedding(chunk.text);
 
         return {
-          id: uuidv4(),
+          // id omitted: production content_chunks.id is auto-increment INTEGER
           entry_id: entry.id,
           chunk_index: chunk.metadata.chunkIndex,
-          chunk_text: chunk.text, // Note: column is 'chunk_text', not 'content'
+          chunk_text: chunk.text,
           embedding: JSON.stringify(chunkEmbedding),
           metadata: chunk.metadata
         };

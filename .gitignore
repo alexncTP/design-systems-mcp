@@ -170,6 +170,10 @@ dist
 
 .dev.vars
 .wrangler/
+worker-configuration.d.ts
+
+# Playwright MCP / test artifacts
+.playwright-mcp/
 
 # macOS
 .DS_Store

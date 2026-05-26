@@ -13,14 +13,16 @@ An AI-powered Model Context Protocol (MCP) server providing intelligent access t
 - 🚀 **Edge-Optimized** - Cloudflare Workers deployment with global distribution
 
 ### Latest Updates
-- ✨ **36 New Authoritative Sources** - Fresh content from Style Dictionary, Figma docs, CSS specs, and more
-- 🔧 **Production Vector Search** - Now fully operational with proper Supabase integration
-- 📖 **Universal MCP Client Support** - Pre-configured setups for 7+ popular AI coding tools
-- 🎨 **Rich Content Formatting** - Enhanced markdown rendering with syntax highlighting
+- ⚡ **Streaming Responses** - Chat answers stream token-by-token via SSE; first content appears in seconds
+- 🏠 **Refreshed Landing Page** - Hero, MCP endpoint with one-click copy, and a "What's inside" overview
+- 🛡️ **Source Reliability Badges** - Every answer flags Primary / Authoritative / Reference / Example / Community sources
+- ✨ **188+ Curated Entries** - W3C, WCAG 2.2, ARIA APG, and 10+ major design systems
+- 🔧 **Production Vector Search** - Supabase pgvector with OpenAI embeddings, keyword fallback
+- 📖 **Universal MCP Client Support** - Works with any MCP-capable client (Claude Desktop, Cursor, Windsurf, etc.)
 
 ### Developer Experience
 - 🌐 **Zero Setup Required** - Public MCP endpoint ready to use
-- 🤖 **AI Chat Interface** - Natural language queries with GPT-4o integration
+- 🤖 **AI Chat Interface** - Natural language queries with GPT-4o + streaming responses (SSE) for fast time-to-first-token
 - 🧪 **Local Development** - Complete testing environment with hot reload
 - 📝 **Comprehensive Docs** - Updated setup guides for every major MCP client
 
@@ -322,7 +324,7 @@ Find specific information within content chunks for detailed answers.
 ### browse_by_category
 Browse content organized by category.
 
-**Categories:** components, tokens, patterns, guidelines, tools, general
+**Categories:** components, tokens, patterns, guidelines, workflows, general
 
 **Parameters:**
 - `category` (string, required) - Category to browse
@@ -361,12 +363,17 @@ curl -X POST https://design-systems-mcp.southleft.com/mcp \
   }'
 ```
 
-**AI Chat Interface:**
+**AI Chat Interface (streaming):**
+
+The `/ai-chat` endpoint returns a **Server-Sent Events** stream so content appears progressively. Each event is `data: {"t": "<chunk>"}\n\n`, terminated by `event: done\ndata: {}\n\n`.
+
 ```bash
-curl -X POST https://design-systems-mcp.southleft.com/ai-chat \
+curl -N -X POST https://design-systems-mcp.southleft.com/ai-chat \
   -H "Content-Type: application/json" \
   -d '{"message":"What are the WCAG 2.2 contrast requirements?"}'
 ```
+
+The hosted web UI at `/` consumes this stream and renders markdown progressively.
 
 ## Adding Content
 
@@ -408,7 +415,7 @@ See [Content Ingestion Guide](docs/CONTENT_INGESTION.md) for detailed instructio
 - `npm run ingest:csv <file>` - Bulk ingest from CSV
 - `npm run crawl:website <url>` - Crawl entire websites
 - `npm run ingest:vectors` - Generate embeddings for all content
-- `npm run setup:database` - Initialize Supabase database
+- `npm run setup:supabase` - Initialize Supabase database
 - `npm run check:duplicates` - Check for duplicate content
 
 ### Project Structure
@@ -416,18 +423,24 @@ See [Content Ingestion Guide](docs/CONTENT_INGESTION.md) for detailed instructio
 ```
 design-systems-mcp/
 ├── src/
-│   ├── index.ts              # Main MCP server
-│   ├── lib/
-│   │   ├── content-manager.ts     # Content management
-│   │   ├── search-handler.ts      # Vector search
-│   │   └── vector-search.ts       # Supabase integration
-│   └── tools/                # MCP tool definitions
+│   ├── index.ts                    # Main MCP server, transports, tool dispatch, embedded chat UI
+│   ├── sse-session.ts              # SSE transport (Durable Object)
+│   ├── streamable-http-handler.ts  # Streamable HTTP transport (/mcp)
+│   ├── oauth-handler.ts            # OAuth flow
+│   └── lib/
+│       ├── content-manager.ts      # Content management
+│       ├── search-handler.ts       # Vector + keyword search dispatch
+│       ├── vector-search.ts        # Supabase vector search
+│       ├── source-authority.ts     # Reliability tiers & APG disclaimers
+│       └── ... (chunker, formatters, ingestion helpers)
 ├── content/
 │   ├── entries/              # Ingested content (JSON)
 │   └── raw/                  # Raw source files
+├── supabase/
+│   └── migrations/           # SQL schema + RPC functions
 ├── scripts/
-│   ├── ingestion/            # Content ingestion tools
-│   └── setup/                # Database setup scripts
+│   ├── ingestion/            # Content ingestion pipeline (URL, PDF, HTML, CSV, crawler)
+│   └── build/                # Build helpers (manifest generation)
 ├── types/
 │   └── content.ts           # TypeScript definitions
 ├── docs/                    # Additional documentation
@@ -483,7 +496,7 @@ See [Vector Search Setup](docs/VECTOR_SEARCH_SETUP.md) for architecture details.
 
 **Vector search not working:**
 - Check Supabase credentials in environment variables
-- Verify database tables exist: `npm run setup:database`
+- Verify database tables exist: `npm run setup:supabase`
 - Check logs: `npx wrangler tail`
 
 **Content not found:**
