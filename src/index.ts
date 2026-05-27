@@ -2329,12 +2329,6 @@ export default {
                                             </div>
                                         </div>
 
-                                        {/* Bottom open-source note */}
-                                        <div style={{ marginTop: '56px', marginBottom: '24px', textAlign: 'center' }}>
-                                            <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px' }}>
-                                                Open source · MIT · <a href="https://github.com/southleft/design-systems-mcp" target="_blank" rel="noopener noreferrer" style={{ color: '#339af0', textDecoration: 'none' }}>View on GitHub</a>
-                                            </Text>
-                                        </div>
                                     </div>
                                 ) : (
                                     // Regular chat messages
