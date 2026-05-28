@@ -1979,27 +1979,29 @@ export default {
                     flexDirection: 'column'
                 }}>
                     <Container size="lg" style={{ flex: 1, display: 'flex', flexDirection: 'column', padding: '0' }}>
-                        {/* Floating Header */}
-                        <div style={{
-                            background: '#25262b',
-                            border: '1px solid #373a40',
-                            borderRadius: '0 0 16px 16px',
-                            padding: '16px 24px',
-                            position: 'sticky',
-                            top: 0,
-                            zIndex: 100,
-                            margin: '0 16px',
-                            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
-                        }}>
-                            <div>
-                                <Title order={3} style={{ color: '#c1c2c5', marginBottom: '2px', fontWeight: '600' }}>
-                                    Design Systems Assistant
-                                </Title>
-                                <Text size="sm" style={{ color: '#909296' }}>
-                                    MCP Server for Design Systems
-                                </Text>
+                        {/* Floating Header — only shown once chat is active; the welcome hero serves as the title on the empty state */}
+                        {messages.filter(msg => msg.type !== 'system').length > 0 && (
+                            <div style={{
+                                background: '#25262b',
+                                border: '1px solid #373a40',
+                                borderRadius: '0 0 16px 16px',
+                                padding: '16px 24px',
+                                position: 'sticky',
+                                top: 0,
+                                zIndex: 100,
+                                margin: '0 16px',
+                                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
+                            }}>
+                                <div>
+                                    <Title order={3} style={{ color: '#c1c2c5', marginBottom: '2px', fontWeight: '600' }}>
+                                        Design Systems Assistant
+                                    </Title>
+                                    <Text size="sm" style={{ color: '#909296' }}>
+                                        MCP Server for Design Systems
+                                    </Text>
+                                </div>
                             </div>
-                        </div>
+                        )}
 
                         {/* Messages Area */}
                         <div style={{
