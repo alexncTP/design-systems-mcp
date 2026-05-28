@@ -1699,6 +1699,21 @@ export default {
             const textareaRef = useRef(null);
             const textareaRef2 = useRef(null);
             const lastScrolledIdRef = useRef(null);
+            const abortRef = useRef(null);
+
+            // Reset the chat back to the empty welcome state.
+            // Aborts any in-flight response so we don't append to a fresh session.
+            const startNewChat = () => {
+                abortRef.current?.abort();
+                setMessages([{
+                    type: 'system',
+                    content: 'Welcome! I\\'m your AI design systems assistant.'
+                }]);
+                setInputValue('');
+                setIsLoading(false);
+                lastScrolledIdRef.current = null;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
 
             // Set dark theme on document
             useEffect(() => {
@@ -1758,11 +1773,15 @@ export default {
                 const thinkingId = Date.now();
                 addMessage('thinking', 'Analyzing your question and searching the knowledge base...');
 
+                abortRef.current = new AbortController();
+                const signal = abortRef.current.signal;
+
                 try {
                     const response = await fetch('/ai-chat', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ message })
+                        body: JSON.stringify({ message }),
+                        signal
                     });
 
                     const contentType = response.headers.get('content-type') || '';
@@ -1840,6 +1859,8 @@ export default {
                         addMessage('error', '❌ Empty response from server.');
                     }
                 } catch (error) {
+                    // Silently bail if the user started a new chat mid-stream
+                    if (error.name === 'AbortError') return;
                     setMessages(prev => prev.filter(msg => msg.type !== 'thinking'));
                     addMessage('error', \`❌ Error: \${error.message}. Make sure the MCP server is running and OpenAI API key is configured.\`);
                 } finally {
@@ -1996,7 +2017,11 @@ export default {
                                 top: 0,
                                 zIndex: 100,
                                 margin: '0 16px',
-                                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
+                                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                gap: '16px'
                             }}>
                                 <div>
                                     <Title order={3} style={{ color: '#c1c2c5', marginBottom: '2px', fontWeight: '600' }}>
@@ -2006,6 +2031,38 @@ export default {
                                         MCP Server for Design Systems
                                     </Text>
                                 </div>
+                                <button
+                                    onClick={startNewChat}
+                                    title="Start a new chat"
+                                    aria-label="Start a new chat"
+                                    style={{
+                                        background: 'transparent',
+                                        border: '1px solid #373a40',
+                                        color: '#c1c2c5',
+                                        padding: '8px 14px',
+                                        borderRadius: '8px',
+                                        cursor: 'pointer',
+                                        fontSize: '13px',
+                                        fontWeight: '500',
+                                        fontFamily: 'inherit',
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: '6px',
+                                        transition: 'all 0.15s ease',
+                                        flexShrink: 0
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.borderColor = '#339af0';
+                                        e.currentTarget.style.color = '#339af0';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.borderColor = '#373a40';
+                                        e.currentTarget.style.color = '#c1c2c5';
+                                    }}
+                                >
+                                    <Icon name="square-pen" size={14} />
+                                    <span>New chat</span>
+                                </button>
                             </div>
                         )}
 
