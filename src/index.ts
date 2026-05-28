@@ -1698,18 +1698,23 @@ export default {
             const messagesEndRef = useRef(null);
             const textareaRef = useRef(null);
             const textareaRef2 = useRef(null);
+            const lastScrolledIdRef = useRef(null);
 
             // Set dark theme on document
             useEffect(() => {
                 document.documentElement.setAttribute('data-color-scheme', 'dark');
             }, []);
 
-            const scrollToBottom = () => {
-                messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-            };
-
+            // Scroll a newly-arrived message into view ONCE at its top.
+            // Skipped during streaming content updates (same id) so the scroll
+            // doesn't bounce as text fills in below.
             useEffect(() => {
-                scrollToBottom();
+                const visible = messages.filter(m => m.type !== 'system' && m.type !== 'thinking');
+                const lastMsg = visible[visible.length - 1];
+                if (!lastMsg || lastMsg.id === lastScrolledIdRef.current) return;
+                lastScrolledIdRef.current = lastMsg.id;
+                const el = document.querySelector(\`[data-msg-id="\${lastMsg.id}"]\`);
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, [messages]);
 
             // Auto-resize textareas
@@ -1955,11 +1960,12 @@ export default {
                 }
 
                 return (
-                    <div style={{
+                    <div data-msg-id={message.id} style={{
                         maxWidth: '768px',
                         margin: '0 auto',
                         width: '100%',
-                        padding: '0 24px'
+                        padding: '0 24px',
+                        scrollMarginTop: '24px'
                     }}>
                         <div style={getMessageStyle(message.type)}>
                             {message.type === 'assistant' ? (
