@@ -1686,32 +1686,6 @@ export default {
             { icon: 'handshake', text: 'Adoption' }
         ];
 
-        // MCP endpoint
-        const MCP_URL = 'https://design-systems-mcp.southleft.com/mcp';
-
-        // "What's inside" feature tiles
-        const FEATURES = [
-            {
-                icon: 'book-open',
-                title: 'W3C, WCAG & ARIA APG',
-                body: 'WCAG 2.2 (A/AA/AAA), ARIA Authoring Practices, Design Tokens Community Group spec, and Mobile Accessibility.'
-            },
-            {
-                icon: 'layers',
-                title: '10+ Design Systems',
-                body: 'Material, Carbon, Polaris, Spectrum, Primer, Fluent, Ant, Lightning, Atlassian, and more.'
-            },
-            {
-                icon: 'shield-check',
-                title: 'Source reliability badges',
-                body: 'Every answer flags primary, official, community, or unverified sources so you can trust the citation.'
-            },
-            {
-                icon: 'search',
-                title: 'Hybrid vector + keyword',
-                body: 'Supabase pgvector with OpenAI embeddings, falls back to keyword search if vector is unavailable.'
-            }
-        ];
 
         // Chat App Component
         function ChatApp() {
@@ -1721,7 +1695,6 @@ export default {
             }]);
             const [inputValue, setInputValue] = useState('');
             const [isLoading, setIsLoading] = useState(false);
-            const [copiedFlash, setCopiedFlash] = useState(false);
             const messagesEndRef = useRef(null);
             const textareaRef = useRef(null);
             const textareaRef2 = useRef(null);
@@ -2069,7 +2042,7 @@ export default {
                                                     lineHeight: '1.5'
                                                 }}
                                             >
-                                                AI-powered design systems knowledge for your AI coding assistant. Search W3C, WCAG, ARIA APG, and 10+ major design systems — or connect this MCP server to any AI client that supports MCP below.
+                                                AI-powered design systems knowledge for your AI coding assistant. Search W3C, WCAG, ARIA APG, and 10+ major design systems — or connect this MCP server to any AI client that supports MCP.
                                             </Text>
                                         </div>
 
@@ -2227,107 +2200,6 @@ export default {
                                         >
                                             Press Enter to send, Shift+Enter for new line
                                         </Text>
-
-                                        {/* MCP endpoint */}
-                                        <div style={{ width: '100%', maxWidth: '720px', marginTop: '80px' }}>
-                                            <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                                                <Title order={2} style={{ fontSize: '24px', fontWeight: '600', color: '#c1c2c5', marginBottom: '8px' }}>
-                                                    Connect from your AI client
-                                                </Title>
-                                                <Text style={{ color: '#909296', fontSize: '15px', lineHeight: '1.5' }}>
-                                                    Add this URL to any AI client that supports MCP connections.
-                                                </Text>
-                                            </div>
-                                            <div style={{
-                                                background: '#25262b',
-                                                border: '1px solid #373a40',
-                                                borderRadius: '12px',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                padding: '6px 6px 6px 16px',
-                                                gap: '12px'
-                                            }}>
-                                                <code style={{
-                                                    flex: 1,
-                                                    color: '#c1c2c5',
-                                                    fontSize: '14px',
-                                                    fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
-                                                    overflow: 'auto',
-                                                    whiteSpace: 'nowrap',
-                                                    textAlign: 'left'
-                                                }}>{MCP_URL}</code>
-                                                <button
-                                                    onClick={() => {
-                                                        navigator.clipboard.writeText(MCP_URL);
-                                                        setCopiedFlash(true);
-                                                        setTimeout(() => setCopiedFlash(false), 1500);
-                                                    }}
-                                                    style={{
-                                                        background: copiedFlash ? '#2b8a3e' : '#339af0',
-                                                        border: 'none',
-                                                        color: '#fff',
-                                                        padding: '8px 14px',
-                                                        borderRadius: '8px',
-                                                        cursor: 'pointer',
-                                                        fontSize: '13px',
-                                                        fontWeight: '500',
-                                                        fontFamily: 'inherit',
-                                                        display: 'inline-flex',
-                                                        alignItems: 'center',
-                                                        gap: '6px',
-                                                        transition: 'background 0.2s ease',
-                                                        flexShrink: 0
-                                                    }}
-                                                >
-                                                    <Icon name={copiedFlash ? 'check' : 'copy'} size={14} />
-                                                    {copiedFlash ? 'Copied' : 'Copy URL'}
-                                                </button>
-                                            </div>
-                                            <Text size="sm" style={{ color: '#6c6f75', fontSize: '13px', marginTop: '12px', textAlign: 'center' }}>
-                                                Most clients now have a UI for adding custom MCP servers — see <a href="https://github.com/southleft/design-systems-mcp#connect-to-mcp-clients" target="_blank" rel="noopener noreferrer" style={{ color: '#339af0', textDecoration: 'none' }}>setup notes</a> if you need them.
-                                            </Text>
-                                        </div>
-
-                                        {/* What's inside */}
-                                        <div style={{ width: '100%', maxWidth: '900px', marginTop: '64px', textAlign: 'left' }}>
-                                            <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-                                                <Title order={2} style={{ fontSize: '24px', fontWeight: '600', color: '#c1c2c5', marginBottom: '8px' }}>
-                                                    What's inside
-                                                </Title>
-                                                <Text style={{ color: '#909296', fontSize: '15px' }}>
-                                                    188+ curated entries, hand-verified against authoritative sources.
-                                                </Text>
-                                            </div>
-                                            <div style={{
-                                                display: 'grid',
-                                                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
-                                                gap: '12px',
-                                                maxWidth: '720px',
-                                                margin: '0 auto'
-                                            }}>
-                                                {FEATURES.map((f, i) => (
-                                                    <Card key={i} padding="md" radius="md" withBorder style={{ background: '#25262b' }}>
-                                                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                                                            <div style={{
-                                                                background: '#1c3447',
-                                                                color: '#339af0',
-                                                                borderRadius: '6px',
-                                                                width: '28px',
-                                                                height: '28px',
-                                                                display: 'flex',
-                                                                alignItems: 'center',
-                                                                justifyContent: 'center',
-                                                                flexShrink: 0
-                                                            }}>
-                                                                <Icon name={f.icon} size={16} />
-                                                            </div>
-                                                            <Text style={{ color: '#c1c2c5', fontSize: '14px', fontWeight: '600' }}>{f.title}</Text>
-                                                        </div>
-                                                        <Text size="sm" style={{ color: '#909296', fontSize: '13px', lineHeight: '1.5' }}>{f.body}</Text>
-                                                    </Card>
-                                                ))}
-                                            </div>
-                                        </div>
 
                                     </div>
                                 ) : (
