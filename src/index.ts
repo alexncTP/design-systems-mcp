@@ -1443,15 +1443,18 @@ export default {
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons (pinned to 0.x; "latest" rolls forward and has burned us before) -->
+    <script src="https://unpkg.com/lucide@0"></script>
 
-    <!-- Babel Standalone for JSX -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Babel Standalone for JSX
+         Pinned to v7: v8.0.2 (unpkg "latest" as of 2026-06) emits ESM output by
+         default and breaks the inline <script type="text/babel"> bootstrap with
+         "Cannot use import statement outside a module". -->
+    <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
 
     <!-- Marked for markdown parsing - preload for better performance -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/marked/marked.min.js" as="script">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js" as="script">
+    <script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js"></script>
 
     <script type="text/babel">
         // Configure marked for better rendering
