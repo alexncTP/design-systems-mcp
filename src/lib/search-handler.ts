@@ -3,6 +3,8 @@
  * Includes source reliability enrichment for content quality transparency
  */
 
+import { createClient } from '@supabase/supabase-js';
+import OpenAI from 'openai';
 import { type ContentEntry, type SearchOptions, Category } from '../../types/content';
 import { searchEntries as searchEntriesLocal } from './content-manager';
 import {
@@ -11,6 +13,46 @@ import {
   getAccessibilityGuidanceDisclaimer,
   formatReliabilityBadge
 } from './source-authority';
+
+// Server-side bounds, enforced regardless of what callers request
+const MAX_LIMIT = 50;
+const EMBEDDING_TIMEOUT_MS = 10_000;
+const SUPABASE_TIMEOUT_MS = 10_000;
+
+// Per-isolate embedding cache: repeated queries (e.g. UI suggestion buttons,
+// an LLM retrying the same search) skip the OpenAI round-trip.
+const EMBEDDING_CACHE_TTL_MS = 15 * 60 * 1000;
+const EMBEDDING_CACHE_MAX_ENTRIES = 500;
+const embeddingCache = new Map<string, { embedding: number[]; expiresAt: number }>();
+
+async function getQueryEmbedding(openaiKey: string, query: string): Promise<number[]> {
+  const cacheKey = query.slice(0, 8191);
+  const cached = embeddingCache.get(cacheKey);
+  if (cached && cached.expiresAt > Date.now()) {
+    return cached.embedding;
+  }
+
+  const openai = new OpenAI({ apiKey: openaiKey, timeout: EMBEDDING_TIMEOUT_MS });
+  const response = await openai.embeddings.create({
+    model: 'text-embedding-3-small',
+    input: cacheKey,
+  });
+  const embedding = response.data[0].embedding;
+
+  // Lazy eviction: drop expired entries, then oldest, before inserting
+  if (embeddingCache.size >= EMBEDDING_CACHE_MAX_ENTRIES) {
+    const now = Date.now();
+    for (const [key, value] of embeddingCache) {
+      if (value.expiresAt <= now) embeddingCache.delete(key);
+    }
+    if (embeddingCache.size >= EMBEDDING_CACHE_MAX_ENTRIES) {
+      embeddingCache.delete(embeddingCache.keys().next().value!);
+    }
+  }
+  embeddingCache.set(cacheKey, { embedding, expiresAt: Date.now() + EMBEDDING_CACHE_TTL_MS });
+
+  return embedding;
+}
 
 /**
  * Enrich a content entry with source reliability information
@@ -56,7 +98,8 @@ function resultsContainAPGContent(results: ContentEntry[]): boolean {
 }
 
 export async function searchWithSupabase(options: SearchOptions = {}, env?: any): Promise<ContentEntry[]> {
-  const { query, category, tags: filterTags, confidence, limit = 50 } = options;
+  const { query, category, tags: filterTags, confidence } = options;
+  const limit = Math.min(Math.max(1, options.limit ?? 50), MAX_LIMIT);
 
   // Get environment variables from either process.env or Cloudflare env
   const vectorEnabled = env?.VECTOR_SEARCH_ENABLED || process.env.VECTOR_SEARCH_ENABLED;
@@ -80,25 +123,14 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
   // Check if we should use Supabase vector search
   if (query && vectorEnabled === 'true' && vectorSearchMode === 'vector') {
     try {
-      // Try to connect to Supabase
-      const { createClient } = require('@supabase/supabase-js');
-
       if (supabaseUrl && supabaseKey && openaiKey) {
         if (logPerformance) {
           console.log('[Vector Search] ✅ All credentials present, proceeding with vector search...');
         }
         const supabase = createClient(supabaseUrl, supabaseKey);
 
-        // Generate embedding for the query
-        const OpenAI = require('openai');
-        const openai = new OpenAI.default({ apiKey: openaiKey });
-
-        const embeddingResponse = await openai.embeddings.create({
-          model: 'text-embedding-3-small',
-          input: query.slice(0, 8191),
-        });
-
-        const queryEmbedding = embeddingResponse.data[0].embedding;
+        // Generate embedding for the query (cached per isolate)
+        const queryEmbedding = await getQueryEmbedding(openaiKey, query);
 
         // Search Supabase with vector similarity
         // Lower threshold to 0.15 for better recall - retrieves more relevant results
@@ -109,7 +141,7 @@ export async function searchWithSupabase(options: SearchOptions = {}, env?: any)
           match_count: limit,
           filter_category: category,
           filter_tags: filterTags
-        });
+        }).abortSignal(AbortSignal.timeout(SUPABASE_TIMEOUT_MS));
 
         if (!error && data && data.length > 0) {
           if (logPerformance) {

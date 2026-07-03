@@ -49,6 +49,35 @@ export function getProtectedResourceMetadata(origin: string): any {
 }
 
 /**
+ * Validate a redirect_uri before redirecting to it.
+ *
+ * There is no client registry (anonymous OAuth), so we can't pin exact
+ * callback URLs. We still enforce RFC 8252-style rules: https for web
+ * callbacks, http only for loopback addresses, and custom app schemes
+ * (claude://, cursor://, vscode://, ...) for native MCP clients. This
+ * blocks javascript:/data: injection and plain-http interception.
+ */
+function isAllowedRedirectUri(redirectUri: string): boolean {
+  let parsed: URL;
+  try {
+    parsed = new URL(redirectUri);
+  } catch {
+    return false;
+  }
+
+  const scheme = parsed.protocol;
+  if (scheme === 'https:') {
+    return true;
+  }
+  if (scheme === 'http:') {
+    return parsed.hostname === 'localhost' || parsed.hostname === '127.0.0.1' || parsed.hostname === '[::1]';
+  }
+  // Custom app schemes for native clients; explicitly reject script-capable schemes
+  const dangerous = ['javascript:', 'data:', 'vbscript:', 'file:', 'blob:'];
+  return !dangerous.includes(scheme);
+}
+
+/**
  * Handle OAuth authorization request
  * Auto-approves and returns authorization code
  */
@@ -61,6 +90,10 @@ export function handleAuthorizeRequest(url: URL, origin: string): Response {
   // Validate required parameters
   if (!redirectUri || responseType !== 'code') {
     return new Response('Invalid request', { status: 400 });
+  }
+
+  if (!isAllowedRedirectUri(redirectUri)) {
+    return new Response('Invalid redirect_uri', { status: 400 });
   }
 
   // Generate authorization code
@@ -126,25 +159,29 @@ export async function processTokenRequest(formData: any): Promise<Response> {
     }, 400);
   }
 
-  // Validate authorization code
-  if (!code || !authCodes.has(code)) {
+  if (!code) {
     return jsonResponse({
       error: 'invalid_grant',
-      error_description: 'Invalid or expired authorization code'
+      error_description: 'Missing authorization code'
     }, 400);
   }
 
-  // Verify redirect URI matches
-  const authCode = authCodes.get(code)!;
-  if (redirectUri !== authCode.redirect_uri) {
-    return jsonResponse({
-      error: 'invalid_grant',
-      error_description: 'Redirect URI mismatch'
-    }, 400);
+  // If we still hold this code (same isolate), verify redirect URI matches
+  // and consume it. If we don't hold it, the authorize request likely landed
+  // on a different Workers isolate — since this is anonymous OAuth (all
+  // tokens are accepted anyway), issue the token rather than spuriously
+  // failing the flow with invalid_grant.
+  const authCode = authCodes.get(code);
+  if (authCode) {
+    if (redirectUri !== authCode.redirect_uri) {
+      return jsonResponse({
+        error: 'invalid_grant',
+        error_description: 'Redirect URI mismatch'
+      }, 400);
+    }
+    // Delete used code (one-time use)
+    authCodes.delete(code);
   }
-
-  // Delete used code (one-time use)
-  authCodes.delete(code);
 
   // Generate access token
   const accessToken = crypto.randomUUID();

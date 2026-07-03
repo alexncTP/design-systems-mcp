@@ -1,11 +1,7 @@
-import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { z } from "zod";
 import {
   loadEntries,
-  searchEntries as searchEntriesLocal,
   getEntriesByCategory,
   getAllTags,
-  getEntryById,
   SAMPLE_ENTRIES
 } from "./lib/content-manager.js";
 import {
@@ -13,9 +9,9 @@ import {
   resultsContainAPGContent,
   getAccessibilityGuidanceDisclaimer
 } from "./lib/search-handler.js";
-import { formatSourceReference, formatInlineCitation } from "./lib/source-formatter.js";
+import { formatSourceReference } from "./lib/source-formatter.js";
 import { formatReliabilityBadge, requiresAccessibilityCaveats } from "./lib/source-authority.js";
-import { type Category, ContentEntry } from "../types/content";
+import { type Category } from "../types/content";
 
 // OpenAI integration
 import { OpenAI } from "openai";
@@ -36,8 +32,6 @@ import { handleStreamableHttp } from "./streamable-http-handler.js";
 
 // Supabase Vector Search Mode - No file loading needed
 console.log('🚀 MCP Server with Supabase Vector Search');
-console.log('✅ Vector search enabled - using production database');
-console.log('📊 Database: 104 entries + 761 chunks with embeddings');
 
 async function loadActualContent() {
   // Vector search mode - data is in Supabase
@@ -482,6 +476,17 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
 
     const { message } = await request.json() as any;
 
+    // Reject missing/oversized input before spending OpenAI budget on it
+    const MAX_MESSAGE_LENGTH = 4000;
+    if (typeof message !== "string" || message.trim().length === 0 || message.length > MAX_MESSAGE_LENGTH) {
+      return new Response(JSON.stringify({
+        error: `Message must be a non-empty string of at most ${MAX_MESSAGE_LENGTH} characters.`
+      }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
+
     // Get OpenAI config from environment variables
     const apiKey = env?.OPENAI_API_KEY;
     const model = env?.OPENAI_MODEL || "gpt-4o";
@@ -507,9 +512,11 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
       });
     }
 
-    // Initialize OpenAI
+    // Initialize OpenAI (timeout guards against a stalled upstream holding
+    // the request open until Cloudflare's wall-clock limit kills it)
     const openai = new OpenAI({
       apiKey: apiKey,
+      timeout: 60_000,
     });
 
     // Create the chat completion with tool calling
@@ -669,629 +676,6 @@ async function handleAiChat(request: Request, env: any): Promise<Response> {
   }
 }
 
-// Create MCP server instance
-const server = new McpServer({
-  name: "Design Systems Knowledge Base",
-  version: "1.0.0",
-});
-
-// Initialize MCP tools
-server.tool(
-  "search_design_knowledge",
-  {
-    query: z.string().describe("Search query for design system knowledge. Results include source reliability indicators (Gold Standard, Authoritative, Reference, Example, Community) to help assess content quality."),
-    category: z.enum(["components", "tokens", "patterns", "workflows", "guidelines", "general"])
-      .optional()
-      .describe("Filter by category"),
-    tags: z.array(z.string()).optional().describe("Filter by tags"),
-    limit: z.number().min(1).max(50).default(15).describe("Maximum number of results"),
-  },
-  async ({ query, category, tags, limit }) => {
-    const results = await searchEntries({
-      query,
-      category: category as Category | undefined,
-      tags,
-      limit,
-    });
-
-    if (results.length === 0) {
-      return {
-        content: [{
-          type: "text",
-          text: "No design system knowledge found matching your search criteria."
-        }],
-      };
-    }
-
-    const formattedResults = results.map((entry, index) =>
-      `<strong>🔍 ${index + 1}. ${entry.title}</strong>
-
-<em>📂 Category:</em> ${entry.metadata.category}
-<em>🏷️ System:</em> ${entry.metadata.system || "N/A"}
-<em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
-<em>⭐ Confidence:</em> ${entry.metadata.confidence}
-<em>🔗 Source:</em> <a href="${entry.source?.location || entry.metadata?.source_url || "#"}" target="_blank">${entry.source?.location || entry.metadata?.source_url || "N/A"}</a>
-
-${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
-
-<hr style="border: none; border-top: 1px solid #373a40; margin: 16px 0;">`
-    ).join("\n\n");
-
-    return {
-      content: [{
-        type: "text",
-        text: `<strong>🔍 FOUND ${results.length} RESULT${results.length === 1 ? "" : "S"}</strong>
-
-${formattedResults}`
-      }],
-    };
-  }
-);
-
-// Tool: Search chunks for specific information
-server.tool(
-  "search_chunks",
-  {
-    query: z.string().describe("Search query for specific information"),
-    limit: z.number().min(1).max(20).default(8).describe("Maximum number of chunks"),
-  },
-  async ({ query, limit }) => {
-    // Use Supabase vector search via search-handler
-    const entries = await searchEntries({ query, limit }, requestEnv);
-
-    // Extract chunks from entries for display
-    const results: Array<{ entry: any; chunk: any; score: number }> = [];
-    for (const entry of entries) {
-      if (entry.chunks && entry.chunks.length > 0) {
-        // Add the first chunk from each entry
-        results.push({
-          entry,
-          chunk: entry.chunks[0],
-          score: 1.0
-        });
-      } else if (entry.content) {
-        // If no chunks, create a single chunk from content
-        results.push({
-          entry,
-          chunk: {
-            id: 'content-0',
-            text: entry.content.substring(0, 1000),
-            metadata: { section: 'Content', chunkIndex: 0 }
-          },
-          score: 1.0
-        });
-      }
-    }
-
-    if (results.length === 0) {
-      return {
-        content: [{
-          type: "text",
-          text: "No specific information found matching your query."
-        }],
-      };
-    }
-
-    const formattedChunks = results.map((result, index) => {
-      const { displayName, url } = formatSourceReference(result.entry);
-      const sourceLink = url
-        ? `<a href="${url}" target="_blank">${displayName}</a>`
-        : displayName;
-
-      // Clean up the chunk text to avoid nested bullets
-      const cleanText = result.chunk.text
-        .replace(/^[-*•]\s*/gm, '') // Remove bullet points
-        .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
-        .replace(/^\s+|\s+$/gm, '') // Trim each line
-        .trim();
-
-      return `<div style="margin-bottom: 20px; padding: 16px; background: #2c2e33; border-radius: 8px; border-left: 3px solid #339af0;">
-<strong style="color: #339af0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">${result.chunk.metadata?.section || "Insight"}</strong> <span style="color: #909296; font-size: 14px;">from ${sourceLink}</span>
-
-<div style="margin-top: 12px; line-height: 1.6; color: #c1c2c5;">${cleanText}</div>
-</div>`;
-    }).join("\n");
-
-    return {
-      content: [{
-        type: "text",
-        text: `<strong>🎯 FOUND ${results.length} RELEVANT CHUNK${results.length === 1 ? "" : "S"}</strong>
-
-${formattedChunks}`
-      }],
-    };
-  }
-);
-
-// Tool: Browse by category
-server.tool(
-  "browse_by_category",
-  {
-    category: z.enum(["components", "tokens", "patterns", "workflows", "guidelines", "general"])
-      .describe("Category to browse"),
-  },
-  async ({ category }) => {
-    const entries = getEntriesByCategory(category as Category);
-
-    if (entries.length === 0) {
-      return {
-        content: [{
-          type: "text",
-          text: `No entries found in category: ${category}`
-        }],
-      };
-    }
-
-    const formattedEntries = entries.map(entry =>
-      `**${entry.title}**
-Tags: ${entry.metadata.tags.join(", ")}
-System: ${entry.metadata.system || "N/A"}`
-    ).join("\n\n");
-
-    return {
-      content: [{
-        type: "text",
-        text: `<strong>📁 ${entries.length} ENTR${entries.length === 1 ? "Y" : "IES"} IN "${category.toUpperCase()}"</strong>
-
-${formattedEntries}`
-      }],
-    };
-  }
-);
-
-// Tool: Get all tags
-server.tool(
-  "get_all_tags",
-  {},
-  async () => {
-    const tags = getAllTags();
-
-    return {
-      content: [{
-        type: "text",
-        text: `<strong>🏷️ AVAILABLE TAGS (${tags.length})</strong>
-
-${tags.map(tag => `<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; margin: 2px;">🔖 ${tag}</span>`).join(" ")}`
-      }],
-    };
-  }
-);
-
-// Simple request handler
-async function handleMcpRequest(request: Request, env?: Env): Promise<Response> {
-  try {
-    // Store env for tool handlers to access
-    if (env) {
-      setEnv(env);
-    }
-
-    // Add CORS headers
-    const corsHeaders = {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-    };
-
-    // Handle OPTIONS request
-    if (request.method === "OPTIONS") {
-      return new Response(null, { headers: corsHeaders });
-    }
-
-    // Only handle POST requests for MCP
-    if (request.method !== "POST") {
-      return new Response("Method not allowed", { status: 405 });
-    }
-
-    const body = await request.json() as any;
-
-    // Handle MCP JSON-RPC request
-    if (body.method === "initialize") {
-      // Handle MCP initialization
-      return new Response(JSON.stringify({
-        jsonrpc: "2.0",
-        id: body.id,
-        result: {
-          protocolVersion: "2024-11-05",
-          capabilities: {
-            tools: {},
-            resources: {},
-            prompts: {}
-          },
-          serverInfo: {
-            name: "Design Systems Knowledge Base",
-            version: "1.0.0",
-            icons: [
-              {
-                url: "https://design-systems-mcp.southleft.com/icon.png",
-                mimeType: "image/png"
-              }
-            ]
-          }
-        }
-      }), {
-        headers: { ...corsHeaders, "Content-Type": "application/json" }
-      });
-    }
-
-    if (body.method === "notifications/initialized") {
-      // Handle MCP initialized notification (doesn't need a response)
-      return new Response(null, { status: 204, headers: corsHeaders });
-    }
-
-    if (body.method === "ping") {
-      // Handle ping requests
-      return new Response(JSON.stringify({
-        jsonrpc: "2.0",
-        id: body.id,
-        result: {}
-      }), {
-        headers: { ...corsHeaders, "Content-Type": "application/json" }
-      });
-    }
-
-    if (body.method === "tools/list") {
-      // Return list of available tools
-      const tools = [
-        {
-          name: "search_design_knowledge",
-          description: "Search through design system knowledge base entries by query, category, or tags. Results include source reliability indicators to help assess content quality. Note: For accessibility content, prefer semantic HTML over ARIA implementations, and always test with assistive technology.",
-          inputSchema: {
-            type: "object",
-            properties: {
-              query: {
-                type: "string",
-                description: "Search query for finding relevant design system knowledge. Results are tagged with reliability levels (Gold Standard, Authoritative, Reference, Example, Community)."
-              },
-              category: {
-                type: "string",
-                description: "Filter by category (e.g., 'figma', 'tokens', 'components')",
-                enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
-              },
-              tags: {
-                type: "array",
-                items: { type: "string" },
-                description: "Filter by specific tags"
-              },
-              limit: {
-                type: "number",
-                description: "Maximum number of results to return (default: 15)",
-                default: 15
-              }
-            },
-            required: ["query"]
-          }
-        },
-        {
-          name: "search_chunks",
-          description: "Search through specific content chunks for detailed information",
-          inputSchema: {
-            type: "object",
-            properties: {
-              query: {
-                type: "string",
-                description: "Search query for finding specific content chunks"
-              },
-              limit: {
-                type: "number",
-                description: "Maximum number of chunks to return (default: 8)",
-                default: 8
-              }
-            },
-            required: ["query"]
-          }
-        },
-        {
-          name: "browse_by_category",
-          description: "Browse all entries in a specific category",
-          inputSchema: {
-            type: "object",
-            properties: {
-              category: {
-                type: "string",
-                description: "Category to browse",
-                enum: ["figma", "tokens", "components", "documentation", "workflow", "governance", "accessibility", "tools", "case-studies", "foundations"]
-              }
-            },
-            required: ["category"]
-          }
-        },
-        {
-          name: "get_all_tags",
-          description: "Get a list of all available tags in the knowledge base",
-          inputSchema: {
-            type: "object",
-            properties: {},
-            additionalProperties: false
-          }
-        }
-      ];
-
-      return new Response(JSON.stringify({
-        jsonrpc: "2.0",
-        id: body.id,
-        result: { tools }
-      }), {
-        headers: { ...corsHeaders, "Content-Type": "application/json" }
-      });
-    }
-
-    if (body.method === "tools/call") {
-      // Ensure content is loaded before any tool call
-      await ensureContentLoaded();
-
-      const toolName = body.params?.name;
-      const args = body.params?.arguments || {};
-
-      let result;
-
-      switch (toolName) {
-        case "search_design_knowledge": {
-          const searchResults = await searchEntries({
-            query: args.query,
-            category: args.category,
-            tags: args.tags,
-            limit: args.limit || 15,
-          }, env);
-
-          if (searchResults.length === 0) {
-            result = {
-              content: [{
-                type: "text",
-                text: "No design system knowledge found matching your search criteria."
-              }],
-            };
-          } else {
-            const formattedResults = searchResults.map((entry, index) =>
-              `**🔍 ${index + 1}. ${entry.title}**
-
-📂 Category: ${entry.metadata.category}
-🏷️ System: ${entry.metadata.system || "N/A"}
-🔖 Tags: ${entry.metadata.tags.join(", ")}
-⭐ Confidence: ${entry.metadata.confidence}
-🔗 Source: [${entry.source?.location || entry.metadata?.source_url || "N/A"}](${entry.source?.location || entry.metadata?.source_url || "#"})
-
-${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
-
----`
-            ).join("\n\n");
-
-            result = {
-              content: [{
-                type: "text",
-                text: `**🔍 FOUND ${searchResults.length} RESULT${searchResults.length === 1 ? "" : "S"}**
-
-${formattedResults}`
-              }],
-            };
-          }
-          break;
-        }
-
-        case "search_chunks": {
-          // Use Supabase vector search via search-handler
-          const chunkEntries = await searchEntries({
-            query: args.query,
-            limit: args.limit || 8
-          }, env);
-
-          // Extract chunks from entries for display
-          const chunkResultsList: Array<{ entry: any; chunk: any; score: number }> = [];
-          for (const entry of chunkEntries) {
-            if (entry.chunks && entry.chunks.length > 0) {
-              // Add the first chunk from each entry
-              chunkResultsList.push({
-                entry,
-                chunk: entry.chunks[0],
-                score: 1.0
-              });
-            } else if (entry.content) {
-              // If no chunks, create a single chunk from content
-              chunkResultsList.push({
-                entry,
-                chunk: {
-                  id: 'content-0',
-                  text: entry.content.substring(0, 1000),
-                  metadata: { section: 'Content', chunkIndex: 0 }
-                },
-                score: 1.0
-              });
-            }
-          }
-
-          if (chunkResultsList.length === 0) {
-            result = {
-              content: [{
-                type: "text",
-                text: "No specific information found matching your query."
-              }],
-            };
-          } else {
-            // Check if any chunk results contain APG content
-            const chunksHaveAPGContent = resultsContainAPGContent(chunkEntries);
-
-            const formattedChunkResults = chunkResultsList.map((chunkResult, index) => {
-              const { displayName, url } = formatSourceReference(chunkResult.entry);
-              const sourceLink = url
-                ? `[${displayName}](${url})`
-                : displayName;
-
-              // Get reliability badge for this entry
-              const reliabilityBadge = chunkResult.entry.metadata?.reliabilityBadge ||
-                formatReliabilityBadge(chunkResult.entry.metadata?.reliability?.level || 'community');
-
-              // Check if this specific entry needs a caveat
-              const chunkSourceLocation = chunkResult.entry.source?.location || chunkResult.entry.metadata?.source_url || '';
-              const chunkNeedsCaveat = requiresAccessibilityCaveats(chunkSourceLocation);
-              const chunkCaveatNote = chunkNeedsCaveat
-                ? `\n\n> ⚠️ **Note:** ${chunkResult.entry.metadata?.importantNote || 'This is a reference implementation. Prefer semantic HTML and test with assistive technology.'}`
-                : '';
-
-              // Clean up the chunk text to avoid nested bullets
-              const cleanText = chunkResult.chunk.text
-                .replace(/^[-*•]\s*/gm, '') // Remove bullet points
-                .replace(/\n{3,}/g, '\n\n') // Normalize line breaks
-                .trim();
-
-              return `### ${chunkResult.chunk.metadata?.section || "Insight"}
-*Source: ${sourceLink}*
-*Reliability: ${reliabilityBadge}*
-
-${cleanText}${chunkCaveatNote}
-
----`;
-            }).join("\n\n");
-
-            // Add accessibility guidance disclaimer if APG content is present
-            const chunkAccessibilityDisclaimer = chunksHaveAPGContent
-              ? `\n\n---\n\n> ⚠️ **Accessibility Implementation Note**\n>\n> Some results reference ARIA Authoring Practices Guide (APG). Remember:\n> - **Prefer semantic HTML** - Native elements like \`<button>\`, \`<select>\`, \`<input>\` are already accessible\n> - **APG demonstrates ARIA usage**, not complete accessibility solutions\n> - **Test with assistive technology** (NVDA, JAWS, VoiceOver) before production\n>\n> *See also: [Inclusive Components](https://inclusive-components.design/), [GOV.UK Design System](https://design-system.service.gov.uk/)*`
-              : '';
-
-            result = {
-              content: [{
-                type: "text",
-                text: `**🎯 FOUND ${chunkResultsList.length} RELEVANT CHUNK${chunkResultsList.length === 1 ? "" : "S"}**
-
-${formattedChunkResults}${chunkAccessibilityDisclaimer}`
-              }],
-            };
-          }
-          break;
-        }
-
-        case "browse_by_category": {
-          const categoryEntries = getEntriesByCategory(args.category as Category);
-
-          if (categoryEntries.length === 0) {
-            result = {
-              content: [{
-                type: "text",
-                text: `No entries found in category: ${args.category}`
-              }],
-            };
-          } else {
-            // Check if any entries contain APG content that needs disclaimers
-            const categoryHasAPGContent = resultsContainAPGContent(categoryEntries);
-
-            const formattedEntries = categoryEntries.map((entry, index) => {
-              // Get reliability badge for this entry
-              const reliabilityBadge = entry.metadata?.reliabilityBadge ||
-                formatReliabilityBadge(entry.metadata?.reliability?.level || 'community');
-
-              // Check if this specific entry needs a caveat
-              const sourceLocation = entry.source?.location || entry.metadata?.source_url || '';
-              const needsCaveat = requiresAccessibilityCaveats(sourceLocation);
-              const caveatNote = needsCaveat
-                ? `\n⚠️ *Reference only - prefer semantic HTML*`
-                : '';
-
-              return `<strong>📋 ${index + 1}. ${entry.title}</strong> ${reliabilityBadge}
-<em>🔖 Tags:</em> ${entry.metadata.tags.join(", ")}
-<em>🏷️ System:</em> ${entry.metadata.system || "N/A"}${caveatNote}`;
-            }).join("\n\n");
-
-            // Add accessibility disclaimer if APG content present
-            const categoryAccessibilityDisclaimer = categoryHasAPGContent
-              ? getAccessibilityGuidanceDisclaimer()
-              : '';
-
-            result = {
-              content: [{
-                type: "text",
-                text: `<strong>📁 ${categoryEntries.length} ENTR${categoryEntries.length === 1 ? "Y" : "IES"} IN "${args.category.toUpperCase()}"</strong>
-
-${formattedEntries}${categoryAccessibilityDisclaimer}`
-              }],
-            };
-          }
-          break;
-        }
-
-        case "get_all_tags": {
-          const tags = getAllTags();
-          const tagList = tags.map(tag => `<span style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; margin: 2px;">🔖 ${tag}</span>`).join(" ");
-          result = {
-            content: [{
-              type: "text",
-              text: `<strong>🏷️ AVAILABLE TAGS (${tags.length})</strong>
-
-${tagList}`
-            }],
-          };
-          break;
-        }
-
-        default:
-          return new Response(JSON.stringify({
-            jsonrpc: "2.0",
-            id: body.id,
-            error: {
-              code: -32601,
-              message: `Method not found: ${toolName}`
-            }
-          }), {
-            status: 400,
-            headers: { ...corsHeaders, "Content-Type": "application/json" }
-          });
-      }
-
-      return new Response(JSON.stringify({
-        jsonrpc: "2.0",
-        id: body.id,
-        result
-      }), {
-        headers: { ...corsHeaders, "Content-Type": "application/json" }
-      });
-    }
-
-    return new Response(JSON.stringify({
-      jsonrpc: "2.0",
-      id: body.id,
-      error: {
-        code: -32600,
-        message: "Invalid Request"
-      }
-    }), {
-      status: 400,
-      headers: { ...corsHeaders, "Content-Type": "application/json" }
-    });
-
-  } catch (error: any) {
-    console.error("MCP Request Error:", error);
-
-    const corsHeaders = {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-    };
-
-    // Check if this is a resource limit error
-    if (isResourceLimitError(error)) {
-      return new Response(JSON.stringify({
-        jsonrpc: "2.0",
-        id: null,
-        error: {
-          code: -32603,
-          message: "Resource limit exceeded: " + createResourceLimitErrorMessage()
-        }
-      }), {
-        status: 503,
-        headers: { ...corsHeaders, "Content-Type": "application/json" }
-      });
-    }
-
-    return new Response(JSON.stringify({
-      jsonrpc: "2.0",
-      id: null,
-      error: {
-        code: -32603,
-        message: "Internal error"
-      }
-    }), {
-      status: 500,
-      headers: { ...corsHeaders, "Content-Type": "application/json" }
-    });
-  }
-}
 
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext) {
@@ -1455,6 +839,10 @@ export default {
     <!-- Marked for markdown parsing - preload for better performance -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js" as="script">
     <script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js"></script>
+    <!-- DOMPurify sanitizes rendered markdown before it is injected into the DOM.
+         Assistant output can echo HTML from ingested third-party pages, so it
+         must never reach dangerouslySetInnerHTML unsanitized. -->
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
 
     <script type="text/babel">
         // Configure marked for better rendering
@@ -1943,6 +1331,12 @@ export default {
                         html = html.replace(/📚/g, '<i data-lucide="book-open" style="display: inline-flex; width: 20px; height: 20px; vertical-align: text-bottom; margin-right: 4px;"></i>');
                         // Replace brain emoji with Lucide icon
                         html = html.replace(/🧠/g, '<i data-lucide="brain" style="display: inline-flex; width: 20px; height: 20px; vertical-align: text-bottom; margin-right: 4px;"></i>');
+                        // Sanitize before injecting: model output may quote raw HTML
+                        // from ingested third-party content
+                        html = DOMPurify.sanitize(html, {
+                            ADD_ATTR: ['data-lucide', 'target'],
+                            FORBID_TAGS: ['style', 'form', 'input'],
+                        });
                         // Initialize Lucide icons for the newly added icons
                         setTimeout(() => {
                             if (window.lucide) {

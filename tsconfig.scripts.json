@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"module": "es2022",
+		"moduleResolution": "bundler",
+		"esModuleInterop": true,
+		"types": ["node"]
+	},
+	"include": ["scripts/**/*.ts", "types/**/*.ts"]
+}

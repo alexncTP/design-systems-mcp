@@ -207,8 +207,10 @@ export class SSESessionV2 {
       // Process MCP request
       const response = await this.processMCPRequest(body);
 
-      // Send response via SSE
-      await this.sendSSEMessage(sessionId, response);
+      // Send response via SSE (notifications return null — nothing to send)
+      if (response !== null) {
+        await this.sendSSEMessage(sessionId, response);
+      }
 
       // Return 200 OK (actual response sent via SSE)
       return new Response(null, {

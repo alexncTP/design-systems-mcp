@@ -13,8 +13,6 @@
  * @see https://spec.modelcontextprotocol.io/specification/2025-03-26/basic/transports/
  */
 
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { z } from "zod";
 import {
   searchWithSupabase as searchEntries,
 } from "./lib/search-handler.js";
@@ -59,184 +57,6 @@ async function ensureContentLoaded() {
 }
 
 /**
- * Creates and configures the MCP server with all available tools
- */
-function createMcpServer(env: Env): McpServer {
-  const server = new McpServer({
-    name: "Design Systems Knowledge Base",
-    version: "2.0.0", // v2 = Streamable HTTP
-  });
-
-  /**
-   * Tool: search_design_knowledge
-   * Search through the complete design systems knowledge base
-   */
-  server.tool(
-    "search_design_knowledge",
-    {
-      query: z.string().describe("Search query for finding relevant design system knowledge"),
-      category: z.enum([
-        "figma", "tokens", "components", "documentation", "workflow",
-        "governance", "accessibility", "tools", "case-studies", "foundations"
-      ]).optional().describe("Filter by category"),
-      tags: z.array(z.string()).optional().describe("Filter by specific tags"),
-      limit: z.number().default(15).describe("Maximum number of results to return (default: 15)"),
-    },
-    async ({ query, category, tags, limit }) => {
-      await ensureContentLoaded();
-
-      const searchResults = await searchEntries({
-        query,
-        category,
-        tags,
-        limit: limit || 15,
-      }, env);
-
-      if (searchResults.length === 0) {
-        return {
-          content: [{
-            type: "text" as const,
-            text: "No design system knowledge found matching your search criteria.",
-          }],
-        };
-      }
-
-      const formattedResults = searchResults.map((entry, index) =>
-        `**🔍 ${index + 1}. ${entry.title}**
-
-📂 Category: ${entry.metadata.category}
-🏷️ System: ${entry.metadata.system || "N/A"}
-🔖 Tags: ${entry.metadata.tags.join(", ")}
-⭐ Confidence: ${entry.metadata.confidence}
-🔗 Source: [${entry.source?.location || entry.metadata?.source_url || "N/A"}](${entry.source?.location || entry.metadata?.source_url || "#"})
-
-${entry.content.slice(0, 1000)}${entry.content.length > 1000 ? "..." : ""}
-
----`
-      ).join("\n\n");
-
-      return {
-        content: [{
-          type: "text" as const,
-          text: `Found ${searchResults.length} design system knowledge entries:\n\n${formattedResults}`,
-        }],
-      };
-    }
-  );
-
-  /**
-   * Tool: search_chunks
-   * Search through specific content chunks for detailed information
-   */
-  server.tool(
-    "search_chunks",
-    {
-      query: z.string().describe("Search query for finding specific content chunks"),
-      limit: z.number().default(8).describe("Maximum number of chunks to return (default: 8)"),
-    },
-    async ({ query, limit }) => {
-      await ensureContentLoaded();
-
-      const searchResults = await searchEntries({
-        query,
-        limit: limit || 8,
-      }, env);
-
-      if (searchResults.length === 0) {
-        return {
-          content: [{
-            type: "text" as const,
-            text: "No content chunks found matching your search query.",
-          }],
-        };
-      }
-
-      const formattedResults = searchResults.map((entry, index) =>
-        `**📄 Chunk ${index + 1}: ${entry.title}**
-
-${entry.content}
-
-🔗 Source: [${entry.source?.location || entry.metadata?.source_url || "N/A"}](${entry.source?.location || entry.metadata?.source_url || "#"})
-
----`
-      ).join("\n\n");
-
-      return {
-        content: [{
-          type: "text" as const,
-          text: `Found ${searchResults.length} content chunks:\n\n${formattedResults}`,
-        }],
-      };
-    }
-  );
-
-  /**
-   * Tool: browse_by_category
-   * Browse all entries in a specific category
-   */
-  server.tool(
-    "browse_by_category",
-    {
-      category: z.enum([
-        "figma", "tokens", "components", "documentation", "workflow",
-        "governance", "accessibility", "tools", "case-studies", "foundations"
-      ]).describe("Category to browse"),
-    },
-    async ({ category }) => {
-      await ensureContentLoaded();
-
-      const entries = getEntriesByCategory(category as any);
-
-      if (entries.length === 0) {
-        return {
-          content: [{
-            type: "text" as const,
-            text: `No entries found in category: ${category}`,
-          }],
-        };
-      }
-
-      const formattedEntries = entries.map((entry, index) =>
-        `${index + 1}. **${entry.title}**
-   Tags: ${entry.metadata.tags.join(", ")}
-   Source: [${entry.source?.location || entry.metadata?.source_url || "Link"}](${entry.source?.location || entry.metadata?.source_url || "#"})`
-      ).join("\n");
-
-      return {
-        content: [{
-          type: "text" as const,
-          text: `**Category: ${category}** (${entries.length} entries)\n\n${formattedEntries}`,
-        }],
-      };
-    }
-  );
-
-  /**
-   * Tool: get_all_tags
-   * Get a list of all available tags in the knowledge base
-   */
-  server.tool(
-    "get_all_tags",
-    {},
-    async () => {
-      await ensureContentLoaded();
-
-      const tags = getAllTags();
-      const sortedTags = tags.sort();
-
-      return {
-        content: [{
-          type: "text" as const,
-          text: `**Available Tags** (${tags.length} total):\n\n${sortedTags.map(tag => `• ${tag}`).join("\n")}`,
-        }],
-      };
-    }
-  );
-
-  return server;
-}
-
-/**
  * Main Streamable HTTP request handler
  *
  * Handles MCP protocol requests according to the Streamable HTTP specification:
@@ -251,8 +71,6 @@ export async function handleStreamableHttp(
   env: Env,
   ctx: ExecutionContext
 ): Promise<Response> {
-  const url = new URL(request.url);
-
   // CORS headers for all responses
   const corsHeaders = {
     "Access-Control-Allow-Origin": "*",
@@ -269,9 +87,6 @@ export async function handleStreamableHttp(
     });
   }
 
-  // Create MCP server instance
-  const server = createMcpServer(env);
-
   try {
     // Handle POST requests (main MCP communication)
     if (request.method === "POST") {
@@ -287,6 +102,7 @@ export async function handleStreamableHttp(
 
       // Process each message
       const results = [];
+      let newSessionId: string | null = null;
       for (const message of messages) {
         console.log(`[MCP] Method: ${message.method}, ID: ${message.id}`);
 
@@ -315,22 +131,12 @@ export async function handleStreamableHttp(
             },
           };
 
-          // Generate session ID for new sessions
-          if (!sessionId) {
-            const newSessionId = crypto.randomUUID();
+          // Generate session ID for new sessions; attach it to the final
+          // response after the whole batch is processed (an early return here
+          // would silently drop any remaining batched messages)
+          if (!sessionId && !newSessionId) {
+            newSessionId = crypto.randomUUID();
             console.log(`[MCP] Generated new session ID: ${newSessionId}`);
-
-            results.push(result);
-
-            // Return with session ID header
-            return new Response(JSON.stringify(result), {
-              status: 200,
-              headers: {
-                ...corsHeaders,
-                "Content-Type": "application/json",
-                "Mcp-Session-Id": newSessionId,
-              },
-            });
           }
 
           results.push(result);
@@ -566,16 +372,26 @@ export async function handleStreamableHttp(
         }
       }
 
+      const responseHeaders: Record<string, string> = {
+        ...corsHeaders,
+        "Content-Type": "application/json",
+      };
+      if (newSessionId) {
+        responseHeaders["Mcp-Session-Id"] = newSessionId;
+      }
+
+      // Notification-only posts produce no results; per spec return 202 Accepted
+      if (results.length === 0) {
+        return new Response(null, { status: 202, headers: responseHeaders });
+      }
+
       // Return single result or batch
       const responseData = messages.length === 1 ? results[0] : results;
 
       // Standard JSON response (no streaming needed for simple operations)
       return new Response(JSON.stringify(responseData), {
         status: 200,
-        headers: {
-          ...corsHeaders,
-          "Content-Type": "application/json",
-        },
+        headers: responseHeaders,
       });
     }
 

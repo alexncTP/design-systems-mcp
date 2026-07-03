@@ -139,9 +139,21 @@ async function uploadChunks(
     },
   }));
 
+  // Chunk ids are auto-increment, so a plain insert would duplicate chunks on
+  // every re-ingestion. Delete the entry's existing chunks first to keep
+  // re-runs idempotent (entries themselves are upserted by id).
+  const { error: deleteError } = await supabase
+    .from('content_chunks')
+    .delete()
+    .eq('entry_id', entryId);
+
+  if (deleteError) {
+    throw new Error(`Failed to clear existing chunks for ${entryId}: ${deleteError.message}`);
+  }
+
   const { error } = await supabase
     .from('content_chunks')
-    .insert(chunksToInsert);  // Use insert not upsert (no id to match on)
+    .insert(chunksToInsert);
 
   if (error) {
     throw new Error(`Failed to upload chunks for ${entryId}: ${error.message}`);
