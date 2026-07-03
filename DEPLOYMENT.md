@@ -303,7 +303,7 @@ All four tools reuse existing handlers from the main Worker:
 Tools have access to:
 - Supabase client (vector search with pgvector)
 - OpenAI embeddings (text-embedding-3-small)
-- 188+ curated design system entries
+- 200+ curated design system entries
 - 761+ content chunks with semantic search
 
 ## Updating the Deployment
@@ -370,7 +370,7 @@ You've successfully deployed an MCP server with SSE transport that:
 - ✅ Requires only a URL input (no JSON configuration)
 - ✅ Maintains persistent sessions with Durable Objects
 - ✅ Provides 4 design system knowledge tools
-- ✅ Handles 188+ entries with vector search
+- ✅ Handles 200+ entries with vector search
 - ✅ Runs on Cloudflare's global edge network
 
 Your users can now simply enter the SSE URL in Claude Desktop and start asking design system questions!

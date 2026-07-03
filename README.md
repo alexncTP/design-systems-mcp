@@ -1,6 +1,6 @@
 # Design Systems MCP Server
 
-An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. Powered by Supabase vector search with 188+ curated entries including W3C standards, WCAG guidelines, and design system best practices.
+An AI-powered Model Context Protocol (MCP) server providing intelligent access to authoritative design systems knowledge. Powered by Supabase vector search with 200+ curated entries including W3C standards, WCAG guidelines, and design system best practices.
 
 🌐 **Live Demo:** [https://design-systems-mcp.southleft.com/](https://design-systems-mcp.southleft.com/)
 
@@ -8,7 +8,7 @@ An AI-powered Model Context Protocol (MCP) server providing intelligent access t
 
 ### Core Capabilities
 - 🎯 **Production Vector Search** - Supabase pgvector with OpenAI embeddings for semantic understanding
-- 📚 **188+ Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, and 10+ major design systems
+- 📚 **200+ Curated Entries** - W3C standards, WCAG 2.2, ARIA practices, and 10+ major design systems
 - 🔍 **Hybrid Search Architecture** - Combines vector similarity with keyword matching (0.15 threshold)
 - 🚀 **Edge-Optimized** - Cloudflare Workers deployment with global distribution
 
@@ -16,7 +16,7 @@ An AI-powered Model Context Protocol (MCP) server providing intelligent access t
 - ⚡ **Streaming Responses** - Chat answers stream token-by-token via SSE; first content appears in seconds
 - 🏠 **Refreshed Landing Page** - Hero, MCP endpoint with one-click copy, and a "What's inside" overview
 - 🛡️ **Source Reliability Badges** - Every answer flags Primary / Authoritative / Reference / Example / Community sources
-- ✨ **188+ Curated Entries** - W3C, WCAG 2.2, ARIA APG, and 10+ major design systems
+- ✨ **200+ Curated Entries** - W3C, WCAG 2.2, ARIA APG, and 10+ major design systems
 - 🔧 **Production Vector Search** - Supabase pgvector with OpenAI embeddings, keyword fallback
 - 📖 **Universal MCP Client Support** - Works with any MCP-capable client (Claude Desktop, Cursor, Windsurf, etc.)
 
@@ -28,7 +28,7 @@ An AI-powered Model Context Protocol (MCP) server providing intelligent access t
 
 ## Content Library
 
-### 188+ Curated Entries Including:
+### 200+ Curated Entries Including:
 
 **Standards & Specifications**
 - W3C Design Tokens Community Group (DTCG) Specification
@@ -276,7 +276,6 @@ To connect to your local development server instead of the public endpoint:
 
 **Need help?**
 - Open an issue: [GitHub Issues](../../issues)
-- Check documentation: [Connection Guide](docs/CONNECTION_GUIDE.md)
 
 ## Available MCP Tools
 
@@ -402,8 +401,6 @@ npm run ingest:pdf path/to/design-guide.pdf
 npm run ingest:vectors
 ```
 
-See [Content Ingestion Guide](docs/CONTENT_INGESTION.md) for detailed instructions.
-
 ## Development
 
 ### Available Scripts
@@ -430,12 +427,10 @@ design-systems-mcp/
 │   └── lib/
 │       ├── content-manager.ts      # Content management
 │       ├── search-handler.ts       # Vector + keyword search dispatch
-│       ├── vector-search.ts        # Supabase vector search
 │       ├── source-authority.ts     # Reliability tiers & APG disclaimers
 │       └── ... (chunker, formatters, ingestion helpers)
 ├── content/
-│   ├── entries/              # Ingested content (JSON)
-│   └── raw/                  # Raw source files
+│   └── entries/              # Ingested content (JSON)
 ├── supabase/
 │   └── migrations/           # SQL schema + RPC functions
 ├── scripts/
@@ -443,7 +438,6 @@ design-systems-mcp/
 │   └── build/                # Build helpers (manifest generation)
 ├── types/
 │   └── content.ts           # TypeScript definitions
-├── docs/                    # Additional documentation
 ├── wrangler.jsonc          # Cloudflare Workers config
 └── .dev.vars              # Local environment variables
 ```
@@ -470,7 +464,7 @@ design-systems-mcp/
    npm run deploy
    ```
 
-See [Deployment Guide](docs/DEPLOYMENT.md) for detailed instructions.
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
 
 ## Vector Search Architecture
 
@@ -483,12 +477,10 @@ This server uses Supabase for production-grade vector search:
 - **Performance:** Sub-100ms queries with proper indexing
 
 **Statistics:**
-- 188+ entries in production database
+- 200+ entries in production database
 - 761+ content chunks with embeddings
 - W3C standards, WCAG guidelines, design system documentation
 - Regular updates with new authoritative sources
-
-See [Vector Search Setup](docs/VECTOR_SEARCH_SETUP.md) for architecture details.
 
 ## Troubleshooting
 
@@ -510,16 +502,11 @@ See [Vector Search Setup](docs/VECTOR_SEARCH_SETUP.md) for architecture details.
 - Test with curl: `curl https://design-systems-mcp.southleft.com/health`
 - Restart MCP client after configuration changes
 
-See [Troubleshooting Guide](docs/TROUBLESHOOTING.md) for detailed solutions.
-
 ## Documentation
 
-- [Connection Guide](docs/CONNECTION_GUIDE.md) - Detailed MCP client setup
-- [Content Ingestion](docs/CONTENT_INGESTION.md) - Adding new content
-- [Vector Search Setup](docs/VECTOR_SEARCH_SETUP.md) - Database configuration
-- [Deployment Guide](docs/DEPLOYMENT.md) - Production deployment
-- [Contributing](docs/CONTRIBUTING.md) - How to contribute
-- [Security](docs/SECURITY.md) - Security best practices
+- [DEPLOYMENT.md](DEPLOYMENT.md) - Production deployment
+- [CONTRIBUTING.md](CONTRIBUTING.md) - How to contribute and add content
+- [CREDITS.md](CREDITS.md) - Content sources and attribution
 
 ## License & Attribution
 
@@ -554,7 +541,7 @@ Please:
 1. Check existing [issues](../../issues)
 2. Open a new issue to discuss
 3. Submit a pull request
-4. Follow [contribution guidelines](docs/CONTRIBUTING.md)
+4. Follow [contribution guidelines](CONTRIBUTING.md)
 
 ## Support
 
