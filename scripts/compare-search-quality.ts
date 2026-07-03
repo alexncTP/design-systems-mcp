@@ -5,7 +5,7 @@
  * Compares vector search vs fallback search for various test queries
  */
 
-import { VectorSearchProvider, createVectorSearchProvider } from '../src/lib/vector-search.js';
+import { searchWithSupabase } from '../src/lib/search-handler.js';
 import { searchEntries as fallbackSearch } from '../src/lib/content-manager.js';
 import type { ContentEntry } from '../types/content';
 
@@ -124,12 +124,16 @@ async function runSearchComparison(): Promise<SearchResult[]> {
   await loadFallbackContent();
   
   console.log('🔌 Initializing vector search...');
-  const vectorSearch = createVectorSearchProvider({
+  // Same env shape the worker passes, so this compares the real production path
+  const searchEnv = {
+    VECTOR_SEARCH_ENABLED: 'true',
+    VECTOR_SEARCH_MODE: 'vector',
     SUPABASE_URL: process.env.SUPABASE_URL,
+    SUPABASE_SERVICE_KEY: process.env.SUPABASE_SERVICE_KEY,
     SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
     OPENAI_API_KEY: process.env.OPENAI_API_KEY,
-  });
-  
+  };
+
   const results: SearchResult[] = [];
   
   for (const testCase of TEST_QUERIES) {
@@ -138,14 +142,12 @@ async function runSearchComparison(): Promise<SearchResult[]> {
     console.log(`   Description: ${testCase.description}`);
     
     try {
-      // Vector search
+      // Vector search (production path)
       const vectorStartTime = Date.now();
-      const vectorResults = await vectorSearch.searchEntries({
+      const vectorResults = await searchWithSupabase({
         query: testCase.query,
         limit: 10,
-        useVector: true,
-        hybridSearch: true,
-      });
+      }, searchEnv);
       const vectorTime = Date.now() - vectorStartTime;
       
       // Fallback search

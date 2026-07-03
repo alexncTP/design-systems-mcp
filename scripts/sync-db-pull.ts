@@ -80,7 +80,7 @@ async function downloadEntries(
   const { data: prodEntries, error: fetchError } = await productionClient
     .from('content_entries')
     .select('*')
-    .order('created_at', { ascending: true });
+    .order('ingested_at', { ascending: true });
 
   if (fetchError) {
     throw new Error(`Failed to fetch production entries: ${fetchError.message}`);
@@ -122,7 +122,6 @@ async function downloadEntries(
           source_location: entry.source_location,
           source_url: entry.source_url,
           metadata: entry.metadata,
-          created_at: entry.created_at,
           updated_at: entry.updated_at,
           ingested_at: entry.ingested_at,
           deleted_at: entry.deleted_at,

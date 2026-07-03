@@ -97,11 +97,11 @@ async function uploadEntries(
     ? await getProductionEntryIds(productionClient)
     : new Set<string>();
 
-  // Fetch all local entries
+  // Fetch all local entries (schema has ingested_at, not created_at)
   const { data: localEntries, error: fetchError } = await localClient
     .from('content_entries')
     .select('*')
-    .order('created_at', { ascending: true });
+    .order('ingested_at', { ascending: true });
 
   if (fetchError) {
     throw new Error(`Failed to fetch local entries: ${fetchError.message}`);
@@ -141,7 +141,7 @@ async function uploadEntries(
         continue;
       }
 
-      // Upload entry
+      // Upload entry (columns match the live content_entries schema)
       const { error: insertError } = await productionClient
         .from('content_entries')
         .upsert({
@@ -151,12 +151,13 @@ async function uploadEntries(
           embedding: entry.embedding,
           source_type: entry.source_type,
           source_location: entry.source_location,
-          source_url: entry.source_url,
+          category: entry.category,
+          system_name: entry.system_name,
+          tags: entry.tags,
+          confidence: entry.confidence,
           metadata: entry.metadata,
-          created_at: entry.created_at,
           updated_at: entry.updated_at,
           ingested_at: entry.ingested_at,
-          deleted_at: entry.deleted_at,
         });
 
       if (insertError) {

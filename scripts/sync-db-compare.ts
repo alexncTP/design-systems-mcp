@@ -56,8 +56,8 @@ async function getDatabaseStats(supabase: any, name: string): Promise<DatabaseSt
   // Get entries
   const { data: entries, error: entriesError } = await supabase
     .from('content_entries')
-    .select('id, created_at, embedding')
-    .order('created_at', { ascending: true });
+    .select('id, ingested_at, embedding')
+    .order('ingested_at', { ascending: true });
 
   if (entriesError) {
     throw new Error(`Failed to fetch entries from ${name}: ${entriesError.message}`);
@@ -72,7 +72,7 @@ async function getDatabaseStats(supabase: any, name: string): Promise<DatabaseSt
     throw new Error(`Failed to fetch chunks from ${name}: ${chunksError.message}`);
   }
 
-  const entryIds = new Set(entries.map((e: any) => e.id));
+  const entryIds = new Set<string>(entries.map((e: any) => e.id));
   const entriesWithEmbeddings = entries.filter((e: any) => e.embedding).length;
   const chunksWithEmbeddings = chunks?.filter((c: any) => c.embedding).length || 0;
 
@@ -82,8 +82,8 @@ async function getDatabaseStats(supabase: any, name: string): Promise<DatabaseSt
     entriesWithEmbeddings,
     chunksWithEmbeddings,
     entryIds,
-    oldestEntry: entries[0]?.created_at,
-    newestEntry: entries[entries.length - 1]?.created_at,
+    oldestEntry: entries[0]?.ingested_at,
+    newestEntry: entries[entries.length - 1]?.ingested_at,
   };
 }
 

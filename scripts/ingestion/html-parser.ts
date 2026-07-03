@@ -60,7 +60,7 @@ export async function parseHTML(
       // Traverse up to find a meaningful container (section, div, or article)
       let parent = h1.parent();
       while (parent.length > 0 && parent.prop('tagName') !== 'BODY') {
-        const tagName = parent.prop('tagName').toLowerCase();
+        const tagName = (parent.prop('tagName') || '').toLowerCase();
         // Stop at semantic containers
         if (['article', 'section', 'main', 'div'].includes(tagName)) {
           // Check if this container has substantial content

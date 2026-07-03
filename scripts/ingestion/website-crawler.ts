@@ -92,8 +92,8 @@ export async function crawlWebsite(
 
   // Main crawl loop
   while (state.queued.size > 0 && state.visited.size < maxPages) {
-    // Get next URL from queue (breadth-first)
-    const [url, depth] = state.queued.entries().next().value;
+    // Get next URL from queue (breadth-first); loop condition guarantees non-empty
+    const [url, depth] = state.queued.entries().next().value!;
     state.queued.delete(url);
 
     // Skip if already visited

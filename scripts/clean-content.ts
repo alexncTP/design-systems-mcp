@@ -222,7 +222,8 @@ async function processFile(filePath: string, outputDir: string): Promise<Cleanin
 
     return stats;
   } catch (error) {
-    console.error(`  ⚠️  Error processing ${path.basename(filePath)}: ${error.message}`);
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`  ⚠️  Error processing ${path.basename(filePath)}: ${message}`);
     return null;
   }
 }
