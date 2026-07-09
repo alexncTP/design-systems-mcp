@@ -19,10 +19,9 @@ import { OpenAI } from "openai";
 // Export SSE Session Durable Object (V2 with MCP-compliant event format)
 export { SSESessionV2, SSESessionV2 as SSESession } from "./sse-session.js";
 
-// OAuth handler imports
+// OAuth handler imports (flow endpoints kept for backward compatibility;
+// discovery is no longer advertised — see the /.well-known handling below)
 import {
-  getAuthorizationServerMetadata,
-  getProtectedResourceMetadata,
   handleAuthorizeRequest,
   processTokenRequest
 } from "./oauth-handler.js";
@@ -682,26 +681,24 @@ export default {
     const url = new URL(request.url);
     const origin = url.origin;
 
-    // OAuth Discovery Endpoints for Claude Desktop
+    // OAuth discovery: intentionally NOT served.
+    //
+    // This is a public, no-authentication MCP server. Serving
+    // /.well-known/oauth-protected-resource (or -authorization-server) tells
+    // spec-strict clients "this server is an OAuth-protected resource, go
+    // authenticate." But we only ever implemented an anonymous auto-approve
+    // flow with no dynamic client registration (RFC 7591), so such a client
+    // (e.g. Codex) can discover that auth is "required" yet has no way to
+    // complete it — it then reports "Auth: Unsupported", shows a dead
+    // Authenticate button, and never lists the tools. Returning 404 here makes
+    // the server present as no-auth, so clients connect directly to the tools.
     if (url.pathname === "/.well-known/oauth-authorization-server" ||
-        url.pathname === "/.well-known/oauth-authorization-server/sse") {
-      return new Response(JSON.stringify(getAuthorizationServerMetadata(origin)), {
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-          'Cache-Control': 'public, max-age=3600'
-        }
-      });
-    }
-
-    if (url.pathname === "/.well-known/oauth-protected-resource" ||
+        url.pathname === "/.well-known/oauth-authorization-server/sse" ||
+        url.pathname === "/.well-known/oauth-protected-resource" ||
         url.pathname === "/.well-known/oauth-protected-resource/sse") {
-      return new Response(JSON.stringify(getProtectedResourceMetadata(origin)), {
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-          'Cache-Control': 'public, max-age=3600'
-        }
+      return new Response("Not Found", {
+        status: 404,
+        headers: { 'Access-Control-Allow-Origin': '*' }
       });
     }
 
