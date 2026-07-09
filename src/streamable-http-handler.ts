@@ -109,11 +109,19 @@ export async function handleStreamableHttp(
         // Handle different MCP methods
         if (message.method === "initialize") {
           const origin = new URL(request.url).origin;
+          // Echo back the client's requested protocol version when we support it,
+          // otherwise fall back to our baseline. Strict clients (e.g. Codex) may
+          // reject a response that advertises a version they didn't ask for.
+          const SUPPORTED_PROTOCOL_VERSIONS = ["2025-06-18", "2025-03-26"];
+          const requestedVersion = message.params?.protocolVersion;
+          const negotiatedVersion = SUPPORTED_PROTOCOL_VERSIONS.includes(requestedVersion)
+            ? requestedVersion
+            : "2025-03-26";
           const result = {
             jsonrpc: "2.0",
             id: message.id,
             result: {
-              protocolVersion: "2025-03-26", // Latest Streamable HTTP spec
+              protocolVersion: negotiatedVersion,
               serverInfo: {
                 name: "Design Systems Knowledge Base",
                 version: "2.0.0",
@@ -395,24 +403,19 @@ export async function handleStreamableHttp(
       });
     }
 
-    // Handle GET requests (optional server-initiated streams)
+    // Handle GET requests (optional server-initiated SSE stream).
+    // This server is stateless and doesn't push server-initiated messages, so
+    // per the MCP spec we signal that the optional stream isn't offered with a
+    // 405 Method Not Allowed. Returning 401/501 here makes strict clients (e.g.
+    // Codex) treat the connection as broken and never call tools/list, so the
+    // server appears "connected but with no tools."
     if (request.method === "GET") {
-      const sessionId = request.headers.get("Mcp-Session-Id");
-
-      if (!sessionId) {
-        return new Response("Unauthorized: Session ID required", {
-          status: 401,
-          headers: corsHeaders,
-        });
-      }
-
-      // For now, just return empty stream
-      // In future, could implement server-initiated notifications
-      console.log(`[MCP] GET request for session: ${sessionId}`);
-
-      return new Response("GET endpoint not implemented yet", {
-        status: 501,
-        headers: corsHeaders,
+      return new Response("Method Not Allowed: this server does not offer a server-initiated stream", {
+        status: 405,
+        headers: {
+          ...corsHeaders,
+          "Allow": "POST, DELETE, OPTIONS",
+        },
       });
     }
 
